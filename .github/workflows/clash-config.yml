@@ -59,43 +59,13 @@ jobs:
         LC_ALL: en_US.UTF-8
       run: python scripts/generate_config.py
       
-    - name: Detect changes
-      env:
-        LANG: en_US.UTF-8
-        LC_ALL: en_US.UTF-8
-      id: changes
-      run: |
-        echo "changed=true" >> $GITHUB_OUTPUT
-
     - name: Upload artifact
-      # if: steps.changes.outputs.changed == 'true'
       uses: actions/upload-artifact@v4
       with:
         name: clash-config
         path: config/config.yaml
 
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      # 必须检出仓库才能提交更改
-      with:
-        fetch-depth: 0  # 获取完整提交历史（可选）
-      
-    - name: Commit and push changes
-      run: |
-        # 配置 Git 用户信息
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        
-        # 将修改后的文件复制到仓库目录（如果需要）
-        #cp config/config.yaml ./config/config.yaml
-        
-        # 提交更改
-        git add config/config.yaml
-        git commit -m "Update config.yaml via GitHub Actions"
-        git push
-
     - name: Create release
-      if: steps.changes.outputs.changed == 'true'
       uses: softprops/action-gh-release@v1
       with:
         files: config/config.yaml
