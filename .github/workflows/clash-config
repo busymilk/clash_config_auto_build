@@ -1,0 +1,70 @@
+name: Generate Clash Config
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天UTC午夜运行
+  workflow_dispatch:      # 允许手动触发
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install pyyaml
+
+    - name: Create directories
+      run: mkdir -p external_proxies config
+
+    - name: Download external proxies
+      env:
+        REPO_LIST: 'user1/repo1:path/to/proxies1.yaml user2/repo2:path/to/proxies2.yaml'
+      run: |
+        IFS=' ' read -ra REPOS <<< "$REPO_LIST"
+        for entry in "${REPOS[@]}"; do
+          IFS=':' read -r repo path <<< "$entry"
+          url="https://raw.githubusercontent.com/$repo/main/$path"
+          output="external_proxies/${repo//\//_}_$(basename $path)"
+          echo "Downloading $url"
+          curl -sSL "$url" -o "$output" || echo "Failed: $url"
+        done
+
+    - name: Merge proxies
+      run: python scripts/merge_proxies.py
+
+    - name: Generate config
+      run: python scripts/generate_config.py
+
+    - name: Detect changes
+      id: changes
+      run: |
+        if [ -f config/config.yaml ]; then
+          git diff --exit-code config/config.yaml || echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Upload artifact
+      if: steps.changes.outputs.changed == 'true'
+      uses: actions/upload-artifact@v4
+      with:
+        name: clash-config
+        path: config/config.yaml
+
+    - name: Create release
+      if: steps.changes.outputs.changed == 'true'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: config/config.yaml
+        tag_name: clash-config-$(date +%Y%m%d-%H%M)
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
