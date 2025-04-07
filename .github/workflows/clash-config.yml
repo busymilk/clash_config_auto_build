@@ -55,18 +55,25 @@ jobs:
         LANG: en_US.UTF-8
         LC_ALL: en_US.UTF-8
       run: python scripts/generate_config.py
-
+      
     - name: Detect changes
       env:
         LANG: en_US.UTF-8
         LC_ALL: en_US.UTF-8
       id: changes
       run: |
-        if [ -f config/config.yaml ]; then
-          git diff --exit-code config/config.yaml || echo "changed=true" >> $GITHUB_OUTPUT
-        else
-          echo "changed=true" >> $GITHUB_OUTPUT
-        fi
+        echo "changed=true" >> $GITHUB_OUTPUT
+    # - name: Detect changes
+    #   env:
+    #     LANG: en_US.UTF-8
+    #     LC_ALL: en_US.UTF-8
+    #   id: changes
+    #   run: |
+    #     if [ -f config/config.yaml ]; then
+    #       git diff --exit-code config/config.yaml || echo "changed=true" >> $GITHUB_OUTPUT
+    #     else
+    #       echo "changed=true" >> $GITHUB_OUTPUT
+    #     fi
 
     - name: Upload artifact
       if: steps.changes.outputs.changed == 'true'
