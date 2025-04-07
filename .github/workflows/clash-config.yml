@@ -32,7 +32,7 @@ jobs:
       env:
         LANG: en_US.UTF-8
         LC_ALL: en_US.UTF-8
-        REPO_LIST: 'peasoft/NoMoreWalls:list.meta.yml mahdibland/V2RayAggregator:Eternity.yml'
+        REPO_LIST: 'peasoft/NoMoreWalls:list.meta.yml mahdibland/V2RayAggregator:Eternity.yml ermaozi/get_subscribe:subscribe/clash.yml mfuu/v2ray:clash.yaml'
       run: |
         IFS=' ' read -ra REPOS <<< "$REPO_LIST"
         for entry in "${REPOS[@]}"; do
