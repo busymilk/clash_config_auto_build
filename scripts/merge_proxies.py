@@ -38,6 +38,12 @@ for file in glob.glob("external_proxies/*.*"):
                 for proxy in data['proxies']:
                     # 使用name作为唯一标识
                     name = proxy.get('name')
+
+                    # 新增过滤条件：排除 type 和 cipher 均为 ss 的代理，防止报错
+                    if proxy.get('type') == 'ss' and proxy.get('cipher', '').lower() == 'ss':
+                        logging.info(f"排除代理 {name}：类型和加密方式均为 SS")
+                        continue  # 直接跳过，不添加到列表
+                    
                     if name and name not in seen:
                         seen.add(name)
                         proxies.append(proxy)
