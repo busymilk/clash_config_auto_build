@@ -19,7 +19,8 @@ proxies = []
 seen = set()
 
 # 处理所有下载的代理文件
-for file in glob.glob("external_proxies/*.yaml"):
+all_yaml_files = glob.glob("external_proxies/*.yaml") + glob.glob("external_proxies/*.yml")
+for file in glob.glob("external_proxies/*.*"):
     print("1")
     try:
         logging.info(f"开始处理文件: {file}")
