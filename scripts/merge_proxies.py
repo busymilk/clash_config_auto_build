@@ -13,11 +13,14 @@ logging.basicConfig(
     ]
 )
 
+ logging.info("ssss")
+
 proxies = []
 seen = set()
 
 # 处理所有下载的代理文件
 for file in glob.glob("external_proxies/*.yaml"):
+    print("1")
     try:
         logging.info(f"开始处理文件: {file}")
         print(f"开始处理文件: {file}")
@@ -51,6 +54,7 @@ for file in glob.glob("external_proxies/*.yaml"):
         logging.error(f"处理文件 {file} 时发生错误", exc_info=True)
         print(f"Error processing {file}: {e}")
 
+print("2")
 # 保存合并后的proxies
 with open("merged-proxies.yaml", 'w',encoding="utf-8") as f:
     yaml.dump({'proxies': proxies}, f, default_flow_style=False)
