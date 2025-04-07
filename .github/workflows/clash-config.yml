@@ -29,9 +29,10 @@ jobs:
 
     - name: Download external proxies
       env:
-        URL_LIST: ${{ variables.URL_LIST }}
         LANG: en_US.UTF-8
         LC_ALL: en_US.UTF-8
+        # 从仓库变量读取URL列表
+        URL_LIST: ${{ secrets.URL_LIST }}
       run: |
         mkdir -p external_proxies
         IFS=' ' read -ra URLS <<< "$URL_LIST"
