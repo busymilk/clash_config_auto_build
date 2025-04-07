@@ -1,0 +1,2 @@
+# clash_config_auto_build
+自动定时构建clash配置文件
