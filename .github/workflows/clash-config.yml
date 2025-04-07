@@ -41,6 +41,7 @@ jobs:
           output="external_proxies/${repo//\//_}_$(basename $path)"
           echo "Downloading $url"
           curl -sSL "$url" -o "$output" || echo "Failed: $url"
+          echo "download finish"
         done
 
     - name: Merge proxies
