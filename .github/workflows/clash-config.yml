@@ -94,7 +94,7 @@ jobs:
     #     fi
 
     - name: Upload artifact
-      if: steps.changes.outputs.changed == 'true'
+      # if: steps.changes.outputs.changed == 'true'
       uses: actions/upload-artifact@v4
       with:
         name: clash-config
