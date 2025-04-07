@@ -79,10 +79,36 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
 #提交更改
-    - name: GitCommit
+    # - name: GitCommit
+    #   run: |
+    #     git config --local user.email "actions@github.com"
+    #     git config --local user.name "GitHub Actions"
+    #     git add ./config/config.yaml
+    #     git commit -m "merge: $(date '+%Y-%m-%d %H:%M:%S') 合并节点"
+    #     git push
+# 关键修改 2/2：修复推送权限
+    - name: Commit and push config changes
+      env:
+        # 使用 GitHub Token 作为认证凭据
+        REPO_URL: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
       run: |
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git add ./config/config.yaml
-        git commit -m "merge: $(date '+%Y-%m-%d %H:%M:%S') 合并节点"
-        git push
+        # 配置 Git 用户信息
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        
+        # 拉取最新代码防止冲突
+        git pull origin main
+        
+        # 检测文件是否有实际变更
+        if git diff --quiet --exit-code -- config/config.yaml; then
+          echo "No changes to commit"
+          exit 0
+        fi
+
+        # 提交并推送变更
+        git add config/config.yaml
+        git commit -m "chore: Auto-update config file ($(date +'%Y-%m-%d %H:%M'))"
+        
+        # 显式使用认证后的仓库URL
+        git remote set-url origin $REPO_URL
+        git push origin HEAD:main
