@@ -13,4 +13,4 @@ base_config['proxies'] = merged_proxies.get('proxies', [])
 
 # 写入最终配置
 with open("config/config.yaml", 'w', encoding="utf-8") as f:
-    yaml.dump(base_config, f, default_flow_style=False)
+    yaml.dump(base_config, f, default_flow_style=False, allow_unicode=True)
