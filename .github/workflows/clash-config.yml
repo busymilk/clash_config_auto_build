@@ -31,7 +31,7 @@ jobs:
         IFS=' ' read -ra REPOS <<< "$REPO_LIST"
         for entry in "${REPOS[@]}"; do
           IFS=':' read -r repo path <<< "$entry"
-          url="https://raw.githubusercontent.com/$repo/main/$path"
+          url="https://raw.githubusercontent.com/$repo/refs/heads/master/$path"
           output="external_proxies/${repo//\//_}_$(basename $path)"
           echo "Downloading $url"
           curl -sSL "$url" -o "$output" || echo "Failed: $url"
