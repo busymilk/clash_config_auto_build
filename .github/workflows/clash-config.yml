@@ -28,7 +28,10 @@ jobs:
       run: mkdir -p external_proxies config
 
     - name: Download external proxies
+        
       env:
+        LANG: en_US.UTF-8
+        LC_ALL: en_US.UTF-8
         REPO_LIST: 'peasoft/NoMoreWalls:list.meta.yml mahdibland/V2RayAggregator:Eternity.yml'
       run: |
         IFS=' ' read -ra REPOS <<< "$REPO_LIST"
@@ -41,12 +44,21 @@ jobs:
         done
 
     - name: Merge proxies
+      env:
+        LANG: en_US.UTF-8
+        LC_ALL: en_US.UTF-8
       run: python scripts/merge_proxies.py
 
     - name: Generate config
+      env:
+        LANG: en_US.UTF-8
+        LC_ALL: en_US.UTF-8
       run: python scripts/generate_config.py
 
     - name: Detect changes
+      env:
+        LANG: en_US.UTF-8
+        LC_ALL: en_US.UTF-8
       id: changes
       run: |
         if [ -f config/config.yaml ]; then
