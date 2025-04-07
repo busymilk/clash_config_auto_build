@@ -13,7 +13,7 @@ logging.basicConfig(
     ]
 )
 
- logging.info("ssss")
+logging.info("ssss")
 
 proxies = []
 seen = set()
