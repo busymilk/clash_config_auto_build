@@ -112,3 +112,35 @@ jobs:
         # 显式使用认证后的仓库URL
         git remote set-url origin $REPO_URL
         git push origin HEAD:main
+
+#通知cdn更缓存
+    - name: Purge jsDelivr Cache with Retry
+      if: success()
+      env:
+        MAX_RETRIES: 3
+        RETRY_DELAY: 10
+      run: |
+        purge_url="https://purge.jsdelivr.net/gh/${{ github.repository }}@main/config/config.yaml"
+        echo "🔄 Purging: ${purge_url/https:\/\//}"
+    
+        for i in $(seq 1 $MAX_RETRIES); do
+          echo "Attempt $i/$MAX_RETRIES"
+          http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
+          
+          case $http_code in
+            200)
+              echo "✅ Purge successful"
+              exit 0
+              ;;
+            429)
+              echo "⚠️  Rate limited, retrying in $RETRY_DELAY seconds..."
+              sleep $RETRY_DELAY
+              ;;
+            *)
+              echo "❌ Unexpected code: $http_code"
+              if [ $i -eq $MAX_RETRIES ]; then
+                exit 1
+              fi
+              ;;
+          esac
+        done
