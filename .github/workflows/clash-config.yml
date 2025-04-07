@@ -47,7 +47,7 @@ jobs:
       env:
         LANG: en_US.UTF-8
         LC_ALL: en_US.UTF-8
-      run: python scripts/merge_proxies.py
+      run: python -u scripts/merge_proxies.py
 
     - name: Generate config
       env:
