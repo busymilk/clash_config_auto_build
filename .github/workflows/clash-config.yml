@@ -67,7 +67,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: config/config.yaml
-        tag_name: clash-config-$(date +%Y%m%d-%H%M)
+        tag_name: clash-config
         generate_release_notes: true
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
