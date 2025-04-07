@@ -6,8 +6,8 @@ on:
     - cron: '0 */2 * * *'
   workflow_dispatch:      # 允许手动触发
   
-  push:
-    branches: [ "main" ]   #有改动时进行触发
+  #push:
+  #  branches: [ "main" ]   #有改动时进行触发
 
 jobs:
   generate:
