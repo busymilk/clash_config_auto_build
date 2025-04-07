@@ -28,21 +28,37 @@ jobs:
       run: mkdir -p external_proxies config
 
     - name: Download external proxies
-        
       env:
+        URL_LIST: ${{ variables.URL_LIST }}
         LANG: en_US.UTF-8
         LC_ALL: en_US.UTF-8
-        REPO_LIST: 'peasoft/NoMoreWalls:list.meta.yml mahdibland/V2RayAggregator:Eternity.yml ermaozi/get_subscribe:subscribe/clash.yml mfuu/v2ray:clash.yaml'
       run: |
-        IFS=' ' read -ra REPOS <<< "$REPO_LIST"
-        for entry in "${REPOS[@]}"; do
-          IFS=':' read -r repo path <<< "$entry"
-          url="https://raw.githubusercontent.com/$repo/refs/heads/master/$path"
-          output="external_proxies/${repo//\//_}_$(basename $path)"
+        mkdir -p external_proxies
+        IFS=' ' read -ra URLS <<< "$URL_LIST"
+        for url in "${URLS[@]}"; do
+          # 生成唯一文件名：移除协议和域名，替换路径中的特殊字符
+          filename=$(echo "$url" | sed -E 's#^https?://[^/]+/##; s/[?#].*$//; s#/#_#g')
+          output="external_proxies/${filename}"
           echo "Downloading $url"
           curl -sSL "$url" -o "$output" || echo "Failed: $url"
-          echo "download finish"
+          echo "Download finished: $output"
         done
+    # - name: Download external proxies
+        
+    #   env:
+    #     LANG: en_US.UTF-8
+    #     LC_ALL: en_US.UTF-8
+    #     REPO_LIST: 'peasoft/NoMoreWalls:list.meta.yml mahdibland/V2RayAggregator:Eternity.yml ermaozi/get_subscribe:subscribe/clash.yml mfuu/v2ray:clash.yaml'
+    #   run: |
+    #     IFS=' ' read -ra REPOS <<< "$REPO_LIST"
+    #     for entry in "${REPOS[@]}"; do
+    #       IFS=':' read -r repo path <<< "$entry"
+    #       url="https://raw.githubusercontent.com/$repo/refs/heads/master/$path"
+    #       output="external_proxies/${repo//\//_}_$(basename $path)"
+    #       echo "Downloading $url"
+    #       curl -sSL "$url" -o "$output" || echo "Failed: $url"
+    #       echo "download finish"
+    #     done
 
     - name: Merge proxies
       env:
