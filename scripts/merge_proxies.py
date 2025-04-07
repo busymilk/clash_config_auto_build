@@ -3,6 +3,7 @@ import os
 import glob
 import logging
 
+print("test")
 # 配置日志格式和级别
 logging.basicConfig(
     level=logging.INFO,
