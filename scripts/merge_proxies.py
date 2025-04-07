@@ -49,4 +49,4 @@ for file in glob.glob("external_proxies/*.*"):
 
 # 保存合并后的proxies
 with open("merged-proxies.yaml", 'w',encoding="utf-8") as f:
-    yaml.dump({'proxies': proxies}, f, default_flow_style=False)
+    yaml.dump({'proxies': proxies}, f, default_flow_style=False, allow_unicode=True)
