@@ -138,61 +138,6 @@ dns:
     - tls://[2a10:50c0::2:ff]
 
 
-# url 自己转化过的订阅，改成了3小时更新一次
-proxy-providers:
-  provider1:
-    url: "https://a.ppconverter.eu.org/api/convert?url=https%3A%2F%2Fghproxy.cfd%2Fhttps%3A%2Fraw.githubusercontent.com%2Fpeasoft%2FNoMoreWalls%2Fmaster%2Flist.meta.yml&target=clash"
-    type: http
-    interval: 10800 #更新代理间隔时间
-    override:
-      additional-prefix: "[代理集合A]"
-    health-check:
-      enable: true
-      lazy: false
-      timeout: 4000
-      interval: 300
-      url: "http://www.msftncsi.com/ncsi.txt"
-
-  provider2:
-    url: "https://a.ppconverter.eu.org/api/convert?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmahdibland%2FShadowsocksAggregator%2Fmaster%2FEternity.yml&target=clash"
-    type: http
-    interval: 10800
-    override:
-      additional-prefix: "[代理集合B]"
-    health-check:
-      enable: true
-      lazy: false
-      timeout: 4000
-      interval: 300
-      url: "http://www.msftncsi.com/ncsi.txt"
-
-  provider3:
-    url: "https://a.ppconverter.eu.org/api/convert?url=https%3A%2F%2Fgit.io%2Femzclash&target=clash"
-    type: http
-    interval: 10800
-    override:
-      additional-prefix: "[代理集合C]"
-    health-check:
-      enable: true
-      lazy: false
-      timeout: 4000
-      interval: 300
-      url: "http://www.msftncsi.com/ncsi.txt"
-      
-  provider4:
-    url: "https://a.ppconverter.eu.org/api/convert?url=https%3A%2F%2Fgitlab.com%2Fmfuu%2Fv2ray%2F-%2Fraw%2Fmaster%2Fclash.yaml&target=clash"
-    type: http
-    interval: 10800
-    exclude-type: ss
-    override:
-      additional-prefix: "[代理集合D]"
-    health-check:
-      enable: true
-      lazy: false
-      timeout: 4000
-      interval: 300
-      url: "http://www.msftncsi.com/ncsi.txt"
-
 proxy-groups:
   - name: 选择代理
     type: select
@@ -208,17 +153,28 @@ proxy-groups:
   - name: 自动优选
     type: url-test
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-providers: true
-    lazy: false
+    include-all-proxies: true
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 负载均衡
     type: load-balance
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
-    include-all-providers: true
+    include-all-proxies: true
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 手动选择
     type: select
-    include-all-providers: true
+    include-all-proxies: true
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 指定国家-负载均衡
     type: select
@@ -243,68 +199,104 @@ proxy-groups:
   - name: 香港-自动优选
     type: url-test
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-providers: true
     filter: "(?i)港|hk|hongkong|hong kong|🇭🇰|HK"
-    lazy: false
+    include-all-proxies: true
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
+    
 
   - name: 台湾-自动优选
     type: url-test
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-providers: true
     filter: "(?i)台|tw|taiwan|TW"
-    lazy: false
+    include-all-proxies: true
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 日本-自动优选
     type: url-test
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-providers: true
     filter: "(?i)日|jp|japan|🇯🇵|JP"
-    lazy: false
+    include-all-proxies: true
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 美国-自动优选
     type: url-test
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-providers: true
     filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
-    lazy: false
+    include-all-proxies: true
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 新加坡-自动优选
     type: url-test
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-providers: true
     filter: "(?i)(新|sg|singapore)|🇸🇬|SG"
-    lazy: false
+    include-all-proxies: true
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   #分隔,下面是地区分组
   - name: 香港-负载均衡
     type: load-balance
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
-    include-all-providers: true
+    include-all-proxies: true
     filter: "(?i)港|hk|hongkong|hong kong|🇭🇰|HK"
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 台湾-负载均衡
     type: load-balance
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
-    include-all-providers: true
+    include-all-proxies: true
     filter: "(?i)台|tw|taiwan|TW"
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 日本-负载均衡
     type: load-balance
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
-    include-all-providers: true
+    include-all-proxies: true
     filter: "(?i)日|jp|japan|🇯🇵|JP"
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 美国-负载均衡
     type: load-balance
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
-    include-all-providers: true
+    include-all-proxies: true
     filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 新加坡-负载均衡
     type: load-balance
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
-    include-all-providers: true
+    include-all-proxies: true
     filter: "(?i)(新|sg|singapore)|🇸🇬|SG"
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
 rule-providers:
   reject:
