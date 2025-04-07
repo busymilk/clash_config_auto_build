@@ -73,3 +73,16 @@ jobs:
         generate_release_notes: true
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+#提交更改
+    - name: GitMerge
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git pull origin master
+        git add ./config/config.yaml
+        git commit -m "merge: $(date '+%Y-%m-%d %H:%M:%S') 合并节点"
+    - name: Push
+      uses:  ad-m/github-push-action@master
+      with:
+        branch: master
