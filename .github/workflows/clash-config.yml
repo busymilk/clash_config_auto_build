@@ -26,7 +26,7 @@ jobs:
 
     - name: Download external proxies
       env:
-        REPO_LIST: 'user1/repo1:path/to/proxies1.yaml user2/repo2:path/to/proxies2.yaml'
+        REPO_LIST: 'peasoft/NoMoreWalls:list.meta.yml mahdibland/V2RayAggregator:Eternity.yml'
       run: |
         IFS=' ' read -ra REPOS <<< "$REPO_LIST"
         for entry in "${REPOS[@]}"; do
@@ -67,4 +67,4 @@ jobs:
         tag_name: clash-config-$(date +%Y%m%d-%H%M)
         generate_release_notes: true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
