@@ -8,7 +8,7 @@ seen = set()
 # 处理所有下载的代理文件
 for file in glob.glob("external_proxies/*.yaml"):
     try:
-        with open(file, 'r') as f:
+        with open(file, 'r',encoding="utf-8") as f:
             data = yaml.safe_load(f)
             if data and 'proxies' in data:
                 for proxy in data['proxies']:
@@ -21,5 +21,5 @@ for file in glob.glob("external_proxies/*.yaml"):
         print(f"Error processing {file}: {e}")
 
 # 保存合并后的proxies
-with open("merged-proxies.yaml", 'w') as f:
+with open("merged-proxies.yaml", 'w',encoding="utf-8") as f:
     yaml.dump({'proxies': proxies}, f, default_flow_style=False)
