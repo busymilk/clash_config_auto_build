@@ -32,7 +32,7 @@ jobs:
         LANG: en_US.UTF-8
         LC_ALL: en_US.UTF-8
         # 从仓库变量读取URL列表
-        URL_LIST: ${{ secrets.URL_LIST }}
+        URL_LIST: ${{ vars.URL_LIST }}
       run: |
         mkdir -p external_proxies
         IFS=' ' read -ra URLS <<< "$URL_LIST"
