@@ -392,6 +392,7 @@ rule-providers:
 
 #里面除了DIRECT 和REJECT，其他的都要proxy-groups里的名字，比如：选择代理
 rules:
+  - DOMAIN,cdn.jsdelivr.net,DIRECT
   - DOMAIN,a.ppconverter.eu.org,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
