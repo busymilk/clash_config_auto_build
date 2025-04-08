@@ -4154,22 +4154,6 @@ proxies:
   port: 443
   server: 149.34.244.80
   type: ss
-- cipher: aes-256-cfb
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-35.93.139.175:463
-  obfs: plain
-  password: 463qwerty
-  port: 463
-  protocol: origin
-  server: 35.93.139.175
-  type: ssr
-- cipher: aes-256-cfb
-  name: SSR-美国-52.33.3.233:463
-  obfs: plain
-  password: 463qwerty
-  port: 463
-  protocol: origin
-  server: 52.33.3.233
-  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -4204,36 +4188,33 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>美国-TikTok-YouTube-uS7-07.890606.xYz:443
+  name: VMESS-未知>瑞士-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-econews.onetwothree123.ir:8443
   network: ws
-  port: 443
-  server: uS7-07.890606.xYz
-  servername: uS7-07.890606.xYz
+  port: 8443
+  server: econews.onetwothree123.ir
+  servername: econews.onetwothree123.ir
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  uuid: 46dbf0cf-4a0b-4582-9ba3-ea3cbfbc7348
   ws-opts:
     headers:
-      HOST: uS7-07.890606.xYz
-    path: /bua2hMcbA8wMzbGFtV
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-TikTok-YouTube-US7-02.890624.Xyz:443
-  network: ws
-  port: 443
-  server: US7-02.890624.Xyz
-  servername: us7-02.890624.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
-  ws-opts:
-    headers:
-      HOST: us7-02.890624.xyz
-    path: /bua2hMcbA8wMzbGFtV
+      HOST: econews.onetwothree123.ir
+    path: /🆔@M3HDIO1
+- cipher: aes-256-cfb
+  name: SSR-美国-ChatGPT-TikTok-YouTube-35.93.139.175:463
+  obfs: plain
+  password: 463qwerty
+  port: 463
+  protocol: origin
+  server: 35.93.139.175
+  type: ssr
+- cipher: aes-256-gcm
+  name: SS-塞舌尔>新加坡-154.83.90.11:21115
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: 154.83.90.11
+  type: ss
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
