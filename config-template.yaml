@@ -76,8 +76,6 @@ dns:
   #这个是针对域名的，所以不能用geoip
   fake-ip-filter:
     - "+.tvkuai.com"
-    - rule-set:private
-    - rule-set:direct
     - geosite:private
     - geosite:cn
   fake-ip-filter-mode: blacklist
@@ -149,7 +147,7 @@ proxy-groups:
       - 指定国家-自动优选
       - DIRECT #直连
 
-#这里不能使用url进行测试，因为不支持proxy-providers方式导入的节点
+  #这里不能使用url进行测试，因为不支持proxy-providers方式导入的节点
   - name: 自动优选
     type: url-test
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
@@ -299,90 +297,6 @@ proxy-groups:
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
 rule-providers:
-  reject:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    path: ./ruleset/reject.yaml
-    interval: 86400
-
-  icloud:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
-    path: ./ruleset/icloud.yaml
-    interval: 86400
-
-  apple:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-    path: ./ruleset/apple.yaml
-    interval: 86400
-
-  google:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-    path: ./ruleset/google.yaml
-    interval: 86400
-
-  proxy:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./ruleset/proxy.yaml
-    interval: 86400
-
-  direct:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-    path: ./ruleset/direct.yaml
-    interval: 86400
-
-  private:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
-    path: ./ruleset/private.yaml
-    interval: 86400
-
-  gfw:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-    path: ./ruleset/gfw.yaml
-    interval: 86400
-
-  tld-not-cn:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
-    path: ./ruleset/tld-not-cn.yaml
-    interval: 86400
-
-  telegramcidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-    path: ./ruleset/telegramcidr.yaml
-    interval: 86400
-
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-    path: ./ruleset/cncidr.yaml
-    interval: 86400
-
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    path: ./ruleset/lancidr.yaml
-    interval: 86400
-
   applications:
     type: http
     behavior: classical
@@ -392,22 +306,29 @@ rule-providers:
 
 #里面除了DIRECT 和REJECT，其他的都要proxy-groups里的名字，比如：选择代理
 rules:
+  #自己单独添加的几个需要直连
   - DOMAIN,cdn.jsdelivr.net,DIRECT
   - DOMAIN,a.ppconverter.eu.org,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - GEOSITE,category-ads-all,REJECT
+  - DOMAIN,ghproxy.com,DIRECT
+  #需要直连进程
   - RULE-SET,applications,DIRECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,选择代理
-  - RULE-SET,proxy,选择代理
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,lancidr,DIRECT
-  - RULE-SET,cncidr,DIRECT
-  - RULE-SET,telegramcidr,选择代理
+  #去广告
+  - GEOSITE,category-ads-all,REJECT
+  #bing,microsoft设置，里面自动处理了中国域名相关，不用关心
+  - GEOSITE,bing,选择代理
+  - GEOSITE,microsoft,选择代理
+
+  #私有局域网
+  - GEOSITE,private,DIRECT
+  #这个lan不知道能不能起作用，到处都搜不到
   - GEOIP,lan,DIRECT
+  - GEOIP,private,DIRECT
+
+  #下面这两个兜底
+  - GEOSITE,geolocation-cn,DIRECT
+  - GEOSITE,geolocation-!cn,选择代理
+  #国内ip直连
   - GEOIP,cn,DIRECT
   - MATCH,选择代理
