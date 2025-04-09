@@ -3127,6 +3127,22 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
+  name: VMESS-未知>捷克-NF解锁自制剧-ChatGPT-TikTok-YouTube-fbf248.de15-5483-d16b.sbs:80
+  network: ws
+  port: 80
+  server: fbf248.de15-5483-d16b.sbs
+  servername: sg02s.de15-5483-d16b.sbs
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2119a8ea-9015-4a2a-bf12-f5eb0425daf7
+  ws-opts:
+    headers:
+      HOST: sg02s.de15-5483-d16b.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
   name: VMESS-未知>瑞士-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-econews.onetwothree123.ir:8443
   network: ws
   port: 8443
@@ -3152,12 +3168,23 @@ proxies:
   port: 58575
   server: 91.84.111.27
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-US7-02.890624.xyZ:443
+  network: ws
+  port: 443
+  server: US7-02.890624.xyZ
+  servername: US7-02.890624.xyZ
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
+  ws-opts:
+    headers:
+      HOST: US7-02.890624.xyZ
+    path: /bua2hMcbA8wMzbGFtV
 - cipher: chacha20-ietf-poly1305
   name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-45.95.233.43:15867
   password: YU1gfUrfiAIS1yE7PW6kcV
@@ -3266,6 +3293,12 @@ proxies:
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.207.155.64:1633
+  password: o_A7inN1yqeWtOTL
+  port: 1633
+  server: 104.207.155.64
   type: ss
 - alterId: 0
   cipher: auto
@@ -108483,6 +108516,119 @@ proxies:
     headers:
       Host: us10-09.852224.ggff.net
     path: /SNwNdunw28lVztopw90eoXel
+- name: 捷克 002
+  network: grpc
+  port: 57860
+  server: 194.182.90.159
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3609d1ef-f25c-47e5-bd77-f891760fb5d6
+- name: 法国 002
+  network: grpc
+  port: 6067
+  server: fr.foxmaster.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4815dc93-e49f-4b05-a44a-dbf90985458a
+- client-fingerprint: random
+  name: 美国 447
+  network: ws
+  port: 8443
+  server: 172.67.75.194
+  servername: 5-55sfjslf.ifenxiang.cfd
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 5-55sfjslf.ifenxiang.cfd
+    path: /?ed=2560
+- name: 捷克 003
+  network: grpc
+  port: 48480
+  server: 80.211.209.74
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 65752572-d021-4ac2-915c-5763074c9a7c
+- name: 美国 448
+  network: ws
+  port: 8080
+  server: 104.26.14.85
+  servername: 2r.YFxG2buH2B.zULaIr.orG.
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8bba871f-fb54-4508-a475-06328888d89d
+  ws-opts:
+    headers:
+      Host: 2r.YFxG2buH2B.zULaIr.orG.
+- client-fingerprint: chrome
+  name: 德国 020
+  network: xhttp
+  port: 443
+  server: mrconfigchannel.hajalii.com
+  servername: mrconfigchannel-cdn.hajalii.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 923bbb5e-3f65-43ae-a0c0-9a83c464073f
+- name: 美国 449
+  network: ws
+  port: 443
+  server: 104.22.57.77
+  servername: nautica.foolvpn.me
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c7d543af-1023-4b96-a698-187c190d3f4c
+  ws-opts:
+    headers:
+      Host: nautica.foolvpn.me
+    path: /47.89.39.186-39251
+- client-fingerprint: chrome
+  name: 美国 450
+  network: ws
+  port: 443
+  server: ns1.cloudflare.com
+  servername: cr7.medicaldream.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ccff34b1-44fd-478d-bc0e-5111cb11f5be
+  ws-opts:
+    headers:
+      Host: cr7.medicaldream.ir
+    path: /?ed=2550?/
+- name: 捷克 004
+  network: grpc
+  port: 59416
+  server: 194.182.91.68
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fb4d198a-2b37-4058-a476-0cecf234064d
 proxy-groups:
 - name: 选择代理
   proxies:
