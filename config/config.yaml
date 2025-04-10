@@ -2549,6 +2549,12 @@ proxies:
   port: 39649
   server: 151.236.206.42
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -2580,22 +2586,6 @@ proxies:
   ws-opts:
     headers:
       HOST: uswuxian.pai50288.uk
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>捷克-NF解锁自制剧-ChatGPT-TikTok-YouTube-fbf248.de15-5483-d16b.sbs:80
-  network: ws
-  port: 80
-  server: fbf248.de15-5483-d16b.sbs
-  servername: sg02s.de15-5483-d16b.sbs
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2119a8ea-9015-4a2a-bf12-f5eb0425daf7
-  ws-opts:
-    headers:
-      HOST: sg02s.de15-5483-d16b.sbs
     path: /
 - cipher: chacha20-ietf-poly1305
   name: SS-美国-NF解锁乌克兰地区非自制剧-ChatGPT-TikTok-YouTube-92.118.112.92:13299
@@ -2639,6 +2629,12 @@ proxies:
   protocol: origin
   server: 193.108.119.230
   type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: SS-瑞典-TikTok-YouTube-46.246.98.155:44013
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.207.155.64:1633
   password: o_A7inN1yqeWtOTL
@@ -2713,6 +2709,12 @@ proxies:
     headers:
       HOST: Support.itn24.ir
     path: /🆔@M3HDIO1
+- cipher: chacha20-ietf-poly1305
+  name: SS-西班牙-NF解锁西班牙地区非自制剧-ChatGPT-TikTok-YouTube-92.38.171.215:31348
+  password: 0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR
+  port: 31348
+  server: 92.38.171.215
+  type: ss
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
@@ -107021,6 +107023,81 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- client-fingerprint: firefox
+  name: 美国 455
+  network: grpc
+  port: 2096
+  reality-opts:
+    public-key: woE_DAeAkSjFhqwiaecawAOMwZUmAvaFpTbJZHvUJQk
+    short-id: 765d8c54c01a53f7
+  server: firmware-check.device-update.poshtibani-vip021.com.smart-gym.ir
+  servername: SoURcForgE.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0ca7a61b-364a-4e86-bb0a-7215c30cff60
+- name: 美国 456
+  network: httpupgrade
+  port: 2086
+  server: www.speedtest.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 276689cb-cbb0-40c6-8ac1-b1c1a636163c
+- name: 哥斯达黎加 003
+  network: ws
+  port: 8080
+  server: 190.93.247.56
+  servername: rsde.hpcdn.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51331216-24fe-4eda-8bf1-0f03d2c97915
+  ws-opts:
+    headers:
+      Host: rsde.hpcdn.info
+    path: /?ed=2560
+- name: 欧洲 001
+  network: grpc
+  port: 6666
+  server: tify-binex-join.espikernajafi.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 82b64ac1-be5b-45f7-c6d2-967e6ec79a24
+- name: 德国 021
+  port: 27081
+  server: web.wiroholding.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e5513584-3c19-49be-ab4d-8118ea22ffe1
+- client-fingerprint: firefox
+  name: 乌克兰 003
+  network: ws
+  port: 443
+  server: 193.46.81.67
+  servername: a.mehpow.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: telegram-id-ArV2ray
+  ws-opts:
+    headers:
+      Host: a.mehpow.ir
+    path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
 proxy-groups:
 - name: 选择代理
   proxies:
