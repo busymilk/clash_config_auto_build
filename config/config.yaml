@@ -3392,6 +3392,22 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
+  name: VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-de01.sh-cloudflare.sbs:2096
+  network: ws
+  port: 2096
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: 75a0885f-0ca5-42a4-8651-391cf8193154
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
   name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-phx-plus-1ddns.faforex.eu.org:23451
   network: ws
   port: 23451
@@ -3672,26 +3688,23 @@ proxies:
     headers:
       HOST: uS7-04.890606.XyZ
     path: /bua2hMcbA8wMzbGFtV
-- alterId: 32
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-美国>香港-vc.fly.dev:443
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      Host: vc.fly.dev
-    path: /vc
 - cipher: chacha20-ietf-poly1305
   name: SS-西班牙-NF解锁西班牙地区非自制剧-ChatGPT-TikTok-YouTube-92.38.171.215:31348
   password: 0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR
   port: 31348
   server: 92.38.171.215
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-78.129.140.11:443
+  password: iEKtgttwHhDjsbOki1a5BK
+  port: 443
+  server: 78.129.140.11
+  type: ss
+- cipher: aes-256-gcm
+  name: SS-美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-154.3.8.151:30067
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
   type: ss
 - alterId: 0
   cipher: auto
@@ -93882,42 +93895,53 @@ proxies:
   type: vless
   udp: true
   uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
-- alterId: 0
-  cipher: auto
-  name: 未知
-  network: tcp
-  port: 180
-  server: 89.18.58.63
-  sni: ''
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+- cipher: aes-256-cfb
+  name: 🇮🇸_IS_冰岛
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.152
+  type: ss
+- name: 🇺🇸_US_美国
   network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  password: cd0e795a-4f26-4f8c-9981-ed8b7dcb6126
+  port: 443
+  server: 172.67.163.102
+  sni: sDFgHU.931.pP.ua
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      host: v29.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加
-  network: ws
-  port: 80
-  server: 104.26.2.223
-  type: vmess
-  uuid: be9ac665-07b8-45b7-b99e-8b913b50da99
-  ws-opts:
-    headers:
-      host: 476890898548582025040715174894088.s15.chibaba.filegear-sg.me
-    path: /s15.html
+      host: sdfghu.931.pp.ua
+    path: /93fAx7DxPbqU8RhisheV
+- cipher: aes-256-cfb
+  name: 🇸🇰_SK_斯洛伐克
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
 - name: 🇺🇸_US_美国_1
+  network: ws
+  password: cd0e795a-4f26-4f8c-9981-ed8b7dcb6126
+  port: 443
+  server: 104.21.73.150
+  sni: sDFgHU.931.pP.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: sdfghu.931.pp.ua
+    path: /93fAx7DxPbqU8RhisheV
+- name: 🇺🇸_US_美国_2
+  network: ws
+  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
+  port: 443
+  server: 104.21.16.1
+  sni: 1g.890699.xyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /lXENb74xF4ylXngZ
+- name: 🇺🇸_US_美国_3
   network: ws
   password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
   port: 443
@@ -93931,60 +93955,45 @@ proxies:
     path: /lXENb74xF4ylXngZ
 - alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: tcp
   port: 14100
   server: dxv4.pai50288.uk
   sni: ''
   type: vmess
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- name: 🇺🇸_US_美国_2
-  network: ws
-  password: cd0e795a-4f26-4f8c-9981-ed8b7dcb6126
-  port: 443
-  server: 172.67.163.102
-  sni: sDFgHU.931.pP.ua
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: sdfghu.931.pp.ua
-    path: /93fAx7DxPbqU8RhisheV
-- name: 🇬🇧_GB_英国->🇺🇸_US_美国
-  password: '74260698218909400'
-  port: 443
-  server: 85.234.65.11
-  skip-cert-verify: false
-  sni: happy-bluebird.shiner427.skin
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 未知_1
+  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
   network: tcp
-  port: 180
-  server: 89.18.58.104
+  port: 5229
+  server: 4466f722-sum4g0-szbau2-2d9v.cu.plebai.net
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  password: d4c22fd9-1474-4e9f-baf7-80b162f3e60c
-  port: 12052
-  server: cn2.cdn.xfltd-cdn.top
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
-  type: trojan
-- cipher: aes-128-gcm
-  name: 🇧🇬_BG_保加利亚->🇬🇧_GB_英国
-  password: shadowsocks
+  uuid: 554d0110-ce64-11ef-973a-f23c913c8d2b
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺_RU_俄罗斯
+  password: w2HdZnGb5ibh
   port: 443
-  server: 149.34.244.80
+  server: 89.221.225.88
   type: ss
-- name: 🇯🇴_JO_约旦->🇬🇧_GB_英国
-  network: tcp
-  password: '74260698218909400'
-  port: 443
-  server: 109.107.159.122
-  sni: electric-mallard.shiner427.skin
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加
+  network: ws
+  port: 80
+  server: 104.18.1.117
+  type: vmess
+  uuid: 22474cc4-22a9-4c74-bae8-43f08a1c6ed4
+  ws-opts:
+    headers:
+      host: 2025041008264146946.s15.chibaba.filegear-sg.me
+    path: /s15.html
+- cipher: rc4-md5
+  name: 🇩🇪_DE_德国
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
@@ -93999,121 +94008,42 @@ proxies:
     headers:
       host: cm1.awslcn.info
     path: /
-- name: 🇺🇸_US_美国_3
-  network: ws
-  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷_FR_法国
+  password: sVjPo5m8PUrhHuB9lDZzNS
   port: 443
-  server: 104.21.96.1
-  sni: 1g.890699.xyZ
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /lXENb74xF4ylXngZ
-- cipher: aes-256-cfb
-  name: 🇨🇭_CH_瑞士
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 84.17.53.160
+  server: 151.115.88.168
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-  network: ws
-  port: 80
-  server: fbf248.de15-5483-d16b.sbs
-  type: vmess
-  uuid: 2119a8ea-9015-4a2a-bf12-f5eb0425daf7
-  ws-opts:
-    headers:
-      host: sg02s.de15-5483-d16b.sbs
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺_RU_俄罗斯_1
+  password: RiPuKJJl18ZgvLpTjWxBwSfKiPkt9gzFKyxGCY8eHtOcDb2X
+  port: 31348
+  server: 5.189.201.250
+  type: ss
 - name: 🇺🇸_US_美国_4
   network: ws
-  password: cd0e795a-4f26-4f8c-9981-ed8b7dcb6126
-  port: 443
-  server: 104.21.73.150
-  sni: sDFgHU.931.pP.ua
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: sdfghu.931.pp.ua
-    path: /93fAx7DxPbqU8RhisheV
-- name: 🇺🇸_US_美国->🇯🇴_JO_约旦
-  network: ws
   password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
   port: 443
-  server: 104.21.16.1
+  server: 104.21.48.1
   sni: 1g.890699.xyZ
   type: trojan
   udp: true
   ws-opts:
     path: /lXENb74xF4ylXngZ
-- name: 🇨🇷_CR_哥斯达黎加
-  network: ws
-  password: 02926f9e-153a-42c8-8ecd-8fade7009ad1
-  port: 443
-  server: 144.22.250.122
-  skip-cert-verify: true
-  sni: golinkwuxian.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 8888.golinkwuxian.top
-    path: /apple
+- cipher: chacha20-ietf-poly1305
+  name: 🇪🇸_ES_西班牙
+  password: 0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR
+  port: 31348
+  server: 92.38.171.215
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 未知_2
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   network: tcp
-  port: 180
-  server: 89.18.58.206
+  port: 5229
+  server: edcc173e-sum4g0-sv7391-mv7m.cu.plebai.net
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: rc4-md5
-  name: 🇩🇪_DE_德国
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇮🇸_IS_冰岛
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.152
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  network: ws
-  port: 30840
-  server: v40.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: api100-core-quic-lf.amemv.com
-    path: /index
-- cipher: aes-256-cfb
-  name: 🇬🇧_GB_英国->🇺🇸_US_美国_1
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
+  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
 - cipher: aes-128-gcm
   name: 🇺🇸US-156.146.38.170-0355 | 195.521MB
   password: shadowsocks
