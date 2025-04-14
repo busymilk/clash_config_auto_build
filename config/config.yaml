@@ -2645,12 +2645,6 @@ proxies:
     headers:
       HOST: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- cipher: chacha20-ietf-poly1305
-  name: SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -2745,35 +2739,6 @@ proxies:
   port: 7749
   server: 77.246.97.187
   type: ss
-- cipher: aes-256-gcm
-  name: SS-美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-154.3.8.151:30067
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-荷兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-194.87.216.121:443
-  password: piv97XS1Cval86vfwHPD5j
-  port: 443
-  server: 194.87.216.121
-  type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>德国-NF解锁自制剧-TikTok-YouTube-de01.sh-cloudflare.sbs:2096
-  network: ws
-  port: 2096
-  server: de01.sh-cloudflare.sbs
-  servername: de01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 75a0885f-0ca5-42a4-8651-391cf8193154
-  ws-opts:
-    headers:
-      HOST: de01.sh-cloudflare.sbs
-    path: /
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
@@ -111377,6 +111342,127 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
+- client-fingerprint: random
+  name: 美国 538
+  network: ws
+  port: 443
+  server: 104.16.209.110
+  servername: masaleini.mahsaamini.dpdns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10d9df89-9a20-4110-9711-bca119490ee9
+  ws-opts:
+    headers:
+      Host: masaleini.mahsaamini.dpdns.org
+- client-fingerprint: randomized
+  name: 美国 539
+  network: ws
+  port: 443
+  server: 104.21.73.239
+  servername: digitalscientificresearchgroup.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: digitalscientificresearchgroup.ir
+    path: /4McLR3NKFOydbxDs/MTguMTk5LjIxMy4yMDE
+- name: 美国 540
+  network: ws
+  port: 80
+  server: mitivpn.fastly80-2.hosting-ip.com
+  servername: arzinja.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48108ffd-b20c-4d94-bf99-d3e3187a10c7
+  ws-opts:
+    headers:
+      Host: arzinja.info
+    path: /telegram-mitivpn-telegram-mitivpn-telegram-mitivpn?ed=2048
+- name: 荷兰 024
+  network: ws
+  port: 80
+  server: 45.131.4.147
+  servername: redfree8.pooriashop.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redfree8.pooriashop.ir
+    path: Telegram🇨🇳
+- name: 瑞典 029
+  network: httpupgrade
+  port: 8880
+  server: 185.146.173.39
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: Parsashonam-220
+- name: 美国 541
+  network: ws
+  port: 443
+  server: 104.17.148.22
+  servername: nautica.foolvpn.me
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c7d543af-1023-4b96-a698-187c190d3f4c
+  ws-opts:
+    headers:
+      Host: nautica.foolvpn.me
+    path: /47.89.39.186-39251
+- name: 立陶宛 034
+  network: grpc
+  port: 8880
+  server: 84.32.9.52
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 立陶宛 035
+  network: grpc
+  port: 8880
+  server: 88.216.187.125
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 美国 542
+  network: ws
+  port: 8080
+  server: 104.17.148.22
+  servername: TEL-ArV2ry-TEL-ArV2ry-TEL-ArV2ry.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.ipsq.dDnS-ip.nEt
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: telegram-id-ArV2ray
+  ws-opts:
+    headers:
+      Host: TEL-ArV2ry-TEL-ArV2ry-TEL-ArV2ry.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.ipsq.dDnS-ip.nEt
+    path: /telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry,telegram-ArV2ry?ed=2056
 proxy-groups:
 - name: 选择代理
   proxies:
