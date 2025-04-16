@@ -2781,22 +2781,6 @@ proxies:
   port: 6679
   server: 23.150.248.199
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-uS7-03.890624.XYZ:80
-  network: ws
-  port: 80
-  server: uS7-03.890624.XYZ
-  servername: uS7-03.890624.XYZ
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
-  ws-opts:
-    headers:
-      HOST: uS7-03.890624.XYZ
-    path: /bua2hMcbA8wMzbGFtV
 - cipher: chacha20-ietf-poly1305
   name: SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
   password: UDcjYQ6Z6AIWxViZpqyOmO
@@ -2849,12 +2833,6 @@ proxies:
   protocol: origin
   server: 62.100.205.48
   type: ssr
-- cipher: aes-256-gcm
-  name: SS-塞舌尔>新加坡-NF解锁新加坡地区非自制剧-ChatGPT-TikTok-YouTube-154.83.90.11:21114
-  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-  port: 21114
-  server: 154.83.90.11
-  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -110774,6 +110752,140 @@ proxies:
     headers:
       Host: sanjose01.890614.filegear-sg.me
     path: /YfB29GXf4cThJQeJb
+- name: 希腊 002
+  network: ws
+  port: 8880
+  server: 31.22.116.154
+  servername: redfree8.pooriashop.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redfree8.pooriashop.ir
+    path: /Telegram
+- name: 美国 564
+  network: ws
+  port: 80
+  server: PROXY-MTM.fastly80-3.hosting-ip.com
+  servername: mt.acvs.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84f93722-ced5-4447-bd0e-74c3658227b1
+  ws-opts:
+    headers:
+      Host: mt.acvs.ir
+    path: /Channel----MTMVPN----MTMVPN---MTMVPN---MTMVPN---MTMVPN----PROXY_MTM----PROXY_MTM----PROXY_MTM---MTMVPN---MTMVPN---MTMVPN?ed=2048
+- name: 新加坡 002
+  network: grpc
+  port: 1773
+  server: germany.khoreshtsabzi.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 93489dc6-47a3-4532-b050-6fb193b855e9
+- client-fingerprint: chrome
+  name: 德国 030
+  network: ws
+  port: 443
+  server: mw5.asalemaraghe.ir
+  servername: mw5.asalemaraghe.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 944d8b74-7a64-4b07-a278-9f968e9ef99c
+  ws-opts:
+    headers:
+      Host: mw5.asalemaraghe.ir
+    path: /
+- client-fingerprint: chrome
+  name: 美国 565
+  network: ws
+  port: 443
+  server: 108.162.192.106
+  servername: xxx.66500-280b-471c-b2b8-d68b7f9960008.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d118038f-0d72-4b45-8cce-bcf237487f41
+  ws-opts:
+    headers:
+      Host: xxx.66500-280b-471c-b2b8-d68b7f9960008.workers.dev
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 美国 566
+  network: ws
+  port: 443
+  server: 172.67.12.140
+  servername: white-fire-62c1.66500-280b-471c-b2b8-d68b7f9960013.workers.dev
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d118038f-0d72-4b45-8cce-bcf237487f41
+  ws-opts:
+    headers:
+      Host: white-fire-62c1.66500-280b-471c-b2b8-d68b7f9960013.workers.dev
+    path: /?ed=2048
+- client-fingerprint: randomized
+  name: 美国 567
+  network: ws
+  port: 443
+  server: 104.21.90.210
+  servername: vlee.amclubs.nyc.mn
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vlee.amclubs.nyc.mn
+    path: /Telegram
+- name: 立陶宛 039
+  network: grpc
+  port: 8880
+  server: 84.32.25.106
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 立陶宛 040
+  network: grpc
+  port: 8880
+  server: 84.32.9.29
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+- name: 土耳其 003
+  network: grpc
+  port: 8880
+  server: 5.180.46.9
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e464526a-e3de-4db9-8821-4e146507976f
 proxy-groups:
 - name: 选择代理
   proxies:
