@@ -3567,12 +3567,22 @@ proxies:
     headers:
       HOST: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
     path: /azumase.ren
-- cipher: chacha20-ietf-poly1305
-  name: SS-保加利亚-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-85.208.139.31:42037
-  password: q7jwtcA0MmyYi0JddUgXXj
-  port: 42037
-  server: 85.208.139.31
-  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-phx-plus-1ddns.faforex.eu.org:23451
+  network: ws
+  port: 23451
+  server: phx-plus-1ddns.faforex.eu.org
+  servername: phx-plus-1ddns.faforex.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: 32796220-3a3b-4daa-af15-088cacd129eb
+  ws-opts:
+    headers:
+      HOST: phx-plus-1ddns.faforex.eu.org
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: SS-黎巴嫩-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-77.110.106.77:36301
   password: v0NHlCl2nvVfC8AeZPMffi
@@ -3723,12 +3733,6 @@ proxies:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
-- cipher: aes-256-gcm
-  name: SS-塞舌尔>新加坡-NF解锁新加坡地区非自制剧-ChatGPT-TikTok-YouTube-154.83.90.11:21115
-  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-  port: 21115
-  server: 154.83.90.11
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-185.177.229.245:1866
   password: oXGp1+ihlfKg826H
