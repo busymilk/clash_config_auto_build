@@ -2988,23 +2988,6 @@ proxies:
   port: 31465
   server: 77.110.106.74
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>塞舌尔-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-hk2.lrzdx.uk:443
-  network: ws
-  port: 443
-  server: hk2.lrzdx.uk
-  servername: hk2.lrzdx.uk
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
-  ws-opts:
-    headers:
-      HOST: hk2.lrzdx.uk
-    path: /register
 - cipher: chacha20-ietf-poly1305
   name: SS-黎巴嫩-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-77.110.102.235:64864
   password: 9onFEWpRgKmtMnxtXGIWD0
@@ -3202,11 +3185,11 @@ proxies:
     headers:
       HOST: phx-plus-1ddns.faforex.eu.org
     path: /
-- cipher: aes-128-gcm
-  name: SS-美国-NF解锁自制剧-ChatGPT-107.175.96.74:16899
-  password: Yc2CtrIz8L
-  port: 16899
-  server: 107.175.96.74
+- cipher: chacha20-ietf-poly1305
+  name: SS-瑞典-NF解锁瑞典地区非自制剧-ChatGPT-TikTok-YouTube-46.246.98.155:44013
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
   type: ss
 - alterId: 0
   cipher: auto
@@ -101228,6 +101211,17 @@ proxies:
     headers:
       Host: 1744007578.speed.adl.cccp.freefly.pp.ua
     path: /
+- name: 美国 054
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 104.21.23.115
+  sni: 1cc.852224.ggff.net
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 1cc.852224.ggff.net
+    path: /OYzPAeaZdXUq2d6J3gc4aj
 proxy-groups:
 - name: 选择代理
   proxies:
