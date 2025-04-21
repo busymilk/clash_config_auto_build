@@ -3281,12 +3281,6 @@ proxies:
     headers:
       HOST: ny1.bulkcash.top
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: SS-荷兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-77.246.96.113:29530
-  password: TVOZHDLvvvULjx3z389j0S
-  port: 29530
-  server: 77.246.96.113
-  type: ss
 - cipher: aes-256-gcm
   name: SS-美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-154.3.8.151:30067
   password: iUB0923RBA
@@ -3299,6 +3293,28 @@ proxies:
   port: 16899
   server: 107.175.96.74
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-瑞典-NF解锁瑞典自制剧-YouTube-46.246.98.155:44013
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-129.153.193.209:23451
+  network: ws
+  port: 23451
+  server: 129.153.193.209
+  servername: phx-plus-1ddns.faforex.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: ef6b281c-2998-46a6-bd6b-081f404ba069
+  ws-opts:
+    headers:
+      HOST: phx-plus-1ddns.faforex.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
@@ -95877,16 +95893,126 @@ proxies:
   uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
 - alterId: 0
   cipher: auto
+  name: 🇳🇱_NL_荷兰
+  network: tcp
+  port: 11577
+  server: 45.89.244.40
+  type: vmess
+  uuid: 79cc997e-d580-4f72-b7fc-f6669c9462e8
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: tcp
+  port: 14100
+  server: dxv4.pai50288.uk
+  type: vmess
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- alterId: 0
+  cipher: auto
+  name: 未知
+  network: tcp
+  port: 180
+  server: 89.18.58.104
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  network: ws
+  port: 23077
+  server: 45.147.201.231
+  type: vmess
+  uuid: f90b800d-2b37-424e-afc8-4ecb2a64b64f
+  ws-opts:
+    path: /
+- alterId: 2
+  cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- cipher: chacha20-ietf
+  name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  password: asd123456
+  port: 8388
+  server: 137.175.113.215
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 未知_1
+  network: tcp
+  port: 180
+  server: 89.18.58.63
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v36.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v25.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
   network: ws
   port: 30840
   server: v40.heduian.link
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: api100-core-quic-lf.amemv.com
     path: /index
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇩🇪_DE_德国_1
+  network: tcp
+  port: 14100
+  server: 144.255.36.254
+  sni: ''
+  type: vmess
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 🇺🇸_US_美国->🇩🇪_DE_德国
@@ -95900,143 +96026,6 @@ proxies:
     headers:
       host: dingzhiadly.sgjc.xyz
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 未知
-  network: tcp
-  port: 180
-  server: 89.18.58.63
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  network: tcp
-  port: 14100
-  server: dxv4.pai50288.uk
-  type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  network: tcp
-  port: 5228
-  server: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
-  type: vmess
-  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  network: tcp
-  port: 5228
-  server: 157.148.96.92
-  type: vmess
-  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  network: tcp
-  port: 5229
-  server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
-  type: vmess
-  uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
-  network: ws
-  port: 30828
-  server: v28.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- name: 🇳🇱_NL_荷兰
-  password: a5655914-95bd-4834-9043-352245dec3b3
-  port: 43591
-  server: 45.146.232.171
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  network: ws
-  port: 30836
-  server: v36.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
-  network: tcp
-  port: 5228
-  server: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
-  type: vmess
-  uuid: 2b634c80-fd7e-11ef-9f25-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_8
-  network: tcp
-  port: 5228
-  server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- alterId: 0
-  cipher: auto
-  name: 未知_1
-  network: tcp
-  port: 180
-  server: 89.18.58.104
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_9
-  network: tcp
-  port: 5229
-  server: 2e93912d-sutj40-sutgau-1r62f.cu.plebai.net
-  type: vmess
-  uuid: 154b0bf8-f9a7-11ee-a218-f23c91cfbbc9
-- name: 🇳🇱_NL_荷兰_1
-  password: a5655914-95bd-4834-9043-352245dec3b3
-  port: 43591
-  server: 45.146.232.173
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_10
-  network: tcp
-  port: 5228
-  server: 7bd0fd61-suz340-tau0mq-1i41w.cu.plebai.net
-  type: vmess
-  uuid: d13637bd-0e24-11ed-9d0b-f23c91cfbbc9
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国
-  network: tcp
-  port: 5229
-  server: 0ecc8d37-sux8g0-swbudg-1mzwj.cu.plebai.net
-  type: vmess
-  uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d
-- alpn:
-  - http/1.1
-  name: 🇬🇧_GB_英国
-  network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 51.21.93.214
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - cipher: aes-128-gcm
   name: 🇺🇸US-37.19.198.243-0960 | 216.961MB
   password: shadowsocks
