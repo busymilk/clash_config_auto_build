@@ -3325,23 +3325,6 @@ proxies:
     headers:
       HOST: whk.357567.xyz
     path: /c2723c0e-b601-475b-9058-dc89332e9813
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>德国-NF解锁自制剧-ChatGPT-TikTok-YouTube-de01.sh-cloudflare.sbs:2096
-  network: ws
-  port: 2096
-  server: de01.sh-cloudflare.sbs
-  servername: de01.sh-cloudflare.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 75a0885f-0ca5-42a4-8651-391cf8193154
-  ws-opts:
-    headers:
-      HOST: de01.sh-cloudflare.sbs
-    path: /
 - alterId: 5
   cipher: auto
   h2-opts: {}
@@ -3359,14 +3342,6 @@ proxies:
     headers:
       HOST: ny1.bulkcash.top
     path: /
-- cipher: rc4-md5
-  name: SSR-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-193.108.119.230:8080
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 193.108.119.230
-  type: ssr
 - cipher: aes-128-cfb
   name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-184.170.241.194:443
   obfs: plain
@@ -3407,12 +3382,6 @@ proxies:
   port: 44013
   server: 46.246.98.155
   type: ss
-- cipher: aes-128-gcm
-  name: SS-美国-NF解锁自制剧-ChatGPT-YouTube-107.175.96.74:16899
-  password: Yc2CtrIz8L
-  port: 16899
-  server: 107.175.96.74
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: SS-荷兰-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-85.209.158.11:8388
   password: MWYyN
@@ -3424,6 +3393,12 @@ proxies:
   password: NGJiN
   port: 8388
   server: 45.86.66.16
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-荷兰-NF解锁奥地利地区非自制剧-ChatGPT-TikTok-YouTube-194.124.250.4:8388
+  password: NGQ1Y
+  port: 8388
+  server: 194.124.250.4
   type: ss
 - alterId: 0
   cipher: auto
