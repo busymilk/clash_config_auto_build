@@ -94420,6 +94420,21 @@ proxies:
     headers:
       Host: m116.164748.xyz
     path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 美国 058
+  network: ws
+  port: 2086
+  server: 104.18.114.2
+  servername: m116.164748.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  ws-opts:
+    headers:
+      Host: m116.164748.xyz
+    path: github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
   password: 87fddbbe-f135-4916-b66f-036bb780def5
@@ -97748,12 +97763,6 @@ proxies:
     headers:
       Host: nn.ylks0033.dpdns.org
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-64.176.184.129:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 64.176.184.129
-  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -97874,17 +97883,28 @@ proxies:
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: SS-瑞典-NF解锁瑞典地区非自制剧-TikTok-YouTube-46.246.98.155:44013
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: SS-荷兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-195.85.250.173:5555
   password: 4QbzZcp6q7kg0LCrZfyQ9w
   port: 5555
   server: 195.85.250.173
   type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-YouTube-de01.sh-cloudflare.sbs:2096
+  network: ws
+  port: 2096
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  ws-opts:
+    headers:
+      HOST: de01.sh-cloudflare.sbs
+    path: /
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -97902,12 +97922,6 @@ proxies:
     headers:
       HOST: hk2.lrzdx.uk
     path: /register
-- cipher: chacha20-ietf-poly1305
-  name: SS-荷兰-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-194.55.137.16:8388
-  password: MDc1Y
-  port: 8388
-  server: 194.55.137.16
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-185.177.229.245:1866
   password: oXGp1+ihlfKg826H
@@ -97947,6 +97961,12 @@ proxies:
     headers:
       HOST: v019.emovpn.xyz
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-198.244.149.43:21543
+  password: 36695e3cf295000b
+  port: 21543
+  server: 198.244.149.43
+  type: ss
 - name: 🇬🇧_GB_英国
   password: '3828095943467868160'
   port: 443
