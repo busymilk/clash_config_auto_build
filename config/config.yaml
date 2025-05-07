@@ -93719,24 +93719,26 @@ proxies:
   server: 62.210.88.22
   type: ss
 - cipher: aes-256-gcm
-  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.114.114.108:8091
-  password: PCnnH6SQSnfoS27
-  port: 8091
-  server: 38.114.114.108
-  type: ss
-- cipher: aes-256-gcm
   name: SS-美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-154.3.8.151:30067
   password: iUB0923RBA
   port: 30067
   server: 154.3.8.151
   type: ss
+- cipher: aes-256-cfb
+  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-52.89.141.117:443
+  obfs: plain
+  password: awsps0501
+  port: 443
+  protocol: origin
+  server: 52.89.141.117
+  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-rak1.986986.shop:2083
+  name: VMESS-未知>美国-NF解锁自制剧-rak1.986986.shop:2053
   network: ws
-  port: 2083
+  port: 2053
   server: rak1.986986.shop
   skip-cert-verify: true
   tls: true
