@@ -1805,14 +1805,6 @@ proxies:
     headers:
       HOST: new3.huvicloud.com
     path: /a10476b9-1c07-4de3-9d84-c51d24be599f
-- cipher: aes-256-cfb
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-52.27.142.2:443
-  obfs: plain
-  password: awsps0501
-  port: 443
-  protocol: origin
-  server: 52.27.142.2
-  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -1845,6 +1837,14 @@ proxies:
     headers:
       HOST: api100-core-quic-lf.amemv.com
     path: /index
+- cipher: rc4-md5
+  name: SSR-德国-NF解锁德国自制剧-ChatGPT-TikTok-YouTube-193.108.119.230:8080
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 193.108.119.230
+  type: ssr
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
