@@ -1806,14 +1806,6 @@ proxies:
   port: 30067
   server: 154.3.8.151
   type: ss
-- cipher: aes-256-cfb
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.187.175.85:443
-  obfs: plain
-  password: awsps0501
-  port: 443
-  protocol: origin
-  server: 54.187.175.85
-  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -1845,22 +1837,6 @@ proxies:
   uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
   ws-opts:
     path: /register
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-俄罗斯联邦>法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-185.174.138.209:2095
-  network: ws
-  port: 2095
-  server: 185.174.138.209
-  servername: yellow-paper-029c.yvonna.workers.dev
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
-  ws-opts:
-    headers:
-      HOST: yellow-paper-029c.yvonna.workers.dev
-    path: /az05.beyondy.cfd/link?/TM
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -1913,14 +1889,12 @@ proxies:
     headers:
       HOST: rak1.986986.shop
     path: /
-- cipher: aes-256-cfb
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-52.35.51.80:443
-  obfs: plain
-  password: awsps0501
-  port: 443
-  protocol: origin
-  server: 52.35.51.80
-  type: ssr
+- cipher: aes-256-gcm
+  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-192.243.112.43:43842
+  password: Oo1IXaMpJ5jPmAxL0Oo
+  port: 43842
+  server: 192.243.112.43
+  type: ss
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
