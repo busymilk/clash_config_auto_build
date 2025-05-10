@@ -1,0 +1,217 @@
+
+mixed-port: 7890
+ipv6: true
+allow-lan: true
+unified-delay: true
+tcp-concurrent: true
+external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+
+#geoip + Country.mmdb → 按国家/地区分流；geosite → 按域名分类分流；ASN + 自定义 .mmdb → 按网络运营商分流；.mmdb 文件 → 存储 IP 元数据的二进制数据库格式
+#geoip 地理位置 IP 数据库
+geodata-mode: true
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat"
+  mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb"
+  geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
+  #geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  #geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  #asn: "https://mirror.ghproxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
+
+#好像用于系统代理时使用的
+#  - always, 开启，强制匹配所有进程
+#  - strict, 默认，由 clash 判断是否开启
+#  - off, 不匹配进程，推荐在路由器上使用此模式
+find-process-mode: strict
+
+# 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint
+# 可选： "chrome","firefox","safari","ios","random","none" options.
+global-client-fingerprint: firefox
+
+# store-selected 储存 API 对策略组的选择，以供下次启动时使用
+# store-fake-ip储存 fakeip 映射表，域名再次发生连接时，使用原有映射地址
+
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+#Sniffer域名嗅探器，好像是为了解决啥问题的，不懂就不动
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  skip-domain:
+    - "Mijia Cloud"
+    - "+.push.apple.com"
+
+#tun模式的配置，也就是虚拟网卡
+tun:
+  enable: false
+  stack: gvisor
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+
+#fake-ip-filter用于指定哪些域名需要绕过 Fake-IP 机制，直接返回真实 IP 地址
+#nameserver 国内直连的dns，fallback 通过代理的dns
+#fake-ip-filter rule-set 仅支持 behavior 为 domain/classical
+dns:
+  enable: true
+  ipv6: true
+  use-system-hosts: false
+  enhanced-mode: fake-ip
+  #这个是针对域名的，所以不能用geoip
+  fake-ip-filter:
+    - "+.tvkuai.com"
+    - geosite:private
+    - geosite:cn
+  fake-ip-filter-mode: blacklist
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - https://[2001:4860:4860::64]/dns-query
+    - tls://[2001:4860:4860::64]
+    - tls://[2001:4860:4860::8888]
+    - tls://[2001:4860:4860::8844]
+    - tls://8.8.4.4
+    - tls://[2606:4700:4700::1111]
+    - tls://[2606:4700:4700::1001]
+    - https://[2620:fe::9]/dns-query
+    - tls://[2620:fe::9]
+    - tls://[2620:fe::fe]
+    - tls://[2620:fe::fe:9]
+    - tls://149.112.112.9
+    - tls://149.112.112.112
+    - tls://9.9.9.9
+    - tls://94.140.14.141
+    - https://[2a10:50c0::2:ff]
+    - tls://[2a10:50c0::2:ff]
+  nameserver:
+    - https://[2001:4860:4860::64]/dns-query
+    - tls://[2001:4860:4860::64]
+    - tls://[2001:4860:4860::8888]
+    - tls://[2001:4860:4860::8844]
+    - tls://8.8.4.4
+    - tls://[2606:4700:4700::1111]
+    - tls://[2606:4700:4700::1001]
+    - https://[2620:fe::9]/dns-query
+    - tls://[2620:fe::9]
+    - tls://[2620:fe::fe]
+    - tls://[2620:fe::fe:9]
+    - tls://149.112.112.9
+    - tls://149.112.112.112
+    - tls://9.9.9.9
+    - tls://94.140.14.141
+    - https://[2a10:50c0::2:ff]
+    - tls://[2a10:50c0::2:ff]
+  fallback:
+    - https://[2001:4860:4860::64]/dns-query
+    - tls://[2001:4860:4860::64]
+    - tls://[2001:4860:4860::8888]
+    - tls://[2001:4860:4860::8844]
+    - tls://8.8.4.4
+    - tls://[2606:4700:4700::1111]
+    - tls://[2606:4700:4700::1001]
+    - https://[2620:fe::9]/dns-query
+    - tls://[2620:fe::9]
+    - tls://[2620:fe::fe]
+    - tls://[2620:fe::fe:9]
+    - tls://149.112.112.9
+    - tls://149.112.112.112
+    - tls://9.9.9.9
+    - tls://94.140.14.141
+    - https://[2a10:50c0::2:ff]
+    - tls://[2a10:50c0::2:ff]
+
+
+proxy-groups:
+  - name: 选择代理
+    type: select
+    proxies:
+      - 美国-手动选择
+      - 美国-自动优选
+      - 美国-负载均衡
+      - DIRECT #直连
+
+  - name: 美国-手动选择
+    type: select
+    include-all-proxies: true
+    filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
+
+  #分隔,下面是地区分组
+
+  - name: 美国-自动优选
+    type: url-test
+    tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
+    filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
+    include-all-proxies: true
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
+
+  #分隔,下面是地区分组
+
+  - name: 美国-负载均衡
+    type: load-balance
+    strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
+    include-all-proxies: true
+    filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
+    url: "http://www.msftncsi.com/ncsi.txt"
+    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
+    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
+    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
+
+
+rule-providers:
+  applications:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
+
+#里面除了DIRECT 和REJECT，其他的都要proxy-groups里的名字，比如：选择代理
+rules:
+  #自己单独添加的几个需要直连
+  - DOMAIN,cdn.jsdelivr.net,DIRECT
+  - DOMAIN,a.ppconverter.eu.org,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN,ghproxy.com,DIRECT
+  #需要直连进程
+  - RULE-SET,applications,DIRECT
+  #去广告
+  - GEOSITE,category-ads-all,REJECT
+  #bing,microsoft设置，里面自动处理了中国域名相关，不用关心
+  - GEOSITE,bing,选择代理
+  - GEOSITE,microsoft,选择代理
+
+  #私有局域网
+  - GEOSITE,private,DIRECT
+  #这个lan不知道能不能起作用，到处都搜不到
+  - GEOIP,lan,DIRECT
+  - GEOIP,private,DIRECT
+
+  #下面这两个兜底
+  - GEOSITE,geolocation-cn,DIRECT
+  - GEOSITE,geolocation-!cn,选择代理
+  #国内ip直连
+  - GEOIP,cn,DIRECT
+  - MATCH,选择代理
