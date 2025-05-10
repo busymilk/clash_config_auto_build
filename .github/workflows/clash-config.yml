@@ -51,11 +51,23 @@ jobs:
         done
     
 
-    - name: Merge proxies
+    - name: Merge proxies all
       env:
         LANG: en_US.UTF-8
         LC_ALL: en_US.UTF-8
       run: python -u scripts/merge_proxies.py
+
+    - name: Merge proxies hk
+      env:
+        LANG: en_US.UTF-8
+        LC_ALL: en_US.UTF-8
+      run: python -u scripts/merge_proxies_hk.py
+
+    - name: Merge proxies us
+      env:
+        LANG: en_US.UTF-8
+        LC_ALL: en_US.UTF-8
+      run: python -u scripts/merge_proxies_us.py
 
     - name: Generate config
       env:
@@ -63,13 +75,25 @@ jobs:
         LC_ALL: en_US.UTF-8
       run: python scripts/generate_config.py
       
-    - name: Upload artifact
+    - name: Upload artifact all
       uses: actions/upload-artifact@v4
       with:
         name: clash-config
         path: config/config.yaml
 
-    - name: Create release
+    - name: Upload artifact us
+      uses: actions/upload-artifact@v4
+      with:
+        name: clash-config_us
+        path: config/config_us.yaml
+
+    - name: Upload artifact hk
+      uses: actions/upload-artifact@v4
+      with:
+        name: clash-config_hk
+        path: config/config_hk.yaml
+
+    - name: Create release all
       uses: softprops/action-gh-release@v1
       with:
         files: config/config.yaml
@@ -78,6 +102,23 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
+    - name: Create release hk
+      uses: softprops/action-gh-release@v1
+      with:
+        files: config/config_hk.yaml
+        tag_name: clash-config_hk
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        
+    - name: Create release us
+      uses: softprops/action-gh-release@v1
+      with:
+        files: config/config_us.yaml
+        tag_name: clash-config_us
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
 #提交更改
     # - name: GitCommit
     #   run: |
