@@ -15,7 +15,7 @@ logging.basicConfig(
 
 # 预编译正则表达式（保留关键词白名单）
 name_pattern = re.compile(
-    r'(美|us|united[\s-]?states|🇺🇸).*'  # 匹配以关键词开头的名称
+    r'(美|us|united[\s-]?states|🇺🇸).*',  # 匹配以关键词开头的名称
     flags=re.IGNORECASE
 )
 
