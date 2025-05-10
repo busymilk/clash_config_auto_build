@@ -136,52 +136,114 @@ jobs:
         # 配置 Git 用户信息
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        
         # 拉取最新代码防止冲突
         git pull origin main
         
-        # 检测文件是否有实际变更
-        if git diff --quiet --exit-code -- config/config.yaml; then
+        #------------------------------------------------------------------------------------------
+        
+        # # 检测文件是否有实际变更
+        # if git diff --quiet --exit-code -- config/config.yaml; then
+        #   echo "No changes to commit"
+        #   exit 0
+        # fi
+
+        # # 提交并推送变更
+        # git add config/config.yaml
+        # git commit -m "chore: Auto-update config file ($(date +'%Y-%m-%d %H:%M'))"
+        
+        
+        # 定义需要检测的三个文件
+        FILES_TO_CHECK=(
+          "config/config.yaml"
+          "config/config_hk.yaml"
+          "config/config_us.yaml"
+        )
+        
+        # 获取变更文件列表（仅包含目标文件）
+        CHANGED_FILES=$(git diff --name-only -- "${FILES_TO_CHECK[@]}")
+        
+        # 如果没有检测到变更
+        if [ -z "$CHANGED_FILES" ]; then
           echo "No changes to commit"
           exit 0
         fi
-
+        
+        # 生成提交信息（自动列出变更文件）
+        COMMIT_FILES=$(echo "$CHANGED_FILES" | tr '\n' ', ' | sed 's/, $//')  # 将换行符转换为逗号分隔
+        COMMIT_MSG="chore: Auto-update files ($(date +'%Y-%m-%d %H:%M')) - Changed: $COMMIT_FILES"
+        
         # 提交并推送变更
-        git add config/config.yaml
-        git commit -m "chore: Auto-update config file ($(date +'%Y-%m-%d %H:%M'))"
+        git add "${FILES_TO_CHECK[@]}"  # 安全操作：git add 会跳过无变更的文件
+        git commit -m "$COMMIT_MSG"
+        #------------------------------------------------------------------------------------------
         
         # 显式使用认证后的仓库URL
         git remote set-url origin $REPO_URL
         git push origin HEAD:main
 
-#通知cdn更缓存
-    - name: Purge jsDelivr Cache with Retry
+    #通知cdn更缓存
+    - name: Purge jsDelivr Cache for Multiple Files
       if: success()
       env:
         MAX_RETRIES: 3
-        RETRY_DELAY: 10
+        RETRY_DELAY: 20
       run: |
-        purge_url="https://purge.jsdelivr.net/gh/${{ github.repository }}@main/config/config.yaml"
-        echo "🔄 Purging: ${purge_url/https:\/\//}"
+        # 定义需要刷新的文件列表
+        FILES=(
+          "config/config.yaml"
+          "config/config_us.yaml"
+          "config/config_hk.yaml"
+        )
     
-        for i in $(seq 1 $MAX_RETRIES); do
-          echo "Attempt $i/$MAX_RETRIES"
-          http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
-          
-          case $http_code in
-            200)
-              echo "✅ Purge successful"
-              exit 0
-              ;;
-            429)
-              echo "⚠️  Rate limited, retrying in $RETRY_DELAY seconds..."
-              sleep $RETRY_DELAY
-              ;;
-            *)
-              echo "❌ Unexpected code: $http_code"
-              if [ $i -eq $MAX_RETRIES ]; then
-                exit 1
-              fi
-              ;;
-          esac
+        # 初始化全局错误标志
+        GLOBAL_ERROR=0
+    
+        # 循环处理每个文件
+        for file in "${FILES[@]}"; do
+          purge_url="https://purge.jsdelivr.net/gh/${{ github.repository }}@main/$file"
+          echo "🔄 Purging: ${purge_url/https:\/\//}"
+    
+          # 单文件重试逻辑
+          FILE_ERROR=0
+          for ((i=1; i<=$MAX_RETRIES; i++)); do
+            echo "  Attempt $i/$MAX_RETRIES"
+            http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
+            
+            case $http_code in
+              200)
+                echo "  ✅ Success"
+                FILE_ERROR=0
+                break  # 成功则跳出重试循环
+                ;;
+              429)
+                echo "  ⚠️  Rate limited, retrying in $RETRY_DELAY seconds..."
+                sleep $RETRY_DELAY
+                FILE_ERROR=1
+                ;;
+              *)
+                echo "  ❌ Unexpected HTTP code: $http_code"
+                FILE_ERROR=1
+                if [ $i -eq $MAX_RETRIES ]; then
+                  echo "  🛑 Max retries reached for this file"
+                fi
+                ;;
+            esac
+          done
+    
+          # 更新全局错误状态
+          if [ $FILE_ERROR -ne 0 ]; then
+            echo "❌ Failed to purge: $file"
+            GLOBAL_ERROR=1
+          else
+            echo "✔️ Successfully purged: $file"
+          fi
+          echo "----------------------------------------"
         done
+    
+        # 最终根据全局错误状态退出
+        if [ $GLOBAL_ERROR -ne 0 ]; then
+          echo "⛔ One or more files failed to purge"
+          exit 1
+        else
+          echo "🎉 All files purged successfully"
+        fi
