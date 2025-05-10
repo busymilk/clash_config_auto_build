@@ -97,6 +97,12 @@ proxies:
   uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
   ws-opts:
     path: /register
+- cipher: aes-256-gcm
+  name: SS-美国-NF解锁香港自制剧-TikTok-YouTube-154.3.8.151:30067
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: Hong Kong_Central_ss_1095
   password: 91a41f4e02dc
@@ -141,39 +147,44 @@ proxies:
   server: 103.149.182.191
   tfo: false
   type: ss
-- name: 2|🇭🇰1 |  2.6MB/s|6%
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 8443
-  server: hk04.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
-- cipher: aes-256-gcm
-  name: 2|🇭🇰2 |  5.5MB/s|16%|Netflix|Dis...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: '11501'
-  server: cdn-p1-hk.weibo-dns.com
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 733b9054-256c-4533-b2bc-f73005b6b525
+  port: 36141
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港 01 | 1x HK
-  password: be09e79a-1538-4661-939b-41b36022a58f
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: 733b9054-256c-4533-b2bc-f73005b6b525
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 733b9054-256c-4533-b2bc-f73005b6b525
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: 352d5b5c-2df6-4341-b6ea-dc8ea575c643
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港 02 | 1x HK
-  password: be09e79a-1538-4661-939b-41b36022a58f
+  name: 1|🇭🇰香港 02 | 1x HK
+  password: 352d5b5c-2df6-4341-b6ea-dc8ea575c643
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港家宽 03 | 1x HK
-  password: be09e79a-1538-4661-939b-41b36022a58f
+  name: 1|🇭🇰香港家宽 03 | 1x HK
+  password: 352d5b5c-2df6-4341-b6ea-dc8ea575c643
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
