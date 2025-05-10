@@ -64,5 +64,5 @@ for file in glob.glob("external_proxies/*.*"):
         logging.error(f"处理文件 {file} 时发生错误", exc_info=True)
 
 # 保存合并后的代理列表
-with open("merged-proxies.yaml", 'w', encoding="utf-8") as f:
+with open("merged-proxies_hk.yaml", 'w', encoding="utf-8") as f:
     yaml.dump({'proxies': proxies}, f, default_flow_style=False, allow_unicode=True)
