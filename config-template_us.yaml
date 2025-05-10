@@ -148,7 +148,6 @@ proxy-groups:
   - name: 美国-手动选择
     type: select
     include-all-proxies: true
-    filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
     url: "http://www.msftncsi.com/ncsi.txt"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
@@ -159,7 +158,6 @@ proxy-groups:
   - name: 美国-自动优选
     type: url-test
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
     include-all-proxies: true
     url: "http://www.msftncsi.com/ncsi.txt"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
@@ -172,7 +170,6 @@ proxy-groups:
     type: load-balance
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
     include-all-proxies: true
-    filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
     url: "http://www.msftncsi.com/ncsi.txt"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
