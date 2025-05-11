@@ -1658,14 +1658,6 @@ proxies:
   port: 1866
   server: 64.176.184.129
   type: ss
-- cipher: aes-256-cfb
-  name: SSR-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -1848,12 +1840,22 @@ proxies:
     headers:
       HOST: tabnak.andishehnegariran.ir
     path: /🆔@M3HDIO1
-- cipher: chacha20-ietf-poly1305
-  name: SS-荷兰-NF解锁荷兰地区非自制剧-ChatGPT-YouTube-147.45.114.160:11315
-  password: p1fRmdXwTHS6K2uSOmFSnf
-  port: 11315
-  server: 147.45.114.160
-  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-129.146.31.240:25314
+  network: ws
+  port: 25314
+  server: 129.146.31.240
+  servername: us-n1.speedyyun.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 0edf27cd-2f1f-4dab-95e7-b42495fd7e55
+  ws-opts:
+    headers:
+      HOST: us-n1.speedyyun.com
+    path: /victorias
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
@@ -100836,501 +100838,18 @@ proxies:
       Host: d0c73a75-sv2sg0-svk8tn-l1v4.hk3.p5pv.com
     path: /
 - grpc-opts:
-    grpc-service-name: vless-grpc
+    grpc-service-name: b
   name: 电报群：https://t.me/vvkj11
   network: grpc
-  port: 8880
-  server: 5.180.52.15
-  servername: vless-grpc
+  port: 33000
+  server: 77.221.143.183
+  servername: b
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 21dfbe81-72d4-5ad5-8248-1e8d2cf13f8c
+  uuid: 94c3155b-5252-4d66-bead-06b2e489f658
 - name: 每天更新，请加电报群防止失联
-  network: grpc
-  port: 8880
-  server: 45.82.251.109
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 日期：05-11
-  network: grpc
-  port: 8880
-  server: 45.82.251.128
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 免费VPN：https://tt.vg/gwaAy
-  network: grpc
-  port: 8880
-  server: 45.82.251.162
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_1
-  network: grpc
-  port: 45490
-  server: 15.204.76.221
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca969221-5992-4ee2-bf64-bc94acccddf6
-- name: 🇳🇱_荷兰_1
-  network: grpc
-  port: 8880
-  server: 45.140.167.168
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇺🇦_乌克兰_1
-  network: grpc
-  port: 8880
-  server: 95.164.45.90
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇺🇸_美国_2
-  network: grpc
-  port: 8880
-  server: 45.82.251.143
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- grpc-opts:
-    grpc-service-name: vless-grpc
-  name: 🇺🇸_美国_3
-  network: grpc
-  port: 8880
-  server: 5.253.30.9
-  servername: vless-grpc
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: dfcf379e-2d92-514e-84ca-77cdb1bd73c6
-- name: 🇺🇦_乌克兰_2
-  network: grpc
-  port: 8880
-  server: 95.164.45.85
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇺🇸_美国_4
-  network: grpc
-  port: 8880
-  server: 45.82.251.185
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_5
-  network: grpc
-  port: 8880
-  server: 45.82.251.161
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_6
-  network: grpc
-  port: 8880
-  server: 45.82.251.166
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_7
-  network: grpc
-  port: 8880
-  server: 45.82.251.133
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_8
-  network: grpc
-  port: 8880
-  server: 45.82.251.112
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_9
-  network: grpc
-  port: 8880
-  server: 45.82.251.183
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_10
-  network: grpc
-  port: 8880
-  server: 45.82.251.165
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_11
-  network: grpc
-  port: 26528
-  server: o.soskom.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e1f303f-be18-4892-b697-a8cf546f371d
-- name: 🇺🇸_美国_12
-  network: grpc
-  port: 8880
-  server: 45.82.251.170
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇦_乌克兰_3
-  network: grpc
-  port: 8880
-  server: 95.164.45.70
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇩🇪_德国_1
-  network: grpc
-  port: 2087
-  server: 94.130.107.86
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f38e1473-0bb8-4190-8d49-ba1aaaf4e264
-- name: 🇺🇸_美国_13
-  network: grpc
-  port: 8880
-  server: 45.82.251.151
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇳🇱_荷兰_2
-  network: grpc
-  port: 8880
-  server: 45.140.167.253
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇺🇸_美国_14
-  network: grpc
-  port: 8880
-  server: 45.82.251.139
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇩🇪_德国_2
-  network: grpc
-  port: 2087
-  server: 157.180.28.52
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f38e1473-0bb8-4190-8d49-ba1aaaf4e264
-- name: 🇺🇦_乌克兰_4
-  network: grpc
-  port: 8880
-  server: 95.164.45.95
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇱🇹_立陶宛_1
-  network: grpc
-  port: 8880
-  server: 84.32.25.206
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇺🇸_美国_15
-  network: grpc
-  port: 8880
-  server: 45.82.251.146
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_16
-  network: grpc
-  port: 8880
-  server: 45.82.251.144
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- grpc-opts:
-    grpc-service-name: Tok
-  name: 🇩🇪_德国_3
-  network: grpc
-  port: 20000
-  server: 157.180.93.74
-  servername: Tok
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6543593a-f55e-422c-8ffd-b6d930b1808c
-- name: 🇺🇦_乌克兰_5
-  network: grpc
-  port: 8880
-  server: 95.164.45.78
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇳🇱_荷兰_3
-  network: grpc
-  port: 8880
-  server: 45.159.248.125
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇱🇹_立陶宛_2
-  network: grpc
-  port: 8880
-  server: 84.32.25.200
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇺🇸_美国_17
-  network: grpc
-  port: 8880
-  server: mmdwxnz.s8573.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇩🇪_德国_4
-  network: grpc
-  port: 2087
-  server: 94.130.187.47
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 93cf17d3-2ffd-486b-9ea8-31ead0086137
-- name: 🇺🇸_美国_18
-  network: grpc
-  port: 8880
-  server: 45.82.251.167
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_19
-  network: grpc
-  port: 443
-  server: 172.67.68.36
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 🇺🇸_美国_20
-  network: grpc
-  port: 8880
-  server: 45.82.251.176
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_21
-  network: grpc
-  port: 8880
-  server: 45.82.251.105
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_22
-  network: grpc
-  port: 2053
-  server: 186.190.211.121
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f5ff5249-d54a-45ea-82ae-88344a5a4164
-- name: 🇺🇸_美国_23
-  network: grpc
-  port: 8880
-  server: 45.82.251.141
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇩🇪_德国_5
-  network: grpc
-  port: 2087
-  server: 94.130.78.148
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f38e1473-0bb8-4190-8d49-ba1aaaf4e264
-- name: 🇱🇹_立陶宛_3
-  network: grpc
-  port: 8880
-  server: 84.32.25.237
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇩🇪_德国_6
-  network: grpc
-  port: 2087
-  server: 157.180.16.69
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f38e1473-0bb8-4190-8d49-ba1aaaf4e264
-- name: 🇺🇸_美国_24
-  network: grpc
-  port: 8880
-  server: 45.82.251.163
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇺🇸_美国_25
-  network: grpc
-  port: 8880
-  server: 45.82.251.114
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇨🇳_中国_1
-  network: grpc
-  port: 443
-  server: 27.50.49.198
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 🇫🇮_芬兰
-  network: grpc
-  port: 2087
-  server: 95.217.22.47
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f38e1473-0bb8-4190-8d49-ba1aaaf4e264
-- name: 🇺🇸_美国_26
-  network: grpc
-  port: 8880
-  server: 45.82.251.149
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-- name: 🇫🇷_法国_1
-  network: grpc
-  port: 443
-  server: 141.11.203.139
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 🇩🇪_德国_7
-  network: grpc
-  port: 8880
-  server: 78.47.141.72
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇺🇦_乌克兰_6
-  network: grpc
-  port: 8880
-  server: 94.131.9.172
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇺🇸_美国_27
-  network: grpc
-  port: 443
-  server: 172.67.68.36
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 🇱🇹_立陶宛_4
-  network: grpc
-  port: 8880
-  server: 88.216.187.144
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-- name: 🇺🇸_美国_28
   network: grpc
   port: 443
   server: 170.114.46.190
@@ -101339,178 +100858,85 @@ proxies:
   type: vless
   udp: true
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-- name: 🇨🇳_中国_2
-  network: tcp
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 15606cc9-sw3ts0-t1bnjq-1krtb.cu.plebai.net
+- name: 日期：05-11
+  network: grpc
+  port: 443
+  server: 172.67.68.36
   skip-cert-verify: true
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+- alterId: '0'
+  cipher: auto
+  name: 免费VPN：https://tt.vg/gwaAy
+  network: httpupgrade
+  port: '80'
+  server: fr2a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_1
+  network: httpupgrade
+  port: '80'
+  server: ru2a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_2
+  network: httpupgrade
+  port: '80'
+  server: us2a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_3
+  network: httpupgrade
+  port: '80'
+  server: ru1a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_4
+  network: httpupgrade
+  port: '80'
+  server: fr1a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- flow: xtls-rprx-vision
+  name: 🇨🇳_中国_1
+  network: tcp
+  port: 20550
+  server: hkt-ty-line-1.sudatech.store
+  servername: www.paypal.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
+- alterId: '64'
+  cipher: auto
+  name: 🇨🇳_中国_2
+  network: tcp
+  port: '56152'
+  server: 120.232.153.40
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '64'
   cipher: auto
   name: 🇨🇳_中国_3
   network: tcp
-  port: '46759'
-  server: 120.198.71.216
+  port: '46121'
+  server: 183.236.51.38
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
   name: 🇨🇳_中国_4
-  network: tcp
-  port: '14100'
-  server: 144.255.36.254
-  type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- name: 🇨🇳_中国_5
-  network: tcp
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: fc32160e-sw5og0-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_6
-  network: tcp
-  port: '14100'
-  server: dxv4.pai50288.uk
-  type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_7
-  network: tcp
-  port: '46597'
-  server: 120.232.153.41
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_8
-  network: tcp
-  port: '37805'
-  server: 120.232.153.63
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_9
-  network: tcp
-  port: '41024'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '64'
-  cipher: auto
-  name: 🇨🇳_中国_10
-  network: tcp
-  port: '32980'
-  server: 120.198.71.214
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_11
-  network: tcp
-  port: '41291'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '64'
-  cipher: auto
-  name: 🇨🇳_中国_12
-  network: tcp
-  port: '35921'
-  server: 120.198.71.216
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_13
-  network: tcp
-  port: '51095'
-  server: 120.198.71.219
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '64'
-  cipher: auto
-  name: 🇨🇳_中国_14
-  network: tcp
-  port: '36609'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸_美国_29
-  network: tcp
-  password: q8eDApT3ExAIX6SDK7pyexT9COyRXwuIclY0ZDaNF3p8ZAYCeSDA52BB2Z7w3zFlSa94z
-  port: 18332
-  server: 154.17.21.41
-  skip-cert-verify: true
-  sni: bedsheet.homeofbrave.net
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_15
-  network: tcp
-  port: '59082'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_16
-  network: tcp
-  port: '42375'
-  server: 120.198.71.214
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '64'
-  cipher: auto
-  name: 🇨🇳_中国_17
-  network: tcp
-  port: '55002'
-  server: 183.237.84.53
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_18
-  network: tcp
-  port: '30052'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '64'
-  cipher: auto
-  name: 🇨🇳_中国_19
-  network: tcp
-  port: '44015'
-  server: 120.198.71.219
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_20
-  network: tcp
-  port: '47883'
-  server: 120.198.44.126
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_21
-  network: tcp
-  port: '54652'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_22
   network: tcp
   port: '41766'
   server: 183.238.90.8
@@ -101518,416 +100944,15 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_23
+  name: 🇨🇳_中国_5
   network: tcp
-  port: '39076'
-  server: 183.238.90.8
+  port: '14100'
+  server: dxv4.pai50288.uk
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_24
-  network: tcp
-  port: '32919'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- flow: xtls-rprx-vision
-  name: 🏳️_未知_1
-  network: tcp
-  port: 443
-  server: 103.175.79.10
-  servername: speed.cloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
-- name: 🇸🇦_沙特阿拉伯
-  network: tcp
-  port: 30722
-  server: 77.110.116.150
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 534948ca-cf21-4447-91b7-3396c751cdaf
-- name: 🇩🇪_德国_8
-  network: tcp
-  port: 13065
-  server: 5.75.196.237
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: bafee052-dd5e-45af-a627-c3734c4e359e
-- name: 🇺🇸_美国_30
-  network: tcp
-  password: 94614d84-9986-11ee-be7f-f23c9164ca5d
-  port: 443
-  server: 795f4c1e-sw3ts0-t7fl9b-1q16i.la3.tcpbbr.net
-  skip-cert-verify: true
-  sni: 795f4c1e-sw3ts0-t7fl9b-1q16i.la3.tcpbbr.net
-  type: trojan
-  udp: true
-- name: 🏳️_未知_2
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: bring-glove-shine.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 🏳️_未知_3
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: guy-trace-lyric.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_31
-  network: tcp
-  port: '53710'
-  server: 47.79.88.113
-  type: vmess
-  uuid: 1db838d0-ecd2-4b73-a7f8-5af6b401d833
-- name: 🇺🇸_美国_32
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: 94.131.20.3
-  skip-cert-verify: true
-  sni: nacho-rerun-crepe.stark-industries.solutions
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_33
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: 94.131.20.3
-  skip-cert-verify: true
-  sni: chop-wrist-bud.stark-industries.solutions
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_34
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: 94.131.20.3
-  skip-cert-verify: true
-  sni: cache-giver-wife.stark-industries.solutions
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_35
-  network: tcp
-  port: '50795'
-  server: 66.225.228.18
-  type: vmess
-  uuid: afd91892-aa45-4374-eee2-8692cc92d8bf
-- name: 🇺🇸_美国_36
-  network: tcp
-  port: 443
-  server: 146.190.83.47
-  servername: partner.steampowered.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fb2f850a-f02d-4d46-854f-43a19d483a81
-- name: 🇺🇸_美国_37
-  network: tcp
-  password: cad5a49f-14e5-4a05-aae9-c5df8fad394f
-  port: 443
-  server: 172.67.157.220
-  skip-cert-verify: true
-  sni: c1sWER.777159.XYz
-  type: trojan
-  udp: true
-- name: 🇷🇴_罗马尼亚
-  network: tcp
-  password: '74260667533381300'
-  port: 443
-  server: 89.39.70.158
-  skip-cert-verify: true
-  sni: loving-calf.shiner427.skin
-  type: trojan
-  udp: true
-- name: 🇯🇴_约旦
-  network: tcp
-  password: '74260667533381300'
-  port: 443
-  server: patient-emu.shiner427.skin
-  skip-cert-verify: true
-  sni: patient-emu.shiner427.skin
-  type: trojan
-  udp: true
-- flow: xtls-rprx-vision
-  name: 🏳️_未知_4
-  network: tcp
-  port: 443
-  server: 103.175.79.10
-  servername: speed.cloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
-- name: 🇷🇺_俄罗斯_1
-  network: tcp
-  password: vpn
-  port: 2025
-  server: 109.120.132.80
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_38
-  network: tcp
-  port: '53503'
-  server: 66.94.114.122
-  type: vmess
-  uuid: c9b9dea3-5868-477f-e54d-2c8f124f647d
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_39
-  network: tcp
-  port: '22640'
-  server: 38.255.55.21
-  type: vmess
-  uuid: 71995581-a84b-4795-aba2-ed9ee2124cf5
-- alterId: '0'
-  cipher: auto
-  name: 🇩🇪_德国_9
-  network: tcp
-  port: '10534'
-  server: 94.136.185.230
-  type: vmess
-  uuid: b01c7ef9-33ec-41f6-bfbf-77ddc4d21649
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_25
-  network: tcp
-  port: '46016'
-  server: 117.18.124.112
-  type: vmess
-  uuid: 5d303602-d4f8-4cc2-bb5e-ef32ed170d66
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_40
-  network: tcp
-  port: '23770'
-  server: 38.147.107.214
-  type: vmess
-  uuid: 6c5650cd-aaac-4110-fb35-b65e7dd42b42
-- flow: xtls-rprx-vision
-  name: 🏳️_未知_5
-  network: tcp
-  port: 443
-  server: 103.175.79.10
-  servername: speed.cloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
-- flow: xtls-rprx-vision
-  name: 🏳️_未知_6
-  network: tcp
-  port: 443
-  server: 103.175.79.10
-  servername: speed.cloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
-- name: 🇫🇷_法国_2
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 15.237.241.92
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 🇩🇪_德国_10
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.127.213.136
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_41
-  network: tcp
-  port: '47781'
-  server: 172.232.11.243
-  type: vmess
-  uuid: 0041dada-22bc-4c80-f655-d32c9faecbc8
-- name: 🇬🇧_英国_1
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.178.114.243
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- flow: xtls-rprx-vision
-  name: 🏳️_未知_7
-  network: tcp
-  port: 443
-  server: 103.175.79.10
-  servername: speed.cloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
-- flow: xtls-rprx-vision
-  name: 🏳️_未知_8
-  network: tcp
-  port: 443
-  server: 103.175.79.10
-  servername: speed.cloudflare.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
-- name: 🇺🇸_美国_42
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.60.151.163
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_43
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 56.228.53.24
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 🇮🇪_爱尔兰_1
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 99.80.179.36
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 🇮🇪_爱尔兰_2
-  network: tcp
-  password: telegram-id-vlessconfig
-  port: 22222
-  server: 54.247.127.29
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- flow: xtls-rprx-vision
-  name: 🇬🇧_英国_2
-  network: tcp
-  port: 8443
-  server: 140.238.89.224
-  servername: www.yahoo.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: d2a11ee4-7ede-4e7f-a001-a23e9bb44ff2
-- name: 🇺🇸_美国_44
-  network: tcp
-  port: 1001
-  server: 45.82.251.68
-  servername: telewebion.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: c7c922da-ab54-433c-8046-1f9bf9d95c23
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_26
-  network: tcp
-  port: '52082'
-  server: 120.198.71.216
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_27
-  network: tcp
-  port: '54652'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_28
-  network: tcp
-  port: '55002'
-  server: 183.237.84.53
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_29
-  network: tcp
-  port: '42375'
-  server: 120.198.71.214
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_30
-  network: tcp
-  port: '36609'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_31
-  network: tcp
-  port: '17232'
-  server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
-  type: vmess
-  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_32
-  network: tcp
-  port: '32980'
-  server: 120.198.71.214
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_33
-  network: tcp
-  port: '46759'
-  server: 120.198.71.216
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_34
+  name: 🇨🇳_中国_6
   network: tcp
   port: '41024'
   server: 183.236.51.38
@@ -101935,105 +100960,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_35
-  network: tcp
-  port: '30052'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_36
-  network: tcp
-  port: '14100'
-  server: dxv4.pai50288.uk
-  type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- name: 🇨🇳_中国_37
-  network: tcp
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: c6b50ea5-sw5og0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: true
-  sni: c6b50ea5-sw5og0-t1bnjq-1krtb.cu.plebai.net
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_38
-  network: tcp
-  port: '44491'
-  server: 120.232.153.41
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_39
-  network: tcp
-  port: '32919'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_40
-  network: tcp
-  port: '17234'
-  server: 2a668e37-surog0-sxm4ot-zn8y.cm5.p5pv.com
-  type: vmess
-  uuid: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_41
-  network: tcp
-  port: '14100'
-  server: 144.255.36.254
-  type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- name: 🇨🇳_中国_42
-  network: tcp
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: fc32160e-sw5og0-swy6li-tni2.cu.plebai.net
-  skip-cert-verify: true
-  sni: fc32160e-sw5og0-swy6li-tni2.cu.plebai.net
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_43
-  network: tcp
-  port: '59082'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_44
-  network: tcp
-  port: '56152'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_45
-  network: tcp
-  port: '35921'
-  server: 120.198.71.216
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_46
-  network: tcp
-  port: '41291'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_47
+  name: 🇨🇳_中国_7
   network: tcp
   port: '44015'
   server: 120.198.71.219
@@ -102041,55 +100968,47 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_48
-  network: tcp
-  port: '40392'
-  server: 120.232.153.123
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇳_中国_49
-  network: tcp
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 15606cc9-sw3ts0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: true
-  sni: 15606cc9-sw3ts0-t1bnjq-1krtb.cu.plebai.net
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_50
-  network: tcp
-  port: '46597'
-  server: 120.232.153.41
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_51
-  network: tcp
-  port: '37805'
-  server: 120.232.153.63
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_52
+  name: 🇨🇳_中国_8
   network: tcp
   port: '47883'
   server: 120.198.44.126
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸_美国_45
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_9
   network: tcp
-  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  port: '52082'
+  server: 120.198.71.216
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸_美国_5
+  network: tcp
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
   port: 443
-  server: 104.21.26.17
+  server: 104.21.23.162
   skip-cert-verify: true
-  sni: m9rrrfgh.459.pp.ua
+  sni: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
   type: trojan
   udp: true
-- name: 🇨🇳_中国_53
+- name: 🇺🇸_美国_6
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.74.18.33
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_10
+  network: tcp
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: c6b50ea5-sw5og0-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_11
   network: tcp
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
@@ -102097,25 +101016,7 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 🇺🇸_美国_46
-  network: tcp
-  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
-  port: 443
-  server: 104.21.26.17
-  skip-cert-verify: true
-  sni: m9rrrfgh.459.pp.ua
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_47
-  network: tcp
-  password: 1549e70f-dc57-45e3-ac7c-515f0161db72
-  port: 443
-  server: 172.67.155.140
-  skip-cert-verify: true
-  sni: 6667.HUAnGSHanG.dpdNs.orG
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_48
+- name: 🇺🇸_美国_7
   network: tcp
   password: aTArbZ2F0E
   port: 443
@@ -102124,25 +101025,7 @@ proxies:
   sni: uSa-vp-27.bLAzECLOUD.SITE
   type: trojan
   udp: true
-- name: 🇺🇸_美国_49
-  network: tcp
-  password: a926af96-2cfe-4169-8107-6c5f0d74a938
-  port: 443
-  server: 104.21.112.1
-  skip-cert-verify: true
-  sni: zsde.7777128.xyz
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_50
-  network: tcp
-  password: ca48571a-403f-44b9-b2a6-e17c36d7cacc
-  port: 443
-  server: 104.21.64.1
-  skip-cert-verify: true
-  sni: 10r.iran1912.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_54
+- name: 🇨🇳_中国_12
   network: tcp
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
@@ -102150,1988 +101033,135 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 🇨🇳_中国_55
+- flow: xtls-rprx-vision
+  name: 🇲🇩_摩尔多瓦_1
   network: tcp
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 15606cc9-sw3ts0-t1bnjq-1krtb.cu.plebai.net
+  port: 40000
+  server: hkgyx.filmtoday.stream
+  servername: player.live-video.net
   skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+- flow: xtls-rprx-vision
+  name: 🇲🇩_摩尔多瓦_2
+  network: tcp
+  port: 40001
+  server: hkgyxx.filmtoday.stream
+  servername: player.live-video.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+- flow: xtls-rprx-vision
+  name: 🇨🇳_中国_13
+  network: tcp
+  port: 40002
+  server: hkgbaba.filmtoday.stream
+  servername: player.live-video.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+- flow: xtls-rprx-vision
+  name: 🇲🇩_摩尔多瓦_3
+  network: tcp
+  port: 40003
+  server: sgpyx.filmtoday.stream
+  servername: player.live-video.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+- flow: xtls-rprx-vision
+  name: 🇸🇦_沙特阿拉伯
+  network: tcp
+  port: 40005
+  server: tokyo.filmtoday.stream
+  servername: player.live-video.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+- flow: xtls-rprx-vision
+  name: 🇯🇵_日本_1
+  network: tcp
+  port: 40008
+  server: jpnbaba.filmtoday.stream
+  servername: player.live-video.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+- flow: xtls-rprx-vision
+  name: 🇲🇩_摩尔多瓦_4
+  network: tcp
+  port: 40006
+  server: jpnyx.filmtoday.stream
+  servername: player.live-video.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+- flow: xtls-rprx-vision
+  name: 🏳️_未知
+  network: tcp
+  port: 40007
+  server: usagg.filmtoday.stream
+  servername: player.live-video.net
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+- name: 🇨🇳_中国_14
+  network: tcp
+  password: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+  port: 43020
+  server: hkghkt.filmtoday.stream
+  skip-cert-verify: true
+  sni: www.amazon.com
   type: trojan
   udp: true
-- alterId: '2'
-  cipher: auto
-  name: 🇨🇳_中国_56
-  network: ws
-  port: '22643'
-  server: tk.hzlt.tkddns.xyz
-  tls: true
-  type: vmess
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      host: zxjp-c.tkong.cc
-    path: /
-- alterId: '2'
-  cipher: auto
-  name: 🇨🇳_中国_57
-  network: ws
-  port: '30812'
-  server: v12.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- name: 🇨🇳_中国_58
-  network: ws
-  port: 443
-  server: 103.44.255.81
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_51
-  network: ws
-  port: 443
-  server: 160.79.104.134
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_52
-  network: ws
-  port: 443
-  server: 160.79.104.182
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_53
-  network: ws
-  port: 443
-  server: time.is
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_54
-  network: ws
-  port: 443
-  server: 160.79.105.233
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_55
-  network: ws
-  port: 443
-  server: 135.84.76.115
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_4
-  network: ws
-  port: 443
-  server: 185.133.35.201
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_56
-  network: ws
-  port: 443
-  server: lynn.ns.cloudflare.com
-  servername: edccj.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccj.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇳🇱_荷兰_5
-  network: ws
-  port: 443
-  server: 185.133.35.181
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_57
-  network: ws
-  port: 443
-  server: 160.79.105.119
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_1
-  network: ws
-  port: 443
-  server: 160.123.255.77
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_58
-  network: ws
-  port: 443
-  server: 160.79.104.108
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_59
-  network: ws
-  port: 443
-  server: 192.0.54.46
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_60
-  network: ws
-  port: 443
-  server: 158.224.83.166
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇦_乌克兰_7
-  network: ws
-  port: 443
-  server: 45.67.215.114
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_61
-  network: ws
-  port: 443
-  server: 130.250.137.163
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_2
-  network: ws
-  port: 443
-  server: 160.123.255.211
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_62
-  network: ws
-  port: 443
-  server: 160.79.105.196
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_63
-  network: ws
-  port: 443
-  server: 63.141.128.67
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_64
-  network: ws
-  port: 443
-  server: 160.79.105.106
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_65
-  network: ws
-  port: 443
-  server: 160.79.104.51
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇳_中国_59
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      host: 0229.patterdeng.pp.ua
-    path: /
-- name: 🇺🇦_乌克兰_8
-  network: ws
-  port: 443
-  server: 45.67.215.122
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_66
-  network: ws
-  port: 443
-  server: 198.62.62.4
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_67
-  network: ws
-  port: 443
-  server: 160.79.105.89
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_3
-  network: ws
-  port: 443
-  server: 160.123.255.76
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_68
-  network: ws
-  port: 443
-  server: 160.79.105.207
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_69
-  network: ws
-  port: 443
-  server: 160.79.104.191
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_70
-  network: ws
-  port: 443
-  server: 63.141.128.92
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_71
-  network: ws
-  port: 443
-  server: 63.141.128.34
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇯🇵_日本_1
-  network: ws
-  port: 443
-  server: 54.238.156.23
-  servername: edccj.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccj.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_72
-  network: ws
-  port: 443
-  server: 138.2.107.107
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_73
-  network: ws
-  port: 443
-  server: 192.0.63.116
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_4
-  network: ws
-  port: 443
-  server: 160.123.255.40
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_74
-  network: ws
-  port: 443
-  server: ignacio.ns.cloudflare.com
-  servername: edccj.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccj.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_75
-  network: ws
-  port: 443
-  server: 192.0.54.146
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_5
-  network: ws
-  port: 443
-  server: 160.123.255.141
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇦_加拿大
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_76
-  network: ws
-  port: 443
-  server: 129.213.136.180
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇩🇪_德国_11
-  network: ws
-  port: 443
-  server: 185.16.110.70
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      host: 0229.patterdeng.pp.ua
-    path: /?ed=2560security=tls
-- name: 🇺🇸_美国_77
-  network: ws
-  port: 443
-  server: 162.159.152.205
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      host: 0229.patterdeng.pp.ua
-    path: /proxyip=proxyip.oracle.cmliussss.netsecurity=tls
-- name: 🇦🇹_奥地利
-  network: ws
-  port: 443
-  server: 212.183.88.51
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      host: 0229.patterdeng.pp.ua
-    path: /?ed=2560security=tls
-- name: 🇺🇸_美国_78
-  network: ws
-  port: 443
-  server: 160.79.105.121
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_79
-  network: ws
-  port: 443
-  server: damien.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_80
-  network: ws
-  port: '2083'
-  server: cloudgetservice.mcloudservice.site
-  tls: true
-  type: vmess
-  uuid: 698d9a5b-59dc-4ea6-b404-cd9e967fc54c
-  ws-opts:
-    headers:
-      host: CanaDa-138.blAzecAnAdA.SITe
-    path: /linkvkws
-- name: 🇺🇸_美国_81
-  network: ws
-  port: 443
-  server: 198.62.62.156
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_82
-  network: ws
-  port: 443
-  server: 192.0.63.89
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_6
-  network: ws
-  port: 443
-  server: 160.123.255.151
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_83
-  network: ws
-  port: 443
-  server: 160.79.105.134
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_84
-  network: ws
-  port: 443
-  server: 192.0.63.200
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_7
-  network: ws
-  port: 443
-  server: 160.123.255.173
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_85
-  network: ws
-  port: 443
-  server: 104.16.95.143
-  servername: bitget1.asdasd.click
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      host: bitget1.asdasd.click
-    path: /?ed=2560security=tls
-- name: 🇺🇸_美国_86
-  network: ws
-  port: 443
-  server: 160.79.105.146
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_87
-  network: ws
-  port: 443
-  server: benedict.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_1
-  network: ws
-  port: 443
-  server: 149.129.8.215
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_88
-  network: ws
-  port: 443
-  server: 135.84.76.94
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_8
-  network: ws
-  port: 443
-  server: 160.123.255.30
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_89
-  network: ws
-  port: 443
-  server: thaddeus.ns.cloudflare.com
-  servername: edccj.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccj.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_90
-  network: ws
-  port: 443
-  server: 160.79.104.101
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_91
-  network: ws
-  port: 443
-  server: 172.64.78.129
-  servername: qifei.876566.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a42572a4-bb5c-42c6-a250-c4f34454e9ff
-  ws-opts:
-    headers:
-      host: qifei.876566.xyz
-    path: fp=chrome
-- name: 🇺🇸_美国_92
-  network: ws
-  port: 443
-  server: 104.16.211.129
-  servername: taoj.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 740edf7e-2c3c-41c8-bb2a-aa0dbfcc36be
-  ws-opts:
-    headers:
-      host: taoj.eu.org
-    path: /?ed=2560fp=random
-- name: 🇺🇸_美国_93
-  network: ws
-  port: 443
-  server: 160.79.104.113
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      host: 0229.patterdeng.pp.ua
-    path: /security=tls
-- name: 🇺🇸_美国_94
-  network: ws
-  port: 443
-  server: trevor.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_95
-  network: ws
-  port: 443
-  server: otto.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_96
-  network: ws
-  port: 443
-  server: 104.21.69.44
-  servername: cr77.hedieh.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f12977e6-d296-4d94-9aaf-d31770b70f84
-  ws-opts:
-    headers:
-      host: cr77.hedieh.dpdns.org
-    path: /
-- name: 🇺🇸_美国_97
-  network: ws
-  port: 443
-  server: uriah.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_98
-  network: ws
-  port: 443
-  server: 160.79.104.75
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_9
-  network: ws
-  port: 443
-  server: 160.123.255.38
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_99
-  network: ws
-  port: 443
-  server: kyree.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_100
-  network: ws
-  port: 443
-  server: 108.162.195.82
-  servername: edccj.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccj.ambercc.filegear-sg.me
-    path: /?ed=2560fp=random
-- name: 🇺🇸_美国_101
-  network: ws
-  port: 443
-  server: 104.16.156.225
-  servername: autumn.norjson.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f40b19a1-5515-4c93-804c-334873d38449
-  ws-opts:
-    headers:
-      host: autumn.norjson.top
-    path: fp=chrome
-- name: 🇺🇸_美国_102
-  network: ws
-  port: 443
-  server: lewis.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_103
-  network: ws
-  port: 443
-  server: moura.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_104
-  network: ws
-  port: 443
-  server: 192.18.134.22
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_105
-  network: ws
-  port: 443
-  server: www.whatismyip.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_106
-  network: ws
-  port: 443
-  server: 172.64.145.179
-  servername: sol.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44ae2a63-403b-40b2-9102-45eaf462df02
-  ws-opts:
-    headers:
-      host: sol.us.kg
-    path: /?ed=2560security=tls
-- name: 🇺🇸_美国_107
-  network: ws
-  port: 443
-  server: julio.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_108
-  network: ws
-  port: 443
-  server: braden.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_109
-  network: ws
-  port: 443
-  server: icook.tw
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_110
-  network: ws
-  port: 443
-  server: tasteatlas.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇿🇦_南非_10
-  network: ws
-  port: 443
-  server: 160.123.255.247
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_111
-  network: ws
-  port: 443
-  server: www.hugedomains.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_112
-  network: ws
-  port: 443
-  server: ip.sb
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_113
-  network: ws
-  port: 443
-  server: whatismyipaddress.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_114
-  network: ws
-  port: 443
-  server: bowen.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_115
-  network: ws
-  port: 443
-  server: craig.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_116
-  network: ws
-  port: 443
-  server: decker.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_117
-  network: ws
-  port: 443
-  server: steamdb.info
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_118
-  network: ws
-  port: 443
-  server: dnschecker.org
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇭_瑞士
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_119
-  network: ws
-  port: 443
-  server: www.wto.org
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_120
-  network: ws
-  port: 443
-  server: dylan.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_121
-  network: ws
-  port: 443
-  server: wilson.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_122
-  network: ws
-  port: 443
-  server: nikon.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_123
-  network: ws
-  port: 443
-  server: iplocation.io
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_124
-  network: ws
-  port: 443
-  server: toy-people.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_125
-  network: ws
-  port: 443
-  server: 103.21.244.151
-  servername: xw0083.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: be813f12-47ac-4b16-9146-8435ebacae3f
-  ws-opts:
-    headers:
-      host: xw0083.dpdns.org
-    path: /?ed=2560security=tls
-- name: 🇺🇸_美国_126
-  network: ws
-  port: 443
-  server: ashton.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_127
-  network: ws
-  port: 443
-  server: huxley.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_128
-  network: ws
-  port: '443'
-  server: m8uuujiddvb.457.pp.ua
-  tls: true
-  type: vmess
-  uuid: b30a50bc-0f63-422d-bbd6-8c790c0abb4d
-  ws-opts:
-    headers:
-      host: m8uuujiddvb.457.pp.ua
-    path: /OhijtPrXs2pASR866TVMXPAl
-- name: 🇺🇸_美国_129
-  network: ws
-  port: 443
-  server: www.pcmag.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_130
-  network: ws
-  port: 443
-  server: www.udemy.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_131
-  network: ws
-  port: 443
-  server: www.digitalocean.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_132
-  network: ws
-  port: 443
-  server: 103.21.244.181
-  servername: sol.us.kg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44ae2a63-403b-40b2-9102-45eaf462df02
-  ws-opts:
-    headers:
-      host: sol.us.kg
-    path: /?ed=2560security=tls
-- name: 🇺🇸_美国_133
-  network: ws
-  port: 443
-  server: abdullah.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_134
-  network: ws
-  port: 443
-  server: sullivan.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_135
-  network: ws
-  port: 443
-  server: rustam.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
+- name: 🇬🇧_英国_1
+  network: tcp
+  password: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+  port: 43030
+  server: sgpora.filmtoday.stream
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: tesla.com
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_136
-  network: ws
-  port: '443'
-  server: cloudgetservice.mcloudservice.site
-  tls: true
-  type: vmess
-  uuid: 96e44a22-4f5c-48f9-99d9-f2c1985dd5b9
-  ws-opts:
-    headers:
-      host: Usa-Vp-192.blazEcloudMAin.SitE
-    path: /linkvkws
-- name: 🇺🇸_美国_137
-  network: ws
-  port: 443
-  server: cris.ns.cloudflare.com
-  servername: lx.ylks0033.dpdns.org
+- name: 🇦🇺_澳大利亚
+  network: tcp
+  password: 30fc711e-8325-4f0c-8454-1bb55ba1a65d
+  port: 43030
+  server: korora.filmtoday.stream
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: tesla.com
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: lx.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 🇳🇱_荷兰_6
+- name: 🇩🇰_丹麦
   network: ws
-  port: '23083'
-  server: 45.147.201.231
-  type: vmess
-  uuid: 9b5d72fd-3e66-4909-a3a5-0f259a9ad68f
-  ws-opts:
-    path: /
-- name: 🇺🇸_美国_138
-  network: ws
-  port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: lx.ylks0033.dpdns.org
+  port: 8880
+  server: 195.85.23.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
   ws-opts:
     headers:
-      host: lx.ylks0033.dpdns.org
+      host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /?ed=2560
-- name: 🇺🇸_美国_139
-  network: ws
-  port: 8443
-  server: 209.208.227.218
-  servername: CiR346yL3b.DeRaKhT.iNfO
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
-  ws-opts:
-    headers:
-      host: CiR346yL3b.DeRaKhT.iNfO
-    path: /
-- name: 🇺🇸_美国_140
-  network: ws
-  port: 31001
-  server: 45.32.131.28
-  servername: madcity2.777999.lol
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0fc8452a-17f9-47de-95dd-65de502d39da
-  ws-opts:
-    headers:
-      host: madcity2.777999.lol
-    path: /?ed=2560security=tls
-- name: 🇺🇸_美国_141
-  network: ws
-  port: 443
-  server: 208.86.168.210
-  servername: Wv2NhB0hVh.SoLiJoNiTo.CoM
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      host: Wv2NhB0hVh.SoLiJoNiTo.CoM
-    path: /
-- name: 🇺🇦_乌克兰_9
-  network: ws
-  port: 443
-  server: 95.164.47.60
-  servername: de02.abvpn.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 588f094b-431b-422c-b80b-007945037072
-  ws-opts:
-    headers:
-      host: de02.abvpn.ru
-    path: /websocket
-- name: 🇺🇸_美国_142
-  network: ws
-  port: 443
-  server: 199.34.228.70
-  servername: Wv2NhB0hVh.SoLiJoNiTo.CoM
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      host: Wv2NhB0hVh.SoLiJoNiTo.CoM
-    path: /
-- name: 🇿🇦_南非_11
-  network: ws
-  port: 443
-  server: 160.123.255.51
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      host: 0229.patterdeng.pp.ua
-    path: /?ed=2560fp=random
-- name: 🇺🇸_美国_143
-  network: ws
-  port: 443
-  server: 199.34.228.164
-  servername: Wv2NhB0hVh.SoLiJoNiTo.CoM
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      host: Wv2NhB0hVh.SoLiJoNiTo.CoM
-    path: /
-- name: 🇺🇸_美国_144
-  network: ws
-  port: 8443
-  server: 209.208.227.61
-  servername: CiR346yL3b.DeRaKhT.iNfO
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
-  ws-opts:
-    headers:
-      host: CiR346yL3b.DeRaKhT.iNfO
-    path: /
-- name: 🇰🇷_韩国_2
-  network: ws
-  port: 50000
-  server: 112.164.234.135
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      host: 0229.patterdeng.pp.ua
-    path: /?ed=2560security=tls
-- name: 🇺🇸_美国_145
-  network: ws
-  port: 2096
-  server: 199.34.228.182
-  servername: DrOt0Ai1Oq.DeRaKhT.iNfO
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
-  ws-opts:
-    headers:
-      host: DrOt0Ai1Oq.DeRaKhT.iNfO
-    path: /
-- name: 🇧🇬_保加利亚_1
-  network: ws
-  port: 2096
-  server: 147.78.140.159
-  servername: ScGiYaSk.rOcKsToNeY.InFo
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      host: ScGiYaSk.rOcKsToNeY.InFo
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_146
-  network: ws
-  port: '443'
-  server: cloudgetservice.mcloudservice.site
-  tls: true
-  type: vmess
-  uuid: 8f922e2e-18f3-4bd9-a097-09c2d7c139be
-  ws-opts:
-    headers:
-      host: MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com
-    path: /linkws
-- name: 🇺🇸_美国_147
-  network: ws
-  port: 443
-  server: 104.21.7.147
-  servername: m12wErT.HuangSHAnG.dpDNS.Org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 08355b07-1f90-4225-a420-6373c2e1c059
-  ws-opts:
-    headers:
-      host: m12wErT.HuangSHAnG.dpDNS.Org
-    path: /vaetnuciptyknk9eiigviw
-- name: 🇱🇹_立陶宛_5
-  network: ws
-  port: 2052
-  server: 86.38.214.22
-  servername: sPeedtest2.sbs.gb.vless.sitespeedtest.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 02475224-e7cd-58a5-a6d7-81d7d025acac
-  ws-opts:
-    headers:
-      host: sPeedtest2.sbs.gb.vless.sitespeedtest.net
-    path: /vless
-- name: 🇺🇸_美国_148
-  network: ws
-  port: 443
-  server: 172.67.211.136
-  servername: ddFR.191266.XYZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 114ad614-fe6c-4422-b0af-be6161190d7a
-  ws-opts:
-    headers:
-      host: ddFR.191266.XYZ
-    path: /c1sukvgdr58yeduy9aog
-- alterId: '0'
-  cipher: auto
-  name: 🇦🇿_阿塞拜疆_1
-  network: ws
-  port: '443'
-  server: 5.10.244.41
-  tls: true
-  type: vmess
-  uuid: 569dda85-bc76-4f8b-ae03-609d97f9e76c
-  ws-opts:
-    headers:
-      host: cry-sf-analyses-latina.trycloudflare.com
-    path: /vmess-argo?ed=2048
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_149
-  network: ws
-  port: '443'
-  server: cloudgetservice.mcloudservice.site
-  tls: true
-  type: vmess
-  uuid: cbe129db-24fa-4bb5-99de-03a6e7b1604c
-  ws-opts:
-    headers:
-      host: MaxNEtVipAp-fr1.maXnEtServICES.onliNe
-    path: /linkws
-- name: 🇺🇸_美国_150
-  network: ws
-  port: 443
-  server: 104.21.83.113
-  servername: m11SdFgRw4rTy.859886.XYZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
-  ws-opts:
-    headers:
-      host: m11SdFgRw4rTy.859886.XYZ
-    path: /dkfj3vjbdiwxy9tzlulnnypb86csp
-- name: 🇱🇹_立陶宛_6
-  network: ws
-  port: 2052
-  server: 86.38.214.22
-  servername: sPeedtest2.sbs.devl.cytun.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5ceb35f0-5106-4a1d-893b-cdf0abf42452
-  ws-opts:
-    headers:
-      host: sPeedtest2.sbs.devl.cytun.xyz
-    path: /vless
-- name: 🇸🇬_新加坡
-  network: ws
-  port: 14798
-  server: 68.183.178.106
-  servername: zoom.us
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e7cd8b22-4b4e-4436-80b6-a8e091f1de17
-  ws-opts:
-    headers:
-      host: zoom.us
-    path: /free by tharuwa (@z_z_z_zz_z) 0767597317
-- name: 🇺🇸_美国_151
-  network: ws
-  port: 2053
-  server: 104.31.16.95
-  servername: ir.akcovufun.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 39a91eaf-a379-4fff-a9c8-1cb01442b76f
-  ws-opts:
-    headers:
-      host: ir.akcovufun.ir
-    path: /
-- name: 🇺🇸_美国_152
-  network: ws
-  port: 2096
-  server: www.speedtest.net
-  servername: ByRhHePn14.bLuEvIa.oRg
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      host: ByRhHePn14.bLuEvIa.oRg
-    path: /
-- name: 🇺🇸_美国_153
-  network: ws
-  port: 2096
-  server: 199.34.228.67
-  servername: DrOt0Ai1Oq.DeRaKhT.iNfO
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
-  ws-opts:
-    headers:
-      host: DrOt0Ai1Oq.DeRaKhT.iNfO
-    path: /
-- name: 🇧🇬_保加利亚_2
-  network: ws
-  port: 2096
-  server: 147.78.140.159
-  servername: ScGiYaSk.rOcKsToNeY.InFo
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      host: ScGiYaSk.rOcKsToNeY.InFo
-    path: /
-- name: 🇺🇸_美国_154
-  network: ws
-  port: 2096
-  server: 104.26.15.16
-  servername: rEDzOnE.MirAcLehEaRTbIt.ICu
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8b3ec28-3be1-4d06-b423-274974abd395
-  ws-opts:
-    headers:
-      host: rEDzOnE.MirAcLehEaRTbIt.ICu
-    path: /2096/@v2rayyngvpn
-- name: 🇷🇺_俄罗斯_2
-  network: ws
-  port: 443
-  server: 46.226.162.42
-  servername: gbr01.abvpn.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 588f094b-431b-422c-b80b-007945037072
-  ws-opts:
-    headers:
-      host: gbr01.abvpn.ru
-    path: /websocket
-- name: 🇺🇸_美国_155
-  network: ws
-  port: 80
-  server: 141.193.213.21
-  servername: lk.sahanwickramasinghe.shop
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
-  ws-opts:
-    headers:
-      host: lk.sahanwickramasinghe.shop
-    path: /
-- name: 🇺🇸_美国_156
-  network: ws
-  port: 443
-  server: 104.21.64.1
-  servername: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52c0e96b-b8d7-44a5-a995-bd866bf39ec6
-  ws-opts:
-    headers:
-      host: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
-    path: /yzflmznieqsamcelxv94lpbgmw
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_60
-  network: ws
-  port: '1086'
-  server: 182.237.0.127
-  tls: true
-  type: vmess
-  uuid: 5aef9bfd-20e3-420a-9b16-433031984bd9
-  ws-opts:
-    headers:
-      host: www.ouabaua.com
-    path: /zxascas
 - name: 🇮🇳_印度
   network: ws
   port: 2052
@@ -104146,173 +101176,11 @@ proxies:
     headers:
       host: sPeedtest2.sbs.se.vless.sitespeedtest.net
     path: /vless#@v2ray_spatial,@v2ray_spatial,@v2ray_spatial,@v2ray_spatial,@v2ray_spatial,@v2ray_spatial,@v2ray_spatial,@v2ray_spatial,@v2ray_spatial,@v2ray_spatial,@v2ray_spatial,@v2ray_spatial
-- name: 🇷🇺_俄罗斯_3
+- name: 🇳🇱_荷兰_1
   network: ws
   port: 443
-  server: 89.23.118.93
-  servername: ru01.abvpn.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 588f094b-431b-422c-b80b-007945037072
-  ws-opts:
-    headers:
-      host: ru01.abvpn.ru
-    path: /websocket
-- name: 🇯🇵_日本_2
-  network: ws
-  port: 443
-  server: lv01.abvpn.ru
-  servername: lv01.abvpn.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 588f094b-431b-422c-b80b-007945037072
-  ws-opts:
-    headers:
-      host: lv01.abvpn.ru
-    path: /websocket
-- name: 🇳🇱_荷兰_7
-  network: ws
-  port: 8443
-  server: 45.131.5.252
-  servername: QtRkJtLt27.pRiMeXaD.OrG
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      host: QtRkJtLt27.pRiMeXaD.OrG
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_157
-  network: ws
-  port: '3306'
-  server: 64.181.248.196
-  tls: true
-  type: vmess
-  uuid: 979e39d7-fdf8-4e51-afb6-4d181c56170f
-  ws-opts:
-    headers:
-      host: ora.aihi.uk
-    path: /ray
-- alterId: '0'
-  cipher: auto
-  name: 🇦🇿_阿塞拜疆_2
-  network: ws
-  port: '443'
-  server: 5.10.244.72
-  tls: true
-  type: vmess
-  uuid: 9e43aec6-ba4d-4597-9344-4f6fcbd5c8a6
-  ws-opts:
-    headers:
-      host: digitaloceanus.lzj520hxw.dpdns.org
-    path: /vmess-argo?ed=2048
-- name: 🇺🇸_美国_158
-  network: ws
-  port: 2096
-  server: 199.34.228.165
-  servername: DrOt0Ai1Oq.DeRaKhT.iNfO
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
-  ws-opts:
-    headers:
-      host: DrOt0Ai1Oq.DeRaKhT.iNfO
-    path: /
-- name: 🇺🇸_美国_159
-  network: ws
-  port: 443
-  server: 4.255.56.138
-  servername: usa.rtot.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
-  ws-opts:
-    headers:
-      host: usa.rtot.me
-    path: /bing
-- name: 🇺🇸_美国_160
-  network: ws
-  port: 443
-  server: 2.56.178.47
-  servername: ru05.abvpn.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 588f094b-431b-422c-b80b-007945037072
-  ws-opts:
-    headers:
-      host: ru05.abvpn.ru
-    path: /websocket
-- alterId: '0'
-  cipher: auto
-  name: 🇳🇱_荷兰_8
-  network: ws
-  port: '22037'
-  server: 45.147.201.231
-  type: vmess
-  uuid: 9fda1993-4f4b-47e9-893a-ec9aaefb0f84
-  ws-opts:
-    path: /
-- name: 🇷🇺_俄罗斯_4
-  network: ws
-  port: 443
-  server: 5.182.86.128
-  servername: nl07.abvpn.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 588f094b-431b-422c-b80b-007945037072
-  ws-opts:
-    headers:
-      host: nl07.abvpn.ru
-    path: /websocket
-- name: 🇺🇸_美国_161
-  network: ws
-  port: 2096
-  server: 209.208.227.229
-  servername: LgUoZjGr14.hAmEcHiRuHaVaSt.cOm
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      host: LgUoZjGr14.hAmEcHiRuHaVaSt.cOm
-    path: /
-- name: 🇳🇱_荷兰_9
-  network: ws
-  port: 443
-  server: 45.150.65.53
-  servername: usa01.abvpn.ru
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 588f094b-431b-422c-b80b-007945037072
-  ws-opts:
-    headers:
-      host: usa01.abvpn.ru
-    path: /websocket
-- name: 🇧🇬_保加利亚_3
-  network: ws
-  port: 2096
-  server: 147.78.140.159
-  servername: ScGiYaSk.rOcKsToNeY.InFo
+  server: 45.131.6.160
+  servername: CxNiMjJz.cAfUnEaR.InFo
   skip-cert-verify: true
   tls: true
   type: vless
@@ -104320,149 +101188,3869 @@ proxies:
   uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
   ws-opts:
     headers:
-      host: ScGiYaSk.rOcKsToNeY.InFo
+      host: CxNiMjJz.cAfUnEaR.InFo
     path: /
-- name: 🇺🇸_美国_162
+- name: 🇺🇸_美国_8
   network: ws
   port: 443
-  server: 172.67.220.93
-  servername: M6dFg.777219.XYZ
+  server: www.speedtest.net
+  servername: ZjJuNdIy.rIpLeToOrY.InFo
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: d889b4c8-dab9-4b0c-932b-e4071c727308
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
   ws-opts:
     headers:
-      host: M6dFg.777219.XYZ
-    path: /s9mtnlbjerpwvxra
-- name: 🇺🇸_美国_163
+      host: ZjJuNdIy.rIpLeToOrY.InFo
+    path: /
+- name: 🇬🇧_英国_2
   network: ws
   port: 443
-  server: 104.21.40.251
-  servername: m7rtTYu.777169.xyz
+  server: 45.8.211.230
+  servername: CxNiMjJz.cAfUnEaR.InFo
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 03c93f49-d573-4889-a4bb-187047c5a314
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
   ws-opts:
     headers:
-      host: m7rtTYu.777169.xyz
-    path: /bstmmelstch7ycapgiebt
-- name: 🇺🇸_美国_164
+      host: CxNiMjJz.cAfUnEaR.InFo
+    path: /
+- name: 🇺🇦_乌克兰_1
+  network: ws
+  port: 443
+  server: 95.164.47.60
+  servername: de02.abvpn.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 588f094b-431b-422c-b80b-007945037072
+  ws-opts:
+    headers:
+      host: de02.abvpn.ru
+    path: /websocket
+- name: 🇱🇺_卢森堡
+  network: ws
+  port: 443
+  server: 188.42.88.45
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      host: CxNiMjJz.cAfUnEaR.InFo
+    path: /
+- name: 🇺🇦_乌克兰_2
+  network: ws
+  port: 443
+  server: de02.abvpn.ru
+  servername: de02.abvpn.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 588f094b-431b-422c-b80b-007945037072
+  ws-opts:
+    headers:
+      host: de02.abvpn.ru
+    path: /websocket
+- name: 🇺🇸_美国_9
+  network: ws
+  port: 8880
+  server: 135.84.73.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇺🇸_美国_10
+  network: ws
+  port: 8880
+  server: 135.84.75.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇺🇸_美国_11
+  network: ws
+  port: 80
+  server: 141.193.213.238
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_12
   network: ws
   port: 8080
-  server: 104.19.54.50
-  servername: www.speedtest.net.www.zula.ir.cloudflare.com.developsp.ir.svgspeedtest.net.
+  server: 172.67.73.163
+  servername: M4.nF9JZ2st7N.zULAiR.ORG.
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b703c909-61e9-4945-9bfc-c82bca433dd1
+  uuid: 6abbaf96-4b16-48d3-b996-a6067fc6eb2c
   ws-opts:
     headers:
-      host: www.speedtest.net.www.zula.ir.cloudflare.com.developsp.ir.svgspeedtest.net.
-    path: /@xvproxy----@xvproxy----@xvproxy----@xvproxy----@xvproxy----@xvproxy----@xvproxy----@xvproxy----@xvproxy----@xvproxy----@xvproxy----@xvproxy?ed=2048
+      host: M4.nF9JZ2st7N.zULAiR.ORG.
+    path: /?ed/telegram@v2ray_alpha
+- name: 🇺🇸_美国_13
+  network: ws
+  port: 8880
+  server: 135.84.76.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇦🇿_阿塞拜疆_1
+  network: ws
+  port: 8880
+  server: 5.10.245.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇺🇸_美国_14
+  network: ws
+  port: 8880
+  server: 135.84.74.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇦🇿_阿塞拜疆_2
+  network: ws
+  port: 8880
+  server: 5.10.246.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇺🇸_美国_15
+  network: ws
+  port: 80
+  server: 141.193.213.214
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@wangcai2+/?ed=2560
+- name: 🇫🇷_法国
+  network: ws
+  port: 8880
+  server: 45.80.110.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇺🇸_美国_16
+  network: ws
+  port: 8880
+  server: 135.84.79.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇬🇧_英国_3
+  network: ws
+  port: 8880
+  server: 45.85.118.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇺🇸_美国_17
+  network: ws
+  port: 8880
+  server: 66.179.48.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇺🇸_美国_18
+  network: ws
+  port: 8880
+  server: 135.84.72.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇬🇧_英国_4
+  network: ws
+  port: 8880
+  server: 45.85.119.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 🇰🇷_韩国
+  network: ws
+  port: 14220
+  server: 218.51.125.182
+  servername: mikuyo.bpd67081tsq.ddns-ip.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
+  ws-opts:
+    headers:
+      host: mikuyo.bpd67081tsq.ddns-ip.net
+    path: /?ed=2560
+- name: 🇺🇸_美国_19
+  network: ws
+  port: 80
+  server: 135.84.72.87
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_20
+  network: ws
+  port: 80
+  server: 135.84.64.110
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_21
+  network: ws
+  port: 80
+  server: 135.84.64.205
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_22
+  network: ws
+  port: 80
+  server: 135.84.64.64
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_23
+  network: ws
+  port: 80
+  server: 135.84.72.100
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_24
+  network: ws
+  port: 80
+  server: 135.84.72.44
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_25
+  network: ws
+  port: 80
+  server: 135.84.64.247
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_26
+  network: ws
+  port: 80
+  server: 135.84.64.191
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_27
+  network: ws
+  port: 80
+  server: 135.84.72.105
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_28
+  network: ws
+  port: 80
+  server: 135.84.64.198
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_29
+  network: ws
+  port: 80
+  server: 135.84.64.116
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_30
+  network: ws
+  port: 80
+  server: 135.84.64.167
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_31
+  network: ws
+  port: 80
+  server: 135.84.64.238
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_32
+  network: ws
+  port: 80
+  server: 135.84.67.100
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_33
+  network: ws
+  port: 80
+  server: 135.84.72.139
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_34
+  network: ws
+  port: 80
+  server: 135.84.72.90
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_35
+  network: ws
+  port: 80
+  server: 135.84.67.95
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_36
+  network: ws
+  port: 80
+  server: 135.84.72.89
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_37
+  network: ws
+  port: 80
+  server: 135.84.64.35
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_38
+  network: ws
+  port: 80
+  server: 135.84.72.111
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_39
+  network: ws
+  port: 80
+  server: 135.84.64.99
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_40
+  network: ws
+  port: 80
+  server: 135.84.64.192
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_41
+  network: ws
+  port: 80
+  server: 135.84.64.204
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_42
+  network: ws
+  port: 80
+  server: 135.84.64.19
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_43
+  network: ws
+  port: 80
+  server: 135.84.64.51
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_44
+  network: ws
+  port: 80
+  server: 135.84.64.228
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_45
+  network: ws
+  port: 80
+  server: 135.84.64.62
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_46
+  network: ws
+  port: 80
+  server: 135.84.72.34
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_47
+  network: ws
+  port: 80
+  server: 135.84.64.136
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_48
+  network: ws
+  port: 80
+  server: 135.84.67.63
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_49
+  network: ws
+  port: 80
+  server: 135.84.67.48
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_50
+  network: ws
+  port: 80
+  server: 135.84.67.41
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_51
+  network: ws
+  port: 80
+  server: 135.84.64.90
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_52
+  network: ws
+  port: 80
+  server: 135.84.67.44
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_53
+  network: ws
+  port: 80
+  server: 135.84.64.17
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_54
+  network: ws
+  port: 80
+  server: 135.84.64.222
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_55
+  network: ws
+  port: 80
+  server: 135.84.67.73
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_56
+  network: ws
+  port: 80
+  server: 135.84.64.240
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_57
+  network: ws
+  port: 80
+  server: 135.84.64.221
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_58
+  network: ws
+  port: 80
+  server: 135.84.64.95
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_59
+  network: ws
+  port: 80
+  server: 135.84.64.224
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_60
+  network: ws
+  port: 80
+  server: 135.84.67.49
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_61
+  network: ws
+  port: 80
+  server: 135.84.72.15
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_62
+  network: ws
+  port: 80
+  server: 135.84.64.46
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_63
+  network: ws
+  port: 80
+  server: 135.84.64.113
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_64
+  network: ws
+  port: 80
+  server: 135.84.64.81
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_65
+  network: ws
+  port: 80
+  server: 135.84.64.100
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_66
+  network: ws
+  port: 80
+  server: 135.84.72.92
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_67
+  network: ws
+  port: 80
+  server: 135.84.72.116
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_68
+  network: ws
+  port: 80
+  server: 135.84.64.58
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_69
+  network: ws
+  port: 80
+  server: 135.84.67.88
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_70
+  network: ws
+  port: 80
+  server: 135.84.64.56
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_71
+  network: ws
+  port: 80
+  server: 135.84.67.28
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_72
+  network: ws
+  port: 80
+  server: 135.84.67.21
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_73
+  network: ws
+  port: 80
+  server: 135.84.67.22
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_74
+  network: ws
+  port: 80
+  server: 135.84.67.62
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_75
+  network: ws
+  port: 80
+  server: 135.84.64.63
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_76
+  network: ws
+  port: 80
+  server: 135.84.64.65
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_77
+  network: ws
+  port: 80
+  server: 135.84.64.103
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_78
+  network: ws
+  port: 80
+  server: 135.84.67.31
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_79
+  network: ws
+  port: 80
+  server: 135.84.72.29
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_80
+  network: ws
+  port: 80
+  server: 135.84.72.41
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_81
+  network: ws
+  port: 80
+  server: 135.84.64.220
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_82
+  network: ws
+  port: 80
+  server: 135.84.72.80
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_83
+  network: ws
+  port: 80
+  server: 135.84.64.94
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_84
+  network: ws
+  port: 80
+  server: 135.84.64.161
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_85
+  network: ws
+  port: 80
+  server: 135.84.64.170
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_86
+  network: ws
+  port: 80
+  server: 135.84.72.13
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_87
+  network: ws
+  port: 80
+  server: 135.84.64.104
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_88
+  network: ws
+  port: 80
+  server: 135.84.67.58
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_89
+  network: ws
+  port: 80
+  server: 135.84.67.32
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_90
+  network: ws
+  port: 80
+  server: 135.84.72.25
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_91
+  network: ws
+  port: 80
+  server: 135.84.64.102
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_92
+  network: ws
+  port: 80
+  server: 135.84.67.64
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_93
+  network: ws
+  port: 80
+  server: 135.84.72.30
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_94
+  network: ws
+  port: 80
+  server: 135.84.64.66
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_95
+  network: ws
+  port: 80
+  server: 135.84.64.133
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_96
+  network: ws
+  port: 80
+  server: 135.84.72.85
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_97
+  network: ws
+  port: 80
+  server: 135.84.64.239
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_98
+  network: ws
+  port: 80
+  server: 135.84.64.67
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_99
+  network: ws
+  port: 80
+  server: 135.84.64.128
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_100
+  network: ws
+  port: 80
+  server: 135.84.67.46
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_101
+  network: ws
+  port: 80
+  server: 135.84.64.145
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_102
+  network: ws
+  port: 80
+  server: 135.84.72.35
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_103
+  network: ws
+  port: 80
+  server: 135.84.64.30
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_104
+  network: ws
+  port: 80
+  server: 135.84.64.248
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_105
+  network: ws
+  port: 80
+  server: 135.84.64.85
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_106
+  network: ws
+  port: 80
+  server: 135.84.67.29
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_107
+  network: ws
+  port: 80
+  server: 135.84.64.229
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_108
+  network: ws
+  port: 80
+  server: 135.84.67.79
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_109
+  network: ws
+  port: 80
+  server: 135.84.64.16
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_110
+  network: ws
+  port: 80
+  server: 135.84.64.227
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_111
+  network: ws
+  port: 80
+  server: 135.84.64.117
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_112
+  network: ws
+  port: 80
+  server: 135.84.64.250
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_113
+  network: ws
+  port: 80
+  server: 135.84.64.226
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_114
+  network: ws
+  port: 80
+  server: 135.84.67.33
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_115
+  network: ws
+  port: 80
+  server: 135.84.64.34
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_116
+  network: ws
+  port: 80
+  server: 135.84.64.92
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_117
+  network: ws
+  port: 80
+  server: 135.84.72.115
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_118
+  network: ws
+  port: 80
+  server: 135.84.67.37
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_119
+  network: ws
+  port: 80
+  server: 135.84.72.117
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_120
+  network: ws
+  port: 80
+  server: 135.84.72.140
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_121
+  network: ws
+  port: 80
+  server: 135.84.64.219
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_122
+  network: ws
+  port: 80
+  server: 135.84.64.10
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_123
+  network: ws
+  port: 80
+  server: 135.84.67.45
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_124
+  network: ws
+  port: 80
+  server: 135.84.72.88
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_125
+  network: ws
+  port: 80
+  server: 135.84.64.202
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_126
+  network: ws
+  port: 80
+  server: 135.84.67.61
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_127
+  network: ws
+  port: 80
+  server: 135.84.67.38
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_128
+  network: ws
+  port: 80
+  server: 135.84.67.74
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_129
+  network: ws
+  port: 80
+  server: 135.84.72.40
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_130
+  network: ws
+  port: 80
+  server: 135.84.64.134
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_131
+  network: ws
+  port: 80
+  server: 135.84.64.135
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_132
+  network: ws
+  port: 80
+  server: 135.84.67.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_133
+  network: ws
+  port: 80
+  server: 135.84.64.208
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_134
+  network: ws
+  port: 80
+  server: 135.84.64.55
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_135
+  network: ws
+  port: 80
+  server: 135.84.64.245
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_136
+  network: ws
+  port: 80
+  server: 135.84.64.74
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_137
+  network: ws
+  port: 80
+  server: 135.84.67.85
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_138
+  network: ws
+  port: 80
+  server: 135.84.64.111
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_139
+  network: ws
+  port: 80
+  server: 135.84.67.30
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_140
+  network: ws
+  port: 80
+  server: 135.84.72.118
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_141
+  network: ws
+  port: 80
+  server: 135.84.64.50
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_142
+  network: ws
+  port: 80
+  server: 135.84.72.19
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_143
+  network: ws
+  port: 80
+  server: 135.84.64.33
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_144
+  network: ws
+  port: 80
+  server: 135.84.64.59
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_145
+  network: ws
+  port: 80
+  server: 135.84.64.163
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_146
+  network: ws
+  port: 80
+  server: 135.84.64.212
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_147
+  network: ws
+  port: 80
+  server: 135.84.64.223
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_148
+  network: ws
+  port: 80
+  server: 135.84.72.72
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_149
+  network: ws
+  port: 80
+  server: 135.84.64.98
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_150
+  network: ws
+  port: 80
+  server: 135.84.72.119
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_151
+  network: ws
+  port: 80
+  server: 135.84.64.93
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_152
+  network: ws
+  port: 80
+  server: 135.84.67.90
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_153
+  network: ws
+  port: 80
+  server: 135.84.67.76
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_154
+  network: ws
+  port: 80
+  server: 135.84.64.82
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_155
+  network: ws
+  port: 80
+  server: 135.84.64.156
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_156
+  network: ws
+  port: 80
+  server: 135.84.64.80
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_157
+  network: ws
+  port: 80
+  server: 135.84.64.154
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_158
+  network: ws
+  port: 80
+  server: 135.84.64.157
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_159
+  network: ws
+  port: 80
+  server: 135.84.72.86
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_160
+  network: ws
+  port: 80
+  server: 135.84.64.68
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_161
+  network: ws
+  port: 80
+  server: 135.84.64.218
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_162
+  network: ws
+  port: 80
+  server: 135.84.64.36
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_163
+  network: ws
+  port: 80
+  server: 135.84.64.211
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_164
+  network: ws
+  port: 80
+  server: 135.84.64.60
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
 - name: 🇺🇸_美国_165
   network: ws
-  port: 2096
-  server: 199.34.228.191
-  servername: DrOt0Ai1Oq.DeRaKhT.iNfO
+  port: 80
+  server: 135.84.64.203
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
   ws-opts:
     headers:
-      host: DrOt0Ai1Oq.DeRaKhT.iNfO
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_61
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_166
   network: ws
-  port: '8004'
-  server: 59.42.247.189
-  type: vmess
-  uuid: 68261662-982a-41b5-94ff-dad406a41c03
-  ws-opts:
-    headers:
-      host: www.bing.com
-    path: /nmkj
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_166
-  network: ws
-  port: '2083'
-  server: cloudgetservice.mcloudservice.site
-  tls: true
-  type: vmess
-  uuid: 698d9a5b-59dc-4ea6-b404-cd9e967fc54c
-  ws-opts:
-    headers:
-      host: CanaDa-138.blAzecAnAdA.SITe
-    path: /linkvkws
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_167
-  network: ws
-  port: '52513'
-  server: aflzzul.meiquankongjian.com
-  type: vmess
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-opts:
-    headers:
-      host: aflzzul.meiquankongjian.com
-    path: /564dfa20/
-- alterId: '0'
-  cipher: auto
-  name: 🇳🇱_荷兰_10
-  network: ws
-  port: '20027'
-  server: 45.147.201.231
-  type: vmess
-  uuid: 9b5d72fd-3e66-4909-a3a5-0f259a9ad68f
-  ws-opts:
-    headers:
-      host: 45.147.201.231
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇳🇱_荷兰_11
-  network: ws
-  port: '23083'
-  server: 45.147.201.231
-  type: vmess
-  uuid: 9b5d72fd-3e66-4909-a3a5-0f259a9ad68f
-  ws-opts:
-    headers:
-      host: 45.147.201.231
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇩🇪_德国_12
-  network: ws
-  port: '443'
-  server: 132.145.232.171
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      host: beyonddsz.cfd
-    path: /linkws
-- name: 🇩🇪_德国_13
-  network: ws
-  port: 33274
-  server: 116.203.149.50
+  port: 80
+  server: 135.84.72.14
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 9aa081c1-c7bd-4a1f-951e-32dac0deb906
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
   ws-opts:
-    path: /@drakvpn
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_167
+  network: ws
+  port: 80
+  server: 135.84.67.77
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_168
+  network: ws
+  port: 80
+  server: 135.84.72.91
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_169
+  network: ws
+  port: 80
+  server: 135.84.64.37
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_170
+  network: ws
+  port: 80
+  server: 135.84.67.96
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_171
+  network: ws
+  port: 80
+  server: 135.84.64.47
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_172
+  network: ws
+  port: 80
+  server: 135.84.64.69
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_173
+  network: ws
+  port: 80
+  server: 135.84.72.45
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_174
+  network: ws
+  port: 80
+  server: 135.84.72.112
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_175
+  network: ws
+  port: 80
+  server: 135.84.64.31
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_176
+  network: ws
+  port: 80
+  server: 135.84.72.18
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_177
+  network: ws
+  port: 80
+  server: 135.84.64.84
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_178
+  network: ws
+  port: 80
+  server: 135.84.64.70
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_179
+  network: ws
+  port: 80
+  server: 135.84.72.42
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_180
+  network: ws
+  port: 80
+  server: 135.84.64.52
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_181
+  network: ws
+  port: 80
+  server: 135.84.64.148
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_182
+  network: ws
+  port: 80
+  server: 135.84.72.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_183
+  network: ws
+  port: 80
+  server: 135.84.64.155
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_184
+  network: ws
+  port: 80
+  server: 135.84.72.71
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_185
+  network: ws
+  port: 80
+  server: 135.84.64.11
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_186
+  network: ws
+  port: 80
+  server: 135.84.64.18
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_187
+  network: ws
+  port: 80
+  server: 135.84.64.244
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_188
+  network: ws
+  port: 80
+  server: 135.84.64.79
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_189
+  network: ws
+  port: 80
+  server: 135.84.64.112
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_190
+  network: ws
+  port: 80
+  server: 135.84.64.241
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳@@pgkj666/?ed=2560
+- name: 🇺🇸_美国_191
+  network: ws
+  port: 80
+  server: 135.84.67.72
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇯🇵_日本_2
+  network: ws
+  port: 8880
+  server: 156.238.18.24
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_3
+  network: ws
+  port: 8880
+  server: 156.238.18.25
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_4
+  network: ws
+  port: 8880
+  server: 156.238.18.26
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_5
+  network: ws
+  port: 8880
+  server: 156.238.18.27
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_6
+  network: ws
+  port: 8880
+  server: 156.238.18.28
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_7
+  network: ws
+  port: 8880
+  server: 156.238.18.29
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_8
+  network: ws
+  port: 8880
+  server: 156.238.18.30
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_9
+  network: ws
+  port: 8880
+  server: 156.238.18.80
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_10
+  network: ws
+  port: 8880
+  server: 156.238.18.81
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_11
+  network: ws
+  port: 8880
+  server: 156.238.18.82
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_12
+  network: ws
+  port: 8880
+  server: 156.238.18.83
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_13
+  network: ws
+  port: 8880
+  server: 156.238.18.84
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_14
+  network: ws
+  port: 8880
+  server: 156.238.18.85
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_15
+  network: ws
+  port: 8880
+  server: 156.238.18.86
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_16
+  network: ws
+  port: 8880
+  server: 156.238.18.87
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_17
+  network: ws
+  port: 8880
+  server: 156.238.18.88
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_18
+  network: ws
+  port: 8880
+  server: 156.238.18.89
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_19
+  network: ws
+  port: 8880
+  server: 156.238.18.90
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_20
+  network: ws
+  port: 8880
+  server: 156.238.18.91
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_21
+  network: ws
+  port: 8880
+  server: 156.238.18.92
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_22
+  network: ws
+  port: 8880
+  server: 156.238.18.93
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_23
+  network: ws
+  port: 8880
+  server: 156.238.18.94
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_24
+  network: ws
+  port: 8880
+  server: 156.238.18.95
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_25
+  network: ws
+  port: 8880
+  server: 156.238.18.96
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_26
+  network: ws
+  port: 8880
+  server: 156.238.18.97
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_27
+  network: ws
+  port: 8880
+  server: 156.238.18.98
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_28
+  network: ws
+  port: 8880
+  server: 156.238.18.99
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_29
+  network: ws
+  port: 8880
+  server: 156.238.18.100
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_30
+  network: ws
+  port: 8880
+  server: 156.238.18.101
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_31
+  network: ws
+  port: 8880
+  server: 156.238.18.102
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_32
+  network: ws
+  port: 8880
+  server: 156.238.18.103
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_33
+  network: ws
+  port: 8880
+  server: 156.238.18.104
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_34
+  network: ws
+  port: 8880
+  server: 156.238.18.105
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_35
+  network: ws
+  port: 8880
+  server: 156.238.18.106
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_36
+  network: ws
+  port: 8880
+  server: 156.238.18.107
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_37
+  network: ws
+  port: 8880
+  server: 156.238.18.108
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_38
+  network: ws
+  port: 8880
+  server: 156.238.18.109
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_39
+  network: ws
+  port: 8880
+  server: 156.238.18.110
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_40
+  network: ws
+  port: 8880
+  server: 156.238.18.111
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_41
+  network: ws
+  port: 8880
+  server: 156.238.18.112
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_42
+  network: ws
+  port: 8880
+  server: 156.238.18.113
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_43
+  network: ws
+  port: 8880
+  server: 156.238.18.114
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_44
+  network: ws
+  port: 8880
+  server: 156.238.18.115
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_45
+  network: ws
+  port: 8880
+  server: 156.238.18.116
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_46
+  network: ws
+  port: 8880
+  server: 156.238.18.117
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_47
+  network: ws
+  port: 8880
+  server: 156.238.18.118
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_48
+  network: ws
+  port: 8880
+  server: 156.238.18.119
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_49
+  network: ws
+  port: 8880
+  server: 156.238.18.120
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_50
+  network: ws
+  port: 8880
+  server: 156.238.18.125
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_51
+  network: ws
+  port: 8880
+  server: 156.238.18.126
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_52
+  network: ws
+  port: 8880
+  server: 156.238.18.127
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_53
+  network: ws
+  port: 8880
+  server: 156.238.18.128
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_54
+  network: ws
+  port: 8880
+  server: 156.238.18.129
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_55
+  network: ws
+  port: 8880
+  server: 156.238.18.130
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_56
+  network: ws
+  port: 8880
+  server: 156.238.18.131
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_57
+  network: ws
+  port: 8880
+  server: 156.238.18.133
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_58
+  network: ws
+  port: 8880
+  server: 156.238.18.134
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵_日本_59
+  network: ws
+  port: 8880
+  server: 156.238.18.135
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇺🇸_美国_192
+  network: ws
+  port: 80
+  server: 135.84.65.11
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇳🇱_荷兰_2
+  network: ws
+  port: 80
+  server: 213.166.71.40
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇩🇪_德国_1
+  network: ws
+  port: 80
+  server: 49.12.210.182
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇷🇺_俄罗斯
+  network: ws
+  port: 80
+  server: 185.188.181.214
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇩🇪_德国_2
+  network: ws
+  port: 80
+  server: 5.61.35.27
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇫🇮_芬兰_1
+  network: ws
+  port: 80
+  server: 95.217.151.107
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇫🇮_芬兰_2
+  network: ws
+  port: 80
+  server: 89.27.8.25
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇪🇸_西班牙
+  network: ws
+  port: 80
+  server: 90.165.204.7
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_193
+  network: ws
+  port: 80
+  server: 38.180.15.138
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_194
+  network: ws
+  port: 80
+  server: 38.180.79.9
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_195
+  network: ws
+  port: 80
+  server: 38.180.78.255
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇮🇱_以色列
+  network: ws
+  port: 80
+  server: 192.158.242.133
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_196
+  network: ws
+  port: 80
+  server: 23.134.82.1
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_197
+  network: ws
+  port: 80
+  server: 23.134.82.2
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_198
+  network: ws
+  port: 80
+  server: 44.31.62.2
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_199
+  network: ws
+  port: 80
+  server: 44.31.62.3
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_200
+  network: ws
+  port: 80
+  server: 38.60.91.60
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_201
+  network: ws
+  port: 80
+  server: 34.160.118.77
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇨🇿_捷克
+  network: ws
+  port: 80
+  server: 80.211.194.250
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇸🇪_瑞典
+  network: ws
+  port: 80
+  server: 87.239.250.142
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇩🇪_德国_3
+  network: ws
+  port: 80
+  server: 5.75.200.117
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇩🇪_德国_4
+  network: ws
+  port: 80
+  server: 104.248.100.121
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: telegram🇨🇳+@pgkj666+/?ed=2560
+- name: 🇺🇸_美国_202
+  network: ws
+  port: 2053
+  server: tify-binex-join.espikernajafi.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a980de30-82d7-4a59-dfaf-f0b64c954ccc
+  ws-opts:
+    path: /telegram,@binextify-telegram,@binextify-telegram,@binextify-telegram,@binextify-telegram,@binextify-telegram,@binextify-telegram,@binextify-telegram,@binextify-telegram,@binextify?ed=2560
+- name: 🇺🇸_美国_203
+  network: ws
+  port: 8880
+  server: zula.ir
+  servername: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a19a724-3922-475f-9b35-9f223b5a88ba
+  ws-opts:
+    headers:
+      host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+    path: /?ed=2048
 - alpn:
   - http/1.1
   name: 🇺🇸_US_美国->🏳️_unKnow_未知
