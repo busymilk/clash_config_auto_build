@@ -1789,17 +1789,19 @@ proxies:
   ws-opts:
     path: /oooo
 - cipher: chacha20-ietf-poly1305
-  name: SS-保加利亚-NF解锁泰国地区非自制剧-ChatGPT-TikTok-YouTube-85.208.139.69:63861
-  password: PBrts5Au4GM9ar7bTNyZEu
-  port: 63861
-  server: 85.208.139.69
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: SS-法国-NF解锁法国自制剧-ChatGPT-TikTok-YouTube-62.210.88.22:443
   password: PA5AeaFHcfCdvaaDMUX9RI
   port: 443
   server: 62.210.88.22
   type: ss
+- cipher: rc4-md5
+  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.151.182.253
+  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -1816,6 +1818,45 @@ proxies:
   ws-opts:
     headers:
       HOST: rak1.986986.shop
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-rak1.986986.shop:2053
+  network: ws
+  port: 2053
+  server: rak1.986986.shop
+  servername: rak1m1.986986.shop
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a29e2386-7445-424d-9be1-501f2b2b4d4e
+  ws-opts:
+    headers:
+      HOST: rak1m1.986986.shop
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: SS-黎巴嫩-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-77.110.109.86:4443
+  password: sCe9yditKeANoVRiv8TvnW
+  port: 4443
+  server: 77.110.109.86
+  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国>塞浦路斯-NF解锁土耳其自制剧-ChatGPT-TikTok-YouTube-cdn2.bpcdn.cc:80
+  network: ws
+  port: 80
+  server: cdn2.bpcdn.cc
+  servername: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: cb4a68ab-cd36-4f8e-9ae4-dc318c8f31bd
+  ws-opts:
+    headers:
+      HOST: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
     path: /
 - alterId: 0
   cipher: auto
