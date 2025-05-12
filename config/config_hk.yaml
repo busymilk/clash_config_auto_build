@@ -99,51 +99,25 @@ proxies:
     path: /register
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 9cc34889-c135-4e24-ae4a-5d744dc65fca
+  password: 8520af87-837c-45df-8011-a269ea57f5f3
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 02 | 1x HK
-  password: 9cc34889-c135-4e24-ae4a-5d744dc65fca
+  password: 8520af87-837c-45df-8011-a269ea57f5f3
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 9cc34889-c135-4e24-ae4a-5d744dc65fca
+  password: 8520af87-837c-45df-8011-a269ea57f5f3
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- flow: xtls-rprx-vision
-  name: 2,14|HK_speednode_0022
-  network: tcp
-  port: 20550
-  reality-opts:
-    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
-  server: hkt-ty-line-1.sudatech.store
-  servername: www.paypal.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
-- delay: 944
-  name: 2|🇭🇰2 |  4.1MB/s|0%|Disney|Opena...
-  network: ws
-  port: 8880
-  server: 156.238.18.127
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
@@ -250,6 +224,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- flow: xtls-rprx-vision
+  name: 14|HK_speednode_0022
+  port: 20550
+  reality-opts:
+    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
+  server: hkt-ty-line-1.sudatech.store
+  servername: www.paypal.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
 - name: 14|HK_speednode_0023
   network: ws
   password: Aimer
@@ -265,21 +251,21 @@ proxies:
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 15|🇭🇰香港 01 | 1x HK
-  password: 7b6896b0-f88f-4534-bc23-d7a4841f2750
+  password: e8102bb3-5376-4cd4-9bb9-e56b1cea78cf
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 15|🇭🇰香港 02 | 1x HK
-  password: 7b6896b0-f88f-4534-bc23-d7a4841f2750
+  password: e8102bb3-5376-4cd4-9bb9-e56b1cea78cf
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 15|🇭🇰香港家宽 03 | 1x HK
-  password: 7b6896b0-f88f-4534-bc23-d7a4841f2750
+  password: e8102bb3-5376-4cd4-9bb9-e56b1cea78cf
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
