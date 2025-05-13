@@ -85,36 +85,6 @@ profile:
 proxies:
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>塞舌尔-NF解锁香港地区非自制剧-ChatGPT-YouTube-hk2.lrzdx.uk:443
-  network: ws
-  port: 443
-  server: hk2.lrzdx.uk
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
-  ws-opts:
-    path: /register
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>香港-NF解锁自制剧-ChatGPT-YouTube-3fbc10.2ca52629-3a60.shop:80
-  network: ws
-  port: 80
-  server: 3fbc10.2ca52629-3a60.shop
-  servername: hk02s.2ca52629-3a60.shop
-  skip-cert-verify: true
-  type: vmess
-  uuid: 5be76fa5-3758-4282-bb54-b1efabd6ba3d
-  ws-opts:
-    headers:
-      HOST: hk02s.2ca52629-3a60.shop
-    path: /
-- alterId: 0
-  cipher: auto
   name: Hong Kong_Sham Shui Po_vmess_1037
   network: ws
   port: 8080
@@ -497,6 +467,36 @@ proxies:
     headers:
       Host: tyep.esslh.filegear-sg.me
     path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>塞舌尔-NF解锁香港地区非自制剧-ChatGPT-YouTube-hk2.lrzdx.uk:443
+  network: ws
+  port: 443
+  server: hk2.lrzdx.uk
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
+  ws-opts:
+    path: /register
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>香港-NF解锁自制剧-ChatGPT-YouTube-3fbc10.2ca52629-3a60.shop:80
+  network: ws
+  port: 80
+  server: 3fbc10.2ca52629-3a60.shop
+  servername: hk02s.2ca52629-3a60.shop
+  skip-cert-verify: true
+  type: vmess
+  uuid: 5be76fa5-3758-4282-bb54-b1efabd6ba3d
+  ws-opts:
+    headers:
+      HOST: hk02s.2ca52629-3a60.shop
+    path: /
 - flow: xtls-rprx-vision
   name: 1,14|HK_speednode_0159
   port: 20550
