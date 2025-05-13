@@ -97,98 +97,80 @@ proxies:
   uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
   ws-opts:
     path: /register
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: da43078d-b62a-4349-911b-1214099d42b9
-  port: 36141
-  server: free.2weradf.xyz
+- cipher: aes-256-gcm
+  name: SS-美国-NF解锁香港自制剧-ChatGPT-TikTok-YouTube-154.3.8.151:30067
+  password: iUB0923RBA
+  port: 30067
+  server: 154.3.8.151
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: da43078d-b62a-4349-911b-1214099d42b9
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: da43078d-b62a-4349-911b-1214099d42b9
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 2|🇭🇰1 |  6.2MB/s|0%|Disney|Opena...
-  network: ws
-  port: '8880'
-  server: 156.238.18.110
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560fp=chrome
-  xudp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 2|🇭🇰2 |  5.5MB/s|25%
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>香港-NF解锁自制剧-ChatGPT-YouTube-3fbc10.2ca52629-3a60.shop:80
   network: ws
   port: 80
   server: 3fbc10.2ca52629-3a60.shop
-  skip-cert-verify: false
-  tls: false
+  servername: hk02s.2ca52629-3a60.shop
+  skip-cert-verify: true
   type: vmess
-  udp: true
   uuid: 5be76fa5-3758-4282-bb54-b1efabd6ba3d
   ws-opts:
     headers:
-      Host: hk02s.2ca52629-3a60.shop
+      HOST: hk02s.2ca52629-3a60.shop
     path: /
-  xudp: true
-- name: 2|🇭🇰3 |  1.9MB/s|0%|Netflix|Disn...
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: true
-  type: trojan
+- flow: xtls-rprx-vision
+  name: 1,15|HK_speednode_0022
+  port: 20550
+  reality-opts:
+    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
+  server: hkt-ty-line-1.sudatech.store
+  servername: www.paypal.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- name: 2|🇭🇰4 |  4.8MB/s|0%|Netflix|Disn...
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
-  skip-cert-verify: true
-  sni: dozo01.flztjc.top
-  type: trojan
-  udp: true
-- name: 2|🇭🇰5 |  1.8MB/s|6%|Youtube
-  password: b6200af42ccadea353f5b5856dd20d70
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港 01 | 1x HK
-  password: 7c385e97-154e-486c-92d9-d20232e099f8
+  name: 2|🇭🇰香港 01 | 1x HK
+  password: f8be5f0d-e58c-4de8-90d8-97edd2bdff94
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港 02 | 1x HK
-  password: 7c385e97-154e-486c-92d9-d20232e099f8
+  name: 2|🇭🇰香港 02 | 1x HK
+  password: f8be5f0d-e58c-4de8-90d8-97edd2bdff94
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港家宽 03 | 1x HK
-  password: 7c385e97-154e-486c-92d9-d20232e099f8
+  name: 2|🇭🇰香港家宽 03 | 1x HK
+  password: f8be5f0d-e58c-4de8-90d8-97edd2bdff94
   port: 31145
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰 香港 01 | 1x HK
+  password: defa1a25-452f-40ff-bab5-e4b85d93297e
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰 香港 02 | 1x HK
+  password: defa1a25-452f-40ff-bab5-e4b85d93297e
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰 香港住宅IP 03 | 1x HK
+  password: defa1a25-452f-40ff-bab5-e4b85d93297e
+  port: 36145
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: 13|🇭🇰 香港|@ripaojiedian
@@ -214,7 +196,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 52013
+  port: 45508
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -228,6 +210,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 13,14|香港4|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: 1566b24a-sw7j40-sxt412-1qrx5.hgc1.tcpbbr.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: f524c600-db8f-11ee-819e-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 13|🇭🇰 香港5|@ripaojiedian
@@ -297,18 +295,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- flow: xtls-rprx-vision
-  name: 15|HK_speednode_0022
-  port: 20550
-  reality-opts:
-    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
-  server: hkt-ty-line-1.sudatech.store
-  servername: www.paypal.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
 - name: 15|HK_speednode_0023
   network: ws
   password: Aimer
@@ -324,41 +310,41 @@ proxies:
     path: /?ed=2560
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6732 | 8.874MB
+  name: 🇭🇰HK-42.2.112.17-1114 | 11.465MB
   network: ws
   port: 80
-  server: 4087dc1a-sv2sg0-swqixu-1luqs.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6732 | 8.874MB
+  server: 1ccf6aff-sv2sg0-svxfqo-1hfyu.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1114 | 11.465MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 788328ee-d49f-11ef-bd97-f23c9164ca5d
+  uuid: ab0147e4-e673-11ee-8058-f23c91cfbbc9
   ws-opts:
     headers:
-      Host: 4087dc1a-sv2sg0-swqixu-1luqs.hk.p5pv.com
+      Host: 1ccf6aff-sv2sg0-svxfqo-1hfyu.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1195 | 6.971MB
+  name: 🇭🇰HK-42.2.112.17-6387 | 11.09MB
   network: ws
   port: 80
-  server: 5c4c4152-sv2sg0-sy8f4e-ukt4.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1195 | 6.971MB
+  server: ac759499-sv2sg0-sw26q2-php4.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-6387 | 11.09MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b
+  uuid: c648ecc0-838a-11ed-bd81-f23c913c8d2b
   ws-opts:
     headers:
-      Host: 5c4c4152-sv2sg0-sy8f4e-ukt4.hk.p5pv.com
+      Host: ac759499-sv2sg0-sw26q2-php4.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6758 | 6.964MB
+  name: 🇭🇰HK-42.2.112.17-1088 | 10.972MB
   network: ws
   port: 80
   server: 7b7cbb1e-sv2sg0-svvk7h-1tgdw.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6758 | 6.964MB
+  servername: 🇭🇰HK-42.2.112.17-1088 | 10.972MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -367,28 +353,28 @@ proxies:
     headers:
       Host: 7b7cbb1e-sv2sg0-svvk7h-1tgdw.hk.p5pv.com
     path: /
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.216.177-1465 | 6.648MB
+  name: 🇭🇰HK-42.2.112.17-6342 | 10.261MB
   network: ws
-  port: 8080
-  server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
-  servername: 🇭🇰HK-1.65.216.177-1465 | 6.648MB
+  port: 80
+  server: 3cb34bed-sucv40-swr62l-lj7z.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-6342 | 10.261MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
+  uuid: 331cae90-f7e9-11ed-b4e2-f23c913c8d2b
   ws-opts:
     headers:
-      Host: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
+      Host: 3cb34bed-sucv40-swr62l-lj7z.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6540 | 6.572MB
+  name: 🇭🇰HK-42.2.112.17-1091 | 9.999MB
   network: ws
   port: 80
   server: 3417ad6c-sv2sg0-te1s1a-1i55g.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6540 | 6.572MB
+  servername: 🇭🇰HK-42.2.112.17-1091 | 9.999MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -399,156 +385,52 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1150 | 6.558MB
+  name: 🇭🇰HK-42.2.112.17-1083 | 9.884MB
   network: ws
   port: 80
-  server: d2ad3545-sv0xs0-t7bo2t-1psmw.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1150 | 6.558MB
+  server: 4087dc1a-sv2sg0-swqixu-1luqs.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1083 | 9.884MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 42bb6d36-97c7-11ee-be7f-f23c9164ca5d
+  uuid: 788328ee-d49f-11ef-bd97-f23c9164ca5d
   ws-opts:
     headers:
-      Host: d2ad3545-sv0xs0-t7bo2t-1psmw.hk.p5pv.com
+      Host: 4087dc1a-sv2sg0-swqixu-1luqs.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6759 | 6.406MB
+  name: 🇭🇰HK-42.2.112.17-1122 | 9.764MB
   network: ws
   port: 80
-  server: 7b2f8c5e-sv2sg0-tc61cs-1tja8.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6759 | 6.406MB
+  server: f8685ff7-sv2sg0-t12kpr-1feo5.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1122 | 9.764MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
+  uuid: a423a1b6-390c-11ee-bde0-f23c9164ca5d
   ws-opts:
     headers:
-      Host: 7b2f8c5e-sv2sg0-tc61cs-1tja8.hk.p5pv.com
+      Host: f8685ff7-sv2sg0-t12kpr-1feo5.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6462 | 6.155MB
+  name: 🇭🇰HK-42.2.112.17-1139 | 9.42MB
   network: ws
   port: 80
-  server: 0c445917-sv2sg0-t66wbo-160fj.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6462 | 6.155MB
+  server: 055413e9-sucv40-texsud-1l6ym.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1139 | 9.42MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: e7eb17a0-257a-11ec-a8bf-f23c91cfbbc9
+  uuid: b72009aa-ed88-11ed-92a4-f23c91cfbbc9
   ws-opts:
     headers:
-      Host: 0c445917-sv2sg0-t66wbo-160fj.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1196 | 5.927MB
-  network: ws
-  port: 80
-  server: dfb89bac-suk9s0-t234dm-eso8.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1196 | 5.927MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 3c461e2c-9d13-11ef-8563-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: dfb89bac-suk9s0-t234dm-eso8.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6487 | 5.915MB
-  network: ws
-  port: 80
-  server: c53bf275-sv2sg0-svv72o-1e0ty.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6487 | 5.915MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ccd9704a-f980-11eb-a0fc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: c53bf275-sv2sg0-svv72o-1e0ty.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6544 | 5.889MB
-  network: ws
-  port: 80
-  server: d850e789-sv2sg0-sz2mf2-1ex2n.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6544 | 5.889MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 35271a68-a2a6-11ef-87a8-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: d850e789-sv2sg0-sz2mf2-1ex2n.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6742 | 5.867MB
-  network: ws
-  port: 80
-  server: d514a957-sv2sg0-swfla6-1rdqg.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: d514a957-sv2sg0-swfla6-1rdqg.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1179 | 5.866MB
-  network: ws
-  port: 80
-  server: d271ef67-sv2sg0-t6oj1r-1pv16.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1179 | 5.866MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 541259a8-8df6-11ee-ace4-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: d271ef67-sv2sg0-t6oj1r-1pv16.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1154 | 5.841MB
-  network: ws
-  port: 80
-  server: d310aa86-sv0xs0-swskl4-1rh01.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1154 | 5.841MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4c0ba4a2-1510-11ef-ba65-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: d310aa86-sv0xs0-swskl4-1rh01.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6553 | 5.713MB
-  network: ws
-  port: 80
-  server: 4a8c875a-sv2sg0-sxi4nd-1o6fm.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6553 | 5.713MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 4a8c875a-sv2sg0-sxi4nd-1o6fm.hk.p5pv.com
+      Host: 055413e9-sucv40-texsud-1l6ym.hk.p5pv.com
     path: /
 - alterId: 1
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6755 | 5.701MB
+  name: 🇭🇰HK-42.2.112.17-1104 | 9.393MB
   network: ws
   port: 80
   server: 3ded3a7f-svlb40-sz052u-amya.hk.p5pv.com
@@ -562,305 +444,22 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6554 | 5.693MB
+  name: 🇭🇰HK-42.2.112.17-1137 | 9.377MB
   network: ws
   port: 80
-  server: db96132b-sv2sg0-t6nmiv-jptr.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6554 | 5.693MB
+  server: f49bcb46-sv2sg0-sw1w5j-1a3sy.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1137 | 9.377MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: ef062e5b-d015-11ec-9ff8-f23c91cfbbc9
+  uuid: b93c66cc-00ed-11ec-8673-f23c9164ca5d
   ws-opts:
     headers:
-      Host: db96132b-sv2sg0-t6nmiv-jptr.hk.p5pv.com
+      Host: f49bcb46-sv2sg0-sw1w5j-1a3sy.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6565 | 5.588MB
-  network: ws
-  port: 80
-  server: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6565 | 5.588MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9c6d1142-dc2b-11ee-88c7-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6520 | 5.544MB
-  network: ws
-  port: 80
-  server: 2f692aa9-sv2sg0-svs488-n09f.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6520 | 5.544MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 2f692aa9-sv2sg0-svs488-n09f.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1193 | 5.428MB
-  network: ws
-  port: 80
-  server: 581be42d-sv2sg0-swotpn-1nn0k.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1193 | 5.428MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f9c35596-f323-11ed-8ccd-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 581be42d-sv2sg0-swotpn-1nn0k.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1163 | 5.12MB
-  network: ws
-  port: 80
-  server: 8fc3c465-sv0xs0-swos8d-1te2a.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1163 | 5.12MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 574db4bc-ef5e-11ef-bd1a-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 8fc3c465-sv0xs0-swos8d-1te2a.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-1.65.216.177-3095 | 5.083MB
-  network: ws
-  port: 8080
-  server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-1.65.216.177-3098 | 5.027MB
-  network: ws
-  port: 8080
-  server: 2d7952be-sw7j40-t6yqh9-1bhda.hgc1.tcpbbr.net
-  servername: 🇭🇰HK-1.65.216.177-3098 | 5.027MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f61628aa-3d18-11ec-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 2d7952be-sw7j40-t6yqh9-1bhda.hgc1.tcpbbr.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6747 | 4.903MB
-  network: ws
-  port: 80
-  server: 1ccf6aff-sv2sg0-svxfqo-1hfyu.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6747 | 4.903MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ab0147e4-e673-11ee-8058-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 1ccf6aff-sv2sg0-svxfqo-1hfyu.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6529 | 4.74MB
-  network: ws
-  port: 80
-  server: 0bdf3f30-sv8cg0-t9uin7-19ord.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6529 | 4.74MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 0bdf3f30-sv8cg0-t9uin7-19ord.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6549 | 4.661MB
-  network: ws
-  port: 80
-  server: 2f810484-sv2sg0-svve10-e5yo.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6549 | 4.661MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 8b6a0482-4fa2-11ea-bdcd-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 2f810484-sv2sg0-svve10-e5yo.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1166 | 4.639MB
-  network: ws
-  port: 80
-  server: 58a3879a-sv2sg0-sywxsy-e54r.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1166 | 4.639MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c4f3a1ca-8d10-11eb-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 58a3879a-sv2sg0-sywxsy-e54r.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-1.65.216.177-3099 | 4.606MB
-  network: ws
-  port: 8080
-  server: 3bbaf7e8-sw1z40-t525pa-ach1.hgc1.tcpbbr.net
-  servername: 🇭🇰HK-1.65.216.177-3099 | 4.606MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b9c9905c-1627-11ec-a0fc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 3bbaf7e8-sw1z40-t525pa-ach1.hgc1.tcpbbr.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1192 | 4.588MB
-  network: ws
-  port: 80
-  server: 60cd512f-sv2sg0-swbdgq-1iddy.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1192 | 4.588MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 60cd512f-sv2sg0-swbdgq-1iddy.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6528 | 4.56MB
-  network: ws
-  port: 80
-  server: f8685ff7-sv2sg0-t12kpr-1feo5.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6528 | 4.56MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: a423a1b6-390c-11ee-bde0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: f8685ff7-sv2sg0-t12kpr-1feo5.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6552 | 4.427MB
-  network: ws
-  port: 80
-  server: 2579f727-sv2sg0-t7udc0-1pqhp.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6552 | 4.427MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 2579f727-sv2sg0-t7udc0-1pqhp.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6556 | 4.329MB
-  network: ws
-  port: 80
-  server: 7fb26943-sv6hs0-tcr97d-2b2n.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6556 | 4.329MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fcd39788-ca23-11ed-86e2-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 7fb26943-sv6hs0-tcr97d-2b2n.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6560 | 4.291MB
-  network: ws
-  port: 80
-  server: e4fac854-sum4g0-sx1cxx-1tfjk.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6560 | 4.291MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 49396d98-f4b4-11ef-8c3f-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: e4fac854-sum4g0-sx1cxx-1tfjk.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-1.65.216.177-6561 | 4.219MB
-  network: ws
-  port: 8080
-  server: e9a671ea-sw1z40-t4vk19-1nlwy.hgc1.tcpbbr.net
-  servername: 🇭🇰HK-1.65.216.177-6561 | 4.219MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9247343a-5db0-11ee-9367-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: e9a671ea-sw1z40-t4vk19-1nlwy.hgc1.tcpbbr.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6745 | 4.213MB
-  network: ws
-  port: 80
-  server: 24b01428-sv2sg0-td1l1t-1s824.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6745 | 4.213MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 24b01428-sv2sg0-td1l1t-1s824.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6748 | 3.883MB
-  network: ws
-  port: 80
-  server: 279aa6f9-svlb40-swa8xy-laev.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ef18aaca-4711-11ec-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 279aa6f9-svlb40-swa8xy-laev.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1170 | 3.838MB
+  name: 🇭🇰HK-42.2.112.17-1132 | 9.224MB
   network: ws
   port: 80
   server: e9ba756a-svdwg0-swd5ff-f1v1.hk.p5pv.com
@@ -874,56 +473,100 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1165 | 3.788MB
+  name: 🇭🇰HK-42.2.112.17-6592 | 9.045MB
   network: ws
   port: 80
-  server: 3e236b99-sucv40-sudq0l-1rz5s.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1165 | 3.788MB
+  server: bae28021-sv2sg0-t04f46-1hvn1.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-6592 | 9.045MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+  uuid: 8d05476e-ae88-11ed-8543-f23c913c8d2b
   ws-opts:
     headers:
-      Host: 3e236b99-sucv40-sudq0l-1rz5s.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-1.65.216.177-3097 | 3.686MB
-  network: ws
-  port: 8080
-  server: 64f6e0b2-sw1z40-t51bp0-1nyy5.hgc1.tcpbbr.net
-  servername: 🇭🇰HK-1.65.216.177-3097 | 3.686MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 64f6e0b2-sw1z40-t51bp0-1nyy5.hgc1.tcpbbr.net
+      Host: bae28021-sv2sg0-t04f46-1hvn1.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1185 | 3.617MB
+  name: 🇭🇰HK-42.2.112.17-1103 | 8.99MB
   network: ws
   port: 80
-  server: 53029e52-sv6hs0-swwhoz-1me9w.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1185 | 3.617MB
+  server: 4a8c875a-sv2sg0-sxi4nd-1o6fm.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1103 | 8.99MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 408e7148-df67-11ed-8e13-f23c91cfbbc9
+  uuid: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
   ws-opts:
     headers:
-      Host: 53029e52-sv6hs0-swwhoz-1me9w.hk.p5pv.com
+      Host: 4a8c875a-sv2sg0-sxi4nd-1o6fm.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1190 | 3.535MB
+  name: 🇭🇰HK-42.2.112.17-1107 | 8.817MB
+  network: ws
+  port: 80
+  server: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1107 | 8.817MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9c6d1142-dc2b-11ee-88c7-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1128 | 8.708MB
+  network: ws
+  port: 80
+  server: 24b01428-sv2sg0-td1l1t-1s824.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1128 | 8.708MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 24b01428-sv2sg0-td1l1t-1s824.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1108 | 8.51MB
+  network: ws
+  port: 80
+  server: 2f692aa9-sv2sg0-svs488-n09f.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1108 | 8.51MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 2f692aa9-sv2sg0-svs488-n09f.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1099 | 8.434MB
+  network: ws
+  port: 80
+  server: d514a957-sv2sg0-swfla6-1rdqg.hk.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: d514a957-sv2sg0-swfla6-1rdqg.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1136 | 8.374MB
   network: ws
   port: 80
   server: c62b5b59-sv2sg0-sx0ey8-1b8u2.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1190 | 3.535MB
+  servername: 🇭🇰HK-42.2.112.17-1136 | 8.374MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -934,67 +577,171 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6500 | 3.531MB
+  name: 🇭🇰HK-42.2.112.17-6409 | 8.369MB
   network: ws
   port: 80
-  server: f49bcb46-sv2sg0-sw1w5j-1a3sy.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-6500 | 3.531MB
+  server: d5542df0-sv0xs0-sw2c3o-1thts.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-6409 | 8.369MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: b93c66cc-00ed-11ec-8673-f23c9164ca5d
+  uuid: cb96c846-fd6d-11ef-a910-f23c9164ca5d
   ws-opts:
     headers:
-      Host: f49bcb46-sv2sg0-sw1w5j-1a3sy.hk.p5pv.com
+      Host: d5542df0-sv0xs0-sw2c3o-1thts.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1191 | 3.409MB
+  name: 🇭🇰HK-42.2.112.17-1094 | 8.355MB
   network: ws
   port: 80
-  server: 13fb1c14-sv2sg0-sw0aec-1t3oz.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1191 | 3.409MB
+  server: 7b2f8c5e-sv2sg0-tc61cs-1tja8.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1094 | 8.355MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: b3370cdc-c26e-11ef-bd97-f23c9164ca5d
+  uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
   ws-opts:
     headers:
-      Host: 13fb1c14-sv2sg0-sw0aec-1t3oz.hk.p5pv.com
+      Host: 7b2f8c5e-sv2sg0-tc61cs-1tja8.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1186 | 3.389MB
+  name: 🇭🇰HK-42.2.112.17-1097 | 8.247MB
   network: ws
   port: 80
-  server: 055413e9-sucv40-texsud-1l6ym.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1186 | 3.389MB
+  server: c53bf275-sv2sg0-svv72o-1e0ty.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1097 | 8.247MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: b72009aa-ed88-11ed-92a4-f23c91cfbbc9
+  uuid: ccd9704a-f980-11eb-a0fc-f23c913c8d2b
   ws-opts:
     headers:
-      Host: 055413e9-sucv40-texsud-1l6ym.hk.p5pv.com
+      Host: c53bf275-sv2sg0-svv72o-1e0ty.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-1173 | 3.246MB
+  name: 🇭🇰HK-42.2.112.17-6597 | 8.151MB
   network: ws
   port: 80
-  server: 3ab9dc0e-sub0g0-tax87j-fxtw.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.112.17-1173 | 3.246MB
+  server: 1c4a9afd-sv2sg0-t1k8ya-1erqr.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-6597 | 8.151MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: c5437726-aa85-3ab0-f5ed-a62156a904f9
+  uuid: f3961816-505d-11ed-bd7c-f23c913c8d2b
   ws-opts:
     headers:
-      Host: 3ab9dc0e-sub0g0-tax87j-fxtw.hk.p5pv.com
+      Host: 1c4a9afd-sv2sg0-t1k8ya-1erqr.hk.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.112.17-6559 | 2.971MB
+  name: 🇭🇰HK-42.2.112.17-1131 | 8.132MB
+  network: ws
+  port: 80
+  server: 279aa6f9-svlb40-swa8xy-laev.hk.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ef18aaca-4711-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 279aa6f9-svlb40-swa8xy-laev.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1118 | 8.131MB
+  network: ws
+  port: 80
+  server: 2f810484-sv2sg0-svve10-e5yo.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1118 | 8.131MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8b6a0482-4fa2-11ea-bdcd-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 2f810484-sv2sg0-svve10-e5yo.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1126 | 7.996MB
+  network: ws
+  port: 80
+  server: e4fac854-sum4g0-sx1cxx-1tfjk.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1126 | 7.996MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 49396d98-f4b4-11ef-8c3f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: e4fac854-sum4g0-sx1cxx-1tfjk.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1096 | 7.905MB
+  network: ws
+  port: 80
+  server: dfb89bac-suk9s0-t234dm-eso8.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1096 | 7.905MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3c461e2c-9d13-11ef-8563-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: dfb89bac-suk9s0-t234dm-eso8.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1135 | 7.762MB
+  network: ws
+  port: 80
+  server: 53029e52-sv6hs0-swwhoz-1me9w.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1135 | 7.762MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 408e7148-df67-11ed-8e13-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 53029e52-sv6hs0-swwhoz-1me9w.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1102 | 7.709MB
+  network: ws
+  port: 80
+  server: d310aa86-sv0xs0-swskl4-1rh01.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1102 | 7.709MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4c0ba4a2-1510-11ef-ba65-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: d310aa86-sv0xs0-swskl4-1rh01.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1095 | 7.661MB
+  network: ws
+  port: 80
+  server: 0c445917-sv2sg0-t66wbo-160fj.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-1095 | 7.661MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e7eb17a0-257a-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 0c445917-sv2sg0-t66wbo-160fj.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-1143 | 7.627MB
   network: ws
   port: 80
   server: 84b1f651-svwf40-t94bdb-mrtr.hk.p5pv.com
@@ -1005,6 +752,21 @@ proxies:
   ws-opts:
     headers:
       Host: 84b1f651-svwf40-t94bdb-mrtr.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.112.17-6589 | 7.464MB
+  network: ws
+  port: 80
+  server: 8aa8a2db-sv2sg0-syfj90-1r9dt.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.112.17-6589 | 7.464MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 8aa8a2db-sv2sg0-syfj90-1r9dt.hk.p5pv.com
     path: /
 proxy-groups:
 - name: 选择代理
