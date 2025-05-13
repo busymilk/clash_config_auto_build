@@ -1324,40 +1324,6 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     path: /oooo
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>美国-ChatGPT-TikTok-YouTube-rak1.986986.shop:2096
-  network: ws
-  port: 2096
-  server: rak1.986986.shop
-  servername: rak1.986986.shop
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a29e2386-7445-424d-9be1-501f2b2b4d4e
-  ws-opts:
-    headers:
-      HOST: rak1.986986.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-rak1.986986.shop:2053
-  network: ws
-  port: 2053
-  server: rak1.986986.shop
-  servername: rak1m1.986986.shop
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a29e2386-7445-424d-9be1-501f2b2b4d4e
-  ws-opts:
-    headers:
-      HOST: rak1m1.986986.shop
-    path: /
 - cipher: aes-256-gcm
   name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.110.1.146:2376
   password: faBAoD54k87UJG7
@@ -1370,23 +1336,6 @@ proxies:
   port: 30067
   server: 154.3.8.151
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-rak1.986986.shop:2083
-  network: ws
-  port: 2083
-  server: rak1.986986.shop
-  servername: rak1m2.986986.shop
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a29e2386-7445-424d-9be1-501f2b2b4d4e
-  ws-opts:
-    headers:
-      HOST: rak1m2.986986.shop
-    path: /
 - cipher: aes-256-gcm
   name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-38.110.1.146:443
   password: pKEW8JPByTVTLtM
@@ -1420,20 +1369,25 @@ proxies:
   port: 7002
   server: 38.110.1.146
   type: ss
+- alterId: 2
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-206.189.201.199:30808
+  network: ws
+  port: 30808
+  server: 206.189.201.199
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
 - cipher: aes-256-gcm
-  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-38.110.1.146:8090
+  name: SS-美国-NF解锁自制剧-38.110.1.146:8091
   password: PCnnH6SQSnfoS27
-  port: 8090
+  port: 8091
   server: 38.110.1.146
   type: ss
-- cipher: aes-256-cfb
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-34.218.249.8:443
-  obfs: plain
-  password: awsps0501
-  port: 443
-  protocol: origin
-  server: 34.218.249.8
-  type: ssr
 - alpn:
   - h3
   auth_str: dongtaiwang.com
