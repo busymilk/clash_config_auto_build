@@ -85,7 +85,7 @@ profile:
 proxies:
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_1097
+  name: Hong Kong_Central_vmess_1034
   network: ws
   port: 8080
   server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
@@ -96,58 +96,39 @@ proxies:
     headers:
       Host: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_10103
-  password: 91a41f4e02dc
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hkkh11v1.xpmc.cc
-    mode: websocket
-    mux: true
-    path: /utvbnrzejpmt
-    skip-cert-verify: false
-    tls: true
-  port: 31785
-  server: hkkh11v1.xpmc.cc
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf
-  name: Hong Kong_None_ss_10107
-  password: asd123456
-  port: 8388
-  server: 103.149.183.61
-  tfo: false
-  type: ss
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_1142
+  name: Hong Kong_Central_vmess_1035
+  network: ws
+  port: 8080
+  server: e4d173ea-swd340-sykxcb-1nhp7.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5fc9c9aa-ea47-11ed-8397-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: Hong Kong_Central_vmess_1039
   network: ws
   port: 8080
   server: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
   uuid: a5a81a34-f257-11ef-ba82-f23c913c8d2b
   ws-opts:
-    headers: {}
-    path: /
-  xudp: true
-- name: Hong Kong_None_trojan_1147
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
     headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
+      Host: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1189
+  name: Hong Kong_Central_ss_1090
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -162,25 +143,12 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf
-  name: Hong Kong_None_ss_1193
+  name: Hong Kong_None_ss_1094
   password: asd123456
   port: 8388
   server: 103.149.183.61
   tfo: false
   type: ss
-- name: Hong Kong_None_trojan_11224
-  network: ws
-  password: trojan
-  port: 8443
-  server: 45.192.222.112
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-    path: /
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -195,89 +163,98 @@ proxies:
   uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
   ws-opts:
     path: /register
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 9bb5d685-bcbd-4c5b-90f6-b69c6a0eff9f
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: 9bb5d685-bcbd-4c5b-90f6-b69c6a0eff9f
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 9bb5d685-bcbd-4c5b-90f6-b69c6a0eff9f
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰1 |  3.0MB/s|15%|Openai
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知-NF解锁香港地区非自制剧-ChatGPT-YouTube-172.67.158.71:80
   network: ws
-  port: 8080
-  server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
-  tls: false
-  type: vmess
-  uuid: 94614d84-9986-11ee-be7f-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2|🇭🇰2 |  1.1MB/s|15%|Disney|Yout...
-  network: ws
-  port: 8080
-  server: e4d173ea-swd340-sykxcb-1nhp7.hgc1.tcpbbr.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5fc9c9aa-ea47-11ed-8397-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- auth: 4ab4694d-72df-4438-b087-66a0892b7904
-  delay: 1543
-  name: 2|🇭🇰3 |  2.0MB/s|25%|Netflix|Dis...
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 4ab4694d-72df-4438-b087-66a0892b7904
-  port: 11229
-  server: baipiaoyun-hongkongv1.baipiaoyun.site
+  port: 80
+  server: 172.67.158.71
+  servername: hk.freeyyds.dpdns.org
   skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  udp: true
+  type: vmess
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      HOST: hk.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知-NF解锁香港地区非自制剧-ChatGPT-YouTube-104.21.73.59:80
+  network: ws
+  port: 80
+  server: 104.21.73.59
+  servername: hk.freeyyds.dpdns.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      HOST: hk.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰 香港 01 | 1x HK
-  password: bfb40fde-b944-4893-a67f-802ca8aeabb8
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 372e92f8-d703-41c0-a974-c156ffab49b0
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰 香港 02 | 1x HK
-  password: bfb40fde-b944-4893-a67f-802ca8aeabb8
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: 372e92f8-d703-41c0-a974-c156ffab49b0
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰 香港住宅IP 03 | 1x HK
-  password: bfb40fde-b944-4893-a67f-802ca8aeabb8
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 372e92f8-d703-41c0-a974-c156ffab49b0
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 13,14|香港|@ripaojiedian
+- name: 2|🇭🇰1 |  5.4MB/s|0%|Netflix|Disn...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: us.madison.eu.org
+  skip-cert-verify: false
+  sni: skwygx.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰2 |  3.6MB/s|Youtube|Openai
+  network: ws
+  port: 8080
+  server: a9c5b237-swd340-t7a4xd-1ln9e.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e35ea0a0-0634-11f0-8eb0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- flow: xtls-rprx-vision
+  name: 2|🇭🇰3 |  4.3MB/s|15%|Netflix|Dis...
+  network: tcp
+  port: 20550
+  reality-opts:
+    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
+  server: hkt-ty-line-1.sudatech.store
+  servername: www.paypal.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
+- name: 12,13|香港|@ripaojiedian
   network: tcp
   password: ac1ba86a-eafd-4457-b8ec-3551bbc54ca9
   port: 12221
@@ -286,7 +263,7 @@ proxies:
   sni: mmbiz.redapricotcloud.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰 香港2|@ripaojiedian
+  name: 12|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -302,7 +279,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: 13|🇭🇰 香港3|@ripaojiedian
+  name: 12|🇭🇰 香港3|@ripaojiedian
   port: 35921
   server: 120.198.71.216
   skip-cert-verify: false
@@ -312,7 +289,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 13|🇭🇰 香港4|@ripaojiedian
+  name: 12|🇭🇰 香港4|@ripaojiedian
   port: 43302
   server: 183.236.51.38
   skip-cert-verify: false
@@ -322,7 +299,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: 13,14|香港5|@ripaojiedian
+  name: 12,13|香港5|@ripaojiedian
   network: ws
   port: '22642'
   server: 52.80.232.93
@@ -337,13 +314,13 @@ proxies:
       Host: zxjp-b.tkong.cc
     path: /
 - cipher: chacha20-ietf
-  name: 13|🇭🇰 香港6|@ripaojiedian
+  name: 12|🇭🇰 香港6|@ripaojiedian
   password: asd123456
   port: 8388
   server: 103.149.183.61
   tfo: false
   type: ss
-- name: 13,14|香港7|@ripaojiedian
+- name: 12,13|香港7|@ripaojiedian
   network: tcp
   password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
   port: 28505
@@ -353,7 +330,7 @@ proxies:
   type: trojan
 - alterId: 64
   cipher: auto
-  name: 14|香港3|@ripaojiedian
+  name: 13|香港3|@ripaojiedian
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -363,7 +340,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 14|香港4|@ripaojiedian
+  name: 13|香港4|@ripaojiedian
   network: tcp
   port: '43302'
   server: 183.236.51.38
@@ -371,49 +348,28 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-141.98.234.93-1131 | 8.868MB
-  password: WfmxKX2FBJRU0Ie9VLIYDL
-  port: 20012
-  server: 141.98.234.93
-  type: ss
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.204.104-1170 | 5.079MB
+  name: 🇭🇰HK-1.65.204.104-6442 | 5.92MB
   network: ws
   port: 80
-  server: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.204.104-1170 | 5.079MB
+  server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
+  servername: 🇭🇰HK-1.65.204.104-6442 | 5.92MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 203d1d64-3313-11ed-bb74-f23c9164ca5d
+  uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b
   ws-opts:
     headers:
-      Host: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
+      Host: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.204.104-1173 | 4.93MB
-  network: ws
-  port: 80
-  server: 39f4deb0-sv0xs0-t46she-5ifr.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.204.104-1173 | 4.93MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ecfab6c8-df5b-11ed-98a7-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 39f4deb0-sv0xs0-t46she-5ifr.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.204.104-6435 | 4.86MB
+  name: 🇭🇰HK-1.65.204.104-6441 | 5.598MB
   network: ws
   port: 80
   server: f72738d2-sv0xs0-tc2sod-1tizo.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.204.104-6435 | 4.86MB
+  servername: 🇭🇰HK-1.65.204.104-6441 | 5.598MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -424,19 +380,46 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.204.104-1160 | 4.003MB
+  name: 🇭🇰HK-1.65.204.104-6447 | 5.395MB
   network: ws
   port: 80
-  server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.204.104-1160 | 4.003MB
+  server: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
+  servername: 🇭🇰HK-1.65.204.104-6447 | 5.395MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b
+  uuid: 203d1d64-3313-11ed-bb74-f23c9164ca5d
   ws-opts:
     headers:
-      Host: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
+      Host: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
     path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-1.65.204.104-6440 | 5.138MB
+  network: ws
+  port: 80
+  server: c2abc5f2-sv0xs0-sy0vua-1rpnm.hk3.p5pv.com
+  servername: 🇭🇰HK-1.65.204.104-6440 | 5.138MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4d0e01ce-2ae6-11ef-8433-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: c2abc5f2-sv0xs0-sy0vua-1rpnm.hk3.p5pv.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-141.98.234.93-6278 | 3.971MB
+  password: WfmxKX2FBJRU0Ie9VLIYDL
+  port: 20012
+  server: 141.98.234.93
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇭🇰HK-103.149.182.191-6587 | 1.321MB
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
 proxy-groups:
 - name: 选择代理
   proxies:
