@@ -83,56 +83,21 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: Hong Kong_None_trojan_1036
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_1047
+  name: Hong Kong_Central_vmess_1097
   network: ws
-  port: 80
-  server: b8236f8e-svwf40-t4m86v-1s9pj.hk.p5pv.com
+  port: 8080
+  server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
   tls: false
   type: vmess
-  udp: true
-  uuid: 57f70d4e-6428-11ef-8f5f-f23c913c8d2b
+  uuid: 94614d84-9986-11ee-be7f-f23c9164ca5d
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- cipher: chacha20-ietf
-  name: Hong Kong_None_ss_1063
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_1077
-  network: ws
-  port: 80
-  server: 0ee7018b-sv2sg0-tbicd9-1go3q.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 0ee7018b-sv2sg0-tbicd9-1go3q.hk.p5pv.com
+      Host: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_10113
+  name: Hong Kong_Central_ss_10103
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -142,73 +107,20 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 37441
+  port: 31785
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
-- alterId: 2
-  cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_1165
-  network: ws
-  port: 80
-  server: 296d0ed6-sv6hs0-tegcd3-1ne75.hk.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c24da08e-e384-11ed-b0dd-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 296d0ed6-sv6hs0-tegcd3-1ne75.hk.p5pv.com
-    path: /
-  xudp: true
-- name: Hong Kong_None_trojan_1176
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
+- cipher: chacha20-ietf
+  name: Hong Kong_None_ss_10107
+  password: asd123456
+  port: 8388
+  server: 103.149.183.61
+  tfo: false
+  type: ss
 - alterId: '0'
   cipher: auto
-  name: Hong Kong_Central_vmess_1197
-  network: ws
-  port: '8080'
-  server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 94614d84-9986-11ee-be7f-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
-    path: /
-  xudp: true
-- alterId: 2
-  cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_11104
-  network: ws
-  port: 80
-  server: b8236f8e-svwf40-t4m86v-1s9pj.hk.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 57f70d4e-6428-11ef-8f5f-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: Hong Kong_Central_vmess_11112
+  name: Hong Kong_Central_vmess_1142
   network: ws
   port: 8080
   server: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
@@ -221,8 +133,21 @@ proxies:
     headers: {}
     path: /
   xudp: true
+- name: Hong Kong_None_trojan_1147
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: us.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_11115
+  name: Hong Kong_Central_ss_1189
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -232,10 +157,30 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 37441
+  port: 31785
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
+- cipher: chacha20-ietf
+  name: Hong Kong_None_ss_1193
+  password: asd123456
+  port: 8388
+  server: 103.149.183.61
+  tfo: false
+  type: ss
+- name: Hong Kong_None_trojan_11224
+  network: ws
+  password: trojan
+  port: 8443
+  server: 45.192.222.112
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: /
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -250,74 +195,110 @@ proxies:
   uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
   ws-opts:
     path: /register
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>香港-NF解锁自制剧-ChatGPT-YouTube-3fbc10.2ca52629-3a60.shop:80
-  network: ws
-  port: 80
-  server: 3fbc10.2ca52629-3a60.shop
-  servername: hk02s.2ca52629-3a60.shop
-  skip-cert-verify: true
-  type: vmess
-  uuid: 5be76fa5-3758-4282-bb54-b1efabd6ba3d
-  ws-opts:
-    headers:
-      HOST: hk02s.2ca52629-3a60.shop
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
-  password: 1d53608e-7fb6-4f73-ad7c-91967ba8d383
+  password: 1236c324-ebed-4cba-9367-4546d31fb9b2
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 02 | 1x HK
-  password: 1d53608e-7fb6-4f73-ad7c-91967ba8d383
+  password: 1236c324-ebed-4cba-9367-4546d31fb9b2
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 1d53608e-7fb6-4f73-ad7c-91967ba8d383
+  password: 1236c324-ebed-4cba-9367-4546d31fb9b2
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇭🇰1 |  2.5MB/s|0%|Netflix
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: cc7f81cf-848f-4177-80a5-fe3c9686e730
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 3,13,14|香港7|@ripaojiedian
+  network: tcp
+  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
+  port: 28505
+  server: green.cdntencentmusic.com
   skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
+  sni: green.cdntencentmusic.com
   type: trojan
-- alterId: '0'
+- name: 3|🇭🇰2 |  2.3MB/s|12%|Netflix|Dis...
+  password: 482194f6-8ca3-4c53-b43e-150f51efda7f
+  port: 27101
+  server: 219.135.197.214
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf
+  delay: 763
+  name: 3|🇭🇰3 |  4.3MB/s|16%|Netflix|Dis...
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: sGWdzYDx5J
+  port: 43125
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: csilicovolcanoconiosis.godeove.xyz
+  type: ssr
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇨🇳CN
+  delay: 175
+  name: 3|🇭🇰4 |  2.4MB/s|100%|Netflix|Di...
+  password: QZ4L8ZDG75OFMFRU
+  port: 15012
+  server: 183.2.157.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 3|🇭🇰5 |  5.3MB/s|100%|Disney|You...
+  password: V98N1K9OBXGHKC3X
+  port: 15005
+  server: 183.2.157.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 3|🇭🇰6 |  3.8MB/s|100%|Netflix|Di...
+  password: FB83ULXQR5LHF82K
+  port: 15010
+  server: 183.2.157.135
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 2|🇭🇰2 |  4.0MB/s|15%|Disney|Yout...
+  name: 3|🇭🇰7 |  4.3MB/s|15%|Netflix|Dis...
   network: ws
   port: 8080
-  server: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
-  skip-cert-verify: false
+  server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
   tls: false
   type: vmess
-  udp: true
-  uuid: a5a81a34-f257-11ef-ba82-f23c913c8d2b
+  uuid: 94614d84-9986-11ee-be7f-f23c9164ca5d
   ws-opts:
-    headers: {}
+    headers:
+      Host: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
     path: /
-  xudp: true
-- auth: nfsn666
-  name: 2|🇭🇰3 |  1.9MB/s|0%|Netflix|Disn...
-  password: nfsn666
-  port: 8888
-  server: hk.nfsn666.gq
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  type: hysteria2
-- name: 2,13,14|香港|@ripaojiedian
+- name: 13,14|香港|@ripaojiedian
   network: tcp
   password: ac1ba86a-eafd-4457-b8ec-3551bbc54ca9
   port: 12221
@@ -325,39 +306,6 @@ proxies:
   skip-cert-verify: false
   sni: mmbiz.redapricotcloud.com
   type: trojan
-- auth: 4ab4694d-72df-4438-b087-66a0892b7904
-  delay: 1543
-  name: 2|🇭🇰5 |  2.9MB/s|25%|Netflix|Dis...
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 4ab4694d-72df-4438-b087-66a0892b7904
-  port: 11229
-  server: baipiaoyun-hongkongv1.baipiaoyun.site
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰 香港 01 | 1x HK
-  password: 63fbaae5-fb5a-4526-a3ae-5acaa50421a8
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰 香港 02 | 1x HK
-  password: 63fbaae5-fb5a-4526-a3ae-5acaa50421a8
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 63fbaae5-fb5a-4526-a3ae-5acaa50421a8
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 13|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
@@ -416,14 +364,6 @@ proxies:
   server: 103.149.183.61
   tfo: false
   type: ss
-- name: 13,14|香港7|@ripaojiedian
-  network: tcp
-  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
-  port: 28505
-  server: green.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green.cdntencentmusic.com
-  type: trojan
 - alterId: 64
   cipher: auto
   name: 14|香港3|@ripaojiedian
@@ -444,19 +384,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 15|HK_speednode_0139
-  network: ws
-  password: trojan
-  port: 8443
-  server: 45.192.222.112
-  skip-cert-verify: false
-  sni: store.timimi.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: store.timimi.dpdns.org
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-141.98.234.93-1131 | 8.868MB
   password: WfmxKX2FBJRU0Ie9VLIYDL
