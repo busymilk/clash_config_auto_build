@@ -84,21 +84,21 @@ profile:
   store-selected: true
 proxies:
 - name: 🇺🇸_美国_1
-  network: grpc
-  port: 2087
-  server: 15.204.0.48
+  network: tcp
+  password: Aimer
+  port: 27738
+  server: 38.59.242.169
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 22f5e96c-ff6f-4562-a7d2-db725e4d331a
 - name: 🇺🇸_美国_2
   network: tcp
   password: Aimer
   port: 2087
-  server: 108.165.152.98
+  server: 108.165.152.163
   skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
+  sni: epccc.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_3
@@ -114,89 +114,70 @@ proxies:
   network: tcp
   password: Aimer
   port: 2053
-  server: 167.68.5.85
+  server: 108.165.152.67
   skip-cert-verify: true
-  sni: epccc.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_5
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 108.165.152.93
-  skip-cert-verify: true
-  sni: epccc.ambercc.filegear-sg.me
+  sni: epccx.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇦🇲_亚美尼亚_1
   network: tcp
   password: Aimer
-  port: 2096
-  server: 188.164.159.241
-  skip-cert-verify: true
-  sni: epccc.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_2
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 188.164.159.241
+  port: 8443
+  server: 188.164.159.45
   skip-cert-verify: true
   sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_5
+  network: tcp
+  password: Aimer
+  port: 46238
+  server: 185.201.226.117
+  skip-cert-verify: true
+  sni: epccc.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_6
   network: tcp
   password: Aimer
-  port: 27738
-  server: 38.59.242.169
+  port: 2083
+  server: 108.165.152.130
   skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
+  sni: epccc.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_7
   network: tcp
   password: Aimer
-  port: 8443
-  server: 192.200.160.109
+  port: 8843
+  server: 47.79.90.82
   skip-cert-verify: true
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_8
   network: tcp
-  password: xxoo
-  port: 443
-  server: us.blazeppn.info
+  password: Aimer
+  port: 2096
+  server: 167.68.4.223
   skip-cert-verify: true
-  sni: us.blazeppn.info
+  sni: epccx.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_9
   network: tcp
+  password: Aimer
   port: 443
-  server: 51.81.18.62
-  servername: 147135011033.sec21org.com
+  server: 108.165.152.113
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-- name: 🇺🇸_美国_10
-  network: tcp
-  password: xxoo
-  port: 443
-  server: 138.197.5.103
-  skip-cert-verify: true
-  sni: us.blazeppn.info
+  sni: epccx.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇦🇲_亚美尼亚_3
+- name: 🇺🇸_美国_10
   network: tcp
   password: Aimer
-  port: 2096
-  server: 188.164.159.55
+  port: 2083
+  server: 198.62.62.61
   skip-cert-verify: true
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
@@ -204,114 +185,13 @@ proxies:
 - name: 🇺🇸_美国_11
   network: tcp
   password: Aimer
-  port: 443
-  server: 107.172.239.74
+  port: 8443
+  server: 199.34.230.9
   skip-cert-verify: true
-  sni: epccc.ambercc.filegear-sg.me
+  sni: epccx.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_12
-  network: tcp
-  password: 5453ae26-250d-4e79-b4ec-016baf806865
-  port: 443
-  server: 1sdfghjk.890602.xyz
-  skip-cert-verify: true
-  sni: 1SdfghJk.890602.xyz
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_13
-  network: tcp
-  password: Aimer
-  port: 443
-  server: sage.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_14
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 192.200.160.109
-  skip-cert-verify: true
-  sni: epccc.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_15
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 160.79.105.133
-  skip-cert-verify: true
-  sni: epccc.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_16
-  network: tcp
-  port: 443
-  server: 135.148.182.1
-  servername: 147135001195.sec22org.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ea286109-d20f-415e-849e-4af20ab04b65
-- name: 🇺🇸_美国_17
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 108.165.152.67
-  skip-cert-verify: true
-  sni: epccc.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_18
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 107.172.239.74
-  skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_19
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 154.26.180.33
-  skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_20
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 135.84.64.77
-  skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_21
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 160.79.105.133
-  skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_22
-  network: tcp
-  port: 443
-  server: 135.148.142.30
-  servername: 147135010072.sec21org.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
-- name: 🇺🇸_美国_23
   network: tcp
   password: Aimer
   port: 2053
@@ -320,11 +200,128 @@ proxies:
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇺🇸_美国_24
+- name: 🇺🇸_美国_13
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 108.165.152.31
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_14
+  network: tcp
+  password: Aimer
+  port: 2053
+  server: 199.34.228.50
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_15
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 108.165.152.91
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_16
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 108.165.152.29
+  skip-cert-verify: true
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_17
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 108.165.152.1
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_18
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 130.250.137.63
+  skip-cert-verify: true
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_19
   network: tcp
   password: Aimer
   port: 443
-  server: 47.79.84.167
+  server: 162.159.44.76
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_20
+  network: tcp
+  password: Aimer
+  port: 443
+  server: thaddeus.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_21
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 108.165.152.249
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇦🇲_亚美尼亚_2
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 188.164.159.18
+  skip-cert-verify: true
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_22
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 162.120.94.232
+  skip-cert-verify: true
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇦🇲_亚美尼亚_3
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 188.164.159.241
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_23
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 108.165.152.40
+  skip-cert-verify: true
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_24
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 199.34.228.178
   skip-cert-verify: true
   sni: epccc.ambercc.filegear-sg.me
   type: trojan
@@ -332,10 +329,10 @@ proxies:
 - name: 🇺🇸_美国_25
   network: tcp
   password: Aimer
-  port: 58846
-  server: 65.75.192.14
+  port: 2096
+  server: 135.84.64.77
   skip-cert-verify: true
-  sni: epccc.ambercc.filegear-sg.me
+  sni: epccx.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_26
@@ -350,31 +347,13 @@ proxies:
 - name: 🇺🇸_美国_27
   network: tcp
   password: Aimer
-  port: 18181
-  server: 38.147.187.99
-  skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_28
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 154.26.180.33
+  port: 8443
+  server: 104.129.166.131
   skip-cert-verify: true
   sni: epccc.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇺🇸_美国_29
-  network: tcp
-  password: Aimer
-  port: 58846
-  server: 65.75.192.14
-  skip-cert-verify: true
-  sni: epccx.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_30
+- name: 🇺🇸_美国_28
   network: tcp
   password: Aimer
   port: 443
@@ -383,160 +362,127 @@ proxies:
   sni: epccx.ambercc.filegear-sg.me
   type: trojan
   udp: true
+- name: 🇺🇸_美国_29
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 199.34.228.71
+  skip-cert-verify: true
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_30
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 108.165.152.38
+  skip-cert-verify: true
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
 - name: 🇺🇸_美国_31
   network: tcp
-  password: 70776bb4-d791-4cbd-9c9b-c76e937f9e60
+  password: 53249200-30ff-436f-a032-0bb00605f8f9
   port: 443
-  server: 172.67.216.240
+  server: 172.67.219.196
   skip-cert-verify: true
-  sni: Xxs345rf.857856.xYZ
+  sni: 3derty.852224.dpdns.org
   type: trojan
   udp: true
 - name: 🇺🇸_美国_32
-  network: ws
+  network: tcp
+  password: 53249200-30ff-436f-a032-0bb00605f8f9
   port: 443
-  server: dnschecker.org
-  servername: sl.ylka.dpdns.org
+  server: 172.67.219.196
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: 3derty.852224.dpdns.org
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_33
-  network: ws
-  port: 443
-  server: ip.sb
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_33
+  network: tcp
+  port: '55839'
+  server: 38.54.25.204
+  type: vmess
+  uuid: b7675d66-cddb-4a69-edd6-c0c83290f72e
 - name: 🇺🇸_美国_34
-  network: ws
-  port: 443
-  server: www.hugedomains.com
-  servername: sl.ylka.dpdns.org
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 45.67.214.41
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_35
-  network: ws
-  port: 443
-  server: time.is
-  servername: sl.ylka.dpdns.org
+  network: tcp
+  password: Aimer
+  port: 80
+  server: 204.110.223.105
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_36
-  network: ws
+  network: tcp
+  password: Aimer
   port: 443
-  server: 198.62.62.209
-  servername: sl.ylka.dpdns.org
+  server: 108.165.152.71
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_37
-  network: ws
+  network: tcp
+  password: Aimer
   port: 443
-  server: zula.ir
-  servername: cr77.hedieh.dpdns.org
+  server: 129.80.237.223
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epccx.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: f12977e6-d296-4d94-9aaf-d31770b70f84
-  ws-opts:
-    headers:
-      host: cr77.hedieh.dpdns.org
-    path: /?ed=2560fp=chrome
 - name: 🇺🇸_美国_38
-  network: ws
-  port: 443
-  server: steamdb.info
-  servername: sl.ylka.dpdns.org
+  network: tcp
+  password: Aimer
+  port: 52782
+  server: 38.60.109.124
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_39
-  network: ws
+  network: tcp
+  password: Aimer
   port: 443
-  server: abdullah.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: 23.94.92.19
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_40
-  network: ws
+  network: tcp
+  password: Aimer
   port: 443
-  server: 160.79.104.240
-  servername: sl.ylka.dpdns.org
+  server: 107.172.239.74
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_41
-  network: ws
-  port: 443
-  server: moura.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  network: tcp
+  password: Aimer
+  port: 58846
+  server: 65.75.192.14
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epccc.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_42
   network: ws
   port: 443
-  server: comicabc.com
-  servername: sl.ylka.dpdns.org
+  server: 138.2.107.107
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -544,13 +490,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_43
   network: ws
   port: 443
-  server: cris.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: 160.79.105.119
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -558,13 +504,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_44
   network: ws
   port: 443
-  server: 160.79.104.164
-  servername: sl.ylka.dpdns.org
+  server: 135.84.76.115
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -572,13 +518,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_45
   network: ws
   port: 443
-  server: icook.tw
-  servername: sl.ylka.dpdns.org
+  server: www.hugedomains.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -586,13 +532,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_46
   network: ws
   port: 443
-  server: huxley.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -600,13 +546,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_47
   network: ws
   port: 443
-  server: craig.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: time.is
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -614,13 +560,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_48
   network: ws
   port: 443
-  server: benedict.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: otto.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -628,13 +574,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_49
   network: ws
   port: 443
-  server: rustam.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: 160.79.105.233
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -642,13 +588,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_50
   network: ws
   port: 443
-  server: braden.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: 192.0.54.46
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -656,27 +602,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_51
   network: ws
-  port: 2083
-  server: 199.34.228.161
-  servername: ex.sue.x10.mx
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      host: ex.sue.x10.mx
-    path: /
-- name: 🇺🇸_美国_52
-  network: ws
   port: 443
-  server: www.ddwhm.com
-  servername: sl.ylka.dpdns.org
+  server: benedict.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -684,13 +616,27 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_52
+  network: ws
+  port: 443
+  server: sullivan.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_53
   network: ws
   port: 443
-  server: www.digitalocean.com
-  servername: sl.ylka.dpdns.org
+  server: bowen.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -698,13 +644,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_54
   network: ws
   port: 443
-  server: lewis.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: trevor.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -712,13 +658,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_55
   network: ws
-  port: 55555
-  server: 128.14.140.2
-  servername: sl.ylka.dpdns.org
+  port: 443
+  server: ashton.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -726,13 +672,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_56
   network: ws
   port: 443
-  server: 198.62.62.156
-  servername: sl.ylka.dpdns.org
+  server: 192.0.54.146
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -740,13 +686,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_57
   network: ws
   port: 443
-  server: 192.0.63.29
-  servername: sl.ylka.dpdns.org
+  server: nikon.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -754,13 +700,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_58
   network: ws
   port: 443
-  server: decker.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: braden.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -768,13 +714,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_59
   network: ws
   port: 443
-  server: 63.141.128.136
-  servername: sl.ylka.dpdns.org
+  server: tasteatlas.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -782,13 +728,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_60
   network: ws
   port: 443
-  server: 160.79.104.55
-  servername: sl.ylka.dpdns.org
+  server: www.udemy.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -796,13 +742,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_61
   network: ws
   port: 443
-  server: 160.79.105.109
-  servername: sl.ylka.dpdns.org
+  server: uriah.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -810,41 +756,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_62
   network: ws
   port: 443
-  server: 160.79.104.113
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      host: 0229.patterdeng.pp.ua
-    path: /
-- name: 🇺🇸_美国_63
-  network: ws
-  port: 443
-  server: 160.79.104.113
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      host: 0229.patterdeng.pp.ua
-    path: /security=tls
-- name: 🇺🇸_美国_64
-  network: ws
-  port: 443
-  server: dylan.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: 198.62.62.156
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -852,13 +770,41 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_63
+  network: ws
+  port: 443
+  server: 160.79.104.75
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_64
+  network: ws
+  port: 443
+  server: 160.79.105.134
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_65
   network: ws
   port: 443
-  server: www.pcmag.com
-  servername: sl.ylka.dpdns.org
+  server: 130.250.137.163
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -866,27 +812,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_66
   network: ws
   port: 443
-  server: c1swer.777159.xyz
-  servername: c1swER.777159.xYz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: cad5a49f-14e5-4a05-aae9-c5df8fad394f
-  ws-opts:
-    headers:
-      host: c1swER.777159.xYz
-    path: /m31alzi4vavxqxenw4z4
-- name: 🇺🇸_美国_67
-  network: ws
-  port: 443
-  server: ipinfo.in
-  servername: sl.ylka.dpdns.org
+  server: kyree.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -894,13 +826,27 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_67
+  network: ws
+  port: 443
+  server: 160.79.104.51
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_68
   network: ws
   port: 443
-  server: wilson.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: lewis.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -908,13 +854,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_69
   network: ws
   port: 443
-  server: ashton.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: www.pcmag.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -922,26 +868,27 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_70
+- name: 🇺🇸_美国_70
   network: ws
-  port: '443'
-  server: 1wweerttt.131.pp.ua
+  port: 443
+  server: 160.79.105.207
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: 1wweerttt.131.pp.ua
-    path: /h7Rcu0y30lhjdVjJ3gc4aj
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_71
   network: ws
   port: 443
-  server: otto.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: 63.141.128.67
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -949,13 +896,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_72
   network: ws
   port: 443
-  server: uriah.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: www.whatismyip.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -963,13 +910,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_73
   network: ws
   port: 443
-  server: 160.79.104.33
-  servername: sl.ylka.dpdns.org
+  server: www.digitalocean.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -977,13 +924,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_74
   network: ws
   port: 443
-  server: 192.0.54.74
-  servername: sl.ylka.dpdns.org
+  server: abdullah.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -991,13 +938,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_75
   network: ws
   port: 443
-  server: 216.24.57.118
-  servername: sl.ylka.dpdns.org
+  server: 160.79.104.191
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1005,13 +952,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_76
   network: ws
   port: 443
-  server: 216.24.57.36
-  servername: sl.ylka.dpdns.org
+  server: 160.79.105.89
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1019,13 +966,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_77
   network: ws
   port: 443
-  server: 160.79.105.66
-  servername: sl.ylka.dpdns.org
+  server: icook.tw
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1033,13 +980,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_78
   network: ws
   port: 443
-  server: 192.0.54.174
-  servername: sl.ylka.dpdns.org
+  server: craig.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1047,13 +994,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_79
   network: ws
   port: 443
-  server: 160.79.104.195
-  servername: sl.ylka.dpdns.org
+  server: 192.0.63.89
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1061,13 +1008,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_80
   network: ws
   port: 443
-  server: 158.224.83.27
-  servername: sl.ylka.dpdns.org
+  server: steamdb.info
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1075,13 +1022,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_81
   network: ws
   port: 443
-  server: 160.79.104.165
-  servername: sl.ylka.dpdns.org
+  server: cris.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1089,13 +1036,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_82
   network: ws
   port: 443
-  server: 192.0.54.111
-  servername: sl.ylka.dpdns.org
+  server: 160.79.105.146
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1103,13 +1050,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_83
   network: ws
   port: 443
-  server: iplocation.io
-  servername: sl.ylka.dpdns.org
+  server: dylan.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1117,13 +1064,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_84
   network: ws
   port: 443
-  server: toy-people.com
-  servername: sl.ylka.dpdns.org
+  server: 192.0.63.116
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1131,13 +1078,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_85
   network: ws
   port: 443
-  server: sullivan.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: 160.79.105.121
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1145,53 +1092,55 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_86
+- name: 🇺🇸_美国_86
   network: ws
-  port: '80'
-  server: www.hdmoli.com
-  type: vmess
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  port: 443
+  server: 135.84.76.94
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: fr.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_87
   network: ws
-  port: 8080
-  server: 170.114.45.6
-  servername: xrr.rtxconfigz.xyz
+  port: 443
+  server: 160.79.105.196
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: xrr.rtxconfigz.xyz
-    path: /
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_88
   network: ws
-  port: 8080
-  server: tgju.org
-  servername: M4.nF9JZ2st7N.zULAiR.ORG.
+  port: 443
+  server: 63.141.128.34
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 6abbaf96-4b16-48d3-b996-a6067fc6eb2c
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: M4.nF9JZ2st7N.zULAiR.ORG.
-    path: /?ed=2048
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_89
   network: ws
   port: 443
-  server: nikon.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: iplocation.io
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1199,13 +1148,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_90
   network: ws
   port: 443
-  server: julio.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: 198.62.62.4
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1213,27 +1162,27 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_91
   network: ws
   port: 443
-  server: trevor.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
+  server: thaddeus.ns.cloudflare.com
+  servername: edccc.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
+      host: edccc.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇺🇸_美国_92
   network: ws
   port: 443
-  server: 192.9.139.160
-  servername: sl.ylka.dpdns.org
+  server: 63.141.128.92
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1241,23 +1190,258 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_93
   network: ws
-  port: 8080
-  server: tgju.org
-  servername: M4.nF9JZ2st7N.zULAiR.ORG.
+  port: 443
+  server: www.wto.org
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 6abbaf96-4b16-48d3-b996-a6067fc6eb2c
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: M4.nF9JZ2st7N.zULAiR.ORG.
-    path: /
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_94
+  network: ws
+  port: 443
+  server: julio.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_95
+  network: ws
+  port: 443
+  server: 160.79.104.101
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_96
+  network: ws
+  port: 443
+  server: 160.79.104.108
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_97
+  network: ws
+  port: 443
+  server: 160.79.105.106
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_98
+  network: ws
+  port: 443
+  server: decker.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_99
+  network: ws
+  port: 443
+  server: huxley.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_100
+  network: ws
+  port: 443
+  server: dnschecker.org
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_101
+  network: ws
+  port: 2053
+  server: 129.159.129.107
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_102
+  network: ws
+  port: 443
+  server: rustam.ns.cloudflare.com
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_103
+  network: ws
+  port: 55555
+  server: 128.14.140.2
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_104
+  network: ws
+  port: 443
+  server: 192.0.63.200
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_105
+  network: ws
+  port: 80
+  server: 104.16.40.244
+  servername: CDN73524.erfantop.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5cf78a1b-2e4b-4bef-b791-c276a2c8dd6a
+  ws-opts:
+    headers:
+      host: CDN73524.erfantop.ir
+    path: /@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20?ed=2048
+- name: 🇺🇸_美国_106
+  network: ws
+  port: 80
+  server: 104.16.40.244
+  servername: CDN73524.erfantop.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5cf78a1b-2e4b-4bef-b791-c276a2c8dd6a
+  ws-opts:
+    headers:
+      host: CDN73524.erfantop.ir
+    path: /@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20?ed=2048
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_107
+  network: ws
+  port: '443'
+  server: cloudgetservice.mcloudservice.site
+  tls: true
+  type: vmess
+  uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
+  ws-opts:
+    headers:
+      host: Fra-Vp-123.BLaZECLOUD.Site
+    path: /linvkws
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_108
+  network: ws
+  port: '443'
+  server: cloudgetservice.mcloudservice.site
+  tls: true
+  type: vmess
+  uuid: ad2bca4d-be9e-4ac2-b2ed-4c81abb4242f
+  ws-opts:
+    headers:
+      host: mAxNEtVip-uSA-Vp4.nETKh3.sItE
+    path: /linkws
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_109
+  network: ws
+  port: '2096'
+  server: 141.101.120.253
+  tls: true
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      host: 1746882891.speed.adl.cccp.freefly.pp.ua
+    path: /
+- name: 🇺🇸_美国_110
+  network: ws
+  port: 443
+  server: toy-people.com
+  servername: zx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_111
   network: ws
   port: 8080
   server: 45.39.198.43
@@ -1271,11 +1455,11 @@ proxies:
     headers:
       host: edccx.aimercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_95
+- name: 🇺🇸_美国_112
   network: ws
   port: 443
-  server: 63.141.128.93
-  servername: sl.ylka.dpdns.org
+  server: 129.213.136.180
+  servername: zx.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1283,92 +1467,8 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: sl.ylka.dpdns.org
+      host: zx.ylks0033.dpdns.org
     path: /?ed=2560
-- name: 🇺🇸_美国_96
-  network: ws
-  port: 443
-  server: 198.62.62.4
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_97
-  network: ws
-  port: 443
-  server: 69.84.182.141
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_98
-  network: ws
-  port: 443
-  server: 69.84.182.97
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_99
-  network: ws
-  port: 443
-  server: www.whatismyip.com
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_100
-  network: ws
-  port: 443
-  server: bowen.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_101
-  network: ws
-  port: 8080
-  server: 104.26.15.85
-  servername: 18.6na7PY43IT.zuLaiR.Org.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 51fda508-20aa-419e-b4c3-3a6202411412
-  ws-opts:
-    headers:
-      host: 18.6na7PY43IT.zuLaiR.Org.
-    path: /?ed=2048
 - alpn:
   - h3
   auth_str: dongtaiwang.com
@@ -2016,12 +2116,6 @@ proxies:
     headers:
       HOST: ny1.bulkcash.top
     path: /
-- cipher: aes-256-gcm
-  name: SS-美国-NF解锁香港自制剧-ChatGPT-TikTok-YouTube-154.3.8.151:30067
-  password: iUB0923RBA
-  port: 30067
-  server: 154.3.8.151
-  type: ss
 - alterId: 32
   cipher: auto
   h2-opts: {}
@@ -2039,6 +2133,14 @@ proxies:
     headers:
       HOST: vc.fly.dev
     path: /vc
+- cipher: aes-256-cfb
+  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-35.90.251.87:443
+  obfs: plain
+  password: awsps0501
+  port: 443
+  protocol: origin
+  server: 35.90.251.87
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 美国 001
