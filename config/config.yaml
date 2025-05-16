@@ -96067,6 +96067,23 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
+  name: VMESS-未知>法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top:443
+  network: ws
+  port: 443
+  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      HOST: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+    path: /azumase.ren
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
   name: VMESS-未知>塞舌尔-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-v33.emoyes.top:443
   network: ws
   port: 443
@@ -100316,47 +100333,146 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=160.123.255.243:443&proxyIP=null
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: b5d29914-swb8g0-swy6li-tni2.cu.plebai.net
-  sni: b5d29914-swb8g0-swy6li-tni2.cu.plebai.net
+- alpn:
+  - http/1.1
+  name: 🇺🇸_US_美国->🇨🇳_CN_中国
+  network: ws
+  password: 2734c14b-e4ce-48b3-b3de-f80788cb4c47
+  port: 443
+  server: 104.21.84.58
+  skip-cert-verify: false
+  sni: XXXcddDe.IRaN2035.dpdNs.orG
   type: trojan
-- cipher: aes-256-gcm
+  udp: true
+  ws-opts:
+    path: /bdtuD5eD7Q29WxRG8DqNAB
+- cipher: aes-128-cfb
   name: 🇺🇸_US_美国
-  password: QJbkBM3YrD
-  port: 54535
-  server: 38.244.10.137
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
   type: ss
-- name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
-  port: 35000
-  server: gzyd.cg.xxality.cn
-  sni: cgsg2.hysality.com
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  password: b93c66cc-00ed-11ec-8673-f23c9164ca5d
+  port: 15229
+  server: 2e113de4-swb8g0-sxoons-1a3sy.cu.plebai.net
+  skip-cert-verify: false
   type: trojan
-- name: 🇩🇪_DE_德国->🇺🇸_US_美国
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
+  port: 15229
+  server: f5ada702-swb8g0-t5fh9u-1uni.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  password: 398e0d38-8649-11ef-959c-f23c9164ca5d
+  port: 15229
+  server: 72135393-swb8g0-sxzls8-1gxvd.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: 🇨🇦_CA_加拿大->🇨🇳_CN_中国
+  password: '74260665780162200'
+  port: 443
+  server: 52.60.142.77
+  sni: allowing-owl.shiner427.skin
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: 🇨🇦_CA_加拿大->🇨🇳_CN_中国_1
+  password: '74260665780162200'
+  port: 443
+  server: allowing-owl.shiner427.skin
+  skip-cert-verify: true
+  sni: allowing-owl.shiner427.skin
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- alpn:
+  - http/1.1
+  name: 🇺🇸_US_美国->🇨🇳_CN_中国_1
+  network: ws
+  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
+  port: 443
+  server: 172.67.144.126
+  skip-cert-verify: false
+  sni: CFR56ty7890.288288.sHOP
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /By7cEmOrNRS58yeduy9AOG
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: 🇺🇸_US_美国_2
+  password: xxoo
+  port: 443
+  server: 138.197.5.103
+  skip-cert-verify: false
+  sni: us.blazeppn.info
+  type: trojan
+- name: 🇩🇪_DE_德国
   password: '74260665780162200'
   port: 443
   server: cuddly-finch.shiner427.skin
   skip-cert-verify: false
   sni: cuddly-finch.shiner427.skin
   type: trojan
-- name: 🇺🇸_US_美国_2
-  network: ws
-  password: aTArbZ2F0E
-  port: 443
-  server: cloudgetservice.mcloudservice.site
-  sni: uSa-vp-27.bLAzECLOUD.SITE
+- alpn:
+  - http/1.1
+  name: 🇺🇸_US_美国->🇩🇪_DE_德国_1
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.76.237.63
+  sni: trojan.burgerip.co.uk
   type: trojan
-  udp: true
-  ws-opts:
-    path: /linkvkws
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳_CN_中国
+  password: VfaEatGj7iXncVpijKFC1e
+  port: 59945
+  server: 62.60.231.81
+  type: ss
 - name: 🇺🇸_US_美国_3
   network: ws
   password: 15153c1d-fc81-4b2a-9689-7b4e4a72dce5
   port: 443
   server: 172.67.188.77
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: edfr4.890604.dpdns.org
   type: trojan
   udp: true
@@ -100364,141 +100480,66 @@ proxies:
     headers:
       host: edfr4.890604.dpdns.org
     path: /l6lvY4hFZriQDBimbKYmPIggy
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
-  type: trojan
-- cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_4
-  password: awsps0501
-  port: 443
-  server: 34.210.54.251
-  type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 🇺🇸_US_美国->🇨🇳_CN_中国_1
+  name: 🇨🇳_CN_中国_1
   network: ws
-  port: 80
-  server: 9e5560.82d35d19-d88c.shop
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
-  uuid: 5be76fa5-3758-4282-bb54-b1efabd6ba3d
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: us03s.82d35d19-d88c.shop
-    path: /
+      host: baidu.com
+    path: /oooo
 - name: 🇺🇸_US_美国->🇫🇷_FR_法国
   network: ws
-  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
   port: 443
-  server: 172.67.175.139
-  sni: X3W4.859886.XYz
+  server: 104.21.25.95
+  sni: DDd.890604.FIlEGear-sG.Me
   type: trojan
   udp: true
   ws-opts:
-    path: /COp52Dbu3dvwvDWUxOqxq
+    path: /mZr1mA5hub7QHHkQBzYO
+- alpn:
+  - http/1.1
+  name: 🇺🇸_US_美国->🇨🇳_CN_中国_2
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: 443
+  server: 172.67.138.187
+  skip-cert-verify: false
+  sni: CdVftY.7282728.xYz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /ptGwaGzcA4KNAXX
 - name: 🇨🇳_CN_中国->🇩🇪_DE_德国
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 26a33cb5-swb8g0-t1bnjq-1krtb.cu.plebai.net
   type: trojan
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 12748b59-sw9ds0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: false
-  type: trojan
-- name: 🇺🇸_US_美国_5
+- name: 🇩🇪_DE_德国_1
   password: '74260665780162200'
   port: 443
-  server: possible-tiger.shiner427.skin
-  sni: possible-tiger.shiner427.skin
-  type: trojan
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  network: tcp
-  password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d
-  port: 15229
-  server: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
-  sni: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
+  server: 3.121.11.241
+  skip-cert-verify: false
+  sni: cuddly-finch.shiner427.skin
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国->🇬🇧_GB_英国
-  network: tcp
-  port: 14100
-  server: dxv4.pai50288.uk
+  http-opts: {}
+  name: 🇺🇸_US_美国_6
+  network: http
+  port: 55839
+  server: 38.54.25.204
+  skip-cert-verify: true
+  sni: ''
   type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- alpn:
-  - http/1.1
-  name: 🇺🇸_US_美国->🇩🇪_DE_德国
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22223
-  server: 63.176.33.105
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 🇬🇧_GB_英国->🇺🇸_US_美国
-  password: '74260665780162200'
-  port: 443
-  server: grown-doberman.shiner427.skin
-  skip-cert-verify: false
-  sni: grown-doberman.shiner427.skin
-  type: trojan
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
-  port: 15229
-  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  type: trojan
-- name: 🇮🇪_IE_爱尔兰->🇫🇷_FR_法国
-  password: '74260665780162200'
-  port: 443
-  server: infinite-goose.shiner427.skin
-  sni: infinite-goose.shiner427.skin
-  type: trojan
-- cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_7
-  password: awsps0501
-  port: 443
-  server: 52.37.38.194
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
-- name: 🇬🇧_GB_英国
-  password: '74260665780162200'
-  port: 443
-  server: 51.44.94.106
-  skip-cert-verify: false
-  sni: grown-doberman.shiner427.skin
-  type: trojan
-- name: 🇺🇸_US_美国_8
-  network: ws
-  password: 5453ae26-250d-4e79-b4ec-016baf806865
-  port: 443
-  server: 104.21.23.162
-  sni: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
-    path: /OYzPAeaZdXUq2d6J3gc4aj
-- cipher: aes-256-gcm
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
-  password: 77a12a3d-6df0-48c8-a189-b071fcda1456
-  port: 11511
-  server: cdn-p1-us.youku-dns.com
-  type: ss
-- name: 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: ad7dc62e-sw9ds0-swy6li-tni2.cu.plebai.net
-  type: trojan
+  uuid: b7675d66-cddb-4a69-edd6-c0c83290f72e
 - cipher: aes-128-gcm
   name: 🇺🇸US-173.244.56.6-0961 | 315.822MB
   password: shadowsocks
