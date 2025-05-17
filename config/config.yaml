@@ -95180,12 +95180,6 @@ proxies:
     headers:
       Host: de01.sh-cloudflare.sbs
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: SS-保加利亚-NF解锁泰国自制剧-ChatGPT-TikTok-YouTube-85.208.139.69:63861
-  password: PBrts5Au4GM9ar7bTNyZEu
-  port: 63861
-  server: 85.208.139.69
-  type: ss
 - cipher: rc4-md5
   name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
   obfs: plain
@@ -95251,7 +95245,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>英国-NF解锁波兰自制剧-ChatGPT-TikTok-YouTube-b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top:443
+  name: VMESS-未知>德国-NF解锁波兰自制剧-ChatGPT-TikTok-YouTube-b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top:443
   network: ws
   port: 443
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
@@ -95332,6 +95326,22 @@ proxies:
   port: 443
   server: 92.119.199.33
   type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cs.flha.ru:2082
+  network: ws
+  port: 2082
+  server: cs.flha.ru
+  servername: cs.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  ws-opts:
+    headers:
+      HOST: cs.flha.ru
+    path: /
 - alterId: 0
   cipher: auto
   name: 美国 001
