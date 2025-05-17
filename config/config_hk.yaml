@@ -83,22 +83,9 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: Hong Kong_None_trojan_1064
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1072
+  name: Hong Kong_None_vmess_1044
   port: 25635
   server: 103.224.80.89
   skip-cert-verify: false
@@ -107,7 +94,7 @@ proxies:
   type: vmess
   uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1073
+  name: Hong Kong_Central_ss_1045
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -123,7 +110,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_1079
+  name: Hong Kong_Sha Tin Wai_vmess_1050
   network: ws
   port: '8080'
   server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
@@ -139,7 +126,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1092
+  name: Hong Kong_None_vmess_1063
   network: tcp
   port: '25635'
   server: 103.224.80.89
@@ -147,20 +134,7 @@ proxies:
   tls: false
   type: vmess
   uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
-- name: Hong Kong_None_trojan_10124
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: false
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr
-- name: Hong Kong_None_trojan_1164
+- name: Hong Kong_None_trojan_1095
   network: ws
   password: bpb-trojan
   port: 443
@@ -173,24 +147,22 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_1166
+- name: Hong Kong_None_trojan_1096
   network: ws
-  port: 8080
-  server: e6eb5fca-swexs0-sycpj3-18jxd.hgc1.tcpbbr.net
+  password: bpb-trojan
+  port: 443
+  server: us.madison.eu.org
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  sni: skwygx.top
+  type: trojan
   udp: true
-  uuid: fcf7573c-faa4-11ef-8a67-f23c913c8d2b
   ws-opts:
-    headers: {}
-    path: /
-  xudp: true
+    headers:
+      Host: skwygx.top
+    path: /tr
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1176
+  name: Hong Kong_None_vmess_11105
   port: 25635
   server: 103.224.80.89
   skip-cert-verify: false
@@ -199,7 +171,7 @@ proxies:
   type: vmess
   uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1177
+  name: Hong Kong_Central_ss_11106
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -215,7 +187,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_1183
+  name: Hong Kong_Sha Tin Wai_vmess_11111
   network: ws
   port: '8080'
   server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
@@ -231,7 +203,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1196
+  name: Hong Kong_None_vmess_11124
   network: tcp
   port: '25635'
   server: 103.224.80.89
@@ -239,7 +211,20 @@ proxies:
   tls: false
   type: vmess
   uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
-- name: Hong Kong_None_trojan_11128
+- name: Hong Kong_None_trojan_11156
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: us.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
+- name: Hong Kong_None_trojan_11157
   network: ws
   password: bpb-trojan
   port: 443
@@ -252,44 +237,78 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr
+- alterId: 32
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>塞舌尔-NF解锁香港地区非自制剧-ChatGPT-YouTube-hk2.lrzdx.uk:443
+  network: ws
+  port: 443
+  server: hk2.lrzdx.uk
+  servername: hk2.lrzdx.uk
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
+  ws-opts:
+    headers:
+      HOST: hk2.lrzdx.uk
+    path: /register
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
-  password: 7e326876-176f-474d-b35b-e95eedd52451
+  password: cf60f1c7-b62d-4420-9343-b217e5b424c2
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 02 | 1x HK
-  password: 7e326876-176f-474d-b35b-e95eedd52451
+  password: cf60f1c7-b62d-4420-9343-b217e5b424c2
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 7e326876-176f-474d-b35b-e95eedd52451
+  password: cf60f1c7-b62d-4420-9343-b217e5b424c2
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰 香港 01 | 1x HK
-  password: dee4c2ed-cf7f-4b01-b87a-9786bb074d9c
+  password: 01fb71a6-7155-4335-844d-08ac7baba95b
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰 香港 02 | 1x HK
-  password: dee4c2ed-cf7f-4b01-b87a-9786bb074d9c
+  password: 01fb71a6-7155-4335-844d-08ac7baba95b
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: dee4c2ed-cf7f-4b01-b87a-9786bb074d9c
+  password: 01fb71a6-7155-4335-844d-08ac7baba95b
   port: 36145
   server: free.2weradf.xyz
   type: ss
@@ -303,16 +322,13 @@ proxies:
   sni: hk-13-568.flztjc.net
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   name: 13|🇭🇰 香港|@ripaojiedian
-  port: 25635
-  server: 103.224.80.89
-  skip-cert-verify: false
+  password: ENYGONDU94UW1G6X
+  port: 15010
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
-  tls: false
-  type: vmess
-  uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 13|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
@@ -324,7 +340,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 15985
+  port: 55051
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -348,13 +364,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   name: 13|🇭🇰 香港6|@ripaojiedian
-  password: NPOA4WYID2WF8N4E
-  port: 15016
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  port: 45939
+  server: 103.30.76.218
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
 - alterId: 64
   cipher: auto
   name: 13|🇭🇰 香港7|@ripaojiedian
@@ -365,32 +384,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 13,14|香港8|@ripaojiedian
-  network: ws
-  port: '8080'
-  server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 6bcf5a10-bfe8-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 14|香港|@ripaojiedian
-  network: tcp
-  port: '25635'
-  server: 103.224.80.89
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
 - alterId: 64
   cipher: auto
   name: 14|香港3|@ripaojiedian
@@ -411,6 +404,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 14|香港6|@ripaojiedian
+  network: tcp
+  port: '45939'
+  server: 103.30.76.218
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
 - alterId: 64
   cipher: auto
   name: 14|香港7|@ripaojiedian
