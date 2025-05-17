@@ -84,7 +84,7 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1077
+  name: Hong Kong_Central_ss_1046
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -100,7 +100,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1081
+  name: Hong Kong_None_vmess_1050
   port: 45939
   server: 103.30.76.218
   skip-cert-verify: false
@@ -110,7 +110,7 @@ proxies:
   uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1099
+  name: Hong Kong_None_vmess_1067
   network: tcp
   port: '45939'
   server: 103.30.76.218
@@ -119,7 +119,7 @@ proxies:
   type: vmess
   uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1172
+  name: Hong Kong_Central_ss_1177
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -135,7 +135,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1176
+  name: Hong Kong_None_vmess_1181
   port: 45939
   server: 103.30.76.218
   skip-cert-verify: false
@@ -145,7 +145,7 @@ proxies:
   uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1194
+  name: Hong Kong_None_vmess_1199
   network: tcp
   port: '45939'
   server: 103.30.76.218
@@ -172,60 +172,70 @@ proxies:
     path: /register
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
-  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  password: 91078b3f-52c6-4745-9151-8e4470883976
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 02 | 1x HK
-  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  password: 91078b3f-52c6-4745-9151-8e4470883976
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
+  password: 91078b3f-52c6-4745-9151-8e4470883976
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇭🇰1 |  5.1MB/s|0%|Disney|Opena...
-  network: ws
-  port: '80'
-  server: 45.131.210.98
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/44.0.2403.157 Safari/537.36
-    path: 'Telegram: @vpnAndroid2/?ed=2560'
-  xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰 香港 01 | 1x HK
-  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 7667e214-4c89-47e3-8a4e-ca88da24e0c3
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰 香港 02 | 1x HK
-  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: 7667e214-4c89-47e3-8a4e-ca88da24e0c3
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 7667e214-4c89-47e3-8a4e-ca88da24e0c3
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf
+  delay: 763
+  name: 3|🇭🇰1 |  2.7MB/s|16%|Disney
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: sGWdzYDx5J
+  port: 43125
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: csilicovolcanoconiosis.godeove.xyz
+  type: ssr
+  udp: true
+- name: 3|🇭🇰2 |  5.1MB/s|16%|Netflix|Dis...
+  password: RlzoEILU
+  port: 15624
+  server: 36.156.102.124
+  skip-cert-verify: true
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰3 |  3.5MB/s|Disney
+  password: a2a1677c-0799-487e-8827-6cf0d4b5b86a
+  port: 49709
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
 - cipher: aes-256-gcm
   name: 13|🇭🇰 香港|@ripaojiedian
   password: ENYGONDU94UW1G6X
