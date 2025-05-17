@@ -171,45 +171,59 @@ proxies:
       HOST: hk2.lrzdx.uk
     path: /register
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: 3f6d94b7-02e6-4cb1-8710-6394c0e0ea94
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 3f6d94b7-02e6-4cb1-8710-6394c0e0ea94
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 3f6d94b7-02e6-4cb1-8710-6394c0e0ea94
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: efdbb384-cbce-4a8d-9c27-e5afc605a31b
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: efdbb384-cbce-4a8d-9c27-e5afc605a31b
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: efdbb384-cbce-4a8d-9c27-e5afc605a31b
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: f9c075ec-6ed5-4f6c-910e-f1f8507033cf
   port: 31145
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 2|🇭🇰1 |  5.1MB/s|0%|Disney|Opena...
+  network: ws
+  port: '80'
+  server: 45.131.210.98
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/44.0.2403.157 Safari/537.36
+    path: 'Telegram: @vpnAndroid2/?ed=2560'
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰 香港 01 | 1x HK
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰 香港 02 | 1x HK
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 5b65ac0c-5236-41f2-af50-1453090fc6e9
+  port: 36145
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
