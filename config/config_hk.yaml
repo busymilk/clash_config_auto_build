@@ -171,69 +171,47 @@ proxies:
       HOST: hk2.lrzdx.uk
     path: /register
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: c3c06f06-dd80-4868-8f63-20355973c7c7
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 2ea2727d-d604-4c7d-9823-5f31c29e81fa
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: 2ea2727d-d604-4c7d-9823-5f31c29e81fa
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 2ea2727d-d604-4c7d-9823-5f31c29e81fa
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰香港 01 | 1x HK
+  password: a074fe12-9ef4-4b88-8568-3a9395e68987
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: c3c06f06-dd80-4868-8f63-20355973c7c7
+  name: 3|🇭🇰香港 02 | 1x HK
+  password: a074fe12-9ef4-4b88-8568-3a9395e68987
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: c3c06f06-dd80-4868-8f63-20355973c7c7
+  name: 3|🇭🇰香港家宽 03 | 1x HK
+  password: a074fe12-9ef4-4b88-8568-3a9395e68987
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 3|🇭🇰1 |  2.0MB/s|0%|Disney|Opena...
-  network: ws
-  port: '443'
-  server: 172.66.45.9
-  servername: MiSTliNK-CL9.pAgEs.Dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 321cc007-bb85-41c9-b686-1f45cf5174e0
-  ws-opts:
-    headers:
-      Host: mistlink-cl9.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /ERlnnsHzyLczPW3c?ed=2560
-  xudp: true
-- flow: xtls-rprx-vision
-  name: 3,15|HK_speednode_0059
-  network: tcp
-  port: 20550
-  reality-opts:
-    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
-  server: hkt-ty-line-1.sudatech.store
-  servername: www.paypal.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
-- name: 3|🇭🇰3 |  2.8MB/s|6%|Youtube
-  password: 25d55ad283aa400af464c76d713c07ad
-  port: 8443
-  server: hk04.sqx001.com
-  skip-cert-verify: true
-  sni: hk04.sqx001.com
-  tls: true
-  type: http
-  udp: true
-  username: podbbylf@mayorlogistic.com
 - cipher: aes-256-gcm
   name: 13|🇭🇰 香港|@ripaojiedian
   password: ENYGONDU94UW1G6X
@@ -344,6 +322,18 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- flow: xtls-rprx-vision
+  name: 15|HK_speednode_0059
+  port: 20550
+  reality-opts:
+    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
+  server: hkt-ty-line-1.sudatech.store
+  servername: www.paypal.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
 - name: 15|HK_speednode_0060
   network: ws
   password: bpb-trojan
