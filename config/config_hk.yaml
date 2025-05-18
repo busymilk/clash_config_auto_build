@@ -83,8 +83,24 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alterId: 0
+  cipher: auto
+  name: Hong Kong_Central_vmess_1072
+  network: ws
+  port: '8080'
+  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1058
+  name: Hong Kong_Central_ss_1077
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -100,7 +116,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1061
+  name: Hong Kong_None_vmess_1081
   port: 45939
   server: 103.30.76.218
   skip-cert-verify: false
@@ -110,23 +126,7 @@ proxies:
   uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_1063
-  network: ws
-  port: '8080'
-  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: Hong Kong_None_vmess_1077
+  name: Hong Kong_None_vmess_1096
   network: tcp
   port: '45939'
   server: 103.30.76.218
@@ -134,8 +134,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
+- alterId: 0
+  cipher: auto
+  name: Hong Kong_Central_vmess_119
+  network: ws
+  port: '8080'
+  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1127
+  name: Hong Kong_Central_ss_1146
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -151,7 +167,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1130
+  name: Hong Kong_None_vmess_1150
   port: 45939
   server: 103.30.76.218
   skip-cert-verify: false
@@ -161,23 +177,7 @@ proxies:
   uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_1132
-  network: ws
-  port: '8080'
-  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: Hong Kong_None_vmess_1146
+  name: Hong Kong_None_vmess_1165
   network: tcp
   port: '45939'
   server: 103.30.76.218
@@ -202,6 +202,27 @@ proxies:
     headers:
       HOST: hk2.lrzdx.uk
     path: /register
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 0966f16a-c5ca-49bc-9341-bb2f6bd49e17
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: 0966f16a-c5ca-49bc-9341-bb2f6bd49e17
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: 0966f16a-c5ca-49bc-9341-bb2f6bd49e17
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 2,13,14|香港8|@ripaojiedian
@@ -219,24 +240,24 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港 01 | 1x HK
-  password: a3566fc5-f77d-4c3b-a7a5-a85becb26850
-  port: 31141
-  server: free.2apzhfa.xyz
+  name: 3|🇭🇰 香港 01 | 1x HK
+  password: 81124dc4-486a-4e8d-a55d-ef3c136558c5
+  port: 36141
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港 02 | 1x HK
-  password: a3566fc5-f77d-4c3b-a7a5-a85becb26850
-  port: 31143
-  server: free.2apzhfa.xyz
+  name: 3|🇭🇰 香港 02 | 1x HK
+  password: 81124dc4-486a-4e8d-a55d-ef3c136558c5
+  port: 36143
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港家宽 03 | 1x HK
-  password: a3566fc5-f77d-4c3b-a7a5-a85becb26850
-  port: 31145
-  server: free.2apzhfa.xyz
+  name: 3|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 81124dc4-486a-4e8d-a55d-ef3c136558c5
+  port: 36145
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -346,7 +367,7 @@ proxies:
   type: vmess
   uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-5904 | 0.991MB
+  name: 🇭🇰HK-203.23.128.33-0639 | 1.126MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
