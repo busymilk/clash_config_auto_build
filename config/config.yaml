@@ -83,465 +83,245 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 电报群：https://t.me/vvkj11
-  network: tcp
-  password: Aimer
+- grpc-opts:
+    grpc-service-name: Tok
+  name: 电报群：https://t.me/vvkj11
+  network: grpc
+  port: 22000
+  server: 162.55.185.143
+  servername: Tok
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f93a6388-c998-4864-8eb7-c61de4754aca
+- grpc-opts:
+    grpc-service-name: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
+  name: 每天更新，请加电报群防止失联
+  network: grpc
   port: 443
-  server: 154.17.228.203
+  server: 88.198.101.94
+  servername: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
-- name: 每天更新，请加电报群防止失联
-  network: tcp
-  password: Aimer
+  uuid: 2ee918dc-6407-467f-8df2-a62ad6c79c7c
+- grpc-opts:
+    grpc-service-name: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
+  name: 日期：05-22
+  network: grpc
   port: 443
-  server: theo.ns.cloudflare.com
+  server: dlhost.10dar15.ir
+  servername: yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
-- name: 日期：05-22
+  uuid: d90a7b46-65e5-49c3-b245-afbca72ee39d
+- grpc-opts:
+    grpc-service-name: b
+  name: 免费VPN：https://tt.vg/gwaAy
+  network: grpc
+  port: 33000
+  server: 77.221.143.183
+  servername: b
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94c3155b-5252-4d66-bead-06b2e489f658
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_1
+  network: httpupgrade
+  port: '80'
+  server: ru1a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_2
+  network: httpupgrade
+  port: '80'
+  server: us2a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_1
   network: tcp
-  password: Aimer
-  port: 2096
-  server: 5.182.85.189
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 免费VPN：https://tt.vg/gwaAy
+  port: '52082'
+  server: 120.198.71.216
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- flow: xtls-rprx-vision
+  name: 🇺🇸_美国_3
   network: tcp
-  password: Aimer
-  port: 443
-  server: lynn.ns.cloudflare.com
+  port: 25536
+  server: 216.230.233.49
+  servername: apps.apple.com
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: false
+  type: vless
   udp: true
-- name: 🇺🇸_美国_1
+  uuid: 4a3dc64b-17e1-4ae7-a9a4-851f9794d4c6
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_2
   network: tcp
-  password: Aimer
-  port: 2053
-  server: 167.68.5.85
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_1
+  port: '41024'
+  server: 183.236.51.38
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- flow: xtls-rprx-vision
+  name: 🇨🇦_加拿大_1
   network: tcp
-  password: Aimer
-  port: 8443
-  server: 27.50.49.230
+  port: 25536
+  server: 104.152.210.36
+  servername: apps.apple.com
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
+  tls: false
+  type: vless
   udp: true
-- name: 🇦🇲_亚美尼亚_1
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 188.164.159.107
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_2
-  network: tcp
-  password: Aimer
-  port: 443
-  server: pranab.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇷🇺_俄罗斯_1
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 213.241.198.59
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_2
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 27.50.48.239
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_3
-  network: tcp
-  password: Aimer
-  port: 443
-  server: kip.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_2
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 188.164.159.171
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_3
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 188.164.159.220
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_4
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 188.164.159.234
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
+  uuid: 4a3dc64b-17e1-4ae7-a9a4-851f9794d4c6
 - name: 🇺🇸_美国_4
   network: tcp
-  password: Aimer
   port: 443
-  server: sage.ns.cloudflare.com
+  server: 135.148.177.165
+  servername: 147135010072.sec21org.com
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
+- flow: xtls-rprx-vision
+  name: 🇬🇧_英国_1
+  network: tcp
+  port: 8443
+  server: 140.238.89.224
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: d2a11ee4-7ede-4e7f-a001-a23e9bb44ff2
+- flow: xtls-rprx-vision
+  name: 🇮🇷_伊朗
+  network: tcp
+  port: 33718
+  server: 31.59.111.49
+  servername: icloud.cdn-apple.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: e657e5fb-c417-4d3f-d84e-a3a8f010f9fa
+- alterId: '64'
+  cipher: auto
+  name: 🇨🇳_中国_3
+  network: tcp
+  port: '49355'
+  server: 120.198.71.219
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇺🇸_美国_5
   network: tcp
-  password: Aimer
+  password: ca48571a-403f-44b9-b2a6-e17c36d7cacc
   port: 443
-  server: bestcf.030101.xyz
+  server: 104.21.64.1
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_3
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 154.197.64.189
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇬🇧_英国_1
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 176.53.144.206
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
+  sni: 10r.iran1912.dpdns.org
   type: trojan
   udp: true
 - name: 🇺🇸_美国_6
   network: tcp
-  password: Aimer
+  password: ac5b2e52-435b-4461-a99c-1317ab0e2889
   port: 443
-  server: 209.208.227.79
+  server: 104.21.46.90
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
+  sni: DddVfGty.frEeVpnAtM.dpdNS.oRG
   type: trojan
   udp: true
-- name: 🇨🇳_中国_4
+- alterId: '64'
+  cipher: auto
+  name: 🇨🇳_中国_4
   network: tcp
-  password: Aimer
-  port: 2087
-  server: 27.50.48.115
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
+  port: '41766'
+  server: 183.238.90.8
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '64'
+  cipher: auto
+  name: 🇨🇳_中国_5
+  network: tcp
+  port: '41766'
+  server: 183.238.90.8
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '64'
+  cipher: auto
+  name: 🇨🇳_中国_6
+  network: tcp
+  port: '35921'
+  server: 120.198.71.216
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_7
+  network: tcp
+  port: '37805'
+  server: 120.232.153.63
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇺🇸_美国_7
   network: tcp
-  password: Aimer
-  port: 2096
-  server: 66.81.247.230
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_5
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 188.164.159.3
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_8
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 45.67.214.3
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_9
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 108.165.152.130
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇷🇺_俄罗斯_2
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 5.182.84.52
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_6
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 188.164.159.69
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_10
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 108.165.152.98
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_5
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 27.50.49.156
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_11
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 199.34.228.164
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_12
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 199.34.228.66
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_13
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 108.165.152.29
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_14
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 45.67.214.41
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_15
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 167.68.4.7
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_16
-  network: tcp
-  password: Aimer
+  password: Ng35283528
   port: 443
-  server: ignacio.ns.cloudflare.com
+  server: 104.16.83.8
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
+  sni: c2.validbv3528.eu.org
   type: trojan
   udp: true
-- name: 🇺🇸_美国_17
+- name: 🇺🇦_乌克兰_1
   network: tcp
-  password: Aimer
-  port: 2087
-  server: 108.165.152.143
+  port: 18217
+  server: 92.112.53.153
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5a24dc4b-4711-402a-ec6d-7c174b290c83
+- name: 🇨🇳_中国_8
+  network: tcp
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: hk-13-568.flztjc.net
   type: trojan
   udp: true
-- name: 🇨🇳_中国_6
+- name: 🇨🇳_中国_9
   network: tcp
-  password: Aimer
-  port: 2083
-  server: 154.211.8.18
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
+  sni: hk-13-568.flztjc.net
   type: trojan
   udp: true
-- name: 🇺🇸_美国_18
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 104.129.166.131
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_19
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 154.83.2.88
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_20
-  network: tcp
-  password: Aimer
-  port: 443
-  server: duke.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_7
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 27.50.49.242
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇷🇺_俄罗斯_3
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 176.124.223.92
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_7
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 188.164.159.25
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇷🇺_俄罗斯_4
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 77.232.140.101
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_21
-  network: tcp
-  password: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  port: 443
-  server: 141.193.213.106
-  skip-cert-verify: true
-  sni: ush9pgjbr1t6mxmbwe.jjjiedian6j4tblb.com
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_22
-  network: tcp
-  password: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  port: 443
-  server: 141.193.213.21
-  skip-cert-verify: true
-  sni: ush9pgjbr1t6mxmbwe.jjjiedian6j4tblb.com
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_23
-  network: tcp
-  password: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  port: 443
-  server: 141.193.213.198
-  skip-cert-verify: true
-  sni: ush9pgjbr1t6mxmbwe.jjjiedian6j4tblb.com
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_24
-  network: tcp
-  password: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  port: 443
-  server: 141.193.213.17
-  skip-cert-verify: true
-  sni: uk8i7uufxlcbr2hbym.jjjiedian6j4tblb.com
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_25
-  network: tcp
-  password: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  port: 443
-  server: 141.193.213.156
-  skip-cert-verify: true
-  sni: uk8i7uufxlcbr2hbym.jjjiedian6j4tblb.com
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇮🇷_伊朗
-  network: tcp
-  port: '44264'
-  server: 194.5.178.70
-  type: vmess
-  uuid: ee7156f5-c594-4d7f-9e25-5de014059c85
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_8
-  network: tcp
-  port: '42375'
-  server: 120.198.71.214
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_9
-  network: tcp
-  port: '44491'
-  server: 120.232.153.41
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
   name: 🇨🇳_中国_10
+  network: tcp
+  port: '39919'
+  server: 183.236.51.38
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_11
   network: tcp
   port: '52082'
   server: 120.198.71.216
@@ -549,47 +329,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_11
-  network: tcp
-  port: '41024'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
   name: 🇨🇳_中国_12
-  network: tcp
-  port: '37805'
-  server: 120.232.153.63
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_13
-  network: tcp
-  port: '46597'
-  server: 120.232.153.41
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_14
-  network: tcp
-  port: '49291'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_15
-  network: tcp
-  port: '46920'
-  server: 183.238.90.8
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_16
   network: tcp
   port: '40392'
   server: 120.232.153.123
@@ -597,7 +337,87 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
+  name: 🇨🇳_中国_13
+  network: tcp
+  port: '44491'
+  server: 120.232.153.41
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_14
+  network: tcp
+  port: '40292'
+  server: 120.232.153.40
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_15
+  network: tcp
+  port: '31609'
+  server: 120.232.153.40
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_16
+  network: tcp
+  port: '42375'
+  server: 120.198.71.214
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
   name: 🇨🇳_中国_17
+  network: tcp
+  port: '47883'
+  server: 120.198.44.126
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_18
+  network: tcp
+  port: '41024'
+  server: 183.236.51.38
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_19
+  network: tcp
+  port: '37805'
+  server: 120.232.153.63
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_20
+  network: tcp
+  port: '46597'
+  server: 120.232.153.41
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_21
+  network: tcp
+  port: '49291'
+  server: 183.236.51.38
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_22
+  network: tcp
+  port: '46920'
+  server: 183.238.90.8
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_23
   network: tcp
   port: '30052'
   server: 183.236.51.38
@@ -605,13 +425,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_18
+  name: 🇨🇳_中国_24
   network: tcp
   port: '32980'
   server: 120.198.71.214
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇳_中国_19
+- name: 🇨🇳_中国_25
   network: tcp
   password: 8ec8325a-efa4-11ef-a7bb-f23c9164ca5d
   port: 15229
@@ -622,13 +442,13 @@ proxies:
   udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_20
+  name: 🇨🇳_中国_26
   network: tcp
   port: '41766'
   server: 183.238.90.8
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇳_中国_21
+- name: 🇨🇳_中国_27
   network: tcp
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
@@ -637,7 +457,7 @@ proxies:
   sni: 3784f70a-swo740-swy6li-tni2.cu.plebai.net
   type: trojan
   udp: true
-- name: 🇨🇳_中国_22
+- name: 🇨🇳_中国_28
   network: tcp
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
@@ -646,15 +466,7 @@ proxies:
   sni: f8021ada-swo740-t1bnjq-1krtb.cu.plebai.net
   type: trojan
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_23
-  network: tcp
-  port: '40292'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇳_中国_24
+- name: 🇨🇳_中国_29
   network: tcp
   password: 398e0d38-8649-11ef-959c-f23c9164ca5d
   port: 15229
@@ -663,7 +475,7 @@ proxies:
   sni: 699bbddc-swq1s0-sxzls8-1gxvd.cu.plebai.net
   type: trojan
   udp: true
-- name: 🇨🇳_中国_25
+- name: 🇨🇳_中国_30
   network: tcp
   password: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
   port: 15229
@@ -674,7 +486,7 @@ proxies:
   udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_26
+  name: 🇨🇳_中国_31
   network: tcp
   port: '51095'
   server: 120.198.71.219
@@ -682,21 +494,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_27
-  network: tcp
-  port: '42174'
-  server: 120.234.102.229
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_28
+  name: 🇨🇳_中国_32
   network: tcp
   port: '46759'
   server: 120.198.71.216
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇳_中国_29
+- name: 🇨🇳_中国_33
   network: tcp
   password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
   port: 15229
@@ -707,15 +511,7 @@ proxies:
   udp: true
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_30
-  network: tcp
-  port: '31609'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_31
+  name: 🇨🇳_中国_34
   network: tcp
   port: '49355'
   server: 120.198.71.219
@@ -723,23 +519,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_32
-  network: tcp
-  port: '39919'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_33
-  network: tcp
-  port: '47883'
-  server: 120.198.44.126
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_34
+  name: 🇨🇳_中国_35
   network: tcp
   port: '55002'
   server: 183.237.84.53
@@ -747,7 +527,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_35
+  name: 🇨🇳_中国_36
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -755,1457 +535,2278 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_36
+  name: 🇨🇳_中国_37
   network: tcp
   port: '49121'
   server: 183.236.51.38
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇳_中国_37
-  network: ws
-  port: 443
-  server: 103.44.255.81
-  servername: zl.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇳_中国_38
-  network: ws
-  port: 31627
-  server: 103.235.18.25
-  servername: edccn.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_38
+  network: tcp
+  port: '42174'
+  server: 120.234.102.229
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇨🇳_中国_39
+  network: tcp
+  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  port: 15229
+  server: a828e0b8-swo740-tcinla-hrtf.cu.plebai.net
+  skip-cert-verify: true
+  sni: a828e0b8-swo740-tcinla-hrtf.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_8
+  network: tcp
+  password: ac5b2e52-435b-4461-a99c-1317ab0e2889
+  port: 443
+  server: 104.21.46.90
+  skip-cert-verify: true
+  sni: DddVfGty.frEeVpnAtM.dpdNS.oRG
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_40
+  network: tcp
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: 3784f70a-swo740-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: true
+  sni: 3784f70a-swo740-swy6li-tni2.cu.plebai.net
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_9
+  network: tcp
+  password: Z3aXaKZnXxNc3y03OnKcaq4CN3OcqA8SwSzSRZ3O3Sa3NnaFD4xzgCSR7AaOZ983y0yY3lBOYCAOAzx
+  port: 28331
+  server: 154.17.17.149
+  skip-cert-verify: true
+  sni: hanger.homeofbrave.net
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_10
   network: ws
-  port: 55055
-  server: 47.243.172.103
-  servername: edccn.ambercc.filegear-sg.me
+  port: 80
+  server: 141.193.213.173
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇦🇺_澳大利亚
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
+- name: 🇳🇱_荷兰_1
   network: ws
-  port: 30002
-  server: 43.135.44.101
-  servername: zl.ylks0033.dpdns.org
+  port: 80
+  server: 45.131.208.114
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
+      host: reedfree8mahsang2.redorg.ir
+    path: /
+- name: 🇺🇸_美国_11
+  network: ws
+  port: 80
+  server: 141.193.213.241
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_12
+  network: ws
+  port: 80
+  server: 141.193.213.146
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_13
+  network: ws
+  port: 80
+  server: 141.193.213.135
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇳🇱_荷兰_2
+  network: ws
+  port: 8880
+  server: 45.131.208.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
+- name: 🇺🇸_美国_14
+  network: ws
+  port: 8880
+  server: 162.159.62.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_15
+  network: ws
+  port: 8880
+  server: 162.159.60.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_16
+  network: ws
+  port: 8880
+  server: 198.41.198.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_17
+  network: ws
+  port: 8880
+  server: 162.159.244.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇷🇺_俄罗斯_1
+  network: ws
+  port: 8880
+  server: 176.124.223.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇱🇹_立陶宛_1
+  network: ws
+  port: 8880
+  server: 89.116.250.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇪🇸_西班牙_1
+  network: ws
+  port: 8880
+  server: 185.18.250.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_18
+  network: ws
+  port: 8880
+  server: 162.159.254.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇬🇧_英国_2
+  network: ws
+  port: 8880
+  server: 45.12.31.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇷🇺_俄罗斯_2
+  network: ws
+  port: 8880
+  server: 194.76.18.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_19
+  network: ws
+  port: 8880
+  server: 162.159.243.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇯🇵_日本_1
+  network: ws
+  port: 8880
+  server: 91.193.58.213
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
+- name: 🇮🇳_印度
+  network: ws
+  port: 8880
+  server: 14.102.228.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇯🇵_日本_2
+  network: ws
+  port: 8880
+  server: 91.193.58.170
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
+- name: 🇺🇸_美国_20
+  network: ws
+  port: 8880
+  server: 162.159.14.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇩🇰_丹麦
+  network: ws
+  port: 8880
+  server: 195.85.59.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇳🇱_荷兰_3
+  network: ws
+  port: 8880
+  server: 194.53.53.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇷🇺_俄罗斯_3
+  network: ws
+  port: 8880
+  server: 94.247.142.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇲🇩_摩尔多瓦
+  network: ws
+  port: 8880
+  server: 185.170.166.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_21
+  network: ws
+  port: 8880
+  server: 104.129.165.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇳🇱_荷兰_4
+  network: ws
+  port: 8880
+  server: 45.131.209.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇯🇵_日本_3
+  network: ws
+  port: 8880
+  server: 91.193.58.44
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
+- name: 🇺🇸_美国_22
+  network: ws
+  port: 8880
+  server: 162.159.13.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇸🇮_斯洛文尼亚_1
+  network: ws
+  port: 8880
+  server: 92.53.188.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_23
+  network: ws
+  port: 8880
+  server: 172.66.40.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇦🇲_亚美尼亚_1
+  network: ws
+  port: 8880
+  server: 185.162.230.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_24
+  network: ws
+  port: 8880
+  server: 162.159.46.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_25
+  network: ws
+  port: 80
+  server: 141.193.213.224
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_26
   network: ws
-  port: 443
-  server: toy-people.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: 141.193.213.9
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_27
   network: ws
-  port: 443
-  server: www.whatismyip.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 198.41.204.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇨🇳_中国_41
+  network: ws
+  port: 8880
+  server: 27.50.48.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇫🇷_法国_1
+  network: ws
+  port: 8880
+  server: 94.140.0.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_28
   network: ws
-  port: 443
-  server: www.hugedomains.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: 141.193.213.118
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇯🇵_日本_4
+  network: ws
+  port: 8880
+  server: 91.193.58.58
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
 - name: 🇺🇸_美国_29
   network: ws
-  port: 18446
-  server: 154.17.21.134
-  servername: zl.ylks0033.dpdns.org
+  port: 80
+  server: 141.193.213.65
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国
-  network: ws
-  port: 12318
-  server: 14.56.226.68
-  servername: edccn.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_30
   network: ws
-  port: 443
-  server: sullivan.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 154.83.2.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇷🇺_俄罗斯_4
+  network: ws
+  port: 8880
+  server: 46.254.92.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇳🇱_荷兰_5
+  network: ws
+  port: 8880
+  server: 188.164.248.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🏳️_未知_1
+  network: ws
+  port: 8880
+  server: 103.160.204.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_31
   network: ws
-  port: 443
-  server: steamdb.info
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 198.41.199.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_32
   network: ws
-  port: 443
-  server: decker.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: 141.193.213.178
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇦_乌克兰_2
+  network: ws
+  port: 8880
+  server: 45.67.215.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_33
   network: ws
-  port: 8843
-  server: 47.79.90.82
-  servername: edccn.ambercc.filegear-sg.me
+  port: 8880
+  server: 104.129.164.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇸🇮_斯洛文尼亚_2
+  network: ws
+  port: 8880
+  server: 92.53.190.20
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
 - name: 🇺🇸_美国_34
   network: ws
-  port: 443
-  server: 192.0.54.134
-  servername: zl.ylks0033.dpdns.org
+  port: 8880
+  server: 162.159.38.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
+- name: 🇱🇹_立陶宛_2
+  network: ws
+  port: 8880
+  server: 86.38.214.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇯🇵_日本_5
+  network: ws
+  port: 8880
+  server: 91.193.58.214
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
 - name: 🇺🇸_美国_35
   network: ws
-  port: 443
-  server: nikon.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 162.159.35.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇦_乌克兰
-  network: ws
-  port: 443
-  server: 45.67.215.58
-  servername: zl.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zl.ylks0033.dpdns.org
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_36
   network: ws
-  port: 443
-  server: kyree.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 167.68.42.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇧🇷_巴西_1
+  network: ws
+  port: 8880
+  server: 188.114.98.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇬🇧_英国_3
+  network: ws
+  port: 8880
+  server: 25.129.196.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇧🇷_巴西_2
+  network: ws
+  port: 8880
+  server: 181.214.1.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇦🇲_亚美尼亚_2
+  network: ws
+  port: 8880
+  server: 185.162.231.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇱🇹_立陶宛_3
+  network: ws
+  port: 8880
+  server: 185.148.106.20
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
+- name: 🇫🇷_法国_2
+  network: ws
+  port: 8880
+  server: 45.80.111.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_37
   network: ws
-  port: 443
-  server: benedict.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 167.68.11.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_38
   network: ws
-  port: 443
-  server: www.pcmag.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 104.129.165.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: reedfree8mahsang2.redorg.ir
+    path: /
 - name: 🇺🇸_美国_39
   network: ws
-  port: 443
-  server: damien.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  port: 80
+  server: 141.193.213.160
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇬🇧_英国_4
+  network: ws
+  port: 8880
+  server: 45.85.118.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🏳️_未知_2
+  network: ws
+  port: 8880
+  server: 103.169.142.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇧🇷_巴西_3
+  network: ws
+  port: 8880
+  server: 188.114.99.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇱🇹_立陶宛_4
+  network: ws
+  port: 8880
+  server: 89.116.46.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_40
   network: ws
-  port: 443
-  server: trevor.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 198.41.207.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_41
   network: ws
-  port: 49153
-  server: 47.79.90.37
-  servername: edccn.ambercc.filegear-sg.me
+  port: 8880
+  server: 104.129.165.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_42
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇿🇦_南非
+  network: ws
+  port: 8880
+  server: 102.177.176.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇷🇺_俄罗斯_5
   network: ws
   port: 443
-  server: 160.79.104.175
-  servername: zl.ylks0033.dpdns.org
+  server: aut03.abvpn.ru
+  servername: aut03.abvpn.ru
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 588f094b-431b-422c-b80b-007945037072
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
+      host: aut03.abvpn.ru
+    path: /websocket
+- name: 🇷🇺_俄罗斯_6
+  network: ws
+  port: 443
+  server: aut03.abvpn.ru
+  servername: aut03.abvpn.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 588f094b-431b-422c-b80b-007945037072
+  ws-opts:
+    headers:
+      host: aut03.abvpn.ru
+    path: /websocket
+- name: 🇬🇧_英国_5
+  network: ws
+  port: 8880
+  server: 25.129.198.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇺🇸_美国_42
+  network: ws
+  port: 8880
+  server: 162.159.8.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_43
   network: ws
-  port: 443
-  server: wilson.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 140.99.233.29
+  servername: hk.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 🇺🇸_美国_44
   network: ws
-  port: 443
-  server: rustam.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8080
+  server: 104.26.14.85
+  servername: 4j.QBAo1g5z6k.ZulaIR.org.
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 56652249-2e67-4429-b86c-3df8b838ad85
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_1
-  network: ws
-  port: 443
-  server: 185.133.35.242
-  servername: zl.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
+      host: 4j.QBAo1g5z6k.ZulaIR.org.
+    path: /
 - name: 🇺🇸_美国_45
   network: ws
   port: 443
-  server: lynn.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  server: 104.21.61.154
+  servername: c3DFgH6.191266.xYz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: c6840587-7ac4-40be-aa4b-ae327eb4fa53
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: c3DFgH6.191266.xYz
+    path: /vygbmnxgnccs06vuxllhk95ad
 - name: 🇺🇸_美国_46
   network: ws
   port: 443
-  server: dylan.ns.cloudflare.com
-  servername: zl.ylks0033.dpdns.org
+  server: 172.67.175.139
+  servername: S859886xYZXs.859886.xYz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 0a23af3f-3f9b-4333-ae89-796f7fe2f9ce
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇩🇪_德国_1
+      host: S859886xYZXs.859886.xYz
+    path: /25rajr8udfga29fcwxs
+- name: 🇮🇹_意大利
   network: ws
-  port: 443
-  server: 185.16.110.200
-  servername: zl.ylks0033.dpdns.org
+  port: 8880
+  server: 92.60.74.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_47
   network: ws
   port: 443
-  server: kip.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  server: 172.67.144.126
+  servername: xCdF4.288288.ShOP
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 2734c14b-e4ce-48b3-b3de-f80788cb4c47
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: xCdF4.288288.ShOP
+    path: /eq5bb2bolxsg8dqnab
+- name: 🇷🇺_俄罗斯_7
+  network: ws
+  port: 443
+  server: 46.29.239.149
+  servername: unixkey.nobatow.site
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2947a55-5fa6-4d21-93c6-b558c662ec8d
+  ws-opts:
+    headers:
+      host: unixkey.nobatow.site
+    path: /nobatow
 - name: 🇺🇸_美国_48
   network: ws
   port: 443
-  server: www.digitalocean.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.32.1
+  servername: 7ui.191262.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇨🇳_中国_40
+      host: 7ui.191262.xyz
+    path: /rdcxptqczpbyzyxgvjgll
+- name: 🇱🇹_立陶宛_5
   network: ws
-  port: 21698
-  server: 156.251.180.181
-  servername: edccn.ambercc.filegear-sg.me
+  port: 8880
+  server: 185.176.24.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_49
   network: ws
   port: 443
-  server: 160.79.104.6
-  servername: zl.ylks0033.dpdns.org
+  server: 172.67.153.179
+  servername: 5eR.WWW890604.dPDNS.OrG
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 895552fa-6284-4c1d-ba00-3944e0c7c626
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
+      host: 5eR.WWW890604.dPDNS.OrG
+    path: /c1sukvgdr58yeduy9aog
 - name: 🇺🇸_美国_50
   network: ws
   port: 443
-  server: abdullah.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.82.14
+  servername: M3SDf.777259.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: e74d7639-3755-4624-b770-efa6e7ec09a8
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇨🇳_中国_41
+      host: M3SDf.777259.xyz
+    path: /bt93qlsreyhzv5ii9ww
+- name: 🇳🇱_荷兰_6
   network: ws
-  port: 2083
-  server: 27.50.49.47
-  servername: edccn.ambercc.filegear-sg.me
+  port: 8880
+  server: 185.193.29.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_51
   network: ws
   port: 443
-  server: braden.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 172.67.144.126
+  servername: 899.288288.shoP
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 4e41764d-ac31-43f5-8e9b-231ddf252d1f
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: 899.288288.shoP
+    path: /walpwpcqwnsvcnglsmvz
+- name: 🇳🇱_荷兰_7
+  network: ws
+  port: 8880
+  server: 185.193.31.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
+- name: 🇦🇲_亚美尼亚_3
+  network: ws
+  port: 80
+  server: 185.162.230.6
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /
 - name: 🇺🇸_美国_52
   network: ws
   port: 443
-  server: arvind.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  server: 104.21.64.1
+  servername: 10d.445.pp.ua
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: ca48571a-403f-44b9-b2a6-e17c36d7cacc
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: 10d.445.pp.ua
+    path: /udlwpkxenxf2ulpwriwoavjd
 - name: 🇺🇸_美国_53
   network: ws
   port: 443
-  server: uriah.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 172.67.190.149
+  servername: sssdeCVBnh.999156.XYz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇿🇦_南非_1
-  network: ws
-  port: 443
-  server: 160.123.255.246
-  servername: zl.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
+      host: sssdeCVBnh.999156.XYz
+    path: /prufeqtnsrzbl4svhqtmks
 - name: 🇺🇸_美国_54
   network: ws
   port: 443
-  server: 160.79.105.223
-  servername: zl.ylks0033.dpdns.org
+  server: 172.67.144.126
+  servername: 10duuuu.288288.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ca48571a-403f-44b9-b2a6-e17c36d7cacc
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇩🇪_德国_2
-  network: ws
-  port: 443
-  server: 185.16.110.181
-  servername: zl.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
+      host: 10duuuu.288288.shop
+    path: /udlwpkxenxf2ulpwriwoavjd
 - name: 🇺🇸_美国_55
   network: ws
   port: 443
-  server: julio.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.88.226
+  servername: 5eR.WWW890604.dPDNS.OrG
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 895552fa-6284-4c1d-ba00-3944e0c7c626
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: 5eR.WWW890604.dPDNS.OrG
+    path: /c1sukvgdr58yeduy9aog
 - name: 🇺🇸_美国_56
   network: ws
   port: 443
-  server: icook.tw
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.81.192
+  servername: sssdeCVBnh.999156.XYz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: sssdeCVBnh.999156.XYz
+    path: /prufeqtnsrzbl4svhqtmks
 - name: 🇺🇸_美国_57
   network: ws
-  port: 443
-  server: 135.84.76.143
-  servername: zl.ylks0033.dpdns.org
+  port: 8880
+  server: 140.99.233.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇱🇹_立陶宛_6
+  network: ws
+  port: 8880
+  server: 89.116.180.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_58
   network: ws
   port: 443
-  server: 192.0.54.24
-  servername: zl.ylks0033.dpdns.org
+  server: 104.21.34.159
+  servername: e6422f63-7b49-4b50-b862-9f38.2031.pp.ua
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 15b24b56-d667-4fa8-b548-f3dc942fb461
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_2
+      host: e6422f63-7b49-4b50-b862-9f38.2031.pp.ua
+    path: /ok1ubnf7txq8yjfjxz
+- name: 🇷🇺_俄罗斯_8
   network: ws
-  port: 443
-  server: 185.133.35.237
-  servername: zl.ylks0033.dpdns.org
+  port: 8880
+  server: 92.243.74.20
+  servername: us.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
+- name: 🇱🇺_卢森堡
+  network: ws
+  port: 8880
+  server: 188.42.89.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_59
   network: ws
-  port: 443
-  server: www.udemy.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 209.46.30.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇳🇱_荷兰_8
+  network: ws
+  port: 8880
+  server: 45.159.216.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_60
   network: ws
   port: 443
-  server: 69.84.182.41
-  servername: zl.ylks0033.dpdns.org
+  server: 172.67.137.6
+  servername: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
+      host: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
+    path: /prufeqtnsrzbl4svhqtmks
+- name: 🇨🇳_中国_42
+  network: ws
+  port: 8880
+  server: 45.202.113.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 🇺🇸_美国_61
   network: ws
-  port: 443
-  server: 160.79.105.219
-  servername: zl.ylks0033.dpdns.org
+  port: 80
+  server: 141.193.213.97
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇷🇺_俄罗斯_5
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇳🇱_荷兰_9
   network: ws
-  port: 2087
-  server: 92.243.75.49
-  servername: edccn.ambercc.filegear-sg.me
+  port: 8880
+  server: 160.153.0.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇨🇦_加拿大_2
+  network: ws
+  port: 8880
+  server: 205.233.181.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_62
   network: ws
-  port: 2087
-  server: 108.165.152.98
-  servername: edccn.ambercc.filegear-sg.me
+  port: 443
+  server: 104.21.38.48
+  servername: 4rRrRRRrRrRRrrTTtTtttTyyYYyYyyyiIIiIIIiooOOOoooooOoo.HUAngdi2031.dPDns.ORG
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 0a23af3f-3f9b-4333-ae89-796f7fe2f9ce
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: 4rRrRRRrRrRRrrTTtTtttTyyYYyYyyyiIIiIIIiooOOOoooooOoo.HUAngdi2031.dPDns.ORG
+    path: /25rajr8udfga29fcwxs
 - name: 🇺🇸_美国_63
   network: ws
   port: 443
-  server: pranab.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.53.113
+  servername: bBA.890601.pP.UA
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: bBA.890601.pP.UA
+    path: /ru9rsjdsod4yy2foe
+- name: 🇨🇳_中国_43
+  network: ws
+  port: 8880
+  server: 27.50.49.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 🇺🇸_美国_64
   network: ws
   port: 443
-  server: ip.sb
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.64.1
+  servername: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 52c0e96b-b8d7-44a5-a995-bd866bf39ec6
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
+    path: /yzflmznieqsamcelxv94lpbgmw
+- name: 🇳🇱_荷兰_10
+  network: ws
+  port: 8880
+  server: 45.131.5.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇧🇬_保加利亚
+  network: ws
+  port: 8880
+  server: 147.78.140.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_65
   network: ws
-  port: 443
-  server: lewis.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: 141.193.213.89
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇿🇦_南非_2
-  network: ws
-  port: 443
-  server: 160.123.255.12
-  servername: zl.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_66
   network: ws
-  port: 443
-  server: tasteatlas.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 216.116.134.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- name: 🇨🇳_中国_42
+- name: 🇯🇵_日本_6
   network: ws
-  port: 8443
-  server: 27.50.49.242
-  servername: edccn.ambercc.filegear-sg.me
+  port: 8880
+  server: 91.193.58.205
+  servername: us.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
 - name: 🇺🇸_美国_67
   network: ws
-  port: 443
-  server: whatismyipaddress.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: 141.193.213.208
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇪🇸_西班牙_2
+  network: ws
+  port: 8880
+  server: 194.59.5.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_68
   network: ws
-  port: 443
-  server: bestcf.030101.xyz
-  servername: edccn.ambercc.filegear-sg.me
+  port: 80
+  server: 141.193.213.43
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
+- name: 🇳🇱_荷兰_11
+  network: ws
+  port: 8880
+  server: 45.149.12.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_69
   network: ws
   port: 443
-  server: ignacio.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  server: 172.67.163.14
+  servername: DfcVrf.2031.pp.Ua
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇿🇦_南非_3
-  network: ws
-  port: 443
-  server: 160.123.255.163
-  servername: zl.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zl.ylks0033.dpdns.org
-    path: /?ed=2560
+      host: DfcVrf.2031.pp.Ua
+    path: /ru9rsjdsod4yy2foe
 - name: 🇺🇸_美国_70
   network: ws
   port: 443
-  server: www.wto.org
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.78.243
+  servername: cCVBNhJ.7282728.XYZ
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: cCVBNhJ.7282728.XYZ
+    path: /6r23fpdca4knaxx
 - name: 🇺🇸_美国_71
   network: ws
-  port: 443
-  server: sage.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  port: 80
+  server: 141.193.213.78
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇦🇹_奥地利
+  network: ws
+  port: 8880
+  server: 212.183.88.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_72
   network: ws
-  port: 443
-  server: craig.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 2053
+  server: 104.31.16.95
+  servername: ir.akcovufun.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 39a91eaf-a379-4fff-a9c8-1cb01442b76f
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: ir.akcovufun.ir
+    path: /
 - name: 🇺🇸_美国_73
   network: ws
-  port: 443
-  server: otto.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: hajlab.ucdavis.edu
+  servername: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v04.networkpro.net
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 2404f667-5969-4883-a71a-ea2e0db2d25b
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇹🇷_土耳其
+      host: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v04.networkpro.net
+    path: /?ed=2048
+- name: 🇬🇧_英国_6
   network: ws
-  port: 443
-  server: 185.188.147.79
-  servername: edccn.ambercc.filegear-sg.me
+  port: 8880
+  server: 25.129.199.29
+  servername: hk.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 🇺🇸_美国_74
   network: ws
   port: 443
-  server: theo.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  server: 172.67.212.59
+  servername: bBA.890601.pP.UA
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: bBA.890601.pP.UA
+    path: /ru9rsjdsod4yy2foe
+- name: 🇨🇳_中国_44
+  network: ws
+  port: 8880
+  server: 45.192.224.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 🇺🇸_美国_75
   network: ws
-  port: 443
-  server: 160.79.104.117
-  servername: zl.ylks0033.dpdns.org
+  port: 8880
+  server: 192.200.160.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: zl.ylks0033.dpdns.org
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
+- name: 🇬🇧_英国_7
+  network: ws
+  port: 8880
+  server: 185.162.229.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇯🇵_日本_7
+  network: ws
+  port: 8880
+  server: 103.245.229.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 🇺🇸_美国_76
   network: ws
-  port: 443
-  server: huxley.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 172.66.44.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_77
   network: ws
-  port: 443
-  server: moura.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: 141.193.213.20
+  servername: 14.sahanwickramasinghe.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: 14.sahanwickramasinghe.shop
+    path: /
+- name: 🇺🇸_美国_78
+  network: ws
+  port: 80
+  server: 170.114.46.6
+  servername: 14.sahanwickramasinghe.shop
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
+  ws-opts:
+    headers:
+      host: 14.sahanwickramasinghe.shop
+    path: /
+- name: 🇺🇸_美国_79
+  network: ws
+  port: 443
+  server: 104.21.7.147
+  servername: XXSe.hUaNGsHaNg.DpdNS.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1549e70f-dc57-45e3-ac7c-515f0161db72
+  ws-opts:
+    headers:
+      host: XXSe.hUaNGsHaNg.DpdNS.org
+    path: /iklitbwx0rst1mktnrt
+- name: 🇺🇸_美国_80
+  network: ws
+  port: 443
+  server: 104.21.32.1
+  servername: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52c0e96b-b8d7-44a5-a995-bd866bf39ec6
+  ws-opts:
+    headers:
+      host: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
+    path: /yzflmznieqsamcelxv94lpbgmw
+- name: 🇺🇸_美国_81
+  network: ws
+  port: 80
+  server: partner.zoom.us
+  servername: 14.sahanwickramasinghe.shop
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
+  ws-opts:
+    headers:
+      host: 14.sahanwickramasinghe.shop
+    path: /
+- name: 🇺🇸_美国_82
+  network: ws
+  port: 2096
+  server: whatismyipaddress.com
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s09.gorgeserver1.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2404f667-5969-4883-a71a-ea2e0db2d25b
+  ws-opts:
+    headers:
+      host: wwwspeedtestnetwhiteberinsistomd6625996s09.gorgeserver1.ir
+    path: /
+- name: 🇺🇸_美国_83
+  network: ws
+  port: 443
+  server: 104.21.46.90
+  servername: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
+  ws-opts:
+    headers:
+      host: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
+    path: /prufeqtnsrzbl4svhqtmks
+- name: 🇺🇸_美国_84
+  network: ws
+  port: 443
+  server: 104.21.64.1
+  servername: CCCVVVB.999161.xYz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84831b86-5c76-4173-bdf1-02fa3ed78a32
+  ws-opts:
+    headers:
+      host: CCCVVVB.999161.xYz
+    path: /f7h3xudllllxkt65vuai1psm38tz
+- name: 🇺🇸_美国_85
+  network: ws
+  port: 80
+  server: partner.zoom.us
+  servername: 14.sahanwickramasinghe.shop
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
+  ws-opts:
+    headers:
+      host: 14.sahanwickramasinghe.shop
+    path: /
+- name: 🇺🇸_美国_86
+  network: ws
+  port: 443
+  server: 104.21.48.1
+  servername: CCCVVVB.999161.xYz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84831b86-5c76-4173-bdf1-02fa3ed78a32
+  ws-opts:
+    headers:
+      host: CCCVVVB.999161.xYz
+    path: /f7h3xudllllxkt65vuai1psm38tz
+- name: 🇺🇸_美国_87
+  network: ws
+  port: 80
+  server: 170.114.45.6
+  servername: 14.sahanwickramasinghe.shop
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
+  ws-opts:
+    headers:
+      host: 14.sahanwickramasinghe.shop
+    path: /
+- name: 🇺🇸_美国_88
+  network: ws
+  port: 80
+  server: support.zoom.us
+  servername: 14.sahanwickramasinghe.shop
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
+  ws-opts:
+    headers:
+      host: 14.sahanwickramasinghe.shop
+    path: /
+- name: 🇨🇳_中国_45
+  network: ws
+  port: 8880
+  server: 154.197.88.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_78
+- name: 🇺🇸_美国_89
   network: ws
-  port: '443'
-  server: 141.193.213.178
+  port: 80
+  server: 141.193.213.21
+  servername: 14.sahanwickramasinghe.shop
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
+  type: vless
+  udp: true
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
   ws-opts:
     headers:
-      host: us2mnrxur6vt79grpe.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_79
+      host: 14.sahanwickramasinghe.shop
+    path: /
+- name: 🏳️_未知_3
   network: ws
-  port: '443'
-  server: 141.193.213.178
+  port: 443
+  server: nnchkclyx.codesofun.pp.ua
+  servername: nnchk.codesofun.pp.ua
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
+  type: vless
+  udp: true
+  uuid: 5f077162-99ad-424d-9f77-e5f7e37d9ef8
   ws-opts:
     headers:
-      host: us2mnrxur6vt79grpe.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_80
+      host: nnchk.codesofun.pp.ua
+    path: /ea3ac731
+- name: 🇺🇸_美国_90
   network: ws
-  port: '443'
-  server: 141.193.213.178
+  port: 443
+  server: 172.67.151.37
+  servername: af.9901157.xyz
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
+  type: vless
+  udp: true
+  uuid: a345476b-3f70-4eaa-acad-dd4a91e657f7
   ws-opts:
     headers:
-      host: us2mnrxur6vt79grpe.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_81
+      host: af.9901157.xyz
+    path: /
+- name: 🇺🇸_美国_91
   network: ws
-  port: '443'
-  server: 141.193.213.178
+  port: 8880
+  server: 31.12.75.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: us2mnrxur6vt79grpe.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_82
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_92
   network: ws
-  port: '443'
-  server: 141.193.213.178
+  port: 80
+  server: 141.193.213.76
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: us2mnrxur6vt79grpe.jjjiedian6j4tblb.com
-    path: /images
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇷🇺_俄罗斯_9
+  network: ws
+  port: 8880
+  server: 185.59.218.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇯🇵_日本_8
+  network: ws
+  port: 8880
+  server: 91.193.58.198
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
+- alterId: '2'
+  cipher: auto
+  name: 🇨🇳_中国_46
+  network: ws
+  port: '30829'
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: 🇺🇸_美国_93
+  network: ws
+  port: 8880
+  server: 172.67.204.84
+  servername: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e3467310-6b79-4e68-85ff-01515ebfd6ef
+  ws-opts:
+    headers:
+      host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+    path: /?ed=2048
+- name: 🇺🇸_美国_94
+  network: ws
+  port: 8080
+  server: 104.26.14.85
+  servername: IO.IhJtq0hklC.ZULAiR.OrG.
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
+  ws-opts:
+    headers:
+      host: IO.IhJtq0hklC.ZULAiR.OrG.
+    path: /
+- name: 🇺🇸_美国_95
+  network: ws
+  port: 8880
+  server: 172.67.204.84
+  servername: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e3467310-6b79-4e68-85ff-01515ebfd6ef
+  ws-opts:
+    headers:
+      host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+    path: /?ed=2048
 - alterId: '0'
   cipher: auto
-  name: 🇷🇺_俄罗斯_6
+  name: 🇸🇪_瑞典
   network: ws
   port: '80'
-  server: eedp257bubu2wefy3.lovebaipiao.net
+  server: 185.146.173.25
   type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
+  uuid: 27ee8047-5da9-4433-8c85-45f5feb1967f
   ws-opts:
     headers:
-      host: www.apple.com
-    path: /iphone
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_83
+      host: google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
+- name: 🇺🇸_美国_96
   network: ws
-  port: '2086'
-  server: cdn1.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: gz4wah11v4bem6ws.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_84
-  network: ws
-  port: '2086'
-  server: cdn1.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: gz4wah11v4bem6ws.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇷🇺_俄罗斯_7
-  network: ws
-  port: '80'
-  server: eedp257bubu2wefy1.lovebaipiao.net
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: www.apple.com
-    path: /iphone
-- alterId: '0'
-  cipher: auto
-  name: 🇷🇺_俄罗斯_8
-  network: ws
-  port: '80'
-  server: eedp257bubu2wefy2.lovebaipiao.net
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: www.apple.com
-    path: /iphone
-- alterId: '0'
-  cipher: auto
-  name: 🇬🇧_英国_2
-  network: ws
-  port: '80'
-  server: 6ernu3zmhsv7s95fm.lovebaipiao.net
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_85
-  network: ws
-  port: '443'
-  server: 141.193.213.73
+  port: 8880
+  server: 172.67.204.84
+  servername: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
+  type: vless
+  udp: true
+  uuid: e3467310-6b79-4e68-85ff-01515ebfd6ef
   ws-opts:
     headers:
-      host: jpebr0poo5odf36ufx.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_86
-  network: ws
-  port: '443'
-  server: 141.193.213.12
-  tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: jpebr0poo5odf36ufx.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_87
-  network: ws
-  port: '443'
-  server: cloudflare.182682.xyz
-  tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: jpebr0poo5odf36ufx.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_88
-  network: ws
-  port: '443'
-  server: 141.193.213.190
-  tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: camex51avxe7b8r2pw.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_89
-  network: ws
-  port: '443'
-  server: 141.193.213.65
-  tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: camex51avxe7b8r2pw.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_90
-  network: ws
-  port: '443'
-  server: cloudflare.182682.xyz
-  tls: true
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: camex51avxe7b8r2pw.jjjiedian6j4tblb.com
-    path: /images
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_91
-  network: ws
-  port: '2086'
-  server: cdn1.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: sgtxv82wilpfh6a8vm.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_92
-  network: ws
-  port: '2086'
-  server: cdn2.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: sgtxv82wilpfh6a8vm.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_93
-  network: ws
-  port: '2086'
-  server: cdn3.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: sgtxv82wilpfh6a8vm.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_94
-  network: ws
-  port: '2086'
-  server: cdn1.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: hkrg0nf30ik5piq1zr.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_95
-  network: ws
-  port: '2086'
-  server: cdn2.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: hkrg0nf30ik5piq1zr.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_96
-  network: ws
-  port: '2086'
-  server: cdn3.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: hkrg0nf30ik5piq1zr.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_97
-  network: ws
-  port: '2086'
-  server: cdn1.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: erfpus962ivsb8pwri.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_98
-  network: ws
-  port: '2086'
-  server: cloudflare.182682.xyz
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: erfpus962ivsb8pwri.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_99
-  network: ws
-  port: '2086'
-  server: cdn3.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: erfpus962ivsb8pwri.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_100
-  network: ws
-  port: '80'
-  server: cdn1.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_101
-  network: ws
-  port: '80'
-  server: cdn2.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_102
-  network: ws
-  port: '80'
-  server: cdn3.bpcdn.cc
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: tk1.bk5jh4t6w.jiesk4pdqcqjo16j.xyz
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_103
-  network: ws
-  port: '2086'
-  server: 170.114.45.51
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_104
-  network: ws
-  port: '2086'
-  server: 170.114.45.52
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_105
-  network: ws
-  port: '2086'
-  server: 170.114.45.53
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇩🇰_丹麦
-  network: ws
-  port: '2086'
-  server: csgo.com
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_106
-  network: ws
-  port: '2086'
-  server: digitalocean.com
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_107
-  network: ws
-  port: '2086'
-  server: cloudflare.182682.xyz
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_108
-  network: ws
-  port: '2086'
-  server: 141.193.213.167
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_109
-  network: ws
-  port: '2086'
-  server: 141.193.213.168
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_110
-  network: ws
-  port: '2086'
-  server: 141.193.213.169
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
+      host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
@@ -94542,6 +95143,23 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
+  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-orvps2.horsenma.net:8443
+  network: ws
+  port: 8443
+  server: orvps2.horsenma.net
+  servername: orvps2.horsenma.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
+  ws-opts:
+    headers:
+      HOST: orvps2.horsenma.net
+    path: /horsen
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
   name: VMESS-瑞典>芬兰-NF解锁芬兰自制剧-ChatGPT-TikTok-YouTube-185.146.173.25:80
   network: ws
   port: 80
@@ -94565,6 +95183,12 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁英国自制剧-ChatGPT-TikTok-YouTube-85.210.120.237:443
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
   type: ss
 - alterId: 0
   cipher: auto
