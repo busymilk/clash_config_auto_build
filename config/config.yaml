@@ -95893,22 +95893,6 @@ proxies:
   uuid: baec9adb-d6b9-465a-f531-d0a38144cf6c
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>中国-ChatGPT-TikTok-YouTube-104.17.213.241:2052
-  network: ws
-  port: 2052
-  server: 104.17.213.241
-  servername: 100-98-75-157.s2.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3e2baf6a-65f1-319a-add3-039029c97372
-  ws-opts:
-    headers:
-      HOST: 100-98-75-157.s2.db-link01.top
-    path: /dabai.in104.21.188.174
 - alterId: 5
   cipher: auto
   h2-opts: {}
@@ -103811,12 +103795,100 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇸🇪_SE_瑞典->🇨🇳_CN_中国
+  network: ws
+  port: 80
+  server: 185.146.173.25
+  type: vmess
+  uuid: 27ee8047-5da9-4433-8c85-45f5feb1967f
+  ws-opts:
+    headers:
+      host: google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
+- name: 🇺🇸_US_美国->🇨🇳_CN_中国
+  network: ws
+  password: 061ec9d5-ba40-428a-8be0-1947b10b5cfc
+  port: 443
+  server: 104.21.22.211
+  sni: T.taipEi108.Dpdns.Org
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /Dmby2AKiZKvMo1YauoQwY5
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  password: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
+  port: 15229
+  server: a2bbfa2e-swq1s0-sxwsos-g3b3.cu.plebai.net
+  skip-cert-verify: false
+  sni: a2bbfa2e-swq1s0-sxwsos-g3b3.cu.plebai.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  port: 15229
+  server: a828e0b8-swo740-tcinla-hrtf.cu.plebai.net
+  skip-cert-verify: false
+  sni: a828e0b8-swo740-tcinla-hrtf.cu.plebai.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇮🇸_IS_冰岛
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.152
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: c7f2d327-swmcg0-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  password: 398e0d38-8649-11ef-959c-f23c9164ca5d
+  port: 15229
+  server: 699bbddc-swq1s0-sxzls8-1gxvd.cu.plebai.net
+  skip-cert-verify: false
+  sni: 699bbddc-swq1s0-sxzls8-1gxvd.cu.plebai.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇮🇷_IR_伊朗
+  network: tcp
+  port: 44264
+  server: 194.5.178.70
+  type: vmess
+  uuid: ee7156f5-c594-4d7f-9e25-5de014059c85
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪_DE_德国
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: 3784f70a-swo740-swy6li-tni2.cu.plebai.net
+  skip-cert-verify: false
+  sni: 3784f70a-swo740-swy6li-tni2.cu.plebai.net
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
   network: ws
-  port: 30828
-  server: 111.26.109.79
+  port: 30829
+  server: v29.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
@@ -103825,75 +103897,31 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪_DE_德国
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.166
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国->🇨🇷_CR_哥斯达黎加
+  password: a869ba7e-e46c-46bf-9d0a-2a4ddecc0627
+  port: 7705
+  server: fell4.dogsvpn.top
   type: ss
-- name: 🇺🇸_US_美国_1
-  network: ws
-  password: ac5b2e52-435b-4461-a99c-1317ab0e2889
-  port: 443
-  server: 104.21.46.90
-  sni: DddVfGty.frEeVpnAtM.dpdNS.oRG
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: f8021ada-swo740-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: false
   type: trojan
-  udp: true
-  ws-opts:
-    path: /HmfeUdLKf899DmZDo0oju2st1
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 🇮🇷_IR_伊朗->🇨🇳_CN_中国
-  network: tcp
-  port: 44264
-  server: 194.5.178.70
-  type: vmess
-  uuid: ee7156f5-c594-4d7f-9e25-5de014059c85
-- cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
 - name: 🇺🇸_US_美国_4
   network: ws
-  password: 072f4db4-d89d-420d-9d9e-045ed8d5c9cc
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
   port: 443
-  server: 104.21.57.88
-  sni: 10tyu.iran.pp.ua
+  server: 172.67.181.193
+  sni: EEeEee4.hUAngSHANG2030.dPdNS.org
   type: trojan
   udp: true
   ws-opts:
-    path: /VEP415T5mby2DulPWRIwOavJd
+    path: /ptGwaGzcA4KNAXX
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  name: 🇨🇳_CN_中国
   network: ws
   port: 30805
   server: v5.heduian.link
@@ -103905,28 +103933,29 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+- name: 🇺🇸_US_美国_5
   network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- name: 🇺🇸_US_美国_8
-  network: ws
-  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  password: ac5b2e52-435b-4461-a99c-1317ab0e2889
   port: 443
-  server: 172.67.181.193
-  sni: EEeEee4.hUAngSHANG2030.dPdNS.org
+  server: 104.21.46.90
+  sni: DddVfGty.frEeVpnAtM.dpdNS.oRG
   type: trojan
   udp: true
   ws-opts:
-    path: /ptGwaGzcA4KNAXX
+    path: /HmfeUdLKf899DmZDo0oju2st1
+- cipher: aes-256-gcm
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_8
+  password: 77a12a3d-6df0-48c8-a189-b071fcda1456
+  port: 11511
+  server: cdn-p1-us.youku-dns.com
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_9
+  password: 8ec8325a-efa4-11ef-a7bb-f23c9164ca5d
+  port: 15229
+  server: 69108338-swo740-sy4o80-fha8.cu.plebai.net
+  skip-cert-verify: false
+  sni: 69108338-swo740-sy4o80-fha8.cu.plebai.net
+  type: trojan
 - cipher: aes-128-gcm
   name: 🇺🇸US-37.19.198.243-0418 | 217.165MB
   password: shadowsocks
