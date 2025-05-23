@@ -83,196 +83,68 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇺🇸_美国_1
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_1
+  network: httpupgrade
+  port: '80'
+  server: fr1a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_2
+  network: httpupgrade
+  port: '80'
+  server: fr2a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_3
+  network: httpupgrade
+  port: '80'
+  server: ru1a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_4
+  network: httpupgrade
+  port: '80'
+  server: us2a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+- flow: xtls-rprx-vision
+  name: 🇺🇸_美国_5
   network: tcp
-  password: Aimer
-  port: 2053
-  server: 167.68.4.7
+  port: 25536
+  server: 216.230.233.49
+  servername: apps.apple.com
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
+  tls: false
+  type: vless
   udp: true
-- name: 🇺🇸_美国_2
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 167.68.5.85
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_3
-  network: tcp
-  password: Aimer
-  port: 443
-  server: lynn.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_4
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 199.34.228.66
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_5
-  network: tcp
-  password: Aimer
-  port: 443
-  server: arvind.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
+  uuid: 4a3dc64b-17e1-4ae7-a9a4-851f9794d4c6
 - name: 🇺🇸_美国_6
   network: tcp
-  password: Aimer
+  password: ca48571a-403f-44b9-b2a6-e17c36d7cacc
   port: 443
-  server: sage.ns.cloudflare.com
+  server: 104.21.64.1
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
+  sni: 10r.iran1912.dpdns.org
   type: trojan
   udp: true
 - name: 🇺🇸_美国_7
   network: tcp
-  password: Aimer
-  port: 2083
-  server: 108.165.152.31
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_1
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 188.164.159.220
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_2
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 188.164.159.234
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_3
-  network: tcp
-  password: Aimer
+  password: ac5b2e52-435b-4461-a99c-1317ab0e2889
   port: 443
-  server: 188.164.159.171
+  server: 104.21.46.90
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
+  sni: DddVfGty.frEeVpnAtM.dpdNS.oRG
   type: trojan
   udp: true
 - name: 🇺🇸_美国_8
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 199.34.228.164
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_4
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 188.164.159.25
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_9
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 209.208.227.79
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_10
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 154.83.2.88
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_11
-  network: tcp
-  password: Aimer
-  port: 443
-  server: thaddeus.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_12
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 155.46.213.38
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_13
-  network: tcp
-  password: Aimer
-  port: 443
-  server: theo.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_5
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 188.164.159.43
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_6
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 188.164.159.107
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_14
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 104.129.166.131
-  skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_15
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 45.67.214.3
-  skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_16
   network: tcp
   password: xxoo
   port: 443
@@ -281,1204 +153,941 @@ proxies:
   sni: us.blazeppn.info
   type: trojan
   udp: true
+- name: 🇺🇸_美国_9
+  network: tcp
+  password: ac5b2e52-435b-4461-a99c-1317ab0e2889
+  port: 443
+  server: 104.21.46.90
+  skip-cert-verify: true
+  sni: DddVfGty.frEeVpnAtM.dpdNS.oRG
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_10
+  network: tcp
+  password: xxoo
+  port: 443
+  server: us.blazeppn.info
+  skip-cert-verify: true
+  sni: us.blazeppn.info
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_11
+  network: tcp
+  password: 061ec9d5-ba40-428a-8be0-1947b10b5cfc
+  port: 443
+  server: 172.67.207.27
+  skip-cert-verify: true
+  sni: T.taipEi108.Dpdns.Org
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_12
+  network: ws
+  port: 80
+  server: 141.193.213.173
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
+- name: 🇺🇸_美国_13
+  network: ws
+  port: 80
+  server: 141.193.213.241
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_14
+  network: ws
+  port: 80
+  server: 141.193.213.146
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_15
+  network: ws
+  port: 80
+  server: 141.193.213.135
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_16
+  network: ws
+  port: 8880
+  server: 162.159.62.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_17
-  network: tcp
-  password: Aimer
-  port: 443
-  server: pranab.ns.cloudflare.com
+  network: ws
+  port: 8880
+  server: 104.129.165.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
-- name: 🇦🇲_亚美尼亚_7
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 188.164.159.69
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇦🇲_亚美尼亚_1
+  network: ws
+  port: 8880
+  server: 185.162.230.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_18
-  network: tcp
-  password: Aimer
-  port: 443
-  server: ignacio.ns.cloudflare.com
+  network: ws
+  port: 80
+  server: 141.193.213.224
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_19
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 162.120.94.23
+  network: ws
+  port: 80
+  server: 141.193.213.9
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_20
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 108.165.152.78
+  network: ws
+  port: 80
+  server: 141.193.213.118
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_21
-  network: tcp
-  password: Aimer
-  port: 443
-  server: kip.ns.cloudflare.com
+  network: ws
+  port: 80
+  server: 141.193.213.65
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_22
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 66.81.247.230
+  network: ws
+  port: 8880
+  server: 154.83.2.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_23
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 108.165.152.29
+  network: ws
+  port: 80
+  server: 141.193.213.178
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_24
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 108.165.152.130
+  network: ws
+  port: 8880
+  server: 104.129.164.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_25
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 162.120.94.232
+  network: ws
+  port: 8880
+  server: 167.68.42.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇦🇲_亚美尼亚_2
+  network: ws
+  port: 8880
+  server: 185.162.231.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_26
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 108.165.152.143
+  network: ws
+  port: 8880
+  server: 167.68.11.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
-  sni: epccn.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - name: 🇺🇸_美国_27
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 108.165.152.104
+  network: ws
+  port: 8880
+  server: 104.129.165.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
-  sni: epccv.ambercc.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /
 - name: 🇺🇸_美国_28
   network: ws
-  port: 53485
-  server: 23.94.208.154
-  servername: ll.bgm2024.dpdns.org
+  port: 80
+  server: 141.193.213.160
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_29
   network: ws
-  port: 443
-  server: sullivan.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 104.129.165.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_30
   network: ws
-  port: 443
-  server: www.whatismyip.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 140.99.233.29
+  servername: hk.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 🇺🇸_美国_31
   network: ws
-  port: 8843
-  server: 47.79.90.82
-  servername: edccn.ambercc.filegear-sg.me
+  port: 8080
+  server: 104.26.14.85
+  servername: 4j.QBAo1g5z6k.ZulaIR.org.
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 56652249-2e67-4429-b86c-3df8b838ad85
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: 4j.QBAo1g5z6k.ZulaIR.org.
+    path: /
 - name: 🇺🇸_美国_32
   network: ws
   port: 443
-  server: ashton.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.61.154
+  servername: c3DFgH6.191266.xYz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: c6840587-7ac4-40be-aa4b-ae327eb4fa53
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: c3DFgH6.191266.xYz
+    path: /vygbmnxgnccs06vuxllhk95ad
 - name: 🇺🇸_美国_33
   network: ws
   port: 443
-  server: julio.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 172.67.144.126
+  servername: xCdF4.288288.ShOP
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 2734c14b-e4ce-48b3-b3de-f80788cb4c47
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: xCdF4.288288.ShOP
+    path: /eq5bb2bolxsg8dqnab
 - name: 🇺🇸_美国_34
   network: ws
   port: 443
-  server: 192.18.134.22
-  servername: ll.bgm2024.dpdns.org
+  server: 172.67.153.179
+  servername: 5eR.WWW890604.dPDNS.OrG
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 895552fa-6284-4c1d-ba00-3944e0c7c626
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: 5eR.WWW890604.dPDNS.OrG
+    path: /c1sukvgdr58yeduy9aog
 - name: 🇺🇸_美国_35
   network: ws
   port: 443
-  server: 160.79.104.115
-  servername: ll.bgm2024.dpdns.org
+  server: 104.21.82.14
+  servername: M3SDf.777259.xyz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: e74d7639-3755-4624-b770-efa6e7ec09a8
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: M3SDf.777259.xyz
+    path: /bt93qlsreyhzv5ii9ww
 - name: 🇺🇸_美国_36
   network: ws
   port: 443
-  server: 63.141.128.140
-  servername: ll.bgm2024.dpdns.org
+  server: 172.67.144.126
+  servername: 899.288288.shoP
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 4e41764d-ac31-43f5-8e9b-231ddf252d1f
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: 899.288288.shoP
+    path: /walpwpcqwnsvcnglsmvz
+- name: 🇦🇲_亚美尼亚_3
+  network: ws
+  port: 80
+  server: 185.162.230.6
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /
 - name: 🇺🇸_美国_37
   network: ws
   port: 443
-  server: lewis.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.64.1
+  servername: 10d.445.pp.ua
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: ca48571a-403f-44b9-b2a6-e17c36d7cacc
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: 10d.445.pp.ua
+    path: /udlwpkxenxf2ulpwriwoavjd
 - name: 🇺🇸_美国_38
   network: ws
   port: 443
-  server: abdullah.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 172.67.190.149
+  servername: sssdeCVBnh.999156.XYz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: sssdeCVBnh.999156.XYz
+    path: /prufeqtnsrzbl4svhqtmks
 - name: 🇺🇸_美国_39
   network: ws
   port: 443
-  server: www.wto.org
-  servername: dk.youlingkais.filegear-sg.me
+  server: 172.67.144.126
+  servername: 10duuuu.288288.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: ca48571a-403f-44b9-b2a6-e17c36d7cacc
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: 10duuuu.288288.shop
+    path: /udlwpkxenxf2ulpwriwoavjd
 - name: 🇺🇸_美国_40
   network: ws
   port: 443
-  server: 130.250.137.73
-  servername: ll.bgm2024.dpdns.org
+  server: 104.21.88.226
+  servername: 5eR.WWW890604.dPDNS.OrG
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 895552fa-6284-4c1d-ba00-3944e0c7c626
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: 5eR.WWW890604.dPDNS.OrG
+    path: /c1sukvgdr58yeduy9aog
 - name: 🇺🇸_美国_41
   network: ws
   port: 443
-  server: dnschecker.org
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.81.192
+  servername: sssdeCVBnh.999156.XYz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: sssdeCVBnh.999156.XYz
+    path: /prufeqtnsrzbl4svhqtmks
 - name: 🇺🇸_美国_42
   network: ws
-  port: 443
-  server: braden.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 140.99.233.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_43
   network: ws
   port: 443
-  server: 63.141.128.193
-  servername: ll.bgm2024.dpdns.org
+  server: 104.21.34.159
+  servername: e6422f63-7b49-4b50-b862-9f38.2031.pp.ua
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 15b24b56-d667-4fa8-b548-f3dc942fb461
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
+      host: e6422f63-7b49-4b50-b862-9f38.2031.pp.ua
+    path: /ok1ubnf7txq8yjfjxz
 - name: 🇺🇸_美国_44
   network: ws
-  port: 443
-  server: 160.79.104.233
-  servername: ll.bgm2024.dpdns.org
+  port: 8880
+  server: 209.46.30.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_45
   network: ws
   port: 443
-  server: bowen.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 172.67.137.6
+  servername: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
+    path: /prufeqtnsrzbl4svhqtmks
 - name: 🇺🇸_美国_46
   network: ws
-  port: 443
-  server: 63.141.128.163
-  servername: ll.bgm2024.dpdns.org
+  port: 80
+  server: 141.193.213.97
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_47
   network: ws
   port: 443
-  server: 160.79.105.76
-  servername: ll.bgm2024.dpdns.org
+  server: 104.21.53.113
+  servername: bBA.890601.pP.UA
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: bBA.890601.pP.UA
+    path: /ru9rsjdsod4yy2foe
 - name: 🇺🇸_美国_48
   network: ws
   port: 443
-  server: 198.62.62.156
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.64.1
+  servername: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 52c0e96b-b8d7-44a5-a995-bd866bf39ec6
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
+    path: /yzflmznieqsamcelxv94lpbgmw
 - name: 🇺🇸_美国_49
   network: ws
-  port: 443
-  server: 135.84.76.110
-  servername: ll.bgm2024.dpdns.org
+  port: 80
+  server: 141.193.213.89
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_50
   network: ws
-  port: 443
-  server: whatismyipaddress.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 216.116.134.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_51
   network: ws
-  port: 443
-  server: kip.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  port: 80
+  server: 141.193.213.208
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_52
   network: ws
-  port: 443
-  server: wilson.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: 141.193.213.43
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
 - name: 🇺🇸_美国_53
   network: ws
   port: 443
-  server: decker.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 172.67.163.14
+  servername: DfcVrf.2031.pp.Ua
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: DfcVrf.2031.pp.Ua
+    path: /ru9rsjdsod4yy2foe
 - name: 🇺🇸_美国_54
   network: ws
   port: 443
-  server: 160.79.105.78
-  servername: ll.bgm2024.dpdns.org
+  server: 104.21.78.243
+  servername: cCVBNhJ.7282728.XYZ
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: cCVBNhJ.7282728.XYZ
+    path: /6r23fpdca4knaxx
 - name: 🇺🇸_美国_55
   network: ws
-  port: 443
-  server: 192.0.54.0
-  servername: ll.bgm2024.dpdns.org
+  port: 80
+  server: 141.193.213.78
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_56
   network: ws
   port: 443
-  server: 160.79.104.102
-  servername: ll.bgm2024.dpdns.org
+  server: 172.67.212.59
+  servername: bBA.890601.pP.UA
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: bBA.890601.pP.UA
+    path: /ru9rsjdsod4yy2foe
 - name: 🇺🇸_美国_57
   network: ws
-  port: 443
-  server: 160.79.104.11
-  servername: ll.bgm2024.dpdns.org
+  port: 8880
+  server: 192.200.160.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_58
   network: ws
-  port: 443
-  server: theo.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  port: 80
+  server: 141.193.213.20
+  servername: 14.sahanwickramasinghe.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: 14.sahanwickramasinghe.shop
+    path: /
 - name: 🇺🇸_美国_59
   network: ws
-  port: 443
-  server: lynn.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  port: 80
+  server: 170.114.46.6
+  servername: 14.sahanwickramasinghe.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: 14.sahanwickramasinghe.shop
+    path: /
 - name: 🇺🇸_美国_60
   network: ws
   port: 443
-  server: 160.79.105.89
-  servername: ll.bgm2024.dpdns.org
+  server: 104.21.7.147
+  servername: XXSe.hUaNGsHaNg.DpdNS.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 1549e70f-dc57-45e3-ac7c-515f0161db72
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: XXSe.hUaNGsHaNg.DpdNS.org
+    path: /iklitbwx0rst1mktnrt
 - name: 🇺🇸_美国_61
   network: ws
-  port: 443
-  server: 192.0.54.42
-  servername: ll.bgm2024.dpdns.org
+  port: 80
+  server: partner.zoom.us
+  servername: 14.sahanwickramasinghe.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: 14.sahanwickramasinghe.shop
+    path: /
 - name: 🇺🇸_美国_62
   network: ws
   port: 443
-  server: 192.0.54.149
-  servername: ll.bgm2024.dpdns.org
+  server: 104.21.46.90
+  servername: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
+    path: /prufeqtnsrzbl4svhqtmks
 - name: 🇺🇸_美国_63
   network: ws
   port: 443
-  server: kyree.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.64.1
+  servername: CCCVVVB.999161.xYz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 84831b86-5c76-4173-bdf1-02fa3ed78a32
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: CCCVVVB.999161.xYz
+    path: /f7h3xudllllxkt65vuai1psm38tz
 - name: 🇺🇸_美国_64
   network: ws
-  port: 443
-  server: cris.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: partner.zoom.us
+  servername: 14.sahanwickramasinghe.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: 14.sahanwickramasinghe.shop
+    path: /
 - name: 🇺🇸_美国_65
   network: ws
   port: 443
-  server: icook.tw
-  servername: dk.youlingkais.filegear-sg.me
+  server: 104.21.48.1
+  servername: CCCVVVB.999161.xYz
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 84831b86-5c76-4173-bdf1-02fa3ed78a32
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: CCCVVVB.999161.xYz
+    path: /f7h3xudllllxkt65vuai1psm38tz
 - name: 🇺🇸_美国_66
   network: ws
-  port: 443
-  server: dylan.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: 170.114.45.6
+  servername: 14.sahanwickramasinghe.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: 14.sahanwickramasinghe.shop
+    path: /
 - name: 🇺🇸_美国_67
   network: ws
-  port: 443
-  server: ignacio.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  port: 80
+  server: support.zoom.us
+  servername: 14.sahanwickramasinghe.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: 14.sahanwickramasinghe.shop
+    path: /
 - name: 🇺🇸_美国_68
   network: ws
-  port: 443
-  server: 160.79.104.79
-  servername: ll.bgm2024.dpdns.org
+  port: 80
+  server: 141.193.213.21
+  servername: 14.sahanwickramasinghe.shop
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 438f9559-1671-45cf-9d2c-338fe6766acf
   ws-opts:
     headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: 14.sahanwickramasinghe.shop
+    path: /
 - name: 🇺🇸_美国_69
   network: ws
-  port: 443
-  server: ip.sb
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 31.12.75.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
+      host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - name: 🇺🇸_美国_70
   network: ws
-  port: 443
-  server: otto.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 80
+  server: 141.193.213.76
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
 - name: 🇺🇸_美国_71
   network: ws
-  port: 443
-  server: www.udemy.com
-  servername: dk.youlingkais.filegear-sg.me
+  port: 8880
+  server: 140.99.233.19
+  servername: hk.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 🇺🇸_美国_72
   network: ws
-  port: 443
-  server: arvind.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
+  port: 8880
+  server: 104.17.147.22
+  servername: de-snapp.academigroup.ir.
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 19859922-a02c-4f4c-a081-ee59535910f7
   ws-opts:
     headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_73
-  network: ws
-  port: 443
-  server: toy-people.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_74
-  network: ws
-  port: 443
-  server: www.hugedomains.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_75
-  network: ws
-  port: 443
-  server: 198.62.62.4
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_76
-  network: ws
-  port: 443
-  server: uriah.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_77
-  network: ws
-  port: 443
-  server: tasteatlas.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_78
-  network: ws
-  port: 443
-  server: www.digitalocean.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_79
-  network: ws
-  port: 443
-  server: 63.141.128.209
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
-- name: 🇺🇸_美国_80
-  network: ws
-  port: 443
-  server: 63.141.128.12
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_81
-  network: ws
-  port: 443
-  server: nikon.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_82
-  network: ws
-  port: 2087
-  server: 108.165.152.98
-  servername: edccn.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_83
-  network: ws
-  port: 443
-  server: trevor.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_84
-  network: ws
-  port: 443
-  server: craig.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_85
-  network: ws
-  port: 443
-  server: 63.141.128.102
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_86
-  network: ws
-  port: 443
-  server: steamdb.info
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_87
-  network: ws
-  port: 443
-  server: 160.79.105.45
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_88
-  network: ws
-  port: 443
-  server: www.pcmag.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_89
-  network: ws
-  port: 443
-  server: rustam.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_90
-  network: ws
-  port: 443
-  server: huxley.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_91
-  network: ws
-  port: 49153
-  server: 47.79.90.37
-  servername: edccn.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_92
-  network: ws
-  port: 443
-  server: pranab.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_93
-  network: ws
-  port: 443
-  server: 160.79.105.121
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_94
-  network: ws
-  port: 443
-  server: moura.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_95
-  network: ws
-  port: 2053
-  server: 108.165.152.104
-  servername: edccn.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_96
-  network: ws
-  port: 443
-  server: 160.79.105.81
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_97
-  network: ws
-  port: 443
-  server: benedict.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_98
-  network: ws
-  port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_99
-  network: ws
-  port: 443
-  server: damien.ns.cloudflare.com
-  servername: dk.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb
-  ws-opts:
-    headers:
-      host: dk.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 🇺🇸_美国_100
-  network: ws
-  port: 443
-  server: duke.ns.cloudflare.com
-  servername: edccn.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_101
-  network: ws
-  port: 8080
-  server: 38.6.219.16
-  servername: edccn.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccn.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_102
-  network: ws
-  port: 2053
-  server: 129.159.129.107
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_103
-  network: ws
-  port: 443
-  server: 192.9.180.162
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: de-snapp.academigroup.ir.
+    path: /join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420--join--expressvpn_420?ed=2048
 - alterId: '0'
   cipher: auto
-  name: 🇺🇸_美国_104
+  name: 🇺🇸_美国_73
   network: ws
-  port: '2082'
-  server: cs.flha.ru
+  port: '80'
+  server: xxccvfrty.999836.xyz
   type: vmess
-  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
+  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
   ws-opts:
     headers:
-      host: cs.flha.ru
-    path: /
-- name: 🇺🇸_美国_105
-  network: ws
-  port: 443
-  server: 160.79.105.118
-  servername: ll.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ll.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: xxccvfrty.999836.xyz
+    path: /10W6SJaK0F0oVXeNU6S2RVRP
 - alpn:
   - h3
   auth_str: dongtaiwang.com
