@@ -85,7 +85,7 @@ profile:
 proxies:
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_109
+  name: Hong Kong_Central_vmess_1072
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -98,7 +98,7 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1046
+  name: Hong Kong_Central_ss_1077
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -114,7 +114,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1048
+  name: Hong Kong_None_vmess_1079
   port: 19504
   server: 43.247.135.192
   skip-cert-verify: false
@@ -124,7 +124,7 @@ proxies:
   uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1049
+  name: Hong Kong_None_vmess_1080
   port: 3000
   server: 43.199.24.247
   skip-cert-verify: false
@@ -134,7 +134,7 @@ proxies:
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_1052
+  name: Hong Kong_Central_vmess_1083
   network: ws
   port: '8080'
   server: 0986fcca-swq1s0-swsmkh-1s0a7.hgc1.tcpbbr.net
@@ -150,7 +150,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1066
+  name: Hong Kong_None_vmess_1097
   network: tcp
   port: '19504'
   server: 43.247.135.192
@@ -160,7 +160,7 @@ proxies:
   uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1067
+  name: Hong Kong_None_vmess_1098
   network: tcp
   port: '3000'
   server: 43.199.24.247
@@ -170,7 +170,7 @@ proxies:
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_1172
+  name: Hong Kong_Central_vmess_119
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -183,7 +183,7 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1177
+  name: Hong Kong_Central_ss_1114
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -199,7 +199,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1179
+  name: Hong Kong_None_vmess_1116
   port: 19504
   server: 43.247.135.192
   skip-cert-verify: false
@@ -209,7 +209,7 @@ proxies:
   uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1180
+  name: Hong Kong_None_vmess_1117
   port: 3000
   server: 43.199.24.247
   skip-cert-verify: false
@@ -219,7 +219,7 @@ proxies:
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_1183
+  name: Hong Kong_Central_vmess_1120
   network: ws
   port: '8080'
   server: 0986fcca-swq1s0-swsmkh-1s0a7.hgc1.tcpbbr.net
@@ -235,7 +235,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1197
+  name: Hong Kong_None_vmess_1134
   network: tcp
   port: '19504'
   server: 43.247.135.192
@@ -245,7 +245,7 @@ proxies:
   uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1198
+  name: Hong Kong_None_vmess_1135
   network: tcp
   port: '3000'
   server: 43.199.24.247
@@ -253,6 +253,27 @@ proxies:
   tls: false
   type: vmess
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 45599056-d894-4147-9bd1-478a51f6779b
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: 45599056-d894-4147-9bd1-478a51f6779b
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 45599056-d894-4147-9bd1-478a51f6779b
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
@@ -267,14 +288,35 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '11|Channel id: @ShadowProxy66🇭🇰'
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰香港 01 | 1x HK
+  password: 3f29721e-a2d4-48a2-a9d7-7ab973390daa
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰香港 02 | 1x HK
+  password: 3f29721e-a2d4-48a2-a9d7-7ab973390daa
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇭🇰香港家宽 03 | 1x HK
+  password: 3f29721e-a2d4-48a2-a9d7-7ab973390daa
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: '12|Channel id: @ShadowProxy66🇭🇰'
   password: NTA0MDg5OjEzMzI4ODo3YjA2ZDIyYThhN2M3NjRm
   port: 3074
   server: 47.76.232.205
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇭🇰 #1'
+- name: '12|Channel id: @ShadowProxy66🇭🇰 #1'
   password: 53bdfd4a-7f38-4cb6-b07e-49974de1a800
   port: 22106
   server: 160.22.156.7
@@ -283,14 +325,14 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: aes-256-gcm
-  name: 12|🇭🇰 香港|@ripaojiedian
+  name: 13|🇭🇰 香港|@ripaojiedian
   password: ENYGONDU94UW1G6X
   port: 15010
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 12|🇭🇰 香港2|@ripaojiedian
+  name: 13|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -306,7 +348,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: 12|🇭🇰 香港3|@ripaojiedian
+  name: 13|🇭🇰 香港3|@ripaojiedian
   port: 35921
   server: 120.198.71.216
   skip-cert-verify: false
@@ -316,7 +358,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港4|@ripaojiedian
+  name: 13|🇭🇰 香港4|@ripaojiedian
   port: 19504
   server: 43.247.135.192
   skip-cert-verify: false
@@ -326,7 +368,7 @@ proxies:
   uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港5|@ripaojiedian
+  name: 13|🇭🇰 香港5|@ripaojiedian
   port: 3000
   server: 43.199.24.247
   skip-cert-verify: false
@@ -336,7 +378,7 @@ proxies:
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
 - alterId: 2
   cipher: auto
-  name: 12,13|香港7|@ripaojiedian
+  name: 13,14|香港7|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -351,7 +393,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: chacha20-ietf
-  name: 12|🇭🇰 香港8|@ripaojiedian
+  name: 13|🇭🇰 香港8|@ripaojiedian
   password: asd123456
   port: 8388
   server: 154.197.26.237
@@ -359,7 +401,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 12,13|香港9|@ripaojiedian
+  name: 13,14|香港9|@ripaojiedian
   network: ws
   port: '8080'
   server: 0986fcca-swq1s0-swsmkh-1s0a7.hgc1.tcpbbr.net
@@ -375,7 +417,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 13|香港3|@ripaojiedian
+  name: 14|香港3|@ripaojiedian
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -385,7 +427,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 13|香港4|@ripaojiedian
+  name: 14|香港4|@ripaojiedian
   network: tcp
   port: '19504'
   server: 43.247.135.192
@@ -395,7 +437,7 @@ proxies:
   uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
 - alterId: 0
   cipher: auto
-  name: 13|香港5|@ripaojiedian
+  name: 14|香港5|@ripaojiedian
   network: tcp
   port: '3000'
   server: 43.199.24.247
@@ -403,7 +445,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
-- name: 14|HK_speednode_0054
+- name: 15|HK_speednode_0054
   network: ws
   port: 8880
   server: 45.192.222.29
@@ -417,7 +459,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|HK_speednode_0055
+- name: 15|HK_speednode_0055
   network: ws
   port: 8880
   server: 45.192.223.29
@@ -431,7 +473,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|HK_speednode_0056
+- name: 15|HK_speednode_0056
   network: ws
   port: 8880
   server: 154.218.15.29
@@ -446,7 +488,7 @@ proxies:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - flow: xtls-rprx-vision
-  name: 14|HK_speednode_0057
+  name: 15|HK_speednode_0057
   port: 21851
   reality-opts:
     public-key: EcToF-48rTWeedF6qD5yUrJ3AC_Y3FrzGUE5UP5bg2A
@@ -458,30 +500,51 @@ proxies:
   type: vless
   udp: true
   uuid: ee317e25-4c44-4b3f-81fd-93420678bd34
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇭🇰 香港 01 | 1x HK
-  password: 62921c01-b1fd-41c3-9d5c-b43d6dc64507
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇭🇰 香港 02 | 1x HK
-  password: 62921c01-b1fd-41c3-9d5c-b43d6dc64507
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 62921c01-b1fd-41c3-9d5c-b43d6dc64507
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-1.65.197.239-5701 | 8.416MB
+  network: ws
+  port: 8080
+  server: 76f974af-swo740-sxwwyk-6gn6.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 76f974af-swo740-sxwwyk-6gn6.hgc1.tcpbbr.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-1.65.197.239-2385 | 8.019MB
+  network: ws
+  port: 8080
+  server: 0986fcca-swq1s0-swsmkh-1s0a7.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 1b9c460e-f026-11ef-b737-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-1.65.197.239-5700 | 7.843MB
+  network: ws
+  port: 8080
+  server: 456c0ed1-swq1s0-t3imuc-2nr6.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dab27b58-5210-11ea-a15d-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 456c0ed1-swq1s0-t3imuc-2nr6.hgc1.tcpbbr.net
+    path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.202.79-5816 | 6.655MB
+  name: 🇭🇰HK-1.65.202.79-0564 | 7.724MB
   network: ws
   port: 80
   server: 84a663fa-sunz40-swhx5y-1q3dm.hk.p5pv.com
@@ -493,12 +556,6 @@ proxies:
     headers:
       Host: 84a663fa-sunz40-swhx5y-1q3dm.hk.p5pv.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-5872 | 1.115MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 proxy-groups:
 - name: 选择代理
   proxies:

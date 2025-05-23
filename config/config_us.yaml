@@ -1134,14 +1134,14 @@ proxies:
   type: hysteria
   up: 11 Mbps
 - cipher: aes-256-cfb
-  name: United States_Boardman_ss_1044
+  name: United States_Boardman_ss_1075
   password: awsps0501
   port: 443
   server: 44.243.3.215
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: United States_Boardman_ss_1175
+  name: United States_Boardman_ss_1112
   password: awsps0501
   port: 443
   server: 44.243.3.215
@@ -1296,22 +1296,6 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.21.23.231:2082
-  network: ws
-  port: 2082
-  server: 104.21.23.231
-  servername: cs.flha.ru
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
-  ws-opts:
-    headers:
-      HOST: cs.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
   name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-orvps2.horsenma.net:8443
   network: ws
   port: 8443
@@ -1325,6 +1309,14 @@ proxies:
     headers:
       HOST: orvps2.horsenma.net
     path: /horsen
+- cipher: aes-256-cfb
+  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-34.217.14.49:443
+  obfs: plain
+  password: awsps0501
+  port: 443
+  protocol: origin
+  server: 34.217.14.49
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 美国 001
@@ -2590,6 +2582,27 @@ proxies:
     headers:
       Host: cs.flha.ru
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 45599056-d894-4147-9bd1-478a51f6779b
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 45599056-d894-4147-9bd1-478a51f6779b
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国 03 | 1x US Washington
+  password: 45599056-d894-4147-9bd1-478a51f6779b
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - flow: xtls-rprx-vision
   name: 2|🇺🇸1 |  4.4MB/s|30%|Openai
   port: 443
@@ -2621,7 +2634,7 @@ proxies:
   udp: true
   uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
   xudp: true
-- name: 2,14|US_speednode_0198
+- name: 2,15|US_speednode_0198
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 443
   server: 590e48f8-swgsg0-swy6li-tni2.los.gotochinatown.net
@@ -3794,7 +3807,28 @@ proxies:
   sni: f7c80a8d-svc1s0-t28b6o-ef48.los.gotochinatown.net
   tls: true
   type: socks5
-- name: 11|🇺🇸美国2 | ⬇️ 10.7MB/s|47%|Netfli...
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇺🇸美国 01 | 1x US Los Angeles
+  password: 3f29721e-a2d4-48a2-a9d7-7ab973390daa
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 3f29721e-a2d4-48a2-a9d7-7ab973390daa
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|🇺🇸美国 03 | 1x US Washington
+  password: 3f29721e-a2d4-48a2-a9d7-7ab973390daa
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 12|🇺🇸美国2 | ⬇️ 10.7MB/s|47%|Netfli...
   password: dongtaiwang.com
   port: 57773
   server: 108.181.5.130
@@ -3802,14 +3836,14 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸'
+- name: '12|Channel id: @ShadowProxy66🇺🇸'
   password: 65a43b6e-19c5-4fab-b960-d110a07d66a4
   port: 3234
   server: 209.141.47.127
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #1'
+- name: '12|Channel id: @ShadowProxy66🇺🇸 #1'
   password: ADA91529-7BC1-4A5B-8AE7-30ED6D8959C0
   port: 56381
   server: 107.172.235.75
@@ -3817,7 +3851,7 @@ proxies:
   sni: dxobg4azmk.gafnode.sbs
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #2'
+- name: '12|Channel id: @ShadowProxy66🇺🇸 #2'
   password: 41a11f83
   port: 60000
   server: 141.11.89.172
@@ -3825,7 +3859,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #3'
+- name: '12|Channel id: @ShadowProxy66🇺🇸 #3'
   password: 93c16258-48e0-4c72-928c-06434e394540
   port: 40266
   server: 107.175.32.131
@@ -3833,7 +3867,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #4'
+- name: '12|Channel id: @ShadowProxy66🇺🇸 #4'
   password: 238c7704-944d-40cd-a1cf-fb775d51ac54
   port: 21042
   server: 164.152.33.5
@@ -3841,7 +3875,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #5'
+- name: '12|Channel id: @ShadowProxy66🇺🇸 #5'
   password: 87f055ba
   port: 60000
   server: 141.11.89.172
@@ -3849,7 +3883,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #6'
+- name: '12|Channel id: @ShadowProxy66🇺🇸 #6'
   password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
   port: 47262
   server: 64.181.207.162
@@ -3857,7 +3891,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #7'
+- name: '12|Channel id: @ShadowProxy66🇺🇸 #7'
   password: dongtaiwang.com
   port: 65232
   server: 108.181.5.130
@@ -3865,7 +3899,7 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #8'
+- name: '12|Channel id: @ShadowProxy66🇺🇸 #8'
   password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
   port: 47262
   server: 64.181.204.186
@@ -3873,14 +3907,14 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 11|🇺🇸US- 🚀 @vpnserverrr
+- name: 12|🇺🇸US- 🚀 @vpnserverrr
   password: aa068abd-f858-4fdf-b7c2-101947f160cb
   port: 443
   server: us.xn--mes91t7ofgnw.com
   tls: false
   type: hysteria2
 - cipher: rc4-md5
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 13|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -3892,7 +3926,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 12,13|美国|@ripaojiedian
+  name: 13,14|美国|@ripaojiedian
   network: ws
   port: '30832'
   server: v32.heduian.link
@@ -3908,7 +3942,7 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: 12,13|美国4|@ripaojiedian
+  name: 13,14|美国4|@ripaojiedian
   network: ws
   port: '22642'
   server: tk.hzlt.tkddns.xyz
@@ -3924,7 +3958,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 12,13|美国5|@ripaojiedian
+  name: 13,14|美国5|@ripaojiedian
   network: ws
   port: '22641'
   server: tk.hzlt.tkddns.xyz
@@ -3938,7 +3972,7 @@ proxies:
     headers:
       Host: zxjp-a.tkong.cc
     path: /
-- name: 14|US_speednode_0127
+- name: 15|US_speednode_0127
   network: ws
   port: 8880
   server: 167.68.42.20
@@ -3952,7 +3986,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- name: 14|US_speednode_0128
+- name: 15|US_speednode_0128
   network: ws
   port: 8880
   server: 199.34.229.29
@@ -3966,7 +4000,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0129
+- name: 15|US_speednode_0129
   network: ws
   port: 80
   server: 135.84.65.11
@@ -3980,7 +4014,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 14|US_speednode_0130
+- name: 15|US_speednode_0130
   network: ws
   port: 80
   server: 23.134.82.1
@@ -3994,7 +4028,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 14|US_speednode_0131
+- name: 15|US_speednode_0131
   network: ws
   port: 8880
   server: 160.79.105.29
@@ -4008,7 +4042,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0132
+- name: 15|US_speednode_0132
   network: ws
   port: 8880
   server: 167.68.11.20
@@ -4022,7 +4056,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- name: 14|US_speednode_0133
+- name: 15|US_speednode_0133
   network: ws
   port: 8880
   server: 108.165.216.29
@@ -4036,7 +4070,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0134
+- name: 15|US_speednode_0134
   network: ws
   port: 8880
   server: 155.46.213.29
@@ -4050,7 +4084,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0135
+- name: 15|US_speednode_0135
   network: ws
   port: 8880
   server: 167.68.5.29
@@ -4064,7 +4098,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0136
+- name: 15|US_speednode_0136
   network: ws
   port: 8880
   server: 199.181.197.29
@@ -4078,7 +4112,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0137
+- name: 15|US_speednode_0137
   network: ws
   port: 80
   server: 141.193.213.158
@@ -4092,7 +4126,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
     path: /Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560
-- name: 14|US_speednode_0138
+- name: 15|US_speednode_0138
   network: ws
   port: 8880
   server: 199.34.230.29
@@ -4106,7 +4140,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0139
+- name: 15|US_speednode_0139
   network: ws
   port: 8880
   server: 159.112.235.29
@@ -4120,7 +4154,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0140
+- name: 15|US_speednode_0140
   network: ws
   port: 8880
   server: 154.219.5.29
@@ -4134,7 +4168,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0141
+- name: 15|US_speednode_0141
   network: ws
   port: 8880
   server: 45.202.113.29
@@ -4148,7 +4182,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0142
+- name: 15|US_speednode_0142
   network: ws
   port: 8880
   server: 69.84.182.29
@@ -4162,7 +4196,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0143
+- name: 15|US_speednode_0143
   network: ws
   port: 8880
   server: 108.165.216.20
@@ -4176,7 +4210,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- name: 14|US_speednode_0144
+- name: 15|US_speednode_0144
   network: ws
   port: 8880
   server: 66.225.252.29
@@ -4190,7 +4224,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0145
+- name: 15|US_speednode_0145
   network: ws
   port: 8880
   server: 45.159.217.29
@@ -4204,7 +4238,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0146
+- name: 15|US_speednode_0146
   network: ws
   port: 8880
   server: 209.46.30.20
@@ -4218,7 +4252,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- name: 14|US_speednode_0147
+- name: 15|US_speednode_0147
   network: ws
   port: 8880
   server: 155.46.167.29
@@ -4232,7 +4266,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0148
+- name: 15|US_speednode_0148
   network: ws
   port: 8880
   server: 209.46.30.29
@@ -4246,7 +4280,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0149
+- name: 15|US_speednode_0149
   network: ws
   port: 80
   server: 141.193.213.29
@@ -4260,7 +4294,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
     path: /Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560
-- name: 14|US_speednode_0150
+- name: 15|US_speednode_0150
   network: ws
   port: 8880
   server: 45.159.219.29
@@ -4274,7 +4308,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0151
+- name: 15|US_speednode_0151
   network: ws
   port: 8880
   server: 135.84.73.29
@@ -4288,7 +4322,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0152
+- name: 15|US_speednode_0152
   network: ws
   port: 8880
   server: 108.165.152.29
@@ -4302,7 +4336,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0153
+- name: 15|US_speednode_0153
   network: ws
   port: 8880
   server: 156.243.83.29
@@ -4316,7 +4350,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0154
+- name: 15|US_speednode_0154
   network: ws
   port: 8880
   server: 216.205.52.29
@@ -4330,7 +4364,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0155
+- name: 15|US_speednode_0155
   network: ws
   port: 8880
   server: 192.200.160.29
@@ -4344,7 +4378,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0156
+- name: 15|US_speednode_0156
   network: ws
   port: 8880
   server: 198.62.62.29
@@ -4358,7 +4392,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0157
+- name: 15|US_speednode_0157
   network: ws
   port: 8880
   server: 104.129.165.29
@@ -4372,7 +4406,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0158
+- name: 15|US_speednode_0158
   network: ws
   port: 8880
   server: 66.45.118.29
@@ -4386,7 +4420,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0159
+- name: 15|US_speednode_0159
   network: ws
   port: 8880
   server: 147.185.161.29
@@ -4400,7 +4434,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0160
+- name: 15|US_speednode_0160
   network: ws
   port: 8880
   server: 167.68.42.29
@@ -4414,7 +4448,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0161
+- name: 15|US_speednode_0161
   network: ws
   port: 8880
   server: 168.100.6.29
@@ -4428,7 +4462,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0162
+- name: 15|US_speednode_0162
   network: ws
   port: 8880
   server: 130.250.137.29
@@ -4442,7 +4476,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0163
+- name: 15|US_speednode_0163
   network: ws
   port: 8880
   server: 135.84.75.29
@@ -4456,7 +4490,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0164
+- name: 15|US_speednode_0164
   network: ws
   port: 8880
   server: 205.233.181.29
@@ -4470,7 +4504,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0165
+- name: 15|US_speednode_0165
   network: ws
   port: 8880
   server: 185.148.105.29
@@ -4484,7 +4518,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0166
+- name: 15|US_speednode_0166
   network: ws
   port: 8880
   server: 161.145.150.29
@@ -4498,7 +4532,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0167
+- name: 15|US_speednode_0167
   network: ws
   port: 8880
   server: 185.148.106.29
@@ -4512,7 +4546,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0168
+- name: 15|US_speednode_0168
   network: ws
   port: 8880
   server: 216.116.134.29
@@ -4526,7 +4560,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0169
+- name: 15|US_speednode_0169
   network: ws
   port: 8880
   server: 63.141.128.29
@@ -4540,7 +4574,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0170
+- name: 15|US_speednode_0170
   network: ws
   port: 8880
   server: 135.84.67.29
@@ -4554,7 +4588,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0171
+- name: 15|US_speednode_0171
   network: ws
   port: 8880
   server: 104.129.166.29
@@ -4568,7 +4602,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0172
+- name: 15|US_speednode_0172
   network: ws
   port: 8880
   server: 195.13.54.29
@@ -4582,7 +4616,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0173
+- name: 15|US_speednode_0173
   network: ws
   port: 8880
   server: 66.235.200.29
@@ -4596,7 +4630,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0174
+- name: 15|US_speednode_0174
   network: ws
   port: 8880
   server: 185.148.105.20
@@ -4610,7 +4644,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- name: 14|US_speednode_0175
+- name: 15|US_speednode_0175
   network: ws
   port: 8880
   server: 154.85.99.29
@@ -4624,7 +4658,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0176
+- name: 15|US_speednode_0176
   network: ws
   port: 8880
   server: 135.84.74.29
@@ -4638,7 +4672,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0177
+- name: 15|US_speednode_0177
   network: ws
   port: 8880
   server: 14.102.229.29
@@ -4652,7 +4686,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0178
+- name: 15|US_speednode_0178
   network: ws
   port: 8880
   server: 198.202.211.29
@@ -4666,7 +4700,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0179
+- name: 15|US_speednode_0179
   network: ws
   port: 8880
   server: 45.159.216.29
@@ -4680,7 +4714,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0180
+- name: 15|US_speednode_0180
   network: ws
   port: 8880
   server: 195.13.44.29
@@ -4694,7 +4728,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0181
+- name: 15|US_speednode_0181
   network: ws
   port: 8880
   server: 141.193.27.29
@@ -4708,7 +4742,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0182
+- name: 15|US_speednode_0182
   network: ws
   port: 8880
   server: 45.194.53.29
@@ -4722,7 +4756,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|US_speednode_0183
+- name: 15|US_speednode_0183
   network: ws
   port: 443
   server: www.pcmag.com
@@ -4737,7 +4771,7 @@ proxies:
       Host: dk.youlingkais.filegear-sg.me
     path: /?ed=2560
 - flow: xtls-rprx-vision
-  name: 14|US_speednode_0184
+  name: 15|US_speednode_0184
   port: 7885
   reality-opts:
     public-key: cauu7I7nFMqzwMDdULVRJam0T04U4knX8koK0OG5dC8
@@ -4749,7 +4783,7 @@ proxies:
   type: vless
   udp: true
   uuid: 82f6a148-5c4a-48f9-931a-e3b26777ffa2
-- name: 14|US_speednode_0185
+- name: 15|US_speednode_0185
   network: ws
   port: 443
   server: tasteatlas.com
@@ -4763,7 +4797,7 @@ proxies:
     headers:
       Host: dk.youlingkais.filegear-sg.me
     path: /?ed=2560
-- name: 14|US_speednode_0186
+- name: 15|US_speednode_0186
   network: ws
   password: Ng35283528
   port: 443
@@ -4776,7 +4810,7 @@ proxies:
     headers:
       Host: c2.validbv3528.eu.org
     path: /?ed=2560
-- name: 14|US_speednode_0187
+- name: 15|US_speednode_0187
   network: ws
   port: 443
   server: 198.62.62.4
@@ -4790,7 +4824,7 @@ proxies:
     headers:
       Host: dk.youlingkais.filegear-sg.me
     path: /?ed=2560
-- name: 14|US_speednode_0188
+- name: 15|US_speednode_0188
   network: ws
   port: 2087
   server: 135.84.76.152
@@ -4805,7 +4839,7 @@ proxies:
       Host: edccn.ambercc.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: randomized
-  name: 14|US_speednode_0189
+  name: 15|US_speednode_0189
   network: ws
   port: 443
   server: 104.17.142.12
@@ -4820,7 +4854,7 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560
 - flow: xtls-rprx-vision
-  name: 14|US_speednode_0190
+  name: 15|US_speednode_0190
   port: 8443
   reality-opts:
     public-key: 4Qekb9y1dqO8hvRzVSGeSRNyhko_gqpeWD94zrLCvjs
@@ -4832,7 +4866,7 @@ proxies:
   type: vless
   udp: true
   uuid: 06121b89-607b-44c9-9c01-cc2fc6a7321d
-- name: 14|US_speednode_0191
+- name: 15|US_speednode_0191
   network: ws
   port: 2052
   server: www.speedtest.net
@@ -4846,7 +4880,7 @@ proxies:
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /?ed=1080
-- name: 14|US_speednode_0192
+- name: 15|US_speednode_0192
   network: ws
   port: 2052
   server: 104.17.148.22
@@ -4860,7 +4894,7 @@ proxies:
     headers:
       Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
     path: /
-- name: 14|US_speednode_0193
+- name: 15|US_speednode_0193
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 443
   server: dc5faa24-svukg0-t1bnjq-1krtb.los.gotochinatown.net
@@ -4868,7 +4902,7 @@ proxies:
   type: http
   udp: true
   username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: 14|US_speednode_0194
+- name: 15|US_speednode_0194
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 443
   server: 0c7fa052-svjgg0-swy6li-tni2.los.gotochinatown.net
@@ -4876,7 +4910,7 @@ proxies:
   type: http
   udp: true
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- name: 14|US_speednode_0195
+- name: 15|US_speednode_0195
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 443
   server: 9e43eb01-svwf40-t1bnjq-1krtb.los.gotochinatown.net
@@ -4884,7 +4918,7 @@ proxies:
   type: http
   udp: true
   username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: 14|US_speednode_0196
+- name: 15|US_speednode_0196
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 443
   server: 6e083541-swkhs0-t1bnjq-1krtb.los.gotochinatown.net
@@ -4892,7 +4926,7 @@ proxies:
   type: http
   udp: true
   username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: 14|US_speednode_0197
+- name: 15|US_speednode_0197
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 443
   server: 44cbf94f-swq1s0-t1bnjq-1krtb.sj.gotochinatown.net
@@ -4900,27 +4934,6 @@ proxies:
   type: http
   udp: true
   username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 62921c01-b1fd-41c3-9d5c-b43d6dc64507
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 62921c01-b1fd-41c3-9d5c-b43d6dc64507
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇺🇸 美国 03 | 1x US Washington
-  password: 62921c01-b1fd-41c3-9d5c-b43d6dc64507
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: 🇺🇸_US_美国
   password: Z3aXaKZnXxNc3y03OnKcaq4CN3OcqA8SwSzSRZ3O3Sa3NnaFD4xzgCSR7AaOZ983y0yY3lBOYCAOAzx
   port: 28331
@@ -5034,127 +5047,114 @@ proxies:
   ws-opts:
     path: /Dmby2AKiZKvMo1YauoQwY5
 - cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.160-0441 | 192.433MB
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.160
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.243-0448 | 186.241MB
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.243
-  type: ss
-- name: 🇺🇸US-138.197.5.103-0249 | 162.683MB
-  password: xxoo
-  port: 443
-  server: 138.197.5.103
-  skip-cert-verify: false
-  sni: us.blazeppn.info
-  type: trojan
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.236-0450 | 151.603MB
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.236
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-149.28.106.134-0445 | 133.891MB
-  password: 46e67f5a-63e4-4566-870c-76eaa9cf76fe
-  port: 31444
-  server: 149.28.106.134
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.244-0454 | 133.428MB
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.244
-  type: ss
-- cipher: rc4-md5
-  name: 🇺🇸US-194.5.215.59-0443 | 79.307MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 194.5.215.59
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.167-0427 | 65.953MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.168-0428 | 57.23MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-173.244.56.9-0423 | 56.025MB
+  name: 🇺🇸US-173.244.56.9-0458 | 168.117MB
   password: shadowsocks
   port: 443
   server: 173.244.56.9
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-173.244.56.6-0424 | 53.587MB
+  name: 🇺🇸US-173.244.56.6-0457 | 149.065MB
   password: shadowsocks
   port: 443
   server: 173.244.56.6
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.129-0431 | 44.829MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.129
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.131-0434 | 42.305MB
+  name: 🇺🇸US-212.102.47.131-0460 | 148.969MB
   password: shadowsocks
   port: 443
   server: 212.102.47.131
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.170-0430 | 40.107MB
+  name: 🇺🇸US-212.102.47.130-0467 | 146.703MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.130
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.132-0461 | 145.048MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.132
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.129-0468 | 122.941MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.129
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.170-0448 | 65.935MB
   password: shadowsocks
   port: 443
   server: 156.146.38.170
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.132-0432 | 39.721MB
+  name: 🇺🇸US-156.146.38.167-0452 | 63.337MB
   password: shadowsocks
   port: 443
-  server: 212.102.47.132
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-45.55.2.232-0440 | 37.562MB
-  password: 2170f8
-  port: 14293
-  server: 45.55.2.232
+  server: 156.146.38.167
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.130-0433 | 33.795MB
+  name: 🇺🇸US-156.146.38.168-0446 | 55.796MB
   password: shadowsocks
   port: 443
-  server: 212.102.47.130
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-64.74.163.130-0514 | 23.937MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.130
+  server: 156.146.38.168
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.169-0429 | 20.987MB
+  name: 🇺🇸US-156.146.38.169-0447 | 55.184MB
   password: shadowsocks
   port: 443
   server: 156.146.38.169
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-149.28.106.134-0453 | 50.867MB
+  password: 46e67f5a-63e4-4566-870c-76eaa9cf76fe
+  port: 31444
+  server: 149.28.106.134
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-45.55.2.232-0466 | 47.263MB
+  password: 2170f8
+  port: 14293
+  server: 45.55.2.232
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-194.5.215.59-0456 | 47.052MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 194.5.215.59
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.160-0463 | 44.002MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.244-0449 | 42.136MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.244
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.243-0450 | 42.006MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.243
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.236-0451 | 34.189MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.236
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸US-152.67.251.232-7815 | 18.124MB
+  name: 🇺🇸US-152.67.251.232-7721 | 10.532MB
   network: ws
   port: 443
   server: 152.67.251.232
-  servername: 🇺🇸US-152.67.251.232-7815 | 18.124MB
+  servername: 🇺🇸US-152.67.251.232-7721 | 10.532MB
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -5163,6 +5163,248 @@ proxies:
     headers:
       Host: irvideo.cfd
     path: /
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-5.78.114.254-1257 | 3.065MB
+  network: ws
+  port: 443
+  server: 5.78.114.254
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 0160afb7-f896-45af-a790-41b0ada08ed7
+  ws-opts:
+    headers:
+      Host: freesg-win.lzj520hxw.dpdns.org
+    path: /
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0613 | 1.089MB
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.114.114.143-0619 | 1.086MB
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 38.114.114.143
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.114.114.143-0631 | 1.082MB
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 38.114.114.143
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.114.114.143-0621 | 1.08MB
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.114.114.143
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0626 | 1.079MB
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0607 | 1.078MB
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.68.134.202-0614 | 1.076MB
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.68.134.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.68.134.202-0610 | 1.076MB
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.68.134.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.68.134.202-0611 | 1.075MB
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 38.68.134.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0645 | 1.075MB
+  password: Y6R9pAtvxxzmGC
+  port: 5001
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0605 | 1.074MB
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.68.134.202-0606 | 1.074MB
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.68.134.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0609 | 1.074MB
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-216.39.248.133-5781 | 1.074MB
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 216.39.248.133
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0618 | 1.074MB
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.6-0612 | 1.073MB
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 38.121.43.6
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0627 | 1.073MB
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0633 | 1.073MB
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0617 | 1.073MB
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0635 | 1.073MB
+  password: Y6R9pAtvxxzmGC
+  port: 5600
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0640 | 1.073MB
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0644 | 1.073MB
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0615 | 1.073MB
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0638 | 1.073MB
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0639 | 1.072MB
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0642 | 1.072MB
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0629 | 1.072MB
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0620 | 1.072MB
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0625 | 1.071MB
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0630 | 1.071MB
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0632 | 1.071MB
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0643 | 1.071MB
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0622 | 1.07MB
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0624 | 1.07MB
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0641 | 1.07MB
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0634 | 1.07MB
+  password: PCnnH6SQSnfoS27
+  port: 8091
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0628 | 1.07MB
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0623 | 1.07MB
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 38.121.43.71
+  type: ss
 proxy-groups:
 - name: 选择代理
   proxies:
