@@ -1267,60 +1267,12 @@ proxies:
   port: 1866
   server: 204.136.10.115
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-172.67.214.33:2082
-  network: ws
-  port: 2082
-  server: 172.67.214.33
-  servername: cs.flha.ru
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
-  ws-opts:
-    headers:
-      HOST: cs.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-cs.flha.ru:2082
-  network: ws
-  port: 2082
-  server: cs.flha.ru
-  servername: cs.flha.ru
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
-  ws-opts:
-    headers:
-      HOST: cs.flha.ru
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-149.28.106.134:31444
   password: 46e67f5a-63e4-4566-870c-76eaa9cf76fe
   port: 31444
   server: 149.28.106.134
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.21.23.231:2082
-  network: ws
-  port: 2082
-  server: 104.21.23.231
-  servername: cs.flha.ru
-  skip-cert-verify: true
-  type: vmess
-  uuid: 2f821152-c3e9-4074-9185-2790e7425f42
-  ws-opts:
-    headers:
-      HOST: cs.flha.ru
-    path: /
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -1345,6 +1297,14 @@ proxies:
   port: 8080
   protocol: origin
   server: 107.151.182.253
+  type: ssr
+- cipher: aes-256-cfb
+  name: SSR-美国-ChatGPT-TikTok-YouTube-34.215.48.231:443
+  obfs: plain
+  password: awsps0501
+  port: 443
+  protocol: origin
+  server: 34.215.48.231
   type: ssr
 - alterId: 0
   cipher: auto
