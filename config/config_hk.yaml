@@ -254,29 +254,50 @@ proxies:
   type: vmess
   uuid: cc101ff1-3452-41c3-89fe-c2a5a20dc6dc
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: f8e0a748-0d74-476a-bc25-e475d5a71f7f
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: f02518d0-8da6-431a-8449-8ded3e577ae4
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: f02518d0-8da6-431a-8449-8ded3e577ae4
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: f02518d0-8da6-431a-8449-8ded3e577ae4
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 790090d0-cc6a-47ff-9044-49da89429f94
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: f8e0a748-0d74-476a-bc25-e475d5a71f7f
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: 790090d0-cc6a-47ff-9044-49da89429f94
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: f8e0a748-0d74-476a-bc25-e475d5a71f7f
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 790090d0-cc6a-47ff-9044-49da89429f94
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  name: 3|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -288,27 +309,6 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港 01 | 1x HK
-  password: b34b77d2-d7fe-4155-8c81-9a5935d3c0ac
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港 02 | 1x HK
-  password: b34b77d2-d7fe-4155-8c81-9a5935d3c0ac
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇭🇰香港家宽 03 | 1x HK
-  password: b34b77d2-d7fe-4155-8c81-9a5935d3c0ac
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: '12|Channel id: @ShadowProxy66🇭🇰'
   password: NTA0MDg5OjEzMzI4ODo3YjA2ZDIyYThhN2M3NjRm
   port: 3074
@@ -516,9 +516,52 @@ proxies:
   type: vless
   udp: true
   uuid: ee317e25-4c44-4b3f-81fd-93420678bd34
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-47.76.75.49-2381 | 11.754MB
+  network: ws
+  port: 443
+  server: n1735606087.ryjml.cn
+  servername: 🇭🇰HK-47.76.75.49-2381 | 11.754MB
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: f047f92c-cb20-4ccb-872f-bc484d848448
+  ws-opts:
+    headers:
+      Host: n1735606087.ryjml.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-1.65.196.156-5670 | 9.333MB
+  network: ws
+  port: 8080
+  server: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a5a81a34-f257-11ef-ba82-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-1.65.196.156-5861 | 8.805MB
+  network: ws
+  port: 8080
+  server: 81477d67-swkhs0-swp71a-25xl.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7ddc7156-57be-11ee-9acd-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 81477d67-swkhs0-swp71a-25xl.hgc1.tcpbbr.net
+    path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.202.79-0524 | 1.077MB
+  name: 🇭🇰HK-1.65.202.79-0529 | 8.586MB
   network: ws
   port: 80
   server: 84a663fa-sunz40-swhx5y-1q3dm.hk.p5pv.com
@@ -530,6 +573,12 @@ proxies:
     headers:
       Host: 84a663fa-sunz40-swhx5y-1q3dm.hk.p5pv.com
     path: /
+- cipher: chacha20-ietf
+  name: 🇭🇰HK-103.149.182.61-5860 | 1.786MB
+  password: asd123456
+  port: 8388
+  server: 103.149.182.61
+  type: ss
 proxy-groups:
 - name: 选择代理
   proxies:
