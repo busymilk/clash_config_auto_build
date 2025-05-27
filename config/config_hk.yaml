@@ -85,7 +85,7 @@ profile:
 proxies:
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_1072
+  name: Hong Kong_None_vmess_1072
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -134,7 +134,7 @@ proxies:
   uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Central_vmess_1172
+  name: Hong Kong_None_vmess_1140
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -147,7 +147,7 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1177
+  name: Hong Kong_Central_ss_1145
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -163,7 +163,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1179
+  name: Hong Kong_None_vmess_1147
   port: 19504
   server: 43.247.135.192
   skip-cert-verify: false
@@ -173,7 +173,7 @@ proxies:
   uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1196
+  name: Hong Kong_None_vmess_1164
   network: tcp
   port: '19504'
   server: 43.247.135.192
@@ -181,25 +181,42 @@ proxies:
   tls: false
   type: vmess
   uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
+- alterId: 32
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
 - cipher: chacha20-ietf-poly1305
-  name: 0|5🇭🇰香港|官网：abluecloud.xyz
-  password: 0a488f94-3209-45f7-8738-6e50dd507ffc
-  port: 36141
-  server: freea.glyphara.com
+  name: 0|4🇭🇰香港|官网：mikasacloud.site
+  password: 4a3faac2-521a-4dae-bcff-68296df413ef
+  port: 31141
+  server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|6🇭🇰香港|官网：a5b3cloud.pro
-  password: 0a488f94-3209-45f7-8738-6e50dd507ffc
-  port: 36143
-  server: freea.glyphara.com
+  name: 0|5🇭🇰香港|官网：m5c3cloud.pro
+  password: 4a3faac2-521a-4dae-bcff-68296df413ef
+  port: 31143
+  server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|7🇭🇰香港住宅IP|官网：蓝色海洋.xyz
-  password: 0a488f94-3209-45f7-8738-6e50dd507ffc
-  port: 36145
-  server: freea.glyphara.com
+  name: 0|6🇭🇰香港家宽|官网：mikasacloud.site
+  password: 4a3faac2-521a-4dae-bcff-68296df413ef
+  port: 31145
+  server: freem.vidalith.com
   type: ss
   udp: true
 - alterId: 0
@@ -216,14 +233,35 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '11|Channel id: @ShadowProxy66🇭🇰'
+- cipher: chacha20-ietf-poly1305
+  name: 3|5🇭🇰香港|官网：abluecloud.xyz
+  password: 4234e3c3-d0fd-424b-ad9b-dd2e1a701652
+  port: 36141
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|6🇭🇰香港|官网：a5b3cloud.pro
+  password: 4234e3c3-d0fd-424b-ad9b-dd2e1a701652
+  port: 36143
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 3|7🇭🇰香港住宅IP|官网：蓝色海洋.xyz
+  password: 4234e3c3-d0fd-424b-ad9b-dd2e1a701652
+  port: 36145
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- name: '12|Channel id: @ShadowProxy66🇭🇰'
   password: NTA0MDg5OjEzMzI4ODo3YjA2ZDIyYThhN2M3NjRm
   port: 3074
   server: 47.76.232.205
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇭🇰 #1'
+- name: '12|Channel id: @ShadowProxy66🇭🇰 #1'
   password: 53bdfd4a-7f38-4cb6-b07e-49974de1a800
   port: 22106
   server: 160.22.156.7
@@ -232,14 +270,14 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: aes-256-gcm
-  name: 12|🇭🇰 香港|@ripaojiedian
+  name: 13|🇭🇰 香港|@ripaojiedian
   password: ENYGONDU94UW1G6X
   port: 15010
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 12|🇭🇰 香港2|@ripaojiedian
+  name: 13|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -249,13 +287,13 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 40527
+  port: 24043
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
 - alterId: 64
   cipher: auto
-  name: 12|🇭🇰 香港3|@ripaojiedian
+  name: 13|🇭🇰 香港3|@ripaojiedian
   port: 35921
   server: 120.198.71.216
   skip-cert-verify: false
@@ -265,17 +303,33 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港4|@ripaojiedian
-  port: 19504
-  server: 43.247.135.192
+  name: 13,14|香港4|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: 03566c42-swzb40-sznzxg-1jfvb.hgc1.tcpbbr.net
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
+  uuid: 06b2ac52-fcc6-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 13|🇭🇰 香港5|@ripaojiedian
+  port: 52182
+  server: 120.232.153.40
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 2
   cipher: auto
-  name: 12,13|香港7|@ripaojiedian
+  name: 13,14|香港7|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -289,9 +343,29 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰 香港8|@ripaojiedian
+  port: 47010
+  server: 43.247.134.85
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
+- alterId: 0
+  cipher: auto
+  name: 13|🇭🇰 香港9|@ripaojiedian
+  port: 39919
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 13|香港3|@ripaojiedian
+  name: 14|香港3|@ripaojiedian
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -299,17 +373,37 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 13|香港4|@ripaojiedian
+  name: 14|香港5|@ripaojiedian
   network: tcp
-  port: '19504'
-  server: 43.247.135.192
+  port: '52182'
+  server: 120.232.153.40
   servername: ''
   tls: false
   type: vmess
-  uuid: 1322968d-536f-4dd4-8cea-fee6c04e2d97
-- name: 14|HK_speednode_0145
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 14|香港8|@ripaojiedian
+  network: tcp
+  port: '47010'
+  server: 43.247.134.85
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
+- alterId: 0
+  cipher: auto
+  name: 14|香港9|@ripaojiedian
+  network: tcp
+  port: '39919'
+  server: 183.236.51.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 15|HK_speednode_0145
   network: ws
   port: 8880
   server: 154.218.15.29
@@ -323,7 +417,7 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- name: 14|HK_speednode_0146
+- name: 15|HK_speednode_0146
   network: ws
   port: 8880
   server: 154.211.8.20
@@ -337,49 +431,28 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 15|4🇭🇰香港|官网：米卡莎.xyz
-  password: ed96416b-017b-49d4-8427-9da4678de3cb
-  port: 31141
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|5🇭🇰香港|官网：mikasacloud.site
-  password: ed96416b-017b-49d4-8427-9da4678de3cb
-  port: 31143
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|6🇭🇰香港家宽|官网：m5c3cloud.pro
-  password: ed96416b-017b-49d4-8427-9da4678de3cb
-  port: 31145
-  server: freem.vidalith.com
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.202.79-5558 | 7.136MB
+  name: 🇭🇰HK-1.65.139.152-5406 | 5.322MB
   network: ws
   port: 80
-  server: 4087dc1a-sv2sg0-swqixu-1luqs.hk.p5pv.com
-  servername: 🇭🇰HK-1.65.202.79-5558 | 7.136MB
+  server: f42f46ca-sv0xs0-sv37gm-81nv.hk3.p5pv.com
+  servername: 🇭🇰HK-1.65.139.152-5406 | 5.322MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 788328ee-d49f-11ef-bd97-f23c9164ca5d
+  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
   ws-opts:
     headers:
-      Host: 4087dc1a-sv2sg0-swqixu-1luqs.hk.p5pv.com
+      Host: f42f46ca-sv0xs0-sv37gm-81nv.hk3.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.139.152-5556 | 5.143MB
+  name: 🇭🇰HK-1.65.139.152-5405 | 5.106MB
   network: ws
   port: 80
   server: b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.139.152-5556 | 5.143MB
+  servername: 🇭🇰HK-1.65.139.152-5405 | 5.106MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -390,18 +463,18 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.139.152-5557 | 4.734MB
+  name: 🇭🇰HK-1.65.202.79-5407 | 4.808MB
   network: ws
   port: 80
-  server: f42f46ca-sv0xs0-sv37gm-81nv.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.139.152-5557 | 4.734MB
+  server: 4087dc1a-sv2sg0-swqixu-1luqs.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.202.79-5407 | 4.808MB
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
+  uuid: 788328ee-d49f-11ef-bd97-f23c9164ca5d
   ws-opts:
     headers:
-      Host: f42f46ca-sv0xs0-sv37gm-81nv.hk3.p5pv.com
+      Host: 4087dc1a-sv2sg0-swqixu-1luqs.hk.p5pv.com
     path: /
 proxy-groups:
 - name: 选择代理
