@@ -4470,75 +4470,41 @@ proxies:
   server: freem.vidalith.com
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- cipher: aes-256-cfb
-  name: 🇺🇸_US_美国
-  password: awsps0501
-  port: 443
-  server: 34.215.48.231
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  password: 0a335fd6-be0b-11ec-8dfa-f23c91cfbbc9
+  port: 15229
+  server: eac1462b-swxgg0-sxkd63-17z95.cu.plebai.net
+  skip-cert-verify: false
+  sni: eac1462b-swxgg0-sxkd63-17z95.cu.plebai.net
+  type: trojan
+- cipher: aes-256-gcm
+  name: 🇫🇷_FR_法国->🇺🇸_US_美国
+  password: dongtaiwang.com
+  port: 13355
+  server: 195.154.54.171
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30805
-  server: v5.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v5.heduian.link
-    path: /oooo
-- name: 🇺🇸_US_美国_1
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: 94.131.20.3
-  sni: chop-wrist-bud.stark-industries.solutions
-  type: trojan
-- name: 🇺🇸_US_美国_2
-  network: ws
-  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
-  port: 443
-  server: 172.67.181.193
-  sni: EEeEee4.hUAngSHANG2030.dPdNS.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: EEeEee4.hUAngSHANG2030.dPdNS.org
-    path: /ptGwaGzcA4KNAXX
-- alterId: 0
-  cipher: auto
-  name: 🇩🇰_DK_丹麦->🇺🇸_US_美国
-  network: ws
-  port: 2086
-  server: csgo.com
-  type: vmess
-  uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88
-  ws-opts:
-    headers:
-      host: ustoucjjnid18sj6us.lovebaipiao.com
-    path: /
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   password: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
   port: 15229
   server: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
   sni: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  network: ws
+  port: 23088
+  server: 45.147.201.231
+  type: vmess
+  uuid: 2e25f44d-57e4-4cf4-9675-e0b42a422635
+  ws-opts:
+    path: /
+- name: 🇺🇸_US_美国
+  password: FYCO02u8Ny3RS38axzSTl3pcaegKlZ3BZyeS7Eaj6A9ODYIpwCAXF5CR4DqxDn
+  port: 443
+  server: 13.60.86.63
+  skip-cert-verify: false
+  sni: loosely.freetrade.link
   type: trojan
 - cipher: aes-128-gcm
   name: 🇺🇸US-37.19.198.244-0295 | 122.745MB
