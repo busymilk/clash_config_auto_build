@@ -94902,6 +94902,22 @@ proxies:
   port: 31444
   server: 149.28.106.134
   type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-de01.sh-cloudflare.sbs:2096
+  network: ws
+  port: 2096
+  server: de01.sh-cloudflare.sbs
+  servername: de01.sh-cloudflare.sbs
+  tls: true
+  type: vmess
+  uuid: b3928f8d-ea81-4d75-bcec-4016a072adff
+  ws-opts:
+    headers:
+      Host: de01.sh-cloudflare.sbs
+    path: /
 - cipher: aes-256-cfb
   name: SSR-加拿大-NF解锁加拿大自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989
   obfs: plain
@@ -94934,7 +94950,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>德国-NF解锁波兰自制剧-ChatGPT-TikTok-YouTube-b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top:443
+  name: VMESS-未知>英国-NF解锁波兰自制剧-ChatGPT-TikTok-YouTube-b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top:443
   network: ws
   port: 443
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
@@ -101170,12 +101186,13 @@ proxies:
   server: freem.vidalith.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  password: 0fbed6c9-0fb4-4ec3-8582-f569f8d773d5
-  port: 23340
-  server: 120.233.147.197
-  type: ss
+- name: 🇧🇬_BG_保加利亚->🇺🇸_US_美国
+  password: '74260653385993900'
+  port: 443
+  server: 87.121.33.202
+  skip-cert-verify: false
+  sni: safe-flounder.shiner427.skin
+  type: trojan
 - name: 🇨🇳_CN_中国->🇺🇸_US_美国
   password: 0a335fd6-be0b-11ec-8dfa-f23c91cfbbc9
   port: 15229
@@ -101183,35 +101200,18 @@ proxies:
   skip-cert-verify: false
   sni: eac1462b-swxgg0-sxkd63-17z95.cu.plebai.net
   type: trojan
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
 - cipher: aes-256-gcm
   name: 🇫🇷_FR_法国->🇺🇸_US_美国
   password: dongtaiwang.com
   port: 13355
   server: 195.154.54.171
   type: ss
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  password: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
-  port: 15229
-  server: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
-  sni: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
-  network: ws
-  port: 23088
-  server: 45.147.201.231
-  type: vmess
-  uuid: 2e25f44d-57e4-4cf4-9675-e0b42a422635
-  ws-opts:
-    path: /
-- name: 🇺🇸_US_美国
-  password: FYCO02u8Ny3RS38axzSTl3pcaegKlZ3BZyeS7Eaj6A9ODYIpwCAXF5CR4DqxDn
-  port: 443
-  server: 13.60.86.63
-  skip-cert-verify: false
-  sni: loosely.freetrade.link
-  type: trojan
 - name: 🇺🇸US-138.197.5.103-0309 | 115.345MB
   password: xxoo
   port: 443
