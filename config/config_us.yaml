@@ -83,160 +83,465 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇺🇸_美国_1
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 107.174.88.160
-  skip-cert-verify: true
-  sni: epmw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_1
+  network: httpupgrade
+  port: '80'
+  server: us2a-20250420.88888009.xyz
+  type: vmess
+  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
 - name: 🇺🇸_美国_2
   network: tcp
-  password: Aimer
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
   port: 443
-  server: damien.ns.cloudflare.com
+  server: 172.67.172.91
   skip-cert-verify: true
-  sni: epmw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇦🇲_亚美尼亚_1
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 188.164.159.74
-  skip-cert-verify: true
-  sni: epmw.ambercc.filegear-sg.me
+  sni: Ty.457.pP.uA
   type: trojan
   udp: true
 - name: 🇺🇸_美国_3
   network: tcp
-  password: Aimer
-  port: 2083
-  server: 108.165.152.225
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  port: 443
+  server: ty.457.pp.ua
   skip-cert-verify: true
-  sni: epmw.ambercc.filegear-sg.me
+  sni: Ty.457.pP.uA
   type: trojan
   udp: true
 - name: 🇺🇸_美国_4
   network: tcp
-  password: Aimer
-  port: 2087
-  server: 108.165.152.143
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  port: 443
+  server: 104.21.25.95
   skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
+  sni: DDd.890604.FIlEGear-sG.Me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_5
   network: tcp
-  password: Aimer
-  port: 2053
-  server: 108.165.152.241
-  skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_6
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 108.165.152.0
-  skip-cert-verify: true
-  sni: epmw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_7
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 108.165.152.91
-  skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_8
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 108.165.152.67
-  skip-cert-verify: true
-  sni: epmw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_9
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 108.165.152.249
-  skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_10
-  network: tcp
-  password: Aimer
-  port: 10511
-  server: 65.75.194.43
-  skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_11
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 45.67.214.41
-  skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_12
-  network: tcp
-  password: Aimer
-  port: 24863
-  server: 198.12.121.169
-  skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_13
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 199.34.228.66
-  skip-cert-verify: true
-  sni: epmw.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_14
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 108.165.152.18
-  skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_15
-  network: tcp
-  password: Aimer
+  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
   port: 443
-  server: 192.3.127.231
+  server: 104.21.25.95
   skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
+  sni: DDd.890604.FIlEGear-sG.Me
   type: trojan
   udp: true
-- name: 🇺🇸_美国_16
+- flow: xtls-rprx-vision
+  name: 🇺🇸_美国_6
   network: tcp
-  password: Aimer
-  port: 20080
-  server: 192.210.207.89
+  port: 43664
+  server: 15.204.3.147
+  servername: tesla.com
   skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
+  tls: false
+  type: vless
   udp: true
+  uuid: 98798ca4-d968-4bcc-9b50-1730d839e877
+- name: 🇦🇲_亚美尼亚_1
+  network: ws
+  port: 8880
+  server: 185.162.231.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /
 - name: 🇦🇲_亚美尼亚_2
+  network: ws
+  port: 80
+  server: 185.162.230.6
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /
+- name: 🇺🇸_美国_7
+  network: ws
+  port: 80
+  server: 141.193.213.118
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_8
+  network: ws
+  port: 8880
+  server: 154.83.2.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_9
+  network: ws
+  port: 80
+  server: 141.193.213.78
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_10
+  network: ws
+  port: 80
+  server: 141.193.213.76
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_11
+  network: ws
+  port: 8880
+  server: 140.99.233.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: hk.laoyoutiao.link
+    path: telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇺🇸_美国_12
+  network: ws
+  port: 80
+  server: 141.193.213.224
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_13
+  network: ws
+  port: 80
+  server: 141.193.213.160
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_14
+  network: ws
+  port: 80
+  server: 141.193.213.178
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_15
+  network: ws
+  port: 80
+  server: 141.193.213.97
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_16
+  network: ws
+  port: 80
+  server: 141.193.213.89
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_17
+  network: ws
+  port: 80
+  server: 141.193.213.68
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_18
+  network: ws
+  port: 8880
+  server: 108.165.216.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_19
+  network: ws
+  port: 443
+  server: 104.21.48.1
+  servername: CCCVVVB.999161.xYz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84831b86-5c76-4173-bdf1-02fa3ed78a32
+  ws-opts:
+    headers:
+      host: CCCVVVB.999161.xYz
+    path: /f7h3xudllllxkt65vuai1psm38tz
+- name: 🇺🇸_美国_20
+  network: ws
+  port: 443
+  server: 104.21.82.14
+  servername: M3SDf.777259.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e74d7639-3755-4624-b770-efa6e7ec09a8
+  ws-opts:
+    headers:
+      host: M3SDf.777259.xyz
+    path: /bt93qlsreyhzv5ii9ww
+- name: 🇺🇸_美国_21
+  network: ws
+  port: 8080
+  server: 104.26.15.85
+  servername: J9.oDOtZrHUoO.ZuLAIR.ORg.
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4ea841c1-0dc1-4563-9f47-deba8407cb4e
+  ws-opts:
+    headers:
+      host: J9.oDOtZrHUoO.ZuLAIR.ORg.
+    path: /?ed=2048
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_22
+  network: ws
+  port: '2087'
+  server: 104.21.64.1
+  tls: true
+  type: vmess
+  uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c
+  ws-opts:
+    path: /
+- name: 🇺🇸_美国_23
+  network: ws
+  port: 443
+  server: 172.67.137.6
+  servername: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 508a5202-d450-42d2-a74c-9326dcda8b63
+  ws-opts:
+    headers:
+      host: XCdvFRTtt.fREEvpnATM.dPDNS.oRg
+    path: /prufeqtnsrzbl4svhqtmks
+- name: 🇺🇸_美国_24
+  network: ws
+  port: 80
+  server: 141.193.213.173
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
+- name: 🇺🇸_美国_25
+  network: ws
+  port: 443
+  server: 104.21.25.95
+  servername: ws345.890604.fIlEGeAR-Sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 43324bdf-a0e8-4f6f-8bdc-5482db82fd0f
+  ws-opts:
+    headers:
+      host: ws345.890604.fIlEGeAR-Sg.me
+    path: /h1ixytquzkdqmvgkagyiefjfm0oq
+- name: 🇺🇸_美国_26
+  network: ws
+  port: 80
+  server: 141.193.213.135
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: us.laoyoutiao.link
+    path: /telegramu0001f1e8u0001f1f3 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_27
+  network: ws
+  port: 8880
+  server: 216.116.134.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_28
+  network: ws
+  port: 80
+  server: 141.193.213.241
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_29
+  network: ws
+  port: 443
+  server: 104.21.88.226
+  servername: 5eR.WWW890604.dPDNS.OrG
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 895552fa-6284-4c1d-ba00-3944e0c7c626
+  ws-opts:
+    headers:
+      host: 5eR.WWW890604.dPDNS.OrG
+    path: /c1sukvgdr58yeduy9aog
+- name: 🇺🇸_美国_30
+  network: ws
+  port: 443
+  server: 104.21.78.243
+  servername: cCVBNhJ.7282728.XYZ
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  ws-opts:
+    headers:
+      host: cCVBNhJ.7282728.XYZ
+    path: /6r23fpdca4knaxx
+- name: 🇺🇸_美国_31
+  network: ws
+  port: 8880
+  server: 167.68.42.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇺🇸_美国_32
+  network: ws
+  port: 80
+  server: 141.193.213.9
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_33
+  network: ws
+  port: 8880
+  server: 104.129.164.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 🇦🇲_亚美尼亚_3
   network: ws
   port: 8880
   server: 185.162.230.20
@@ -250,249 +555,25 @@ proxies:
     headers:
       host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- name: 🇺🇸_美国_17
-  network: ws
-  port: 8880
-  server: 66.45.118.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_18
-  network: ws
-  port: 8880
-  server: 190.93.245.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- name: 🇺🇸_美国_19
-  network: ws
-  port: 8880
-  server: 147.185.161.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_20
-  network: ws
-  port: 8880
-  server: 209.46.30.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_21
-  network: ws
-  port: 8880
-  server: 199.181.197.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_22
-  network: ws
-  port: 8880
-  server: 170.114.46.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_23
-  network: ws
-  port: 8880
-  server: 209.46.30.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      host: reedfree8mahsang2.redorg.ir
-    path: /
-- name: 🇺🇸_美国_24
-  network: ws
-  port: 8880
-  server: 168.100.6.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_25
-  network: ws
-  port: 8880
-  server: 154.83.2.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_26
-  network: ws
-  port: 8880
-  server: 167.68.5.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_27
-  network: ws
-  port: 8880
-  server: 159.112.235.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_28
-  network: ws
-  port: 8080
-  server: 172.67.73.163
-  servername: IO.IhJtq0hklC.ZULAiR.OrG.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
-  ws-opts:
-    headers:
-      host: IO.IhJtq0hklC.ZULAiR.OrG.
-    path: /
-- name: 🇺🇸_美国_29
-  network: ws
-  port: 8080
-  server: 172.67.73.163
-  servername: IO.IhJtq0hklC.ZULAiR.OrG.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
-  ws-opts:
-    headers:
-      host: IO.IhJtq0hklC.ZULAiR.OrG.
-    path: /
-- name: 🇺🇸_美国_30
-  network: ws
-  port: 53485
-  server: 23.94.208.154
-  servername: ca.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ca.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_31
-  network: ws
-  port: 8880
-  server: 66.235.200.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: hk.laoyoutiao.link
-    path: /
-- name: 🇺🇸_美国_32
-  network: ws
-  port: 443
-  server: 160.79.105.89
-  servername: ca.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ca.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_33
-  network: ws
-  port: 443
-  server: 160.79.104.11
-  servername: ca.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ca.bgm2024.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_34
   network: ws
-  port: 8880
-  server: 154.85.99.29
-  servername: hk.laoyoutiao.link
+  port: 443
+  server: 172.67.212.59
+  servername: bBA.890601.pP.UA
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 585acd30-52bf-4b70-a537-e13649fafefc
+  ws-opts:
+    headers:
+      host: bBA.890601.pP.UA
+    path: /ru9rsjdsod4yy2foe
+- name: 🇺🇸_美国_35
+  network: ws
+  port: 80
+  server: 141.193.213.208
+  servername: cs.laoyoutiao.link
   skip-cert-verify: true
   tls: true
   type: vless
@@ -500,8 +581,190 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: hk.laoyoutiao.link
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_36
+  network: ws
+  port: 80
+  server: 141.193.213.146
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_37
+  network: ws
+  port: 443
+  server: 172.67.172.91
+  servername: Ty.457.PP.uA
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  ws-opts:
+    headers:
+      host: Ty.457.PP.uA
+    path: /ampqdwyvpapkb7qhhkqbzyo
+- name: 🇺🇸_美国_38
+  network: ws
+  port: 443
+  server: 104.21.82.14
+  servername: M3SDf.777259.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e74d7639-3755-4624-b770-efa6e7ec09a8
+  ws-opts:
+    headers:
+      host: M3SDf.777259.xyz
+    path: /bt93qlsreyhzv5ii9ww
+- name: 🇺🇸_美国_39
+  network: ws
+  port: 443
+  server: 104.21.25.95
+  servername: ws345.890604.fIlEGeAR-Sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 43324bdf-a0e8-4f6f-8bdc-5482db82fd0f
+  ws-opts:
+    headers:
+      host: ws345.890604.fIlEGeAR-Sg.me
+    path: /h1ixytquzkdqmvgkagyiefjfm0oq
+- name: 🇺🇸_美国_40
+  network: ws
+  port: 80
+  server: 141.193.213.82
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
+- name: 🇺🇸_美国_41
+  network: ws
+  port: 8080
+  server: 170.114.45.6
+  servername: xrr.rtxconfigz.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      host: xrr.rtxconfigz.xyz
     path: /
+- name: 🇺🇸_美国_42
+  network: ws
+  port: 443
+  server: 104.21.71.205
+  servername: 7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+  ws-opts:
+    headers:
+      host: 7d33510a-5dA0-4F85-b1d5-5321a9eaA72a.890603.pP.uA
+    path: /xcqf058rnj3gc4aj
+- name: 🇺🇸_美国_43
+  network: ws
+  port: 443
+  server: 104.21.7.147
+  servername: XXSe.hUaNGsHaNg.DpdNS.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1549e70f-dc57-45e3-ac7c-515f0161db72
+  ws-opts:
+    headers:
+      host: XXSe.hUaNGsHaNg.DpdNS.org
+    path: /iklitbwx0rst1mktnrt
+- name: 🇺🇸_美国_44
+  network: ws
+  port: 80
+  server: 141.193.213.65
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      host: cs.laoyoutiao.link
+    path: /telegram🇨🇳 @mxlshare+@wangcai2+/?ed=2560
+- name: 🇺🇸_美国_45
+  network: ws
+  port: 443
+  server: 104.21.64.1
+  servername: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 52c0e96b-b8d7-44a5-a995-bd866bf39ec6
+  ws-opts:
+    headers:
+      host: M10EEeeEEeEEeEEeEeeEeeEeeeeeEe.7777128.xYZ
+    path: /yzflmznieqsamcelxv94lpbgmw
+- name: 🇺🇸_美国_46
+  network: ws
+  port: 8080
+  server: 172.67.73.163
+  servername: IO.IhJtq0hklC.ZULAiR.OrG.
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
+  ws-opts:
+    headers:
+      host: IO.IhJtq0hklC.ZULAiR.OrG.
+    path: /
+- name: 🇺🇸_美国_47
+  network: ws
+  port: 2052
+  server: 104.21.80.1
+  servername: cdnvpntv20.erfantop.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b139d40-22ae-4f57-b750-bb632640ba68
+  ws-opts:
+    headers:
+      host: cdnvpntv20.erfantop.ir
+    path: /@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20v----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20----@vpntv20?ed=2052
+- name: 🇺🇸_美国_48
+  network: ws
+  port: 2096
+  server: www.visasoutheasteurope.com
+  servername: iamdt.pages.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67c662fa-cd6a-474a-b55f-d50dc0a7e210
+  ws-opts:
+    headers:
+      host: iamdt.pages.dev
+    path: /?ed=2560
 - alpn:
   - h3
   auth_str: dongtaiwang.com
@@ -548,14 +811,14 @@ proxies:
   type: hysteria
   up: 11 Mbps
 - cipher: aes-256-cfb
-  name: United States_Boardman_ss_1075
+  name: United States_Boardman_ss_1076
   password: awsps0501
   port: 443
   server: 18.246.228.5
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: United States_Boardman_ss_1175
+  name: United States_Boardman_ss_1176
   password: awsps0501
   port: 443
   server: 18.246.228.5
@@ -621,7 +884,7 @@ proxies:
   name: Russia_Moscow_hy2_0
   password: dongtaiwang.com
   port: 30033
-  server: hy2.694463.xyz
+  server: 45.129.2.108
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
@@ -629,7 +892,7 @@ proxies:
   name: Russia_Moscow_hy2_1
   password: dongtaiwang.com
   port: 30033
-  server: hy2.694463.xyz
+  server: 46.17.41.217
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
@@ -730,6 +993,23 @@ proxies:
     headers:
       HOST: cs.flha.ru
     path: /
+- alterId: 32
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
 - alterId: 0
   cipher: auto
   name: 美国 001
@@ -2066,45 +2346,24 @@ proxies:
       Host: admin.kasrax.ir
     path: /irvideo.cfd/linkws
 - cipher: chacha20-ietf-poly1305
-  name: 0|22🇺🇸美国|官网：mikasacloud.site
-  password: f6a975a4-b38d-4930-bc76-8872a0566610
+  name: 1|22🇺🇸美国|官网：m5c3cloud.pro
+  password: f9407087-cd68-42cf-8c34-a7d89025dcd1
   port: 31211
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|23🇺🇸美国家宽|官网：米卡莎.xyz
-  password: f6a975a4-b38d-4930-bc76-8872a0566610
+  name: 1|23🇺🇸美国家宽|官网：米卡莎.xyz
+  password: f9407087-cd68-42cf-8c34-a7d89025dcd1
   port: 31213
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|24🇺🇸美国|官网：m5c3cloud.pro
-  password: f6a975a4-b38d-4930-bc76-8872a0566610
+  name: 1|24🇺🇸美国|官网：m5c3cloud.pro
+  password: f9407087-cd68-42cf-8c34-a7d89025dcd1
   port: 31215
   server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|18🇺🇸美国|官网：abluecloud.xyz
-  password: d0e379cd-05a4-493d-8894-7870eaa3b714
-  port: 36211
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|19🇺🇸美国住宅IP|官网：蓝色海洋.xyz
-  password: d0e379cd-05a4-493d-8894-7870eaa3b714
-  port: 36213
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|20🇺🇸美国|官网：蓝色海洋.xyz
-  password: d0e379cd-05a4-493d-8894-7870eaa3b714
-  port: 36215
-  server: freea.glyphara.com
   type: ss
   udp: true
 - flow: xtls-rprx-vision
@@ -3711,353 +3970,349 @@ proxies:
   sni: loosely.freetrade.link
   type: trojan
 - cipher: aes-128-gcm
-  name: 🇺🇸US-173.244.56.6-0280 | 243.17MB
+  name: 🇺🇸US-173.244.56.6-0228 | 168.484MB
   password: shadowsocks
   port: 443
   server: 173.244.56.6
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-173.244.56.9-0281 | 112.214MB
+  name: 🇺🇸US-173.244.56.9-0229 | 167.63MB
   password: shadowsocks
   port: 443
   server: 173.244.56.9
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.170-0275 | 99.057MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.168-0279 | 97.227MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.169-0278 | 90.393MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.169
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.167-0351 | 87.062MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.130-0289 | 79.992MB
+  name: 🇺🇸US-212.102.47.130-0236 | 142.023MB
   password: shadowsocks
   port: 443
   server: 212.102.47.130
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.129-0458 | 77.088MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.129
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.131-0314 | 67.023MB
+  name: 🇺🇸US-212.102.47.131-0240 | 129.909MB
   password: shadowsocks
   port: 443
   server: 212.102.47.131
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.132-0327 | 66.887MB
+  name: 🇺🇸US-212.102.47.132-0241 | 126.57MB
   password: shadowsocks
   port: 443
   server: 212.102.47.132
   type: ss
-- cipher: rc4-md5
-  name: 🇺🇸US-194.5.215.59-0271 | 58.414MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 194.5.215.59
-  type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.160-0270 | 53.476MB
+  name: 🇺🇸US-212.102.47.129-0237 | 108.582MB
   password: shadowsocks
   port: 443
-  server: 37.19.198.160
+  server: 212.102.47.129
   type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-45.55.2.232-0333 | 46.937MB
-  password: 2170f8
-  port: 14293
-  server: 45.55.2.232
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.170-0230 | 72.821MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.168-0231 | 63.967MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.167-0233 | 61.356MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.169-0232 | 58.935MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-149.28.106.134-0269 | 45.187MB
+  name: 🇺🇸US-149.28.106.134-0248 | 49.181MB
   password: 46e67f5a-63e4-4566-870c-76eaa9cf76fe
   port: 31444
   server: 149.28.106.134
   type: ss
-- name: 🇺🇸US-138.197.5.103-0277 | 45.099MB
-  password: xxoo
-  port: 443
-  server: us.blazeppn.info
-  skip-cert-verify: false
-  sni: us.blazeppn.info
-  type: trojan
+- cipher: rc4-md5
+  name: 🇺🇸US-194.5.215.59-0243 | 44.078MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 194.5.215.59
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-45.55.2.232-0247 | 43.869MB
+  password: 2170f8
+  port: 14293
+  server: 45.55.2.232
+  type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.236-0276 | 45.099MB
+  name: 🇺🇸US-37.19.198.236-0250 | 41.199MB
   password: shadowsocks
   port: 443
   server: 37.19.198.236
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.243-0272 | 44.942MB
+  name: 🇺🇸US-37.19.198.160-0246 | 40.302MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.243-0252 | 34.948MB
   password: shadowsocks
   port: 443
   server: 37.19.198.243
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-64.74.163.130-5250 | 44.553MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.130
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.244-0349 | 32.93MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.244
   type: ss
-- name: 🇺🇸US-94.131.20.3-0292 | 42.83MB
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: strut-brisk-scope.stark-industries.solutions
-  skip-cert-verify: false
-  sni: strut-brisk-scope.stark-industries.solutions
-  type: trojan
-- name: 🇺🇸US-94.131.20.3-0290 | 42.182MB
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: bats-paper-chump.stark-industries.solutions
-  skip-cert-verify: false
-  sni: bats-paper-chump.stark-industries.solutions
-  type: trojan
-- name: 🇺🇸US-94.131.20.3-0428 | 41.016MB
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: guy-trace-lyric.stark-industries.solutions
-  skip-cert-verify: false
-  type: trojan
-- name: 🇺🇸US-94.131.20.3-0297 | 38.025MB
+- name: 🇺🇸US-94.131.20.3-0285 | 24.496MB
   password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
   port: 443
   server: 94.131.20.3
   skip-cert-verify: false
   sni: chop-wrist-bud.stark-industries.solutions
   type: trojan
-- name: 🇺🇸US-94.131.20.3-0284 | 28.176MB
+- name: 🇺🇸US-94.131.20.3-0333 | 24.48MB
   password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
   port: 443
   server: chop-wrist-bud.stark-industries.solutions
   skip-cert-verify: false
   sni: chop-wrist-bud.stark-industries.solutions
   type: trojan
-- name: 🇺🇸US-94.131.20.3-0352 | 26.45MB
+- name: 🇺🇸US-94.131.20.3-0267 | 23.859MB
   password: e6a2e741-0fce-440b-910c-b81325e2263a
   port: 443
-  server: bring-glove-shine.stark-industries.solutions
+  server: bats-paper-chump.stark-industries.solutions
   skip-cert-verify: false
-  sni: bring-glove-shine.stark-industries.solutions
+  sni: bats-paper-chump.stark-industries.solutions
   type: trojan
-- name: 🇺🇸US-94.131.20.3-0331 | 24.237MB
+- name: 🇺🇸US-94.131.20.3-0340 | 23.484MB
   password: e6a2e741-0fce-440b-910c-b81325e2263a
   port: 443
   server: cache-giver-wife.stark-industries.solutions
   skip-cert-verify: false
   sni: cache-giver-wife.stark-industries.solutions
   type: trojan
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.244-0273 | 20.517MB
-  password: shadowsocks
+- name: 🇺🇸US-94.131.20.3-0264 | 23.092MB
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
   port: 443
-  server: 37.19.198.244
+  server: strut-brisk-scope.stark-industries.solutions
+  skip-cert-verify: false
+  sni: strut-brisk-scope.stark-industries.solutions
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇺🇸US-194.116.173.21-5116 | 17.141MB
+  password: gYCYXfkUQEs2TaJQ
+  port: 9038
+  server: 194.116.173.21
   type: ss
+- name: 🇺🇸US-94.131.20.3-0272 | 16.812MB
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  port: 443
+  server: guy-trace-lyric.stark-industries.solutions
+  skip-cert-verify: false
+  type: trojan
+- name: 🇺🇸US-94.131.20.3-0335 | 16.17MB
+  password: e6a2e741-0fce-440b-910c-b81325e2263a
+  port: 443
+  server: bring-glove-shine.stark-industries.solutions
+  skip-cert-verify: false
+  sni: bring-glove-shine.stark-industries.solutions
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-152.67.251.232-7241 | 11.194MB
+  network: ws
+  port: 443
+  server: 152.67.251.232
+  servername: 🇺🇸US-152.67.251.232-7241 | 11.194MB
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /
 - cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0463 | 3.503MB
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5036 | 3.455MB
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5079 | 3.455MB
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0462 | 3.335MB
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-4399 | 3.317MB
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5281 | 3.307MB
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-4404 | 3.154MB
-  password: RexnBgU7EV5ADxG
-  port: 7002
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-4376 | 3.126MB
+  name: 🇺🇸US-38.121.43.71-0407 | 1.09MB
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 38.121.43.71
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5042 | 3.029MB
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-4382 | 3.0MB
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.6-0454 | 2.964MB
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 38.121.43.6
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0467 | 2.962MB
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0460 | 2.926MB
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0499 | 2.86MB
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0489 | 2.852MB
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-216.39.248.133-0459 | 2.776MB
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 216.39.248.133
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-4379 | 2.754MB
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-4396 | 2.745MB
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0464 | 2.737MB
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5071 | 2.732MB
-  password: KixLvKzwjekG00rm
-  port: 8000
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5037 | 2.695MB
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5029 | 2.651MB
-  password: Y6R9pAtvxxzmGC
-  port: 5001
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-4413 | 2.621MB
+  name: 🇺🇸US-38.121.43.71-0422 | 1.084MB
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 38.121.43.71
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5030 | 2.578MB
+  name: 🇺🇸US-38.121.43.71-0402 | 1.084MB
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0406 | 1.078MB
+  password: RexnBgU7EV5ADxG
+  port: 7002
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.143.66.87-5284 | 1.077MB
+  password: e4FCWrgpkji3QY
+  port: 9102
+  server: 38.143.66.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0423 | 1.077MB
   password: zDNVedRFPQexG9v
   port: 6379
   server: 38.121.43.71
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0468 | 2.548MB
+  name: 🇺🇸US-38.121.43.71-5002 | 1.076MB
   password: faBAoD54k87UJG7
-  port: 2376
+  port: 2375
   server: 38.121.43.71
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5032 | 2.542MB
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0465 | 2.499MB
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 38.121.43.71
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5034 | 2.485MB
+  name: 🇺🇸US-38.121.43.71-0427 | 1.076MB
   password: e4FCWrgpkji3QY
   port: 9102
   server: 38.121.43.71
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-5291 | 2.413MB
-  password: PCnnH6SQSnfoS27
-  port: 8090
+  name: 🇺🇸US-38.143.66.87-5016 | 1.076MB
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 38.143.66.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.68.134.202-5005 | 1.075MB
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.68.134.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.68.134.202-5009 | 1.075MB
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 38.68.134.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0417 | 1.075MB
+  password: pKEW8JPByTVTLtM
+  port: 443
   server: 38.121.43.71
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0452 | 2.392MB
+  name: 🇺🇸US-216.39.248.133-0415 | 1.075MB
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 216.39.248.133
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-4382 | 1.074MB
   password: KixLvKzwjekG00rm
   port: 5500
   server: 38.121.43.71
   type: ss
 - cipher: aes-256-gcm
-  name: 🇺🇸US-38.121.43.71-0466 | 2.373MB
-  password: faBAoD54k87UJG7
-  port: 2375
+  name: 🇺🇸US-38.121.43.71-0412 | 1.073MB
+  password: cdBIDV42DCwnfIN
+  port: 8118
   server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0411 | 1.073MB
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.143.66.87-5082 | 1.073MB
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 38.143.66.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0400 | 1.073MB
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0405 | 1.072MB
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0425 | 1.072MB
+  password: TEzjfAYq2IjtuoS
+  port: 6697
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0419 | 1.072MB
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0401 | 1.071MB
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.143.66.87-5286 | 1.071MB
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 38.143.66.87
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-4359 | 1.071MB
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0424 | 1.071MB
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0414 | 1.071MB
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0416 | 1.071MB
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.121.43.71-0409 | 1.071MB
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 38.121.43.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.143.66.87-5042 | 1.071MB
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 38.143.66.87
   type: ss
 proxy-groups:
 - name: 选择代理

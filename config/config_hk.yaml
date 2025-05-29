@@ -85,7 +85,7 @@ profile:
 proxies:
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1072
+  name: Hong Kong_Central_vmess_1073
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -98,7 +98,7 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1077
+  name: Hong Kong_Central_ss_1078
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -112,7 +112,7 @@ proxies:
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
-- name: Hong Kong_Hong Kong_trojan_1079
+- name: Hong Kong_Hong Kong_trojan_1080
   network: tcp
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
@@ -122,7 +122,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1082
+  name: Hong Kong_None_vmess_1083
   port: 47010
   server: 43.247.134.85
   skip-cert-verify: false
@@ -131,7 +131,7 @@ proxies:
   type: vmess
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_None_ss_1084
+  name: Hong Kong_None_ss_1085
   password: 60a930c17ff0
   plugin: v2ray-plugin
   plugin-opts:
@@ -147,7 +147,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1094
+  name: Hong Kong_None_vmess_1095
   network: tcp
   port: '47010'
   server: 43.247.134.85
@@ -157,7 +157,7 @@ proxies:
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1172
+  name: Hong Kong_Central_vmess_1173
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -170,7 +170,7 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1177
+  name: Hong Kong_Central_ss_1178
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -184,7 +184,7 @@ proxies:
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
-- name: Hong Kong_Hong Kong_trojan_1179
+- name: Hong Kong_Hong Kong_trojan_1180
   network: tcp
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
@@ -194,7 +194,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1182
+  name: Hong Kong_None_vmess_1183
   port: 47010
   server: 43.247.134.85
   skip-cert-verify: false
@@ -203,7 +203,7 @@ proxies:
   type: vmess
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_None_ss_1184
+  name: Hong Kong_None_ss_1185
   password: 60a930c17ff0
   plugin: v2ray-plugin
   plugin-opts:
@@ -219,7 +219,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1194
+  name: Hong Kong_None_vmess_1195
   network: tcp
   port: '47010'
   server: 43.247.134.85
@@ -227,15 +227,32 @@ proxies:
   tls: false
   type: vmess
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
+- alterId: 32
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
 - cipher: chacha20-ietf-poly1305
-  name: 0|7🇭🇰香港|官网：米卡莎.xyz
-  password: f6a975a4-b38d-4930-bc76-8872a0566610
+  name: 1|7🇭🇰香港|官网：米卡莎.xyz
+  password: f9407087-cd68-42cf-8c34-a7d89025dcd1
   port: 31141
   server: freem.vidalith.com
   type: ss
   udp: true
 - flow: xtls-rprx-vision
-  name: 0|4🇭🇰香港01|官网：m5c3cloud.pro
+  name: 1|4🇭🇰香港01|官网：mikasacloud.site
   port: 21141
   reality-opts:
     public-key: Eups6Prbvg15cmO6xyumiyHSDnXyxdPpHot__djonlo
@@ -246,9 +263,9 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: f6a975a4-b38d-4930-bc76-8872a0566610
+  uuid: f9407087-cd68-42cf-8c34-a7d89025dcd1
 - flow: xtls-rprx-vision
-  name: 0|5🇭🇰香港02|官网：m5c3cloud.pro
+  name: 1|5🇭🇰香港02|官网：m5c3cloud.pro
   port: 21143
   reality-opts:
     public-key: Aefu3IA6fk1vUQio476AwY4NSshxmjjEpeWrvaqAtWg
@@ -259,10 +276,10 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: f6a975a4-b38d-4930-bc76-8872a0566610
+  uuid: f9407087-cd68-42cf-8c34-a7d89025dcd1
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 0|6🇭🇰香港03|官网：m5c3cloud.pro
+  name: 1|6🇭🇰香港03|官网：米卡莎.xyz
   port: 21145
   reality-opts:
     public-key: _5oMsSEfgBhN4ZMasEwrUqss5GQkKdAtgoH2MzEVRA0
@@ -273,40 +290,19 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: f6a975a4-b38d-4930-bc76-8872a0566610
+  uuid: f9407087-cd68-42cf-8c34-a7d89025dcd1
 - cipher: chacha20-ietf-poly1305
-  name: 0|8🇭🇰香港|官网：mikasacloud.site
-  password: f6a975a4-b38d-4930-bc76-8872a0566610
+  name: 1|8🇭🇰香港|官网：米卡莎.xyz
+  password: f9407087-cd68-42cf-8c34-a7d89025dcd1
   port: 31143
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|9🇭🇰香港家宽|官网：mikasacloud.site
-  password: f6a975a4-b38d-4930-bc76-8872a0566610
+  name: 1|9🇭🇰香港家宽|官网：m5c3cloud.pro
+  password: f9407087-cd68-42cf-8c34-a7d89025dcd1
   port: 31145
   server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|5🇭🇰香港|官网：abluecloud.xyz
-  password: d0e379cd-05a4-493d-8894-7870eaa3b714
-  port: 36141
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|6🇭🇰香港|官网：abluecloud.xyz
-  password: d0e379cd-05a4-493d-8894-7870eaa3b714
-  port: 36143
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|7🇭🇰香港住宅IP|官网：蓝色海洋.xyz
-  password: d0e379cd-05a4-493d-8894-7870eaa3b714
-  port: 36145
-  server: freea.glyphara.com
   type: ss
   udp: true
 - alterId: 0
@@ -433,7 +429,7 @@ proxies:
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
 - alterId: 0
   cipher: auto
-  name: 🇭🇰HK-8.218.42.21-1023 | 14.389MB
+  name: 🇭🇰HK-8.218.42.21-0362 | 19.02MB
   network: ws
   port: 443
   server: n1737850919.ryjml.cn
@@ -447,11 +443,26 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.202.79-5198 | 12.857MB
+  name: 🇭🇰HK-42.2.113.136-0369 | 5.715MB
+  network: ws
+  port: 80
+  server: 3cb34bed-sucv40-swr62l-lj7z.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.113.136-0369 | 5.715MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 331cae90-f7e9-11ed-b4e2-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 3cb34bed-sucv40-swr62l-lj7z.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.113.136-0364 | 5.297MB
   network: ws
   port: 80
   server: 581be42d-sv2sg0-swotpn-1nn0k.hk.p5pv.com
-  servername: 🇭🇰HK-1.65.202.79-5198 | 12.857MB
+  servername: 🇭🇰HK-42.2.113.136-0364 | 5.297MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -462,18 +473,76 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.202.79-0401 | 9.747MB
+  name: 🇭🇰HK-42.2.113.136-1923 | 4.503MB
   network: ws
   port: 80
-  server: 3cb34bed-sucv40-swr62l-lj7z.hk.p5pv.com
-  servername: 🇭🇰HK-1.65.202.79-0401 | 9.747MB
+  server: e9ba756a-svdwg0-swd5ff-f1v1.hk.p5pv.com
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 331cae90-f7e9-11ed-b4e2-f23c913c8d2b
+  uuid: 9cccea7a-b6ab-11eb-a0fc-f23c913c8d2b
   ws-opts:
     headers:
-      Host: 3cb34bed-sucv40-swr62l-lj7z.hk.p5pv.com
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.113.136-5188 | 4.366MB
+  network: ws
+  port: 80
+  server: da328baa-sv6hs0-svk8tn-l1v4.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.113.136-5188 | 4.366MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0d6b74f2-01c0-11ee-9014-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: da328baa-sv6hs0-svk8tn-l1v4.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.113.136-5186 | 4.158MB
+  network: ws
+  port: 80
+  server: 108f172e-sv2sg0-svk8tn-l1v4.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.113.136-5186 | 4.158MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0d6b74f2-01c0-11ee-9014-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: 108f172e-sv2sg0-svk8tn-l1v4.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.113.136-5187 | 4.103MB
+  network: ws
+  port: 80
+  server: 7c8117a5-sv2sg0-sw1h9t-17czn.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.113.136-5187 | 4.103MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 392ea58a-f77f-11ef-be86-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 7c8117a5-sv2sg0-sw1h9t-17czn.hk.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-1.65.207.59-0678 | 3.997MB
+  network: ws
+  port: 8080
+  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
     path: /
 proxy-groups:
 - name: 选择代理
