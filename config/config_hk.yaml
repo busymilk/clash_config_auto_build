@@ -85,7 +85,7 @@ profile:
 proxies:
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_1041
+  name: Hong Kong_None_vmess_1072
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -98,7 +98,7 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_Central_ss_1046
+  name: Hong Kong_Central_ss_1077
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -108,11 +108,11 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 27599
+  port: 46583
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
-- name: Hong Kong_Hong Kong_trojan_1048
+- name: Hong Kong_Hong Kong_trojan_1079
   network: tcp
   password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
   port: 443
@@ -122,7 +122,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1051
+  name: Hong Kong_None_vmess_1082
   port: 47010
   server: 43.247.134.85
   skip-cert-verify: false
@@ -131,7 +131,7 @@ proxies:
   type: vmess
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_None_ss_1054
+  name: Hong Kong_None_ss_1084
   password: 60a930c17ff0
   plugin: v2ray-plugin
   plugin-opts:
@@ -141,13 +141,13 @@ proxies:
     path: /matwnpkhug
     skip-cert-verify: false
     tls: true
-  port: 21755
+  port: 20091
   server: 43.226.17.8
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1067
+  name: Hong Kong_None_vmess_1094
   network: tcp
   port: '47010'
   server: 43.247.134.85
@@ -157,17 +157,7 @@ proxies:
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
 - alterId: 0
   cipher: auto
-  name: Hong Kong_Hong Kong_vmess_1069
-  network: kcp
-  port: '39253'
-  server: 47.76.92.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 16e7adc5-8a1e-44b1-8327-14f7367caaf8
-- alterId: 0
-  cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_1172
+  name: Hong Kong_None_vmess_1172
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -190,7 +180,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 27599
+  port: 46583
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -213,7 +203,7 @@ proxies:
   type: vmess
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
 - cipher: chacha20-ietf-poly1305
-  name: Hong Kong_None_ss_1185
+  name: Hong Kong_None_ss_1184
   password: 60a930c17ff0
   plugin: v2ray-plugin
   plugin-opts:
@@ -223,13 +213,13 @@ proxies:
     path: /matwnpkhug
     skip-cert-verify: false
     tls: true
-  port: 21755
+  port: 20091
   server: 43.226.17.8
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1198
+  name: Hong Kong_None_vmess_1194
   network: tcp
   port: '47010'
   server: 43.247.134.85
@@ -237,18 +227,29 @@ proxies:
   tls: false
   type: vmess
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
-- alterId: 0
-  cipher: auto
-  name: Hong Kong_Hong Kong_vmess_11100
-  network: kcp
-  port: '39253'
-  server: 47.76.92.36
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 16e7adc5-8a1e-44b1-8327-14f7367caaf8
+- cipher: chacha20-ietf-poly1305
+  name: 0|5🇭🇰香港|官网：蓝色海洋.xyz
+  password: 4e2a013a-d238-4b3e-a575-2d896b838469
+  port: 36141
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|6🇭🇰香港|官网：a5b3cloud.pro
+  password: 4e2a013a-d238-4b3e-a575-2d896b838469
+  port: 36143
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|7🇭🇰香港住宅IP|官网：蓝色海洋.xyz
+  password: 4e2a013a-d238-4b3e-a575-2d896b838469
+  port: 36145
+  server: freea.glyphara.com
+  type: ss
+  udp: true
 - flow: xtls-rprx-vision
-  name: 0|3🇭🇰香港01|官网：mikasacloud.site
+  name: 1|3🇭🇰香港01|官网：米卡莎.xyz
   port: 21141
   reality-opts:
     public-key: Eups6Prbvg15cmO6xyumiyHSDnXyxdPpHot__djonlo
@@ -259,9 +260,9 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 55d308cc-1535-4303-86f5-fd59917fc947
+  uuid: 13d41d7c-7922-4e0b-82f9-f58f54b19f26
 - flow: xtls-rprx-vision
-  name: 0|4🇭🇰香港02|官网：米卡莎.xyz
+  name: 1|4🇭🇰香港02|官网：mikasacloud.site
   port: 21143
   reality-opts:
     public-key: Aefu3IA6fk1vUQio476AwY4NSshxmjjEpeWrvaqAtWg
@@ -272,10 +273,10 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 55d308cc-1535-4303-86f5-fd59917fc947
+  uuid: 13d41d7c-7922-4e0b-82f9-f58f54b19f26
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 0|5🇭🇰香港03|官网：米卡莎.xyz
+  name: 1|5🇭🇰香港03|官网：m5c3cloud.pro
   port: 21145
   reality-opts:
     public-key: _5oMsSEfgBhN4ZMasEwrUqss5GQkKdAtgoH2MzEVRA0
@@ -286,47 +287,26 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 55d308cc-1535-4303-86f5-fd59917fc947
+  uuid: 13d41d7c-7922-4e0b-82f9-f58f54b19f26
 - cipher: chacha20-ietf-poly1305
-  name: 0|6🇭🇰香港|官网：mikasacloud.site
-  password: 55d308cc-1535-4303-86f5-fd59917fc947
+  name: 1|6🇭🇰香港|官网：m5c3cloud.pro
+  password: 13d41d7c-7922-4e0b-82f9-f58f54b19f26
   port: 31141
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|7🇭🇰香港|官网：mikasacloud.site
-  password: 55d308cc-1535-4303-86f5-fd59917fc947
+  name: 1|7🇭🇰香港|官网：m5c3cloud.pro
+  password: 13d41d7c-7922-4e0b-82f9-f58f54b19f26
   port: 31143
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|8🇭🇰香港家宽|官网：mikasacloud.site
-  password: 55d308cc-1535-4303-86f5-fd59917fc947
+  name: 1|8🇭🇰香港家宽|官网：mikasacloud.site
+  password: 13d41d7c-7922-4e0b-82f9-f58f54b19f26
   port: 31145
   server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|5🇭🇰香港|官网：a5b3cloud.pro
-  password: 2cd04b7f-b626-4f83-b567-a548b7884f39
-  port: 36141
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|6🇭🇰香港|官网：a5b3cloud.pro
-  password: 2cd04b7f-b626-4f83-b567-a548b7884f39
-  port: 36143
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|7🇭🇰香港住宅IP|官网：abluecloud.xyz
-  password: 2cd04b7f-b626-4f83-b567-a548b7884f39
-  port: 36145
-  server: freea.glyphara.com
   type: ss
   udp: true
 - alterId: 0
@@ -451,20 +431,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbffb825-93d5-4a19-aed0-0936a48c84d3
-- name: 15|HK_speednode_0236
-  network: ws
-  port: 38767
-  server: 8.217.26.121
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
 - alterId: 0
   cipher: auto
   name: 🇭🇰HK-8.218.42.21-1023 | 14.389MB
