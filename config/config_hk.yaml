@@ -83,30 +83,9 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|5🇭🇰香港|官网：蓝色海洋.xyz
-  password: e571770a-03ce-41cf-ba89-395c9d187841
-  port: 36141
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|6🇭🇰香港|官网：abluecloud.xyz
-  password: e571770a-03ce-41cf-ba89-395c9d187841
-  port: 36143
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|7🇭🇰香港住宅IP|官网：abluecloud.xyz
-  password: e571770a-03ce-41cf-ba89-395c9d187841
-  port: 36145
-  server: freea.glyphara.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  name: 1|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -118,6 +97,27 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 2|5🇭🇰香港|官网：a5b3cloud.pro
+  password: 2b0602ec-bb29-495d-bb18-82c75804e63c
+  port: 36141
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|6🇭🇰香港|官网：a5b3cloud.pro
+  password: 2b0602ec-bb29-495d-bb18-82c75804e63c
+  port: 36143
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|7🇭🇰香港住宅IP|官网：a5b3cloud.pro
+  password: 2b0602ec-bb29-495d-bb18-82c75804e63c
+  port: 36145
+  server: freea.glyphara.com
+  type: ss
+  udp: true
 - name: '11|Channel id: @ShadowProxy66🇭🇰'
   password: NTA0MDg5OjEzMzI4ODo3YjA2ZDIyYThhN2M3NjRm
   port: 3074
@@ -239,10 +239,10 @@ proxies:
   tls: false
   type: vmess
   uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
-- name: 14|HK_speednode_0063
+- name: 14|HK_speednode_0050
   network: ws
-  port: 7656
-  server: 66.203.144.241
+  port: 443
+  server: 23.226.8.80
   servername: steep.skyfigure.top
   skip-cert-verify: true
   tls: true
@@ -253,10 +253,23 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 14|HK_speednode_0064
+- flow: xtls-rprx-vision
+  name: 14|HK_speednode_0051
+  port: 34200
+  reality-opts:
+    public-key: 9PISB87d2wQhpoUAp0JJgS0F-vnqUCXltKwN9nhSy0g
+    short-id: 562f
+  server: 47.76.78.145
+  servername: www.hkust.edu.hk
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f528cf09-ec1c-471b-8837-ab66e83f1a25
+- name: 14|HK_speednode_0052
   network: ws
-  port: 59882
-  server: 8.218.194.79
+  port: 30011
+  server: 156.254.114.120
   servername: steep.skyfigure.top
   skip-cert-verify: true
   tls: true
@@ -267,10 +280,10 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 14|HK_speednode_0065
+- name: 14|HK_speednode_0053
   network: ws
-  port: 34518
-  server: 191.96.242.70
+  port: 5534
+  server: 47.239.27.174
   servername: steep.skyfigure.top
   skip-cert-verify: true
   tls: true
@@ -281,23 +294,36 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 14|HK_speednode_0054
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.211.8.240
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epme.ambercc.filegear-sg.me
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 15|4🇭🇰香港|官网：mikasacloud.site
-  password: 6611b467-93b2-4af2-8743-c1a1fe708b03
+  name: 15|4🇭🇰香港|官网：m5c3cloud.pro
+  password: 5ae0a049-c832-4116-a7cb-8ae481d1d8d5
   port: 31141
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 15|5🇭🇰香港|官网：米卡莎.xyz
-  password: 6611b467-93b2-4af2-8743-c1a1fe708b03
+  name: 15|5🇭🇰香港|官网：mikasacloud.site
+  password: 5ae0a049-c832-4116-a7cb-8ae481d1d8d5
   port: 31143
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 15|6🇭🇰香港家宽|官网：m5c3cloud.pro
-  password: 6611b467-93b2-4af2-8743-c1a1fe708b03
+  password: 5ae0a049-c832-4116-a7cb-8ae481d1d8d5
   port: 31145
   server: freem.vidalith.com
   type: ss
@@ -748,7 +774,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: Hong Kong_None_vmess_1041
+  name: Hong Kong_None_vmess_1071
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -790,6 +816,19 @@ proxies:
   server: 43.226.17.17
   tfo: false
   type: ss
+- name: Hong Kong_None_trojan_10100
+  network: ws
+  password: Aimer
+  port: 443
+  server: 154.211.8.240
+  skip-cert-verify: false
+  sni: epme.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epme.ambercc.filegear-sg.me
+    path: /
 - alterId: 0
   cipher: auto
   name: Hong Kong_None_vmess_1139
@@ -819,6 +858,14 @@ proxies:
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
+- name: Hong Kong_Hong Kong_trojan_1146
+  network: tcp
+  password: e4af2638-bb12-4e4a-84f1-a032e23ca63f
+  port: 443
+  server: usla.mjt000.com
+  skip-cert-verify: false
+  sni: usla.mjt000.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: Hong Kong_None_ss_1151
   password: 2e96aa2f3054
