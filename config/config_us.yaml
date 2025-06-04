@@ -973,12 +973,36 @@ proxies:
     headers:
       HOST: cs.flha.ru
     path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>美国-NF解锁香港地区非自制剧-ChatGPT-YouTube-tci3.tiamoci.us.kg:80
+  network: ws
+  port: 80
+  server: tci3.tiamoci.us.kg
+  servername: tci3.tiamoci.us.kg
+  skip-cert-verify: true
+  type: vmess
+  uuid: 412466bf-7312-45dc-b089-f42d65a4c087
+  ws-opts:
+    headers:
+      HOST: tci3.tiamoci.us.kg
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.167.197.25:57456
-  password: 360e21d21977dc11
-  port: 57456
-  server: 104.167.197.25
+  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-149.28.106.134:31444
+  password: 46e67f5a-63e4-4566-870c-76eaa9cf76fe
+  port: 31444
+  server: 149.28.106.134
   type: ss
+- cipher: aes-256-cfb
+  name: SSR-美国-NF解锁自制剧-TikTok-YouTube-35.91.246.41:443
+  obfs: plain
+  password: awsps0501
+  port: 443
+  protocol: origin
+  server: 35.91.246.41
+  type: ssr
 - alterId: 0
   cipher: auto
   name: 美国 001
