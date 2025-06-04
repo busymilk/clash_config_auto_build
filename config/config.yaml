@@ -83,47 +83,63 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 电报群：https://t.me/vvkj11
+- alterId: '0'
+  cipher: auto
+  name: 电报群：https://t.me/vvkj11
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '64'
+  cipher: auto
+  name: 每天更新，请加电报群防止失联
+  network: tcp
+  port: '50002'
+  server: 120.210.205.59
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 日期：06-04
   network: tcp
   password: Aimer
-  port: 443
-  server: 8.222.223.51
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 每天更新，请加电报群防止失联
-  network: tcp
-  password: Aimer
-  port: 491
-  server: 8.219.126.137
+  port: 80
+  server: 204.110.220.188
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 日期：06-03
-  network: tcp
-  password: Aimer
-  port: 81
-  server: 210.61.97.241
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 免费VPN：https://tt.vg/gwaAy
   network: tcp
   password: Aimer
-  port: 443
-  server: 154.21.83.154
+  port: 80
+  server: 67.226.221.210
   skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
+  sni: epma.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇰🇷_韩国_1
+  network: tcp
+  password: Aimer
+  port: 11602
+  server: 175.203.32.50
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_1
   network: tcp
   password: Aimer
   port: 443
-  server: 172.245.67.49
+  server: 192.9.250.241
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇰🇷_韩国_2
+  network: tcp
+  password: Aimer
+  port: 12582
+  server: 211.217.31.160
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
@@ -131,67 +147,13 @@ proxies:
 - name: 🇺🇸_美国_2
   network: tcp
   password: Aimer
-  port: 443
-  server: 23.94.233.97
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_3
-  network: tcp
-  password: Aimer
-  port: 80
-  server: 67.226.221.199
+  port: 8081
+  server: 107.173.149.166
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇨🇳_中国_1
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 154.197.64.248
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇷🇺_俄罗斯_1
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 5.182.84.244
-  skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇫🇷_法国_1
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 141.11.203.191
-  skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_4
-  network: tcp
-  password: Aimer
-  port: 42522
-  server: 107.174.192.67
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_2
-  network: tcp
-  password: Aimer
-  port: 2087
-  server: 154.219.5.87
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_5
+- name: 🇺🇸_美国_3
   network: tcp
   password: Aimer
   port: 995
@@ -200,29 +162,47 @@ proxies:
   sni: epmd.ambercc.filegear-sg.me
   type: trojan
   udp: true
+- name: 🇺🇸_美国_4
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 172.82.16.99
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_5
+  network: tcp
+  password: Aimer
+  port: 3306
+  server: 104.168.87.155
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
 - name: 🇺🇸_美国_6
   network: tcp
   password: Aimer
-  port: 2087
-  server: 161.145.150.26
+  port: 12163
+  server: 202.91.34.109
   skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
+  sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_7
   network: tcp
   password: Aimer
-  port: 443
-  server: 162.159.152.11
+  port: 34237
+  server: 131.186.22.39
   skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
+  sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_8
   network: tcp
   password: Aimer
   port: 443
-  server: arvind.ns.cloudflare.com
+  server: 192.9.139.160
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
@@ -230,827 +210,26 @@ proxies:
 - name: 🇺🇸_美国_9
   network: tcp
   password: Aimer
-  port: 443
-  server: 172.82.16.99
-  skip-cert-verify: true
-  sni: epms.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇰🇷_韩国_1
-  network: tcp
-  password: Aimer
-  port: 10023
-  server: 121.175.16.6
-  skip-cert-verify: true
-  sni: epms.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_10
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 192.9.250.241
-  skip-cert-verify: true
-  sni: epms.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇷🇺_俄罗斯_2
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 46.254.93.52
-  skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_11
-  network: tcp
-  password: Aimer
-  port: 443
-  server: pranab.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_12
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 35.212.200.199
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_13
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 167.68.4.131
-  skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_14
-  network: tcp
-  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
-  port: 443
-  server: 104.21.35.247
-  skip-cert-verify: true
-  sni: ff.HuangSHANg2030.DPDnS.oRg
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_15
-  network: tcp
-  password: 895552fa-6284-4c1d-ba00-3944e0c7c626
-  port: 443
-  server: 104.21.71.112
-  skip-cert-verify: true
-  sni: CFR56ty7890.288288.sHOP
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_3
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: 120.233.44.201
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_16
-  network: tcp
-  password: 44ed7a37-af89-4cd1-8680-83a7207810d9
-  port: 443
-  server: 172.67.135.37
-  skip-cert-verify: true
-  sni: cCtv4.459.pp.uA
-  type: trojan
-  udp: true
-- name: 🏳️_未知_1
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: bring-glove-shine.stark-industries.solutions
-  skip-cert-verify: true
-  sni: bring-glove-shine.stark-industries.solutions
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_4
-  network: tcp
-  password: RlzoEILU
-  port: 33097
-  server: 36.151.251.61
-  skip-cert-verify: true
-  sni: 36.151.251.61
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: aes-128-gcm
-  name: 🇮🇷_伊朗_1
-  network: tcp
-  port: '1091'
-  server: 178.22.121.98
-  type: vmess
-  uuid: 6ef3b433-eea7-4e5d-95a5-c5f742ce2fb7
-- name: 🇺🇸_美国_17
-  network: tcp
-  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
-  port: 443
-  server: 172.67.133.248
-  skip-cert-verify: true
-  sni: DDd.890604.FIlEGear-sG.Me
-  type: trojan
-  udp: true
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_1
-  network: tcp
-  port: 443
-  server: pq.aws48.yydjc.top
-  servername: buylite.tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_2
-  network: tcp
-  port: 443
-  server: pq.aws48.yydjc.top
-  servername: buylite.tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_3
-  network: tcp
-  port: 443
-  server: pq.aws48.yydjc.top
-  servername: buylite.tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_4
-  network: tcp
-  port: 443
-  server: pq.aws48.yydjc.top
-  servername: buylite.tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_5
-  network: tcp
-  port: 443
-  server: pq.aws49.yydjc.top
-  servername: buylite.tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_6
-  network: tcp
-  port: 443
-  server: pq.aws50.yydjc.top
-  servername: tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_7
-  network: tcp
-  port: 443
-  server: pq.aws51.yydjc.top
-  servername: buylite.tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_18
-  network: tcp
-  port: 443
-  server: pq.aws52.yydjc.top
-  servername: tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_8
-  network: tcp
-  port: 443
-  server: pq.aws53.yydjc.top
-  servername: buylite.tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_9
-  network: tcp
-  port: 443
-  server: pq.aws54.yydjc.top
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_19
-  network: tcp
-  port: 443
-  server: pq.aws55.yydjc.top
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_10
-  network: tcp
-  port: 443
-  server: pq.aws56.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇯🇵_日本_11
-  network: tcp
-  port: 443
-  server: pq.aws57.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇸🇬_新加坡_1
-  network: tcp
-  port: 443
-  server: pq.aws58.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇸🇬_新加坡_2
-  network: tcp
-  port: 443
-  server: pq.aws59.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇸🇬_新加坡_3
-  network: tcp
-  port: 443
-  server: pq.aws60.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_20
-  network: tcp
-  port: 443
-  server: pq.aws61.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇸🇬_新加坡_4
-  network: tcp
-  port: 443
-  server: pq.aws62.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇸🇬_新加坡_5
-  network: tcp
-  port: 443
-  server: pq.aws63.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇸🇬_新加坡_6
-  network: tcp
-  port: 443
-  server: pq.aws64.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇸🇬_新加坡_7
-  network: tcp
-  port: 443
-  server: pq.aws65.yydjc.top
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_21
-  network: tcp
-  port: 443
-  server: 131.186.22.238
-  servername: buylite.music.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇨🇳_中国_5
-  network: tcp
-  port: 443
-  server: pq.aws11.yydjc.top
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇨🇳_中国_6
-  network: tcp
-  port: 443
-  server: pq.aws12.yydjc.top
-  servername: download-porter.hoyoverse.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇨🇳_中国_7
-  network: tcp
-  port: 443
-  server: pq.aws13.yydjc.top
-  servername: cdn-dynmedia-1.microsoft.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇨🇳_中国_8
-  network: tcp
-  port: 443
-  server: pq.aws14.yydjc.top
-  servername: www.mi.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇨🇳_中国_9
-  network: tcp
-  port: 443
-  server: pq.aws15.yydjc.top
-  servername: dyn.felissimo.co.jp
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇨🇳_中国_10
-  network: tcp
-  port: 443
-  server: pq.hinet.tw1.yydjc.top
-  servername: download.yydjc.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇨🇳_中国_11
-  network: tcp
-  port: 443
-  server: pq.hinet.tw2.yydjc.top
-  servername: download.yydjc.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇨🇳_中国_12
-  network: tcp
-  port: 443
-  server: pq.hinet.tw3.yydjc.top
-  servername: download.yydjc.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_22
-  network: tcp
-  port: 443
-  server: 146.235.208.162
-  servername: dcpqjs.yydjc.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_23
-  network: tcp
-  port: 443
-  server: 64.181.225.150
-  servername: dcpqjs.yydjc.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_24
-  network: tcp
-  port: 443
-  server: 192.9.129.206
-  servername: dcpqjs.yydjc.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_25
-  network: tcp
-  port: 443
-  server: 64.181.233.90
-  servername: dcpqjs.yydjc.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_26
-  network: tcp
-  port: 443
-  server: 146.235.228.34
-  servername: dcpqjs.yydjc.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇳🇱_荷兰_1
-  network: tcp
-  port: 443
-  server: 130.162.163.216
-  servername: buylite.tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_27
-  network: tcp
-  port: 443
-  server: 140.245.43.199
-  servername: tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_28
-  network: tcp
-  port: 443
-  server: 140.245.58.56
-  servername: tv.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇬🇧_英国_1
-  network: tcp
-  port: 443
-  server: 213.35.108.22
-  servername: buylite.music.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇧🇷_巴西
-  network: tcp
-  port: 443
-  server: 168.138.165.109
-  servername: buylite.music.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- flow: xtls-rprx-vision
-  name: 🇺🇸_美国_29
-  network: tcp
-  port: 443
-  server: 152.70.99.180
-  servername: buylite.music.apple.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_13
-  network: tcp
-  port: '31209'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_14
-  network: tcp
-  port: '31209'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_15
-  network: tcp
-  port: '17233'
-  server: aa715e82-sunz40-t1tfcf-1o3sh.cm5.p5pv.com
-  type: vmess
-  uuid: 96b3f2ee-5f66-11ee-804b-f23c9164ca5d
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_16
-  network: tcp
-  port: '17232'
-  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
-  type: vmess
-  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-- name: 🏳️_未知_2
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: chop-wrist-bud.stark-industries.solutions
-  skip-cert-verify: true
-  sni: chop-wrist-bud.stark-industries.solutions
-  type: trojan
-  udp: true
-- name: 🏳️_未知_3
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: cache-giver-wife.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 🏳️_未知_4
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: guy-trace-lyric.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 🏳️_未知_5
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: cache-giver-wife.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_17
-  network: tcp
-  port: '41024'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🏳️_未知_6
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: bats-paper-chump.stark-industries.solutions
-  skip-cert-verify: true
-  sni: bats-paper-chump.stark-industries.solutions
-  type: trojan
-  udp: true
-- name: 🏳️_未知_7
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: guy-trace-lyric.stark-industries.solutions
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 🏳️_未知_8
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: strut-brisk-scope.stark-industries.solutions
-  skip-cert-verify: true
-  sni: strut-brisk-scope.stark-industries.solutions
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_18
-  network: tcp
-  port: '47883'
-  server: 120.198.44.126
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_19
-  network: tcp
-  port: '41024'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_20
-  network: tcp
-  port: '35921'
-  server: 120.198.71.216
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🏳️_未知_9
-  network: tcp
-  password: e6a2e741-0fce-440b-910c-b81325e2263a
-  port: 443
-  server: bring-glove-shine.stark-industries.solutions
-  skip-cert-verify: true
-  sni: bring-glove-shine.stark-industries.solutions
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_21
-  network: tcp
-  port: '35921'
-  server: 120.198.71.216
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇳_中国_22
-  network: tcp
-  password: bf109e1a-2b99-11ed-bb74-f23c9164ca5d
-  port: 27231
-  server: ddd0977f-sxaf40-t3b4w3-ywms.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: ddd0977f-sxaf40-t3b4w3-ywms.cm5.cnkuaishou.com
-  type: trojan
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_23
-  network: tcp
-  port: '17233'
-  server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
-  type: vmess
-  uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_24
-  network: tcp
-  port: '47883'
-  server: 120.198.44.126
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_25
-  network: tcp
-  port: '41024'
-  server: 183.236.51.38
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇨🇳_中国_26
-  network: tcp
-  port: '31209'
-  server: 120.232.153.40
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: '0'
-  cipher: auto
-  name: 🇮🇷_伊朗_2
-  network: tcp
-  port: '1091'
-  server: 178.22.121.98
-  type: vmess
-  uuid: 6ef3b433-eea7-4e5d-95a5-c5f742ce2fb7
-- name: 🇺🇸_美国_30
-  network: tcp
-  password: Aimer
   port: 2053
   server: 216.24.57.1
   skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_31
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 199.34.228.191
-  skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇰🇷_韩国_2
-  network: tcp
-  password: Aimer
-  port: 12318
-  server: 220.81.80.96
-  skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇰🇷_韩国_3
   network: tcp
   password: Aimer
-  port: 12296
-  server: 119.202.158.65
+  port: 50000
+  server: 221.163.173.252
   skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
+  sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇰🇷_韩国_4
   network: tcp
   password: Aimer
-  port: 12490
-  server: 220.118.248.123
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_27
-  network: tcp
-  password: Aimer
-  port: 2096
-  server: 154.211.8.47
+  port: 12487
+  server: 221.163.103.29
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
@@ -1058,17 +237,17 @@ proxies:
 - name: 🇰🇷_韩国_5
   network: tcp
   password: Aimer
-  port: 32396
-  server: 121.147.127.154
+  port: 50001
+  server: 118.36.92.99
   skip-cert-verify: true
-  sni: epms.ambercc.filegear-sg.me
+  sni: epma.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇰🇷_韩国_6
   network: tcp
   password: Aimer
-  port: 30001
-  server: 121.189.106.45
+  port: 50000
+  server: 222.100.242.124
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
@@ -1076,35 +255,17 @@ proxies:
 - name: 🇰🇷_韩国_7
   network: tcp
   password: Aimer
-  port: 50000
-  server: 210.99.119.3
+  port: 16058
+  server: 220.118.248.123
   skip-cert-verify: true
-  sni: epms.ambercc.filegear-sg.me
+  sni: epma.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇰🇷_韩国_8
   network: tcp
   password: Aimer
-  port: 50000
-  server: 121.133.117.221
-  skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_32
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 130.250.137.63
-  skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇷🇺_俄罗斯_3
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 176.124.223.50
+  port: 32396
+  server: 121.147.127.154
   skip-cert-verify: true
   sni: epmd.ambercc.filegear-sg.me
   type: trojan
@@ -1115,32 +276,23 @@ proxies:
   port: 50000
   server: 119.194.220.146
   skip-cert-verify: true
-  sni: epms.ambercc.filegear-sg.me
+  sni: epmd.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇰🇷_韩国_10
   network: tcp
   password: Aimer
-  port: 12356
-  server: 210.100.138.35
+  port: 12225
+  server: 59.29.143.247
   skip-cert-verify: true
-  sni: epmd.ambercc.filegear-sg.me
+  sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇰🇷_韩国_11
   network: tcp
   password: Aimer
-  port: 12302
-  server: 220.118.248.123
-  skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_33
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 129.150.52.254
+  port: 10912
+  server: 221.159.140.95
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
@@ -1148,17 +300,8 @@ proxies:
 - name: 🇰🇷_韩国_12
   network: tcp
   password: Aimer
-  port: 33522
-  server: 220.120.172.116
-  skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_34
-  network: tcp
-  password: Aimer
-  port: 443
-  server: damien.ns.cloudflare.com
+  port: 12356
+  server: 210.100.138.35
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
@@ -1166,67 +309,121 @@ proxies:
 - name: 🇰🇷_韩国_13
   network: tcp
   password: Aimer
-  port: 50003
-  server: 211.195.83.140
+  port: 12541
+  server: 121.150.217.106
   skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
+  sni: epma.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇳🇱_荷兰_1
+  network: tcp
+  password: Aimer
+  port: 5006
+  server: 45.154.98.230
+  skip-cert-verify: true
+  sni: epma.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇰🇷_韩国_14
   network: tcp
   password: Aimer
-  port: 10013
-  server: 125.133.178.233
+  port: 30001
+  server: 121.189.106.45
   skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
+  sni: epmd.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇺🇸_美国_35
+- name: 🇺🇸_美国_10
   network: tcp
   password: Aimer
-  port: 80
-  server: 204.110.223.165
+  port: 2083
+  server: 161.145.150.29
   skip-cert-verify: true
-  sni: epms.ambercc.filegear-sg.me
+  sni: epma.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇺🇸_美国_36
+- name: 🇺🇸_美国_11
   network: tcp
   password: Aimer
-  port: 10511
-  server: 65.75.194.43
+  port: 8443
+  server: 104.129.166.131
   skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
+  sni: epmd.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇺🇦_乌克兰_1
+- name: 🇺🇸_美国_12
   network: tcp
   password: Aimer
-  port: 2053
-  server: 31.43.179.60
+  port: 2083
+  server: 130.250.137.63
   skip-cert-verify: true
-  sni: epmq.ambercc.filegear-sg.me
+  sni: epmd.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇸🇮_斯洛文尼亚
+- name: 🇺🇸_美国_13
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 160.79.105.133
+  skip-cert-verify: true
+  sni: epma.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_1
   network: tcp
   password: Aimer
   port: 2087
-  server: 92.53.190.161
+  server: 154.219.5.87
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇺🇸_美国_37
+- name: 🇺🇸_美国_14
   network: tcp
   password: Aimer
-  port: 443
-  server: bestcf.030101.xyz
+  port: 2087
+  server: 167.68.5.248
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇺🇦_乌克兰_2
+- name: 🇰🇷_韩国_15
+  network: tcp
+  password: Aimer
+  port: 12189
+  server: 220.120.139.237
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇷🇺_俄罗斯_1
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 5.182.85.255
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇷🇺_俄罗斯_2
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 46.254.93.251
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_15
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 66.81.247.88
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇦_乌克兰_1
   network: tcp
   password: Aimer
   port: 443
@@ -1235,16 +432,7 @@ proxies:
   sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇯🇵_日本_12
-  network: tcp
-  password: Aimer
-  port: 2083
-  server: 103.116.7.103
-  skip-cert-verify: true
-  sni: epms.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 🇷🇺_俄罗斯_4
+- name: 🇷🇺_俄罗斯_3
   network: tcp
   password: Aimer
   port: 2083
@@ -1253,38 +441,227 @@ proxies:
   sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇺🇸_美国_38
+- name: 🇯🇵_日本_1
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 103.116.7.152
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇦_乌克兰_2
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 45.67.215.217
+  skip-cert-verify: true
+  sni: epma.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_2
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 154.197.64.248
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_16
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 35.212.200.199
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_17
+  network: tcp
+  password: Aimer
+  port: 443
+  server: theo.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epma.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇷🇺_俄罗斯_4
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 77.232.140.7
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_3
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 154.211.8.47
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_18
+  network: tcp
+  password: Aimer
+  port: 443
+  server: lynn.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_19
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 135.84.64.77
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_20
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 216.24.57.207
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇯🇵_日本_2
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇸🇮_斯洛文尼亚
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 92.53.190.161
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇷🇺_俄罗斯_5
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 176.124.223.50
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇷🇺_俄罗斯_6
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 5.182.85.189
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_21
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 199.34.228.191
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_22
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 162.120.94.23
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_23
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 23.94.233.97
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_24
   network: tcp
   password: Aimer
   port: 12443
   server: 23.94.78.219
   skip-cert-verify: true
-  sni: epms.ambercc.filegear-sg.me
+  sni: epmd.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇺🇸_美国_39
+- name: 🇰🇷_韩国_16
   network: tcp
   password: Aimer
-  port: 3306
-  server: 104.168.87.155
+  port: 12490
+  server: 220.118.248.123
   skip-cert-verify: true
   sni: epms.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇰🇷_韩国_15
+- name: 🇰🇷_韩国_17
   network: tcp
   password: Aimer
-  port: 50003
-  server: 220.118.166.81
+  port: 10013
+  server: 125.133.178.233
   skip-cert-verify: true
-  sni: epme.ambercc.filegear-sg.me
+  sni: epmd.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 🇬🇧_英国_2
+- name: 🇰🇷_韩国_18
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 210.99.119.3
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_25
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 192.200.160.19
+  skip-cert-verify: true
+  sni: epms.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_26
+  network: tcp
+  password: Aimer
+  port: 8443
+  server: 192.200.160.15
+  skip-cert-verify: true
+  sni: epma.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇰🇷_韩国_19
+  network: tcp
+  password: Aimer
+  port: 34222
+  server: 125.142.168.166
+  skip-cert-verify: true
+  sni: epmd.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_4
   network: ws
-  port: 443
-  server: 185.106.176.128
-  servername: edms.ambercc.filegear-sg.me
+  port: 80
+  server: 8.210.92.24
+  servername: edms.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1292,27 +669,27 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edms.ambercc.filegear-sg.me
+      host: edms.aimercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇨🇳_中国_28
+- name: 🇨🇳_中国_5
   network: ws
   port: 443
   server: 103.44.255.81
-  servername: bz.ylks0033.dpdns.org
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
-- name: 🇨🇳_中国_29
+- name: 🇺🇸_美国_27
   network: ws
-  port: 51922
-  server: 8.216.121.234
-  servername: edma.ambercc.filegear-sg.me
+  port: 80
+  server: 204.110.220.188
+  servername: edms.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1320,13 +697,13 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edma.ambercc.filegear-sg.me
+      host: edms.aimercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇦🇺_澳大利亚
+- name: 🇰🇷_韩国_20
   network: ws
-  port: 8250
-  server: 43.155.20.137
-  servername: edms.ambercc.filegear-sg.me
+  port: 11602
+  server: 175.203.32.50
+  servername: edms.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1334,250 +711,208 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edms.ambercc.filegear-sg.me
+      host: edms.aimercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇨🇳_中国_30
-  network: ws
-  port: 443
-  server: 8.222.223.51
-  servername: edma.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇨🇳_中国_31
-  network: ws
-  port: 491
-  server: 8.219.126.137
-  servername: edma.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇨🇳_中国_32
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: edma.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_13
-  network: ws
-  port: 11300
-  server: 58.188.165.215
-  servername: edms.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edms.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇷🇺_俄罗斯_5
+- name: 🇺🇸_美国_28
   network: ws
   port: 443
-  server: 217.30.10.55
-  servername: edma.ambercc.filegear-sg.me
+  server: 98.70.26.236
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇨🇳_中国_6
+  network: ws
+  port: 54321
+  server: 59.149.204.218
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_29
+  network: ws
+  port: 443
+  server: 160.79.105.76
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇦_乌克兰_3
   network: ws
   port: 443
-  server: 45.67.215.58
-  servername: bz.ylks0033.dpdns.org
+  server: 45.67.215.92
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
-- name: 🇺🇸_美国_40
-  network: ws
-  port: 8843
-  server: 47.79.90.82
-  servername: edma.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_41
-  network: ws
-  port: 50010
-  server: 138.2.5.92
-  servername: edms.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edms.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_42
+- name: 🇦🇹_奥地利_1
   network: ws
   port: 443
-  server: 192.0.54.134
-  servername: bz.ylks0033.dpdns.org
+  server: 212.183.88.70
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_43
-  network: ws
-  port: 443
-  server: lynn.ns.cloudflare.com
-  servername: edms.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edms.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇩🇪_德国_1
-  network: ws
-  port: 443
-  server: 185.16.110.200
-  servername: bz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: bz.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_44
-  network: ws
-  port: 443
-  server: 160.79.104.117
-  servername: bz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: bz.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_2
-  network: ws
-  port: 443
-  server: 185.133.35.85
-  servername: bz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: bz.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_45
-  network: ws
-  port: 443
-  server: sage.ns.cloudflare.com
-  servername: edma.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_46
-  network: ws
-  port: 443
-  server: 160.79.104.6
-  servername: bz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: bz.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_47
-  network: ws
-  port: 443
-  server: 160.79.104.175
-  servername: bz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇿🇦_南非_1
   network: ws
   port: 443
-  server: 160.123.255.246
-  servername: bz.ylks0033.dpdns.org
+  server: 160.123.255.156
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
-- name: 🇰🇷_韩国_16
+- name: 🇳🇱_荷兰_2
   network: ws
-  port: 10023
-  server: 121.175.16.6
+  port: 443
+  server: 185.133.35.45
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇳🇱_荷兰_3
+  network: ws
+  port: 443
+  server: 185.133.35.22
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇦_乌克兰_4
+  network: ws
+  port: 443
+  server: 45.67.215.209
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_30
+  network: ws
+  port: 443
+  server: 63.141.128.163
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /ss.vs2024.us.kg
+- name: 🇨🇳_中国_7
+  network: ws
+  port: 443
+  server: 47.57.233.126
+  servername: edms.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edms.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇦🇹_奥地利_2
+  network: ws
+  port: 443
+  server: 212.183.88.94
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_31
+  network: ws
+  port: 80
+  server: 67.226.221.210
+  servername: edms.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edms.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇺🇸_美国_32
+  network: ws
+  port: 443
+  server: 160.79.105.118
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_33
+  network: ws
+  port: 443
+  server: arvind.ns.cloudflare.com
   servername: edms.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -1588,389 +923,641 @@ proxies:
     headers:
       host: edms.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_48
+- name: 🇺🇸_美国_34
   network: ws
   port: 443
-  server: 192.0.54.24
-  servername: bz.ylks0033.dpdns.org
+  server: 160.79.104.115
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
-- name: 🇩🇪_德国_2
+- name: 🇺🇸_美国_35
   network: ws
   port: 443
-  server: 185.16.110.181
-  servername: bz.ylks0033.dpdns.org
+  server: 63.141.128.102
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
-- name: 🇺🇸_美国_49
+- name: 🇩🇪_德国
   network: ws
   port: 443
-  server: 69.84.182.41
-  servername: bz.ylks0033.dpdns.org
+  server: 185.16.110.249
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
+- name: 🇺🇸_美国_36
+  network: ws
+  port: 443
+  server: 160.79.105.121
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_21
+  network: ws
+  port: 18888
+  server: 183.106.162.127
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_37
+  network: ws
+  port: 443
+  server: 63.141.128.140
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_22
+  network: ws
+  port: 30012
+  server: 220.118.248.123
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇦🇹_奥地利_3
+  network: ws
+  port: 443
+  server: 212.183.88.193
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_38
+  network: ws
+  port: 443
+  server: 130.250.137.73
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇦🇹_奥地利_4
+  network: ws
+  port: 443
+  server: 212.183.88.16
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_39
+  network: ws
+  port: 443
+  server: 160.79.105.45
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_40
+  network: ws
+  port: 443
+  server: 135.84.76.110
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_41
+  network: ws
+  port: 443
+  server: 216.24.57.59
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_23
+  network: ws
+  port: 38822
+  server: 220.79.203.126
+  servername: edms.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edms.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇺🇸_美国_42
+  network: ws
+  port: 443
+  server: 63.141.128.88
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_43
+  network: ws
+  port: '2052'
+  server: s2.db-link02.top
+  type: vmess
+  uuid: 8deede4a-10ae-353e-a43b-51947f57c73d
+  ws-opts:
+    path: /dabai.in104.18.126.97
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_44
+  network: ws
+  port: '8080'
+  server: s2.db-link01.top
+  type: vmess
+  uuid: 8deede4a-10ae-353e-a43b-51947f57c73d
+  ws-opts:
+    path: /dabai.in104.21.236.28
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_45
+  network: ws
+  port: '80'
+  server: s3.cn-db.top
+  type: vmess
+  uuid: 8deede4a-10ae-353e-a43b-51947f57c73d
+  ws-opts:
+    path: /dabai.in172.64.2.3
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_46
+  network: ws
+  port: '2082'
+  server: s2.db-link02.top
+  type: vmess
+  uuid: 8deede4a-10ae-353e-a43b-51947f57c73d
+  ws-opts:
+    path: /dabai.in104.19.209.114
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_47
+  network: ws
+  port: '2095'
+  server: s5.cn-db.top
+  type: vmess
+  uuid: 8deede4a-10ae-353e-a43b-51947f57c73d
+  ws-opts:
+    path: /dabai.in172.67.101.159
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_48
+  network: ws
+  port: '80'
+  server: s2.cn-db.top
+  type: vmess
+  uuid: 8deede4a-10ae-353e-a43b-51947f57c73d
+  ws-opts:
+    path: /dabai.in104.25.185.44
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_49
+  network: ws
+  port: '2086'
+  server: s2.cn-db.top
+  type: vmess
+  uuid: 8deede4a-10ae-353e-a43b-51947f57c73d
+  ws-opts:
+    path: /dabai.in104.24.172.93
 - name: 🇺🇸_美国_50
   network: ws
   port: 443
-  server: 160.79.105.219
-  servername: bz.ylks0033.dpdns.org
+  server: 63.141.128.209
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
+    path: /ss.vs2024.us.kg
+- name: 🇬🇧_英国_1
+  network: ws
+  port: 443
+  server: 217.163.76.97
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_51
   network: ws
   port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: bz.ylks0033.dpdns.org
+  server: 160.79.105.78
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇿🇦_南非_2
+  network: ws
+  port: 443
+  server: 160.123.255.5
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇳🇱_荷兰_4
+  network: ws
+  port: 443
+  server: 185.133.35.167
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_52
   network: ws
   port: 443
-  server: 69.84.182.53
-  servername: bz.ylks0033.dpdns.org
+  server: 160.79.104.102
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇿🇦_南非_3
+  network: ws
+  port: 443
+  server: 160.123.255.30
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_53
   network: ws
   port: 443
-  server: duke.ns.cloudflare.com
-  servername: edma.ambercc.filegear-sg.me
+  server: 69.84.182.89
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇿🇦_南非_2
-  network: ws
-  port: 443
-  server: 160.123.255.163
-  servername: bz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_54
   network: ws
   port: 443
-  server: 135.84.76.143
-  servername: bz.ylks0033.dpdns.org
+  server: 63.141.128.218
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_55
   network: ws
-  port: 8080
-  server: 172.67.73.163
-  servername: 18.6na7PY43IT.zuLaiR.Org.
+  port: 443
+  server: 160.79.104.79
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 51fda508-20aa-419e-b4c3-3a6202411412
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: 18.6na7PY43IT.zuLaiR.Org.
-    path: /
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_56
   network: ws
   port: 443
-  server: 104.18.20.20
-  servername: us2s.globals-download.com
+  server: 63.141.128.12
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: us2s.globals-download.com
-    path: /pq/us2
-- name: 🇺🇸_美国_57
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇿🇦_南非_4
   network: ws
   port: 443
-  server: 104.18.20.20
-  servername: us3.globals-download.com
+  server: 160.123.255.155
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: us3.globals-download.com
-    path: /pq/us3
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_57
+  network: ws
+  port: 2087
+  server: 162.120.94.23
+  servername: edms.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edms.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇺🇸_美国_58
   network: ws
   port: 443
-  server: 104.18.20.20
-  servername: us4.globals-download.com
+  server: 192.200.160.14
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: us4.globals-download.com
-    path: /pq/us4
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇦_乌克兰_5
+  network: ws
+  port: 443
+  server: 45.67.215.117
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /ss.vs2024.us.kg
+- name: 🇬🇧_英国_2
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_3
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_59
   network: ws
   port: 443
-  server: 104.18.20.20
-  servername: us5.globals-download.com
+  server: 160.79.104.233
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: us5.globals-download.com
-    path: /pq/us5
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇦🇹_奥地利_5
+  network: ws
+  port: 443
+  server: 212.183.88.136
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_60
   network: ws
   port: 443
-  server: 104.18.20.20
-  servername: us6s.globals-download.com
+  server: 63.141.128.3
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: us6s.globals-download.com
-    path: /pq/us6
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_61
   network: ws
   port: 443
-  server: 104.18.20.20
-  servername: us7.globals-download.com
+  server: 192.0.54.42
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: us7.globals-download.com
-    path: /pq/us7
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_62
   network: ws
   port: 443
-  server: 104.27.125.158
-  servername: jp1.xn--ghqu5fm27b67w.com
+  server: 192.0.63.243
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: jp1.xn--ghqu5fm27b67w.com
-    path: /pq/jp1
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_63
   network: ws
   port: 443
-  server: 104.18.20.69
-  servername: in1s.pqvip.top
+  server: 160.79.105.89
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: in1s.pqvip.top
-    path: /pq/in1
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_64
   network: ws
   port: 443
-  server: 104.18.20.69
-  servername: in2s.pqvip.top
+  server: 192.0.54.149
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: in2s.pqvip.top
-    path: /pq/in2
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_65
   network: ws
   port: 443
-  server: 104.18.20.69
-  servername: in3s.pqvip.top
+  server: theo.ns.cloudflare.com
+  servername: edms.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: in3s.pqvip.top
-    path: /pq/in3
+      host: edms.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇺🇸_美国_66
   network: ws
   port: 443
-  server: 104.18.20.69
-  servername: in4sa.pqvip.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-  ws-opts:
-    headers:
-      host: in4sa.pqvip.top
-    path: /pq/in4
-- name: 🇺🇸_美国_67
-  network: ws
-  port: 443
-  server: 104.18.20.69
-  servername: us1s.pqvip.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-  ws-opts:
-    headers:
-      host: us1s.pqvip.top
-    path: /pq/us1
-- name: 🇺🇸_美国_68
-  network: ws
-  port: 443
-  server: 104.18.20.69
-  servername: us2s.pqvip.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-  ws-opts:
-    headers:
-      host: us2s.pqvip.top
-    path: /pq/us2
-- name: 🇺🇸_美国_69
-  network: ws
-  port: 443
-  server: 104.18.20.69
-  servername: us3s.pqvip.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-  ws-opts:
-    headers:
-      host: us3s.pqvip.top
-    path: /pq/us3
-- name: 🇺🇸_美国_70
-  network: ws
-  port: 443
-  server: 104.18.20.69
-  servername: us4s.pqvip.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-  ws-opts:
-    headers:
-      host: us4s.pqvip.top
-    path: /pq/us4
-- name: 🇺🇸_美国_71
-  network: ws
-  port: 443
-  server: 104.18.20.69
-  servername: us5s.pqvip.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405bf2f2-fb03-4a1d-a6c0-beb6a3f841c3
-  ws-opts:
-    headers:
-      host: us5s.pqvip.top
-    path: /pq/us5
-- name: 🇰🇷_韩国_17
-  network: ws
-  port: 18888
-  server: 183.106.162.127
-  servername: bz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: bz.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_72
-  network: ws
-  port: 443
-  server: 129.150.52.254
-  servername: edma.ambercc.filegear-sg.me
+  server: 131.186.40.221
+  servername: edms.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -1978,120 +1565,92 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edma.ambercc.filegear-sg.me
+      host: edms.aimercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_18
-  network: ws
-  port: 12240
-  server: 183.98.186.160
-  servername: edma.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_73
-  network: ws
-  port: 443
-  server: 140.245.85.110
-  servername: edma.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_19
+- name: 🇰🇷_韩国_24
   network: ws
   port: 11481
   server: 119.197.201.29
-  servername: bz.ylks0033.dpdns.org
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: bz.ylks0033.dpdns.org
+      host: za.bgm2024.dpdns.org
     path: /?ed=2560
-- name: 🇫🇷_法国_2
-  network: ws
-  port: 8080
-  server: 141.11.148.60
-  servername: edms.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edms.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_74
+- name: 🇺🇸_美国_67
   network: ws
   port: 443
-  server: bestcf.030101.xyz
-  servername: edma.ambercc.filegear-sg.me
+  server: 63.141.128.193
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇵🇱_波兰
+      host: za.bgm2024.dpdns.org
+    path: /ss.vs2024.us.kg
+- name: 🇰🇷_韩国_25
+  network: ws
+  port: 22105
+  server: 61.75.93.14
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_68
   network: ws
   port: 443
-  server: 176.105.253.98
-  servername: edma.ambercc.filegear-sg.me
+  server: 160.79.104.11
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇨🇳_中国_33
-  network: ws
-  port: 12351
-  server: 42.200.111.106
-  servername: edma.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edma.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇺🇸_美国_75
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇿🇦_南非_5
   network: ws
   port: 443
-  server: 172.245.67.49
-  servername: edms.ambercc.filegear-sg.me
+  server: 160.123.255.159
+  servername: za.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: edms.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_26
+  network: ws
+  port: 19222
+  server: 121.163.244.186
+  servername: za.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: za.bgm2024.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -2158,7 +1717,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>德国-NF解锁波兰自制剧-ChatGPT-TikTok-YouTube-b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top:443
+  name: VMESS-未知>英国-NF解锁波兰自制剧-ChatGPT-TikTok-YouTube-b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top:443
   network: ws
   port: 443
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
