@@ -1287,6 +1287,12 @@ proxies:
     headers:
       HOST: orvps2.horsenma.net
     path: /horsen
+- cipher: chacha20-ietf-poly1305
+  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.167.197.25:57456
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  type: ss
 - alterId: 0
   cipher: auto
   name: 美国 001
@@ -3954,7 +3960,88 @@ proxies:
     headers:
       Host: Bpalanenok.org
     path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
-- name: 🇺🇸_US_美国_2
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国->🇬🇧_GB_英国
+  network: ws
+  port: 80
+  server: tci2.tiamoci.us.kg
+  type: vmess
+  uuid: 749c4694-c824-4d51-b210-cc54d5925444
+  ws-opts:
+    headers:
+      host: tci2.tiamoci.us.kg
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  network: ws
+  port: 23093
+  server: 45.147.201.231
+  type: vmess
+  uuid: 78546323-3c10-4c50-813a-66bf2e6d93f9
+  ws-opts:
+    path: /
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  password: 96c5f18c-9390-11eb-86a4-f23c913c8d2b
+  port: 15229
+  server: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
+  skip-cert-verify: false
+  sni: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国->🇺🇸_US_美国
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+  port: 15229
+  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  skip-cert-verify: false
+  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
+  type: trojan
+- cipher: aes-256-gcm
+  name: 🇺🇸_US_美国_2
+  password: 4QHLWJ3KNY7GIS40
+  port: 20007
+  server: 185.47.254.177
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  password: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
+  port: 15229
+  server: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
+  skip-cert-verify: false
+  sni: e0fc3fd6-sxc9s0-t5cryd-4w8.cu.plebai.net
+  type: trojan
+- name: 🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 172.67.204.120
+  sni: ddcDe.890603.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: ddcde.890603.xyz
+    path: /COp52Dbu3dvwvDWUxOqxq
+- name: 🇺🇸_US_美国_4
   network: ws
   password: 15b24b56-d667-4fa8-b548-f3dc942fb461
   port: 443
@@ -3964,32 +4051,6 @@ proxies:
   udp: true
   ws-opts:
     path: /4p35eUnmGxQ8YJFJxz
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
-  port: 15229
-  server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  skip-cert-verify: false
-  sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸_US_美国_3
-  password: 360e21d21977dc11
-  port: 57456
-  server: 104.167.197.25
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸_US_美国_4
-  password: ojcP36n1SouDcnBg9EOZP8
-  port: 1490
-  server: 9.163.232.180
-  type: ss
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  password: 96c5f18c-9390-11eb-86a4-f23c913c8d2b
-  port: 15229
-  server: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
-  skip-cert-verify: false
-  sni: 68e85139-sxc9s0-t1jkae-18y1l.cu.plebai.net
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 🇺🇸US-172.233.128.126-0353 | 268.559MB
   password: oXGp1+ihlfKg826H
