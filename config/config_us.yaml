@@ -1172,6 +1172,28 @@ proxies:
     headers:
       Host: tci2.tiamoci.us.kg
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.167.197.25:57456
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-tci1.tiamoci.us.kg:8080
+  network: ws
+  port: 8080
+  server: tci1.tiamoci.us.kg
+  servername: tci1.tiamoci.us.kg
+  skip-cert-verify: true
+  type: vmess
+  uuid: 53892d11-81b9-464a-abd8-78c72c48f1b0
+  ws-opts:
+    headers:
+      HOST: tci1.tiamoci.us.kg
+    path: /
 - alterId: 0
   cipher: auto
   name: 美国 001
