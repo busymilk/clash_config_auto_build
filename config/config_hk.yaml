@@ -83,23 +83,61 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alterId: 32
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
 - cipher: chacha20-ietf-poly1305
-  name: 1|4🇭🇰香港|官网：m5c3cloud.pro
-  password: 429fdb11-9655-4c71-8f47-f5708bad744a
+  name: 0|5🇭🇰香港|官网：abluecloud.xyz
+  password: 679eea2f-1c4f-466f-aaa5-e3e79ed8cff8
+  port: 36141
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|6🇭🇰香港|官网：a5b3cloud.pro
+  password: 679eea2f-1c4f-466f-aaa5-e3e79ed8cff8
+  port: 36143
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|7🇭🇰香港住宅IP|官网：a5b3cloud.pro
+  password: 679eea2f-1c4f-466f-aaa5-e3e79ed8cff8
+  port: 36145
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|4🇭🇰香港|官网：米卡莎.xyz
+  password: 8e8c39b8-8483-47b7-bb48-c29c76f917d8
   port: 31141
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|5🇭🇰香港|官网：mikasacloud.site
-  password: 429fdb11-9655-4c71-8f47-f5708bad744a
+  name: 1|5🇭🇰香港|官网：米卡莎.xyz
+  password: 8e8c39b8-8483-47b7-bb48-c29c76f917d8
   port: 31143
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|6🇭🇰香港家宽|官网：m5c3cloud.pro
-  password: 429fdb11-9655-4c71-8f47-f5708bad744a
+  password: 8e8c39b8-8483-47b7-bb48-c29c76f917d8
   port: 31145
   server: freem.vidalith.com
   type: ss
@@ -141,16 +179,14 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- alterId: 64
-  cipher: auto
-  name: 13|🇭🇰 香港|@ripaojiedian
-  port: 49554
-  server: 183.236.51.38
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 13,14|香港|@ripaojiedian
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 120.233.128.68
+  skip-cert-verify: true
+  sni: 120.233.128.68
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 13|🇭🇰 香港2|@ripaojiedian
   password: 1450cecfb93f
@@ -162,30 +198,26 @@ proxies:
     path: /simieepvt
     skip-cert-verify: false
     tls: true
-  port: 29755
+  port: 41099
   server: 121.127.231.217
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 13|🇭🇰 香港3|@ripaojiedian
-  port: 49302
-  server: 183.236.51.38
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 13|🇭🇰 香港4|@ripaojiedian
-  port: 27680
-  server: 38.147.189.7
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 1e17ef3c-b4a9-4430-ba37-3c986dba8f2f
+- name: 13,14|香港3|@ripaojiedian
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 125.94.40.221
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+- name: 13,14|香港4|@ripaojiedian
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 113.99.140.184
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
 - alterId: 64
   cipher: auto
   name: 13|🇭🇰 香港5|@ripaojiedian
@@ -212,54 +244,32 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- name: 13,14|香港7|@ripaojiedian
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 113.99.140.184
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 13|🇭🇰 香港8|@ripaojiedian
-  port: 59652
-  server: 183.236.51.38
+  name: 13|🇭🇰 香港7@ripaojiedian
+  port: 29992
+  server: 103.224.80.111
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+  uuid: c3659582-a6e0-45c2-92ec-3b4d8b240e07
+- alterId: 2
   cipher: auto
-  name: 14|香港|@ripaojiedian
-  network: tcp
-  port: '49554'
-  server: 183.236.51.38
+  name: 13,14|香港8|@ripaojiedian
+  network: ws
+  port: '460'
+  server: 9b53711d-sxlj40-szcxa1-dmd8.hkt.east.wctype.com
   servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 14|香港3|@ripaojiedian
-  network: tcp
-  port: '49302'
-  server: 183.236.51.38
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 14|香港4|@ripaojiedian
-  network: tcp
-  port: '27680'
-  server: 38.147.189.7
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1e17ef3c-b4a9-4430-ba37-3c986dba8f2f
+  uuid: 2058bdd6-1505-11f0-a035-f23c95b6f51d
+  ws-opts:
+    headers:
+      Host: a605477178.m.ctrip.com
+    path: /
 - alterId: 64
   cipher: auto
   name: 14|香港5|@ripaojiedian
@@ -270,16 +280,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 14|香港8|@ripaojiedian
+  name: 14|香港7@ripaojiedian
   network: tcp
-  port: '59652'
-  server: 183.236.51.38
+  port: '29992'
+  server: 103.224.80.111
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: c3659582-a6e0-45c2-92ec-3b4d8b240e07
 - name: 15|HK_speednode_0023
   network: ws
   port: 443
@@ -296,11 +306,11 @@ proxies:
     path: /Telegram @pgkj666 /?ed=2560
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.113.136-0313 | 7.555MB
+  name: 🇭🇰HK-42.2.113.136-0313 | 15.749MB
   network: ws
   port: 80
   server: e4fac854-sum4g0-sx1cxx-1tfjk.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.113.136-0313 | 7.555MB
+  servername: 🇭🇰HK-42.2.113.136-0313 | 15.749MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -311,11 +321,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.113.136-0314 | 7.234MB
+  name: 🇭🇰HK-42.2.113.136-0314 | 10.814MB
   network: ws
   port: 80
   server: 055413e9-sucv40-texsud-1l6ym.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.113.136-0314 | 7.234MB
+  servername: 🇭🇰HK-42.2.113.136-0314 | 10.814MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -326,11 +336,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.113.136-0321 | 4.911MB
+  name: 🇭🇰HK-42.2.113.136-0321 | 6.075MB
   network: ws
   port: 80
   server: c53bf275-sv2sg0-svv72o-1e0ty.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.113.136-0321 | 4.911MB
+  servername: 🇭🇰HK-42.2.113.136-0321 | 6.075MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -341,11 +351,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.202.165-0355 | 3.909MB
+  name: 🇭🇰HK-1.65.202.165-0355 | 4.951MB
   network: ws
   port: 80
   server: 033a3be9-sva740-t0r7l4-1ruih.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-0355 | 3.909MB
+  servername: 🇭🇰HK-1.65.202.165-0355 | 4.951MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -356,11 +366,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.202.165-0341 | 3.885MB
+  name: 🇭🇰HK-1.65.202.165-0341 | 4.813MB
   network: ws
   port: 80
   server: 07d2e2cb-sv0xs0-svv72o-1e0ty.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-0341 | 3.885MB
+  servername: 🇭🇰HK-1.65.202.165-0341 | 4.813MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -371,11 +381,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.202.165-0378 | 2.887MB
+  name: 🇭🇰HK-1.65.202.165-0378 | 3.131MB
   network: ws
   port: 80
   server: 9e6fe842-sv4n40-t6ctgc-1s3hd.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-0378 | 2.887MB
+  servername: 🇭🇰HK-1.65.202.165-0378 | 3.131MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -386,7 +396,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇭🇰HK-8.218.42.21-0305 | 1.79MB
+  name: 🇭🇰HK-8.218.42.21-0305 | 2.125MB
   network: ws
   port: 443
   server: n1737850919.ryjml.cn
