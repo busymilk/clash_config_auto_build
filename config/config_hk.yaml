@@ -83,6 +83,50 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.113.136-0304 | 5.459MB
+  network: ws
+  port: 80
+  server: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
+  servername: 🇭🇰HK-42.2.113.136-0304 | 5.459MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9c6d1142-dc2b-11ee-88c7-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.2.113.136-0303 | 5.369MB
+  network: ws
+  port: 80
+  server: b1d0b8c3-swkhs0-syfwbx-1k0yf.hk.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: b1d0b8c3-swkhs0-syfwbx-1k0yf.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-1.65.202.165-0313 | 2.676MB
+  network: ws
+  port: 80
+  server: 8afb0240-sv0xs0-sxi4nd-1o6fm.hk3.p5pv.com
+  servername: 🇭🇰HK-1.65.202.165-0313 | 2.676MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 8afb0240-sv0xs0-sxi4nd-1o6fm.hk3.p5pv.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 0|5🇭🇰香港|官网：a5b3cloud.pro
   password: 21a07818-4174-4277-8f95-ceee5cfae9d7
@@ -233,50 +277,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.113.136-0304 | 5.459MB
-  network: ws
-  port: 80
-  server: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.113.136-0304 | 5.459MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9c6d1142-dc2b-11ee-88c7-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.113.136-0303 | 5.369MB
-  network: ws
-  port: 80
-  server: b1d0b8c3-swkhs0-syfwbx-1k0yf.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: b1d0b8c3-swkhs0-syfwbx-1k0yf.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.202.165-0313 | 2.676MB
-  network: ws
-  port: 80
-  server: 8afb0240-sv0xs0-sxi4nd-1o6fm.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-0313 | 2.676MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 8afb0240-sv0xs0-sxi4nd-1o6fm.hk3.p5pv.com
-    path: /
 proxy-groups:
 - name: 选择代理
   proxies:
