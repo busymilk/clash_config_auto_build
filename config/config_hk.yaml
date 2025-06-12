@@ -113,9 +113,30 @@ proxies:
     headers:
       Host: 8afb0240-sv0xs0-sxi4nd-1o6fm.hk3.p5pv.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 0|5🇭🇰香港|官网：abluecloud.xyz
+  password: aa089366-8824-458e-b0b8-74f2c7127f14
+  port: 36141
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|6🇭🇰香港|官网：a5b3cloud.pro
+  password: aa089366-8824-458e-b0b8-74f2c7127f14
+  port: 36143
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|7🇭🇰香港住宅IP|官网：abluecloud.xyz
+  password: aa089366-8824-458e-b0b8-74f2c7127f14
+  port: 36145
+  server: freea.glyphara.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  name: 3|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -127,27 +148,6 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 3|5🇭🇰香港|官网：a5b3cloud.pro
-  password: 129c900c-b832-40e9-9e7e-a7ed2ff9fd63
-  port: 36141
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|6🇭🇰香港|官网：蓝色海洋.xyz
-  password: 129c900c-b832-40e9-9e7e-a7ed2ff9fd63
-  port: 36143
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|7🇭🇰香港住宅IP|官网：abluecloud.xyz
-  password: 129c900c-b832-40e9-9e7e-a7ed2ff9fd63
-  port: 36145
-  server: freea.glyphara.com
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 13|🇭🇰 香港2|@ripaojiedian
   password: 08293b204707
@@ -278,23 +278,6 @@ proxies:
   type: http
   udp: true
   username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- alterId: 32
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      HOST: vc.fly.dev
-    path: /vc
 proxy-groups:
 - name: 选择代理
   proxies:
