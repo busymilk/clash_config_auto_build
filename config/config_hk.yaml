@@ -115,42 +115,42 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 101 | 1x HK
-  password: f4086c0f-007c-4f6d-a8ad-da295a3216d9
+  password: c5c6b1b7-ddf4-49d9-a779-9f3998a894c7
   port: 31141
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 102 | 1x HK
-  password: f4086c0f-007c-4f6d-a8ad-da295a3216d9
+  password: c5c6b1b7-ddf4-49d9-a779-9f3998a894c7
   port: 31143
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港家宽 103 | 1x HK
-  password: f4086c0f-007c-4f6d-a8ad-da295a3216d9
+  password: c5c6b1b7-ddf4-49d9-a779-9f3998a894c7
   port: 31145
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰 香港 101 | 1x HK
-  password: 4c119828-dbe9-41b0-b913-a50635688c1e
+  password: 8cd6d634-f5cd-4ea9-a98b-5bbd7206d2da
   port: 36141
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰 香港 102 | 1x HK
-  password: 4c119828-dbe9-41b0-b913-a50635688c1e
+  password: 8cd6d634-f5cd-4ea9-a98b-5bbd7206d2da
   port: 36143
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰 香港住宅IP 103 | 1x HK
-  password: 4c119828-dbe9-41b0-b913-a50635688c1e
+  password: 8cd6d634-f5cd-4ea9-a98b-5bbd7206d2da
   port: 36145
   server: freea.glyphara.com
   type: ss
@@ -285,6 +285,23 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: /Telegram @pgkj666 /?ed=2560
+- alterId: 32
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
 proxy-groups:
 - name: 选择代理
   proxies:
