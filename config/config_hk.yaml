@@ -113,9 +113,51 @@ proxies:
     headers:
       Host: 8afb0240-sv0xs0-sxi4nd-1o6fm.hk3.p5pv.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 101 | 1x HK
+  password: f4086c0f-007c-4f6d-a8ad-da295a3216d9
+  port: 31141
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 102 | 1x HK
+  password: f4086c0f-007c-4f6d-a8ad-da295a3216d9
+  port: 31143
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港家宽 103 | 1x HK
+  password: f4086c0f-007c-4f6d-a8ad-da295a3216d9
+  port: 31145
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 101 | 1x HK
+  password: 4c119828-dbe9-41b0-b913-a50635688c1e
+  port: 36141
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 102 | 1x HK
+  password: 4c119828-dbe9-41b0-b913-a50635688c1e
+  port: 36143
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 103 | 1x HK
+  password: 4c119828-dbe9-41b0-b913-a50635688c1e
+  port: 36145
+  server: freea.glyphara.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  name: 3|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -127,28 +169,7 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰 香港 101 | 1x HK
-  password: 20ea1f02-03d7-4e45-9ebd-874fa89b0148
-  port: 36141
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰 香港 102 | 1x HK
-  password: 20ea1f02-03d7-4e45-9ebd-874fa89b0148
-  port: 36143
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰 香港住宅IP 103 | 1x HK
-  password: 20ea1f02-03d7-4e45-9ebd-874fa89b0148
-  port: 36145
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- name: 12,13|香港|@ripaojiedian
+- name: 13,14|香港|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -157,7 +178,7 @@ proxies:
   sni: 120.233.128.68
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 12|🇭🇰 香港2|@ripaojiedian
+  name: 13|🇭🇰 香港2|@ripaojiedian
   password: 08293b204707
   plugin: v2ray-plugin
   plugin-opts:
@@ -171,7 +192,7 @@ proxies:
   server: 156.251.179.79
   tfo: false
   type: ss
-- name: 12,13|香港3|@ripaojiedian
+- name: 13,14|香港3|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -179,7 +200,7 @@ proxies:
   skip-cert-verify: true
   sni: www.yrtok.com
   type: trojan
-- name: 12,13|香港4|@ripaojiedian
+- name: 13,14|香港4|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -189,7 +210,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: 12,13|香港6|@ripaojiedian
+  name: 13,14|香港6|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -205,7 +226,7 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港7|@ripaojiedian
+  name: 13|🇭🇰 香港7|@ripaojiedian
   port: 20332
   server: 43.247.135.2
   skip-cert-verify: false
@@ -215,7 +236,7 @@ proxies:
   uuid: 8037ce00-c860-4213-b888-be5c7ed6ea48
 - alterId: 64
   cipher: auto
-  name: 12|🇭🇰 香港8|@ripaojiedian
+  name: 13|🇭🇰 香港8|@ripaojiedian
   port: 33519
   server: 183.236.51.38
   skip-cert-verify: false
@@ -224,7 +245,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-128-gcm
-  name: 12|🇭🇰 香港9|@ripaojiedian
+  name: 13|🇭🇰 香港9|@ripaojiedian
   password: rGDbiF7gtx5TWt4r4VjneQ==
   port: 552
   server: 156.225.22.213
@@ -232,7 +253,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 13|香港7|@ripaojiedian
+  name: 14|香港7|@ripaojiedian
   network: tcp
   port: '20332'
   server: 43.247.135.2
@@ -242,7 +263,7 @@ proxies:
   uuid: 8037ce00-c860-4213-b888-be5c7ed6ea48
 - alterId: 64
   cipher: auto
-  name: 13|香港8|@ripaojiedian
+  name: 14|香港8|@ripaojiedian
   network: tcp
   port: '33519'
   server: 183.236.51.38
@@ -250,7 +271,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 14|HK_speednode_0010
+- name: 15|HK_speednode_0010
   network: ws
   port: 443
   server: 47.76.218.163
@@ -264,27 +285,6 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: /Telegram @pgkj666 /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇭🇰香港 101 | 1x HK
-  password: 1a802e82-4f6a-4ce3-8e9c-4d739569be53
-  port: 31141
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇭🇰香港 102 | 1x HK
-  password: 1a802e82-4f6a-4ce3-8e9c-4d739569be53
-  port: 31143
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 15|🇭🇰香港家宽 103 | 1x HK
-  password: 1a802e82-4f6a-4ce3-8e9c-4d739569be53
-  port: 31145
-  server: freem.vidalith.com
-  type: ss
-  udp: true
 proxy-groups:
 - name: 选择代理
   proxies:
