@@ -114,45 +114,45 @@ proxies:
       Host: 8afb0240-sv0xs0-sxi4nd-1o6fm.hk3.p5pv.com
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 101 | 1x HK
-  password: c5c6b1b7-ddf4-49d9-a779-9f3998a894c7
-  port: 31141
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 102 | 1x HK
-  password: c5c6b1b7-ddf4-49d9-a779-9f3998a894c7
-  port: 31143
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 103 | 1x HK
-  password: c5c6b1b7-ddf4-49d9-a779-9f3998a894c7
-  port: 31145
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 101 | 1x HK
-  password: 8cd6d634-f5cd-4ea9-a98b-5bbd7206d2da
+  name: 0|🇭🇰 香港 101 | 1x HK
+  password: 6023b95a-219e-411e-9322-0d4c950cf555
   port: 36141
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 102 | 1x HK
-  password: 8cd6d634-f5cd-4ea9-a98b-5bbd7206d2da
+  name: 0|🇭🇰 香港 102 | 1x HK
+  password: 6023b95a-219e-411e-9322-0d4c950cf555
   port: 36143
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 103 | 1x HK
-  password: 8cd6d634-f5cd-4ea9-a98b-5bbd7206d2da
+  name: 0|🇭🇰 香港住宅IP 103 | 1x HK
+  password: 6023b95a-219e-411e-9322-0d4c950cf555
   port: 36145
   server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 101 | 1x HK
+  password: 8704d727-f59b-4c1e-9eb6-0d25e5d6566b
+  port: 31141
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 102 | 1x HK
+  password: 8704d727-f59b-4c1e-9eb6-0d25e5d6566b
+  port: 31143
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港家宽 103 | 1x HK
+  password: 8704d727-f59b-4c1e-9eb6-0d25e5d6566b
+  port: 31145
+  server: freem.vidalith.com
   type: ss
   udp: true
 - alterId: 0
@@ -285,23 +285,6 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: /Telegram @pgkj666 /?ed=2560
-- alterId: 32
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      HOST: vc.fly.dev
-    path: /vc
 proxy-groups:
 - name: 选择代理
   proxies:
