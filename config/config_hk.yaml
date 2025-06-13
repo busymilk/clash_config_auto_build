@@ -84,45 +84,45 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 101 | 1x HK
-  password: fe144043-8f84-41c7-982d-7842fb8d0c61
-  port: 31141
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 102 | 1x HK
-  password: fe144043-8f84-41c7-982d-7842fb8d0c61
-  port: 31143
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 103 | 1x HK
-  password: fe144043-8f84-41c7-982d-7842fb8d0c61
-  port: 31145
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 101 | 1x HK
-  password: 675f30fd-ab57-4a74-b5a3-04b4a3814f67
+  name: 0|🇭🇰 香港 101 | 1x HK
+  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
   port: 36141
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 102 | 1x HK
-  password: 675f30fd-ab57-4a74-b5a3-04b4a3814f67
+  name: 0|🇭🇰 香港 102 | 1x HK
+  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
   port: 36143
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 103 | 1x HK
-  password: 675f30fd-ab57-4a74-b5a3-04b4a3814f67
+  name: 0|🇭🇰 香港住宅IP 103 | 1x HK
+  password: 73b60174-4d86-4be4-a759-4d87d3f813b9
   port: 36145
   server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 101 | 1x HK
+  password: 19eb4339-af8f-440b-b046-fe29ac35c6e5
+  port: 31141
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 102 | 1x HK
+  password: 19eb4339-af8f-440b-b046-fe29ac35c6e5
+  port: 31143
+  server: freem.vidalith.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港家宽 103 | 1x HK
+  password: 19eb4339-af8f-440b-b046-fe29ac35c6e5
+  port: 31145
+  server: freem.vidalith.com
   type: ss
   udp: true
 - alterId: 0
@@ -221,20 +221,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 8037ce00-c860-4213-b888-be5c7ed6ea48
-- name: 15|HK_speednode_0010
-  network: ws
-  port: 443
-  server: 47.76.218.163
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram @pgkj666 /?ed=2560
 proxy-groups:
 - name: 选择代理
   proxies:
