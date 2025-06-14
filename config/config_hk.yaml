@@ -83,16 +83,24 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇭🇰HK-20.2.156.38-5574 | 10.615MB
-  password: 6087d8e3-ea9e-48eb-8217-6050ff752f56
-  port: 443
-  server: il.mjt000.com
-  skip-cert-verify: false
-  sni: il.mjt000.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 🇭🇰HK-1.36.218.184-0835 | 8.514MB
+  name: 🇭🇰HK-1.36.218.184-5692 | 8.442MB
+  network: ws
+  port: 8080
+  server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
+  servername: 🇭🇰HK-1.36.218.184-5692 | 8.442MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-1.36.218.184-0835 | 7.663MB
   network: ws
   port: 8080
   server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
@@ -106,26 +114,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.113.136-0364 | 8.418MB
-  network: ws
-  port: 80
-  server: 66500699-sv2sg0-sx8y86-uvgv.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.113.136-0364 | 8.418MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ee67070a-ceb2-11ed-bb7d-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 66500699-sv2sg0-sx8y86-uvgv.hk.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.2.113.136-5686 | 8.115MB
+  name: 🇭🇰HK-42.2.113.136-5686 | 6.911MB
   network: ws
   port: 80
   server: ac759499-sv2sg0-sw26q2-php4.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.113.136-5686 | 8.115MB
+  servername: 🇭🇰HK-42.2.113.136-5686 | 6.911MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -136,41 +129,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-42.2.113.136-5685 | 7.29MB
-  network: ws
-  port: 80
-  server: 691232a1-sv6hs0-sx8y86-uvgv.hk.p5pv.com
-  servername: 🇭🇰HK-42.2.113.136-5685 | 7.29MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ee67070a-ceb2-11ed-bb7d-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 691232a1-sv6hs0-sx8y86-uvgv.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-1.36.218.184-5692 | 7.005MB
-  network: ws
-  port: 8080
-  server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
-  servername: 🇭🇰HK-1.36.218.184-5692 | 7.005MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.202.165-5688 | 4.251MB
+  name: 🇭🇰HK-1.65.202.165-5688 | 2.615MB
   network: ws
   port: 80
   server: be1c3b6c-sv0xs0-sw26q2-php4.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-5688 | 4.251MB
+  servername: 🇭🇰HK-1.65.202.165-5688 | 2.615MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -181,26 +144,11 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-1.65.202.165-5689 | 3.864MB
-  network: ws
-  port: 80
-  server: a0ae8f27-sv4n40-sw5wi7-ufc0.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-5689 | 3.864MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: a0ae8f27-sv4n40-sw5wi7-ufc0.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.202.165-5693 | 3.727MB
+  name: 🇭🇰HK-1.65.202.165-5693 | 1.47MB
   network: ws
   port: 80
   server: 4e909a9d-sv2sg0-sw26q2-php4.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-5693 | 3.727MB
+  servername: 🇭🇰HK-1.65.202.165-5693 | 1.47MB
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -209,68 +157,29 @@ proxies:
     headers:
       Host: 4e909a9d-sv2sg0-sw26q2-php4.hk3.p5pv.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.202.165-5690 | 3.7MB
-  network: ws
-  port: 80
-  server: 4f8acdc9-sv0xs0-sw5wi7-ufc0.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-5690 | 3.7MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 4f8acdc9-sv0xs0-sw5wi7-ufc0.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.202.165-5684 | 3.288MB
-  network: ws
-  port: 80
-  server: 77d7b6e4-sv2sg0-sw5wi7-ufc0.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-5684 | 3.288MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 77d7b6e4-sv2sg0-sw5wi7-ufc0.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.202.165-5691 | 2.536MB
-  network: ws
-  port: 80
-  server: 3fa5b1b6-sv2sg0-sx8y86-uvgv.hk3.p5pv.com
-  servername: 🇭🇰HK-1.65.202.165-5691 | 2.536MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ee67070a-ceb2-11ed-bb7d-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 3fa5b1b6-sv2sg0-sx8y86-uvgv.hk3.p5pv.com
-    path: /
+- cipher: aes-128-gcm
+  name: 🇭🇰HK-156.225.22.213-0467 | 0.857MB
+  password: rGDbiF7gtx5TWt4r4VjneQ==
+  port: 552
+  server: 156.225.22.213
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 101 | 1x HK
-  password: f2c35c38-6b49-452e-b541-65078bea5fa5
+  password: 64d2e038-c2f1-40f2-9472-ecd6171fa3d3
   port: 36141
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 102 | 1x HK
-  password: f2c35c38-6b49-452e-b541-65078bea5fa5
+  password: 64d2e038-c2f1-40f2-9472-ecd6171fa3d3
   port: 36143
   server: freea.glyphara.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港住宅IP 103 | 1x HK
-  password: f2c35c38-6b49-452e-b541-65078bea5fa5
+  password: 64d2e038-c2f1-40f2-9472-ecd6171fa3d3
   port: 36145
   server: freea.glyphara.com
   type: ss
@@ -291,21 +200,21 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   name: 3|🇭🇰香港 101 | 1x HK
-  password: c1d0a88a-5f9b-4b39-8f27-6c38019631de
+  password: 53fd957a-0b50-4ed4-b427-fbfc554b06db
   port: 31141
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|🇭🇰香港 102 | 1x HK
-  password: c1d0a88a-5f9b-4b39-8f27-6c38019631de
+  password: 53fd957a-0b50-4ed4-b427-fbfc554b06db
   port: 31143
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 3|🇭🇰香港家宽 103 | 1x HK
-  password: c1d0a88a-5f9b-4b39-8f27-6c38019631de
+  password: 53fd957a-0b50-4ed4-b427-fbfc554b06db
   port: 31145
   server: freem.vidalith.com
   type: ss
