@@ -1447,113 +1447,53 @@ proxies:
   port: 6697
   server: 23.154.136.51
   type: ss
-- cipher: aes-256-cfb
-  name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸_US_美国->🇰🇷_KR_韩国
-  password: piv97XS1Cval86vfwHPD5j
-  port: 443
-  server: 194.87.216.121
-  type: ss
-- name: 🇨🇳_CN_中国
-  password: FpQhGpIr
-  port: 4447
-  server: 36.151.251.56
-  skip-cert-verify: true
-  sni: 36.151.251.56
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
-  network: ws
-  port: 20058
-  server: 45.147.201.231
-  type: vmess
-  uuid: 4dadb82a-2395-45f2-a681-f9c9cfc7f600
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 50002
-  server: 120.26.55.225
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇳_CN_中国->🇳🇱_NL_荷兰
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
-  sni: k28.tudou211.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v25.heduian.link
-    path: /oooo
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21179
-  server: 120.233.44.201
-  sni: k30.tudou211.com
-  type: trojan
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
   password: 1b4c16925f934c57b954a9f0f23dea33
   port: 8842
   server: 42.240.152.238
   skip-cert-verify: true
   sni: brwx.spvpv.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  network: ws
+  port: 23100
+  server: 45.147.201.231
+  type: vmess
+  uuid: acb3fa20-667b-431d-b0e0-25045ae8b2d1
+  ws-opts:
+    path: /
 - cipher: aes-256-cfb
-  name: 🇰🇷_KR_韩国
+  name: 🇰🇷_KR_韩国->🇺🇸_US_美国
   password: qwerREWQ@@
   port: 4857
   server: 125.141.26.12
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇷🇺_RU_俄罗斯
-  password: 7kJQs2RYHhViTYWaf1RobB
-  port: 7749
-  server: 77.246.97.187
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷_KR_韩国->🇲🇾_MY_马来西亚
-  password: qwerREWQ@@
-  port: 11171
-  server: 210.217.18.70
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷_KR_韩国->🇺🇸_US_美国
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   network: ws
-  port: 30836
-  server: v36.heduian.link
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v36.heduian.link
+      host: v25.heduian.link
     path: /oooo
-- name: 🇺🇸_US_美国->🇲🇾_MY_马来西亚
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国
+  network: tcp
+  port: 34625
+  server: 45.207.201.15
+  skip-cert-verify: true
+  type: vmess
+  uuid: 35510df4-9899-4427-e826-d005f0aabc6c
+- name: 🇺🇸_US_美国->🇫🇷_FR_法国
   network: ws
   password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
   port: 443
@@ -1565,15 +1505,59 @@ proxies:
     headers:
       host: ddcde.890603.xyz
     path: /COp52Dbu3dvwvDWUxOqxq
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国_3
+  password: awsps0501
+  port: 443
+  server: 18.237.88.39
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21179
+  server: 120.233.44.201
+  sni: k30.tudou211.com
+  type: trojan
+- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21102
+  server: 120.233.44.201
+  sni: k28.tudou211.com
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇲🇩_MD_摩尔多瓦->🇰🇷_KR_韩国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国->🇨🇳_CN_中国
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇧🇪_BE_比利时
-  password: f9d73c84e32a10f3
-  port: 11259
-  server: 57.128.190.171
+  name: 🇬🇧_GB_英国->🇺🇸_US_美国
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  type: ss
+- name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
+  password: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
+  port: 15229
+  server: e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net
+  sni: e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
   type: ss
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
+  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
   network: ws
   port: 30835
   server: v35.heduian.link
@@ -1583,14 +1567,6 @@ proxies:
     headers:
       host: v35.heduian.link
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇨🇳_CN_中国
-  network: tcp
-  port: 58819
-  server: 194.5.193.95
-  type: vmess
-  uuid: b0bf81e1-0b18-4253-a278-d516f580240a
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 101 | 1x HK
   password: f015b2ae-5ca6-4a4f-8ff0-e7a742b62d96
