@@ -482,27 +482,6 @@ proxies:
     headers:
       host: ddcde.890603.xyz
     path: /COp52Dbu3dvwvDWUxOqxq
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 101 | 1x US Los Angeles
-  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
-  port: 36211
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国住宅IP 102 | 1x US Los Ange...
-  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
-  port: 36213
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 103 | 1x US Washington
-  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
-  port: 36215
-  server: freea.glyphara.com
-  type: ss
-  udp: true
 - flow: xtls-rprx-vision
   name: 2|🇺🇸1 |  4.4MB/s|30%|Openai
   port: 443
@@ -1706,27 +1685,6 @@ proxies:
   sni: f7c80a8d-svc1s0-t28b6o-ef48.los.gotochinatown.net
   tls: true
   type: socks5
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇺🇸美国 101 | 1x US Los Angeles
-  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
-  port: 31211
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇺🇸美国家宽 102 | 1x US Los Angeles
-  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
-  port: 31213
-  server: freem.vidalith.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 3|🇺🇸美国 103 | 1x US Washington
-  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
-  port: 31215
-  server: freem.vidalith.com
-  type: ss
-  udp: true
 - cipher: rc4-md5
   name: 13|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
@@ -2914,26 +2872,6 @@ proxies:
   protocol: origin
   server: 107.151.182.253
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.167.197.25:57456
-  password: 360e21d21977dc11
-  port: 57456
-  server: 104.167.197.25
-  type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-tci2.tiamoci.us.kg:8080
-  network: ws
-  port: 8080
-  server: tci2.tiamoci.us.kg
-  type: vmess
-  uuid: 08341274-3936-46fe-8d48-36d9e76791cd
-  ws-opts:
-    headers:
-      Host: tci2.tiamoci.us.kg
-    path: /
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -2967,6 +2905,23 @@ proxies:
     headers:
       HOST: orvps2.horsenma.net
     path: /horsen
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国-NF解锁自制剧-ChatGPT-us.dalazhi.eu.org:24096
+  network: ws
+  port: 24096
+  server: us.dalazhi.eu.org
+  servername: us.dalazhi.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3ea45dfd-2158-46f9-960c-8a7a24f38083
+  ws-opts:
+    headers:
+      HOST: us.dalazhi.eu.org
+    path: /nyzt
 - alpn:
   - h3
   auth_str: dongtaiwang.com
