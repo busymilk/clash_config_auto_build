@@ -1552,9 +1552,28 @@ proxies:
   port: 2375
   server: 38.121.43.71
   type: ss
+- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21102
+  server: 120.233.44.201
+  skip-cert-verify: false
+  sni: k28.tudou211.com
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国
+  name: 🇨🇳_CN_中国->🏳️_unKnow_未知
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30825
   server: v25.heduian.link
@@ -1564,91 +1583,88 @@ proxies:
     headers:
       host: v25.heduian.link
     path: /oooo
-- name: 🇦🇺_AU_澳大利亚->🇮🇳_IN_印度
-  password: 172b2279-f7f5-4542-ab6c-9e96ad7dd5be
-  port: 443
-  server: ni.mjt000.com
-  skip-cert-verify: false
-  sni: ni.mjt000.com
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳_CN_中国->🇵🇱_PL_波兰
-  password: 7905a32b-012c-4711-89e2-73b6713eca75
-  port: 40030
-  server: pr.fastsoonlink.com
+- cipher: aes-256-gcm
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  password: dwz1GtF7
+  port: 20406
+  server: 120.232.220.156
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v24.heduian.link
-    path: /oooo
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21179
+  server: 120.233.44.201
+  sni: k30.tudou211.com
+  type: trojan
+- cipher: aes-256-gcm
+  name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
+  password: 3ee90aa9-8831-4ea3-9425-c361090a938d
+  port: 64931
+  server: zf1.10101251.xyz
+  type: ss
+- alpn:
+  - http/1.1
+  name: 🇩🇪_DE_德国
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.123.63.21
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
   password: 1b4c16925f934c57b954a9f0f23dea33
   port: 8842
   server: 42.240.152.238
   skip-cert-verify: true
   sni: brwx.spvpv.com
   type: trojan
+- alpn:
+  - http/1.1
+  name: 🇩🇪_DE_德国_1
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22223
+  server: 35.157.112.83
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- cipher: aes-256-gcm
+  name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
+  password: 3ee90aa9-8831-4ea3-9425-c361090a938d
+  port: 20251
+  server: zf1.10101251.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 未知
+  network: tcp
+  port: 25024
+  server: onecat-us.03ezhg0qsa.download
+  type: vmess
+  uuid: 1489b070-b44c-3d27-8282-3ee2f778c965
 - cipher: aes-256-cfb
   name: 🇰🇷_KR_韩国
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
   type: ss
+- name: 🇺🇸_US_美国
+  network: ws
+  password: 03e92910-34b1-4245-ac63-04a865f43cd5
+  port: 443
+  server: 104.21.84.242
+  sni: 3ERt.4444916.XyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 3ert.4444916.xyz
+    path: /bi35bFWoRrnPhIJoo2wcE6Q
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  name: 🇨🇳_CN_中国
   network: ws
   port: 30829
   server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- cipher: aes-256-cfb
-  name: 🇰🇷_KR_韩国->🇷🇺_RU_俄罗斯
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  type: ss
-- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
-  sni: k28.tudou211.com
-  type: trojan
-- name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
-- cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  skip-cert-verify: true
-  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
@@ -1661,57 +1677,36 @@ proxies:
   port: 989
   server: 185.153.197.5
   type: ss
-- cipher: aes-256-gcm
-  name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-  password: 3ee90aa9-8831-4ea3-9425-c361090a938d
-  port: 20251
-  server: zf1.10101251.xyz
-  type: ss
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大_1
+  name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
   network: ws
   port: 30835
   server: v35.heduian.link
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
       host: v35.heduian.link
     path: /oooo
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.72.117.224
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- name: 🇨🇳_CN_中国_1
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21179
-  server: 120.233.44.201
-  sni: k30.tudou211.com
-  type: trojan
-- alterId: 2
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国_1
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
   network: ws
-  port: 30828
-  server: v28.heduian.link
-  sni: ''
+  port: 23103
+  server: 45.147.201.231
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 5f4434c6-ed8f-4068-91ea-ddb4cdf21168
   ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
+    path: /
 - alpn:
   - h3
   disable-sni: false
@@ -4266,6 +4261,44 @@ proxies:
   password: 78f2cc60404aee30
   port: 10942
   server: 135.125.219.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-伊朗>英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-151.240.110.212:11255
+  password: 391d6f4cb2f8db2d
+  port: 11255
+  server: 151.240.110.212
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-62.210.88.22:443
+  password: gfV689LcJ2yMh3nV25eFag
+  port: 443
+  server: 62.210.88.22
+  type: ss
+- cipher: rc4-md5
+  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.151.182.253
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.167.197.25:57456
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-伊朗>英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-151.240.110.214:11252
+  password: 69884e489157491f
+  port: 11252
+  server: 151.240.110.214
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-伊朗>英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-151.240.110.215:11254
+  password: c5c446b775931d28
+  port: 11254
+  server: 151.240.110.215
   type: ss
 - alterId: 0
   cipher: auto
