@@ -83,9 +83,24 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-1.65.218.55-5072 | 6.62MB
+  network: ws
+  port: 80
+  server: 359d1785-sv2sg0-svim0o-1slop.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.218.55-5072 | 6.62MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 520b9126-9870-11ef-81b0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 359d1785-sv2sg0-svim0o-1slop.hk.p5pv.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  name: 2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -265,23 +280,6 @@ proxies:
     headers:
       Host: ex.sue.x10.mx
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- alterId: 32
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
-  network: ws
-  port: 443
-  server: vc.fly.dev
-  servername: vc.fly.dev
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      HOST: vc.fly.dev
-    path: /vc
 proxy-groups:
 - name: 选择代理
   proxies:
