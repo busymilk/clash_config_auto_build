@@ -7078,22 +7078,6 @@ proxies:
     headers:
       HOST: de01.sh-cloudflare.sbs
     path: /
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.17.74.206:2082
-  network: ws
-  port: 2082
-  server: 104.17.74.206
-  servername: sp.v2ray.com.br
-  skip-cert-verify: true
-  type: vmess
-  uuid: e0d2daa9-5ee9-47d9-8f60-15edd0106b9f
-  ws-opts:
-    headers:
-      HOST: sp.v2ray.com.br
-    path: /
 - cipher: rc4-md5
   name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
   obfs: plain
@@ -7102,27 +7086,23 @@ proxies:
   protocol: origin
   server: 107.151.182.253
   type: ssr
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.18.7.41:2052
-  network: ws
-  port: 2052
-  server: 104.18.7.41
-  servername: sp.v2ray.com.br
-  skip-cert-verify: true
-  type: vmess
-  uuid: e0d2daa9-5ee9-47d9-8f60-15edd0106b9f
-  ws-opts:
-    headers:
-      HOST: sp.v2ray.com.br
-    path: /
 - cipher: aes-256-gcm
   name: SS-美国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-154.3.8.151:30067
   password: iUB0923RBA
   port: 30067
   server: 154.3.8.151
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-荷兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-164.92.156.41:24206
+  password: zI7kiNZ0UfV9cXB73a4nRD
+  port: 24206
+  server: 164.92.156.41
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-法国>荷兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-45.158.171.136:8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.158.171.136
   type: ss
 - alterId: 0
   cipher: auto
