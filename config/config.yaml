@@ -3938,14 +3938,6 @@ proxies:
     headers:
       HOST: de01.sh-cloudflare.sbs
     path: /
-- cipher: rc4-md5
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 107.151.182.253
-  type: ssr
 - cipher: chacha20-ietf-poly1305
   name: SS-荷兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-164.92.156.41:24206
   password: zI7kiNZ0UfV9cXB73a4nRD
@@ -3958,6 +3950,22 @@ proxies:
   port: 8080
   server: 45.158.171.136
   type: ss
+- cipher: aes-256-cfb
+  name: SSR-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-62.100.205.48:989
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
+- cipher: rc4-md5
+  name: SSR-美国-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.151.182.253
+  type: ssr
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
