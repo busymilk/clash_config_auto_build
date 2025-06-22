@@ -83,18 +83,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-5074 | 0.647MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇭🇰HK-156.225.22.213-5076 | 0.414MB
-  password: rGDbiF7gtx5TWt4r4VjneQ==
-  port: 552
-  server: 156.225.22.213
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
@@ -127,27 +115,29 @@ proxies:
     path: /oooo
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰 香港2|@ripaojiedian
-  password: 1450cecfb93f
+  password: 08293b204707
   plugin: v2ray-plugin
   plugin-opts:
-    host: kh36v1.pmxiaonan.xyz
+    host: hk6v1.pmxiaonan.xyz
     mode: websocket
     mux: true
-    path: /simieepvt
+    path: /sclbvcgkp
     skip-cert-verify: false
     tls: true
-  port: 12441
-  server: kh36v1.pmxiaonan.xyz
+  port: 58697
+  server: 156.251.179.238
   tfo: false
   type: ss
-- name: 香港3|@ripaojiedian
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港3|@ripaojiedian
+  port: 46210
+  server: 43.247.135.170
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: d1eca706-1aae-42d3-bab0-69995d7b023d
 - name: 香港4|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
@@ -170,6 +160,16 @@ proxies:
   server: 111.45.33.5
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 香港3|@ripaojiedian
+  network: tcp
+  port: '46210'
+  server: 43.247.135.170
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d1eca706-1aae-42d3-bab0-69995d7b023d
 - name: HK_speednode_0049
   network: ws
   port: 8880
