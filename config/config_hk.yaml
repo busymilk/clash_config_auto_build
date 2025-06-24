@@ -84,13 +84,13 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-5101 | 0.978MB
+  name: 🇭🇰HK-203.23.128.33-5101 | 1.063MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
 - cipher: aes-256-cfb
-  name: 🇭🇰HK-154.223.21.221-5103 | 0.262MB
+  name: 🇭🇰HK-154.223.21.221-5103 | 0.482MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.21.221
@@ -125,18 +125,18 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   name: 🇭🇰 香港2|@ripaojiedian
-  password: 08293b204707
+  password: 25ec467c78cb
   plugin: v2ray-plugin
   plugin-opts:
-    host: hk6v1.pmxiaonan.xyz
+    host: hk6v1.dsjsapp.com
     mode: websocket
     mux: true
-    path: /sclbvcgkp
+    path: /iqgfyizn
     skip-cert-verify: false
     tls: true
-  port: 48159
+  port: 443
   server: 156.251.179.238
   tfo: false
   type: ss
@@ -171,7 +171,7 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇭🇰 香港6|@ripaojiedian
   password: dwz1GtF7
-  port: 30017
+  port: 30002
   server: 111.45.33.5
   tfo: false
   type: ss
