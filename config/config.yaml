@@ -1453,62 +1453,27 @@ proxies:
   port: 2375
   server: 38.68.134.202
   type: ss
-- cipher: aes-256-gcm
-  name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  password: dwz1GtF7
-  port: 20406
-  server: 112.54.161.141
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
-  password: e22b89ae-6996-4824-ac31-610ac7349e6a
-  port: 30524
-  server: zf2.10101251.xyz
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v25.heduian.link
-    path: /oooo
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
   password: VdWBGFmg
   port: 23770
   server: 36.151.251.62
   skip-cert-verify: true
-  sni: TG.WangCai2
+  sni: 36.151.251.62
+  type: trojan
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21179
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: k30.tudou211.com
   type: trojan
 - name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  password: 1b4c16925f934c57b954a9f0f23dea33
-  port: 8842
-  server: 42.240.152.238
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21603
+  server: xd-js.timiwc.com
   skip-cert-verify: true
-  sni: brwx.spvpv.com
+  sni: k61.tudou211.com
   type: trojan
-- cipher: aes-256-gcm
-  name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
-  password: e22b89ae-6996-4824-ac31-610ac7349e6a
-  port: 54831
-  server: zf2.10101251.xyz
-  type: ss
-- name: 🇺🇸_US_美国_1
-  network: ws
-  password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b
-  port: 443
-  server: eer.freevpnatm.dpdns.org
-  sni: eer.freevpnatm.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /XmTzATQPJv9RO3xr1D40NK
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
@@ -1521,47 +1486,37 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 🇷🇺_RU_俄罗斯
-  password: Y1hjiUmSgucgzYYJ0WtqwW
-  port: 60117
-  server: 77.246.102.112
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  network: ws
-  port: 30825
-  server: 111.26.109.79
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /oooo
-- alterId: 2
+- alterId: 0
   cipher: auto
   name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
   network: ws
-  port: 30835
-  server: v35.heduian.link
+  port: 30840
+  server: v40.heduian.link
   skip-cert-verify: true
   sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v35.heduian.link
-    path: /oooo
-- cipher: aes-256-gcm
-  name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  password: dwz1GtF7
-  port: 30232
-  server: 112.54.160.36
-  type: ss
+      host: api100-core-quic-lf.amemv.com
+    path: /index
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21603
+  server: 36.156.184.33
+  skip-cert-verify: true
+  sni: k61.tudou211.com
+  type: trojan
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21332
+  server: 36.156.184.33
+  skip-cert-verify: true
+  sni: k65.tudou211.com
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  name: 🇨🇳_CN_中国
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -1572,35 +1527,41 @@ proxies:
       host: ocbc.com
     path: /oooo
 - cipher: aes-256-gcm
-  name: 🇨🇳_CN_中国
-  password: dwz1GtF7
-  port: 30017
-  server: 111.45.33.5
+  name: 🇮🇹_IT_意大利->🇺🇸_US_美国
+  password: 1NDN95L7Q6UNYJR4
+  port: 20012
+  server: 37.143.128.125
   type: ss
-- cipher: aes-256-cfb
-  name: 🇲🇩_MD_摩尔多瓦
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳_CN_中国->🇵🇱_PL_波兰
-  password: 7905a32b-012c-4711-89e2-73b6713eca75
-  port: 40030
-  server: pr.fastsoonlink.com
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷_KR_韩国->🇷🇺_RU_俄罗斯
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-- name: 🇨🇳_CN_中国->🇰🇷_KR_韩国_1
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 120.233.128.68
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  network: tcp
+  port: 52262
+  server: 85.198.23.63
   skip-cert-verify: true
-  sni: 120.233.128.68
+  sni: ''
+  type: vmess
+  uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
+  password: 1b4c16925f934c57b954a9f0f23dea33
+  port: 8842
+  server: 42.240.152.238
+  skip-cert-verify: true
+  sni: brwx.spvpv.com
+  type: trojan
+- cipher: aes-256-gcm
+  name: 🇨🇳_CN_中国_1
+  password: e22b89ae-6996-4824-ac31-610ac7349e6a
+  port: 30524
+  server: zf2.10101251.xyz
+  type: ss
+- name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21332
+  server: xd-js.timiwc.com
+  skip-cert-verify: true
+  sni: k65.tudou211.com
   type: trojan
 - alpn:
   - h3
@@ -7575,29 +7536,28 @@ proxies:
   port: 11902
   server: 94.159.96.245
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-194.87.71.220:2222
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 194.87.71.220
+  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-de01.sh-cloudflare.sbs:2096
+  name: VMESS-未知>德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-188.114.98.22:80
   network: ws
-  port: 2096
-  server: de01.sh-cloudflare.sbs
-  servername: de01.sh-cloudflare.sbs
+  port: 80
+  server: 188.114.98.22
+  servername: h3.grAsSoRy.shop
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: 16c09798-7b2a-46ec-993c-7e24aad20ce8
+  uuid: 276b453c-c681-4ac0-8030-2a5e9113fe26
   ws-opts:
     headers:
-      HOST: de01.sh-cloudflare.sbs
+      HOST: h3.grAsSoRy.shop
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
