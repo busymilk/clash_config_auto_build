@@ -3106,6 +3106,14 @@ proxies:
   port: 1866
   server: 172.233.128.126
   type: ss
+- cipher: aes-256-cfb
+  name: SSR-加拿大-79.127.233.170:989
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -3207,6 +3215,12 @@ proxies:
   password: qscavF5UviIL-8V-E4raBA
   port: 2222
   server: 194.87.71.223
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-194.87.71.221:2222
+  password: qscavF5UviIL-8V-E4raBA
+  port: 2222
+  server: 194.87.71.221
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-81.19.137.222:57456
@@ -6684,6 +6698,14 @@ proxies:
   port: 443
   server: sinavm.soft10.ir
   skip-cert-verify: false
+  tls: false
+  type: hysteria2
+- name: '@meli_proxyy'
+  password: ca5c8e49-3b25-45f8-9fbb-6dd1806a1444
+  port: 30000
+  server: 132.226.117.48
+  skip-cert-verify: true
+  sni: www.apple.com
   tls: false
   type: hysteria2
 - name: '@drakvpn🐉'
