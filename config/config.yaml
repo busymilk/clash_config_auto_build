@@ -3301,12 +3301,6 @@ proxies:
   server: 104.192.226.106
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-62.210.88.22:443
-  password: PtLH7Hul5zHhGqoDzsrrri
-  port: 443
-  server: 62.210.88.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-107.191.63.241:30665
   password: 44fe4b7d-cd48-45fc-a036-60ea40e4a96c
   port: 30665
@@ -3334,6 +3328,14 @@ proxies:
   port: 18992
   server: 57.128.190.238
   type: ss
+- cipher: rc4-md5
+  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.151.182.253
+  type: ssr
 - cipher: chacha20-ietf-poly1305
   name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-194.87.71.220:2222
   password: qscavF5UviIL-8V-E4raBA
@@ -6681,14 +6683,6 @@ proxies:
   server: 40.233.73.221
   skip-cert-verify: true
   sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '  | @Filter_breaker'
-  password: 998d8c6e-cbdb-4836-9fde-fe3eecb321d4
-  port: 22158
-  server: hsfg.huasuan666.top
-  skip-cert-verify: true
-  sni: hsfg.huasuan666.top
   tls: false
   type: hysteria2
 - name: ' | @Filter_breaker'
