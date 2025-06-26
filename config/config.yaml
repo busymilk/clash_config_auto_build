@@ -3091,14 +3091,6 @@ proxies:
   port: 1866
   server: 185.177.229.245
   type: ss
-- cipher: aes-256-cfb
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.192.226.106:989
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 104.192.226.106
-  type: ssr
 - cipher: chacha20-ietf-poly1305
   name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-107.191.63.241:30665
   password: 44fe4b7d-cd48-45fc-a036-60ea40e4a96c
@@ -3160,14 +3152,38 @@ proxies:
   port: 990
   server: 79.127.233.170
   type: ss
-- cipher: rc4-md5
-  name: SSR-美国-NF解锁自制剧-TikTok-YouTube-107.151.182.253:8080
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 107.151.182.253
-  type: ssr
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-YouTube-104.18.7.41:2052
+  network: ws
+  port: 2052
+  server: 104.18.7.41
+  servername: sp.v2ray.com.br
+  skip-cert-verify: true
+  type: vmess
+  uuid: e0d2daa9-5ee9-47d9-8f60-15edd0106b9f
+  ws-opts:
+    headers:
+      HOST: sp.v2ray.com.br
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>巴西-NF解锁巴西地区非自制剧-ChatGPT-TikTok-YouTube-104.17.74.206:2082
+  network: ws
+  port: 2082
+  server: 104.17.74.206
+  servername: sp.v2ray.com.br
+  skip-cert-verify: true
+  type: vmess
+  uuid: e0d2daa9-5ee9-47d9-8f60-15edd0106b9f
+  ws-opts:
+    headers:
+      HOST: sp.v2ray.com.br
+    path: /
 - alterId: 0
   cipher: auto
   name: 美国 001
