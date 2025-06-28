@@ -7176,23 +7176,6 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-orvps2.horsenma.net:8443
-  network: ws
-  port: 8443
-  server: orvps2.horsenma.net
-  servername: orvps2.horsenma.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
-  ws-opts:
-    headers:
-      HOST: orvps2.horsenma.net
-    path: /horsen
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
   name: VMESS-未知>英国-NF解锁波兰地区非自制剧-ChatGPT-TikTok-b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top:443
   network: ws
   port: 443
@@ -7282,12 +7265,6 @@ proxies:
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-57.128.190.238:18992
-  password: b20ae8db3d278526
-  port: 18992
-  server: 57.128.190.238
   type: ss
 - alterId: 0
   cipher: auto
@@ -7427,6 +7404,28 @@ proxies:
   password: c40641c1f89e7acb
   port: 57456
   server: 46.226.163.225
+  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-南非>芬兰-NF解锁芬兰地区非自制剧-ChatGPT-TikTok-YouTube-102.177.189.29:8880
+  network: ws
+  port: 8880
+  server: 102.177.189.29
+  servername: cyber.amir008.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 1d6f7070-3014-4210-ac7b-28765926d4b0
+  ws-opts:
+    headers:
+      HOST: cyber.amir008.com
+    path: /Cyberacss
+- cipher: chacha20-ietf-poly1305
+  name: SS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
   type: ss
 - alterId: 0
   cipher: auto
@@ -99334,577 +99333,765 @@ proxies:
     headers:
       Host: vle.amclubdns.dpdns.org
     path: /
-- alterId: '0'
-  cipher: auto
-  name: 电报群：https://t.me/vvkj11
-  network: kcp
-  port: '34833'
-  server: 47.76.28.43
-  type: vmess
-  uuid: dd0d30ae-a4d1-4d1e-8553-42bfff66fd27
-- alterId: '0'
-  cipher: auto
-  name: 每天更新，请加电报群防止失联
-  network: kcp
-  port: '5663'
-  server: 118.194.253.15
-  type: vmess
-  uuid: 986b3bc8-d0fb-4b60-b01f-28164e44cd48
-- alterId: '0'
-  cipher: auto
-  name: 日期：06-27
-  network: kcp
-  port: '47628'
-  server: 47.74.43.182
-  type: vmess
-  uuid: f8d05bf8-bc4d-4599-9a3a-8dce9c223815
+- name: 电报群：https://t.me/vvkj11
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 116.31.75.150
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+  udp: true
+- name: 每天更新，请加电报群防止失联
+  network: tcp
+  password: c804dca7-8350-455d-8aba-e9ad1049d788
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 日期：06-28
+  network: tcp
+  password: 9b2a15b7-4cda-4057-a7d6-da5e316d3dcb
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
 - name: 免费VPN：https://tt.vg/gwaAy
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.79.211
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21079
+  server: 120.233.44.201
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
   type: trojan
   udp: true
 - name: 🇺🇸_美国_1
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: c36be5f2-501c-4e79-9f93-1cdd6da154a6
   port: 443
-  server: ipv4.ip.sb
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_2
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: b50e34c7-7733-4c91-8895-0ea97b7298fa
   port: 443
-  server: 172.67.79.211
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_3
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: cd1054b1-843b-4067-bcbc-581c5a7f8f15
   port: 443
-  server: www.ipchicken.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_4
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 08bffa21-a7b3-4531-b285-7d3348b3d440
   port: 443
-  server: ipv4.ip.sb
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_5
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 075d302a-42ca-4bc3-8c32-1e93f4bf16da
   port: 443
-  server: www.4chan.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_6
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 2096
-  server: 104.17.128.1
+  password: 895a6bc9-036f-4924-b529-b8dc2afb69a5
+  port: 443
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_7
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 2096
-  server: 104.17.128.1
+  password: 54058685-13d3-4d44-b5b8-440eb91fb2f5
+  port: 443
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_8
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 2a1707b9-0952-4e7c-a165-152fe57d4a90
   port: 443
-  server: 104.17.68.85
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_9
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: a3c44a48-c635-4b77-bd7d-902baa56576d
   port: 443
-  server: 104.17.142.12
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_10
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 24bc7317-69db-409d-9931-afe350ff4e32
   port: 443
-  server: comicabc.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_11
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 7b169e4b-4bbb-4172-8d87-d730d7bae0fa
   port: 443
-  server: iplocation.io
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_12
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 9ec598c7-d719-4781-8a91-f5aacd5df7bb
   port: 443
-  server: comicabc.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_13
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 7762f6c6-0a5f-4e77-8bda-9d12f290a36c
   port: 443
-  server: time.is
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_14
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 280f27dd-58e4-44bc-b0a1-02a74c3abb5a
   port: 443
-  server: dylan.ns.cloudflare.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_15
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: a16cbe8f-3b0c-4de9-b7f0-5213ed7e07ef
   port: 443
-  server: www.hugedomains.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_16
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 4eba565b-0c74-4886-b1c9-e4cbfd5778f6
   port: 443
-  server: 172.67.181.209
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_17
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: bce907a1-a6c6-41f4-ac56-59c593d3494e
   port: 443
-  server: dylan.ns.cloudflare.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇰🇷_韩国_1
+  network: tcp
+  password: Aimer
+  port: 20107
+  server: 175.215.205.40
+  skip-cert-verify: true
+  sni: epmf.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 🇺🇸_美国_18
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 2087
-  server: 104.25.254.4
+  password: 35b3de54-7440-4ce7-8d51-19744dbf55ae
+  port: 443
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_19
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 37093e1c-fa81-40c8-b678-20fc63f45509
   port: 443
-  server: dnschecker.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_1
+  network: tcp
+  port: '41024'
+  server: 183.236.51.38
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇺🇸_美国_20
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 3673f482-e0b4-4886-8342-18132e04949d
   port: 443
-  server: www.udemy.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_21
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: f2905637-78dd-487c-9964-0fe97ce592cd
   port: 443
-  server: huxley.ns.cloudflare.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_22
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 718cf321-771e-496d-a0d2-3fd444440644
   port: 443
-  server: decker.ns.cloudflare.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🏳️_未知_1
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 103.160.204.59
-  skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_23
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: a087f461-3909-4987-aa50-4c8e45bdf7aa
   port: 443
-  server: decker.ns.cloudflare.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_24
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 4de33180-171c-4977-a6a7-511a680098ca
   port: 443
-  server: www.wto.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_25
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: b0590be0-056d-4790-8a26-37f919d8daa5
   port: 443
-  server: kyree.ns.cloudflare.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_26
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 727db8d6-a0a5-4199-b40f-2c9f18855b30
   port: 443
-  server: craig.ns.cloudflare.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_27
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 5dd89c14-3ed1-4051-a237-83f3257d0c8c
   port: 443
-  server: huxley.ns.cloudflare.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_28
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: af92754a-31b6-4c66-ae7b-008a969e0ca8
   port: 443
-  server: 172.67.120.0
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_29
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 108fc63a-235b-4bb7-b4c3-592c4451921e
   port: 443
-  server: 104.17.142.12
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_30
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: 5f41589e-a855-4f30-8691-97853ff5577c
   port: 443
-  server: 162.159.133.85
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
+- alterId: '64'
+  cipher: auto
+  name: 🇨🇳_中国_2
+  network: tcp
+  port: '31209'
+  server: 120.232.153.40
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇺🇸_美国_31
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: ab1219cc-0a50-489a-85bb-19ee3767522e
   port: 443
-  server: kyree.ns.cloudflare.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
 - name: 🇺🇸_美国_32
   network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  password: ec392b73-c74b-4a8a-9f48-b8aab362e78d
   port: 443
-  server: www.whatismyip.com
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
+  sni: zoomgov.vipren.biz.id
   type: trojan
   udp: true
-- name: 🇺🇸_美国_33
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: ip.gs
-  skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_34
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: www.ddwhm.com
-  skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_35
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_36
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: pranab.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_37
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_38
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: huxley.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_39
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: benedict.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_40
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: otto.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_41
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: braden.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_42
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: braden.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_43
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.120.0
-  skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_44
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: ashton.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_45
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 2053
-  server: 162.159.129.11
-  skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_46
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: www.ipget.net
-  skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_47
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: ip.gs
-  skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_48
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: wilson.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: kc1.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_49
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: decker.ns.cloudflare.com
-  skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_50
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.106.26
-  skip-cert-verify: true
-  sni: dt.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_51
-  network: tcp
-  password: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  port: 443
-  server: 172.67.243.218
-  skip-cert-verify: true
-  sni: tx.vs2024.dpdns.org
-  type: trojan
-  udp: true
-- alterId: '0'
+- alterId: '64'
   cipher: auto
-  name: 🇮🇷_伊朗_1
+  name: 🇨🇳_中国_3
   network: tcp
-  port: '56104'
-  server: 37.152.181.119
+  port: '31209'
+  server: 120.232.153.40
   type: vmess
-  uuid: efd57bc3-8086-48bd-9b1a-6fd8ab8cee6d
-- name: 🇨🇳_中国_1
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 59599
-  server: xd-js.timiwc.com
-  skip-cert-verify: true
-  sni: k62.tudou211.com
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_2
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 59599
-  server: xd-js.timiwc.com
-  skip-cert-verify: true
-  sni: k62.tudou211.com
-  type: trojan
-  udp: true
-- name: 🇺🇦_乌克兰
-  network: tcp
-  port: 2082
-  server: 95.164.89.93
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 7af09bbd-0931-4315-86ca-dcff34b3e998
-- alterId: '0'
-  cipher: auto
-  name: 🇮🇷_伊朗_2
-  network: tcp
-  port: '56104'
-  server: 37.152.181.119
-  type: vmess
-  uuid: efd57bc3-8086-48bd-9b1a-6fd8ab8cee6d
-- name: 🇨🇳_中国_3
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 59599
-  server: xd-js.timiwc.com
-  skip-cert-verify: true
-  sni: k62.tudou211.com
-  type: trojan
-  udp: true
-- name: 🇮🇷_伊朗_3
-  network: tcp
-  port: 28599
-  server: 109.122.202.170
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: a5324051-2777-4d59-9f1e-d666b6f4c05f
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
   name: 🇨🇳_中国_4
   network: tcp
-  port: '46210'
-  server: 43.247.135.170
+  port: '31209'
+  server: 120.232.153.40
   type: vmess
-  uuid: d1eca706-1aae-42d3-bab0-69995d7b023d
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸_美国_33
+  network: tcp
+  password: 03ad4d47-d69c-485b-9051-e84027bbf748
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_34
+  network: tcp
+  password: a28d5934-3bdd-4638-b9d7-03dd2b2d4444
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_35
+  network: tcp
+  password: 2455470d-3fcb-4430-a208-25031a93bf59
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_36
+  network: tcp
+  password: fd04d119-5ee5-4348-8a48-83d92baade02
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_37
+  network: tcp
+  password: 9f872a33-f923-4018-a241-9e1b4f03e589
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_38
+  network: tcp
+  password: 3582bc94-f362-41c9-9863-626d42a93c33
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_39
+  network: tcp
+  password: 45198939-ef73-40a8-9359-c35e94b6941e
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_40
+  network: tcp
+  password: b8ad83b7-309f-46e7-ae72-021760fdd848
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_41
+  network: tcp
+  password: d5fd0852-5fa2-40a3-933a-7bde00e5d55a
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_42
+  network: tcp
+  password: d0aff9db-2dbb-49b7-8d12-5d35bbd5ef73
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_43
+  network: tcp
+  password: dd1004ee-7e53-4e09-8140-8a30fc8118e6
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_44
+  network: tcp
+  password: c2bb08a6-5522-4cea-9539-378fea20df20
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_45
+  network: tcp
+  password: 8bd5cee3-19cc-4623-8633-403f101cb96f
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_46
+  network: tcp
+  password: fb874ec8-f4bb-4b48-9192-2829cca124e5
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_47
+  network: tcp
+  password: 7895e77d-ffc6-4245-8df3-59103ca8b7f7
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_48
+  network: tcp
+  password: db247895-26fc-4071-b571-0b6f4b30221d
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_49
+  network: tcp
+  password: 3166431e-22aa-409b-b15f-08df11ba1000
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_50
+  network: tcp
+  password: 8499c41d-86df-4c3a-b43c-81b8ee7ec701
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_51
+  network: tcp
+  password: d2f996db-00da-4793-9584-0e312b3512a6
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_52
+  network: tcp
+  password: 54d19847-9dfa-43fe-8ed5-fa80535e40a3
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_53
+  network: tcp
+  password: 0ca0d8d6-d4a5-47ad-8c6c-9cbf5936b3f8
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_54
+  network: tcp
+  password: 2545ea58-1db4-4a37-a7da-c90882d9f285
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_55
+  network: tcp
+  password: 80959288-12f7-4040-b2b2-100b1a9ba6b3
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_56
+  network: tcp
+  password: dbd5bd41-5432-40dd-aa2b-5b7bcf11c70b
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_57
+  network: tcp
+  password: 5323c428-c52a-4f97-bef4-8ead2a265131
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_58
+  network: tcp
+  password: 66065acd-7e5f-470e-8b57-dfd2cf2866d5
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_59
+  network: tcp
+  password: 69d2f30a-0047-4ed8-833d-bc27f74f8a0e
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
 - name: 🇨🇳_中国_5
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 120.233.128.68
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_60
+  network: tcp
+  password: 81cc322b-fa51-4430-b853-38d4bdc30367
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_61
+  network: tcp
+  password: 232b1eeb-ddc8-4c4c-a3dd-4aca335bd67d
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_62
+  network: tcp
+  password: 6694a38f-94d3-4848-abc9-35cb2d9294d7
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_63
+  network: tcp
+  password: af87a411-3833-4e98-a45d-41c4c8d49a7f
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_64
+  network: tcp
+  password: 930001b3-6a49-4c3a-a236-c17b97a78d55
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_65
+  network: tcp
+  password: 3c2de5ee-c08e-432b-9851-d08705810826
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_66
+  network: tcp
+  password: d2131c41-7fef-4449-8489-c9140f7eaebc
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_67
+  network: tcp
+  password: 965bdc19-fae0-40e3-8141-d9b506a616aa
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_6
+  network: tcp
+  port: '40175'
+  server: 120.198.71.214
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸_美国_68
+  network: tcp
+  password: 4e34230f-1933-4638-82e1-1312f56b3fcc
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_69
+  network: tcp
+  password: 47d9badf-d30b-4385-9fb7-a925140658db
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_70
+  network: tcp
+  password: e9ea330d-44b8-4bb2-8be1-34a0fc72beda
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_71
+  network: tcp
+  password: 106104a1-eb4b-4c49-87c8-29e3bf28e8e2
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_72
+  network: tcp
+  password: 797ae447-4675-4e10-bcbc-e465b4650db5
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_7
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 113.99.140.184
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_73
+  network: tcp
+  password: 951c5e0f-251f-4fdb-8fac-cc7004a73a03
+  port: 443
+  server: zoomgov.vipren.biz.id
+  skip-cert-verify: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_8
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -99913,655 +100100,391 @@ proxies:
   sni: www.yrtok.com
   type: trojan
   udp: true
-- name: 🇨🇳_中国_6
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇳_中国_7
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_1
-  network: ws
-  port: 14534
-  server: 211.114.180.156
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_2
-  network: ws
-  port: 11111
-  server: 112.173.102.47
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_3
-  network: ws
-  port: 11007
-  server: 218.145.4.124
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_4
-  network: ws
-  port: 11111
-  server: 112.173.102.47
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_52
-  network: ws
-  port: 443
-  server: 172.67.79.211
-  servername: kc1.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇺🇸_美国_53
-  network: ws
-  port: 443
-  server: ipv4.ip.sb
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇺🇸_美国_54
-  network: ws
-  port: 443
-  server: ipv4.ip.sb
-  servername: kc1.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇺🇸_美国_55
-  network: ws
-  port: 443
-  server: 104.16.242.72
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_56
-  network: ws
-  port: 443
-  server: 104.17.223.37
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_5
-  network: ws
-  port: 443
-  server: 132.145.94.80
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_57
-  network: ws
-  port: 443
-  server: 104.18.83.92
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_58
-  network: ws
-  port: 443
-  server: 104.18.85.29
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_59
-  network: ws
-  port: 443
-  server: 104.17.104.243
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_60
-  network: ws
-  port: 443
-  server: 104.18.83.92
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_61
-  network: ws
-  port: 443
-  server: 104.17.189.171
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_62
-  network: ws
-  port: 443
-  server: 104.19.144.212
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_63
-  network: ws
-  port: 443
-  server: 104.17.219.208
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_64
-  network: ws
-  port: 443
-  server: 104.17.210.171
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_65
-  network: ws
-  port: 443
-  server: www.4chan.org
-  servername: kc1.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇺🇸_美国_66
-  network: ws
-  port: 443
-  server: 104.18.82.55
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_67
-  network: ws
-  port: 443
-  server: 104.17.68.85
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇺🇸_美国_68
-  network: ws
-  port: 443
-  server: www.ipchicken.com
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇺🇸_美国_69
-  network: ws
-  port: 2096
-  server: 104.17.128.1
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇺🇸_美国_70
-  network: ws
-  port: 443
-  server: 131.186.33.175
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_71
-  network: ws
-  port: 443
-  server: 104.16.246.173
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_72
-  network: ws
-  port: 443
-  server: 104.19.145.14
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_73
-  network: ws
-  port: 443
-  server: 198.41.208.23
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_74
-  network: ws
+  network: tcp
+  password: f8803041-04b5-41cd-98f4-9c46014bde27
   port: 443
-  server: 104.18.94.107
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: zoomgov.vipren.biz.id
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+- name: 🇨🇳_中国_9
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 116.31.75.150
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: '64'
+  cipher: auto
+  name: 🇨🇳_中国_10
+  network: tcp
+  port: '52952'
+  server: 120.232.153.123
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 🇺🇸_美国_75
-  network: ws
+  network: tcp
+  password: 8b325bac-0aba-42fe-8265-4d1472bede1a
   port: 443
-  server: 104.17.101.175
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: zoomgov.vipren.biz.id
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_6
-  network: ws
-  port: 14534
-  server: 211.114.180.156
-  servername: tx.vs2024.dpdns.org
+- name: 🇨🇳_中国_11
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.11
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: www.yrtok.com
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_76
-  network: ws
+  network: tcp
+  password: 1b7cdc0a-f934-4f82-b802-b7e350f96d63
   port: 443
-  server: 104.19.150.28
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: zoomgov.vipren.biz.id
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_77
-  network: ws
+  network: tcp
+  password: e643e242-75eb-46bd-bccc-d582db1bcb0f
   port: 443
-  server: 104.17.142.12
-  servername: kc1.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: zoomgov.vipren.biz.id
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
 - name: 🇺🇸_美国_78
-  network: ws
+  network: tcp
+  password: 883ff356-cb39-4a9b-9f50-ba98cd72d107
   port: 443
-  server: 104.16.249.115
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: zoomgov.vipren.biz.id
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_79
-  network: ws
-  port: 8443
-  server: 150.230.20.156
-  servername: tx.vs2024.dpdns.org
+  network: tcp
+  password: Aimer
+  port: 443
+  server: kip.ns.cloudflare.com
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epmf.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_80
-  network: ws
+  network: tcp
+  password: Aimer
   port: 443
-  server: 104.17.223.37
-  servername: tx.vs2024.dpdns.org
+  server: thaddeus.ns.cloudflare.com
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epmf.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇦🇺_澳大利亚_1
-  network: ws
-  port: 23023
-  server: 43.165.191.25
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇯🇵_日本_1
-  network: ws
-  port: 2053
-  server: 140.238.58.181
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
 - name: 🇺🇸_美国_81
-  network: ws
-  port: 443
-  server: 104.17.101.175
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_82
-  network: ws
-  port: 443
-  server: 104.18.85.29
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_83
-  network: ws
+  network: tcp
+  password: Aimer
   port: 2096
-  server: 104.17.128.1
-  servername: dt.vs2024.dpdns.org
+  server: 104.19.86.120
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epmf.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇨🇭_瑞士
-  network: ws
+- name: 🇨🇳_中国_12
+  network: tcp
+  password: Aimer
+  port: 2053
+  server: 45.194.53.13
+  skip-cert-verify: true
+  sni: epmf.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_13
+  network: tcp
+  port: '37805'
+  server: 120.232.153.63
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸_美国_82
+  network: tcp
+  password: b8354bb0-8774-48f3-933b-f40c22a2eda5
   port: 443
-  server: 64.110.101.125
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: zoomgov.vipren.biz.id
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+- alterId: '64'
+  cipher: auto
+  name: 🇨🇳_中国_14
+  network: tcp
+  port: '41191'
+  server: 183.236.51.38
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳_中国_15
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21118
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: 120.233.44.201
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_16
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21031
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: 120.233.44.201
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_17
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21017
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: 120.233.44.201
+  type: trojan
+  udp: true
+- name: 🇨🇦_加拿大
+  network: tcp
+  password: Aimer
+  port: 2087
+  server: 104.234.239.235
+  skip-cert-verify: true
+  sni: epmf.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_18
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21118
+  server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 🇷🇺_俄罗斯
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 77.232.140.7
+  skip-cert-verify: true
+  sni: epmf.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_19
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21603
+  server: xd-js.timiwc.com
+  skip-cert-verify: true
+  sni: k61.tudou211.com
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_20
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21003
+  server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_21
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21056
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: 120.233.44.201
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_22
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 27.50.49.188
+  skip-cert-verify: true
+  sni: epmf.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_23
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21056
+  server: 120.233.44.201
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_24
+  network: tcp
+  port: '41024'
+  server: 183.236.51.38
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇳_中国_25
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21003
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: k15.tudou211.com
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_26
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21003
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: 120.233.44.201
+  type: trojan
+  udp: true
+- name: 🇺🇸_美国_83
+  network: tcp
+  password: Aimer
+  port: 2096
+  server: 108.162.193.190
+  skip-cert-verify: true
+  sni: epmf.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_27
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21118
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: k17.tudou211.com
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_28
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21017
+  server: 120.233.44.201
+  skip-cert-verify: true
+  sni: k16.tudou211.com
+  type: trojan
+  udp: true
 - name: 🇺🇸_美国_84
-  network: ws
+  network: tcp
+  password: cc04b5fc-647a-477a-a538-24758529bb07
   port: 443
-  server: 104.18.94.238
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
   skip-cert-verify: true
-  tls: true
+  sni: zoomgov.vipren.biz.id
+  type: trojan
+  udp: true
+- name: 🇨🇳_中国_29
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21332
+  server: xd-js.timiwc.com
+  skip-cert-verify: true
+  sni: k65.tudou211.com
+  type: trojan
+  udp: true
+- name: 🇮🇷_伊朗_1
+  network: tcp
+  port: 41577
+  server: 212.16.71.16
+  skip-cert-verify: true
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇺🇸_美国_85
-  network: ws
-  port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: tx.vs2024.dpdns.org
+  uuid: 6bfe29b6-6b37-4186-a9c1-377503f5ea0d
+- name: 🇮🇷_伊朗_2
+  network: tcp
+  port: 9125
+  server: 94.182.83.85
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇯🇵_日本_2
-  network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: dt.vs2024.dpdns.org
+  uuid: 52ddd2b7-d2da-4169-b11d-b51679c01eb0
+- name: 🇨🇳_中国_30
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21332
+  server: xd-js.timiwc.com
   skip-cert-verify: true
-  tls: true
+  sni: k65.tudou211.com
+  type: trojan
+  udp: true
+- flow: xtls-rprx-vision
+  name: 🇧🇬_保加利亚
+  network: tcp
+  port: 9056
+  server: bgjpreal.tsmoe.com
+  servername: appstore.1yo.cc
+  skip-cert-verify: true
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+  uuid: 99cd771c-0bc5-4f41-879e-925b973a3186
+- flow: xtls-rprx-vision
+  name: 🇪🇸_西班牙
+  network: tcp
+  port: 9003
+  server: usreal.tsmoe.com
+  servername: cd2.tsmoe.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 99cd771c-0bc5-4f41-879e-925b973a3186
+- flow: xtls-rprx-vision
+  name: 🇲🇩_摩尔多瓦_1
+  network: tcp
+  port: 9063
+  server: yxhkreal.tsmoe.com
+  servername: 2000scleaning.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 99cd771c-0bc5-4f41-879e-925b973a3186
+- flow: xtls-rprx-vision
+  name: 🇲🇩_摩尔多瓦_2
+  network: tcp
+  port: 9064
+  server: yxjpreal.tsmoe.com
+  servername: yxjpnpm.1yo.cc
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 99cd771c-0bc5-4f41-879e-925b973a3186
+- flow: xtls-rprx-vision
+  name: 🇺🇸_美国_85
+  network: tcp
+  port: 9111
+  server: akhkreal.tsmoe.com
+  servername: www.freepik.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 99cd771c-0bc5-4f41-879e-925b973a3186
 - name: 🇺🇸_美国_86
   network: ws
   port: 443
-  server: 104.16.249.115
-  servername: dt.vs2024.dpdns.org
+  server: 104.17.100.185
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -100569,41 +100492,41 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_87
   network: ws
   port: 443
-  server: 104.16.246.173
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 77470773-22f5-49b6-a49f-f1c2dbc699cc
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /129.151.128.114=34834
 - name: 🇺🇸_美国_88
   network: ws
   port: 443
-  server: 104.18.93.7
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 1a3af27b-531f-4195-b53b-23af4a127b63
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /128.199.171.100=2053
 - name: 🇺🇸_美国_89
   network: ws
   port: 443
-  server: 162.159.153.144
-  servername: tx.vs2024.dpdns.org
+  server: 69.84.182.12
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -100611,615 +100534,601 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_90
   network: ws
   port: 443
-  server: 162.159.153.42
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 1b310a32-784b-4ba1-aa10-0b1d79d4e152
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /168.138.165.174=443
 - name: 🇺🇸_美国_91
   network: ws
   port: 443
-  server: 162.159.152.53
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 1137490a-154c-4a3f-a367-7fcbed2d6730
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /138.2.100.221=26621
 - name: 🇺🇸_美国_92
   network: ws
   port: 443
-  server: 104.19.145.14
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 215acebc-54f2-4425-a1f2-751b43ca3f49
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /139.185.50.5=14594
 - name: 🇺🇸_美国_93
   network: ws
   port: 443
-  server: braden.ns.cloudflare.com
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 84cfe101-711f-4b73-bb83-fca3db858396
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /178.128.80.43=443
 - name: 🇺🇸_美国_94
   network: ws
   port: 443
-  server: iplocation.io
-  servername: kc1.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 56298f4d-6676-42ba-9a49-289d02412d5f
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /185.209.49.17=8443
 - name: 🇺🇸_美国_95
   network: ws
   port: 443
-  server: decker.ns.cloudflare.com
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 30763388-8f4d-4f91-9144-b5abf3058504
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /83.142.30.4=2096
 - name: 🇺🇸_美国_96
   network: ws
   port: 443
-  server: kyree.ns.cloudflare.com
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e93770cc-f085-410a-a75b-1c2c7d4d927e
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /43.218.77.16=1443
 - name: 🇺🇸_美国_97
   network: ws
   port: 443
-  server: 104.18.147.201
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 59e70f06-3bce-4e0a-bd58-93a2d52afbb0
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /54.169.229.188=443
 - name: 🇺🇸_美国_98
   network: ws
   port: 443
-  server: wilson.ns.cloudflare.com
-  servername: kc1.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e4dfd09a-463f-46e7-92b8-df894b34931e
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /138.2.90.127=55555
 - name: 🇺🇸_美国_99
   network: ws
   port: 443
-  server: dnschecker.org
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e87010c0-7288-48b9-a4db-a67146344786
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /167.253.158.63=8443
 - name: 🇺🇸_美国_100
   network: ws
-  port: 443
-  server: ip.gs
-  servername: kc1.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 7cf41e02-394a-43e1-b890-6490b01158fd
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /216.10.243.159=443
 - name: 🇺🇸_美国_101
   network: ws
   port: 443
-  server: 104.17.142.12
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 73ca8631-780e-4f81-b784-ca447ab151d7
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /176.97.66.175=443
 - name: 🇺🇸_美国_102
   network: ws
   port: 443
-  server: 162.159.153.42
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: b8d59b10-984e-44f0-a971-4542670ac965
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /143.198.196.196=2053
 - name: 🇺🇸_美国_103
   network: ws
   port: 443
-  server: 172.67.106.26
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ffb69fb2-db49-4f0e-9adf-d859c6838fd5
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /194.36.179.17=2053
 - name: 🇺🇸_美国_104
   network: ws
   port: 443
-  server: comicabc.com
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 8a8dc0b7-02b2-4e7e-865f-23164fc79501
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /13.233.5.49=443
 - name: 🇺🇸_美国_105
   network: ws
   port: 443
-  server: 162.159.153.170
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 7a27bc8d-1316-4403-8353-2628c8e8df74
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /43.218.77.16=443
 - name: 🇺🇸_美国_106
   network: ws
   port: 443
-  server: braden.ns.cloudflare.com
-  servername: kc1.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: c3a4290b-8658-4f7c-89c8-900d9d6ff702
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /213.35.100.31=47112
 - name: 🇺🇸_美国_107
   network: ws
   port: 443
-  server: 162.159.133.85
-  servername: kc1.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 72a0bc76-c051-439c-8b02-199ba1e7322c
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /13.229.159.215=443
 - name: 🇺🇸_美国_108
   network: ws
   port: 443
-  server: huxley.ns.cloudflare.com
-  servername: kc1.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 855d9643-5667-4b69-b6a6-1b0d224ffe9b
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /203.194.112.119=8443
 - name: 🇺🇸_美国_109
   network: ws
-  port: 443
-  server: 104.19.150.163
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 5c9b2585-4196-4d74-bb87-790913ab964e
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /163.47.9.27=8443
 - name: 🇺🇸_美国_110
   network: ws
   port: 443
-  server: 104.17.189.171
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 3547d194-9a13-4c08-98d7-65053910a8ca
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /213.35.107.73=443
 - name: 🇺🇸_美国_111
   network: ws
-  port: 443
-  server: comicabc.com
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: c9846e9b-2b07-42ac-a667-80dab3458180
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /3.1.116.161=2053
 - name: 🇺🇸_美国_112
   network: ws
   port: 443
-  server: time.is
-  servername: kc1.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 41b5082e-6eb9-4711-af7c-accdd7e69d5f
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /194.127.193.240=50791
 - name: 🇺🇸_美国_113
   network: ws
   port: 443
-  server: 162.159.152.205
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: fefe9891-3f7f-43a4-a37e-afe63e86cd57
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /146.235.18.248=45137
 - name: 🇺🇸_美国_114
   network: ws
   port: 443
-  server: 162.159.153.170
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 31ac6442-069e-44e8-a49d-de2454790335
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /43.128.95.84=38091
 - name: 🇺🇸_美国_115
   network: ws
   port: 443
-  server: 162.159.152.155
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: df2b79a0-6a63-4fc3-adc2-ba40fef0ba8b
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /45.86.228.104=443
 - name: 🇺🇸_美国_116
   network: ws
-  port: 443
-  server: kyree.ns.cloudflare.com
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e2820cda-0887-48ef-bc7a-11b2a4c2f0ef
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /38.181.70.7=16240
 - name: 🇺🇸_美国_117
   network: ws
   port: 443
-  server: 162.159.152.69
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 618ed365-8efa-4b90-ae63-e80e72852310
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /138.2.90.127=55555
 - name: 🇺🇸_美国_118
   network: ws
-  port: 443
-  server: www.wto.org
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: be30603c-bb27-4d40-8c6c-204f02921f80
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /203.194.112.119=2053
 - name: 🇺🇸_美国_119
   network: ws
-  port: 443
-  server: dylan.ns.cloudflare.com
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 1460f93a-f89c-4e79-b598-38eabd8506d0
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /158.178.243.152=61731
 - name: 🇺🇸_美国_120
   network: ws
   port: 443
-  server: 162.159.152.31
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: c69b81de-da74-4aff-8b15-202ed3b29f5b
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /139.59.48.26=8443
 - name: 🇺🇸_美国_121
   network: ws
   port: 443
-  server: 162.159.153.209
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 48bc208b-88e1-4619-b859-70915d46ac24
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /138.2.75.219=39341
 - name: 🇺🇸_美国_122
   network: ws
-  port: 443
-  server: ip.gs
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 4d6185d6-a1aa-4f19-a087-fe65c18c7a95
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /109.61.42.167=6633
 - name: 🇺🇸_美国_123
   network: ws
-  port: 443
-  server: 162.159.152.225
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 493a8f3c-54cf-469b-adfd-4802993931db
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_1
-  network: ws
-  port: 443
-  server: 158.101.214.54
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /138.2.77.179=30018
 - name: 🇺🇸_美国_124
   network: ws
   port: 443
-  server: 162.159.153.239
-  servername: tx.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: b4c311e4-bd9b-4442-bb07-75866dddb72f
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🏳️_未知_2
-  network: ws
-  port: 443
-  server: 103.160.204.59
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /8.219.14.21=23943
 - name: 🇺🇸_美国_125
   network: ws
   port: 443
-  server: 162.159.153.72
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e9dda3fb-652b-4649-8d4a-abe454f5375f
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /91.192.81.154=8443
 - name: 🇺🇸_美国_126
   network: ws
-  port: 443
-  server: 104.17.210.171
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: d8821296-022a-4bf0-975e-6d396934cdab
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /168.138.184.142=19191
+- name: 🇨🇳_中国_31
+  network: ws
+  port: 2096
+  server: 154.211.8.47
+  servername: fei.634676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  ws-opts:
+    headers:
+      host: fei.634676.xyz
+    path: /
 - name: 🇺🇸_美国_127
   network: ws
-  port: 443
-  server: 162.159.152.53
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 9ea703d4-e64f-4714-9ecc-c0740ae0445f
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /138.2.75.219=39341
 - name: 🇺🇸_美国_128
   network: ws
-  port: 443
-  server: ashton.ns.cloudflare.com
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 902fd1e5-9fde-4225-9b88-48b5fd3e4774
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /185.209.49.17=8443
 - name: 🇺🇸_美国_129
   network: ws
-  port: 2053
-  server: 150.230.20.156
-  servername: tx.vs2024.dpdns.org
+  port: 443
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e8090858-8259-4904-a28a-d2140fa3b327
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /31.192.238.71=8443
 - name: 🇺🇸_美国_130
   network: ws
-  port: 443
-  server: 172.67.243.218
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 4ff3549a-02cf-455b-b956-9a6c98a657c6
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /5.44.42.108=8443
 - name: 🇺🇸_美国_131
   network: ws
   port: 443
-  server: 162.159.153.217
-  servername: tx.vs2024.dpdns.org
+  server: 69.84.182.41
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101227,363 +101136,321 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_132
   network: ws
   port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 1041937e-d3a1-4d94-b8dc-af69504ee34a
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /194.36.178.36=8443
 - name: 🇺🇸_美国_133
   network: ws
-  port: 443
-  server: www.ddwhm.com
-  servername: kc1.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: a234a511-07eb-4a9b-a89f-274a6599fc50
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /163.47.9.27=2053
 - name: 🇺🇸_美国_134
   network: ws
-  port: 443
-  server: time.is
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 9e34682b-1d5f-4556-874b-489e82fc5aed
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /193.123.90.82=12648
 - name: 🇺🇸_美国_135
   network: ws
-  port: 443
-  server: 172.67.181.209
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: b45b2821-07c7-40a9-bc4d-059a00763ca2
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /47.245.91.197=9000
 - name: 🇺🇸_美国_136
   network: ws
-  port: 443
-  server: 162.159.152.81
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 5c069623-2fcf-4636-b5f4-663406a1061c
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /104.248.145.216=443
 - name: 🇺🇸_美国_137
   network: ws
-  port: 443
-  server: icook.hk
-  servername: kc1.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: c662d805-6be8-411b-bd64-af567b04d11f
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /168.138.170.211=53702
 - name: 🇺🇸_美国_138
   network: ws
-  port: 443
-  server: huxley.ns.cloudflare.com
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 6c9fc814-afd6-49db-a197-78ac737224e4
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /138.2.74.219=28616
 - name: 🇺🇸_美国_139
   network: ws
-  port: 443
-  server: 162.159.152.81
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 1e917c25-3c01-4ff7-9bb4-e60758ddb629
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /31.192.238.71=8443
 - name: 🇺🇸_美国_140
   network: ws
-  port: 443
-  server: otto.ns.cloudflare.com
-  servername: kc1.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 0e05f568-2d68-496c-a72d-4fa300bce82a
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /15.235.199.103=8443
 - name: 🇺🇸_美国_141
   network: ws
-  port: 443
-  server: 172.67.120.0
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 0c7594dd-b6a5-4070-a1df-610752819d32
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /64.49.14.41=2053
 - name: 🇺🇸_美国_142
   network: ws
-  port: 8443
-  server: 129.151.198.3
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ad06d27f-abcc-43df-bdec-75eb7b368a19
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇳_中国_8
-  network: ws
-  port: 443
-  server: 47.57.181.17
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /5.44.42.166=2053
 - name: 🇺🇸_美国_143
   network: ws
-  port: 443
-  server: www.whatismyip.com
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 872fdc33-9fe2-4b06-9ab5-6ac3e65079cc
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇳🇱_荷兰_2
-  network: ws
-  port: 443
-  server: 130.162.130.105
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /206.206.76.208=2053
 - name: 🇺🇸_美国_144
   network: ws
   port: 443
-  server: dylan.ns.cloudflare.com
-  servername: kc1.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: be7081ba-28e5-4c6e-8179-35c3db78963c
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /138.2.101.213=15204
 - name: 🇺🇸_美国_145
   network: ws
-  port: 443
-  server: www.udemy.com
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 0e3b9294-b0f7-4c53-ba1a-e5095572fc08
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /47.236.22.194=52324
 - name: 🇺🇸_美国_146
   network: ws
-  port: 443
-  server: time.is
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 1834a384-ba17-481a-a1e6-28437fb6adfc
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /165.232.182.81=443
 - name: 🇺🇸_美国_147
   network: ws
-  port: 8443
-  server: 162.159.129.67
-  servername: tx.vs2024.dpdns.org
+  port: 443
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 0e96cbd4-9fa8-45ac-9576-5e493f972312
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /45.32.100.46=13802
 - name: 🇺🇸_美国_148
   network: ws
-  port: 443
-  server: 162.159.152.31
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 3d0622fd-6021-47a1-8be9-1404bce9380a
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇴_挪威_1
-  network: ws
-  port: 8443
-  server: 141.145.205.115
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /128.199.171.100=8443
 - name: 🇺🇸_美国_149
   network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e22b6481-d766-498f-bfd0-7b34bb151f50
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /152.69.221.114=23302
 - name: 🇺🇸_美国_150
   network: ws
-  port: 443
-  server: 162.159.152.225
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 66fdc6a0-99bf-4c98-bf2b-f994033327a7
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /166.0.244.206=8443
 - name: 🇺🇸_美国_151
   network: ws
-  port: 443
-  server: 162.159.153.144
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 789d522e-130e-4594-880a-d67782a47b17
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /65.20.74.136=2053
 - name: 🇺🇸_美国_152
   network: ws
   port: 443
-  server: benedict.ns.cloudflare.com
-  servername: dt.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 757d1cc1-568c-4c81-b3c9-04eb6b7ed994
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /38.54.16.95=2053
 - name: 🇺🇸_美国_153
   network: ws
-  port: 443
-  server: decker.ns.cloudflare.com
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 6e1568c1-e9cb-47e0-aa58-992a230e5251
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: zoomgov.vipren.biz.id
+    path: /129.151.128.114=34834
 - name: 🇺🇸_美国_154
   network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: dt.vs2024.dpdns.org
+  port: 443
+  server: 104.17.110.70
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101591,13 +101458,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: bv1.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_155
   network: ws
   port: 443
-  server: 172.67.120.0
-  servername: kc1.vs2024.dpdns.org
+  server: 69.84.182.41
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101605,41 +101472,27 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇸🇪_瑞典_1
-  network: ws
-  port: 443
-  server: 141.147.114.60
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
+      host: bv.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_156
   network: ws
-  port: 443
-  server: www.hugedomains.com
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 0f190aa5-4688-4251-b7b3-629b5e669958
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇳🇴_挪威_2
+      host: zoomgov.vipren.biz.id
+    path: /178.128.80.43=443
+- name: 🇦🇺_澳大利亚
   network: ws
-  port: 8443
-  server: 141.145.205.115
-  servername: tx.vs2024.dpdns.org
+  port: 443
+  server: 152.67.125.174
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101647,13 +101500,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      host: bv.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_157
   network: ws
   port: 443
-  server: huxley.ns.cloudflare.com
-  servername: dt.vs2024.dpdns.org
+  server: 104.17.219.208
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101661,55 +101514,41 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: bv.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_158
   network: ws
   port: 443
-  server: decker.ns.cloudflare.com
-  servername: kc1.vs2024.dpdns.org
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e96c043e-eac3-4ab9-a07d-9d777a90939e
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇳🇱_荷兰_3
-  network: ws
-  port: 1010
-  server: 45.154.98.100
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /138.2.69.236=23334
 - name: 🇺🇸_美国_159
   network: ws
-  port: 443
-  server: 162.159.153.209
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 2929d8c6-231b-48fa-95d9-8d4d0883c403
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /138.2.89.64=32962
 - name: 🇺🇸_美国_160
   network: ws
   port: 443
-  server: 162.159.152.69
-  servername: dt.vs2024.dpdns.org
+  server: 69.84.182.53
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101717,13 +101556,27 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
+      host: bv.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_2
+  network: ws
+  port: 12318
+  server: 59.25.82.79
+  servername: bv1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_161
   network: ws
   port: 443
-  server: www.ipget.net
-  servername: kc1.vs2024.dpdns.org
+  server: 160.79.104.175
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101731,41 +101584,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- name: 🇳🇱_荷兰_4
-  network: ws
-  port: 5008
-  server: 45.154.98.100
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_5
-  network: ws
-  port: 5008
-  server: 45.154.98.100
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_162
   network: ws
   port: 443
-  server: icook.hk
-  servername: tx.vs2024.dpdns.org
+  server: ipinfo.in
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101773,13 +101598,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: bv.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_163
   network: ws
   port: 443
-  server: icook.hk
-  servername: dt.vs2024.dpdns.org
+  server: 104.19.145.14
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101787,13 +101612,41 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: bv.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇩🇪_德国_1
+  network: ws
+  port: 443
+  server: 185.16.110.181
+  servername: bv.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇦_乌克兰_1
+  network: ws
+  port: 80
+  server: 31.43.179.217
+  servername: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  ws-opts:
+    headers:
+      host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+    path: /
 - name: 🇺🇸_美国_164
   network: ws
   port: 443
-  server: 47.253.105.131
-  servername: dt.vs2024.dpdns.org
+  server: trevor.ns.cloudflare.com
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101801,41 +101654,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇸🇪_瑞典_2
-  network: ws
-  port: 443
-  server: 141.147.114.60
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇯🇵_日本_3
-  network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
+      host: bv.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_165
   network: ws
-  port: 2053
-  server: 129.159.132.0
-  servername: dt.vs2024.dpdns.org
+  port: 443
+  server: rustam.ns.cloudflare.com
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101843,13 +101668,55 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇨🇳_中国_32
+  network: ws
+  port: 443
+  server: 47.57.233.126
+  servername: bv1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇨🇳_中国_33
+  network: ws
+  port: 443
+  server: 103.44.255.81
+  servername: bv1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇩🇪_德国_2
+  network: ws
+  port: 443
+  server: 185.16.110.200
+  servername: bv1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_166
   network: ws
   port: 443
-  server: craig.ns.cloudflare.com
-  servername: tx.vs2024.dpdns.org
+  server: 160.79.104.117
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101857,13 +101724,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
+      host: bv.ylks0033.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_167
   network: ws
   port: 443
-  server: 129.146.46.164
-  servername: tx.vs2024.dpdns.org
+  server: uriah.ns.cloudflare.com
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101871,27 +101738,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_6
-  network: ws
-  port: 1010
-  server: 45.154.98.100
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_168
   network: ws
-  port: 38712
-  server: 108.174.61.161
-  servername: dt.vs2024.dpdns.org
+  port: 443
+  server: 135.84.76.143
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101899,13 +101752,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_169
   network: ws
   port: 443
-  server: 162.159.153.212
-  servername: tx.vs2024.dpdns.org
+  server: abdullah.ns.cloudflare.com
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101913,13 +101766,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_170
   network: ws
-  port: 59581
-  server: 108.174.61.161
-  servername: tx.vs2024.dpdns.org
+  port: 443
+  server: 69.84.182.53
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101927,13 +101780,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_171
   network: ws
-  port: 59581
-  server: 108.174.61.161
-  servername: dt.vs2024.dpdns.org
+  port: 443
+  server: ip.sb
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101941,13 +101794,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_172
   network: ws
   port: 443
-  server: 129.153.203.62
-  servername: dt.vs2024.dpdns.org
+  server: 192.0.54.134
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -101955,55 +101808,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇳_中国_9
-  network: ws
-  port: 443
-  server: 47.57.181.17
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_1
-  network: ws
-  port: 443
-  server: 144.24.90.107
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_2
-  network: ws
-  port: 443
-  server: 144.24.90.107
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
+      host: bv.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_173
   network: ws
   port: 443
-  server: 129.146.46.164
-  servername: dt.vs2024.dpdns.org
+  server: 192.0.54.24
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -102011,13 +101822,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
+      host: bv.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_174
   network: ws
   port: 443
-  server: 129.213.136.180
-  servername: dt.vs2024.dpdns.org
+  server: 160.79.104.6
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -102025,27 +101836,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇦_加拿大_1
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_175
   network: ws
   port: 443
-  server: 150.136.87.192
-  servername: tx.vs2024.dpdns.org
+  server: 192.0.54.134
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -102053,27 +101850,69 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇿🇦_南非
+  network: ws
+  port: 443
+  server: 160.123.255.163
+  servername: bv1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇩🇪_德国_3
+  network: ws
+  port: 443
+  server: 185.16.110.181
+  servername: bv1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv1.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_176
   network: ws
-  port: 443
-  server: 129.213.130.70
-  servername: tx.vs2024.dpdns.org
+  port: 80
+  server: zoomgov.vipren.biz.id
+  servername: zoomgov.vipren.biz.id
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: d7a598d4-49e7-4912-b7df-6664ee3aab40
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: zoomgov.vipren.biz.id
+    path: /185.81.28.95=30503
+- name: 🇧🇷_巴西
+  network: ws
+  port: 443
+  server: 168.138.181.208
+  servername: sgp.rtot.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0783b1b9-5d8b-4d03-adc3-b050acc71a29
+  ws-opts:
+    headers:
+      host: sgp.rtot.me
+    path: /bing
 - name: 🇺🇸_美国_177
   network: ws
   port: 443
-  server: 129.213.136.180
-  servername: tx.vs2024.dpdns.org
+  server: 160.79.104.6
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -102081,55 +101920,13 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇳🇱_荷兰_7
-  network: ws
-  port: 2053
-  server: 132.226.163.224
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇨🇦_加拿大_2
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- name: 🇦🇺_澳大利亚_2
-  network: ws
-  port: 23023
-  server: 43.165.191.25
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
+      host: bv.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_178
   network: ws
-  port: 2053
-  server: 129.159.132.0
-  servername: tx.vs2024.dpdns.org
+  port: 443
+  server: 160.79.104.117
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -102137,13 +101934,27 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      host: bv1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇩🇪_德国_4
+  network: ws
+  port: 443
+  server: 185.16.110.200
+  servername: bv.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv.ylks0033.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_179
   network: ws
-  port: 38712
-  server: 108.174.61.161
-  servername: tx.vs2024.dpdns.org
+  port: 443
+  server: www.pcmag.com
+  servername: bv.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -102151,90 +101962,158 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      host: bv.ylks0033.dpdns.org
     path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 🇧🇪_比利时
+- name: 🇺🇸_美国_180
   network: ws
-  port: '80'
-  server: 57.129.132.223
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  ws-opts:
-    path: /vmess/
-- alterId: '2'
-  cipher: auto
-  name: 🇨🇳_中国_10
-  network: ws
-  port: '30807'
-  server: 111.26.109.79
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- name: 🇮🇷_伊朗_4
-  network: ws
-  port: 11140
-  server: 185.208.77.113
+  port: 443
+  server: 192.0.54.24
+  servername: bv1.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 39420bb7-5535-48fc-c56c-5c98c6eafce8
-  ws-opts:
-    path: /
-- alterId: '2'
-  cipher: auto
-  name: 🇨🇳_中国_11
-  network: ws
-  port: '30809'
-  server: v9.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: baidu.com
-    path: /oooo
-- alterId: '2'
-  cipher: auto
-  name: 🇨🇳_中国_12
+      host: bv1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_181
   network: ws
-  port: '30828'
-  server: 111.26.109.79
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: '2'
-  cipher: auto
-  name: 🇨🇳_中国_13
-  network: ws
-  port: '30828'
-  server: 111.26.109.79
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸_美国_180
-  network: ws
-  port: '38003'
-  server: 38.11.18.221
+  port: 443
+  server: cris.ns.cloudflare.com
+  servername: bv.ylks0033.dpdns.org
+  skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: www.47720602.xyz
-    path: /path/262029062315
+      host: bv.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇮🇳_印度
+  network: ws
+  port: 80
+  server: 14.102.228.75
+  servername: ov-canada1.09vpn.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: b49d8a13-12f6-4613-bb0d-3e2f6244f29c
+  ws-opts:
+    headers:
+      host: ov-canada1.09vpn.com
+    path: /vless/
+- name: 🇺🇸_美国_182
+  network: ws
+  port: 443
+  server: craig.ns.cloudflare.com
+  servername: bv1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇦_乌克兰_2
+  network: ws
+  port: 443
+  server: 45.67.215.58
+  servername: bv.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_183
+  network: ws
+  port: 443
+  server: 104.19.150.28
+  servername: bv.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bv.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_184
+  network: ws
+  port: 443
+  server: 104.21.9.71
+  servername: eEeEeEEEEe.777198.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c226ac5d-65e9-4379-95c3-fb542bc242d8
+  ws-opts:
+    headers:
+      host: eEeEeEEEEe.777198.xyz
+    path: /ojdw89bpg4ykd4o
+- name: 🇮🇷_伊朗_3
+  network: ws
+  port: 1433
+  server: 31.58.239.159
+  servername: snapp.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 12486672-3116-48b2-8495-2d7223874a7b
+  ws-opts:
+    headers:
+      host: snapp.ir
+    path: /
+- name: 🇮🇹_意大利
+  network: ws
+  port: 80
+  server: 151.101.242.172
+  servername: Afkarnews.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b4bb431-21bf-46c9-a4bf-4deac75613f9
+  ws-opts:
+    headers:
+      host: Afkarnews.com
+    path: /de?ed=1048
+- alterId: '2'
+  cipher: auto
+  name: 🇨🇳_中国_34
+  network: ws
+  port: '30829'
+  server: 111.26.109.79
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
+- name: 🇮🇷_伊朗_4
+  network: ws
+  port: 1433
+  server: 31.58.239.159
+  servername: snapp.ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 12486672-3116-48b2-8495-2d7223874a7b
+  ws-opts:
+    headers:
+      host: snapp.ir
+    path: /
 proxy-groups:
 - name: 选择代理
   proxies:
