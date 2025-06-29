@@ -7346,6 +7346,23 @@ proxies:
     headers:
       HOST: de01.sh-cloudflare.sbs
     path: /
+- alterId: 32
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-美国>香港-NF解锁自制剧-ChatGPT-YouTube-vc.fly.dev:443
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  servername: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-opts:
+    headers:
+      HOST: vc.fly.dev
+    path: /vc
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
@@ -99263,1245 +99280,1630 @@ proxies:
     headers:
       Host: vle.amclubdns.dpdns.org
     path: /
-- alterId: '0'
+- alterId: '64'
   cipher: auto
   name: 电报群：https://t.me/vvkj11
-  network: httpupgrade
-  port: '80'
-  server: ru2a-20250420.88888009.xyz
+  network: tcp
+  port: '50002'
+  server: 120.210.205.59
   type: vmess
-  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: '0'
   cipher: auto
   name: 每天更新，请加电报群防止失联
-  network: httpupgrade
-  port: '80'
-  server: ru1a-20250420.88888009.xyz
+  network: tcp
+  port: '50002'
+  server: 112.132.215.12
   type: vmess
-  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
-- alterId: '0'
-  cipher: auto
-  name: 日期：06-28
-  network: httpupgrade
-  port: '80'
-  server: us2a-20250420.88888009.xyz
-  type: vmess
-  uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4
-- name: 免费VPN：https://tt.vg/gwaAy
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- flow: xtls-rprx-vision
+  name: 日期：06-29
   network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 113.99.140.184
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_1
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 113.99.140.184
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_2
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 113.99.140.184
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-  udp: true
-- name: 🇨🇳_中国_3
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.12
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-  udp: true
-- name: 🇧🇷_巴西_1
-  network: tcp
-  password: '%7Dh0nlnM%7C%3FRTx%25uQd'
-  port: 443
-  server: 188.114.96.11
-  skip-cert-verify: true
-  sni: XLz767V2RAY.Pages.deV
-  type: trojan
-  udp: true
-- name: 🇧🇪_比利时
-  network: tcp
-  port: 2055
-  server: 57.130.19.124
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
   skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: 5e236508-63e4-45b3-a7d7-f9cd81af89df
-- name: 🇧🇷_巴西_2
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 免费VPN：https://tt.vg/gwaAy
   network: tcp
-  password: '%7Dh0nlnM%7C%3FRTx%25uQd'
-  port: 2087
-  server: 188.114.97.11
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
   skip-cert-verify: true
-  sni: Xlz767V2Ray.PAGEs.DEv
-  type: trojan
+  tls: false
+  type: vless
   udp: true
-- name: 🇧🇷_巴西_3
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇨🇳_中国_1
   network: tcp
-  password: '%7Dh0nlnM%7C%3FRTx%25uQd'
-  port: 2083
-  server: 188.114.97.11
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
   skip-cert-verify: true
-  sni: xLZ767v2rAY.pAgeS.dev
-  type: trojan
+  tls: false
+  type: vless
   udp: true
-- name: 🇧🇷_巴西_4
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇨🇳_中国_2
   network: tcp
-  password: '%7Dh0nlnM%7C%3FRTx%25uQd'
-  port: 2087
-  server: 188.114.96.11
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
   skip-cert-verify: true
-  sni: xLZ767v2Ray.PAgEs.dev
-  type: trojan
+  tls: false
+  type: vless
   udp: true
-- alterId: '0'
-  cipher: auto
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇨🇳_中国_3
+  network: tcp
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_1
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_2
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_3
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_4
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_5
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_6
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_7
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_8
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_9
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_10
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_11
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_12
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_13
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_14
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_15
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇷🇺_俄罗斯_1
+  network: tcp
+  port: 23511
+  server: 46.17.40.153
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
+  name: 🇷🇺_俄罗斯_2
+  network: tcp
+  port: 23511
+  server: 46.17.40.153
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0daa320d-db18-4dc7-8a08-41d0f1385753
+- flow: xtls-rprx-vision
   name: 🇨🇳_中国_4
   network: tcp
-  port: '49597'
-  server: 120.232.153.41
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇺🇸_美国_1
-  network: tcp
-  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
-  port: 443
-  server: 172.67.214.21
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
   skip-cert-verify: true
-  sni: xXcdvFgt.191268.XYz
-  type: trojan
+  tls: false
+  type: vless
   udp: true
-- name: 🇺🇸_美国_2
-  network: tcp
-  password: bce0c7cb-08d1-46a7-b77b-7bff8b46252f
-  port: 443
-  server: 172.67.177.109
-  skip-cert-verify: true
-  sni: UUUUuUuuU.666461.xYz
-  type: trojan
-  udp: true
-- alterId: '64'
-  cipher: auto
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
   name: 🇨🇳_中国_5
   network: tcp
-  port: '43491'
-  server: 120.232.153.41
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇨🇳_中国_6
+  network: tcp
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇨🇳_中国_7
+  network: tcp
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇨🇳_中国_8
+  network: tcp
+  port: 33491
+  server: cbcc97ee-db64-468b-b6ac-9c9db2928da1.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_16
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_17
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_18
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_19
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_20
+  network: tcp
+  port: 33457
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_21
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_22
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_23
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_24
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_25
+  network: tcp
+  port: 33456
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_26
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_27
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_28
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_29
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇸🇬_新加坡_30
+  network: tcp
+  port: 33454
+  server: 1f2e37bb-5fa0-43b5-aa37-78f9fe5aec03.xn--04s765d.xyz
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇷🇺_俄罗斯_3
+  network: tcp
+  port: 23511
+  server: 46.17.40.153
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- flow: xtls-rprx-vision
+  name: 🇷🇺_俄罗斯_4
+  network: tcp
+  port: 23511
+  server: 46.17.40.153
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 37a4d2cb-252f-4469-978d-a8258a180926
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_9
+  network: tcp
+  port: '50002'
+  server: 120.26.55.225
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 🇨🇳_中国_6
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_10
   network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.11
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_3
+  port: '50002'
+  server: 120.26.55.225
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: '0'
+  cipher: auto
+  name: 🇨🇳_中国_11
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.69.218.69
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_4
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.69.218.69
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 🇺🇸_美国_5
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.69.218.69
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 🇬🇧_英国
-  network: ws
-  port: 8880
-  server: 195.26.229.254
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
-  ws-opts:
-    headers:
-      host: Telegram-channel-WangCai2
-    path: /
-- name: 🇱🇹_立陶宛
-  network: ws
-  port: 8880
-  server: 89.116.250.251
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      host: Telegram-channel-WangCai2
-    path: /
-- name: 🏳️_未知
-  network: ws
-  port: 8880
-  server: 209.94.90.251
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      host: Telegram-channel-WangCai2
-    path: /
-- name: 🇪🇸_西班牙_1
-  network: ws
-  port: 8880
-  server: 185.238.228.39
-  servername: ip.langmanshanxi.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      host: ip.langmanshanxi.top
-    path: /telegram🇨🇳 @mxlshare @wangcai2 /?ed=2560
-- name: 🇪🇸_西班牙_2
-  network: ws
-  port: 8880
-  server: 185.238.228.39
-  servername: ip.langmanshanxi.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      host: ip.langmanshanxi.top
-    path: /telegram🇨🇳 @mxlshare @wangcai2 /?ed=2560
-- name: 🇧🇷_巴西_5
-  network: ws
-  port: 2087
-  server: 188.114.97.11
-  servername: Xlz767V2Ray.PAGEs.DEv
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec
-  ws-opts:
-    headers:
-      host: Xlz767V2Ray.PAGEs.DEv
-    path: /bethzrzkz5ljs32v?ed=2560
-- name: 🇺🇸_美国_6
-  network: ws
-  port: 8880
-  server: 199.34.230.251
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      host: Telegram-channel-WangCai2
-    path: /
-- name: 🇧🇷_巴西_6
+  port: '50002'
+  server: 120.26.55.225
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇨🇦_加拿大
   network: ws
   port: 443
-  server: 188.114.96.11
-  servername: XLz767V2RAY.Pages.deV
+  server: 140.238.158.238
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: XLz767V2RAY.Pages.deV
-    path: /ixjnwid2al1nz6mt?ed=2560
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇦🇺_澳大利亚_1
+  network: ws
+  port: 443
+  server: 168.138.13.201
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_1
+  network: ws
+  port: 2096
+  server: 152.70.155.147
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_2
+  network: ws
+  port: 443
+  server: 129.213.136.180
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_3
+  network: ws
+  port: 443
+  server: 47.253.105.131
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_4
+  network: ws
+  port: 443
+  server: 160.79.104.102
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_5
+  network: ws
+  port: 443
+  server: 162.159.153.217
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇯🇵_日本_1
+  network: ws
+  port: 443
+  server: 168.138.46.67
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇸_美国_6
+  network: ws
+  port: 443
+  server: 104.24.184.126
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇨🇭_瑞士
+  network: ws
+  port: 443
+  server: 140.238.212.95
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇺🇦_乌克兰
+  network: ws
+  port: 443
+  server: 45.67.215.92
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_7
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 162.159.153.216
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/121.169.228.177-17050
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_1
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_8
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 63.141.128.140
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/138.2.90.127-55555
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_9
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 192.0.54.42
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/123.142.67.164-50000
-- name: 🇧🇷_巴西_7
-  network: ws
-  port: 443
-  server: 188.114.97.11
-  servername: XLZ767V2RAy.PAGES.dEv
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec
-  ws-opts:
-    headers:
-      host: XLZ767V2RAy.PAGES.dEv
-    path: /t3fgslbvys9sp8zt?ed=2560
-- name: 🇪🇸_西班牙_3
-  network: ws
-  port: 8880
-  server: 185.238.228.39
-  servername: ip.langmanshanxi.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      host: ip.langmanshanxi.top
-    path: /telegram🇨🇳 @mxlshare @wangcai2 /?ed=2560
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_10
   network: ws
-  port: 8880
-  server: 66.81.247.251
-  servername: Telegram-channel-WangCai2
+  port: 443
+  server: 162.159.152.225
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: Telegram-channel-WangCai2
-    path: /
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇦🇹_奥地利_1
+  network: ws
+  port: 443
+  server: 212.183.88.136
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_11
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 160.79.105.89
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/121.154.68.40-25270
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_12
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 162.159.152.81
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/138.2.54.190-37911
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_13
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 162.159.153.184
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/146.56.99.255-56789
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_2
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇧🇷_巴西
+  network: ws
+  port: 443
+  server: 188.114.98.9
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_14
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 162.159.152.155
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/122.210.19.25-38647
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_15
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 152.67.251.232
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/121.169.173.210-50000
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_16
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 160.79.105.76
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/158.101.150.106-12888
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_17
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 63.141.128.88
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/152.67.211.114-58337
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_18
   network: ws
-  port: 80
-  server: 190.93.245.245
-  servername: edgetunnelworker.xlz.workers.dev
+  port: 443
+  server: 160.79.104.115
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: f47ac10b-58cc-4372-a567-0e02b2c3d479
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: edgetunnelworker.xlz.workers.dev
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇦🇹_奥地利_2
+  network: ws
+  port: 443
+  server: 212.183.88.94
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_19
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 104.24.2.106
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/152.70.245.66-12693
-- name: 🇯🇵_日本_1
-  network: ws
-  port: 8880
-  server: 91.193.58.48
-  servername: tw.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: tw.laoyoutiao.link
-    path: telegram🇨🇳@wangcai2/?ed=2048
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_20
   network: ws
-  port: 80
-  server: 104.18.26.94
-  servername: sedalat.tatexe3807.workers.dev
+  port: 443
+  server: 104.24.170.151
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: sedalat.tatexe3807.workers.dev
+      host: rv.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_21
   network: ws
-  port: 80
-  server: 104.18.26.94
-  servername: sedalat.tatexe3807.workers.dev
+  port: 443
+  server: 63.141.128.102
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 61ff8b60-2be0-40a6-94b5-92cca33f1fab
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: sedalat.tatexe3807.workers.dev
+      host: rv.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_22
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 162.159.152.69
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/128.1.79.171-587
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_23
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 216.24.57.59
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/59.18.142.93-29443
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_24
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 103.21.244.44
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/158.178.243.152-61731
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_25
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 162.159.153.239
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/166.0.244.206-8443
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_26
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 69.84.182.89
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/131.186.20.178-27194
-- name: 🇧🇷_巴西_8
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇦🇹_奥地利_3
   network: ws
-  port: 2087
-  server: 188.114.96.11
-  servername: xLZ767v2Ray.PAgEs.dev
+  port: 443
+  server: 212.183.88.16
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: xLZ767v2Ray.PAgEs.dev
-    path: /5z5wdmesbon0p3kk?ed=2560
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇳🇱_荷兰_1
+  network: ws
+  port: 443
+  server: 130.162.130.105
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_27
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 162.159.153.212
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/64.49.14.41-2053
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_28
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 162.159.153.194
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/167.253.158.63-2053
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇳🇱_荷兰_2
+  network: ws
+  port: 443
+  server: 185.133.35.183
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_29
   network: ws
-  port: 80
-  server: 104.24.92.251
-  servername: edgetunnelworker.xlz.workers.dev
+  port: 443
+  server: 63.141.128.3
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: f47ac10b-58cc-4372-a567-0e02b2c3d479
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: edgetunnelworker.xlz.workers.dev
+      host: rv.bgm2024.dpdns.org
     path: /?ed=2560
 - name: 🇺🇸_美国_30
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 160.79.104.11
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/45.11.1.118-44004
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_31
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 104.18.82.55
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/148.113.43.228-2053
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇳🇱_荷兰_3
+  network: ws
+  port: 443
+  server: 185.133.35.22
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_32
   network: ws
-  port: 8080
-  server: 104.26.15.85
-  servername: J9.oDOtZrHUoO.ZuLAIR.ORg.
+  port: 443
+  server: 104.16.134.46
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 4ea841c1-0dc1-4563-9f47-deba8407cb4e
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: J9.oDOtZrHUoO.ZuLAIR.ORg.
-    path: /?ed=2048
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_33
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 104.16.253.83
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/180.230.0.137-50000
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_34
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/158.101.152.6-2919
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_35
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 162.159.152.53
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/175.193.18.219-50000
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_36
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 131.186.17.132
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/144.24.84.212-49888
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇳🇴_挪威
+  network: ws
+  port: 443
+  server: 141.145.199.188
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇨🇷_哥斯达黎加
+  network: ws
+  port: 443
+  server: 190.93.247.160
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_37
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 104.16.120.49
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/175.214.237.120-50000
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_38
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 131.186.33.175
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/121.180.99.17-39536
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_39
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 104.18.94.238
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/115.242.180.202-19000
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_1
+  network: ws
+  port: 443
+  server: 132.145.94.80
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_40
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 104.17.215.102
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/125.130.15.106-20280
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_41
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 104.16.229.50
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/20.235.105.146-443
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_42
   network: ws
   port: 443
-  server: vipren.biz.id
-  servername: vipren.biz.id
+  server: 104.16.132.56
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bbbbbbbb-cccc-4ddd-eeee-ffffffffffff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: vipren.biz.id
-    path: /neoxide-x/168.138.171.70-23280
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇦🇺_澳大利亚_2
+  network: ws
+  port: 23023
+  server: 43.165.191.25
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_43
   network: ws
-  port: 8080
-  server: 172.67.73.163
-  servername: J9.oDOtZrHUoO.ZuLAIR.ORg.
+  port: 443
+  server: 104.17.102.95
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 4ea841c1-0dc1-4563-9f47-deba8407cb4e
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: J9.oDOtZrHUoO.ZuLAIR.ORg.
-    path: /?ed=2048@evay_vpn----@evay_vpn----@evay_vpn----@evay_vpn----@evay_vpn----@evay_vpn----@evay_vpn----@evay_vpn----@evay_vpn
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_44
   network: ws
-  port: 8880
-  server: 63.141.128.251
-  servername: Telegram-channel-WangCai2
+  port: 443
+  server: 104.19.150.163
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: Telegram-channel-WangCai2
-    path: /
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_45
   network: ws
-  port: 80
-  server: 104.26.15.85
-  servername: DECENt-ReFerEnCE.ZUlAir.oRG.
+  port: 443
+  server: 104.18.86.131
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 2a11c595-935d-4e1b-81d4-ab8dd1e10bff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: DECENt-ReFerEnCE.ZUlAir.oRG.
-    path: /?ed=2048
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_46
   network: ws
-  port: 80
-  server: 172.67.73.163
-  servername: DECENt-ReFerEnCE.ZUlAir.oRG.
+  port: 443
+  server: 104.17.223.37
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 2a11c595-935d-4e1b-81d4-ab8dd1e10bff
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: DECENt-ReFerEnCE.ZUlAir.oRG.
-    path: /?ed=2048
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_47
   network: ws
-  port: 8080
-  server: 172.67.73.163
-  servername: 0q.rOk8rzMpV3.ZULair.Org.
+  port: 443
+  server: 104.18.80.243
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b6efaf7e-6099-457d-b4a2-b01dde469533
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: 0q.rOk8rzMpV3.ZULair.Org.
-    path: /?ed=2048
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_48
   network: ws
   port: 443
-  server: 172.67.220.32
-  servername: RRRFGhY7.999836.xyZ
+  server: 104.17.210.171
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: RRRFGhY7.999836.xyZ
-    path: /mireviuvise8ydvnmrkwda8
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_49
   network: ws
   port: 443
-  server: cccccccf.222769.xyz
-  servername: ccCcCcCf.222769.Xyz
+  server: 104.16.242.72
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ce921385-2b31-45fe-84c5-1843e8ae845b
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: ccCcCcCf.222769.Xyz
-    path: /1xrold7e5rpk3i98dxlkez
-- name: 🇮🇳_印度
-  network: ws
-  port: 80
-  server: 14.102.228.75
-  servername: ov-canada1.09vpn.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b49d8a13-12f6-4613-bb0d-3e2f6244f29c
-  ws-opts:
-    headers:
-      host: ov-canada1.09vpn.com
-    path: /vless/
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_50
   network: ws
   port: 443
-  server: 104.21.68.76
-  servername: ccCcCcCf.222769.Xyz
+  server: 104.17.101.175
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ce921385-2b31-45fe-84c5-1843e8ae845b
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: ccCcCcCf.222769.Xyz
-    path: /1xrold7e5rpk3i98dxlkez
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_51
   network: ws
   port: 443
-  server: 172.67.218.209
-  servername: pPP0.89890604.xYZ
+  server: 104.17.104.243
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: fa050497-fc2a-45ee-89c0-96670c4ecb65
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: pPP0.89890604.xYZ
-    path: /0usilhlwowgqpuxtwt
-- name: 🇫🇷_法国
-  network: ws
-  port: 8880
-  server: 45.80.111.251
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      host: Telegram-channel-WangCai2
-    path: /
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_52
   network: ws
   port: 443
-  server: 170.114.46.6
-  servername: opensignal.awsglobalaccelerator.online
+  server: 104.19.144.212
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: eb9ac797-4a77-4f3f-bd60-0baa69b47e92
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: opensignal.awsglobalaccelerator.online
-    path: /danuwa
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇺🇸_美国_53
   network: ws
   port: 443
-  server: 104.21.21.190
-  servername: EerfgT6.890606.XYZ
+  server: 198.41.208.23
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 288124da-0d68-42f4-9f48-70dc4dcc55a6
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: EerfgT6.890606.XYZ
-    path: /e49rzlgib0tdfgf5hdheiupmzek
-- name: 🇺🇸_美国_54
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_2
   network: ws
-  port: 443
-  server: 172.67.149.239
-  servername: WwwWWwS.4444926.xyZ
+  port: 11111
+  server: 112.173.102.47
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 3ed60fc0-f13d-490a-a244-c827a8a8b1e5
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: WwwWWwS.4444926.xyZ
-    path: /j4wxk3kuhjho91nijlrx
-- name: 🇺🇸_美国_55
-  network: ws
-  port: 443
-  server: xscdfr.859886.xyz
-  servername: XsCdFr.859886.xYZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 288124da-0d68-42f4-9f48-70dc4dcc55a6
-  ws-opts:
-    headers:
-      host: XsCdFr.859886.xYZ
-    path: /e49rzlgib0tdfgf5hdheiupmzek
-- name: 🇺🇸_美国_56
-  network: ws
-  port: 443
-  server: 104.21.70.32
-  servername: pPP0.89890604.xYZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fa050497-fc2a-45ee-89c0-96670c4ecb65
-  ws-opts:
-    headers:
-      host: pPP0.89890604.xYZ
-    path: /0usilhlwowgqpuxtwt
-- name: 🇺🇸_美国_57
-  network: ws
-  port: 443
-  server: 172.67.191.174
-  servername: DDDDdddD.222769.xYZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a96cb093-b164-4bc6-bd27-deb0e385de07
-  ws-opts:
-    headers:
-      host: DDDDdddD.222769.xYZ
-    path: /3zssoohi9huffjeppilrig3qizhxb
-- name: 🇺🇸_美国_58
-  network: ws
-  port: 443
-  server: 104.21.68.76
-  servername: DDDDdddD.222769.xYZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a96cb093-b164-4bc6-bd27-deb0e385de07
-  ws-opts:
-    headers:
-      host: DDDDdddD.222769.xYZ
-    path: /3zssoohi9huffjeppilrig3qizhxb
-- name: 🇺🇸_美国_59
-  network: ws
-  port: 443
-  server: 172.67.149.239
-  servername: WwwWWwS.4444926.xyZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3ed60fc0-f13d-490a-a244-c827a8a8b1e5
-  ws-opts:
-    headers:
-      host: WwwWWwS.4444926.xyZ
-    path: /j4wxk3kuhjho91nijlrx
-- name: 🇺🇸_美国_60
-  network: ws
-  port: 443
-  server: ddddfr.11890604.xyz
-  servername: ddddfr.11890604.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: f898ffcb-6417-4373-9640-0b66091e8206
-  ws-opts:
-    headers:
-      host: ddddfr.11890604.xyz
-    path: /33cyl4twiwituzxyj5xneh1r1
-- name: 🇺🇸_美国_61
-  network: ws
-  port: 443
-  server: 104.21.57.206
-  servername: WwwWWwS.4444926.xyZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3ed60fc0-f13d-490a-a244-c827a8a8b1e5
-  ws-opts:
-    headers:
-      host: WwwWWwS.4444926.xyZ
-    path: /j4wxk3kuhjho91nijlrx
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇯🇵_日本_2
   network: ws
-  port: 8880
-  server: 91.193.58.14
-  servername: tw.laoyoutiao.link
+  port: 12333
+  server: 121.80.244.179
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: tw.laoyoutiao.link
-    path: telegram🇨🇳@wangcai2/?ed=2048
-- name: 🇺🇸_美国_62
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_3
   network: ws
-  port: 443
-  server: 104.21.68.76
-  servername: DDDDdddD.222769.xYZ
+  port: 19222
+  server: 121.163.244.186
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: a96cb093-b164-4bc6-bd27-deb0e385de07
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: DDDDdddD.222769.xYZ
-    path: /3zssoohi9huffjeppilrig3qizhxb
-- name: 🇺🇸_美国_63
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇨🇳_中国_12
   network: ws
-  port: 443
-  server: 3er4.4444916.xyz
-  servername: 3Er4.4444916.xYz
+  port: 81
+  server: 210.61.97.241
+  servername: rv.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 03e92910-34b1-4245-ac63-04a865f43cd5
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: 3Er4.4444916.xYz
-    path: /f7vkdx2uecxmlphijoo2wce6q
-- alterId: '0'
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇯🇵_日本_3
+  network: ws
+  port: 11084
+  server: 121.80.244.179
+  servername: rv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: rv.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: '2'
   cipher: auto
-  name: 🇩🇪_德国
+  name: 🇨🇳_中国_13
   network: ws
-  port: '443'
-  server: 132.145.232.171
-  tls: true
+  port: '30807'
+  server: 111.26.109.79
   type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: beyonddsz.cfd
-    path: /linkws
-- name: 🇺🇸_美国_64
+      host: ocbc.com
+    path: /oooo
+- alterId: '2'
+  cipher: auto
+  name: 🇨🇳_中国_14
   network: ws
-  port: 443
-  server: 104.21.23.210
-  servername: OOO0987654.932.pp.uA
+  port: '30829'
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: 🇫🇷_法国
+  network: ws
+  port: 12600
+  server: 185.235.197.2
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  uuid: dd99ae43-d376-5a2d-4939-3658fd6c5980
   ws-opts:
-    headers:
-      host: OOO0987654.932.pp.uA
-    path: /6r23fpdca4knaxx
-- name: 🇺🇸_美国_65
-  network: ws
-  port: 443
-  server: 172.67.149.239
-  servername: WwwWWwS.4444926.xyZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3ed60fc0-f13d-490a-a244-c827a8a8b1e5
-  ws-opts:
-    headers:
-      host: WwwWWwS.4444926.xyZ
-    path: /j4wxk3kuhjho91nijlrx
-- name: 🇺🇸_美国_66
-  network: ws
-  port: 80
-  server: 172.67.73.163
-  servername: DECENt-ReFerEnCE.ZUlAir.oRG.
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a11c595-935d-4e1b-81d4-ab8dd1e10bff
-  ws-opts:
-    headers:
-      host: DECENt-ReFerEnCE.ZUlAir.oRG.
-    path: /?ed=2048
-- name: 🇮🇷_伊朗_1
+    path: /
+- name: 🇮🇷_伊朗
   network: ws
   port: 3134
   server: 217.60.236.41
@@ -100512,29 +100914,18 @@ proxies:
   uuid: 6683e519-99b1-4df8-9d20-f39a2a7ed1b0
   ws-opts:
     path: /
-- alterId: '2'
+- alterId: '0'
   cipher: auto
-  name: 🇨🇳_中国_7
+  name: 🇨🇳_中国_15
   network: ws
-  port: '30807'
-  server: 111.26.109.79
+  port: '10236'
+  server: 10236.wma.113002.xyz
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 30da58a3-7f64-365c-9899-797b485b19a4
   ws-opts:
     headers:
-      host: ocbc.com
-    path: /oooo
-- name: 🇮🇷_伊朗_2
-  network: ws
-  port: 23236
-  server: 46.245.66.31
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 28a85654-ed88-44c8-9b0f-9bbde8348020
-  ws-opts:
-    path: /
+      host: '%7B%22Host%22:%22www.bing.com%22%7D'
+    path: /download
 proxy-groups:
 - name: 选择代理
   proxies:
