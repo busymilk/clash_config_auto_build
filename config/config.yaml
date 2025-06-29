@@ -7183,6 +7183,14 @@ proxies:
   port: 44354
   server: 46.101.245.131
   type: ss
+- cipher: rc4-md5
+  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.151.182.253
+  type: ssr
 - cipher: chacha20-ietf-poly1305
   name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-62.210.88.22:443
   password: WDavBimDmH2QLxljf5PSO1
@@ -7239,6 +7247,22 @@ proxies:
     headers:
       Host: orvps2.horsenma.net
     path: /horsen
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-未知>韩国-NF解锁韩国地区非自制剧-ChatGPT-TikTok-YouTube-time.is:80
+  network: ws
+  port: 80
+  server: time.is
+  servername: kr.xiaoqi666.xyz
+  skip-cert-verify: true
+  type: vmess
+  uuid: 66ddd790-10ed-4a16-b334-0b7e3577b5b7
+  ws-opts:
+    headers:
+      HOST: kr.xiaoqi666.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: None_None_vmess_01
