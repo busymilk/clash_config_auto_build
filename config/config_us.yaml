@@ -206,41 +206,30 @@ proxies:
     headers:
       Host: vc.fly.dev
     path: /
+- name: 🇺🇸_US_美国
+  network: ws
+  password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51
+  port: 443
+  server: 104.21.6.179
+  sni: ZZzzzZZ.890601.XYZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: ZZzzzZZ.890601.XYZ
+    path: /l96MZ8se5Kl2p8BiMhP42l
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
-  port: 30807
+  port: 30829
   server: 111.26.109.79
+  skip-cert-verify: true
+  sni: ''
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers:
-      host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇺🇸_US_美国->🇯🇵_JP_日本
-  network: ws
-  port: 2086
-  server: 104.19.173.68
-  sni: ''
-  type: vmess
-  uuid: dc33ccac-f27b-494d-98c0-553742e23268
-  ws-opts:
-    headers:
-      host: bpca1.catimecsgo.xyz
-    path: /hkz7hea3xiaco2j/ca1
-- alpn:
-  - http/1.1
-  name: 🇩🇪_DE_德国->🇺🇸_US_美国
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.193.51.241
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - flow: xtls-rprx-vision
   name: 🇺🇸1 |  4.4MB/s|30%|Openai
   port: 443
