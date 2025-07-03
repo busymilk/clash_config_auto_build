@@ -200,30 +200,40 @@ proxies:
   port: 57456
   server: 104.167.197.25
   type: ss
-- name: 🇺🇸_US_美国
-  network: ws
-  password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51
-  port: 443
-  server: 104.21.6.179
-  sni: ZZzzzZZ.890601.XYZ
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: ZZzzzZZ.890601.XYZ
-    path: /l96MZ8se5Kl2p8BiMhP42l
-- alterId: 2
+- alterId: 0
   cipher: auto
+  fingerprint: ''
+  name: 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  network: tcp
+  port: 52262
+  server: 193.151.151.93
+  sni: ''
+  type: vmess
+  uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41
+- cipher: chacha20-ietf-poly1305
   name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  password: 7905a32b-012c-4711-89e2-73b6713eca75
+  port: 40030
+  server: pr.fastsoonlink.com
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
   network: ws
-  port: 30829
-  server: 111.26.109.79
+  port: 20071
+  server: 45.147.201.231
   skip-cert-verify: true
   sni: ''
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 4b41312a-e40f-40c3-aa85-efc148060242
   ws-opts:
-    path: /oooo
+    path: /
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
 - flow: xtls-rprx-vision
   name: 🇺🇸1 |  4.4MB/s|30%|Openai
   port: 443
