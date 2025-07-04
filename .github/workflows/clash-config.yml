@@ -3,7 +3,7 @@ name: Generate Clash Config
 on:
   schedule:
     # 每2小时运行一次（UTC时间）
-    - cron: '0 */2 * * *'
+    - cron: '0 */4 * * *'
   workflow_dispatch:      # 允许手动触发
   
   #push:
