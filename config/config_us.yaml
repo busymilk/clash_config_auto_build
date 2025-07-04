@@ -179,40 +179,16 @@ proxies:
   port: 1866
   server: 172.233.128.126
   type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
-  fingerprint: ''
-  name: 🇮🇷_IR_伊朗->🇺🇸_US_美国
-  network: tcp
-  port: 52262
-  server: 193.151.151.93
-  sni: ''
-  type: vmess
-  uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41
-- cipher: chacha20-ietf-poly1305
   name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  password: 7905a32b-012c-4711-89e2-73b6713eca75
-  port: 40030
-  server: pr.fastsoonlink.com
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
   network: ws
-  port: 20071
-  server: 45.147.201.231
-  skip-cert-verify: true
-  sni: ''
+  port: 30829
+  server: 111.26.109.79
   type: vmess
-  uuid: 4b41312a-e40f-40c3-aa85-efc148060242
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
+    path: /oooo
 - flow: xtls-rprx-vision
   name: 🇺🇸1 |  4.4MB/s|30%|Openai
   port: 443
