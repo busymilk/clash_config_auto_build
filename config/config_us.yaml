@@ -191,6 +191,54 @@ proxies:
   port: 57456
   server: 104.167.197.25
   type: ss
+- name: 🇺🇸_US_美国_1
+  network: ws
+  password: 4b33b482-25bc-49e4-b866-878c914d945a
+  port: 443
+  server: 104.21.7.147
+  sni: 44444444.HuanGShANG.DPDNs.oRG
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 44444444.HuanGShANG.DPDNs.oRG
+    path: /kzefUfBUzMsQY6zyyQCjn8kmnN0ehd
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国_2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  password: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  port: 15229
+  server: e16abc19-sz1ds0-szd8vg-1ryup.cu2.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- name: 🇺🇸_US_美国->🇫🇷_FR_法国
+  network: ws
+  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
+  port: 443
+  server: 104.21.63.135
+  sni: Rrr4.8906004.xYZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: rrr4.8906004.xyz
+    path: /DZxb5QZyWgQPuXTwt
+- name: 🇺🇸_US_美国_3
+  network: ws
+  password: 512d9674-db12-44ca-a1b5-654244549b65
+  port: 443
+  server: cccvffgty.444752.xyz
+  sni: cccvffgty.444752.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: cccvffgty.444752.xyz
+    path: /HOi2k5ElZdeML7Ua7dX3JIrYk7zm
 - flow: xtls-rprx-vision
   name: 🇺🇸1 |  4.4MB/s|30%|Openai
   port: 443
@@ -1466,7 +1514,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-GRRLQrsxj2.download.microsoft.com
+    host: 202507031938065-UXanxWSRH3.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
