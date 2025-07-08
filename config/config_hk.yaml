@@ -386,19 +386,12 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 🇭🇰 香港6|@ripaojiedian
+- name: 香港6|@ripaojiedian
+  network: tcp
   password: 7367d04e-4c59-4dff-a50e-12e730a09891
   port: 26193
   server: 155.117.228.70
   skip-cert-verify: true
-  type: trojan
-- name: 香港6|@ripaojiedian
-  network: tcp
-  password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536
-  port: 20220
-  server: q2.46322416.xyz
-  skip-cert-verify: true
-  sni: cdn.alibaba.com
   type: trojan
 - alterId: 0
   cipher: none
@@ -410,6 +403,89 @@ proxies:
   tls: false
   type: vmess
   uuid: dd0d30ae-a4d1-4d1e-8553-42bfff66fd27
+- name: HK_speednode_0069
+  network: ws
+  port: 5320
+  server: 46.3.109.215
+  servername: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b25fb1a1-b04c-4b6f-89cb-5300d072030c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
+    path: /hiosedhfiosfiosdhiofhsdiofhisdofhsd
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: true
+- name: HK_speednode_0070
+  network: ws
+  port: 60565
+  server: 46.3.104.7
+  servername: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b25fb1a1-b04c-4b6f-89cb-5300d072030c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
+    path: /hiosedhfiosfiosdhiofhsdiofhisdofhsd
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: true
+- name: HK_speednode_0071
+  network: ws
+  port: 443
+  server: 47.76.218.163
+  servername: steep.skyfigure.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram @V2ray_Alpha/?ed=2560
+- name: HK_speednode_0072
+  network: ws
+  port: 21012
+  server: 38.147.188.204
+  servername: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b25fb1a1-b04c-4b6f-89cb-5300d072030c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
+    path: /hiosedhfiosfiosdhiofhsdiofhisdofhsd
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: HK_speednode_0073
+  network: ws
+  port: 443
+  server: all.4qwertyuiopasdfghjklzxcvbnmmnbvcxzlkjhgfdsapoiuytrewq1234567890.com
+  servername: de2radin.4qwertyuiopasdfghjklzxcvbnmmnbvcxzlkjhgfdsapoiuytrewq1234567890.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4cd9656-81a7-4342-9c0f-959ad333acae
+  ws-opts:
+    headers:
+      Host: de2radin.4qwertyuiopasdfghjklzxcvbnmmnbvcxzlkjhgfdsapoiuytrewq1234567890.com
+    path: /ws?ed=2560
 proxy-groups:
 - name: 选择代理
   proxies:
