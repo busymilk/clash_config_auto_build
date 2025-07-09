@@ -43,6 +43,18 @@ for file in glob.glob("external_proxies/*.*"):
                     if proxy.get('type') == 'ss' and proxy.get('cipher', '').lower() == 'ss':
                         logging.info(f"排除代理 {name}：类型和加密方式均为 SS")
                         continue  # 直接跳过，不添加到列表
+
+                    if '电报' in proxy.get('name'):
+                        logging.info(f"排除代理 {name}")
+                        continue  # 直接跳过，不添加到列表
+
+                    if '日期' in proxy.get('name'):
+                        logging.info(f"排除代理 {name}")
+                        continue  # 直接跳过，不添加到列表
+
+                    if '免费' in proxy.get('name'):
+                        logging.info(f"排除代理 {name}")
+                        continue  # 直接跳过，不添加到列表
                     
                     if name and name not in seen:
                         seen.add(name)
