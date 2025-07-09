@@ -98060,44 +98060,6 @@ proxies:
     headers:
       Host: epmk.ambercc.filegear-sg.me
     path: /
-- name: 电报群：https://t.me/vvkj11
-  network: tcp
-  port: 2321
-  server: 172.234.31.209
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: a4fb0780-e6d5-4e5e-b22d-d431db4aa53b
-- name: 每天更新，请加电报群防止失联
-  network: tcp
-  password: fa050497-fc2a-45ee-89c0-96670c4ecb65
-  port: 443
-  server: 104.21.63.135
-  skip-cert-verify: true
-  sni: Rrr4.8906004.xYZ
-  type: trojan
-  udp: true
-- name: 日期：07-09
-  network: tcp
-  port: 13144
-  server: syd-ociee.oraclenat.cc
-  servername: aws.amazon.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 113b0562-5018-4533-8268-ebb5bb5e5433
-- name: 免费VPN：https://tt.vg/gwaAy
-  network: tcp
-  port: 13145
-  server: sg-a1.oci.ee
-  servername: aws.amazon.com
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 113b0562-5018-4533-8268-ebb5bb5e5433
 - name: 🇺🇸_美国_1
   network: tcp
   port: 13145
@@ -99817,31 +99779,30 @@ proxy-groups:
   type: select
 - include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 自动优选
-  timeout: 2000
-  tolerance: 50
+  timeout: 3000
+  tolerance: 20
   type: url-test
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 负载均衡
   strategy: consistent-hashing
-  timeout: 2000
+  timeout: 3000
   type: load-balance
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 手动选择
-  timeout: 2000
+  timeout: 3000
   type: select
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - name: 指定国家-负载均衡
   proxies:
   - 香港-负载均衡
-  - 台湾-负载均衡
   - 日本-负载均衡
   - 美国-负载均衡
   - 新加坡-负载均衡
@@ -99849,7 +99810,6 @@ proxy-groups:
 - name: 指定国家-自动优选
   proxies:
   - 香港-自动优选
-  - 台湾-自动优选
   - 日本-自动优选
   - 美国-自动优选
   - 新加坡-自动优选
@@ -99857,93 +99817,75 @@ proxy-groups:
 - filter: (?i)港|hk|hongkong|hong kong|🇭🇰|HK
   include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 香港-自动优选
-  timeout: 2000
-  tolerance: 50
+  timeout: 3000
+  tolerance: 20
   type: url-test
-  url: http://www.msftncsi.com/ncsi.txt
-- filter: (?i)台|tw|taiwan|TW
-  include-all-proxies: true
-  interval: 60
-  max-failed-times: 3
-  name: 台湾-自动优选
-  timeout: 2000
-  tolerance: 50
-  type: url-test
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - filter: (?i)日|jp|japan|🇯🇵|JP
   include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 日本-自动优选
-  timeout: 2000
-  tolerance: 50
+  timeout: 3000
+  tolerance: 20
   type: url-test
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - filter: (?i)美|us|unitedstates|united states|🇺🇸|US
   include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 美国-自动优选
-  timeout: 2000
-  tolerance: 50
+  timeout: 3000
+  tolerance: 20
   type: url-test
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - filter: (?i)(新|sg|singapore)|🇸🇬|SG
   include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 新加坡-自动优选
-  timeout: 2000
-  tolerance: 50
+  timeout: 3000
+  tolerance: 20
   type: url-test
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - filter: (?i)港|hk|hongkong|hong kong|🇭🇰|HK
   include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 香港-负载均衡
   strategy: consistent-hashing
-  timeout: 2000
+  timeout: 3000
   type: load-balance
-  url: http://www.msftncsi.com/ncsi.txt
-- filter: (?i)台|tw|taiwan|TW
-  include-all-proxies: true
-  interval: 60
-  max-failed-times: 3
-  name: 台湾-负载均衡
-  strategy: consistent-hashing
-  timeout: 2000
-  type: load-balance
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - filter: (?i)日|jp|japan|🇯🇵|JP
   include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 日本-负载均衡
   strategy: consistent-hashing
-  timeout: 2000
+  timeout: 3000
   type: load-balance
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - filter: (?i)美|us|unitedstates|united states|🇺🇸|US
   include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 美国-负载均衡
   strategy: consistent-hashing
-  timeout: 2000
+  timeout: 3000
   type: load-balance
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 - filter: (?i)(新|sg|singapore)|🇸🇬|SG
   include-all-proxies: true
   interval: 60
-  max-failed-times: 3
+  max-failed-times: 2
   name: 新加坡-负载均衡
   strategy: consistent-hashing
-  timeout: 2000
+  timeout: 3000
   type: load-balance
-  url: http://www.msftncsi.com/ncsi.txt
+  url: https://www.apple.com/library/test/success.html
 rule-providers:
   applications:
     behavior: classical
