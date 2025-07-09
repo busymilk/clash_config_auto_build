@@ -152,7 +152,7 @@ proxy-groups:
     type: url-test
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     include-all-proxies: true
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -161,7 +161,7 @@ proxy-groups:
     type: load-balance
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
     include-all-proxies: true
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -169,7 +169,7 @@ proxy-groups:
   - name: 手动选择
     type: select
     include-all-proxies: true
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -199,7 +199,7 @@ proxy-groups:
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     filter: "(?i)港|hk|hongkong|hong kong|🇭🇰|HK"
     include-all-proxies: true
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -210,7 +210,7 @@ proxy-groups:
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     filter: "(?i)台|tw|taiwan|TW"
     include-all-proxies: true
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -220,7 +220,7 @@ proxy-groups:
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     filter: "(?i)日|jp|japan|🇯🇵|JP"
     include-all-proxies: true
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -230,7 +230,7 @@ proxy-groups:
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
     include-all-proxies: true
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -240,7 +240,7 @@ proxy-groups:
     tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     filter: "(?i)(新|sg|singapore)|🇸🇬|SG"
     include-all-proxies: true
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -251,7 +251,7 @@ proxy-groups:
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
     include-all-proxies: true
     filter: "(?i)港|hk|hongkong|hong kong|🇭🇰|HK"
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -261,7 +261,7 @@ proxy-groups:
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
     include-all-proxies: true
     filter: "(?i)台|tw|taiwan|TW"
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -271,7 +271,7 @@ proxy-groups:
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
     include-all-proxies: true
     filter: "(?i)日|jp|japan|🇯🇵|JP"
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -281,7 +281,7 @@ proxy-groups:
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
     include-all-proxies: true
     filter: "(?i)美|us|unitedstates|united states|🇺🇸|US"
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
@@ -291,7 +291,7 @@ proxy-groups:
     strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
     include-all-proxies: true
     filter: "(?i)(新|sg|singapore)|🇸🇬|SG"
-    url: "http://www.msftncsi.com/ncsi.txt"
+    url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
