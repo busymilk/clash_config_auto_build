@@ -150,12 +150,13 @@ proxy-groups:
   #这里不能使用url进行测试，因为不支持proxy-providers方式导入的节点
   - name: 自动优选
     type: url-test
-    tolerance: 20  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
+    tolerance: 10  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     include-all-proxies: true
     url: "https://www.apple.com/library/test/success.html"
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
 
   - name: 负载均衡
     type: load-balance
@@ -165,6 +166,7 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
 
   - name: 手动选择
     type: select
@@ -173,6 +175,7 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
 
   - name: 指定国家-负载均衡
     type: select
@@ -201,7 +204,8 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
-    
+    lazy: true
+    tolerance: 10
 
   - name: 日本-自动优选
     type: url-test
@@ -212,6 +216,8 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
+    tolerance: 10
 
   - name: 美国-自动优选
     type: url-test
@@ -222,6 +228,8 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
+    tolerance: 10
 
   - name: 新加坡-自动优选
     type: url-test
@@ -232,6 +240,8 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
+    tolerance: 10
 
   #分隔,下面是地区分组
   - name: 香港-负载均衡
@@ -243,6 +253,7 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
 
 
   - name: 日本-负载均衡
@@ -254,6 +265,7 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
 
   - name: 美国-负载均衡
     type: load-balance
@@ -264,6 +276,7 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
 
   - name: 新加坡-负载均衡
     type: load-balance
@@ -274,6 +287,7 @@ proxy-groups:
     interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
     timeout: 3000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 2 #请求最大失败次数，超过了则强制执行一次健康检查
+    lazy: true
 
 rule-providers:
   applications:
