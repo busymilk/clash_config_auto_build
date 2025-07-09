@@ -178,7 +178,6 @@ proxy-groups:
     type: select
     proxies:
       - 香港-负载均衡
-      - 台湾-负载均衡
       - 日本-负载均衡
       - 美国-负载均衡
       - 新加坡-负载均衡
@@ -187,7 +186,6 @@ proxy-groups:
     type: select
     proxies:
       - 香港-自动优选
-      - 台湾-自动优选
       - 日本-自动优选
       - 美国-自动优选
       - 新加坡-自动优选
@@ -204,16 +202,6 @@ proxy-groups:
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
     
-
-  - name: 台湾-自动优选
-    type: url-test
-    tolerance: 50  # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    filter: "(?i)台|tw|taiwan|TW"
-    include-all-proxies: true
-    url: "https://www.apple.com/library/test/success.html"
-    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
-    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
-    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 日本-自动优选
     type: url-test
@@ -256,15 +244,6 @@ proxy-groups:
     timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
     max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
-  - name: 台湾-负载均衡
-    type: load-balance
-    strategy: consistent-hashing  # 轮询策略，不同网站会使用不同节点
-    include-all-proxies: true
-    filter: "(?i)台|tw|taiwan|TW"
-    url: "https://www.apple.com/library/test/success.html"
-    interval: 60 #健康检查，单位：秒，每隔多少秒检测一次健康
-    timeout: 2000 #健康检查，超时时间，单位：毫秒，如果检查超时就认为不健康，节点被屏蔽
-    max-failed-times: 3 #请求最大失败次数，超过了则强制执行一次健康检查
 
   - name: 日本-负载均衡
     type: load-balance
