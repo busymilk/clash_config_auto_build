@@ -226,36 +226,16 @@ proxies:
   port: 254
   server: 95.169.4.174
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧_GB_英国->🇺🇸_US_美国
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+- name: 🇺🇸_US_美国_2
   network: ws
-  port: 30825
-  server: v25.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v25.heduian.link
-    path: /oooo
-- name: 🇺🇸_US_美国_1
-  network: ws
-  password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b
+  password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51
   port: 443
-  server: 172.67.220.32
-  sni: eEEfGty6.999836.XYz
+  server: 104.21.6.179
+  sni: ZZzzzZZ.890601.XYZ
   type: trojan
   udp: true
   ws-opts:
-    headers:
-      host: eeefgty6.999836.xyz
-    path: /XmTzATQPJv9RO3xr1D40NK
+    path: /l96MZ8se5Kl2p8BiMhP42l
 - flow: xtls-rprx-vision
   name: 🇺🇸1 |  4.4MB/s|30%|Openai
   port: 443
@@ -1555,7 +1535,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-U5JTftURXP.download.microsoft.com
+    host: 202507031938065-KILVHWQpc0.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -1577,6 +1557,30 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- name: 🇺🇸 美国5|@ripaojiedian
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 194.53.53.249
+  skip-cert-verify: false
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- name: 美国5|@ripaojiedian
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 194.53.53.249
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
 - name: US_speednode_0047
   network: ws
   port: 8880
@@ -3405,6 +3409,28 @@ proxies:
   ws-opts:
     headers:
       Host: epmk.ambercc.filegear-sg.me
+    path: /
+- name: 亚美尼亚 003
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.214
+  sni: epmk.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epmk.ambercc.filegear-sg.me
+    path: /
+- name: 亚美尼亚 004
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.234
+  sni: epml.ambercc.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: epml.ambercc.filegear-sg.me
     path: /
 - name: 🇺🇸_美国_1
   network: tcp

@@ -117,16 +117,13 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 0
-  cipher: auto
+- cipher: aes-256-gcm
   name: 🇭🇰 香港|@ripaojiedian
-  port: 50170
-  server: 38.147.188.234
-  skip-cert-verify: false
+  password: ELNP3E9X426OSUVK
+  port: 15006
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 37b58e86-83ef-4ff8-b5dd-4bde36921f2b
+  type: ss
 - cipher: aes-256-gcm
   name: 🇭🇰 香港2|@ripaojiedian
   password: 9bfdde71b4c0
@@ -142,6 +139,16 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港3|@ripaojiedian
+  port: 33291
+  server: 103.224.80.103
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: e6925cbe-51b9-40e9-b57e-85b6f026499b
 - name: 香港4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -165,16 +172,23 @@ proxies:
   server: 155.117.228.70
   skip-cert-verify: true
   type: trojan
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港7|@ripaojiedian
+  password: ZX9F8KK21O60YK9T
+  port: 15015
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 香港|@ripaojiedian
+  name: 香港3|@ripaojiedian
   network: tcp
-  port: '50170'
-  server: 38.147.188.234
+  port: '33291'
+  server: 103.224.80.103
   servername: ''
   tls: false
   type: vmess
-  uuid: 37b58e86-83ef-4ff8-b5dd-4bde36921f2b
+  uuid: e6925cbe-51b9-40e9-b57e-85b6f026499b
 - alterId: 0
   cipher: none
   name: 香港v2|@ripaojiedian
