@@ -223,7 +223,19 @@ proxies:
   port: 254
   server: 95.169.4.174
   type: ss
-- name: 🇺🇸_US_美国_2
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: 🇺🇸_US_美国
   network: ws
   password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51
   port: 443
@@ -233,6 +245,24 @@ proxies:
   udp: true
   ws-opts:
     path: /l96MZ8se5Kl2p8BiMhP42l
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸_US_美国_1
+  network: ws
+  port: 80
+  server: aAZXsdE.003330333.xYZ
+  type: vmess
+  uuid: 10b1e371-d734-4306-b67f-0fc1f95c2485
+  ws-opts:
+    headers:
+      host: aazxsde.003330333.xyz
+    path: /SXjq8YlnGNBlbnEsM
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国_2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
 - flow: xtls-rprx-vision
   name: 🇺🇸1 |  4.4MB/s|30%|Openai
   port: 443
@@ -1511,28 +1541,12 @@ proxies:
   sni: us.10101251.xyz
   tls: false
   type: hysteria2
-- alterId: 2
-  cipher: auto
-  name: 美国|@ripaojiedian
-  network: ws
-  port: '30828'
-  server: 111.26.109.79
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - cipher: rc4-md5
   name: 🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-KILVHWQpc0.download.microsoft.com
+    host: 202507031938065-e8zxTxmqk7.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -1542,42 +1556,18 @@ proxies:
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 4447
-  server: 36.151.192.27
+  server: 36.151.192.26
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: 美国4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 8657
-  server: 36.156.102.123
+  port: 34719
+  server: 36.151.192.26
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 🇺🇸 美国5|@ripaojiedian
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2083
-  server: 194.53.53.249
-  skip-cert-verify: false
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
-- name: 美国5|@ripaojiedian
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2083
-  server: 194.53.53.249
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: '%2F%3Fed%3D2560%26PROT_TYPE%3Dtrojan'
 - name: US_speednode_0044
   network: ws
   port: 8880
