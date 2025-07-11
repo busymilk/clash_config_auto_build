@@ -83,12 +83,13 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-4997 | 0.396MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
+- name: 🇭🇰HK-5.83.221.31-1404 | 0.0MB
+  password: 1957909a-4f2a-4d9c-99ad-119d45f052c1
+  port: 30002
+  server: v01.gutingting.com
+  skip-cert-verify: false
+  sni: v2tw01.fuqiangren.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
@@ -171,6 +172,34 @@ proxies:
   tls: false
   type: vmess
   uuid: dd0d30ae-a4d1-4d1e-8553-42bfff66fd27
+- name: HK_speednode_0064
+  network: ws
+  port: 443
+  server: 47.76.218.163
+  servername: steep.skyfigure.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram @SRCVPN/?ed=2560
+- name: HK_speednode_0065
+  network: ws
+  port: 443
+  server: 47.76.218.163
+  servername: steep.skyfigure.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram @V2ray_Alpha/?ed=2560
 proxy-groups:
 - name: 选择代理
   proxies:
