@@ -64,7 +64,11 @@ configs_to_generate = [
 
 要新增或删除一个版本，你只需要修改 `merge_proxies.py` 的 `FILTER_PATTERNS` 和 `generate_config.py` 的 `configs_to_generate` 列表即可。**无需再关心任何其他文件**。
 
-### 4. 添加订阅链接
+### 4. 修改代理下载目录 (可选)
+
+如果你想修改存放订阅文件的目录名称（默认为 `external_proxies`），你只需要修改 `.github/workflows/clash-config.yml` 文件顶部 `env` 部分的 `PROXY_DIR` 变量即可。整个流程会自动适应这个新名称。
+
+### 5. 添加订阅链接
 
 - 进入你 Fork 后的仓库，点击 `Settings` -> `Secrets and variables` -> `Actions`。
 - 在 `Repository variables` 部分，点击 `New repository variable`。

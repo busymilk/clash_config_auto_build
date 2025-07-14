@@ -1,4 +1,3 @@
-
 name: Generate Clash Config
 
 on:
@@ -15,6 +14,8 @@ jobs:
       LANG: en_US.UTF-8
       LC_ALL: en_US.UTF-8
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      # 目录名的唯一真相来源：未来若要修改，只需改动这里
+      PROXY_DIR: external_proxies
 
     steps:
     # 步骤1: 检出代码仓库
@@ -34,11 +35,11 @@ jobs:
     - name: Install dependencies
       run: pip install pyyaml
 
-    # 步骤4: 创建所需目录
+    # 步骤4: 创建所需目录 (使用环境变量)
     - name: Create directories
-      run: mkdir -p external_proxies config
+      run: mkdir -p ${{ env.PROXY_DIR }} config
 
-    # 步骤5: 下载外部代理订阅文件
+    # 步骤5: 下载外部代理订阅文件 (使用环境变量)
     - name: Download external proxies
       env:
         URL_LIST: ${{ vars.URL_LIST }}
@@ -48,19 +49,21 @@ jobs:
           basename=$(echo "$url" | sed -E 's#^https?://[^/]+/##; s/[?#].*$//; s#/#_#g')
           timestamp=$(date +%s%N)
           filename="${basename}_${timestamp}.txt"
-          output="external_proxies/${filename}"
+          # 使用在顶层定义的 PROXY_DIR 变量
+          output="${{ env.PROXY_DIR }}/${filename}"
           echo "Downloading $url to $output"
           curl -sSL "$url" -o "$output" || echo "Failed to download: $url"
         done
 
     # 步骤6: 生成所有配置文件 (由总指挥脚本全权负责)
-    # 关键改动：为这个步骤设置一个 id，以便后续步骤可以引用它的输出
     - name: Generate All Configs
       id: generate
+      # 将 PROXY_DIR 环境变量传递给 Python 脚本
+      env:
+        PROXY_DIR: ${{ env.PROXY_DIR }}
       run: python -u scripts/generate_config.py
 
     # 步骤7: 上传所有构建产物
-    # 关键改动：不再需要为每个文件单独上传，使用通配符一次性完成
     - name: Upload All Config Artifacts
       uses: actions/upload-artifact@v4
       with:
@@ -68,7 +71,6 @@ jobs:
         path: config/*.yaml
 
     # 步骤8: 创建或更新 GitHub Release
-    # 关键改动：同样使用通配符来附加所有产物
     - name: Create or Update Release
       uses: softprops/action-gh-release@v1
       with:
@@ -79,13 +81,11 @@ jobs:
         generate_release_notes: true
 
     # 步骤9: 提交并推送配置文件的变更到仓库
-    # 关键改动：同样使用通配符来自动检测所有变更
     - name: Commit and push config changes
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         
-        # 使用通配符检查 config/ 目录下是否有任何 .yaml 文件发生变更
         if git diff --quiet --exit-code -- 'config/*.yaml'; then
           echo "No changes to commit, skipping push."
           exit 0
@@ -97,11 +97,9 @@ jobs:
         git push origin HEAD:main
 
     # 步骤10: 刷新 jsDelivr 的 CDN 缓存
-    # 关键改动：读取“总指挥”脚本输出的“产物清单”来动态执行
     - name: Purge jsDelivr Cache
       if: success()
       env:
-        # 从步骤6（id: generate）的输出中读取文件列表
         FILES_TO_PURGE: ${{ steps.generate.outputs.generated_files }}
         MAX_RETRIES: 3
         RETRY_DELAY: 20
@@ -118,7 +116,7 @@ jobs:
               break
             elif [ $i -eq $MAX_RETRIES ]; then
               echo "  ❌ Failed after $MAX_RETRIES attempts (HTTP code: $http_code)"
-              exit 1 # 任何一个文件刷新失败，则整个步骤失败
+              exit 1
             else
               echo "  ⚠️ Failed with code $http_code, retrying in $RETRY_DELAY seconds..."
               sleep $RETRY_DELAY

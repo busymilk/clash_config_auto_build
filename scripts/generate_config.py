@@ -1,3 +1,5 @@
+
+
 # -*- coding: utf-8 -*-
 import yaml
 import logging
@@ -23,10 +25,8 @@ def run_merge_command(proxies_dir, filter_code, output_file):
     if filter_code:
         command.extend(["--filter", filter_code])
     
-    # logging.info(f"执行合并命令: {' '.join(command)}")
     try:
         subprocess.run(command, check=True, capture_output=True, text=True)
-        # logging.info(f"成功生成数据文件: {output_file}")
     except subprocess.CalledProcessError as e:
         logging.error(f"合并节点失败 (filter: {filter_code}):\n{e.stderr}")
         raise
@@ -34,27 +34,22 @@ def run_merge_command(proxies_dir, filter_code, output_file):
 def generate_config(base_config, proxies_path, output_path):
     """根据基础配置和代理列表生成最终的 Clash 配置文件。"""
     try:
-        # 直接使用基础配置，不做任何修改
         config = base_config
-
-        # 读取并合并代理节点列表
         with open(proxies_path, 'r', encoding="utf-8") as f:
             proxies_data = yaml.safe_load(f)
         config['proxies'] = proxies_data.get('proxies', [])
-        # logging.info(f"成功读取并合并 {len(config['proxies'])} 个代理节点到 {output_path}。")
+        logging.info(f"成功为 {output_path} 合并 {len(config['proxies'])} 个节点。")
 
-        # 写入最终配置
         with open(output_path, 'w', encoding="utf-8") as f:
             yaml.dump(config, f, default_flow_style=False, allow_unicode=True)
-        logging.info(f"成功生成配置文件: {output_path}")
 
     except Exception as e:
         logging.error(f"生成配置文件 '{output_path}' 时发生未知错误: {e}", exc_info=True)
         raise
 
 if __name__ == "__main__":
-    # --- 总指挥中心：所有可变配置都在这里定义 ---
-    PROXIES_DOWNLOAD_DIR = "external_proxies"
+    # --- 总指挥中心：从环境变量读取配置，提供默认值以方便本地测试 ---
+    PROXIES_DOWNLOAD_DIR = os.getenv('PROXY_DIR', 'external_proxies')
 
     # --- 唯一的真相来源 (Single Source of Truth) ---
     configs_to_generate = [
@@ -76,14 +71,13 @@ if __name__ == "__main__":
     ]
 
     # --- 步骤1: 准备所有需要的节点数据文件 ---
-    logging.info("--- 开始准备所有需要的节点数据文件 ---")
+    logging.info(f"--- 使用代理目录: {PROXIES_DOWNLOAD_DIR} ---")
     proxies_to_generate = { (cfg['filter'], cfg['proxies_file']) for cfg in configs_to_generate }
     for p_filter, p_file in proxies_to_generate:
         run_merge_command(PROXIES_DOWNLOAD_DIR, p_filter, p_file)
-    logging.info("--- 所有节点数据文件准备就绪 ---")
+    logging.info("---" + " 所有节点数据文件准备就绪 ---")
 
     # --- 步骤2: 加载所有需要的模板文件 ---
-    logging.info("--- 开始加载所有需要的模板文件 ---")
     template_names = {cfg['template'] for cfg in configs_to_generate}
     templates = {}
     for tpl_name in template_names:
@@ -92,16 +86,13 @@ if __name__ == "__main__":
                 templates[tpl_name] = yaml.safe_load(f)
             if not templates[tpl_name]:
                 raise ValueError(f"模板文件 {tpl_name} 为空或格式错误。")
-            logging.info(f"成功加载模板: {tpl_name}")
         except (FileNotFoundError, ValueError) as e:
             logging.critical(f"无法加载模板 {tpl_name}: {e}", exc_info=True)
             sys.exit(1)
 
     # --- 步骤3: 循环生成所有最终的配置文件 ---
-    logging.info("--- 开始生成所有最终配置文件 ---")
     generated_files = []
     for i, config_info in enumerate(configs_to_generate, 1):
-        # logging.info(f"--- ({i}/{len(configs_to_generate)}) 开始生成: {config_info['output']} ---")
         generate_config(
             base_config=templates[config_info['template']],
             proxies_path=config_info['proxies_file'],
