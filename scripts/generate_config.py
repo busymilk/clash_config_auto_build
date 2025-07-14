@@ -1,8 +1,10 @@
+
 # -*- coding: utf-8 -*-
 import yaml
 import logging
 import subprocess
 import sys
+import os
 from copy import deepcopy
 
 # --- 配置日志记录 ---
@@ -35,11 +37,9 @@ def run_merge_command(filter_code, output_file):
     
     logging.info(f"执行合并命令: {' '.join(command)}")
     try:
-        # 使用 subprocess.run 来执行命令，并检查返回码
         subprocess.run(command, check=True, capture_output=True, text=True)
         logging.info(f"成功生成数据文件: {output_file}")
     except subprocess.CalledProcessError as e:
-        # 如果命令执行失败，打印错误信息并退出
         logging.error(f"合并节点失败 (filter: {filter_code}):\n{e.stderr}")
         raise
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
         {"filter": "uk", "proxies_file": "merged-proxies_uk.yaml", "output": "config/config_uk.yaml", "is_region_specific": True},
     ]
 
-    # --- 步骤1: 根据“真相来源”列表，预先生成所有需要的节点数据文件 ---
+    # --- 步骤1: 准备所有需要的节点数据文件 ---
     logging.info("--- 开始准备所有需要的节点数据文件 ---")
     for config_info in configs_to_generate:
         run_merge_command(config_info['filter'], config_info['proxies_file'])
@@ -110,6 +110,7 @@ if __name__ == "__main__":
 
     # --- 步骤3: 循环生成所有最终的配置文件 ---
     logging.info("--- 开始生成所有最终配置文件 ---")
+    generated_files = []
     for i, config_info in enumerate(configs_to_generate, 1):
         logging.info(f"--- ({i}/{len(configs_to_generate)}) 开始生成: {config_info['output']} ---")
         generate_config(
@@ -118,5 +119,16 @@ if __name__ == "__main__":
             output_path=config_info['output'],
             is_region_specific=config_info['is_region_specific']
         )
+        generated_files.append(config_info['output'])
     
+    # --- 步骤4: 将生成的文件列表输出到 GitHub Actions ---
+    # 这是一个关键步骤，用于后续工作流的自动化
+    if 'GITHUB_OUTPUT' in os.environ:
+        logging.info("正在将产物清单输出到 GitHub Actions...")
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+            # 将文件列表转换成一个空格分隔的字符串
+            file_list_str = ' '.join(generated_files)
+            print(f"generated_files={file_list_str}", file=f)
+            logging.info(f"输出的清单: {file_list_str}")
+
     logging.info("🎉 所有任务已成功完成！")

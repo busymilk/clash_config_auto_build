@@ -39,28 +39,38 @@
 
 ## 🔧 自定义配置
 
-得益于项目的模块化和单一真相来源（Single Source of Truth）的设计，你可以非常轻松地进行自定义。
+本项目的核心设计理念是“单一真相来源”（Single Source of Truth）。这意味着你只需要在一个地方定义你的配置需求，整个自动化流程就会智能地适应你的改动。
 
-- **核心配置 (唯一入口)**:
-  所有配置的“源头”都统一到了根目录下的 `config-template.yaml` 文件。你需要修改 DNS、规则、代理组（包括所有地区的特定组）等，**只需要修改这一个文件**即可。
+### 唯一的真相来源：`scripts/generate_config.py`
 
-- **节点过滤规则**:
-  如果需要增加新的地区过滤或修改关键词，可以编辑 `scripts/merge_proxies.py` 文件：
-  - **地区白名单**: 在 `FILTER_PATTERNS` 字典中添加新的正则表达式，`key` 为地区代码（如 `jp`），`value` 为正则表达式。
-  - **关键词黑名单**: 在 `BLACKLIST_KEYWORDS` 列表中添加不希望在全局配置中出现的词语。
+所有配置的**唯一控制核心**位于 `scripts/generate_config.py` 文件顶部的 `configs_to_generate` 列表。这个列表决定了项目需要生成哪些版本的配置文件，以及它们的具体属性。
 
-- **版本生成管理 (唯一的真相来源)**:
-  项目的核心控制逻辑位于 `scripts/generate_config.py` 文件中的 `configs_to_generate` 列表。这个列表是**唯一的真相来源**，它决定了整个项目需要生成哪些版本的配置文件。
+```python
+# scripts/generate_config.py
 
-  例如，要增加一个“台湾”的配置，你只需要：
-  1.  在 `scripts/merge_proxies.py` 的 `FILTER_PATTERNS` 中添加 `tw` 的过滤规则。
-  2.  在 `scripts/generate_config.py` 的 `configs_to_generate` 列表中加入台湾的配置项：
-      ```python
-      {
-          "filter": "tw", 
-          "proxies_file": "merged-proxies_tw.yaml", 
-          "output": "config/config_tw.yaml", 
-          "is_region_specific": True
-      },
-      ```
-  完成这两步后，整个工作流将自动适应你的改动，无需再修改任何其他文件。
+configs_to_generate = [
+    # ...
+    # 示例：增加一个“台湾”地区的配置
+    {
+        "filter": "tw", # 用于 merge_proxies.py 的过滤器名称
+        "proxies_file": "merged-proxies_tw.yaml", # 生成的临时节点数据文件名
+        "output": "config/config_tw.yaml", # 最终输出的配置文件路径
+        "is_region_specific": True # 标记这是否一个需要裁剪代理组的地区版本
+    },
+    # ...
+]
+```
+
+### 如何新增/修改一个版本？
+
+假设你想新增一个“台湾”地区的配置，只需两步：
+
+1.  **定义节点过滤规则**: 打开 `scripts/merge_proxies.py`，在 `FILTER_PATTERNS` 字典中为 `tw` 添加一个新的正则表达式。
+
+2.  **更新版本列表**: 打开 `scripts/generate_config.py`，将上面示例中的“台湾”配置项添加到 `configs_to_generate` 列表中。
+
+**完成以上两步即可。** 你**无需**再关心 `.github/workflows/clash-config.yml` 文件。工作流被设计为完全自动化的，它会根据 `generate_config.py` 的定义，智能地完成所有后续的上传、发布和缓存刷新任务。
+
+### 如何修改通用配置？
+
+如果你需要修改所有版本共用的配置（如 DNS、通用规则、代理组结构等），只需修改根目录下的 `config-template.yaml` 这一个“母版”文件即可。
