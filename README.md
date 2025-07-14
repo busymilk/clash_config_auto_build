@@ -39,13 +39,23 @@
 
 ## 🔧 自定义配置
 
-- **基础配置**:
-  直接修改根目录下的 `config-template.yaml`, `config-template_hk.yaml`, `config-template_us.yaml` 文件，可以调整 Clash 的基础设置（如 DNS, 代理组, 规则等）。
+得益于项目的模块化设计，你可以轻松地进行自定义配置。
+
+- **核心配置 (唯一入口)**:
+  现在，所有配置的“源头”都统一到了根目录下的 `config-template.yaml` 文件。你需要修改 DNS、规则、代理组（包括所有地区的特定组）等，**只需要修改这一个文件**即可。
 
 - **节点过滤规则**:
   如果需要增加新的地区过滤或修改关键词，可以编辑 `scripts/merge_proxies.py` 文件：
-  - **地区白名单**: 在 `FILTER_PATTERNS` 字典中添加新的正则表达式。
-  - **关键词黑名单**: 在 `BLACKLIST_KEYWORDS` 列表中添加不希望出现的词语。
+  - **地区白名单**: 在 `FILTER_PATTERNS` 字典中添加新的正则表达式，`key` 为地区代码（如 `jp`），`value` 为正则表达式。
+  - **关键词黑名单**: 在 `BLACKLIST_KEYWORDS` 列表中添加不希望在全局配置中出现的词语。
 
-- **生成不同版本**:
-  如果需要生成更多或更少版本的配置文件，可以编辑 `scripts/generate_config.py` 文件中的 `configs_to_generate` 列表。
+- **版本生成管理**:
+  你可以完全控制生成哪些版本的配置文件，只需编辑 `scripts/generate_config.py` 文件中的 `configs_to_generate` 列表即可。例如，要增加一个“台湾”的配置，只需在此列表中加入：
+  ```python
+  {
+      "proxies": "merged-proxies_tw.yaml",
+      "output": "config/config_tw.yaml",
+      "is_region_specific": True
+  }
+  ```
+  同时，确保在 `merge_proxies.py` 中也添加了 `tw` 的过滤规则。
