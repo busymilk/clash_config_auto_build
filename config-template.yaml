@@ -55,6 +55,13 @@ tun:
   auto-redirect: true
   auto-detect-interface: true
 
+ntp:
+  enable: true
+  write-to-system: false
+  server: time.apple.com
+  port: 123
+  interval: 30
+
 dns:
   enable: true
   ipv6: true
