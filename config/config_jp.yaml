@@ -1,0 +1,390 @@
+allow-lan: true
+dns:
+  default-nameserver:
+  - https://[2001:4860:4860::64]/dns-query
+  - tls://[2001:4860:4860::64]
+  - tls://[2001:4860:4860::8888]
+  - tls://[2001:4860:4860::8844]
+  - tls://8.8.4.4
+  - tls://[2606:4700:4700::1111]
+  - tls://[2606:4700:4700::1001]
+  - https://[2620:fe::9]/dns-query
+  - tls://[2620:fe::9]
+  - tls://[2620:fe::fe]
+  - tls://[2620:fe::fe:9]
+  - tls://149.112.112.9
+  - tls://149.112.112.112
+  - tls://9.9.9.9
+  - tls://94.140.14.141
+  - https://[2a10:50c0::2:ff]
+  - tls://[2a10:50c0::2:ff]
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - +.tvkuai.com
+  - geosite:private
+  - geosite:cn
+  fake-ip-filter-mode: blacklist
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - https://[2001:4860:4860::64]/dns-query
+  - tls://[2001:4860:4860::64]
+  - tls://[2001:4860:4860::8888]
+  - tls://[2001:4860:4860::8844]
+  - tls://8.8.4.4
+  - tls://[2606:4700:4700::1111]
+  - tls://[2606:4700:4700::1001]
+  - https://[2620:fe::9]/dns-query
+  - tls://[2620:fe::9]
+  - tls://[2620:fe::fe]
+  - tls://[2620:fe::fe:9]
+  - tls://149.112.112.9
+  - tls://149.112.112.112
+  - tls://9.9.9.9
+  - tls://94.140.14.141
+  - https://[2a10:50c0::2:ff]
+  - tls://[2a10:50c0::2:ff]
+  ipv6: true
+  nameserver:
+  - https://[2001:4860:4860::64]/dns-query
+  - tls://[2001:4860:4860::64]
+  - tls://[2001:4860:4860::8888]
+  - tls://[2001:4860:4860::8844]
+  - tls://8.8.4.4
+  - tls://[2606:4700:4700::1111]
+  - tls://[2606:4700:4700::1001]
+  - https://[2620:fe::9]/dns-query
+  - tls://[2620:fe::9]
+  - tls://[2620:fe::fe]
+  - tls://[2620:fe::fe:9]
+  - tls://149.112.112.9
+  - tls://149.112.112.112
+  - tls://9.9.9.9
+  - tls://94.140.14.141
+  - https://[2a10:50c0::2:ff]
+  - tls://[2a10:50c0::2:ff]
+  use-system-hosts: false
+external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip
+find-process-mode: strict
+geo-auto-update: true
+geo-update-interval: 24
+geodata-mode: true
+geox-url:
+  asn: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb
+  geoip: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat
+  geosite: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+  mmdb: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb
+global-client-fingerprint: firefox
+ipv6: true
+mixed-port: 7890
+profile:
+  store-fake-ip: true
+  store-selected: true
+proxies:
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0276 | 35.609MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0275 | 35.467MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- client-fingerprint: chrome
+  name: 日本 006
+  network: ws
+  port: 2095
+  server: 156.238.18.163
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- client-fingerprint: chrome
+  name: 日本 007
+  network: ws
+  port: 2052
+  server: 156.238.18.165
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇬 尼日利亚 11
+  password: 78c0b0c9-8d6f-4d35-95fa-4001bf0e7d9a
+  port: 23150
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本 68
+  password: e8ab636e-7e37-4a44-b3fb-1cd568001f8f
+  port: 23105
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- name: 🇯🇵 日本 87
+  network: ws
+  port: 30060
+  server: 183.96.245.165
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇬 尼日利亚 18
+  password: 85602731-c097-4a39-b683-9703b0749d8e
+  port: 23149
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本 41
+  password: 03320488-a4e8-403d-8f14-1d06c2693e20
+  port: 23104
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- name: 🇯🇵 日本 60
+  network: ws
+  port: 443
+  server: 217.142.236.93
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇯🇵 日本 33
+  password: aff98510-78df-452a-8fe3-ea680d055693
+  port: 23517
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  network: ws
+  port: 1443
+  server: sslvpn.51job.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  ws-opts:
+    headers:
+      Host: centos7
+    path: /634c5c4f9782
+- name: 🇯🇵日本
+  password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
+  port: 443
+  server: aws-linkhy17.liangxin1.xyz
+  skip-cert-verify: true
+  sni: www.apple.com.cn
+  tls: false
+  type: hysteria2
+- cipher: rc4-md5
+  name: 🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202507121073737-BbgY2abS77.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 41225
+  server: 36.151.192.26
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 日本4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 4445
+  server: 36.151.192.26
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 日本v2|@ripaojiedian
+  network: kcp
+  port: '2389'
+  server: 8.211.145.146
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f9f395b-e9b2-4cfd-85b3-0425f0e11ad7
+- name: 日期：07-14
+  network: tcp
+  password: Aimer
+  port: 16059
+  server: 218.146.46.10
+  skip-cert-verify: true
+  sni: epmx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇯🇵_日本_1
+  network: tcp
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: true
+  sni: epmx.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 🇯🇵_日本_2
+  network: tcp
+  port: 2321
+  server: 172.105.240.36
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4c350369-47f8-4e21-83ad-3d7b8aff3e87
+- name: 🇯🇵_日本_3
+  network: ws
+  port: 11084
+  server: 121.80.244.179
+  servername: vu.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: vu.bgm2024.dpdns.org
+    path: /?ed=2560
+proxy-groups:
+- name: 选择代理
+  proxies:
+  - 自动优选
+  - 负载均衡
+  - 手动选择
+  - DIRECT
+  type: select
+- include-all-proxies: true
+  interval: 60
+  lazy: true
+  max-failed-times: 2
+  name: 自动优选
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://www.apple.com/library/test/success.html
+- include-all-proxies: true
+  interval: 60
+  lazy: true
+  max-failed-times: 2
+  name: 负载均衡
+  strategy: consistent-hashing
+  timeout: 3000
+  type: load-balance
+  url: https://www.apple.com/library/test/success.html
+- include-all-proxies: true
+  interval: 60
+  lazy: true
+  max-failed-times: 2
+  name: 手动选择
+  timeout: 3000
+  type: select
+  url: https://www.apple.com/library/test/success.html
+rule-providers:
+  applications:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/applications.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+rules:
+- DOMAIN,cdn.jsdelivr.net,DIRECT
+- DOMAIN,a.ppconverter.eu.org,DIRECT
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- DOMAIN-SUFFIX,ghproxy.com,DIRECT
+- DOMAIN-SUFFIX,gofile.io,DIRECT
+- RULE-SET,applications,DIRECT
+- GEOSITE,category-ads-all,REJECT
+- GEOSITE,bing,选择代理
+- GEOSITE,microsoft,选择代理
+- GEOSITE,private,DIRECT
+- GEOIP,private,DIRECT
+- GEOSITE,geolocation-cn,DIRECT
+- GEOIP,cn,DIRECT
+- GEOSITE,geolocation-!cn,选择代理
+- MATCH,选择代理
+sniffer:
+  enable: true
+  skip-domain:
+  - Mijia Cloud
+  - +.push.apple.com
+  sniff:
+    HTTP:
+      override-destination: true
+      ports:
+      - 80
+      - 8080-8880
+    QUIC:
+      ports:
+      - 443
+      - 8443
+    TLS:
+      ports:
+      - 443
+      - 8443
+tcp-concurrent: true
+tun:
+  auto-detect-interface: true
+  auto-redirect: true
+  auto-route: true
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  enable: false
+  stack: gvisor
+unified-delay: true

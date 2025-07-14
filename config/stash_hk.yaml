@@ -1,23 +1,10 @@
 allow-lan: true
 dns:
   default-nameserver:
-  - https://[2001:4860:4860::64]/dns-query
-  - tls://[2001:4860:4860::64]
-  - tls://[2001:4860:4860::8888]
   - tls://[2001:4860:4860::8844]
-  - tls://8.8.4.4
-  - tls://[2606:4700:4700::1111]
-  - tls://[2606:4700:4700::1001]
-  - https://[2620:fe::9]/dns-query
-  - tls://[2620:fe::9]
-  - tls://[2620:fe::fe]
-  - tls://[2620:fe::fe:9]
   - tls://149.112.112.9
-  - tls://149.112.112.112
-  - tls://9.9.9.9
   - tls://94.140.14.141
   - https://[2a10:50c0::2:ff]
-  - tls://[2a10:50c0::2:ff]
   enable: true
   enhanced-mode: fake-ip
   fake-ip-filter:
@@ -27,46 +14,18 @@ dns:
   fake-ip-filter-mode: blacklist
   fake-ip-range: 198.18.0.1/16
   fallback:
-  - https://[2001:4860:4860::64]/dns-query
-  - tls://[2001:4860:4860::64]
-  - tls://[2001:4860:4860::8888]
   - tls://[2001:4860:4860::8844]
-  - tls://8.8.4.4
-  - tls://[2606:4700:4700::1111]
-  - tls://[2606:4700:4700::1001]
-  - https://[2620:fe::9]/dns-query
-  - tls://[2620:fe::9]
-  - tls://[2620:fe::fe]
-  - tls://[2620:fe::fe:9]
   - tls://149.112.112.9
-  - tls://149.112.112.112
-  - tls://9.9.9.9
   - tls://94.140.14.141
   - https://[2a10:50c0::2:ff]
-  - tls://[2a10:50c0::2:ff]
   ipv6: true
   nameserver:
-  - https://[2001:4860:4860::64]/dns-query
-  - tls://[2001:4860:4860::64]
-  - tls://[2001:4860:4860::8888]
   - tls://[2001:4860:4860::8844]
-  - tls://8.8.4.4
-  - tls://[2606:4700:4700::1111]
-  - tls://[2606:4700:4700::1001]
-  - https://[2620:fe::9]/dns-query
-  - tls://[2620:fe::9]
-  - tls://[2620:fe::fe]
-  - tls://[2620:fe::fe:9]
   - tls://149.112.112.9
-  - tls://149.112.112.112
-  - tls://9.9.9.9
   - tls://94.140.14.141
   - https://[2a10:50c0::2:ff]
-  - tls://[2a10:50c0::2:ff]
   use-system-hosts: false
 external-controller: 127.0.0.1:9090
-external-ui: ui
-external-ui-url: https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip
 find-process-mode: strict
 geo-auto-update: true
 geo-update-interval: 24
@@ -407,7 +366,7 @@ proxy-groups:
   - 手动选择
   - DIRECT
   type: select
-- include-all-proxies: true
+- include-all: true
   interval: 60
   lazy: true
   max-failed-times: 2
@@ -416,7 +375,7 @@ proxy-groups:
   tolerance: 10
   type: url-test
   url: https://www.apple.com/library/test/success.html
-- include-all-proxies: true
+- include-all: true
   interval: 60
   lazy: true
   max-failed-times: 2
@@ -425,7 +384,7 @@ proxy-groups:
   timeout: 3000
   type: load-balance
   url: https://www.apple.com/library/test/success.html
-- include-all-proxies: true
+- include-all: true
   interval: 60
   lazy: true
   max-failed-times: 2
@@ -441,6 +400,7 @@ rule-providers:
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
 rules:
+- DOMAIN-KEYWORD,quic,REJECT
 - DOMAIN,cdn.jsdelivr.net,DIRECT
 - DOMAIN,a.ppconverter.eu.org,DIRECT
 - DOMAIN,clash.razord.top,DIRECT
