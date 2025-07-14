@@ -85,7 +85,7 @@ if __name__ == "__main__":
     for i, config_info in enumerate(configs_to_generate, 1):
         logging.info(f"--- ({i}/{len(configs_to_generate)}) 开始生成: {config_info['output']} ---")
         generate_config(
-            base_config=base_config_data,
+            base_config=templates[config_info['template']],
             proxies_path=config_info['proxies_file'],
             output_path=config_info['output']
         )
