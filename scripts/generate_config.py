@@ -54,11 +54,19 @@ def generate_config(base_config, proxies_path, output_path):
 if __name__ == "__main__":
     # --- 唯一的真相来源 (Single Source of Truth) ---
     configs_to_generate = [
-        {"filter": None, "proxies_file": "merged-proxies.yaml", "output": "config/config.yaml"},
-        {"filter": "hk", "proxies_file": "merged-proxies_hk.yaml", "output": "config/config_hk.yaml"},
-        {"filter": "us", "proxies_file": "merged-proxies_us.yaml", "output": "config/config_us.yaml"},
-        {"filter": "jp", "proxies_file": "merged-proxies_jp.yaml", "output": "config/config_jp.yaml"},
-        {"filter": "uk", "proxies_file": "merged-proxies_uk.yaml", "output": "config/config_uk.yaml"},
+        # --- 标准 Clash 版本 ---
+        {"filter": None, "proxies_file": "merged-proxies.yaml", "output": "config/config.yaml", "template": "config-template.yaml"},
+        {"filter": "hk", "proxies_file": "merged-proxies_hk.yaml", "output": "config/config_hk.yaml", "template": "config-template.yaml"},
+        {"filter": "us", "proxies_file": "merged-proxies_us.yaml", "output": "config/config_us.yaml", "template": "config-template.yaml"},
+        {"filter": "jp", "proxies_file": "merged-proxies_jp.yaml", "output": "config/config_jp.yaml", "template": "config-template.yaml"},
+        {"filter": "uk", "proxies_file": "merged-proxies_uk.yaml", "output": "config/config_uk.yaml", "template": "config-template.yaml"},
+        
+        # --- Stash 专用版本 ---
+        {"filter": None, "proxies_file": "merged-proxies.yaml", "output": "config/stash.yaml", "template": "stash-template.yaml"},
+        {"filter": "hk", "proxies_file": "merged-proxies_hk.yaml", "output": "config/stash_hk.yaml", "template": "stash-template.yaml"},
+        {"filter": "us", "proxies_file": "merged-proxies_us.yaml", "output": "config/stash_us.yaml", "template": "stash-template.yaml"},
+        {"filter": "jp", "proxies_file": "merged-proxies_jp.yaml", "output": "config/stash_jp.yaml", "template": "stash-template.yaml"},
+        {"filter": "uk", "proxies_file": "merged-proxies_uk.yaml", "output": "config/stash_uk.yaml", "template": "stash-template.yaml"},
     ]
 
     # --- 步骤1: 准备所有需要的节点数据文件 ---

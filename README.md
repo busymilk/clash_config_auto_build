@@ -16,12 +16,18 @@
 
 ## 🚀 最终效果
 
-本项目会生成多个配置文件，它们的**代理组结构完全相同**，区别仅在于包含的**代理节点列表**不同：
+本项目会生成多个配置文件，所有文件的**代理组结构都由其使用的模板决定**，区别仅在于包含的**代理节点列表**不同。
 
-- `config/config.yaml`: 包含**所有**代理节点，适用于标准 Clash 客户端。
-- `config/stash.yaml`: 包含**所有**代理节点，但配置针对 Stash 客户端进行了优化（如移除 external-ui）。
+### 标准 Clash 版本 (使用 `config-template.yaml`)
+- `config/config.yaml`: 包含**所有**代理节点。
 - `config/config_hk.yaml`: **仅包含**香港地区节点。
 - `config/config_us.yaml`: **仅包含**美国地区节点。
+- ... 以此类推。
+
+### Stash 专用版本 (使用 `stash-template.yaml`)
+- `config/stash.yaml`: 包含**所有**代理节点，配置针对 Stash 优化。
+- `config/stash_hk.yaml`: **仅包含**香港地区节点，配置针对 Stash 优化。
+- `config/stash_us.yaml`: **仅包含**美国地区节点，配置针对 Stash 优化。
 - ... 以此类推。
 
 ## 🔧 如何使用与自定义
