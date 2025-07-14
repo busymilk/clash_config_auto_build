@@ -1,5 +1,6 @@
+
 # Stash 专用配置模板
-# 基于通用模板进行优化，移除了 external-ui 并调整了部分参数以更好地适配 Stash (Clash Meta 内核)。
+# 根据 Stash Wiki 官方最佳实践 (https://stash.wiki/faq/effective-stash) 进行了深度优化。
 
 mixed-port: 7890
 ipv6: true
@@ -7,27 +8,23 @@ allow-lan: true
 unified-delay: true
 tcp-concurrent: true
 external-controller: 127.0.0.1:9090
-# external-ui: Stash 本身就是 UI，无需此项
 
 # GeoIP/GeoSite 相关配置
 geodata-mode: true
 geo-auto-update: true
-geo-update-interval: 24 # 更新间隔，单位为小时
+geo-update-interval: 24
 geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat"
   mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb"
   geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
   asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
 
-# 进程匹配模式 (仅适用于 macOS/Linux)
 find-process-mode: strict
-
-# 全局 TLS 指纹，用于模仿特定客户端的 TLS 握手包
 global-client-fingerprint: firefox
 
 profile:
-  store-selected: true # 记录手动选择的代理
-  store-fake-ip: true # 记录 fake-ip 的映射关系
+  store-selected: true
+  store-fake-ip: true
 
 sniffer:
   enable: true
@@ -53,26 +50,28 @@ tun:
   auto-redirect: true
   auto-detect-interface: true
 
+# DNS 配置根据 Stash 官方建议进行精简，以降低移动端资源消耗
 dns:
   enable: true
   ipv6: true
   use-system-hosts: false
-  enhanced-mode: fake-ip # 使用 fake-ip 模式以获得更好的性能
+  enhanced-mode: fake-ip
   fake-ip-filter:
     - "+.tvkuai.com"
     - geosite:private
     - geosite:cn
   fake-ip-filter-mode: blacklist
   fake-ip-range: 198.18.0.1/16
+  # 优先使用稳定、高效的公共 DNS
   default-nameserver:
-    - https://[2001:4860:4860::64]/dns-query
-    - tls://[2001:4860:4860::64]
+    - 223.5.5.5
+    - 119.29.29.29
   nameserver:
-    - https://[2001:4860:4860::64]/dns-query
-    - tls://[2001:4860:4860::64]
+    - 223.5.5.5
+    - 119.29.29.29
   fallback:
-    - https://[2001:4860:4860::64]/dns-query
-    - tls://[2001:4860:4860::64]
+    - 1.0.0.1
+    - 8.8.4.4
 
 # 代理组配置
 proxy-groups:
@@ -85,18 +84,18 @@ proxy-groups:
       - DIRECT
 
   - name: 自动优选
-    type: url-test # 通过 URL 测试选择延迟最低的节点
-    tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-proxies: true # 标准化写法，包含所有节点进行测试
-    url: "https://www.apple.com/library/test/success.html" # 测试用的 URL
-    interval: 60 # 健康检查间隔（秒）
-    timeout: 3000 # 健康检查超时时间（毫秒）
-    max-failed-times: 2 # 最大失败次数
-    lazy: true # 懒加载，启动时不进行测试
+    type: url-test
+    tolerance: 10
+    include-all-proxies: true
+    url: "https://www.apple.com/library/test/success.html"
+    interval: 60
+    timeout: 3000
+    max-failed-times: 2
+    lazy: true
 
   - name: 负载均衡
-    type: load-balance # 实现流量的负载均衡
-    strategy: consistent-hashing # 轮询策略，确保同一目标地址使用同一节点
+    type: load-balance
+    strategy: consistent-hashing
     include-all-proxies: true
     url: "https://www.apple.com/library/test/success.html"
     interval: 60
@@ -105,7 +104,7 @@ proxy-groups:
     lazy: true
 
   - name: 手动选择
-    type: select # 手动选择节点
+    type: select
     include-all-proxies: true
     url: "https://www.apple.com/library/test/success.html"
     interval: 60
@@ -117,13 +116,16 @@ proxy-groups:
 rule-providers:
   applications:
     type: http
-    behavior: domain # 优化为 domain 模式，更适合 Stash
+    # 根据 Stash 官方建议，使用 domain 模式以提升性能和降低内存占用
+    behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
     path: ./ruleset/applications.yaml
-    interval: 86400 # 每天更新一次
+    interval: 86400
 
 # 路由规则
 rules:
+  # 根据 Stash 官方建议，禁用 QUIC 协议以提高代理转发效率
+  - DOMAIN-KEYWORD,quic,REJECT
   # 自定义直连规则
   - DOMAIN,cdn.jsdelivr.net,DIRECT
   - DOMAIN,a.ppconverter.eu.org,DIRECT
