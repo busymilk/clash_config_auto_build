@@ -27,6 +27,14 @@ FILTER_PATTERNS = {
         r'\b(us|usa|america|united[\s-]?states)\b(?!-?(check|fail))|美|🇺🇸',
         flags=re.IGNORECASE
     ),
+    'jp': re.compile(
+        r'\b(jp|japan|tokyo|tyo|osaka|nippon)\b(?!-?(check|fail))|日本|日|🇯🇵',
+        flags=re.IGNORECASE
+    ),
+    'uk': re.compile(
+        r'\b(uk|england|britain|united[\s-]?kingdom)\b(?!-?(check|fail))|英国|英|🇬🇧',
+        flags=re.IGNORECASE
+    ),
     # 在这里可以继续添加其他地区的-正则表达式
 }
 

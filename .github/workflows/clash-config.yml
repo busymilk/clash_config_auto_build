@@ -142,7 +142,7 @@ jobs:
         MAX_RETRIES: 3
         RETRY_DELAY: 20
       run: |
-        FILES_TO_PURGE=("config/config.yaml" "config/config_us.yaml" "config/config_hk.yaml")
+        FILES_TO_PURGE=("config/config.yaml" "config/config_us.yaml" "config/config_hk.yaml" "config/config_jp.yaml" "config/config_uk.yaml")
         GLOBAL_ERROR=0
 
         for file in "${FILES_TO_PURGE[@]}"; do

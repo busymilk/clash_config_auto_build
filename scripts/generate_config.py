@@ -73,6 +73,16 @@ if __name__ == "__main__":
             "template": "config-template_us.yaml",
             "proxies": "merged-proxies_us.yaml",
             "output": "config/config_us.yaml"
+        },
+        {
+            "template": "config-template_jp.yaml",
+            "proxies": "merged-proxies_jp.yaml",
+            "output": "config/config_jp.yaml"
+        },
+        {
+            "template": "config-template_uk.yaml",
+            "proxies": "merged-proxies_uk.yaml",
+            "output": "config/config_uk.yaml"
         }
     ]
 
