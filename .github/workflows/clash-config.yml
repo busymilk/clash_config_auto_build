@@ -60,19 +60,9 @@ jobs:
           curl -sSL "$url" -o "$output" || echo "Failed to download: $url"
         done
 
-    # 步骤6: 合并所有代理 (包括所有地区、香港、美国)
-    - name: Merge all proxies
-      run: |
-        # -- 合并所有代理 --
-        python -u scripts/merge_proxies.py --output merged-proxies.yaml
-        # -- 仅合并香港代理 --
-        python -u scripts/merge_proxies.py --filter hk --output merged-proxies_hk.yaml
-        # -- 仅合并美国代理 --
-        python -u scripts/merge_proxies.py --filter us --output merged-proxies_us.yaml
-
-    # 步骤7: 生成所有最终的配置文件
-    - name: Generate all configs
-      run: python scripts/generate_config.py
+    # 步骤6: 生成所有最终的配置文件 (由总指挥脚本全权负责)
+    - name: Generate All Configs
+      run: python -u scripts/generate_config.py
 
     # 步骤8: 将生成的配置文件作为构建产物上传
     # 这允许用户在 Actions 页面直接下载，方便调试和使用
