@@ -25,11 +25,11 @@ FILTER_PATTERNS = {
         flags=re.IGNORECASE
     ),
     'us': re.compile(
-        r'\b(us|usa|america|united[\s-]?states)\b|美|🇺🇸',
+        r'\b(us|usa|america|united[\s-]?states)\b|美国|🇺🇸', # 移除单个 '美'
         flags=re.IGNORECASE
     ),
     'jp': re.compile(
-        r'\b(jp|japan|tokyo|tyo|osaka|nippon)\b|日本|日|🇯🇵',
+        r'\b(jp|japan|tokyo|tyo|osaka|nippon)\b|日本|🇯🇵', # 移除单个 '日'
         flags=re.IGNORECASE
     ),
     'uk': re.compile(
