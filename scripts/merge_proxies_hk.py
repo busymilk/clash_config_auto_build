@@ -15,7 +15,7 @@ logging.basicConfig(
 
 # 预编译正则表达式（香港关键词白名单）
 name_pattern = re.compile(
-    r'\b(HK|Hong[\s_-]?Kong|HKG|HGC)\b(?!-?(check|fail))|香港|港|🇭🇰',,  # 优化后的香港关键词正则（含Emoji）
+    r'\b(HK|Hong[\s_-]?Kong|HKG|HGC)\b(?!-?(check|fail))|香港|港|🇭🇰',  # 优化后的香港关键词正则（含Emoji）
     flags=re.IGNORECASE  # 忽略大小写
 )
 
