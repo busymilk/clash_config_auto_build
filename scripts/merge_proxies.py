@@ -21,23 +21,23 @@ logging.basicConfig(
 # 使用更严格的单词边界 \b 来避免部分匹配造成的错误（例如, Armenia 包含 menia, 会被 america 错误匹配）
 FILTER_PATTERNS = {
     'hk': re.compile(
-        r'\b(HK|Hong[\s_-]?Kong|HKG|HGC)\b|香港|港|🇭🇰',
+        r'\b(HK|Hong[\s_-]?Kong|HKG|HGC)\b|香港|🇭🇰', # 移除 |港
         flags=re.IGNORECASE
     ),
     'us': re.compile(
-        r'\b(us|usa|america|united[\s-]?states)\b|美国|🇺🇸', # 移除单个 '美'
+        r'\b(us|usa|america|united[\s-]?states)\b|美国|🇺🇸',
         flags=re.IGNORECASE
     ),
     'jp': re.compile(
-        r'\b(jp|japan|tokyo|tyo|osaka|nippon)\b|日本|🇯🇵', # 移除单个 '日'
+        r'\b(jp|japan|tokyo|tyo|osaka|nippon)\b|日本|🇯🇵',
         flags=re.IGNORECASE
     ),
     'uk': re.compile(
-        r'\b(uk|england|britain|united[\s-]?kingdom)\b|英国|英|🇬🇧',
+        r'\b(uk|england|britain|united[\s-]?kingdom)\b|英国|🇬🇧', # 移除 |英
         flags=re.IGNORECASE
     ),
     'sg': re.compile(
-        r'\b(sg|singapore|sin)\b|新加坡|新|🇸🇬',
+        r'\b(sg|singapore|sin)\b|新加坡|🇸🇬', # 移除 |新
         flags=re.IGNORECASE
     ),
 }
