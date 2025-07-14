@@ -88,7 +88,7 @@ proxy-groups:
     proxies:
       - ⚡️ 自动优选
       - ⚖️ 负载均衡
-      -  MANUAL
+      - 👆 手动选择
       - DIRECT
 
   - name: ⚡️ 自动优选
@@ -113,7 +113,7 @@ proxy-groups:
     max-failed-times: 2
     lazy: true
 
-  - name:  MANUAL
+  - name: 👆 手动选择
     type: select # 手动选择节点
     include-all: true # Stash 兼容性写法
     url: "http://www.gstatic.com/generate_204"

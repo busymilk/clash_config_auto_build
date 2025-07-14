@@ -130,15 +130,15 @@ dns:
 
 # 代理组配置
 proxy-groups:
-  - name: 选择代理
+  - name: ✈️ 选择代理
     type: select
     proxies:
-      - 自动优选
-      - 负载均衡
-      - 手动选择
+      - ⚡️ 自动优选
+      - ⚖️ 负载均衡
+      - 👆 手动选择
       - DIRECT
 
-  - name: 自动优选
+  - name: ⚡️ 自动优选
     type: url-test # 通过 URL 测试选择延迟最低的节点
     tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     include-all-proxies: true # 包含所有节点进行测试
@@ -149,7 +149,7 @@ proxy-groups:
     max-failed-times: 2 # 最大失败次数
     lazy: true # 懒加载，启动时不进行测试
 
-  - name: 负载均衡
+  - name: ⚖️ 负载均衡
     type: load-balance # 实现流量的负载均衡
     strategy: consistent-hashing # 轮询策略，确保同一目标地址使用同一节点
     include-all-proxies: true
@@ -160,7 +160,7 @@ proxy-groups:
     max-failed-times: 2
     lazy: true
 
-  - name: 手动选择
+  - name: 👆 手动选择
     type: select # 手动选择节点
     include-all-proxies: true
     url: "http://www.gstatic.com/generate_204"
