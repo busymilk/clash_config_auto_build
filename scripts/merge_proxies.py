@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 import yaml
 import glob
@@ -7,6 +6,7 @@ import re
 import argparse
 
 # --- 配置日志记录 ---
+# 设置日志的格式和级别，方便调试和追踪脚本执行情况
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -16,6 +16,7 @@ logging.basicConfig(
 )
 
 # --- 常量定义 ---
+# 定义不同地区的正则表达式过滤器，用于根据节点名称筛选特定地区的代理
 FILTER_PATTERNS = {
     'hk': re.compile(
         r'\b(HK|Hong[\s_-]?Kong|HKG|HGC)\b(?!-?(check|fail))|香港|港|🇭🇰',
@@ -47,6 +48,10 @@ BLACKLIST_KEYWORDS = [
 def merge_proxies(proxies_dir, output_file, name_filter=None):
     """
     合并指定目录下的所有代理配置文件。
+
+    :param proxies_dir: 存放代理配置文件的目录路径 (例如: "external_proxies")
+    :param output_file: 合并后输出的文件路径 (例如: "merged-proxies.yaml")
+    :param name_filter: 代理名称过滤器, 可选值为 'hk', 'us' 等, 或 None (不过滤)
     """
     merged_proxies = []
     seen_identifiers = set()
@@ -79,7 +84,7 @@ def merge_proxies(proxies_dir, output_file, name_filter=None):
 
                     # 2. 检查是否为重复节点
                     if identifier in seen_identifiers:
-                        logging.info(f"排除重复代理: {name} | {server}:{port}")
+                        # logging.info(f"排除重复代理: {name} | {server}:{port}")
                         continue
                     
                     # 3. (最高优先级) 检查是否包含黑名单关键词
@@ -104,8 +109,8 @@ def merge_proxies(proxies_dir, output_file, name_filter=None):
                     # --- 添加代理 ---
                     seen_identifiers.add(identifier)
                     merged_proxies.append(proxy)
-                    filter_msg = f"({name_filter}) " if name_filter else ""
-                    logging.info(f"添加新代理 {filter_msg}: {name} | 类型: {proxy_type} | 服务器: {server}:{port}")
+                    # filter_msg = f"({name_filter}) " if name_filter else ""
+                    # logging.info(f"添加新代理 {filter_msg}: {name} | 类型: {proxy_type} | 服务器: {server}:{port}")
 
         except Exception as e:
             logging.error(f"处理文件 {file_path} 时发生严重错误: {e}", exc_info=True)
