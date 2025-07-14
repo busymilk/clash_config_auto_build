@@ -1,3 +1,4 @@
+
 # Clash Config Auto Builder
 
 [![Generate Clash Config](https://github.com/busymilk/clash_config_auto_build/actions/workflows/clash-config.yml/badge.svg)](https://github.com/busymilk/clash_config_auto_build/actions/workflows/clash-config.yml)
@@ -6,44 +7,37 @@
 
 ## ✨ 项目特性
 
+- **极致简约**: 只维护一个极简的配置文件模板，逻辑清晰，易于管理。
 - **全自动化**: 无需人工干预，定时更新配置文件。
-- **定时执行**: 默认每4小时自动运行一次，确保节点信息保持最新。
-- **多版本生成**: 同时生成 `全部节点`、`香港节点`、`美国节点` 三个版本的配置文件。
-- **智能去重**: 自动识别并移除重复的代理节点，保持配置清爽。
-- **灵活过滤**: 支持按地区关键词（如 `HK`, `US`）过滤，也支持按名称关键词（如 `免费`）排除。
+- **多版本生成**: 同时生成 `全部节点` 和多个 `地区限定节点` 版本的配置文件。
+- **智能去重与过滤**: 自动识别并移除重复的代理节点，并可按地区关键词过滤。
 - **自动发布**: 每次更新后，自动将最新的配置文件发布到 GitHub Release，方便下载。
 - **CDN 刷新**: 自动刷新 jsDelivr 的 CDN 缓存，确保通过链接访问的是最新版本。
-- **高可定制**: 可以轻松修改配置模板、过滤规则和订阅列表。
 
-## 🚀 如何使用
+## 🚀 最终效果
 
-1.  **Fork 本仓库**
-    点击页面右上角的 `Fork` 按钮，将此项目复制到你自己的 GitHub 账户下。
+本项目会生成多个配置文件，它们的**代理组结构完全相同**，区别仅在于包含的**代理节点列表**不同：
 
-2.  **添加订阅链接**
-    - 进入你 Fork 后的仓库，点击 `Settings` -> `Secrets and variables` -> `Actions`。
-    - 在 `Repository variables` 部分，点击 `New repository variable`。
-    - 创建一个名为 `URL_LIST` 的变量，将你的所有 Clash 订阅链接粘贴进去，**注意：多个链接之间必须用空格分隔**。
+- `config/config.yaml`: 包含**所有**代理节点。
+- `config/config_hk.yaml`: **仅包含**香港地区节点。
+- `config/config_us.yaml`: **仅包含**美国地区节点。
+- ... 以此类推。
 
-3.  **触发运行**
-    - **自动触发**: 完成以上步骤后，GitHub Actions 会根据预设的 `cron` 表达式（默认为每4小时）自动运行。
-    - **手动触发**: 如果想立即生成配置文件，可以进入仓库的 `Actions` 标签页，选择 `Generate Clash Config` 工作流程，然后点击 `Run workflow` 手动触发。
+## 🔧 如何使用与自定义
 
-4.  **获取配置文件**
-    - **从 Release 下载**: 推荐方式。工作流程运行成功后，会自动创建一个名为 `latest-config` 的 Release，你可以在其中找到并下载所有版本的配置文件。
-    - **从仓库文件查看**: 配置文件会保存在仓库的 `config/` 目录下，你可以直接查看或使用文件的 Raw 链接。
-    - **通过 jsDelivr 访问**: 你也可以通过 jsDelivr 的 CDN 链接来使用配置文件，例如:
-      ```
-      https://cdn.jsdelivr.net/gh/你的用户名/clash_config_auto_build@main/config/config.yaml
-      ```
+### 1. 修改核心模板
 
-## 🔧 自定义配置
+所有配置的“源头”都统一到了根目录下的 `config-template.yaml` 文件。你需要修改 DNS、规则、代理组等，**只需要修改这一个文件**即可。
 
-本项目的核心设计理念是“单一真相来源”（Single Source of Truth）。这意味着你只需要在一个地方定义你的配置需求，整个自动化流程就会智能地适应你的改动。
+### 2. 管理节点过滤规则
 
-### 唯一的真相来源：`scripts/generate_config.py`
+打开 `scripts/merge_proxies.py` 文件：
+- **地区白名单**: 在 `FILTER_PATTERNS` 字典中添加或修改地区的正则表达式。
+- **关键词黑名单**: 在 `BLACKLIST_KEYWORDS` 列表中添加不希望在全局配置中出现的词语。
 
-所有配置的**唯一控制核心**位于 `scripts/generate_config.py` 文件顶部的 `configs_to_generate` 列表。这个列表决定了项目需要生成哪些版本的配置文件，以及它们的具体属性。
+### 3. 管理输出版本 (唯一的真相来源)
+
+项目的核心控制逻辑位于 `scripts/generate_config.py` 文件顶部的 `configs_to_generate` 列表。这个列表是**唯一的真相来源**，它决定了整个项目需要生成哪些版本的配置文件。
 
 ```python
 # scripts/generate_config.py
@@ -52,25 +46,18 @@ configs_to_generate = [
     # ...
     # 示例：增加一个“台湾”地区的配置
     {
-        "filter": "tw", # 用于 merge_proxies.py 的过滤器名称
+        "filter": "tw", # 对应 merge_proxies.py 中的过滤器名称
         "proxies_file": "merged-proxies_tw.yaml", # 生成的临时节点数据文件名
-        "output": "config/config_tw.yaml", # 最终输出的配置文件路径
-        "is_region_specific": True # 标记这是否一个需要裁剪代理组的地区版本
+        "output": "config/config_tw.yaml" # 最终输出的配置文件路径
     },
     # ...
 ]
 ```
 
-### 如何新增/修改一个版本？
+要新增或删除一个版本，你只需要修改 `merge_proxies.py` 的 `FILTER_PATTERNS` 和 `generate_config.py` 的 `configs_to_generate` 列表即可。**无需再关心任何其他文件**。
 
-假设你想新增一个“台湾”地区的配置，只需两步：
+### 4. 添加订阅链接
 
-1.  **定义节点过滤规则**: 打开 `scripts/merge_proxies.py`，在 `FILTER_PATTERNS` 字典中为 `tw` 添加一个新的正则表达式。
-
-2.  **更新版本列表**: 打开 `scripts/generate_config.py`，将上面示例中的“台湾”配置项添加到 `configs_to_generate` 列表中。
-
-**完成以上两步即可。** 你**无需**再关心 `.github/workflows/clash-config.yml` 文件。工作流被设计为完全自动化的，它会根据 `generate_config.py` 的定义，智能地完成所有后续的上传、发布和缓存刷新任务。
-
-### 如何修改通用配置？
-
-如果你需要修改所有版本共用的配置（如 DNS、通用规则、代理组结构等），只需修改根目录下的 `config-template.yaml` 这一个“母版”文件即可。
+- 进入你 Fork 后的仓库，点击 `Settings` -> `Secrets and variables` -> `Actions`。
+- 在 `Repository variables` 部分，点击 `New repository variable`。
+- 创建一个名为 `URL_LIST` 的变量，将你的所有 Clash 订阅链接粘贴进去，**注意：多个链接之间必须用空格分隔**。
