@@ -1,6 +1,5 @@
-
 # Stash 专用配置模板
-# 移除了 external-ui，并针对 Clash Meta 内核进行了优化
+# 基于通用模板进行优化，移除了 external-ui 并调整了部分参数以更好地适配 Stash (Clash Meta 内核)。
 
 mixed-port: 7890
 ipv6: true
@@ -10,21 +9,25 @@ tcp-concurrent: true
 external-controller: 127.0.0.1:9090
 # external-ui: Stash 本身就是 UI，无需此项
 
+# GeoIP/GeoSite 相关配置
 geodata-mode: true
 geo-auto-update: true
-geo-update-interval: 24
+geo-update-interval: 24 # 更新间隔，单位为小时
 geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat"
   mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb"
   geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
   asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
 
+# 进程匹配模式 (仅适用于 macOS/Linux)
 find-process-mode: strict
+
+# 全局 TLS 指纹，用于模仿特定客户端的 TLS 握手包
 global-client-fingerprint: firefox
 
 profile:
-  store-selected: true
-  store-fake-ip: true
+  store-selected: true # 记录手动选择的代理
+  store-fake-ip: true # 记录 fake-ip 的映射关系
 
 sniffer:
   enable: true
@@ -54,7 +57,7 @@ dns:
   enable: true
   ipv6: true
   use-system-hosts: false
-  enhanced-mode: fake-ip
+  enhanced-mode: fake-ip # 使用 fake-ip 模式以获得更好的性能
   fake-ip-filter:
     - "+.tvkuai.com"
     - geosite:private
@@ -71,6 +74,7 @@ dns:
     - https://[2001:4860:4860::64]/dns-query
     - tls://[2001:4860:4860::64]
 
+# 代理组配置
 proxy-groups:
   - name: 选择代理
     type: select
@@ -81,19 +85,19 @@ proxy-groups:
       - DIRECT
 
   - name: 自动优选
-    type: url-test
-    tolerance: 10
-    include-all-proxies: true # 标准化写法
-    url: "https://www.apple.com/library/test/success.html"
-    interval: 60
-    timeout: 3000
-    max-failed-times: 2
-    lazy: true
+    type: url-test # 通过 URL 测试选择延迟最低的节点
+    tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
+    include-all-proxies: true # 标准化写法，包含所有节点进行测试
+    url: "https://www.apple.com/library/test/success.html" # 测试用的 URL
+    interval: 60 # 健康检查间隔（秒）
+    timeout: 3000 # 健康检查超时时间（毫秒）
+    max-failed-times: 2 # 最大失败次数
+    lazy: true # 懒加载，启动时不进行测试
 
   - name: 负载均衡
-    type: load-balance
-    strategy: consistent-hashing
-    include-all-proxies: true # 标准化写法
+    type: load-balance # 实现流量的负载均衡
+    strategy: consistent-hashing # 轮询策略，确保同一目标地址使用同一节点
+    include-all-proxies: true
     url: "https://www.apple.com/library/test/success.html"
     interval: 60
     timeout: 3000
@@ -101,36 +105,46 @@ proxy-groups:
     lazy: true
 
   - name: 手动选择
-    type: select
-    include-all-proxies: true # 标准化写法
+    type: select # 手动选择节点
+    include-all-proxies: true
     url: "https://www.apple.com/library/test/success.html"
     interval: 60
     timeout: 3000
     max-failed-times: 2
     lazy: true
 
+# 规则集提供者
 rule-providers:
   applications:
     type: http
     behavior: domain # 优化为 domain 模式，更适合 Stash
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
     path: ./ruleset/applications.yaml
-    interval: 86400
+    interval: 86400 # 每天更新一次
 
+# 路由规则
 rules:
+  # 自定义直连规则
   - DOMAIN,cdn.jsdelivr.net,DIRECT
   - DOMAIN,a.ppconverter.eu.org,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - 'DOMAIN-SUFFIX,ghproxy.com,DIRECT'
   - 'DOMAIN-SUFFIX,gofile.io,DIRECT'
+  # 直连应用
   - RULE-SET,applications,DIRECT
+  # 广告拦截
   - GEOSITE,category-ads-all,REJECT
+  # 常用服务
   - GEOSITE,bing,选择代理
   - GEOSITE,microsoft,选择代理
+  # 私有网络
   - GEOSITE,private,DIRECT
   - GEOIP,private,DIRECT
+  # 国内流量直连
   - GEOSITE,geolocation-cn,DIRECT
-  - GEOSITE,geolocation-!cn,选择代理
   - GEOIP,cn,DIRECT
+  # 国外流量走代理
+  - GEOSITE,geolocation-!cn,选择代理
+  # 兜底规则
   - MATCH,选择代理
