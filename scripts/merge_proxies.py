@@ -35,6 +35,10 @@ FILTER_PATTERNS = {
         r'\b(uk|england|britain|united[\s-]?kingdom)\b(?!-?(check|fail))|英国|英|🇬🇧',
         flags=re.IGNORECASE
     ),
+    'sg': re.compile(
+        r'\b(sg|singapore|sin)\b(?!-?(check|fail))|新加坡|新|🇸🇬',
+        flags=re.IGNORECASE
+    ),
     # 在这里可以继续添加其他地区的-正则表达式
 }
 

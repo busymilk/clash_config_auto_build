@@ -61,6 +61,7 @@ if __name__ == "__main__":
         {"filter": "us", "proxies_file": "merged-proxies_us.yaml", "output": "config/config_us.yaml", "template": "config-template.yaml"},
         {"filter": "jp", "proxies_file": "merged-proxies_jp.yaml", "output": "config/config_jp.yaml", "template": "config-template.yaml"},
         {"filter": "uk", "proxies_file": "merged-proxies_uk.yaml", "output": "config/config_uk.yaml", "template": "config-template.yaml"},
+        {"filter": "sg", "proxies_file": "merged-proxies_sg.yaml", "output": "config/config_sg.yaml", "template": "config-template.yaml"},
         
         # --- Stash 专用版本 ---
         {"filter": None, "proxies_file": "merged-proxies.yaml", "output": "config/stash.yaml", "template": "stash-template.yaml"},
@@ -68,6 +69,7 @@ if __name__ == "__main__":
         {"filter": "us", "proxies_file": "merged-proxies_us.yaml", "output": "config/stash_us.yaml", "template": "stash-template.yaml"},
         {"filter": "jp", "proxies_file": "merged-proxies_jp.yaml", "output": "config/stash_jp.yaml", "template": "stash-template.yaml"},
         {"filter": "uk", "proxies_file": "merged-proxies_uk.yaml", "output": "config/stash_uk.yaml", "template": "stash-template.yaml"},
+        {"filter": "sg", "proxies_file": "merged-proxies_sg.yaml", "output": "config/stash_sg.yaml", "template": "stash-template.yaml"},
     ]
 
     # --- 步骤1: 准备所有需要的节点数据文件 ---
