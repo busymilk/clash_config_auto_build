@@ -1,5 +1,3 @@
-
-
 # -*- coding: utf-8 -*-
 import yaml
 import logging
@@ -26,20 +24,26 @@ def run_merge_command(proxies_dir, filter_code, output_file):
         command.extend(["--filter", filter_code])
     
     try:
+        # 使用 subprocess.run 来执行命令，并检查返回码
         subprocess.run(command, check=True, capture_output=True, text=True)
     except subprocess.CalledProcessError as e:
+        # 如果命令执行失败，打印错误信息并退出
         logging.error(f"合并节点失败 (filter: {filter_code}):\n{e.stderr}")
         raise
 
 def generate_config(base_config, proxies_path, output_path):
     """根据基础配置和代理列表生成最终的 Clash 配置文件。"""
     try:
+        # 直接使用基础配置，不做任何修改
         config = base_config
+
+        # 读取并合并代理节点列表
         with open(proxies_path, 'r', encoding="utf-8") as f:
             proxies_data = yaml.safe_load(f)
         config['proxies'] = proxies_data.get('proxies', [])
         logging.info(f"成功为 {output_path} 合并 {len(config['proxies'])} 个节点。")
 
+        # 写入最终配置
         with open(output_path, 'w', encoding="utf-8") as f:
             yaml.dump(config, f, default_flow_style=False, allow_unicode=True)
 
@@ -75,7 +79,7 @@ if __name__ == "__main__":
     proxies_to_generate = { (cfg['filter'], cfg['proxies_file']) for cfg in configs_to_generate }
     for p_filter, p_file in proxies_to_generate:
         run_merge_command(PROXIES_DOWNLOAD_DIR, p_filter, p_file)
-    logging.info("---" + " 所有节点数据文件准备就绪 ---")
+    logging.info("--- 所有节点数据文件准备就绪 ---")
 
     # --- 步骤2: 加载所有需要的模板文件 ---
     template_names = {cfg['template'] for cfg in configs_to_generate}
