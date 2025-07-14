@@ -88,7 +88,7 @@ proxy-groups:
   - name: 自动优选
     type: url-test # 通过 URL 测试选择延迟最低的节点
     tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-proxies: true # 标准化写法，包含所有节点进行测试
+    include-all: true # Stash 兼容性写法
     url: "https://www.apple.com/library/test/success.html" # 测试用的 URL
     interval: 60 # 健康检查间隔（秒）
     timeout: 3000 # 健康检查超时时间（毫秒）
@@ -98,7 +98,7 @@ proxy-groups:
   - name: 负载均衡
     type: load-balance # 实现流量的负载均衡
     strategy: consistent-hashing # 轮询策略，确保同一目标地址使用同一节点
-    include-all-proxies: true
+    include-all: true # Stash 兼容性写法
     url: "https://www.apple.com/library/test/success.html"
     interval: 60
     timeout: 3000
@@ -107,7 +107,7 @@ proxy-groups:
 
   - name: 手动选择
     type: select # 手动选择节点
-    include-all-proxies: true
+    include-all: true # Stash 兼容性写法
     url: "https://www.apple.com/library/test/success.html"
     interval: 60
     timeout: 3000
