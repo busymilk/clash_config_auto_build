@@ -239,22 +239,15 @@ proxies:
   port: 443
   server: admin.c4.webramz.co
   type: ss
-- name: 'Channel id: @ShadowProxy66🇬🇧'
-  password: e48d6377dda26840
-  port: 42353
-  server: 185.184.70.120
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 🇬🇧 英国 01
+  name: 🇬🇧 英国 06
   port: 45066
   server: haa.dashuai.cyou
   tls: false
   type: vmess
   udp: true
-  uuid: ccf08892-a847-4f3a-a2cd-2a5ce46d8636
+  uuid: c93edd52-c3fd-4302-83ca-f4c9047991aa
 - cipher: chacha20-ietf-poly1305
   name: SS-英国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.150.32.13:14628
   password: DKyRdoqQIebdKZVYs5GzW8
@@ -283,21 +276,13 @@ proxies:
   port: 57456
   server: 46.226.163.225
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 03
-  port: 45067
-  server: xdd.dashuai.cyou
+- name: 'Channel id: @ShadowProxy66🇬🇧'
+  password: e48d6377dda26840
+  port: 42353
+  server: 185.184.70.120
+  skip-cert-verify: true
   tls: false
-  type: vmess
-  udp: true
-  uuid: 1c31051f-e567-4888-84dc-aed932359195
-- name: 🇬🇧_GB_英国->🇺🇸_US_美国
-  password: 84587c21-9938-42fc-a4b0-4f72dd72b7aa
-  port: 443
-  server: it.mjt000.com
-  sni: it.mjt000.com
-  type: trojan
+  type: hysteria2
 - name: 🇬🇧_英国_1
   network: ws
   port: 443
@@ -326,6 +311,21 @@ proxies:
     headers:
       host: vu.bgm2024.dpdns.org
     path: /?ed=2560
+- name: 🇬🇧_GB_英国->🇺🇸_US_美国
+  password: 84587c21-9938-42fc-a4b0-4f72dd72b7aa
+  port: 443
+  server: it.mjt000.com
+  sni: it.mjt000.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 英国 07
+  port: 45067
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 49d85122-ccfc-47d3-b7b1-6040d2c3b4ce
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -353,7 +353,7 @@ proxy-groups:
   strategy: consistent-hashing
   timeout: 3000
   type: load-balance
-  url: http://www.gstatic.com/generate_204
+  url: https://www.gstatic.com/generate_204
 - expected-status: 204
   include-all-proxies: true
   interval: 60
@@ -362,7 +362,7 @@ proxy-groups:
   name: 👆 手动选择
   timeout: 3000
   type: select
-  url: http://www.gstatic.com/generate_204
+  url: https://www.gstatic.com/generate_204
 rule-providers:
   applications:
     behavior: classical
@@ -379,8 +379,8 @@ rules:
 - DOMAIN-SUFFIX,gofile.io,DIRECT
 - RULE-SET,applications,DIRECT
 - GEOSITE,category-ads-all,REJECT
-- GEOSITE,bing,选择代理
-- GEOSITE,microsoft,选择代理
+- GEOSITE,bing,✈️ 选择代理
+- GEOSITE,microsoft,✈️ 选择代理
 - GEOSITE,private,DIRECT
 - GEOIP,private,DIRECT
 - GEOSITE,geolocation-cn,DIRECT
