@@ -1,0 +1,700 @@
+allow-lan: true
+dns:
+  default-nameserver:
+  - https://[2001:4860:4860::64]/dns-query
+  - tls://[2001:4860:4860::64]
+  - tls://[2001:4860:4860::8888]
+  - tls://[2001:4860:4860::8844]
+  - tls://8.8.4.4
+  - tls://[2606:4700:4700::1111]
+  - tls://[2606:4700:4700::1001]
+  - https://[2620:fe::9]/dns-query
+  - tls://[2620:fe::9]
+  - tls://[2620:fe::fe]
+  - tls://[2620:fe::fe:9]
+  - tls://149.112.112.9
+  - tls://149.112.112.112
+  - tls://9.9.9.9
+  - tls://94.140.14.141
+  - https://[2a10:50c0::2:ff]
+  - tls://[2a10:50c0::2:ff]
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - +.tvkuai.com
+  - geosite:private
+  - geosite:cn
+  fake-ip-filter-mode: blacklist
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - https://[2001:4860:4860::64]/dns-query
+  - tls://[2001:4860:4860::64]
+  - tls://[2001:4860:4860::8888]
+  - tls://[2001:4860:4860::8844]
+  - tls://8.8.4.4
+  - tls://[2606:4700:4700::1111]
+  - tls://[2606:4700:4700::1001]
+  - https://[2620:fe::9]/dns-query
+  - tls://[2620:fe::9]
+  - tls://[2620:fe::fe]
+  - tls://[2620:fe::fe:9]
+  - tls://149.112.112.9
+  - tls://149.112.112.112
+  - tls://9.9.9.9
+  - tls://94.140.14.141
+  - https://[2a10:50c0::2:ff]
+  - tls://[2a10:50c0::2:ff]
+  ipv6: true
+  nameserver:
+  - https://[2001:4860:4860::64]/dns-query
+  - tls://[2001:4860:4860::64]
+  - tls://[2001:4860:4860::8888]
+  - tls://[2001:4860:4860::8844]
+  - tls://8.8.4.4
+  - tls://[2606:4700:4700::1111]
+  - tls://[2606:4700:4700::1001]
+  - https://[2620:fe::9]/dns-query
+  - tls://[2620:fe::9]
+  - tls://[2620:fe::fe]
+  - tls://[2620:fe::fe:9]
+  - tls://149.112.112.9
+  - tls://149.112.112.112
+  - tls://9.9.9.9
+  - tls://94.140.14.141
+  - https://[2a10:50c0::2:ff]
+  - tls://[2a10:50c0::2:ff]
+  use-system-hosts: false
+external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip
+find-process-mode: strict
+geo-auto-update: true
+geo-update-interval: 24
+geodata-mode: true
+geox-url:
+  asn: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb
+  geoip: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat
+  geosite: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+  mmdb: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb
+global-client-fingerprint: firefox
+ipv6: true
+mixed-port: 7890
+profile:
+  store-fake-ip: true
+  store-selected: true
+proxies:
+- delay: 681
+  name: 新加坡 001
+  network: ws
+  port: 8192
+  server: 54.255.217.120
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 🇸🇬 新加坡 023
+  password: a787921a-4208-4ac8-b905-3fdb7edbdd1e
+  port: 23513
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 076
+  password: 78c0b0c9-8d6f-4d35-95fa-4001bf0e7d9a
+  port: 23107
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- name: 🇸🇬 新加坡 124
+  password: 03320488-a4e8-403d-8f14-1d06c2693e20
+  port: 23511
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- name: 🇸🇬 新加坡 082
+  network: ws
+  port: 443
+  server: 164.52.2.100
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- client-fingerprint: firefox
+  name: 🇸🇬 新加坡 128
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 103.229.96.166
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 043
+  port: 31014
+  server: ghikkdg2.mi0001.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 803dfb35-0ae6-4540-9715-7182fc043187
+- name: 🇸🇬 新加坡 101
+  network: ws
+  port: 443
+  server: 164.52.2.98
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇸🇬 新加坡 041
+  password: b204ea70-9007-4d09-9606-7ac1401d33ce
+  port: 23512
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- name: 🇸🇬 新加坡 024
+  password: 03320488-a4e8-403d-8f14-1d06c2693e20
+  port: 23510
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 108
+  password: e8ab636e-7e37-4a44-b3fb-1cd568001f8f
+  port: 23106
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 097
+  password: e8ab636e-7e37-4a44-b3fb-1cd568001f8f
+  port: 23407
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- name: 🇸🇬 新加坡 073
+  network: ws
+  password: ttfang
+  port: 443
+  server: 13.228.142.218
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 119
+  password: 03320488-a4e8-403d-8f14-1d06c2693e20
+  port: 23401
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 126
+  port: 45054
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5ba37528-7249-4a9d-8bcf-e1295c5529bb
+- client-fingerprint: chrome
+  name: 🇸🇬 新加坡|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 7571
+  server: 36.151.192.26
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇸🇬 新加坡2|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 32765
+  server: 36.151.192.26
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- alterId: 4
+  cipher: auto
+  name: 🇸🇬SG-103.253.26.20-0200 | 0.394MB
+  network: ws
+  port: 443
+  server: 103.253.26.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: zecjk.com
+    path: /
+- alterId: 4
+  cipher: auto
+  name: 🇸🇬SG-202.61.141.130-0199 | 0.371MB
+  network: ws
+  port: 443
+  server: 202.61.141.130
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: 202.61.141.130
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬SG-8.214.33.158-0197 | 0.334MB
+  network: ws
+  port: 80
+  server: 8.214.33.158
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
+  ws-opts:
+    headers:
+      Host: 8.214.33.158
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬SG-180.215.130.123-0196 | 0.315MB
+  network: ws
+  port: 46452
+  server: 180.215.130.123
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c5414fe0-018b-473a-aa3b-f210f2ba42f5
+  ws-opts:
+    headers:
+      Host: 180.215.130.123
+    path: /
+- alterId: 4
+  cipher: auto
+  name: 🇸🇬SG-103.253.26.134-0195 | 0.282MB
+  network: ws
+  port: 443
+  server: 103.253.26.134
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: eeh7iewe.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.138-0192 | 0.224MB
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 217.197.161.138
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.136-0191 | 0.22MB
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 217.197.161.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.18-0190 | 0.182MB
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 81.90.189.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.18-0189 | 0.17MB
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 81.90.189.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.152-0188 | 0.166MB
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 81.90.189.152
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.164-0187 | 0.163MB
+  password: G!yBwPWH3Vao
+  port: 803
+  server: 217.197.161.164
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.152-0186 | 0.16MB
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 81.90.189.152
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.18-0185 | 0.158MB
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 81.90.189.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.136-0184 | 0.155MB
+  password: G!yBwPWH3Vao
+  port: 803
+  server: 217.197.161.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.164-0183 | 0.149MB
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 217.197.161.164
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.164-0182 | 0.149MB
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 217.197.161.164
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.136-0181 | 0.146MB
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 217.197.161.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.166-0180 | 0.143MB
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 217.197.161.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.136-0179 | 0.135MB
+  password: G!yBwPWH3Vao
+  port: 808
+  server: 217.197.161.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.166-0178 | 0.129MB
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 217.197.161.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.166-0177 | 0.121MB
+  password: G!yBwPWH3Vao
+  port: 801
+  server: 217.197.161.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.138-0176 | 0.117MB
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 217.197.161.138
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.166-0175 | 0.117MB
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 217.197.161.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.18-0174 | 0.114MB
+  password: G!yBwPWH3Vao
+  port: 801
+  server: 81.90.189.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.166-0173 | 0.114MB
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 217.197.161.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.18-0172 | 0.111MB
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 81.90.189.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.166-0171 | 0.109MB
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 217.197.161.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.164-0170 | 0.105MB
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 217.197.161.164
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.166-0169 | 0.104MB
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 217.197.161.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.138-0168 | 0.096MB
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 217.197.161.138
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.18-0167 | 0.091MB
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 81.90.189.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.166-0166 | 0.075MB
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 217.197.161.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.18-0165 | 0.045MB
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 81.90.189.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.18-0164 | 0.031MB
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 81.90.189.18
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.138-0163 | 0.024MB
+  password: G!yBwPWH3Vao
+  port: 802
+  server: 217.197.161.138
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.136-0162 | 0.024MB
+  password: G!yBwPWH3Vao
+  port: 805
+  server: 217.197.161.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.136-0161 | 0.009MB
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 217.197.161.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.166-0160 | 0.006MB
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 217.197.161.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.136-0159 | 0.0MB
+  password: G!yBwPWH3Vao
+  port: 801
+  server: 217.197.161.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.138-0158 | 0.0MB
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 217.197.161.138
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.152-0157 | 0.0MB
+  password: G!yBwPWH3Vao
+  port: 801
+  server: 81.90.189.152
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.136-0156 | 0.0MB
+  password: G!yBwPWH3Vao
+  port: 807
+  server: 217.197.161.136
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.138-0155 | 0.0MB
+  password: G!yBwPWH3Vao
+  port: 804
+  server: 217.197.161.138
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-81.90.189.152-0154 | 0.0MB
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 81.90.189.152
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-217.197.161.136-0153 | 0.0MB
+  password: G!yBwPWH3Vao
+  port: 811
+  server: 217.197.161.136
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
+  port: 49291
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇸🇬2 |  2.8MB/s|61%|Youtube|Ope...
+  network: ws
+  port: 443
+  server: 64.176.38.232
+  servername: lighter-missouri-hydrocodone-yeast.trycloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e46d518d-4a20-4f9a-873d-a86e9455321c
+  ws-opts:
+    headers:
+      Host: lighter-missouri-hydrocodone-yeast.trycloudflare.com
+    path: /e46d518d-4a20-4f9a-873d-a86e9455321c-vless?ed=2048
+- name: 🇸🇬3 |  1.2MB/s|30%|Disney|Open...
+  network: ws
+  port: 8880
+  server: 154.197.108.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- name: 'Channel id: @ShadowProxy66🇸🇬'
+  password: 9FmazX8AAPpM8TQcNyI2zvBDF5o
+  port: 28264
+  server: 92.112.23.216
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 新加坡3|@ripaojiedian
+  network: tcp
+  port: '31014'
+  server: ghikkdg2.mi0001.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 803dfb35-0ae6-4540-9715-7182fc043187
+proxy-groups:
+- name: 选择代理
+  proxies:
+  - 自动优选
+  - 负载均衡
+  - 手动选择
+  - DIRECT
+  type: select
+- include-all-proxies: true
+  interval: 60
+  lazy: true
+  max-failed-times: 2
+  name: 自动优选
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://www.apple.com/library/test/success.html
+- include-all-proxies: true
+  interval: 60
+  lazy: true
+  max-failed-times: 2
+  name: 负载均衡
+  strategy: consistent-hashing
+  timeout: 3000
+  type: load-balance
+  url: https://www.apple.com/library/test/success.html
+- include-all-proxies: true
+  interval: 60
+  lazy: true
+  max-failed-times: 2
+  name: 手动选择
+  timeout: 3000
+  type: select
+  url: https://www.apple.com/library/test/success.html
+rule-providers:
+  applications:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/applications.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+rules:
+- DOMAIN,cdn.jsdelivr.net,DIRECT
+- DOMAIN,a.ppconverter.eu.org,DIRECT
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- DOMAIN-SUFFIX,ghproxy.com,DIRECT
+- DOMAIN-SUFFIX,gofile.io,DIRECT
+- RULE-SET,applications,DIRECT
+- GEOSITE,category-ads-all,REJECT
+- GEOSITE,bing,选择代理
+- GEOSITE,microsoft,选择代理
+- GEOSITE,private,DIRECT
+- GEOIP,private,DIRECT
+- GEOSITE,geolocation-cn,DIRECT
+- GEOIP,cn,DIRECT
+- GEOSITE,geolocation-!cn,选择代理
+- MATCH,选择代理
+sniffer:
+  enable: true
+  skip-domain:
+  - Mijia Cloud
+  - +.push.apple.com
+  sniff:
+    HTTP:
+      override-destination: true
+      ports:
+      - 80
+      - 8080-8880
+    QUIC:
+      ports:
+      - 443
+      - 8443
+    TLS:
+      ports:
+      - 443
+      - 8443
+tcp-concurrent: true
+tun:
+  auto-detect-interface: true
+  auto-redirect: true
+  auto-route: true
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  enable: false
+  stack: gvisor
+unified-delay: true

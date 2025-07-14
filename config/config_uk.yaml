@@ -83,6 +83,73 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- name: 🇬🇧_英国_1
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: vz.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: vz.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_2
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: vu.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: vu.bgm2024.dpdns.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 42
+  password: 2c69ef71-d398-4e43-b67d-b16936b46a1d
+  port: 23400
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 14
+  password: 235473ff-8576-4ae4-b0c7-089d000a3520
+  port: 23113
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 35
+  password: c83efc53-7010-428b-9008-c682729838b9
+  port: 23121
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- auth: 18c77d82-a744-45e1-8a65-4f29a8547932
+  name: 🇬🇧 英国 41
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 18c77d82-a744-45e1-8a65-4f29a8547932
+  port: 35240
+  server: flyyg.flylink.cyou
+  skip-cert-verify: true
+  sni: flyyg.flylink.cyou
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国家宽 11
+  password: 85602731-c097-4a39-b683-9703b0749d8e
+  port: 23112
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0254 | 42.648MB
   password: shadowsocks
@@ -234,33 +301,6 @@ proxies:
   server: admin.c4.webramz.co
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国 46
-  password: 78c0b0c9-8d6f-4d35-95fa-4001bf0e7d9a
-  port: 23400
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 01
-  port: 45067
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 141fe0fb-a809-4fdf-88c7-7c46a7b11e98
-- auth: f5ab377f-da4c-41ff-8e98-c730c723d46a
-  name: 🇬🇧 英国 60
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: f5ab377f-da4c-41ff-8e98-c730c723d46a
-  port: 35240
-  server: flyyg.flylink.cyou
-  skip-cert-verify: true
-  sni: flyyg.flylink.cyou
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: SS-英国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.150.32.13:14628
   password: DKyRdoqQIebdKZVYs5GzW8
   port: 14628
@@ -288,29 +328,6 @@ proxies:
   port: 57456
   server: 46.226.163.225
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国 57
-  password: e8ab636e-7e37-4a44-b3fb-1cd568001f8f
-  port: 23113
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 47
-  port: 45066
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d0c27e14-f129-477e-a1c3-720c32454fb6
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国家宽 02
-  password: b204ea70-9007-4d09-9606-7ac1401d33ce
-  port: 23112
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
 - name: 🇬🇧_GB_英国->🇺🇸_US_美国
   password: 84587c21-9938-42fc-a4b0-4f72dd72b7aa
   port: 443
@@ -324,34 +341,6 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 🇬🇧_英国_1
-  network: ws
-  port: 443
-  server: 217.163.76.201
-  servername: vz.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: vz.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_2
-  network: ws
-  port: 443
-  server: 217.163.76.84
-  servername: vu.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: vu.bgm2024.dpdns.org
-    path: /?ed=2560
 proxy-groups:
 - name: 选择代理
   proxies:
