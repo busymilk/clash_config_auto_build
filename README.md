@@ -59,3 +59,8 @@
   }
   ```
   同时，确保在 `merge_proxies.py` 中也添加了 `tw` 的过滤规则。
+
+  > **它是如何工作的？**
+  > 你可能会好奇 `merged-proxies_tw.yaml` 这个文件是从哪里来的。这是在 GitHub Actions 工作流中动态生成的：
+  > 1.  **合并节点**: 工作流会先调用 `scripts/merge_proxies.py --filter tw --output merged-proxies_tw.yaml`，创建出只包含台湾节点的临时数据文件。
+  > 2.  **生成配置**: 随后，`scripts/generate_config.py` 运行时，就能找到并使用上一步生成的 `merged-proxies_tw.yaml` 文件来完成最终配置的组装。
