@@ -42,94 +42,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
-  network: ws
-  port: 1443
-  server: sslvpn.51job.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
-  ws-opts:
-    headers:
-      Host: centos7
-    path: /634c5c4f9782
-- name: 🇯🇵日本
-  password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
-  port: 443
-  server: aws-linkhy17.liangxin1.xyz
-  skip-cert-verify: true
-  sni: www.apple.com.cn
-  tls: false
-  type: hysteria2
-- cipher: rc4-md5
-  name: 🇯🇵 日本|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507121073737-BbgY2abS77.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本2|@ripaojiedian
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
-- name: 日本3|@ripaojiedian
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 41225
-  server: 36.151.192.26
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: 日本4|@ripaojiedian
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 4445
-  server: 36.151.192.26
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 日本v2|@ripaojiedian
-  network: kcp
-  port: '2389'
-  server: 8.211.145.146
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9f9f395b-e9b2-4cfd-85b3-0425f0e11ad7
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0276 | 35.609MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0275 | 35.467MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
 - client-fingerprint: chrome
   name: 日本 006
   network: ws
@@ -156,80 +68,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本 41
-  password: 03320488-a4e8-403d-8f14-1d06c2693e20
-  port: 23104
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- name: 🇯🇵 日本 60
-  network: ws
-  port: 443
-  server: 217.142.236.93
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇯🇵 日本 93
-  password: b204ea70-9007-4d09-9606-7ac1401d33ce
-  port: 23517
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- auth: jyEWQRbJATgWMu3XQtRvxb2h0
-  name: 🇯🇵 日本 11
-  password: jyEWQRbJATgWMu3XQtRvxb2h0
-  port: 25635
-  server: 47.79.34.232
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- name: 🇯🇵 日本 18
-  password: ca53641c-77f4-46c3-9c14-16d278b03d03
-  port: 23617
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本 94
-  password: c83efc53-7010-428b-9008-c682729838b9
-  port: 23105
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- name: 🇯🇵 日本 49
-  password: aff98510-78df-452a-8fe3-ea680d055693
-  port: 23515
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵 日本 46
-  network: ws
-  port: 443
-  server: 138.2.39.24
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 🇯🇵_日本_1
   network: tcp
   password: Aimer
@@ -262,6 +100,153 @@ proxies:
     headers:
       host: vu.bgm2024.dpdns.org
     path: /?ed=2560
+- name: 🇯🇵 日本 15
+  password: 5f119f40-0716-4570-81cc-8c9cab4ca1eb
+  port: 23514
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- name: 🇯🇵 日本 04
+  network: ws
+  port: 443
+  server: 47.79.43.222
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0276 | 35.609MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0275 | 35.467MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- name: 🇯🇵 日本 03
+  password: 5f119f40-0716-4570-81cc-8c9cab4ca1eb
+  port: 23617
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  name: 🇯🇵 日本 27
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40218
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.linkhub.support
+  type: ssr
+  udp: true
+- auth: sdgGgrtderg2gdertgrg
+  name: 🇯🇵 日本 20
+  password: sdgGgrtderg2gdertgrg
+  port: 11883
+  server: 35.78.207.12
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202507121073737-BbgY2abS77.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 🇯🇵 日本3|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 41225
+  server: 36.151.192.26
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇯🇵 日本4|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 4445
+  server: 36.151.192.26
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- alterId: 64
+  cipher: auto
+  name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  network: ws
+  port: 1443
+  server: sslvpn.51job.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  ws-opts:
+    headers:
+      Host: centos7
+    path: /634c5c4f9782
+- name: 🇯🇵日本
+  password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
+  port: 443
+  server: aws-linkhy17.liangxin1.xyz
+  skip-cert-verify: true
+  sni: www.apple.com.cn
+  tls: false
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 日本v2|@ripaojiedian
+  network: kcp
+  port: '2389'
+  server: 8.211.145.146
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9f9f395b-e9b2-4cfd-85b3-0425f0e11ad7
+- name: 🇯🇵 日本 52
+  password: ca53641c-77f4-46c3-9c14-16d278b03d03
+  port: 23515
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 选择代理
   proxies:
