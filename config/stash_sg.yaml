@@ -55,32 +55,30 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇸🇬 新加坡 27
-  network: ws
-  port: 443
-  server: 150.109.11.223
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- client-fingerprint: firefox
-  name: 🇸🇬 新加坡 23
+- name: 🇸🇬_新加坡_1
   network: tcp
   port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
   server: 103.229.96.166
   servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: true
+  skip-cert-verify: true
+  tls: false
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- name: 🇸🇬_新加坡_2
+  network: ws
+  port: 8880
+  server: 114.129.43.186
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      host: Telegram-channel-WangCai2
+    path: /telegram🇨🇳 @wangcai2 /?ed=2560
 - client-fingerprint: chrome
   name: 🇸🇬 新加坡|@ripaojiedian
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -108,113 +106,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 803dfb35-0ae6-4540-9715-7182fc043187
-- name: 🇸🇬 新加坡 082
-  network: ws
-  port: 443
-  server: 164.52.2.100
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇸🇬 新加坡 101
-  network: ws
-  port: 443
-  server: 164.52.2.98
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇸🇬 新加坡 041
-  password: b204ea70-9007-4d09-9606-7ac1401d33ce
-  port: 23512
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- name: 🇸🇬 新加坡 15
-  network: ws
-  port: 443
-  server: 43.156.181.203
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 07
-  port: 45055
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1c31051f-e567-4888-84dc-aed932359195
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 09
-  port: 45054
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ccf08892-a847-4f3a-a2cd-2a5ce46d8636
-- name: 🇸🇬 新加坡 17
-  password: 5f119f40-0716-4570-81cc-8c9cab4ca1eb
-  port: 23510
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-4938 | 0.0MB
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬SG-180.215.130.123-0201 | 0.0MB
-  network: ws
-  port: 11584
-  server: 180.215.130.123
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 181472ed-0bb7-43be-dccb-74aca2b33ed5
-  ws-opts:
-    headers:
-      Host: 180.215.130.123
-    path: /
-- alterId: 4
-  cipher: auto
-  name: 🇸🇬SG-103.253.26.20-0200 | 0.0MB
-  network: ws
-  port: 443
-  server: 103.253.26.20
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: zecjk.com
-    path: /
 - alterId: 64
   cipher: auto
   name: 🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
@@ -285,20 +176,144 @@ proxies:
     headers:
       Host: c01.ylkszy.eu.org
     path: /?ed=2560
-- name: 🇸🇬_新加坡_2
-  network: ws
-  port: 8880
-  server: 114.129.43.186
-  servername: Telegram-channel-WangCai2
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 06
+  port: 45055
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 49d85122-ccfc-47d3-b7b1-6040d2c3b4ce
+- name: 🇸🇬 新加坡 10
+  password: 038d43d6-30de-4b45-8660-4c0ccfbdc85c
+  port: 23512
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
   skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇸🇬 新加坡 26
+  network: tcp
+  port: 10002
+  reality-opts:
+    public-key: xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc
+    short-id: ad081079
+  server: us3do.interld123456789.com
+  servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: 31dbd21a-47d8-4e47-b493-276a065a7026
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-4938 | 0.0MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬SG-180.215.130.123-0201 | 0.0MB
+  network: ws
+  port: 11584
+  server: 180.215.130.123
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 181472ed-0bb7-43be-dccb-74aca2b33ed5
   ws-opts:
     headers:
-      host: Telegram-channel-WangCai2
-    path: /telegram🇨🇳 @wangcai2 /?ed=2560
+      Host: 180.215.130.123
+    path: /
+- alterId: 4
+  cipher: auto
+  name: 🇸🇬SG-103.253.26.20-0200 | 0.0MB
+  network: ws
+  port: 443
+  server: 103.253.26.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: zecjk.com
+    path: /
+- name: 🇸🇬 新加坡 13
+  password: 038d43d6-30de-4b45-8660-4c0ccfbdc85c
+  port: 23510
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- name: 🇸🇬 新加坡 24
+  network: ws
+  port: 443
+  server: 13.228.142.218
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇸🇬 新加坡 25
+  network: ws
+  port: 443
+  server: 52.74.101.26
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇸🇬 新加坡 22
+  network: ws
+  port: 443
+  server: 164.52.2.100
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇸🇬 新加坡 29
+  network: ws
+  password: ttfang
+  port: 1111
+  server: 138.2.95.61
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 🇸🇬 新加坡 18
+  network: ws
+  port: 443
+  server: 164.52.2.99
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -357,6 +372,7 @@ rules:
 - GEOSITE,microsoft,✈️ 选择代理
 - GEOSITE,private,DIRECT
 - GEOSITE,cn,DIRECT
+- GEOSITE,gfw,✈️ 选择代理
 - GEOSITE,geolocation-!cn,✈️ 选择代理
 - GEOIP,private,DIRECT
 - GEOIP,cn,DIRECT
