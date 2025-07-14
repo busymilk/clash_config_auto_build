@@ -124,8 +124,8 @@ proxy-groups:
 rule-providers:
   applications:
     type: http
-    # 根据 Stash 官方建议，使用 domain 模式以提升性能和降低内存占用
-    behavior: domain
+    # 必须使用 classical 模式，因为其内容是 `PROCESS-NAME` 规则，而非纯域名列表
+    behavior: classical
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
     path: ./ruleset/applications.yaml
     interval: 86400 # 每天更新一次
