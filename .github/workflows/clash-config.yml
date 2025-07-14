@@ -1,0 +1,173 @@
+name: Generate Clash Config
+
+on:
+  schedule:
+    # 每4小时运行一次（UTC时间）
+    - cron: '0 */4 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    # 将环境变量提升到 job 级别，避免在每个 step 中重复定义
+    env:
+      LANG: en_US.UTF-8
+      LC_ALL: en_US.UTF-8
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+
+    steps:
+    # 步骤1: 检出代码仓库
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }} # 使用 GITHUB_TOKEN 以获取推送权限
+        fetch-depth: 0 # 获取完整的 git 历史，以便进行 diff 和 commit
+
+    # 步骤2: 设置 Python 环境
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    # 步骤3: 安装 Python 依赖
+    - name: Install dependencies
+      run: pip install pyyaml
+
+    # 步骤4: 创建所需目录
+    - name: Create directories
+      run: mkdir -p external_proxies config
+
+    # 步骤5: 下载外部代理订阅文件
+    - name: Download external proxies
+      env:
+        URL_LIST: ${{ vars.URL_LIST }} # 从仓库的 Variables 中读取订阅URL列表
+      run: |
+        # 使用 IFS（内部字段分隔符）来安全地处理带空格的URL
+        IFS=' ' read -ra URLS <<< "$URL_LIST"
+        for url in "${URLS[@]}"; do
+          # 根据 URL 生成一个相对唯一且合法的文件名
+          basename=$(echo "$url" | sed -E 's#^https?://[^/]+/##; s/[?#].*$//; s#/#_#g')
+          timestamp=$(date +%s%N)
+          filename="${basename}_${timestamp}"
+          # 确保文件名有后缀，以兼容某些系统
+          if [[ "$filename" != *.* ]]; then
+            filename="${filename}.txt"
+          fi
+          
+          output="external_proxies/${filename}"
+          echo "Downloading $url to $output"
+          # 使用 curl 下载，-sSL 表示静默、跟随重定向、显示错误
+          curl -sSL "$url" -o "$output" || echo "Failed to download: $url"
+        done
+
+    # 步骤6: 合并所有代理 (包括所有地区、香港、美国)
+    - name: Merge all proxies
+      run: |
+        # -- 合并所有代理 --
+        python -u scripts/merge_proxies.py --output merged-proxies.yaml
+        # -- 仅合并香港代理 --
+        python -u scripts/merge_proxies.py --filter hk --output merged-proxies_hk.yaml
+        # -- 仅合并美国代理 --
+        python -u scripts/merge_proxies.py --filter us --output merged-proxies_us.yaml
+
+    # 步骤7: 生成所有最终的配置文件
+    - name: Generate all configs
+      run: python scripts/generate_config.py
+
+    # 步骤8: 将生成的配置文件作为构建产物上传
+    # 这允许用户在 Actions 页面直接下载，方便调试和使用
+    - name: Upload All Config Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: clash-config-all
+        path: config/config.yaml
+
+    - name: Upload US Config Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: clash-config-us
+        path: config/config_us.yaml
+
+    - name: Upload HK Config Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: clash-config-hk
+        path: config/config_hk.yaml
+
+    # 步骤9: 创建或更新 GitHub Release
+    # 使用 softprops/action-gh-release 插件来自动化发布流程
+    - name: Create or Update Release
+      uses: softprops/action-gh-release@v1
+      with:
+        # 将所有配置文件打包到一个 release 中
+        files: |
+          config/config.yaml
+          config/config_hk.yaml
+          config/config_us.yaml
+        # 使用固定的 tag_name，这样每次运行都会更新同一个 Release
+        tag_name: latest-config
+        name: "🚀 Latest Clash Configurations"
+        body: "Automated update of Clash configuration files."
+        generate_release_notes: true # 自动生成版本说明
+
+    # 步骤10: 提交并推送配置文件的变更到仓库
+    - name: Commit and push config changes
+      run: |
+        # 配置 Git 用户信息
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        
+        # 定义需要跟踪变更的文件列表
+        FILES_TO_CHECK=("config/config.yaml" "config/config_hk.yaml" "config/config_us.yaml")
+        
+        # 使用 git diff --quiet 检查是否有文件发生变更
+        if git diff --quiet --exit-code -- "${FILES_TO_CHECK[@]}"; then
+          echo "No changes to commit, skipping push."
+          exit 0
+        fi
+        
+        # 如果有变更，则添加到暂存区并提交
+        git add "${FILES_TO_CHECK[@]}"
+        COMMIT_MSG="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M')"
+        git commit -m "$COMMIT_MSG"
+        
+        # 推送到 main 分支
+        git push origin HEAD:main
+
+    # 步骤11: 刷新 jsDelivr 的 CDN 缓存
+    # 确保用户能通过 jsDelivr 链接访问到最新的配置文件
+    - name: Purge jsDelivr Cache
+      if: success() # 仅在前面步骤都成功时执行
+      env:
+        MAX_RETRIES: 3
+        RETRY_DELAY: 20
+      run: |
+        FILES_TO_PURGE=("config/config.yaml" "config/config_us.yaml" "config/config_hk.yaml")
+        GLOBAL_ERROR=0
+
+        for file in "${FILES_TO_PURGE[@]}"; do
+          purge_url="https://purge.jsdelivr.net/gh/${{ github.repository }}@main/$file"
+          echo "Purging CDN cache for: $file"
+          
+          # 增加重试逻辑以应对临时的网络问题或API速率限制
+          for ((i=1; i<=$MAX_RETRIES; i++)); do
+            http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
+            if [ $http_code -eq 200 ]; then
+              echo "  ✅ Success (Attempt $i)"
+              break
+            elif [ $i -eq $MAX_RETRIES ]; then
+              echo "  ❌ Failed after $MAX_RETRIES attempts (HTTP code: $http_code)"
+              GLOBAL_ERROR=1
+            else
+              echo "  ⚠️ Failed with code $http_code, retrying in $RETRY_DELAY seconds..."
+              sleep $RETRY_DELAY
+            fi
+          done
+        done
+
+        if [ $GLOBAL_ERROR -ne 0 ]; then
+          echo "⛔ One or more files failed to purge from jsDelivr cache."
+          exit 1
+        else
+          echo "🎉 All files purged successfully."
+        fi
