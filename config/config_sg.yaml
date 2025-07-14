@@ -2,22 +2,17 @@ allow-lan: true
 dns:
   default-nameserver:
   - https://[2001:4860:4860::64]/dns-query
-  - tls://[2001:4860:4860::64]
-  - tls://[2001:4860:4860::8888]
-  - tls://[2001:4860:4860::8844]
-  - tls://8.8.4.4
-  - tls://[2606:4700:4700::1111]
-  - tls://[2606:4700:4700::1001]
-  - https://[2620:fe::9]/dns-query
-  - tls://[2620:fe::9]
-  - tls://[2620:fe::fe]
-  - tls://[2620:fe::fe:9]
-  - tls://149.112.112.9
-  - tls://149.112.112.112
-  - tls://9.9.9.9
-  - tls://94.140.14.141
-  - https://[2a10:50c0::2:ff]
-  - tls://[2a10:50c0::2:ff]
+  - 94.140.14.141
+  - 2a10:50c0::1:ff
+  - 2a10:50c0::2:ff
+  - 149.112.112.9
+  - 149.112.112.112
+  - 2620:fe::fe
+  - 2620:fe::9
+  direct-nameserver:
+  - https://1.12.12.12/dns-query
+  - https://223.5.5.5/dns-query
+  direct-nameserver-follow-policy: false
   enable: true
   enhanced-mode: fake-ip
   fake-ip-filter:
@@ -26,43 +21,22 @@ dns:
   - geosite:cn
   fake-ip-filter-mode: blacklist
   fake-ip-range: 198.18.0.1/16
-  fallback:
-  - https://[2001:4860:4860::64]/dns-query
-  - tls://[2001:4860:4860::64]
-  - tls://[2001:4860:4860::8888]
-  - tls://[2001:4860:4860::8844]
-  - tls://8.8.4.4
-  - tls://[2606:4700:4700::1111]
-  - tls://[2606:4700:4700::1001]
-  - https://[2620:fe::9]/dns-query
-  - tls://[2620:fe::9]
-  - tls://[2620:fe::fe]
-  - tls://[2620:fe::fe:9]
-  - tls://149.112.112.9
-  - tls://149.112.112.112
-  - tls://9.9.9.9
-  - tls://94.140.14.141
-  - https://[2a10:50c0::2:ff]
-  - tls://[2a10:50c0::2:ff]
   ipv6: true
   nameserver:
   - https://[2001:4860:4860::64]/dns-query
-  - tls://[2001:4860:4860::64]
-  - tls://[2001:4860:4860::8888]
-  - tls://[2001:4860:4860::8844]
-  - tls://8.8.4.4
-  - tls://[2606:4700:4700::1111]
-  - tls://[2606:4700:4700::1001]
-  - https://[2620:fe::9]/dns-query
-  - tls://[2620:fe::9]
-  - tls://[2620:fe::fe]
-  - tls://[2620:fe::fe:9]
-  - tls://149.112.112.9
-  - tls://149.112.112.112
-  - tls://9.9.9.9
-  - tls://94.140.14.141
-  - https://[2a10:50c0::2:ff]
-  - tls://[2a10:50c0::2:ff]
+  - tls://1dot1dot1dot1.cloudflare-dns.com
+  - tls://unfiltered.adguard-dns.com
+  nameserver-policy:
+    geosite:cn,private:
+    - https://1.12.12.12/dns-query
+    - https://223.5.5.5/dns-query
+    geosite:gfw,geolocation-!cn:
+    - https://[2001:4860:4860::64]/dns-query
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - tls://unfiltered.adguard-dns.com
+  proxy-server-nameserver:
+  - https://1.12.12.12/dns-query
+  - https://223.5.5.5/dns-query
   use-system-hosts: false
 external-controller: 127.0.0.1:9090
 external-ui: ui
@@ -89,10 +63,10 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇸🇬 新加坡 18
+- name: 🇸🇬 新加坡 27
   network: ws
   port: 443
-  server: 164.52.2.99
+  server: 150.109.11.223
   servername: steep.skyfigure.top
   tls: true
   type: vless
@@ -102,41 +76,47 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇸🇬 新加坡 13
-  password: 038d43d6-30de-4b45-8660-4c0ccfbdc85c
-  port: 23510
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+- client-fingerprint: firefox
+  name: 🇸🇬 新加坡 23
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 103.229.96.166
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: chrome
+  name: 🇸🇬 新加坡|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 7571
+  server: 36.151.192.26
   skip-cert-verify: true
-  sni: cn.bing.com
+  sni: www.baidu.com
   type: trojan
-  udp: true
-- name: 🇸🇬 新加坡 24
-  network: ws
-  port: 443
-  server: 13.228.142.218
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇸🇬 新加坡 25
-  network: ws
-  port: 443
-  server: 52.74.101.26
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇸🇬 新加坡 22
+- client-fingerprint: chrome
+  name: 🇸🇬 新加坡2|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 32765
+  server: 36.151.192.26
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇸🇬 新加坡3|@ripaojiedian
+  port: 31014
+  server: ghikkdg2.mi0001.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 803dfb35-0ae6-4540-9715-7182fc043187
+- name: 🇸🇬 新加坡 082
   network: ws
   port: 443
   server: 164.52.2.100
@@ -149,6 +129,66 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇸🇬 新加坡 101
+  network: ws
+  port: 443
+  server: 164.52.2.98
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇸🇬 新加坡 041
+  password: b204ea70-9007-4d09-9606-7ac1401d33ce
+  port: 23512
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- name: 🇸🇬 新加坡 15
+  network: ws
+  port: 443
+  server: 43.156.181.203
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 07
+  port: 45055
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1c31051f-e567-4888-84dc-aed932359195
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 09
+  port: 45054
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ccf08892-a847-4f3a-a2cd-2a5ce46d8636
+- name: 🇸🇬 新加坡 17
+  password: 5f119f40-0716-4570-81cc-8c9cab4ca1eb
+  port: 23510
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf
   name: 🇸🇬SG-103.36.91.23-4938 | 0.0MB
   password: asd123456
@@ -183,127 +223,6 @@ proxies:
     headers:
       Host: zecjk.com
     path: /
-- client-fingerprint: chrome
-  name: 🇸🇬 新加坡|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 7571
-  server: 36.151.192.26
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇸🇬 新加坡2|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 32765
-  server: 36.151.192.26
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇸🇬 新加坡3|@ripaojiedian
-  port: 31014
-  server: ghikkdg2.mi0001.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 803dfb35-0ae6-4540-9715-7182fc043187
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇸🇬 新加坡 11
-  network: tcp
-  port: 10002
-  reality-opts:
-    public-key: xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc
-    short-id: ad081079
-  server: us3do.interld123456789.com
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7b1d79bd-d819-4fe3-bc7d-699ce99bb86f
-- name: 🇸🇬 新加坡 28
-  network: ws
-  port: 443
-  server: hostone-sg.zdsa.me
-  servername: hostone-sg.zdsa.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 43ef1f94-978f-4539-ba01-1e6005859950
-  ws-opts:
-    headers:
-      Host: hostone-sg.zdsa.me
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 01
-  port: 45055
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 32d0e501-7ee5-445b-92c3-f834194d6265
-- name: 🇸🇬 新加坡 30
-  network: ws
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
-  port: 20230
-  server: sg008.421421.xyz
-  skip-cert-verify: true
-  sni: www.alibaba.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.alibaba.com
-    path: ''
-- name: 🇸🇬 新加坡 20
-  network: tcp
-  port: 41283
-  server: 43.156.217.68
-  tls: false
-  type: vless
-  udp: true
-  uuid: 4839e0b9-b275-47ea-81ab-9bfd38bbe7af
-- name: 🇸🇬 新加坡 15
-  network: ws
-  port: 443
-  server: 43.156.181.203
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 09
-  port: 45054
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ccf08892-a847-4f3a-a2cd-2a5ce46d8636
-- delay: 681
-  name: 新加坡 001
-  network: ws
-  port: 8192
-  server: 54.255.217.120
-  servername: c01.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: c01.ylkszy.eu.org
-    path: /?ed=2560
 - alterId: 64
   cipher: auto
   name: 🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
@@ -359,16 +278,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 803dfb35-0ae6-4540-9715-7182fc043187
-- name: 🇸🇬_新加坡_1
-  network: tcp
-  port: 34045
-  server: 103.229.96.166
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+- delay: 681
+  name: 新加坡 001
+  network: ws
+  port: 8192
+  server: 54.255.217.120
+  servername: c01.ylkszy.eu.org
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vless
   udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: c01.ylkszy.eu.org
+    path: /?ed=2560
 - name: 🇸🇬_新加坡_2
   network: ws
   port: 8880
@@ -439,10 +363,10 @@ rules:
 - GEOSITE,bing,✈️ 选择代理
 - GEOSITE,microsoft,✈️ 选择代理
 - GEOSITE,private,DIRECT
-- GEOIP,private,DIRECT
-- GEOSITE,geolocation-cn,DIRECT
-- GEOIP,cn,DIRECT
+- GEOSITE,cn,DIRECT
 - GEOSITE,geolocation-!cn,✈️ 选择代理
+- GEOIP,private,DIRECT
+- GEOIP,cn,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:
   enable: true
