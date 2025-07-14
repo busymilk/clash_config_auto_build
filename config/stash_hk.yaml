@@ -3,12 +3,12 @@ dns:
   default-nameserver:
   - https://[2001:4860:4860::64]/dns-query
   - 94.140.14.141
-  - udp://[2a10:50c0::1:ff]
-  - udp://[2a10:50c0::2:ff]
+  - 2a10:50c0::1:ff
+  - 2a10:50c0::2:ff
   - 149.112.112.9
   - 149.112.112.112
-  - udp://[2620:fe::fe]
-  - udp://[2620:fe::9]
+  - 2620:fe::fe
+  - 2620:fe::9
   direct-nameserver:
   - https://1.12.12.12/dns-query
   - https://223.5.5.5/dns-query
@@ -27,8 +27,13 @@ dns:
   - tls://1dot1dot1dot1.cloudflare-dns.com
   - tls://unfiltered.adguard-dns.com
   nameserver-policy:
-    "geosite:cn,private":[https://1.12.12.12/dns-query,https://223.5.5.5/dns-query]
-    "geosite:gfw,geolocation-!cn":[https://[2001:4860:4860::64]/dns-query,tls://1dot1dot1dot1.cloudflare-dns.com,tls://unfiltered.adguard-dns.com]
+    geosite:cn,private:
+    - https://1.12.12.12/dns-query
+    - https://223.5.5.5/dns-query
+    geosite:gfw,geolocation-!cn:
+    - https://[2001:4860:4860::64]/dns-query
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - tls://unfiltered.adguard-dns.com
   proxy-server-nameserver:
   - https://1.12.12.12/dns-query
   - https://223.5.5.5/dns-query
@@ -50,83 +55,36 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港|@ripaojiedian
+- auth: nfsn666
+  name: 🇭🇰 香港 01
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
+  skip-cert-verify: true
+  sni: hk.nfsn666.gq
+  type: hysteria2
+  udp: true
+- name: 🇭🇰 香港 08
+  password: 038d43d6-30de-4b45-8660-4c0ccfbdc85c
+  port: 23499
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- name: 🇭🇰 香港 10
   network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  port: 443
+  server: 194.156.99.186
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /oooo
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 🇭🇰 香港2|@ripaojiedian
-  password: 9bfdde71b4c0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: newroot2v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /cauejypbltqt
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 103.103.245.158
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港3|@ripaojiedian
-  port: 31019
-  server: ghikkdg2.mi0001.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2e0d1409-81fc-42bd-b37f-bd1910869e13
-- client-fingerprint: chrome
-  name: 🇭🇰 香港4|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.59
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇭🇰 香港5|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 24903
-  server: 36.151.192.59
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇭🇰 香港6|@ripaojiedian
-  password: 7367d04e-4c59-4dff-a50e-12e730a09891
-  port: 26193
-  server: 155.117.228.70
-  skip-cert-verify: true
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港7|@ripaojiedian
-  port: 25740
-  server: 43.247.134.145
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: d70ca72a-2b50-4536-8abc-da48995dd902
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
 - alterId: 0
   cipher: auto
   name: 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
@@ -157,6 +115,64 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港2|@ripaojiedian
+  password: 9bfdde71b4c0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /cauejypbltqt
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 103.103.245.158
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港3|@ripaojiedian
+  port: 31019
+  server: ghikkdg2.mi0001.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2e0d1409-81fc-42bd-b37f-bd1910869e13
+- name: 香港4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 9141
+  server: 36.151.192.59
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 24903
+  server: 36.151.192.59
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 香港6|@ripaojiedian
+  network: tcp
+  password: 7367d04e-4c59-4dff-a50e-12e730a09891
+  port: 26193
+  server: 155.117.228.70
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港7|@ripaojiedian
+  port: 25740
+  server: 43.247.134.145
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: d70ca72a-2b50-4536-8abc-da48995dd902
 - alterId: 0
   cipher: auto
   name: 香港3|@ripaojiedian
@@ -189,6 +205,22 @@ proxies:
   uuid: ba47c516-0c18-49d5-9548-6370c835e163
 - alterId: 2
   cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港|@ripaojiedian
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
   name: 🇭🇰 香港家宽 02
   network: ws
   port: 80
@@ -201,69 +233,63 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0348 | 0.035MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港 27
-  port: 45051
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 49d85122-ccfc-47d3-b7b1-6040d2c3b4ce
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港家宽 06
+  name: 🇭🇰 香港家宽 05
   network: ws
   port: 80
-  server: 83da64f6-szi1s0-t0y0nd-1mmbp.hkt.tcpbbr.net
+  server: 248f33f5-szi1s0-tiaexf-ufc0.hkt.tcpbbr.net
   tls: false
   type: vmess
   udp: true
-  uuid: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
+  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: 🇭🇰 香港 15
-  network: ws
-  port: 443
-  server: 47.76.218.163
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram @SRCVPN/?ed=2560
-- name: 🇭🇰 香港 02
-  network: ws
-  port: 26010
-  server: 103.133.178.229
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇭🇰 香港 06
-  password: 5f119f40-0716-4570-81cc-8c9cab4ca1eb
+- name: 🇭🇰 香港 09
+  password: 038d43d6-30de-4b45-8660-4c0ccfbdc85c
   port: 23504
   server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
   skip-cert-verify: true
   sni: cn.bing.com
   type: trojan
   udp: true
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 19
+  password: 23d03aa704c7
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: cmihk3v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /grqhyifio
+    tls: true
+  port: 636
+  server: 156.251.179.181
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 01
+  network: ws
+  port: 80
+  server: c2b04e68-sva740-svxckp-1swry.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: c2b04e68-sva740-svxckp-1swry.hk.p5pv.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0348 | 0.035MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
