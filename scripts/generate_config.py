@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 import yaml
 import logging
@@ -13,20 +12,21 @@ logging.basicConfig(
     handlers=[logging.StreamHandler()]
 )
 
-def run_merge_command(filter_code, output_file):
+def run_merge_command(proxies_dir, filter_code, output_file):
     """调用 merge_proxies.py 脚本来生成临时的节点数据文件。"""
     command = [
         sys.executable, # 使用当前 Python 解释器
         "scripts/merge_proxies.py",
+        "--proxies-dir", proxies_dir, # 将下载目录作为参数传入
         "--output", output_file
     ]
     if filter_code:
         command.extend(["--filter", filter_code])
     
-    logging.info(f"执行合并命令: {' '.join(command)}")
+    # logging.info(f"执行合并命令: {' '.join(command)}")
     try:
         subprocess.run(command, check=True, capture_output=True, text=True)
-        logging.info(f"成功生成数据文件: {output_file}")
+        # logging.info(f"成功生成数据文件: {output_file}")
     except subprocess.CalledProcessError as e:
         logging.error(f"合并节点失败 (filter: {filter_code}):\n{e.stderr}")
         raise
@@ -41,7 +41,7 @@ def generate_config(base_config, proxies_path, output_path):
         with open(proxies_path, 'r', encoding="utf-8") as f:
             proxies_data = yaml.safe_load(f)
         config['proxies'] = proxies_data.get('proxies', [])
-        logging.info(f"成功读取并合并 {len(config['proxies'])} 个代理节点到 {output_path}。")
+        # logging.info(f"成功读取并合并 {len(config['proxies'])} 个代理节点到 {output_path}。")
 
         # 写入最终配置
         with open(output_path, 'w', encoding="utf-8") as f:
@@ -53,6 +53,9 @@ def generate_config(base_config, proxies_path, output_path):
         raise
 
 if __name__ == "__main__":
+    # --- 总指挥中心：所有可变配置都在这里定义 ---
+    PROXIES_DOWNLOAD_DIR = "external_proxies"
+
     # --- 唯一的真相来源 (Single Source of Truth) ---
     configs_to_generate = [
         # --- 标准 Clash 版本 ---
@@ -69,20 +72,18 @@ if __name__ == "__main__":
         {"filter": "us", "proxies_file": "merged-proxies_us.yaml", "output": "config/stash_us.yaml", "template": "stash-template.yaml"},
         {"filter": "jp", "proxies_file": "merged-proxies_jp.yaml", "output": "config/stash_jp.yaml", "template": "stash-template.yaml"},
         {"filter": "uk", "proxies_file": "merged-proxies_uk.yaml", "output": "config/stash_uk.yaml", "template": "stash-template.yaml"},
-        {"filter": "sg", "proxies_file": "merged-proxies_sg.yaml", "output": "config/stash_sg.yaml", "template": "stash-template.yaml"},
+        {"filter": "sg", "proxies_file": "merged-proxies_sg.yaml", "output": "config/stash_sg.yaml", "template": "stash-template.yaml"}
     ]
 
     # --- 步骤1: 准备所有需要的节点数据文件 ---
     logging.info("--- 开始准备所有需要的节点数据文件 ---")
-    # 从配置列表中提取出所有需要生成的 proxies 文件，并去重
     proxies_to_generate = { (cfg['filter'], cfg['proxies_file']) for cfg in configs_to_generate }
     for p_filter, p_file in proxies_to_generate:
-        run_merge_command(p_filter, p_file)
+        run_merge_command(PROXIES_DOWNLOAD_DIR, p_filter, p_file)
     logging.info("--- 所有节点数据文件准备就绪 ---")
 
     # --- 步骤2: 加载所有需要的模板文件 ---
     logging.info("--- 开始加载所有需要的模板文件 ---")
-    # 从配置列表中提取出所有需要用到的 template 文件名，并去重
     template_names = {cfg['template'] for cfg in configs_to_generate}
     templates = {}
     for tpl_name in template_names:
@@ -100,7 +101,7 @@ if __name__ == "__main__":
     logging.info("--- 开始生成所有最终配置文件 ---")
     generated_files = []
     for i, config_info in enumerate(configs_to_generate, 1):
-        logging.info(f"--- ({i}/{len(configs_to_generate)}) 开始生成: {config_info['output']} ---")
+        # logging.info(f"--- ({i}/{len(configs_to_generate)}) 开始生成: {config_info['output']} ---")
         generate_config(
             base_config=templates[config_info['template']],
             proxies_path=config_info['proxies_file'],

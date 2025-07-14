@@ -55,7 +55,8 @@ configs_to_generate = [
     {
         "filter": "tw", # 对应 merge_proxies.py 中的过滤器名称
         "proxies_file": "merged-proxies_tw.yaml", # 生成的临时节点数据文件名
-        "output": "config/config_tw.yaml" # 最终输出的配置文件路径
+        "output": "config/config_tw.yaml",
+        "template": "config-template.yaml" # 指定使用的模板
     },
     # ...
 ]
