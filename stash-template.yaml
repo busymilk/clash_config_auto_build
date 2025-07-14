@@ -95,7 +95,7 @@ proxy-groups:
     type: url-test # 通过 URL 测试选择延迟最低的节点
     tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     include-all: true # Stash 兼容性写法
-    url: "http://www.gstatic.com/generate_204" # 使用 Google 的专用网络连通性测试 URL，更轻量高效
+    url: "https://www.gstatic.com/generate_204" # 使用 Google 的专用网络连通性测试 URL，更轻量高效
     expected-status: 204 # 期望获得 204 状态码，确保测试的准确性，避免被劫持
     interval: 60 # 健康检查间隔（秒）
     timeout: 3000 # 健康检查超时时间（毫秒）
