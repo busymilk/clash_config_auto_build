@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 import yaml
 import logging
@@ -71,21 +72,27 @@ if __name__ == "__main__":
 
     # --- 步骤1: 准备所有需要的节点数据文件 ---
     logging.info("--- 开始准备所有需要的节点数据文件 ---")
-    for config_info in configs_to_generate:
-        run_merge_command(config_info['filter'], config_info['proxies_file'])
+    # 从配置列表中提取出所有需要生成的 proxies 文件，并去重
+    proxies_to_generate = { (cfg['filter'], cfg['proxies_file']) for cfg in configs_to_generate }
+    for p_filter, p_file in proxies_to_generate:
+        run_merge_command(p_filter, p_file)
     logging.info("--- 所有节点数据文件准备就绪 ---")
 
-    # --- 步骤2: 加载唯一的“母版”模板 ---
-    base_template_path = "config-template.yaml"
-    logging.info(f"正在从唯一的源模板 {base_template_path} 加载基础配置...")
-    try:
-        with open(base_template_path, 'r', encoding="utf-8") as f:
-            base_config_data = yaml.safe_load(f)
-        if not base_config_data:
-            raise ValueError("基础配置文件为空或格式错误。")
-    except (FileNotFoundError, ValueError) as e:
-        logging.critical(f"无法加载基础模板: {e}", exc_info=True)
-        sys.exit(1)
+    # --- 步骤2: 加载所有需要的模板文件 ---
+    logging.info("--- 开始加载所有需要的模板文件 ---")
+    # 从配置列表中提取出所有需要用到的 template 文件名，并去重
+    template_names = {cfg['template'] for cfg in configs_to_generate}
+    templates = {}
+    for tpl_name in template_names:
+        try:
+            with open(tpl_name, 'r', encoding="utf-8") as f:
+                templates[tpl_name] = yaml.safe_load(f)
+            if not templates[tpl_name]:
+                raise ValueError(f"模板文件 {tpl_name} 为空或格式错误。")
+            logging.info(f"成功加载模板: {tpl_name}")
+        except (FileNotFoundError, ValueError) as e:
+            logging.critical(f"无法加载模板 {tpl_name}: {e}", exc_info=True)
+            sys.exit(1)
 
     # --- 步骤3: 循环生成所有最终的配置文件 ---
     logging.info("--- 开始生成所有最终配置文件 ---")
