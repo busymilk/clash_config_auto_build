@@ -55,6 +55,71 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本 03
+  password: e0372a5e-4884-49ba-85aa-1938733e7041
+  port: 35007
+  server: 35007.fishnodebgp.com
+  type: ss
+  udp: true
+- name: 🇯🇵 日本 26
+  network: ws
+  port: 443
+  server: 47.79.43.222
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- auth: Y9vRstWcTHECGcKnayA2VYiUXs
+  name: 🇯🇵 日本 107
+  password: Y9vRstWcTHECGcKnayA2VYiUXs
+  port: 35562
+  server: 13.112.101.203
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- name: 🇯🇵 日本 032
+  password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
+  port: 23515
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- alterId: 1
+  cipher: auto
+  name: 🇯🇵 日本 112
+  port: 11773
+  server: iokxq-g01.jp02-e3-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 91f34ad8-b60e-3955-8de4-39da56944866
+- name: 🇯🇵 日本 090
+  password: 052fc2b8-5da8-4424-b734-c615cc8cb41f
+  port: 23617
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- alterId: 1
+  cipher: auto
+  name: 🇯🇵 日本 117
+  port: 28783
+  server: a54b5-g01.jp07-sh-vm0.entry.fr0528.art
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 91f34ad8-b60e-3955-8de4-39da56944866
 - alterId: 64
   cipher: auto
   name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
@@ -131,6 +196,40 @@ proxies:
   tls: false
   type: vmess
   uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0308 | 4.124MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0310 | 1.82MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- auth: 22e1379b-e299-4220-84b8-87b8867c1d3f
+  name: 🇯🇵 日本 30
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 22e1379b-e299-4220-84b8-87b8867c1d3f
+  port: 25781
+  server: jphub.xg-hub.icu
+  skip-cert-verify: true
+  sni: jphub.xg-hub.icu
+  type: hysteria2
+  udp: true
+- auth: 18c77d82-a744-45e1-8a65-4f29a8547932
+  name: 🇯🇵 日本 06
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 18c77d82-a744-45e1-8a65-4f29a8547932
+  port: 35300
+  server: flyrb.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxg.flylink.cyou
+  type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   name: 日本 006
   network: ws
@@ -157,53 +256,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-- auth: Y9vRstWcTHECGcKnayA2VYiUXs
-  name: 🇯🇵 日本 16
-  password: Y9vRstWcTHECGcKnayA2VYiUXs
-  port: 35562
-  server: 13.112.101.203
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- auth: 22e1379b-e299-4220-84b8-87b8867c1d3f
-  name: 🇯🇵 日本 30
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 22e1379b-e299-4220-84b8-87b8867c1d3f
-  port: 25781
-  server: jphub.xg-hub.icu
-  skip-cert-verify: true
-  sni: jphub.xg-hub.icu
-  type: hysteria2
-  udp: true
-- name: 🇯🇵 日本 13
-  password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
-  port: 23515
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- name: 🇯🇵 日本 07
-  password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
-  port: 23617
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- auth: 18c77d82-a744-45e1-8a65-4f29a8547932
-  name: 🇯🇵 日本 06
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 18c77d82-a744-45e1-8a65-4f29a8547932
-  port: 35300
-  server: flyrb.flylink.cyou
-  skip-cert-verify: true
-  sni: flyxg.flylink.cyou
-  type: hysteria2
-  udp: true
 - name: 🇯🇵 日本 037
   password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
   port: 23517
@@ -212,19 +264,6 @@ proxies:
   sni: cn.bing.com
   type: trojan
   udp: true
-- name: 🇯🇵 日本 089
-  network: ws
-  port: 443
-  server: 47.79.43.222
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 🇯🇵 日本 093
   password: 73082ee4-053d-42a6-84f1-3b181b19d4e7
@@ -255,64 +294,6 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- auth: sdgGgrtderg2gdertgrg
-  name: 🇯🇵 日本 10
-  password: sdgGgrtderg2gdertgrg
-  port: 11883
-  server: 35.78.207.12
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- name: 🇯🇵 日本 01
-  password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
-  port: 23514
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- name: 🇯🇵 日本 05
-  network: ws
-  port: 443
-  server: 13.230.34.30
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本 02
-  password: e0372a5e-4884-49ba-85aa-1938733e7041
-  port: 35006
-  server: 35006.fishnodebgp.com
-  type: ss
-  udp: true
-- auth: jyEWQRbJATgWMu3XQtRvxb2h0
-  name: 🇯🇵 日本 09
-  password: jyEWQRbJATgWMu3XQtRvxb2h0
-  port: 25635
-  server: 47.79.34.232
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0308 | 4.124MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0310 | 1.82MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
