@@ -40,7 +40,7 @@ geodata-mode: true
 geox-url:
   asn: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb
   geoip: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat
-  geosite: https://testingcf.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat
+  geosite: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat
   mmdb: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb
 global-client-fingerprint: firefox
 ipv6: true
@@ -55,39 +55,47 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇸🇬 新加坡 049
+- delay: 681
+  name: 新加坡 001
   network: ws
-  port: 443
-  server: 160.22.79.155
-  servername: steep.skyfigure.top
+  port: 8192
+  server: 54.255.217.120
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇸🇬 新加坡 014
-  password: db3ca8fd-3aa3-49c3-82b0-407856fafbc0
+      Host: c01.ylkszy.eu.org
+    path: /?ed=2560
+- name: 🇸🇬 新加坡 038
+  password: 48790dde-465c-4f3e-b2c9-6390381f2cad
   port: 23513
   server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
   skip-cert-verify: true
   sni: cn.bing.com
   type: trojan
   udp: true
-- name: 🇸🇬 新加坡 060
-  password: 73082ee4-053d-42a6-84f1-3b181b19d4e7
-  port: 23511
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 011
+  password: 4b5f5165-c6cd-4c28-9718-98b90bd9f0c1
+  port: 23401
   server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
+  type: ss
   udp: true
-- name: 🇸🇬 新加坡 076
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 079
+  password: 2998caaa-f772-4d09-8d1d-2d0bea75d640
+  port: 23107
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- name: 🇸🇬 新加坡 029
   network: ws
   port: 443
-  server: 52.74.101.26
+  server: 43.156.181.203
   servername: steep.skyfigure.top
   tls: true
   type: vless
@@ -97,49 +105,27 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡 010
-  password: 1533fe52-5fe5-4997-b6b4-c66dc31a9ffe
-  port: 23401
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡 012
-  password: 1533fe52-5fe5-4997-b6b4-c66dc31a9ffe
-  port: 23107
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- name: 🇸🇬 新加坡 017
+- name: 🇸🇬 新加坡 068
   network: ws
-  password: ttfang
   port: 443
   server: 13.228.142.218
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
   udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
   ws-opts:
     headers:
-      Host: ttfang.fange.me
-    path: /
-- client-fingerprint: chrome
-  name: 🇸🇬 新加坡|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 8117
-  server: 36.151.192.26
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- name: 🇸🇬 新加坡 094
+  password: 6719f802-ff6a-4c2e-b79c-a6e936121669
+  port: 23511
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: cn.bing.com
   type: trojan
-- client-fingerprint: chrome
-  name: 🇸🇬 新加坡2|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 32765
-  server: 36.151.192.26
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
+  udp: true
 - alterId: 64
   cipher: auto
   name: 🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
@@ -185,21 +171,22 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- delay: 681
-  name: 新加坡 001
-  network: ws
-  port: 8192
-  server: 54.255.217.120
-  servername: c01.ylkszy.eu.org
+- name: 新加坡|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 8117
+  server: 36.151.192.26
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: c01.ylkszy.eu.org
-    path: /?ed=2560
+  sni: www.baidu.com
+  type: trojan
+- name: 新加坡2|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 32765
+  server: 36.151.192.26
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - name: 🇸🇬_新加坡
   network: ws
   port: 8880
@@ -490,23 +477,28 @@ proxies:
   port: 809
   server: 217.197.161.136
   type: ss
-- name: 🇸🇬 新加坡 001
-  network: ws
-  port: 443
-  server: hostone-sg.zdsa.me
-  servername: hostone-sg.zdsa.me
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 102
+  port: 45054
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
   udp: true
-  uuid: 43ef1f94-978f-4539-ba01-1e6005859950
-  ws-opts:
-    headers:
-      Host: hostone-sg.zdsa.me
-    path: /
-- name: 🇸🇬 新加坡 093
+  uuid: d09c022d-16be-44f2-b869-f189957e72f9
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 097
+  port: 45055
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ada17ee1-1ef3-4279-ba5f-e3ded0c8facb
+- name: 🇸🇬 新加坡 095
   network: ws
   port: 443
-  server: 164.52.2.99
+  server: 164.52.2.98
   servername: steep.skyfigure.top
   tls: true
   type: vless
@@ -516,6 +508,48 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 056
+  password: 91389c13-9607-41f3-891f-59b143fc8ec5
+  port: 23407
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- name: 🇸🇬 新加坡 085
+  network: ws
+  port: 443
+  server: 43.156.116.194
+  servername: steep.skyfigure.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡 106
+  port: 31013
+  server: ghikkdg2.mi0001.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 57149312-0e17-4ab5-8ddf-82b805d61aeb
+- client-fingerprint: firefox
+  name: 🇸🇬 新加坡 015
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 103.229.96.166
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

@@ -40,7 +40,7 @@ geodata-mode: true
 geox-url:
   asn: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb
   geoip: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat
-  geosite: https://testingcf.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat
+  geosite: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat
   mmdb: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb
 global-client-fingerprint: firefox
 ipv6: true
@@ -55,98 +55,15 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇭🇰 香港 083
-  password: 1533fe52-5fe5-4997-b6b4-c66dc31a9ffe
-  port: 23502
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- name: 🇭🇰 香港 015
-  password: 2998caaa-f772-4d09-8d1d-2d0bea75d640
-  port: 23503
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 106
-  port: 45050
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5e7e1bdc-d0e0-4251-9ed1-cdfdc21c8e89
-- name: 🇭🇰 香港 086
-  password: db3ca8fd-3aa3-49c3-82b0-407856fafbc0
-  port: 23504
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- name: 🇭🇰 香港 124
-  network: ws
-  port: 443
-  server: 47.76.218.163
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram @SRCVPN/?ed=2560
-- name: 🇭🇰 香港 005
-  password: 05ae346d-7407-450c-bde0-6bfed25fd989
-  port: 23505
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 131
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港 034
-  password: 4b5f5165-c6cd-4c28-9718-98b90bd9f0c1
-  port: 23200
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: 🇭🇰 香港 016
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    tls: true
-  port: 636
-  server: 156.251.179.139
+  name: 🇭🇰 香港 115
+  password: e0372a5e-4884-49ba-85aa-1938733e7041
+  port: 35004
+  server: 35004.fishnodebgp.com
   type: ss
   udp: true
-- name: 🇭🇰 香港 039
-  password: 1533fe52-5fe5-4997-b6b4-c66dc31a9ffe
+- name: 🇭🇰 香港 048
+  password: f1448a60-1637-437a-b127-c5e6d188ecc7
   port: 23499
   server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
   skip-cert-verify: true
@@ -154,66 +71,55 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 🇭🇰 香港2|@ripaojiedian
-  password: 9bfdde71b4c0
+  name: 🇭🇰 香港 111
+  password: 1ad90a422096
   plugin: v2ray-plugin
   plugin-opts:
-    host: newroot2v1.dsjsapp.com
+    host: kr6v1.dashengjs.net
     mode: websocket
     mux: true
-    path: /cauejypbltqt
-    skip-cert-verify: false
+    path: /jwuctcuhriiw
     tls: true
   port: 636
-  server: 103.103.245.158
-  tfo: false
+  server: 43.226.17.8
   type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港3|@ripaojiedian
-  port: 44404
-  server: 183.236.97.101
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 🇭🇰 香港4|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.59
+  udp: true
+- name: 🇭🇰 香港 058
+  password: 48790dde-465c-4f3e-b2c9-6390381f2cad
+  port: 23504
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: cn.bing.com
   type: trojan
-- client-fingerprint: chrome
-  name: 🇭🇰 香港5|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 24903
-  server: 36.151.192.59
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇭🇰 香港6|@ripaojiedian
-  password: 7367d04e-4c59-4dff-a50e-12e730a09891
-  port: 26193
-  server: 155.117.228.70
-  skip-cert-verify: true
-  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港7|@ripaojiedian
-  port: 25740
-  server: 43.247.134.145
-  skip-cert-verify: false
-  tfo: false
+  name: 🇭🇰 香港 104
+  port: 45051
+  server: xdd.dashuai.cyou
   tls: false
   type: vmess
-  uuid: d70ca72a-2b50-4536-8abc-da48995dd902
+  udp: true
+  uuid: 5e7e1bdc-d0e0-4251-9ed1-cdfdc21c8e89
+- name: 🇭🇰 香港 075
+  password: cea9ce9d-a229-4a3e-af60-40471658468c
+  port: 23503
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- alpn:
+  - h3
+  auth: cc83a02b-90ea-403b-9c76-27e4be95f637
+  name: 🇭🇰 香港 099
+  password: cc83a02b-90ea-403b-9c76-27e4be95f637
+  port: 50256
+  server: 154.204.181.230
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
   name: 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
@@ -244,6 +150,64 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港2|@ripaojiedian
+  password: 9bfdde71b4c0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /cauejypbltqt
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 103.103.245.158
+  tfo: false
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 🇭🇰 香港3|@ripaojiedian
+  port: 44404
+  server: 183.236.97.101
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 香港4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 9141
+  server: 36.151.192.59
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 24903
+  server: 36.151.192.59
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 香港6|@ripaojiedian
+  network: tcp
+  password: 7367d04e-4c59-4dff-a50e-12e730a09891
+  port: 26193
+  server: 155.117.228.70
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港7|@ripaojiedian
+  port: 25740
+  server: 43.247.134.145
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: d70ca72a-2b50-4536-8abc-da48995dd902
 - alterId: 64
   cipher: auto
   name: 香港3|@ripaojiedian
@@ -297,19 +261,71 @@ proxies:
     headers:
       Host: v10.heduian.link
     path: /
-- name: 🇭🇰 香港 036
-  network: ws
-  port: 26010
-  server: 103.133.178.229
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
+- name: 🇭🇰 香港 126
+  password: cea9ce9d-a229-4a3e-af60-40471658468c
+  port: 23501
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
   udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+- cipher: rc4-md5
+  name: 🇭🇰 香港 012
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40208
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.linkhub.support
+  type: ssr
+  udp: true
+- name: 🇭🇰 香港 004
+  password: 6719f802-ff6a-4c2e-b79c-a6e936121669
+  port: 23502
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 109
+  password: e0372a5e-4884-49ba-85aa-1938733e7041
+  port: 56540
+  server: 56540.fishnodebgp.com
+  type: ss
+  udp: true
+- name: 🇭🇰 香港 038
+  password: 4b5f5165-c6cd-4c28-9718-98b90bd9f0c1
+  port: 23505
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港|@ripaojiedian
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
+      Host: baidu.com
+    path: /oooo
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 128
+  password: e0372a5e-4884-49ba-85aa-1938733e7041
+  port: 35002
+  server: 35002.fishnodebgp.com
+  type: ss
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
