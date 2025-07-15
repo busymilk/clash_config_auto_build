@@ -112,6 +112,8 @@ dns:
   - https://[2001:4860:4860::64]/dns-query
   - tls://1dot1dot1dot1.cloudflare-dns.com
   - tls://unfiltered.adguard-dns.com
+  - tls://dns.mullvad.net
+  - https://dns.nextdns.io/dns-query
 
 #fake-ip 模式下，Clash 会将原始的域名（hostname）发送到预先配置的远端DNS 服务器进行解析
 #对fake-ip-filter中条目的查询行为会回退到redir-host，即在本地发起DNS查询，并返回真实IP结果
@@ -174,6 +176,31 @@ rule-providers:
     path: ./ruleset/applications.yaml
     interval: 86400 # 每天更新一次
 
+  lan_non_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
+    path: ./sukkaw_ruleset/lan_non_ip.txt
+
+  lan_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://ruleset.skk.moe/Clash/ip/lan.txt
+    path: ./sukkaw_ruleset/lan_ip.txt
+
+  global_non_ip:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    url: https://ruleset.skk.moe/Clash/non_ip/global.txt
+    path: ./sukkaw_ruleset/global_non_ip.txt
+
+
 # 路由规则
 rules:
 #参考：https://www.aloxaf.com/2025/04/how_to_use_geosite/ 重要是@cn 和 @!cn 的使用以及先后顺序
@@ -187,6 +214,10 @@ rules:
   - RULE-SET,applications,DIRECT
   # 广告拦截
   - GEOSITE,category-ads-all,REJECT
+  #内网
+  - RULE-SET,lan_non_ip,DIRECT
+  #常见海外域名，其中部分域名被 DNS 污染，走代理
+  - RULE-SET,global_non_ip,✈️ 选择代理
   # 常用服务
   - GEOSITE,bing,✈️ 选择代理
   - GEOSITE,microsoft,✈️ 选择代理
@@ -200,6 +231,8 @@ rules:
   # 国内流量直连
   - GEOSITE,geolocation-cn,DIRECT
   - GEOSITE,tld-cn,DIRECT
+  #内网
+  - RULE-SET,lan_ip,DIRECT #这个跟geoip类似，里面有ip，会触发dns解析
   # 私有网络
   - GEOIP,private,DIRECT
   # 国内流量直连
