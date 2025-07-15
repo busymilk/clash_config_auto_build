@@ -26,6 +26,8 @@ dns:
   - https://[2001:4860:4860::64]/dns-query
   - tls://1dot1dot1dot1.cloudflare-dns.com
   - tls://unfiltered.adguard-dns.com
+  - tls://dns.mullvad.net
+  - https://dns.nextdns.io/dns-query
   proxy-server-nameserver:
   - https://1.12.12.12/dns-query
   - https://223.5.5.5/dns-query
@@ -55,15 +57,13 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 14
-  port: 45066
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 09
+  password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
+  port: 23113
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
   udp: true
-  uuid: b0ec3f52-d7fc-4356-aff9-e9b195839b7c
 - name: 🇬🇧_英国
   network: ws
   port: 8880
@@ -78,6 +78,56 @@ proxies:
     headers:
       host: ip.langmanshanxi.top
     path: /telegram🇨🇳 @wangcai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 英国 07
+  port: 45066
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 33df3e0f-d55a-4f26-909a-8ca7be7ba5e1
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 02
+  password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
+  port: 23121
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 英国 04
+  port: 45067
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 33df3e0f-d55a-4f26-909a-8ca7be7ba5e1
+- auth: 74332878-d170-41cc-be22-e08e0527a9b8
+  name: 🇬🇧 英国 10
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 74332878-d170-41cc-be22-e08e0527a9b8
+  port: 35240
+  server: flyyg.flylink.cyou
+  skip-cert-verify: true
+  sni: flyyg.flylink.cyou
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 03
+  password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
+  port: 23400
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- name: 'Channel id: @ShadowProxy66🇬🇧'
+  password: e48d6377dda26840
+  port: 42353
+  server: 185.184.70.120
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: SS-英国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.150.32.13:14628
   password: DKyRdoqQIebdKZVYs5GzW8
@@ -106,34 +156,6 @@ proxies:
   port: 57456
   server: 46.226.163.225
   type: ss
-- name: 'Channel id: @ShadowProxy66🇬🇧'
-  password: e48d6377dda26840
-  port: 42353
-  server: 185.184.70.120
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国 05
-  password: 3d25ddd6-505e-4175-b19a-513211e034df
-  port: 23113
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国 50
-  password: 3d25ddd6-505e-4175-b19a-513211e034df
-  port: 23400
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国 40
-  password: 6719f802-ff6a-4c2e-b79c-a6e936121669
-  port: 23121
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-85.210.120.237-0244 | 44.433MB
   password: Bog0ELmMM9DSxDdQ
@@ -334,6 +356,27 @@ rule-providers:
     path: ./ruleset/applications.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+  global_non_ip:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./sukkaw_ruleset/global_non_ip.txt
+    type: http
+    url: https://ruleset.skk.moe/Clash/non_ip/global.txt
+  lan_ip:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./sukkaw_ruleset/lan_ip.txt
+    type: http
+    url: https://ruleset.skk.moe/Clash/ip/lan.txt
+  lan_non_ip:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./sukkaw_ruleset/lan_non_ip.txt
+    type: http
+    url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
 - DOMAIN,cdn.jsdelivr.net,DIRECT
 - DOMAIN,a.ppconverter.eu.org,DIRECT
@@ -343,6 +386,8 @@ rules:
 - DOMAIN-SUFFIX,gofile.io,DIRECT
 - RULE-SET,applications,DIRECT
 - GEOSITE,category-ads-all,REJECT
+- RULE-SET,lan_non_ip,DIRECT
+- RULE-SET,global_non_ip,✈️ 选择代理
 - GEOSITE,bing,✈️ 选择代理
 - GEOSITE,microsoft,✈️ 选择代理
 - GEOSITE,private,DIRECT
@@ -351,6 +396,7 @@ rules:
 - GEOSITE,geolocation-cn@!cn,✈️ 选择代理
 - GEOSITE,geolocation-cn,DIRECT
 - GEOSITE,tld-cn,DIRECT
+- RULE-SET,lan_ip,DIRECT
 - GEOIP,private,DIRECT
 - GEOIP,cn,DIRECT
 - MATCH,✈️ 选择代理

@@ -26,6 +26,8 @@ dns:
   - https://[2001:4860:4860::64]/dns-query
   - tls://1dot1dot1dot1.cloudflare-dns.com
   - tls://unfiltered.adguard-dns.com
+  - tls://dns.mullvad.net
+  - https://dns.nextdns.io/dns-query
   proxy-server-nameserver:
   - https://1.12.12.12/dns-query
   - https://223.5.5.5/dns-query
@@ -55,92 +57,59 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇯🇵 日本 18
+- client-fingerprint: chrome
+  name: 日本 006
   network: ws
-  port: 30060
-  server: 183.96.245.165
-  servername: steep.skyfigure.top
-  tls: true
+  port: 2095
+  server: 156.238.18.163
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- auth: a3321309-41bb-4d53-8028-d6d5ede426a8
-  name: 🇯🇵 日本 29
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- client-fingerprint: chrome
+  name: 日本 007
+  network: ws
+  port: 2052
+  server: 156.238.18.165
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- auth: 54b5474a-5b5a-4347-a0c7-215d4367498d
+  name: 🇯🇵 日本 28
+  password: 54b5474a-5b5a-4347-a0c7-215d4367498d
+  port: 26423
+  server: yjjdrb.yunjijd.xyz
+  skip-cert-verify: true
+  sni: yjjdrb.yunjijd.xyz
+  type: hysteria2
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本 22
+  password: e0372a5e-4884-49ba-85aa-1938733e7041
+  port: 35003
+  server: 35003.fishnodebgp.com
+  type: ss
+  udp: true
+- auth: f1be5278-9d77-472a-8d8e-324418370271
+  name: 🇯🇵 日本 11
   obfs: salamander
   obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: a3321309-41bb-4d53-8028-d6d5ede426a8
+  password: f1be5278-9d77-472a-8d8e-324418370271
   port: 35300
   server: flyrb.flylink.cyou
   skip-cert-verify: true
   sni: flyxg.flylink.cyou
   type: hysteria2
   udp: true
-- name: 🇯🇵 日本 12
-  password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
-  port: 23517
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 35
-  port: 45057
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 33df3e0f-d55a-4f26-909a-8ca7be7ba5e1
-- name: 🇯🇵 日本 21
-  network: ws
-  port: 443
-  server: 5.253.41.94
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇯🇵 日本 37
-  network: ws
-  port: 443
-  server: 158.101.80.84
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 34
-  port: 45056
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ffcb0633-3e8f-4d5e-9645-f883909fd1ab
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 45
-  port: 12082
-  server: tls.10.node-for-bigairport.win
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
 - alterId: 64
   cipher: auto
   name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
@@ -217,77 +186,48 @@ proxies:
   tls: false
   type: vmess
   uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
-- auth: Y9vRstWcTHECGcKnayA2VYiUXs
-  name: 🇯🇵 日本 107
-  password: Y9vRstWcTHECGcKnayA2VYiUXs
-  port: 35562
-  server: 13.112.101.203
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 46
+  port: 22082
+  server: tls.19.node-for-bigairport.win
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+- auth: JoJs97fUt6WEtqNj56ycj2EqfHY
+  name: 🇯🇵 日本 17
+  password: JoJs97fUt6WEtqNj56ycj2EqfHY
+  port: 22829
+  server: 18.183.32.165
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
   udp: true
-- name: 🇯🇵 日本 032
-  password: ca18ed14-8dcb-49ad-9bf0-f8794bb9fcd1
-  port: 23515
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 🇯🇵 日本 112
-  port: 11773
-  server: iokxq-g01.jp02-e3-vm0.entry.fr0528.art
-  skip-cert-verify: false
+  name: 🇯🇵 日本 33
+  port: 45057
+  server: xdd.dashuai.cyou
   tls: false
   type: vmess
   udp: true
-  uuid: 91f34ad8-b60e-3955-8de4-39da56944866
-- name: 🇯🇵 日本 090
-  password: 052fc2b8-5da8-4424-b734-c615cc8cb41f
-  port: 23617
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- alterId: 1
-  cipher: auto
-  name: 🇯🇵 日本 117
-  port: 28783
-  server: a54b5-g01.jp07-sh-vm0.entry.fr0528.art
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 91f34ad8-b60e-3955-8de4-39da56944866
+  uuid: ffcb0633-3e8f-4d5e-9645-f883909fd1ab
 - client-fingerprint: chrome
-  name: 日本 006
+  name: 🇯🇵 日本 14
   network: ws
-  port: 2095
-  server: 156.238.18.163
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 54.248.121.219
+  servername: ip.langmanshanxi.top
+  tls: true
   type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-- client-fingerprint: chrome
-  name: 日本 007
-  network: ws
-  port: 2052
-  server: 156.238.18.165
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0271 | 44.881MB
   password: shadowsocks
@@ -344,6 +284,27 @@ rule-providers:
     path: ./ruleset/applications.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+  global_non_ip:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./sukkaw_ruleset/global_non_ip.txt
+    type: http
+    url: https://ruleset.skk.moe/Clash/non_ip/global.txt
+  lan_ip:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./sukkaw_ruleset/lan_ip.txt
+    type: http
+    url: https://ruleset.skk.moe/Clash/ip/lan.txt
+  lan_non_ip:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./sukkaw_ruleset/lan_non_ip.txt
+    type: http
+    url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
 - DOMAIN,cdn.jsdelivr.net,DIRECT
 - DOMAIN,a.ppconverter.eu.org,DIRECT
@@ -353,6 +314,8 @@ rules:
 - DOMAIN-SUFFIX,gofile.io,DIRECT
 - RULE-SET,applications,DIRECT
 - GEOSITE,category-ads-all,REJECT
+- RULE-SET,lan_non_ip,DIRECT
+- RULE-SET,global_non_ip,✈️ 选择代理
 - GEOSITE,bing,✈️ 选择代理
 - GEOSITE,microsoft,✈️ 选择代理
 - GEOSITE,private,DIRECT
@@ -361,6 +324,7 @@ rules:
 - GEOSITE,geolocation-cn@!cn,✈️ 选择代理
 - GEOSITE,geolocation-cn,DIRECT
 - GEOSITE,tld-cn,DIRECT
+- RULE-SET,lan_ip,DIRECT
 - GEOIP,private,DIRECT
 - GEOIP,cn,DIRECT
 - MATCH,✈️ 选择代理
