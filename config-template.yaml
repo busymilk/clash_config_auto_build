@@ -1,5 +1,7 @@
 
 # Clash 通用配置模板
+#clash 流程图：https://wiki.metacubex.one/config/dns/diagram/#_3
+
 
 mixed-port: 7890
 ipv6: true
@@ -14,11 +16,12 @@ external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-
 # GeoIP/GeoSite 相关配置
 geodata-mode: true
 geo-auto-update: true
-geo-update-interval: 24 # 更新间隔，单位为小时
+geo-update-interval: 12 # 更新间隔，单位为小时
 geox-url:
   geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat"
   mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb"
-  geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  # geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  geosite: "https://testingcf.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat" #使用原版规则，里面有@cn 和@!cn
   asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
 
 # 进程匹配模式 (仅适用于 macOS/Linux)
@@ -103,15 +106,6 @@ dns:
   - https://1.12.12.12/dns-query
   - https://223.5.5.5/dns-query
 
-  nameserver-policy: #指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询键支持域名通配值支持字符串/数组
-    "geosite:cn,private": #指定国内私有域名等使用国内的dns解析
-    - https://1.12.12.12/dns-query
-    - https://223.5.5.5/dns-query
-    "geosite:gfw,geolocation-!cn": #非国内域名，被污染域名，走另一个解析
-    - https://[2001:4860:4860::64]/dns-query
-    - tls://1dot1dot1dot1.cloudflare-dns.com
-    - tls://unfiltered.adguard-dns.com
-
   #nameserver和fallback是并发,优先使用哪个看下面的配置规则，比如fallback-filter,上面的设置优先级高，匹配不到了才会走到nameserver fallback判断
   #这里不用fallback了，上面的判断已经够全了，nameserver用来兜底
   nameserver: #默认的域名解析服务器
@@ -120,12 +114,13 @@ dns:
   - tls://unfiltered.adguard-dns.com
 
 #fake-ip 模式下，Clash 会将原始的域名（hostname）发送到预先配置的远端DNS 服务器进行解析
+#对fake-ip-filter中条目的查询行为会回退到redir-host，即在本地发起DNS查询，并返回真实IP结果
   enhanced-mode: fake-ip
   fake-ip-filter-mode: blacklist #blacklist 模式只要没命中fake-ip-filter,都会给fake ip
   fake-ip-filter: #fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
   - +.tvkuai.com
   - geosite:private
-  - geosite:cn
+  - geosite:connectivity-check #连通性检查域名
   fake-ip-range: 198.18.0.1/16
 
 # 代理组配置
@@ -181,7 +176,7 @@ rule-providers:
 
 # 路由规则
 rules:
-  # 自定义直连规则
+#参考：https://www.aloxaf.com/2025/04/how_to_use_geosite/ 重要是@cn 和 @!cn 的使用以及先后顺序
   - DOMAIN,cdn.jsdelivr.net,DIRECT
   - DOMAIN,a.ppconverter.eu.org,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
@@ -198,10 +193,13 @@ rules:
   # 私有网络
   - GEOSITE,private,DIRECT
   # 国内流量直连
-  - GEOSITE,cn,DIRECT
-  # 国外流量走代理
-  - GEOSITE,gfw,✈️ 选择代理
+  - GEOSITE,geolocation-!cn@cn,DIRECT
+    # 国外流量走代理
   - GEOSITE,geolocation-!cn,✈️ 选择代理
+  - GEOSITE,geolocation-cn@!cn,✈️ 选择代理
+  # 国内流量直连
+  - GEOSITE,geolocation-cn,DIRECT
+  - GEOSITE,tld-cn,DIRECT
   # 私有网络
   - GEOIP,private,DIRECT
   # 国内流量直连
