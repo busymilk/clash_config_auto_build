@@ -90,12 +90,12 @@ dns:
   default-nameserver: #默认 DNS, 用于解析 DNS 服务器 的域名 必须为 IP
   - https://[2001:4860:4860::64]/dns-query
   - 94.140.14.141
-  - 2a10:50c0::1:ff
-  - 2a10:50c0::2:ff
+  - udp://[2a10:50c0::1:ff]
+  - udp://[2a10:50c0::2:ff]
   - 149.112.112.9
   - 149.112.112.112
-  - 2620:fe::fe
-  - 2620:fe::9
+  - udp://[2620:fe::fe]
+  - udp://[2620:fe::9]
 
   proxy-server-nameserver: #代理节点域名解析服务器，仅用于解析代理节点的域名（需要确保dns无污染，否则没法连接代理服务器啊）,如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
   - https://1.12.12.12/dns-query
