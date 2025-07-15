@@ -63,23 +63,60 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇯🇵 日本 25
-  network: ws
-  password: f08d6a6b-a0b3-410e-a0ba-eae71b521904
-  port: 20230
-  server: jp005.421421.xyz
+- name: 🇯🇵 日本 062
+  password: 91389c13-9607-41f3-891f-59b143fc8ec5
+  port: 23514
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
   skip-cert-verify: true
-  sni: www.alibaba.com
+  sni: cn.bing.com
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: www.alibaba.com
-    path: ''
-- name: 🇯🇵 日本 12
+- name: 🇯🇵 日本 004
+  password: 3d25ddd6-505e-4175-b19a-513211e034df
+  port: 23517
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 114
+  port: 31015
+  server: ghikkdg2.mi0001.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 57149312-0e17-4ab5-8ddf-82b805d61aeb
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本 001
+  password: 4b5f5165-c6cd-4c28-9718-98b90bd9f0c1
+  port: 23104
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- auth: JoJs97fUt6WEtqNj56ycj2EqfHY
+  name: 🇯🇵 日本 108
+  password: JoJs97fUt6WEtqNj56ycj2EqfHY
+  port: 22829
+  server: 18.183.32.165
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- auth: jyEWQRbJATgWMu3XQtRvxb2h0
+  name: 🇯🇵 日本 110
+  password: jyEWQRbJATgWMu3XQtRvxb2h0
+  port: 25635
+  server: 47.79.34.232
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- name: 🇯🇵 日本 097
   network: ws
   port: 443
-  server: 5.253.41.94
+  server: 13.230.34.30
   servername: steep.skyfigure.top
   tls: true
   type: vless
@@ -89,31 +126,53 @@ proxies:
     headers:
       Host: steep.skyfigure.top
     path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: 64
+- alterId: 1
   cipher: auto
-  name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
-  network: ws
-  port: 1443
-  server: sslvpn.51job.com
-  skip-cert-verify: true
-  tfo: false
+  name: 🇯🇵 日本 113
+  port: 21581
+  server: joodd-g01.jp03-j7-vm0.entry.fr0528.art
+  servername: joodd-g01.jp03-j7-vm0.entry.fr0528.art
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
-  ws-opts:
-    headers:
-      Host: centos7
-    path: /634c5c4f9782
-- name: 🇯🇵日本
-  password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
-  port: 443
-  server: aws-linkhy17.liangxin1.xyz
-  skip-cert-verify: true
-  sni: www.apple.com.cn
+  uuid: 91f34ad8-b60e-3955-8de4-39da56944866
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 105
+  port: 45057
+  server: xdd.dashuai.cyou
   tls: false
-  type: hysteria2
+  type: vmess
+  udp: true
+  uuid: f7d64b9c-dace-4fb5-9f7a-4ec1aacb46dd
+- name: 🇯🇵 日本 043
+  password: 91389c13-9607-41f3-891f-59b143fc8ec5
+  port: 23515
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- name: 🇯🇵 日本 018
+  password: 4b5f5165-c6cd-4c28-9718-98b90bd9f0c1
+  port: 23617
+  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
+  skip-cert-verify: true
+  sni: cn.bing.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 115
+  port: 49315
+  server: gzct.guguyun.xyz
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 57149312-0e17-4ab5-8ddf-82b805d61aeb
 - cipher: rc4-md5
+  client-fingerprint: chrome
   name: 🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
@@ -125,6 +184,7 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
   plugin: v2ray-plugin
@@ -139,54 +199,22 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- name: 日本3|@ripaojiedian
-  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 日本3|@ripaojiedian
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 41225
   server: 36.151.192.26
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 日本4|@ripaojiedian
-  network: tcp
+- client-fingerprint: chrome
+  name: 🇯🇵 日本4|@ripaojiedian
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 4445
   server: 36.151.192.26
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 日本v2|@ripaojiedian
-  network: kcp
-  port: '56428'
-  server: 8.211.136.249
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
-- client-fingerprint: chrome
-  name: 🇯🇵 日本 14
-  network: ws
-  port: 12338
-  server: 211.57.29.229
-  servername: edmx.ambercc.filegear-sg.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edmx.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵 日本 08
-  password: 038d43d6-30de-4b45-8660-4c0ccfbdc85c
-  port: 23514
-  server: c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: 日本 006
   network: ws
@@ -213,19 +241,6 @@ proxies:
     headers:
       Host: redw.pooriam.ir
     path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-- name: 🇯🇵 日本 04
-  network: ws
-  port: 443
-  server: 47.79.43.222
-  servername: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0271 | 44.881MB
   password: shadowsocks
@@ -238,6 +253,40 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  network: ws
+  port: 1443
+  server: sslvpn.51job.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  ws-opts:
+    headers:
+      Host: centos7
+    path: /634c5c4f9782
+- name: 🇯🇵日本
+  password: 2a9b85bd-27cc-4e3b-b77d-54dbe5bc23af
+  port: 443
+  server: aws-linkhy17.liangxin1.xyz
+  skip-cert-verify: true
+  sni: www.apple.com.cn
+  tls: false
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 日本v2|@ripaojiedian
+  network: kcp
+  port: '56428'
+  server: 8.211.136.249
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -246,7 +295,7 @@ proxy-groups:
   - 👆 手动选择
   - DIRECT
   type: select
-- expected-status: 204
+- expected-status: 200
   include-all-proxies: true
   interval: 60
   lazy: true
@@ -255,8 +304,8 @@ proxy-groups:
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://www.gstatic.com/generate_204
-- expected-status: 204
+  url: https://www.apple.com/library/test/success.html
+- expected-status: 200
   include-all-proxies: true
   interval: 60
   lazy: true
@@ -265,8 +314,8 @@ proxy-groups:
   strategy: consistent-hashing
   timeout: 3000
   type: load-balance
-  url: https://www.gstatic.com/generate_204
-- expected-status: 204
+  url: https://www.apple.com/library/test/success.html
+- expected-status: 200
   include-all-proxies: true
   interval: 60
   lazy: true
@@ -274,7 +323,7 @@ proxy-groups:
   name: 👆 手动选择
   timeout: 3000
   type: select
-  url: https://www.gstatic.com/generate_204
+  url: https://www.apple.com/library/test/success.html
 rule-providers:
   applications:
     behavior: classical

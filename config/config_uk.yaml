@@ -63,31 +63,34 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 'Channel id: @ShadowProxy66🇬🇧'
-  password: e48d6377dda26840
-  port: 42353
-  server: 185.184.70.120
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 08
-  port: 45067
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 15
+  password: 6719f802-ff6a-4c2e-b79c-a6e936121669
+  port: 23113
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
   udp: true
-  uuid: ccf08892-a847-4f3a-a2cd-2a5ce46d8636
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 10
-  port: 45066
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 42
+  password: cea9ce9d-a229-4a3e-af60-40471658468c
+  port: 23400
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
   udp: true
-  uuid: 1c31051f-e567-4888-84dc-aed932359195
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国 54
+  password: 05ae346d-7407-450c-bde0-6bfed25fd989
+  port: 23121
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国家宽 14
+  password: 3d25ddd6-505e-4175-b19a-513211e034df
+  port: 23112
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: SS-英国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.150.32.13:14628
   password: DKyRdoqQIebdKZVYs5GzW8
@@ -272,6 +275,13 @@ proxies:
   port: 989
   server: 62.100.205.48
   type: ss
+- name: 'Channel id: @ShadowProxy66🇬🇧'
+  password: e48d6377dda26840
+  port: 42353
+  server: 185.184.70.120
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -280,7 +290,7 @@ proxy-groups:
   - 👆 手动选择
   - DIRECT
   type: select
-- expected-status: 204
+- expected-status: 200
   include-all-proxies: true
   interval: 60
   lazy: true
@@ -289,8 +299,8 @@ proxy-groups:
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://www.gstatic.com/generate_204
-- expected-status: 204
+  url: https://www.apple.com/library/test/success.html
+- expected-status: 200
   include-all-proxies: true
   interval: 60
   lazy: true
@@ -299,8 +309,8 @@ proxy-groups:
   strategy: consistent-hashing
   timeout: 3000
   type: load-balance
-  url: https://www.gstatic.com/generate_204
-- expected-status: 204
+  url: https://www.apple.com/library/test/success.html
+- expected-status: 200
   include-all-proxies: true
   interval: 60
   lazy: true
@@ -308,7 +318,7 @@ proxy-groups:
   name: 👆 手动选择
   timeout: 3000
   type: select
-  url: https://www.gstatic.com/generate_204
+  url: https://www.apple.com/library/test/success.html
 rule-providers:
   applications:
     behavior: classical
