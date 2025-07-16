@@ -225,12 +225,14 @@ rule-providers:
   geoip_lan_ip:
     type: http
     behavior: ipcidr
+    format: text
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_private.txt"
     path: ./ruleset/geoip_lan_ip.rules
     interval: 86400
   geoip_cn_ip:
     type: http
     behavior: ipcidr
+    format: text
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_cn.txt"
     path: ./ruleset/geoip_cn_ip.rules
     interval: 86400
