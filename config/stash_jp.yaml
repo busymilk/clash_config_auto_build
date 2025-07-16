@@ -55,8 +55,123 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- auth: 318847a3-bfcb-4c0c-9c1b-365e69ba4ad1
+  name: 🇯🇵 日本 39
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 318847a3-bfcb-4c0c-9c1b-365e69ba4ad1
+  port: 35300
+  server: flyrb.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxg.flylink.cyou
+  type: hysteria2
+  udp: true
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 日本 16
+  network: ws
+  port: 443
+  server: 206.237.120.143
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 日本 09
+  network: ws
+  port: 30000
+  server: 57.180.172.178
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 日本 006
+  network: ws
+  port: 2095
+  server: 156.238.18.163
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- client-fingerprint: chrome
+  name: 日本 007
+  network: ws
+  port: 2052
+  server: 156.238.18.165
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- alterId: 2
+  cipher: auto
+  name: 🇯🇵 日本 40
+  network: ws
+  port: 30806
+  server: v6.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 日本 04
+  network: ws
+  port: 16270
+  server: 195.245.241.69
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alterId: 64
+  cipher: auto
+  name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  network: ws
+  port: 1443
+  server: sslvpn.51job.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  ws-opts:
+    headers:
+      Host: centos7
+    path: /634c5c4f9782
 - cipher: rc4-md5
-  client-fingerprint: chrome
   name: 🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
@@ -68,7 +183,6 @@ proxies:
   tfo: false
   type: ss
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
   plugin: v2ray-plugin
@@ -83,22 +197,64 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 🇯🇵 日本3|@ripaojiedian
+- name: 日本3|@ripaojiedian
+  network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 53248
   server: 36.151.251.48
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- client-fingerprint: chrome
-  name: 🇯🇵 日本4|@ripaojiedian
+- name: 日本4|@ripaojiedian
+  network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 41225
   server: 36.151.251.48
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 日本v2|@ripaojiedian
+  network: kcp
+  port: '56428'
+  server: 8.211.136.249
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 日本 12
+  network: ws
+  port: 30443
+  server: 154.31.113.99
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 日本 19
+  network: ws
+  port: 443
+  server: 52.197.230.94
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
 - auth: Y9vRstWcTHECGcKnayA2VYiUXs
   name: 🇯🇵 日本 107
   password: Y9vRstWcTHECGcKnayA2VYiUXs
@@ -144,103 +300,45 @@ proxies:
   type: vmess
   udp: true
   uuid: 91f34ad8-b60e-3955-8de4-39da56944866
-- alterId: 64
-  cipher: auto
-  name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+- name: 🇯🇵_日本_1
   network: ws
-  port: 1443
-  server: sslvpn.51job.com
+  port: 12333
+  server: 121.80.244.179
+  servername: ss.ylka.dpdns.org
   skip-cert-verify: true
-  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ss.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵_日本_3
+  network: ws
+  port: '443'
+  server: 52.192.151.170
   tls: true
   type: vmess
-  udp: true
-  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  uuid: 68211580-b263-4e1f-9861-8123a577dd94
   ws-opts:
     headers:
-      Host: centos7
-    path: /634c5c4f9782
-- alterId: 0
-  cipher: auto
-  name: 日本v2|@ripaojiedian
-  network: kcp
-  port: '56428'
-  server: 8.211.136.249
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
-- auth: d455fd1a-3e0b-4290-8287-58be7320f3d1
-  name: 🇯🇵 日本 42
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: d455fd1a-3e0b-4290-8287-58be7320f3d1
-  port: 35300
-  server: flyrb.flylink.cyou
-  skip-cert-verify: true
-  sni: flyxg.flylink.cyou
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  name: 日本 006
-  network: ws
-  port: 2095
-  server: 156.238.18.163
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-- client-fingerprint: chrome
-  name: 日本 007
-  network: ws
-  port: 2052
-  server: 156.238.18.165
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+      host: gov.lsyx.asia
+    path: /cache
 - cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0308 | 4.124MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0310 | 1.82MB
+  name: 🇯🇵JP-149.22.87.204-0211 | 26.796MB
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
-- cipher: rc4-md5
-  name: 🇯🇵 日本 24
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40218
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.linkhub.support
-  type: ssr
-  udp: true
-- auth: 22e1379b-e299-4220-84b8-87b8867c1d3f
-  name: 🇯🇵 日本 30
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 22e1379b-e299-4220-84b8-87b8867c1d3f
-  port: 25781
-  server: jphub.xg-hub.icu
-  skip-cert-verify: true
-  sni: jphub.xg-hub.icu
-  type: hysteria2
-  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0196 | 21.852MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
