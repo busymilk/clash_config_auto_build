@@ -17,8 +17,9 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-filter:
   - +.tvkuai.com
-  - geosite:private
-  - geosite:connectivity-check
+  - RULE-SET,other_ssk_lan_non_ip
+  - RULE-SET,geosite_private_domains
+  - RULE-SET,geosite_connectivity_check
   fake-ip-filter-mode: blacklist
   fake-ip-range: 198.18.0.1/16
   ipv6: true
@@ -33,15 +34,9 @@ dns:
   - https://223.5.5.5/dns-query
   use-system-hosts: false
 external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip
 find-process-mode: strict
-geo-auto-update: true
-geo-update-interval: 12
-geodata-mode: true
-geox-url:
-  asn: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb
-  geoip: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat
-  geosite: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat
-  mmdb: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb
 global-client-fingerprint: firefox
 ipv6: true
 mixed-port: 7890
@@ -55,6 +50,99 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 新加坡 08
+  network: ws
+  port: 2053
+  server: 172.104.50.35
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 新加坡 31
+  network: ws
+  port: 13242
+  server: 18.143.93.7
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇸🇬 新加坡 44
+  network: tcp
+  port: 10002
+  reality-opts:
+    public-key: xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc
+    short-id: ad081079
+  server: us3do.interld123456789.com
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 31dbd21a-47d8-4e47-b493-276a065a7026
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 新加坡 11
+  network: ws
+  port: 10726
+  server: 185.115.207.29
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 新加坡 25
+  network: ws
+  port: 30001
+  server: 147.79.20.121
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- delay: 681
+  name: 新加坡 001
+  network: ws
+  port: 8192
+  server: 54.255.217.120
+  servername: c01.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: c01.ylkszy.eu.org
+    path: /?ed=2560
 - cipher: chacha20-ietf
   name: 🇸🇬SG-103.36.91.32-5005 | 0.309MB
   password: asd123456
@@ -157,53 +245,6 @@ proxies:
     headers:
       Host: eeh7iewe.com
     path: /
-- delay: 681
-  name: 新加坡 001
-  network: ws
-  port: 8192
-  server: 54.255.217.120
-  servername: c01.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: c01.ylkszy.eu.org
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇸🇬 新加坡 11
-  network: ws
-  port: 10726
-  server: 185.115.207.29
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇸🇬 新加坡 25
-  network: ws
-  port: 30001
-  server: 147.79.20.121
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
 - alterId: 64
   cipher: auto
   name: 🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
@@ -351,53 +392,6 @@ proxies:
     headers:
       Host: 111-aw3.pages.dev
     path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇸🇬 新加坡 30
-  network: ws
-  port: 17733
-  server: 46.3.96.138
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇸🇬 新加坡 12
-  network: ws
-  port: 13002
-  server: 13.229.57.45
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 45
-  network: ws
-  port: 80
-  server: ssssssssvae2.jkhkgj.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3b0ad7ab-57f9-4db2-98dc-daccc9d5938e
-  ws-opts:
-    headers:
-      Host: file.dingtalk.com
-    path: /market/sg?ed=512
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -436,31 +430,103 @@ proxy-groups:
   type: select
   url: https://www.apple.com/library/test/success.html
 rule-providers:
-  applications:
+  geoip_cn_ip:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/geoip_cn_ip.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_cn.txt
+  geoip_lan_ip:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/geoip_lan_ip.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_private.txt
+  geosite_!cn:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_!cn.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/geolocation-!cn.txt
+  geosite_@!cn_domains:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_@!cn_domains.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_!cn.txt
+  geosite_@ads:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_@ads.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_ads.txt
+  geosite_@cn_domains:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_@cn_domains.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_cn.txt
+  geosite_bing:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_bing.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/bing.txt
+  geosite_cn:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_cn.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/cn.txt
+  geosite_connectivity_check:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_connectivity_check.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/connectivity-check.txt
+  geosite_google:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_google.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/google.txt
+  geosite_private_domains:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_private_domains.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/private.txt
+  geosite_telegram:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_telegram.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  other_direct_applications:
     behavior: classical
     interval: 86400
-    path: ./ruleset/applications.yaml
+    path: ./ruleset/other_direct_applications.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
-  global_non_ip:
+  other_ssk_global_non_ip:
     behavior: classical
     format: text
     interval: 86400
-    path: ./sukkaw_ruleset/global_non_ip.txt
+    path: ./sukkaw_ruleset/ssk_global_non_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/global.txt
-  lan_ip:
+  other_ssk_lan_ip:
     behavior: classical
     format: text
     interval: 86400
-    path: ./sukkaw_ruleset/lan_ip.txt
+    path: ./sukkaw_ruleset/ssk_lan_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/ip/lan.txt
-  lan_non_ip:
+  other_ssk_lan_non_ip:
     behavior: classical
     format: text
     interval: 86400
-    path: ./sukkaw_ruleset/lan_non_ip.txt
+    path: ./sukkaw_ruleset/ssk_lan_non_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
@@ -470,21 +536,22 @@ rules:
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN-SUFFIX,ghproxy.com,DIRECT
 - DOMAIN-SUFFIX,gofile.io,DIRECT
-- RULE-SET,applications,DIRECT
-- GEOSITE,category-ads-all,REJECT
-- RULE-SET,lan_non_ip,DIRECT
-- RULE-SET,global_non_ip,✈️ 选择代理
-- GEOSITE,bing,✈️ 选择代理
-- GEOSITE,microsoft,✈️ 选择代理
-- GEOSITE,private,DIRECT
-- GEOSITE,geolocation-!cn@cn,DIRECT
-- GEOSITE,geolocation-!cn,✈️ 选择代理
-- GEOSITE,geolocation-cn@!cn,✈️ 选择代理
-- GEOSITE,geolocation-cn,DIRECT
-- GEOSITE,tld-cn,DIRECT
-- RULE-SET,lan_ip,DIRECT
-- GEOIP,private,DIRECT
-- GEOIP,cn,DIRECT
+- RULE-SET,other_direct_applications,DIRECT
+- RULE-SET,other_ssk_lan_non_ip,DIRECT
+- RULE-SET,geosite_private_domains,DIRECT
+- RULE-SET,geosite_connectivity_check,DIRECT
+- RULE-SET,geosite_@ads,REJECT
+- RULE-SET,geosite_bing,✈️ 选择代理
+- RULE-SET,geosite_google,✈️ 选择代理
+- RULE-SET,geosite_telegram,✈️ 选择代理
+- RULE-SET,geosite_@!cn_domains,✈️ 选择代理
+- RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
+- RULE-SET,geosite_@cn_domains,DIRECT
+- RULE-SET,geosite_!cn,✈️ 选择代理
+- RULE-SET,geosite_cn,DIRECT
+- RULE-SET,geoip_lan_ip,DIRECT
+- RULE-SET,other_ssk_lan_ip,DIRECT
+- RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:
   enable: true

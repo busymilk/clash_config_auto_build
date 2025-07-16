@@ -17,8 +17,9 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-filter:
   - +.tvkuai.com
-  - geosite:private
-  - geosite:connectivity-check
+  - RULE-SET,other_ssk_lan_non_ip
+  - RULE-SET,geosite_private_domains
+  - RULE-SET,geosite_connectivity_check
   fake-ip-filter-mode: blacklist
   fake-ip-range: 198.18.0.1/16
   ipv6: true
@@ -36,14 +37,6 @@ external-controller: 127.0.0.1:9090
 external-ui: ui
 external-ui-url: https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip
 find-process-mode: strict
-geo-auto-update: true
-geo-update-interval: 12
-geodata-mode: true
-geox-url:
-  asn: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb
-  geoip: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat
-  geosite: https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat
-  mmdb: https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb
 global-client-fingerprint: firefox
 ipv6: true
 mixed-port: 7890
@@ -57,18 +50,12 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-4885 | 0.519MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - alpn:
   - h3
   client-fingerprint: random
-  name: 🇭🇰 香港 51
+  name: 🇭🇰 香港 18
   network: ws
-  port: 25624
+  port: 12580
   server: 38.207.133.91
   servername: 111-aw3.pages.dev
   tls: true
@@ -79,38 +66,13 @@ proxies:
     headers:
       Host: 111-aw3.pages.dev
     path: /?ed=2560
-- auth: 18c77d82-a744-45e1-8a65-4f29a8547932
-  name: 🇭🇰 香港 78
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 18c77d82-a744-45e1-8a65-4f29a8547932
-  port: 35260
-  server: flyxghy.flylink.cyou
-  skip-cert-verify: true
-  sni: flyxghy.flylink.cyou
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 75
-  network: ws
-  port: 80
-  server: 4c20cb.d06c4177.shop
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
-  ws-opts:
-    headers:
-      Host: hk04s.d06c4177.shop
-    path: /
 - alpn:
   - h3
   client-fingerprint: random
-  name: 🇭🇰 香港 50
+  name: 🇭🇰 香港 16
   network: ws
-  port: 59639
-  server: 163.223.182.235
+  port: 7000
+  server: 216.250.97.62
   servername: 111-aw3.pages.dev
   tls: true
   type: vless
@@ -120,6 +82,47 @@ proxies:
     headers:
       Host: 111-aw3.pages.dev
     path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 香港 14
+  network: ws
+  port: 18470
+  server: 38.207.132.239
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 58
+  password: 9bfdde71b4c0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /cauejypbltqt
+    tls: true
+  port: 636
+  server: 103.103.245.158
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 🇭🇰 香港 01
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40206
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.linkhub.support
+  type: ssr
+  udp: true
 - alpn:
   - h3
   client-fingerprint: random
@@ -184,6 +187,17 @@ proxies:
     headers:
       Host: 111-aw3.pages.dev
     path: /?ed=2560
+- auth: f2aec126-fc53-4fb1-9c15-b283a3ea56ac
+  name: 🇭🇰 香港 61
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: f2aec126-fc53-4fb1-9c15-b283a3ea56ac
+  port: 35260
+  server: flyxghy.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxghy.flylink.cyou
+  type: hysteria2
+  udp: true
 - alpn:
   - h3
   client-fingerprint: random
@@ -216,6 +230,12 @@ proxies:
     headers:
       Host: 111-aw3.pages.dev
     path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-4885 | 0.519MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
@@ -246,21 +266,6 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港2|@ripaojiedian
-  password: 9bfdde71b4c0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: newroot2v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /cauejypbltqt
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 103.103.245.158
-  tfo: false
-  type: ss
 - cipher: aes-256-gcm
   name: 🇭🇰 香港3|@ripaojiedian
   password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
@@ -477,52 +482,6 @@ proxies:
   server: 2.linkhub.support
   type: ssr
   udp: true
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 04
-  network: ws
-  port: 443
-  server: 101.42.29.143
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 42
-  network: ws
-  port: 32035
-  server: 38.207.133.163
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 06
-  password: 23d03aa704c7
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: cmihk3v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /grqhyifio
-    tls: true
-  port: 636
-  server: 156.251.179.181
-  type: ss
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -561,31 +520,103 @@ proxy-groups:
   type: select
   url: https://www.apple.com/library/test/success.html
 rule-providers:
-  applications:
+  geoip_cn_ip:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/geoip_cn_ip.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_cn.txt
+  geoip_lan_ip:
+    behavior: ipcidr
+    interval: 86400
+    path: ./ruleset/geoip_lan_ip.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_private.txt
+  geosite_!cn:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_!cn.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/geolocation-!cn.txt
+  geosite_@!cn_domains:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_@!cn_domains.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_!cn.txt
+  geosite_@ads:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_@ads.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_ads.txt
+  geosite_@cn_domains:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_@cn_domains.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_cn.txt
+  geosite_bing:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_bing.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/bing.txt
+  geosite_cn:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_cn.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/cn.txt
+  geosite_connectivity_check:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_connectivity_check.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/connectivity-check.txt
+  geosite_google:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_google.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/google.txt
+  geosite_private_domains:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_private_domains.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/private.txt
+  geosite_telegram:
+    behavior: domain
+    interval: 86400
+    path: ./ruleset/geosite_telegram.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  other_direct_applications:
     behavior: classical
     interval: 86400
-    path: ./ruleset/applications.yaml
+    path: ./ruleset/other_direct_applications.yaml
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
-  global_non_ip:
+  other_ssk_global_non_ip:
     behavior: classical
     format: text
     interval: 86400
-    path: ./sukkaw_ruleset/global_non_ip.txt
+    path: ./sukkaw_ruleset/ssk_global_non_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/global.txt
-  lan_ip:
+  other_ssk_lan_ip:
     behavior: classical
     format: text
     interval: 86400
-    path: ./sukkaw_ruleset/lan_ip.txt
+    path: ./sukkaw_ruleset/ssk_lan_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/ip/lan.txt
-  lan_non_ip:
+  other_ssk_lan_non_ip:
     behavior: classical
     format: text
     interval: 86400
-    path: ./sukkaw_ruleset/lan_non_ip.txt
+    path: ./sukkaw_ruleset/ssk_lan_non_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
@@ -595,21 +626,22 @@ rules:
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN-SUFFIX,ghproxy.com,DIRECT
 - DOMAIN-SUFFIX,gofile.io,DIRECT
-- RULE-SET,applications,DIRECT
-- GEOSITE,category-ads-all,REJECT
-- RULE-SET,lan_non_ip,DIRECT
-- RULE-SET,global_non_ip,✈️ 选择代理
-- GEOSITE,bing,✈️ 选择代理
-- GEOSITE,microsoft,✈️ 选择代理
-- GEOSITE,private,DIRECT
-- GEOSITE,geolocation-!cn@cn,DIRECT
-- GEOSITE,geolocation-!cn,✈️ 选择代理
-- GEOSITE,geolocation-cn@!cn,✈️ 选择代理
-- GEOSITE,geolocation-cn,DIRECT
-- GEOSITE,tld-cn,DIRECT
-- RULE-SET,lan_ip,DIRECT
-- GEOIP,private,DIRECT
-- GEOIP,cn,DIRECT
+- RULE-SET,other_direct_applications,DIRECT
+- RULE-SET,other_ssk_lan_non_ip,DIRECT
+- RULE-SET,geosite_private_domains,DIRECT
+- RULE-SET,geosite_connectivity_check,DIRECT
+- RULE-SET,geosite_@ads,REJECT
+- RULE-SET,geosite_bing,✈️ 选择代理
+- RULE-SET,geosite_google,✈️ 选择代理
+- RULE-SET,geosite_telegram,✈️ 选择代理
+- RULE-SET,geosite_@!cn_domains,✈️ 选择代理
+- RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
+- RULE-SET,geosite_@cn_domains,DIRECT
+- RULE-SET,geosite_!cn,✈️ 选择代理
+- RULE-SET,geosite_cn,DIRECT
+- RULE-SET,geoip_lan_ip,DIRECT
+- RULE-SET,other_ssk_lan_ip,DIRECT
+- RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:
   enable: true
