@@ -50,134 +50,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇯🇵 日本 20
-  network: ws
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0196 | 27.066MB
+  password: shadowsocks
   port: 443
-  server: 185.184.223.47
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 24
-  port: 45056
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1bd7ca71-a6d1-449c-b6d8-42bdd8bb9293
-- auth: 22e1379b-e299-4220-84b8-87b8867c1d3f
-  name: 🇯🇵 日本 35
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 22e1379b-e299-4220-84b8-87b8867c1d3f
-  port: 25781
-  server: jphub.xg-hub.icu
-  skip-cert-verify: true
-  sni: jphub.xg-hub.icu
-  type: hysteria2
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本 02
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
+  server: 149.22.87.241
   type: ss
-  udp: true
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇯🇵 日本 18
-  network: ws
-  port: 6010
-  server: 47.79.88.21
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 23
-  port: 45057
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0c4dee36-049c-4b0a-869d-95fe0fa484fc
-- auth: jyEWQRbJATgWMu3XQtRvxb2h0
-  name: 🇯🇵 日本 33
-  password: jyEWQRbJATgWMu3XQtRvxb2h0
-  port: 25635
-  server: 47.79.34.232
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 🇯🇵 日本|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202507121073737-EWj4WqPxg0.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0211 | 25.534MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 🇯🇵 日本2|@ripaojiedian
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 🇯🇵 日本3|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 53248
-  server: 36.151.251.48
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇯🇵 日本4|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 41225
-  server: 36.151.251.48
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
 - alterId: 64
   cipher: auto
   name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
@@ -194,6 +78,48 @@ proxies:
     headers:
       Host: centos7
     path: /634c5c4f9782
+- cipher: rc4-md5
+  name: 🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202507121073737-EWj4WqPxg0.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 53248
+  server: 36.151.251.48
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: 日本4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 41225
+  server: 36.151.251.48
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 日本v2|@ripaojiedian
@@ -1266,18 +1192,52 @@ proxies:
     headers:
       host: kjgx.laoyoutiao.link
     path: telegram @wangcai2 /?ed=2560
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0196 | 27.066MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
+- cipher: chacha20-ietf-poly1305
+  delay: 908
+  name: 日本 - 东京 - Akamai Technologies, Inc. - 1
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 172.237.11.224
   type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0211 | 25.534MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
+- cipher: chacha20-ietf-poly1305
+  delay: 1289
+  name: 日本 - 东京 - Akamai Technologies, Inc. - 2
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 139.162.119.212
   type: ss
+- cipher: chacha20-ietf-poly1305
+  delay: 399
+  name: 日本 - 东京 - Amazon Technologies Inc. - 3
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 8d21436:87091
+    mode: tls
+  port: 2377
+  server: 52.199.164.162
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  delay: 2048
+  h2-opts: {}
+  http-opts: {}
+  name: 日本 - 东京 - CTG Server Ltd. - 4
+  network: tcp
+  port: 40180
+  server: 120.198.71.213
+  skip-cert-verify: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
