@@ -50,6 +50,181 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港|@ripaojiedian
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇭🇰 香港2|@ripaojiedian
+  password: 9bfdde71b4c0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /cauejypbltqt
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 103.103.245.158
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇭🇰 香港3|@ripaojiedian
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 22356
+  server: ss.029.node-for-bigairport.win
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: 🇭🇰 香港4|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 1122
+  server: 36.151.192.13
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇭🇰 香港5|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 9141
+  server: 36.151.192.13
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇭🇰 香港6|@ripaojiedian
+  password: 7367d04e-4c59-4dff-a50e-12e730a09891
+  port: 26193
+  server: 155.117.228.70
+  skip-cert-verify: true
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇭🇰 香港7|@ripaojiedian
+  password: KFpSHZWq
+  port: 16322
+  server: 36.150.215.141
+  skip-cert-verify: false
+  sni: www.baidu.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 香港8|@ripaojiedian
+  port: 45461
+  server: 103.224.80.95
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b4ab63b7-d208-4be6-aa3b-f0f8c51c286d
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港家宽 03
+  network: ws
+  port: 80
+  server: dddec3ca-szlr40-t11uiy-11p9g.hkt.tcpbbr.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 05
+  network: ws
+  port: 80
+  server: 5ba2cb58-szlr40-t11uiy-11p9g.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- auth: f5ab377f-da4c-41ff-8e98-c730c723d46a
+  name: 🇭🇰 香港 63
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: f5ab377f-da4c-41ff-8e98-c730c723d46a
+  port: 35260
+  server: flyxghy.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxghy.flylink.cyou
+  type: hysteria2
+  udp: true
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 香港 39
+  network: ws
+  port: 7000
+  server: 202.81.230.166
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 香港 46
+  network: ws
+  port: 33590
+  server: 38.55.198.166
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 香港 34
+  network: ws
+  port: 28490
+  server: 46.3.104.119
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-4885 | 0.519MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
@@ -80,69 +255,6 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港2|@ripaojiedian
-  password: 9bfdde71b4c0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: newroot2v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /cauejypbltqt
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 103.103.245.158
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港3|@ripaojiedian
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 22356
-  server: ss.029.node-for-bigairport.win
-  tfo: false
-  type: ss
-- name: 香港4|@ripaojiedian
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 1122
-  server: 36.151.192.13
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: 香港5|@ripaojiedian
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 9141
-  server: 36.151.192.13
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: 香港6|@ripaojiedian
-  network: tcp
-  password: 7367d04e-4c59-4dff-a50e-12e730a09891
-  port: 26193
-  server: 155.117.228.70
-  skip-cert-verify: true
-  type: trojan
-- name: 香港7|@ripaojiedian
-  network: tcp
-  password: KFpSHZWq
-  port: 16322
-  server: 36.150.215.141
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港8|@ripaojiedian
-  port: 45461
-  server: 103.224.80.95
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b4ab63b7-d208-4be6-aa3b-f0f8c51c286d
 - alterId: 0
   cipher: auto
   name: 香港8|@ripaojiedian
@@ -163,17 +275,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ba47c516-0c18-49d5-9548-6370c835e163
-- auth: 86091081-f701-4307-80fb-171f26240e6f
-  name: 🇭🇰 香港 66
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 86091081-f701-4307-80fb-171f26240e6f
-  port: 35260
-  server: flyxghy.flylink.cyou
-  skip-cert-verify: true
-  sni: flyxghy.flylink.cyou
-  type: hysteria2
-  udp: true
 - alpn:
   - h3
   client-fingerprint: random
@@ -306,173 +407,43 @@ proxies:
   server: 2.linkhub.support
   type: ssr
   udp: true
-- alterId: 2
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 香港 51
+  network: ws
+  port: 25624
+  server: 38.207.133.91
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港|@ripaojiedian
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-4885 | 0.519MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 12
-  network: ws
-  port: 443
-  server: 163.53.246.130
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 56
-  network: ws
-  port: 21443
-  server: 163.223.183.188
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 77
-  password: 941cbc4237e0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kh36v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /tkzhhylcfuf
-    tls: true
-  port: 636
-  server: 121.127.231.239
-  type: ss
-  udp: true
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 73
-  network: ws
-  port: 443
-  server: 219.76.13.166
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 29
-  network: ws
-  port: 27066
-  server: 103.219.194.49
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 05
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    tls: true
-  port: 636
-  server: 156.251.179.139
-  type: ss
-  udp: true
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 54
-  network: ws
-  port: 25614
-  server: 163.223.183.73
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 30
-  network: ws
-  port: 2832
-  server: 46.3.108.54
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 04
+  name: 🇭🇰 香港 75
   network: ws
   port: 80
-  server: hkt.gotochinatown.net
+  server: 4c20cb.d06c4177.shop
   tls: false
   type: vmess
   udp: true
-  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: hk04s.d06c4177.shop
     path: /
 - alpn:
   - h3
   client-fingerprint: random
-  name: 🇭🇰 香港 26
+  name: 🇭🇰 香港 50
   network: ws
-  port: 19254
-  server: 38.207.133.163
+  port: 59639
+  server: 163.223.182.235
   servername: 111-aw3.pages.dev
   tls: true
   type: vless
@@ -632,6 +603,7 @@ rule-providers:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
+- DOMAIN,time.apple.com,DIRECT
 - DOMAIN,cdn.jsdelivr.net,DIRECT
 - DOMAIN,a.ppconverter.eu.org,DIRECT
 - DOMAIN,clash.razord.top,DIRECT
