@@ -13,16 +13,17 @@ external-controller: 127.0.0.1:9090
 external-ui: ui
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
+#不再需要 geodata-mode 和 geox-url，因为我们使用 rule-set
 # GeoIP/GeoSite 相关配置
-geodata-mode: true
-geo-auto-update: true
-geo-update-interval: 12 # 更新间隔，单位为小时
-geox-url:
-  geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat"
-  mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb"
-  # geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
-  geosite: "https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat" #使用原版规则，里面有@cn 和@!cn
-  asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
+# geodata-mode: true
+# geo-auto-update: true
+# geo-update-interval: 12 # 更新间隔，单位为小时
+# geox-url:
+#   geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat"
+#   mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb"
+#   # geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+#   geosite: "https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat" #使用原版规则，里面有@cn 和@!cn
+#   asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
 
 # 进程匹配模式 (仅适用于 macOS/Linux)
 find-process-mode: strict
@@ -68,18 +69,6 @@ ntp:
 dns:
 #正确分流：https://www.aloxaf.com/2025/04/how_to_use_geosite/
 
-  # geosite 规则大致介绍
-    # category-ads: 包含了常见的广告域名。
-    # category-ads-all: 包含了常见的广告域名，以及广告提供商的域名。
-    # cn: 相当于 geolocation-cn 和 tld-cn 的合集。
-    # google: 包含了 Google 旗下的所有域名。
-    # facebook: 包含了 Facebook 旗下的所有域名。
-    # geolocation-cn: 包含了常见的国内站点的域名。
-    # geolocation-!cn: 包含了常见的非国内站点的域名。
-    # speedtest: 包含了所有 Speedtest 所用的域名。
-    # tld-cn: 包含了所有 .cn 和 .中国 结尾的域名。
-
-
   #mihomo发送给代理节点的是域名而不是ip地址，本地解析结果仅用于分流判断
   #GEOIP 规则用于根据数据包的目标 IP 地址的国家代码路由数据包，注意，是目标IP！
   #也就是dns这一坨配置，大部分是用于分流的，所以要避免本地dns的污染结果，造成根据ip进行分流的错误，本地dns解析一次，分流后，匹配走代理的请求，经过代理再进行一次dns请求
@@ -121,8 +110,9 @@ dns:
   fake-ip-filter-mode: blacklist #blacklist 模式只要没命中fake-ip-filter,都会给fake ip
   fake-ip-filter: #fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
   - +.tvkuai.com
-  - geosite:private
-  - geosite:connectivity-check #连通性检查域名
+  - 'RULE-SET,other_ssk_lan_non_ip'
+  - 'RULE-SET,geosite_private_domains'
+  - 'RULE-SET,geosite_connectivity_check'
   fake-ip-range: 198.18.0.1/16
 
 # 代理组配置
@@ -167,75 +157,161 @@ proxy-groups:
     max-failed-times: 2
     lazy: true
 
-# 规则集提供者
+# 规则集提供者 (Rule Providers)
 rule-providers:
-  applications:
+  # --- GeoSite 域名规则集 ---
+  geosite_@ads:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_ads.txt"
+    path: ./ruleset/geosite_@ads.rules
+    interval: 86400
+  geosite_@cn_domains:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_cn.txt"
+    path: ./ruleset/geosite_@cn_domains.rules
+    interval: 86400
+  geosite_@!cn_domains:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_!cn.txt"
+    path: ./ruleset/geosite_@!cn_domains.rules
+    interval: 86400
+  geosite_private_domains:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/private.txt"
+    path: ./ruleset/geosite_private_domains.rules
+    interval: 86400
+  geosite_bing:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/bing.txt"
+    path: ./ruleset/geosite_bing.rules
+    interval: 86400
+  geosite_google:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/google.txt"
+    path: ./ruleset/geosite_google.rules
+    interval: 86400
+  geosite_telegram:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt"
+    path: ./ruleset/geosite_telegram.rules
+    interval: 86400
+  geosite_connectivity_check:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/connectivity-check.txt"
+    path: ./ruleset/geosite_connectivity_check.rules
+    interval: 86400
+  geosite_cn:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/cn.txt"
+    path: ./ruleset/geosite_cn.rules
+    interval: 86400
+  geosite_!cn:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/geolocation-!cn.txt"
+    path: ./ruleset/geosite_!cn.rules
+    interval: 86400
+
+  # --- GeoIP IP 规则集 ---
+  geoip_lan_ip:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_private.txt"
+    path: ./ruleset/geoip_lan_ip.rules
+    interval: 86400
+  geoip_cn_ip:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_cn.txt"
+    path: ./ruleset/geoip_cn_ip.rules
+    interval: 86400
+
+
+  other_direct_applications:
     type: http
     behavior: classical # 经典模式，匹配应用进程名
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
-    path: ./ruleset/applications.yaml
+    path: ./ruleset/other_direct_applications.yaml
     interval: 86400 # 每天更新一次
 
-  lan_non_ip:
+  other_ssk_lan_non_ip:
     type: http
     behavior: classical
     format: text
     interval: 86400
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
-    path: ./sukkaw_ruleset/lan_non_ip.txt
+    path: ./sukkaw_ruleset/ssk_lan_non_ip.txt
 
-  lan_ip:
+  other_ssk_lan_ip:
     type: http
     behavior: classical
     format: text
     interval: 86400
     url: https://ruleset.skk.moe/Clash/ip/lan.txt
-    path: ./sukkaw_ruleset/lan_ip.txt
+    path: ./sukkaw_ruleset/ssk_lan_ip.txt
 
-  global_non_ip:
+  other_ssk_global_non_ip:
     type: http
     behavior: classical
     format: text
     interval: 86400
     url: https://ruleset.skk.moe/Clash/non_ip/global.txt
-    path: ./sukkaw_ruleset/global_non_ip.txt
+    path: ./sukkaw_ruleset/ssk_global_non_ip.txt
 
-
-# 路由规则
+# 路由规则 (Rules) #参考：https://www.aloxaf.com/2025/04/how_to_use_geosite/ 重要是@cn 和 @!cn 的使用以及先后顺序
 rules:
-#参考：https://www.aloxaf.com/2025/04/how_to_use_geosite/ 重要是@cn 和 @!cn 的使用以及先后顺序
   - DOMAIN,cdn.jsdelivr.net,DIRECT
   - DOMAIN,a.ppconverter.eu.org,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - 'DOMAIN-SUFFIX,ghproxy.com,DIRECT'
   - 'DOMAIN-SUFFIX,gofile.io,DIRECT'
-  # 直连应用
-  - RULE-SET,applications,DIRECT
-  # 广告拦截
-  - GEOSITE,category-ads-all,REJECT
-  #内网
-  - RULE-SET,lan_non_ip,DIRECT
-  #常见海外域名，其中部分域名被 DNS 污染，走代理
-  - RULE-SET,global_non_ip,✈️ 选择代理
-  # 常用服务
-  - GEOSITE,bing,✈️ 选择代理
-  - GEOSITE,microsoft,✈️ 选择代理
-  # 私有网络
-  - GEOSITE,private,DIRECT
-  # 国内流量直连
-  - GEOSITE,geolocation-!cn@cn,DIRECT
-    # 国外流量走代理
-  - GEOSITE,geolocation-!cn,✈️ 选择代理
-  - GEOSITE,geolocation-cn@!cn,✈️ 选择代理
-  # 国内流量直连
-  - GEOSITE,geolocation-cn,DIRECT
-  - GEOSITE,tld-cn,DIRECT
-  #内网
-  - RULE-SET,lan_ip,DIRECT #这个跟geoip类似，里面有ip，会触发dns解析
-  # 私有网络
-  - GEOIP,private,DIRECT
-  # 国内流量直连
-  - GEOIP,cn,DIRECT
-  # 兜底规则
+ #---------------------------------------------------------
+#直连应用
+  - RULE-SET,other_direct_applications,DIRECT
+#---------------------------------------------------------
+#内网域名
+  - RULE-SET,other_ssk_lan_non_ip,DIRECT
+  - RULE-SET,geosite_private_domains,DIRECT
+#---------------------------------------------------------
+#连通性测试
+  - RULE-SET,geosite_connectivity_check,DIRECT
+#---------------------------------------------------------
+#广告拦截
+  - RULE-SET,geosite_@ads,REJECT
+#---------------------------------------------------------
+#特定域名
+  - RULE-SET,geosite_bing,✈️ 选择代理
+  - RULE-SET,geosite_google,✈️ 选择代理
+  - RULE-SET,geosite_telegram,✈️ 选择代理
+#---------------------------------------------------------
+#原版geolocation-cn域名集合里掺杂的@!cn部分国外域名
+  - RULE-SET,geosite_@!cn_domains,✈️ 选择代理
+#国外域名补充（被国内dns污染的）——ssk规则集
+  - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
+#---------------------------------------------------------
+#原版geolocation-!cn域名集合里掺杂的@cn国内域名
+  - RULE-SET,geosite_@cn_domains,DIRECT
+#---------------------------------------------------------
+#国外域名
+  - RULE-SET,geosite_!cn,✈️ 选择代理
+#国内域名
+  - RULE-SET,geosite_cn,DIRECT
+#---------------------------------------------------------
+#内网ip
+  - RULE-SET,geoip_lan_ip,DIRECT
+  - RULE-SET,other_ssk_lan_ip,DIRECT
+#国内ip
+  - RULE-SET,geoip_cn_ip,DIRECT
+#---------------------------------------------------------
+#兜底规则
   - MATCH,✈️ 选择代理
