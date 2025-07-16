@@ -162,61 +162,71 @@ rule-providers:
   # --- GeoSite 域名规则集 ---
   geosite_@ads:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_ads.txt"
     path: ./ruleset/geosite_@ads.rules
     interval: 86400
   geosite_@cn_domains:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_cn.txt"
     path: ./ruleset/geosite_@cn_domains.rules
     interval: 86400
   geosite_@!cn_domains:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_!cn.txt"
     path: ./ruleset/geosite_@!cn_domains.rules
     interval: 86400
   geosite_private_domains:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/private.txt"
     path: ./ruleset/geosite_private_domains.rules
     interval: 86400
   geosite_bing:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/bing.txt"
     path: ./ruleset/geosite_bing.rules
     interval: 86400
   geosite_google:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/google.txt"
     path: ./ruleset/geosite_google.rules
     interval: 86400
   geosite_telegram:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt"
     path: ./ruleset/geosite_telegram.rules
     interval: 86400
   geosite_connectivity_check:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/connectivity-check.txt"
     path: ./ruleset/geosite_connectivity_check.rules
     interval: 86400
   geosite_cn:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/cn.txt"
     path: ./ruleset/geosite_cn.rules
     interval: 86400
   geosite_!cn:
     type: http
-    behavior: domain
+    behavior: classical
+    format: yaml
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/geolocation-!cn.txt"
     path: ./ruleset/geosite_!cn.rules
     interval: 86400
