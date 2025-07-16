@@ -57,63 +57,108 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇸🇬 新加坡 05
-  network: ws
-  port: 10302
-  server: 194.87.10.179
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.32-5005 | 0.309MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-4884 | 0.307MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇸🇬SG-165.154.236.149-1846 | 0.148MB
+  password: /6Go+gsioWhN1fM4MiOLwS4oWVF+r3UGv2SjSApfS0A=
+  port: 39856
+  server: 165.154.236.149
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇸🇬 新加坡 38
-  port: 45055
-  server: xdd.dashuai.cyou
+  name: 🇸🇬SG-180.215.130.123-0146 | 0.0MB
+  network: ws
+  port: 11584
+  server: 180.215.130.123
+  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
-  uuid: 8b9d8428-336a-4485-989f-c8d7ef7db026
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇸🇬 新加坡 09
-  network: ws
-  port: 10412
-  server: 194.87.10.179
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  uuid: 181472ed-0bb7-43be-dccb-74aca2b33ed5
   ws-opts:
     headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇸🇬 新加坡 20
+      Host: 180.215.130.123
+    path: /
+- alterId: 4
+  cipher: auto
+  name: 🇸🇬SG-103.253.26.20-0145 | 0.0MB
   network: ws
-  port: 10036
-  server: 8.222.132.249
-  servername: 111-aw3.pages.dev
+  port: 443
+  server: 103.253.26.20
+  skip-cert-verify: false
   tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
   ws-opts:
     headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
+      Host: zecjk.com
+    path: /
+- alterId: 4
+  cipher: auto
+  name: 🇸🇬SG-202.61.141.130-0144 | 0.0MB
+  network: ws
+  port: 443
+  server: 202.61.141.130
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: 202.61.141.130
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬SG-8.214.33.158-0142 | 0.0MB
+  network: ws
+  port: 80
+  server: 8.214.33.158
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
+  ws-opts:
+    headers:
+      Host: 8.214.33.158
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬SG-180.215.130.123-0141 | 0.0MB
+  network: ws
+  port: 46452
+  server: 180.215.130.123
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c5414fe0-018b-473a-aa3b-f210f2ba42f5
+  ws-opts:
+    headers:
+      Host: 180.215.130.123
+    path: /
+- alterId: 4
+  cipher: auto
+  name: 🇸🇬SG-103.253.26.134-0140 | 0.0MB
+  network: ws
+  port: 443
+  server: 103.253.26.134
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers:
+      Host: eeh7iewe.com
+    path: /
 - delay: 681
   name: 新加坡 001
   network: ws
@@ -132,10 +177,10 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: 🇸🇬 新加坡 28
+  name: 🇸🇬 新加坡 11
   network: ws
-  port: 38705
-  server: 185.115.207.153
+  port: 10726
+  server: 185.115.207.29
   servername: 111-aw3.pages.dev
   tls: true
   type: vless
@@ -145,36 +190,13 @@ proxies:
     headers:
       Host: 111-aw3.pages.dev
     path: /?ed=2560
-- name: 🇸🇬 新加坡 43
-  network: tcp
-  port: 41283
-  server: 43.156.217.68
-  tls: false
-  type: vless
-  udp: true
-  uuid: 4839e0b9-b275-47ea-81ab-9bfd38bbe7af
-- alterId: 2
-  cipher: auto
-  name: 🇸🇬 新加坡 03
-  network: ws
-  port: 30839
-  server: v39.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - alpn:
   - h3
   client-fingerprint: random
-  name: 🇸🇬 新加坡 22
+  name: 🇸🇬 新加坡 25
   network: ws
-  port: 443
-  server: 13.250.14.76
+  port: 30001
+  server: 147.79.20.121
   servername: 111-aw3.pages.dev
   tls: true
   type: vless
@@ -245,13 +267,6 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- cipher: aes-128-gcm
-  name: 🇸🇬 新加坡3|@ripaojiedian
-  password: /6Go+gsioWhN1fM4MiOLwS4oWVF+r3UGv2SjSApfS0A=
-  port: 39856
-  server: 165.154.236.149
-  tfo: false
-  type: ss
 - alpn:
   - h3
   client-fingerprint: random
@@ -338,158 +353,53 @@ proxies:
     headers:
       Host: 111-aw3.pages.dev
     path: /?ed=2560
-- name: 🇸🇬 新加坡 049
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 新加坡 30
   network: ws
-  port: 443
-  server: 160.22.79.155
-  servername: steep.skyfigure.top
+  port: 17733
+  server: 46.3.96.138
+  servername: 111-aw3.pages.dev
   tls: true
   type: vless
   udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
   ws-opts:
     headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- name: 🇸🇬 新加坡 014
-  password: db3ca8fd-3aa3-49c3-82b0-407856fafbc0
-  port: 23513
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- name: 🇸🇬 新加坡 060
-  password: 73082ee4-053d-42a6-84f1-3b181b19d4e7
-  port: 23511
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: cn.bing.com
-  type: trojan
-  udp: true
-- name: 🇸🇬 新加坡 076
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 新加坡 12
   network: ws
-  port: 443
-  server: 52.74.101.26
-  servername: steep.skyfigure.top
+  port: 13002
+  server: 13.229.57.45
+  servername: 111-aw3.pages.dev
   tls: true
   type: vless
   udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
   ws-opts:
     headers:
-      Host: steep.skyfigure.top
-    path: Telegram🇨🇳 @pgkj666 /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡 010
-  password: 1533fe52-5fe5-4997-b6b4-c66dc31a9ffe
-  port: 23401
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡 012
-  password: 1533fe52-5fe5-4997-b6b4-c66dc31a9ffe
-  port: 23107
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.32-5005 | 0.309MB
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-4884 | 0.307MB
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 🇸🇬SG-180.215.130.123-0146 | 0.0MB
-  network: ws
-  port: 11584
-  server: 180.215.130.123
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 181472ed-0bb7-43be-dccb-74aca2b33ed5
-  ws-opts:
-    headers:
-      Host: 180.215.130.123
-    path: /
-- alterId: 4
-  cipher: auto
-  name: 🇸🇬SG-103.253.26.20-0145 | 0.0MB
-  network: ws
-  port: 443
-  server: 103.253.26.20
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: zecjk.com
-    path: /
-- alterId: 4
-  cipher: auto
-  name: 🇸🇬SG-202.61.141.130-0144 | 0.0MB
-  network: ws
-  port: 443
-  server: 202.61.141.130
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: 202.61.141.130
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬SG-8.214.33.158-0142 | 0.0MB
+  name: 🇸🇬 新加坡 45
   network: ws
   port: 80
-  server: 8.214.33.158
-  skip-cert-verify: false
+  server: ssssssssvae2.jkhkgj.xyz
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef
+  udp: true
+  uuid: 3b0ad7ab-57f9-4db2-98dc-daccc9d5938e
   ws-opts:
     headers:
-      Host: 8.214.33.158
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬SG-180.215.130.123-0141 | 0.0MB
-  network: ws
-  port: 46452
-  server: 180.215.130.123
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c5414fe0-018b-473a-aa3b-f210f2ba42f5
-  ws-opts:
-    headers:
-      Host: 180.215.130.123
-    path: /
-- alterId: 4
-  cipher: auto
-  name: 🇸🇬SG-103.253.26.134-0140 | 0.0MB
-  network: ws
-  port: 443
-  server: 103.253.26.134
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  ws-opts:
-    headers:
-      Host: eeh7iewe.com
-    path: /
+      Host: file.dingtalk.com
+    path: /market/sg?ed=512
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
