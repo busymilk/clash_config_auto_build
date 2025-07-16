@@ -230,6 +230,14 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/geolocation-!cn.txt"
     path: ./ruleset/geosite_!cn.rules
     interval: 86400
+    
+  geosite_apple:
+    type: http
+    behavior: classical
+    format: yaml
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/apple.txt"
+    path: ./ruleset/geosite_apple.rules
+    interval: 86400
 
   # --- GeoIP IP 规则集 ---
   geoip_lan_ip:
@@ -303,6 +311,7 @@ rules:
   - RULE-SET,geosite_@ads,REJECT
 #---------------------------------------------------------
 #特定域名
+  - RULE-set,geosite_apple,DIRECT
   - RULE-SET,geosite_bing,✈️ 选择代理
   - RULE-SET,geosite_google,✈️ 选择代理
   - RULE-SET,geosite_telegram,✈️ 选择代理
