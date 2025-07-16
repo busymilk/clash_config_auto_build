@@ -281,6 +281,7 @@ rule-providers:
 
 # 路由规则 (Rules) #参考：https://www.aloxaf.com/2025/04/how_to_use_geosite/ 重要是@cn 和 @!cn 的使用以及先后顺序
 rules:
+  - DOMAIN,time.apple.com,DIRECT
   - DOMAIN,cdn.jsdelivr.net,DIRECT
   - DOMAIN,a.ppconverter.eu.org,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
