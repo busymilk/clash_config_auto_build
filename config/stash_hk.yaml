@@ -50,194 +50,118 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- auth: 86091081-f701-4307-80fb-171f26240e6f
-  name: 🇭🇰 香港 66
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 香港 04
+  network: ws
+  port: 443
+  server: 101.42.29.143
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 香港 42
+  network: ws
+  port: 32035
+  server: 38.207.133.163
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 06
+  password: 23d03aa704c7
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: cmihk3v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /grqhyifio
+    tls: true
+  port: 636
+  server: 156.251.179.181
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港 71
+  port: 45051
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6b21844e-298a-456e-b48a-348515a1cf7b
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 香港 51
+  network: ws
+  port: 25624
+  server: 38.207.133.91
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
+- auth: 18c77d82-a744-45e1-8a65-4f29a8547932
+  name: 🇭🇰 香港 78
   obfs: salamander
   obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 86091081-f701-4307-80fb-171f26240e6f
+  password: 18c77d82-a744-45e1-8a65-4f29a8547932
   port: 35260
   server: flyxghy.flylink.cyou
   skip-cert-verify: true
   sni: flyxghy.flylink.cyou
   type: hysteria2
   udp: true
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 45
-  network: ws
-  port: 21351
-  server: 38.207.132.106
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 27
-  network: ws
-  port: 443
-  server: 46.232.104.53
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 52
-  network: ws
-  port: 9000
-  server: 219.79.66.239
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港 72
-  port: 45051
-  server: xdd.dashuai.cyou
+  name: 🇭🇰 香港 75
+  network: ws
+  port: 80
+  server: 4c20cb.d06c4177.shop
   tls: false
   type: vmess
   udp: true
-  uuid: b73cc2c5-3ad5-44c4-aff9-98b222bbcdf8
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 48
-  network: ws
-  port: 24425
-  server: 103.244.89.190
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
   ws-opts:
     headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 17
-  network: ws
-  port: 38060
-  server: 38.207.161.214
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 44
-  network: ws
-  port: 443
-  server: 38.71.124.249
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 24
-  network: ws
-  port: 443
-  server: 103.234.53.238
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- cipher: rc4-md5
-  name: 🇭🇰 香港 67
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40208
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.linkhub.support
-  type: ssr
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.250.179-0493 | 11.434MB
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v7.heduian.link
+      Host: hk04s.d06c4177.shop
     path: /
-- cipher: chacha20-ietf
-  name: 🇭🇰HK-103.149.183.154-5059 | 3.289MB
-  password: asd123456
-  port: 8388
-  server: 103.149.183.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-43.199.75.50-0274 | 0.329MB
-  password: ljqdalu13..
-  port: 8313
-  server: 43.199.75.50
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-43.199.75.50-0276 | 0.329MB
-  password: ljqdalu13..
-  port: 8316
-  server: 43.199.75.50
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-4885 | 0.028MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- name: 🇭🇰HK-5.83.221.31-1436 | 0.0MB
-  password: a0087535-9c6f-42cd-9220-a7bb8eeae6cc
-  port: 30057
-  server: v02.gutingting.com
-  skip-cert-verify: false
-  sni: v1kr02.fuqiangren.com
-  type: trojan
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 香港 50
+  network: ws
+  port: 59639
+  server: 163.223.182.235
+  servername: 111-aw3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  ws-opts:
+    headers:
+      Host: 111-aw3.pages.dev
+    path: /?ed=2560
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -320,52 +244,6 @@ proxies:
   tls: false
   type: vmess
   uuid: b4ab63b7-d208-4be6-aa3b-f0f8c51c286d
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 04
-  network: ws
-  port: 443
-  server: 101.42.29.143
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 42
-  network: ws
-  port: 32035
-  server: 38.207.133.163
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 06
-  password: 23d03aa704c7
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: cmihk3v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /grqhyifio
-    tls: true
-  port: 636
-  server: 156.251.179.181
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
@@ -416,166 +294,51 @@ proxies:
   tls: false
   type: vmess
   uuid: ba47c516-0c18-49d5-9548-6370c835e163
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 38
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-1.65.250.179-0493 | 11.434MB
   network: ws
-  port: 443
-  server: 206.237.10.69
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
+  port: 30807
+  server: v7.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 41
-  network: ws
-  port: 40996
-  server: 46.232.108.59
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 40
-  network: ws
-  port: 41814
-  server: 103.235.18.96
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 33
-  network: ws
-  port: 35699
-  server: 38.55.192.113
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 15
-  network: ws
-  port: 8005
-  server: 47.76.237.145
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 28
-  network: ws
-  port: 34505
-  server: 156.251.176.116
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 31
-  network: ws
-  port: 45661
-  server: 103.103.245.26
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 10
-  network: ws
-  port: 30448
-  server: 45.78.31.235
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 47
-  network: ws
-  port: 24549
-  server: 38.207.132.106
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 🇭🇰 香港 49
-  network: ws
-  port: 60002
-  server: 109.176.254.71
-  servername: 111-aw3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b1b62ab-537f-4cc3-b8b2-71fb1ddbfdb1
-  ws-opts:
-    headers:
-      Host: 111-aw3.pages.dev
-    path: /?ed=2560
+      Host: v7.heduian.link
+    path: /
+- cipher: chacha20-ietf
+  name: 🇭🇰HK-103.149.183.154-5059 | 3.289MB
+  password: asd123456
+  port: 8388
+  server: 103.149.183.154
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-43.199.75.50-0274 | 0.329MB
+  password: ljqdalu13..
+  port: 8313
+  server: 43.199.75.50
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-43.199.75.50-0276 | 0.329MB
+  password: ljqdalu13..
+  port: 8316
+  server: 43.199.75.50
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-4885 | 0.028MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- name: 🇭🇰HK-5.83.221.31-1436 | 0.0MB
+  password: a0087535-9c6f-42cd-9220-a7bb8eeae6cc
+  port: 30057
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v1kr02.fuqiangren.com
+  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
