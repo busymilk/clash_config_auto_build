@@ -150,7 +150,7 @@ def calibrate_and_rename_proxies(proxies_with_ip, geoip_dat_path):
 
     # 清理旧的地区标识，例如 [US], (HK), |SG| 等
     def clean_name(name):
-        return re.sub(r'[\(\[【].*?[\)\]】]\', \'\', name).strip()
+        return re.sub(r'[\(\[【].*?[\)\]】]', '', name).strip()
 
     final_proxies = []
     for proxy in proxies_with_ip:
