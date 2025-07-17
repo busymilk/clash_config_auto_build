@@ -81,13 +81,14 @@ jobs:
         chmod +x clash-speedtest
 
         # 3. 执行两阶段测试
-        echo "[PHASE 1/2] Running small speed test to filter nodes..."
-        # 使用 -d 1 (下载1MB) 进行快速测试，以过滤掉无法连接的节点
-        ./clash-speedtest -c config_for_test.yaml -output phase1_passed.yaml -d 1
+        echo "[PHASE 1/2] Running latency test to filter dead nodes..."
+        # 使用 -download-size 0 跳过速度测试，并用 -max-latency 过滤掉延迟超时的节点
+        ./clash-speedtest -c config_for_test.yaml -output phase1_passed.yaml -download-size 0 -max-latency 2000ms
 
-        echo "[PHASE 2/2] Running full speed test..."
-        # 使用 -d 10 (下载10MB) 进行精确测速，工具会自动重命名节点
-        ./clash-speedtest -c phase1_passed.yaml -output final_healthy_config.yaml -d 10
+        echo "[PHASE 2/2] Running full speed test and renaming..."
+        # 使用 -download-size 进行精确测速，并使用 -rename 参数重命名节点
+        # 10MB = 10 * 1024 * 1024 = 10485760 bytes
+        ./clash-speedtest -c phase1_passed.yaml -output final_healthy_config.yaml -download-size 10485760 -rename
 
         # 4. 提取纯净的、健康的节点列表，为下一步做准备
         echo "Extracting healthy proxies list..."
