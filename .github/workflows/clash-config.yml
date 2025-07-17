@@ -33,7 +33,7 @@ jobs:
 
     # 步骤3: 安装 Python 依赖
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: pip install -r requirements.txt pysocks
 
     # 步骤4: 创建所需目录 (使用环境变量)
     - name: Create directories
