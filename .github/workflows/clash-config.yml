@@ -69,7 +69,7 @@ jobs:
         # 1. 下载并准备 mihomo 核心
         echo "Downloading mihomo executable..."
         # 我们将直接从最新的 release 下载，以保持更新
-        curl -L --fail -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/latest/download/mihomo-linux-amd64.gz
+        curl -L --fail -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.19.11/mihomo-linux-amd64-v1.19.11.gz
         gunzip mihomo.gz
         chmod +x mihomo
         mv mihomo /usr/local/bin/mihomo
