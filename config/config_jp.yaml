@@ -50,20 +50,7 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0269 | 22.932MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0267 | 23.184MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
   plugin: v2ray-plugin
@@ -77,6 +64,29 @@ proxies:
   port: 636
   server: 137.220.191.40
   tfo: false
+  type: ss
+- auth: 74332878-d170-41cc-be22-e08e0527a9b8
+  name: 🇯🇵 日本 17
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 74332878-d170-41cc-be22-e08e0527a9b8
+  port: 35300
+  server: flyrb.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxg.flylink.cyou
+  type: hysteria2
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-193
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-195
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
   type: ss
 proxy-groups:
 - name: ✈️ 选择代理
