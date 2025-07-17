@@ -81,9 +81,9 @@ jobs:
         chmod +x clash-speedtest
 
         # 3. 执行两阶段测试
-        echo "[PHASE 1/2] Running latency test to filter nodes..."
-        # 默认情况下，不带速度测试参数，clash-speedtest会执行延迟测试并过滤掉无法连接的节点
-        ./clash-speedtest -c config_for_test.yaml -o phase1_passed.yaml
+        echo "[PHASE 1/2] Running small speed test to filter nodes..."
+        # 使用一个极小的速度测试(-sl 100)来触发文件输出功能，这能有效过滤掉无法连接的节点
+        ./clash-speedtest -c config_for_test.yaml -o phase1_passed.yaml -sl 100
 
         echo "[PHASE 2/2] Running speed test and renaming nodes..."
         ./clash-speedtest -c phase1_passed.yaml -o final_healthy_config.yaml -sl 10240 -rename
