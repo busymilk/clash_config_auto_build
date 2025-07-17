@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 import yaml
-from v2ray_util.util import geoip
+from v2ray_util import geoip
 
 # --- 全局配置 ---
 DEFAULT_TEST_URL = "https://www.google.com/generate_204" # 默认延迟测试URL
