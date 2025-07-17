@@ -43,7 +43,7 @@ FILTER_PATTERNS = {
 
 # 定义不希望包含的代理名称关键词（黑名单），此规则对所有合并任务生效
 BLACKLIST_KEYWORDS = [
-    '电报', '日期', '免费', '关注','频道'
+    '日期', '免费', '关注'
 ]
 
 def merge_proxies(proxies_dir, output_file, name_filter=None):
