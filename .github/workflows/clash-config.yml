@@ -69,7 +69,7 @@ jobs:
         # 下载并解压 clash-speedtest 工具
         echo "Downloading clash-speedtest..."
         # 使用 -L 进行重定向跟踪, -f/--fail 使其在HTTP错误时快速失败
-        curl -L --fail -o clash-speedtest.tar.gz https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest-linux-amd64.tar.gz
+        curl -L --fail -o clash-speedtest.tar.gz https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_arm64.tar.gz
         tar -zxvf clash-speedtest.tar.gz
         chmod +x clash-speedtest
         
