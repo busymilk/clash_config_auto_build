@@ -82,14 +82,13 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 🇭🇰 香港3|@ripaojiedian
-  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
-  port: 22356
-  server: ss.029.node-for-bigairport.win
-  tfo: false
-  type: ss
+  password: 7367d04e-4c59-4dff-a50e-12e730a09891
+  port: 26193
+  server: 155.117.228.70
+  skip-cert-verify: true
+  type: trojan
 - client-fingerprint: chrome
   name: 🇭🇰 香港4|@ripaojiedian
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -106,32 +105,91 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- client-fingerprint: chrome
-  name: 🇭🇰 香港6|@ripaojiedian
-  password: 7367d04e-4c59-4dff-a50e-12e730a09891
-  port: 26193
-  server: 155.117.228.70
-  skip-cert-verify: true
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇭🇰 香港7|@ripaojiedian
-  password: KFpSHZWq
-  port: 16322
-  server: 36.150.215.141
-  skip-cert-verify: false
-  sni: www.baidu.com
-  type: trojan
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 香港8|@ripaojiedian
-  port: 45461
-  server: 103.224.80.95
+  name: 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  network: ws
+  port: 8080
+  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 香港|@ripaojiedian
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: b4ab63b7-d208-4be6-aa3b-f0f8c51c286d
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 香港v2|@ripaojiedian
+  network: kcp
+  port: '63101'
+  server: 47.76.160.154
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ba47c516-0c18-49d5-9548-6370c835e163
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-1.65.250.179-0493 | 11.434MB
+  network: ws
+  port: 30807
+  server: v7.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v7.heduian.link
+    path: /
+- cipher: chacha20-ietf
+  name: 🇭🇰HK-103.149.183.154-5059 | 3.289MB
+  password: asd123456
+  port: 8388
+  server: 103.149.183.154
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-43.199.75.50-0274 | 0.329MB
+  password: ljqdalu13..
+  port: 8313
+  server: 43.199.75.50
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-43.199.75.50-0276 | 0.329MB
+  password: ljqdalu13..
+  port: 8316
+  server: 43.199.75.50
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-4885 | 0.028MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- name: 🇭🇰HK-5.83.221.31-1436 | 0.0MB
+  password: a0087535-9c6f-42cd-9220-a7bb8eeae6cc
+  port: 30057
+  server: v02.gutingting.com
+  skip-cert-verify: false
+  sni: v1kr02.fuqiangren.com
+  type: trojan
 - alterId: 2
   cipher: auto
   country: 🇭🇰HK
@@ -201,101 +259,6 @@ proxies:
     headers:
       HOST: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.250.179-0493 | 11.434MB
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v7.heduian.link
-    path: /
-- cipher: chacha20-ietf
-  name: 🇭🇰HK-103.149.183.154-5059 | 3.289MB
-  password: asd123456
-  port: 8388
-  server: 103.149.183.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-43.199.75.50-0274 | 0.329MB
-  password: ljqdalu13..
-  port: 8313
-  server: 43.199.75.50
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-43.199.75.50-0276 | 0.329MB
-  password: ljqdalu13..
-  port: 8316
-  server: 43.199.75.50
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-4885 | 0.028MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- name: 🇭🇰HK-5.83.221.31-1436 | 0.0MB
-  password: a0087535-9c6f-42cd-9220-a7bb8eeae6cc
-  port: 30057
-  server: v02.gutingting.com
-  skip-cert-verify: false
-  sni: v1kr02.fuqiangren.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
-  network: ws
-  port: 8080
-  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 香港|@ripaojiedian
-  network: ws
-  port: '30809'
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 香港8|@ripaojiedian
-  network: tcp
-  port: '45461'
-  server: 103.224.80.95
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b4ab63b7-d208-4be6-aa3b-f0f8c51c286d
-- alterId: 0
-  cipher: auto
-  name: 香港v2|@ripaojiedian
-  network: kcp
-  port: '63101'
-  server: 47.76.160.154
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ba47c516-0c18-49d5-9548-6370c835e163
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

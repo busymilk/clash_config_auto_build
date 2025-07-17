@@ -56,12 +56,20 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-EWj4WqPxg0.download.microsoft.com
+    host: 202507121073737-knyhjj43dT.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 🇯🇵 日本3|@ripaojiedian
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 53248
+  server: 36.151.251.48
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 🇯🇵 日本2|@ripaojiedian
@@ -79,14 +87,6 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 🇯🇵 日本3|@ripaojiedian
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 53248
-  server: 36.151.251.48
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- client-fingerprint: chrome
   name: 🇯🇵 日本4|@ripaojiedian
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 41225
@@ -94,90 +94,32 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  delay: 908
-  name: 日本 - 东京 - Akamai Technologies, Inc. - 1
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)32cf132:178330
-    mode: tls
-  port: 2377
-  server: 172.237.11.224
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  delay: 1289
-  name: 日本 - 东京 - Akamai Technologies, Inc. - 2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @WangCai2)32cf132:178330
-    mode: tls
-  port: 2377
-  server: 139.162.119.212
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  delay: 399
-  name: 日本 - 东京 - Amazon Technologies Inc. - 3
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 8d21436:87091
-    mode: tls
-  port: 2377
-  server: 52.199.164.162
-  type: ss
+- alterId: 64
+  cipher: auto
+  name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  network: ws
+  port: 1443
+  server: sslvpn.51job.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  ws-opts:
+    headers:
+      Host: centos7
+    path: /634c5c4f9782
 - alterId: 0
   cipher: auto
-  country: 🇨🇳CN
-  delay: 2048
-  h2-opts: {}
-  http-opts: {}
-  name: 日本 - 东京 - CTG Server Ltd. - 4
-  network: tcp
-  port: 40180
-  server: 120.198.71.213
-  skip-cert-verify: true
+  name: 日本v2|@ripaojiedian
+  network: kcp
+  port: '56428'
+  server: 8.211.136.249
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 日本 006
-  network: ws
-  port: 2095
-  server: 156.238.18.163
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-- client-fingerprint: chrome
-  name: 日本 007
-  network: ws
-  port: 2052
-  server: 156.238.18.165
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redw.pooriam.ir
-    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0196 | 27.066MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0211 | 25.534MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
+  uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
 - name: 🇯🇵_日本_1
   network: ws
   port: 8880
@@ -1214,32 +1156,90 @@ proxies:
     headers:
       host: kjgx.laoyoutiao.link
     path: telegram @wangcai2 /?ed=2560
-- alterId: 64
-  cipher: auto
-  name: 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0196 | 27.066MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0211 | 25.534MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- client-fingerprint: chrome
+  name: 日本 006
   network: ws
-  port: 1443
-  server: sslvpn.51job.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  port: 2095
+  server: 156.238.18.163
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: centos7
-    path: /634c5c4f9782
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- client-fingerprint: chrome
+  name: 日本 007
+  network: ws
+  port: 2052
+  server: 156.238.18.165
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: redw.pooriam.ir
+    path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+- cipher: chacha20-ietf-poly1305
+  delay: 908
+  name: 日本 - 东京 - Akamai Technologies, Inc. - 1
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 172.237.11.224
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  delay: 1289
+  name: 日本 - 东京 - Akamai Technologies, Inc. - 2
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)32cf132:178330
+    mode: tls
+  port: 2377
+  server: 139.162.119.212
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  delay: 399
+  name: 日本 - 东京 - Amazon Technologies Inc. - 3
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 8d21436:87091
+    mode: tls
+  port: 2377
+  server: 52.199.164.162
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 日本v2|@ripaojiedian
-  network: kcp
-  port: '56428'
-  server: 8.211.136.249
-  servername: ''
-  tls: false
+  country: 🇨🇳CN
+  delay: 2048
+  h2-opts: {}
+  http-opts: {}
+  name: 日本 - 东京 - CTG Server Ltd. - 4
+  network: tcp
+  port: 40180
+  server: 120.198.71.213
+  skip-cert-verify: true
   type: vmess
-  uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
