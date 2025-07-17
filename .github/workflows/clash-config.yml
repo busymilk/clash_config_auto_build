@@ -71,9 +71,17 @@ jobs:
           --proxies-dir ${{ env.PROXY_DIR }} \
           --output all_unique_nodes.yaml
 
+    # 步骤7: 获取运行器公网IP
+    - name: Get Runner Public IP
+      id: get_ip
+      run: echo "ip=$(curl -s ifconfig.me)" >> $GITHUB_OUTPUT
+
     # 步骤7: 使用新的Python脚本进行节点测试和IP归属地校准
     - name: Test Nodes and Calibrate Country Code
       id: test_nodes
+      env:
+        # 在这里获取运行器的公网IP，并将其设置为环境变量，供Python脚本使用
+        RUNNER_PUBLIC_IP: ${{ steps.get_ip.outputs.ip }}
       run: |
         # 1. 下载 mihomo 核心
         echo "Downloading mihomo executable..."
