@@ -115,8 +115,10 @@ def check_proxy_delay(proxy, api_url, timeout, delay_limit, test_url):
     return None
 
 def get_exit_ip_via_proxy(proxy, runner_ip, echo_port):
+    """通过指定代理的SOCKS5出口，访问本地回显服务器以获取真实出口IP。"""
+    # 正确的mihomo SOCKS5 URL格式，是将节点名作为用户名传递
     proxy_name_encoded = urllib.parse.quote(proxy['name'])
-    proxy_url = f'socks5://127.0.0.1:7890?proxy={proxy_name_encoded}'
+    proxy_url = f'socks5h://{proxy_name_encoded}@127.0.0.1:7890'
     try:
         # 请求的目标是运行器自身的公网IP
         response = requests.get(f'http://{runner_ip}:{echo_port}', proxies={'http': proxy_url, 'https': proxy_url}, timeout=20)
