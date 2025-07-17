@@ -63,8 +63,8 @@ jobs:
         PROXY_DIR: ${{ env.PROXY_DIR }}
       run: python -u scripts/generate_config.py
 
-    # 步骤7: 使用 clash-speedtest 过滤节点
-    - name: Filter Nodes with clash-speedtest
+    # 步骤7: 使用 clash-speedtest 进行两阶段节点过滤
+    - name: Two-Phase Node Filtering with clash-speedtest
       run: |
         # 下载并解压 clash-speedtest 工具
         echo "Downloading clash-speedtest..."
@@ -72,21 +72,29 @@ jobs:
         tar -zxvf clash-speedtest.tar.gz
         chmod +x clash-speedtest
         
-        echo "Filtering config files in config/ directory..."
+        echo "--- Starting Two-Phase Filtering for all configs in config/ directory ---"
         # 遍历 config 目录下的所有 yaml 文件
         for config_file in config/*.yaml; do
-          echo "Processing $config_file..."
-          # 创建一个临时的过滤后文件
-          filtered_file="${config_file%.yaml}_filtered.yaml"
+          echo "\n[PHASE 1/2] Processing $config_file for initial connectivity check..."
+          # 定义第一阶段的临时输出文件
+          phase1_filtered_file="${config_file%.yaml}_phase1.yaml"
           
-          # 运行 clash-speedtest
-          # -c 指定输入, -o 指定输出, -sl 100 使用100KB文件进行快速测试
-          ./clash-speedtest -c "$config_file" -o "$filtered_file" -sl 100
-          
-          # 用过滤后的版本覆盖原始文件
-          mv "$filtered_file" "$config_file"
-          echo "$config_file has been filtered."
+          # 运行快速连通性测试 (-sl 100 使用100KB文件)
+          ./clash-speedtest -c "$config_file" -o "$phase1_filtered_file" -sl 100
+          echo "Phase 1 for $config_file completed."
+
+          echo "\n[PHASE 2/2] Processing $phase1_filtered_file for speed test and renaming..."
+          # 第二阶段：在第一阶段的基础上进行测速和重命名
+          # -sl 10240 使用10MB文件进行测试
+          # -rename 根据延迟和地区信息重命名节点
+          # 最终的输出会直接覆盖原始文件
+          ./clash-speedtest -c "$phase1_filtered_file" -o "$config_file" -sl 10240 -rename
+          echo "Phase 2 for $config_file completed. Final filtered config saved to $config_file."
+
+          # 清理第一阶段的临时文件
+          rm "$phase1_filtered_file"
         done
+        echo "\n--- All configurations have been filtered and updated. ---"
 
     # 步骤8: 上传所有构建产物
     - name: Upload All Config Artifacts
