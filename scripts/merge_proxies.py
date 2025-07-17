@@ -62,53 +62,46 @@ def merge_proxies(proxies_dir, output_file, name_filter=None):
 
     for file_path in proxy_files:
         try:
-            # logging.info(f"--- 开始处理文件: {file_path} ---")
             with open(file_path, 'r', encoding="utf-8") as f:
+                # 使用 yaml.safe_load 尝试解析
                 data = yaml.safe_load(f)
 
-                if not data or 'proxies' not in data:
-                    # logging.warning(f"文件内容为空或缺少 'proxies' 字段: {file_path}")
+                # 检查解析结果是否有效
+                if not isinstance(data, dict) or 'proxies' not in data or not isinstance(data['proxies'], list):
+                    logging.warning(f"跳过无效或格式不正确的文件: {file_path}")
                     continue
 
                 for proxy in data['proxies']:
+                    # ... (内部的节点处理逻辑保持不变)
                     name = proxy.get('name')
                     server = proxy.get('server')
                     port = proxy.get('port')
                     proxy_type = proxy.get('type')
                     identifier = (server, proxy_type, port)
 
-                    # --- 过滤逻辑 ---
-                    # 1. 检查关键信息是否完整
                     if not all(identifier):
                         continue
-
-                    # 2. 检查是否为重复节点
                     if identifier in seen_identifiers:
                         continue
-                    
-                    # 3. (最高优先级) 检查是否包含黑名单关键词
                     if any(keyword in name for keyword in BLACKLIST_KEYWORDS):
                         continue
-
-                    # 4. 排除特定类型的不安全代理
                     if proxy_type == 'ss' and proxy.get('cipher', '').lower() == 'ss':
                         continue
-
-                    # 5. (仅地区版本) 根据名称白名单进行过滤
-                    if name_filter:
-                        if name_filter in FILTER_PATTERNS:
-                            if not FILTER_PATTERNS[name_filter].search(name):
-                                continue # 静默排除不匹配地区的节点
-                        else:
-                            logging.error(f"未知的过滤器: {name_filter}")
-                            return
+                    if name_filter and name_filter in FILTER_PATTERNS:
+                        if not FILTER_PATTERNS[name_filter].search(name):
+                            continue
                     
-                    # --- 添加代理 ---
                     seen_identifiers.add(identifier)
                     merged_proxies.append(proxy)
 
+        except yaml.YAMLError as e:
+            # 如果文件不是有效的YAML格式，则捕获错误，打印警告并跳过
+            logging.warning(f"跳过无法解析的YAML文件: {file_path} - 错误: {e}")
+            continue
         except Exception as e:
-            logging.error(f"处理文件 {file_path} 时发生严重错误: {e}", exc_info=True)
+            # 捕获其他可能的IO错误等
+            logging.error(f"处理文件 {file_path} 时发生未知错误: {e}", exc_info=True)
+            continue
 
     logging.info(f"总共为 '{output_file}' 合并了 {len(merged_proxies)} 个唯一的代理。")
 
