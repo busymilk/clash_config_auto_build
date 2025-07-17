@@ -19,7 +19,7 @@ import yaml
 DEFAULT_TEST_URL = "http://www.gstatic.com/generate_204"
 DEFAULT_DELAY_LIMIT = 2500  # ms
 DEFAULT_TIMEOUT = 5000      # ms
-DEFAULT_MAX_WORKERS = 20
+DEFAULT_MAX_WORKERS = 80
 
 # --- 日志记录 (简化版) ---
 def log_info(message):
@@ -136,73 +136,7 @@ def check_proxy(proxy, api_url, timeout, delay_limit, test_url):
     # log_info(f"Proxy '{proxy_name}' FAILED check.")
     return None
 
-def proxies_exists(proxy, hosts):
-    """根据协议关键信息判断代理是否已存在 (深度去重)。"""
-    if not proxy: return True
-    key = f"{proxy.get('server')}:{proxy.get('port')}"
-    existing_proxies = hosts.get(key)
-    if not existing_proxies: return False
 
-    proto = proxy.get("type", "")
-    if proto in ["http", "socks5"]: return True
-    if proto in ["ss", "trojan", "hysteria2"]:
-        return any(p.get("password") == proxy.get("password") for p in existing_proxies)
-    if proto == "ssr":
-        return any(p.get("protocol-param") == proxy.get("protocol-param") for p in existing_proxies)
-    if proto in ["vmess", "vless"]:
-        return any(p.get("uuid") == proxy.get("uuid") for p in existing_proxies)
-    if proto == "snell":
-        return any(p.get("psk") == proxy.get("psk") for p in existing_proxies)
-    if proto == "tuic":
-        return any(p.get("token") == proxy.get("token") for p in existing_proxies) or \
-               any(p.get("uuid") == proxy.get("uuid") for p in existing_proxies)
-    if proto == "hysteria":
-        auth_key = "auth-str" if "auth-str" in proxy else "auth_str"
-        return any(p.get(auth_key) == proxy.get(auth_key) for p in existing_proxies)
-    return False
-
-def filter_and_rename_proxies(proxies):
-    """对代理列表进行深度去重和智能重命名。"""
-    log_info("Performing deep deduplication and renaming...")
-    
-    # 按名字排序，确保结果一致性
-    proxies.sort(key=lambda p: str(p.get("name", "")))
-    
-    # 深度去重
-    unique_proxies_deep, hosts = [], defaultdict(list)
-    for item in proxies:
-        if not proxies_exists(item, hosts):
-            unique_proxies_deep.append(item)
-            key = f"{item.get('server')}:{item.get('port')}"
-            hosts[key].append(item)
-    
-    # 按名字分组，处理重名问题
-    groups = defaultdict(list)
-    for proxy in unique_proxies_deep:
-        groups[proxy.get("name")].append(proxy)
-
-    final_proxies, final_names = [], set()
-    
-    # 排序，优先处理名字唯一的节点
-    sorted_groups = sorted(groups.items(), key=lambda item: len(item[1]))
-
-    for name, items in sorted_groups:
-        if len(items) == 1:
-            if name not in final_names:
-                final_proxies.append(items[0])
-                final_names.add(name)
-        else:
-            for i, item in enumerate(items, 1):
-                new_name = f"{name}_{i}"
-                while new_name in final_names:
-                    i += 1
-                    new_name = f"{name}_{i}"
-                item["name"] = new_name
-                final_proxies.append(item)
-                final_names.add(new_name)
-
-    log_info(f"Finished filtering: {len(proxies)} -> {len(final_proxies)} unique proxies.")
-    return final_proxies
 
 def main(args):
     """主执行函数。"""
@@ -249,12 +183,9 @@ def main(args):
 
     log_info(f"Found {len(available_proxies)} available proxies.")
 
-    # --- 步骤 6: 对可用节点进行最终的深度去重和重命名 ---
-    final_proxies = filter_and_rename_proxies(available_proxies)
-
-    # --- 步骤 7: 保存最终的纯净节点列表 ---
+    # --- 步骤 6: 保存最终的纯净节点列表 ---
     with open(args.output_file, 'w', encoding='utf-8') as f:
-        yaml.dump({'proxies': final_proxies}, f, allow_unicode=True)
+        yaml.dump({'proxies': available_proxies}, f, allow_unicode=True)
     log_info(f"Final healthy proxy list saved to {args.output_file}")
 
 if __name__ == "__main__":
