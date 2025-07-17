@@ -47,12 +47,7 @@ def generate_config_from_template(base_config, proxies_list, output_path):
         config['proxies'] = proxies_list
         
         # 确保代理组中的代理存在于列表中
-        if 'proxy-groups' in config:
-            all_proxy_names = {p['name'] for p in proxies_list}
-            for group in config['proxy-groups']:
-                if 'proxies' in group:
-                    # 只保留那些实际存在于当前节点列表中的代理
-                    group['proxies'] = [p for p in group.get('proxies', []) if p in all_proxy_names]
+        
 
         logging.info(f"为 {output_path} 分配了 {len(proxies_list)} 个节点。")
         with open(output_path, 'w', encoding="utf-8") as f:
