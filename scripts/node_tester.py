@@ -4,9 +4,6 @@ import subprocess
 import time
 import urllib.parse
 import threading
-import os
-import socketserver # 导入 socketserver 模块
-from http.server import BaseHTTPRequestHandler, HTTPServer
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
@@ -18,7 +15,6 @@ DEFAULT_TEST_URL = "https://www.google.com/generate_204" # 默认延迟测试URL
 DEFAULT_DELAY_LIMIT = 3000  # 默认延迟上限 (ms)
 DEFAULT_TIMEOUT = 5000      # 默认API超时 (ms)
 DEFAULT_MAX_WORKERS = 80    # 默认并发线程数
-IP_ECHO_PORT = 8080         # 本地IP回显服务器端口
 
 # --- 日志记录 ---
 def log_info(message):
@@ -27,37 +23,9 @@ def log_info(message):
 def log_error(message):
     print(f"[ERROR] {message}")
 
-# --- 本地IP回显服务器 ---
-class IPEchoHandler(BaseHTTPRequestHandler):
-    """一个简单的HTTP请求处理器，它会将来访者的IP地址作为响应返回。"""
-    def do_GET(self):
-        self.send_response(200)
-        self.send_header('Content-type', 'text/plain')
-        self.end_headers()
-        self.wfile.write(self.client_address[0].encode('utf-8'))
-    def log_message(self, format, *args):
-        # 重写此方法以禁止在控制台打印每个HTTP请求的日志
-        return
-
-class ThreadedHTTPServer(socketserver.ThreadingMixIn, HTTPServer):
-    daemon_threads = True
-
-def run_ip_echo_server(port=IP_ECHO_PORT):
-    """在一个独立的守护线程中运行IP回显服务器。"""
-    # 监听 0.0.0.0 以接收来自公网的请求
-    server_address = ('0.0.0.0', port)
-    # 使用多线程服务器
-    httpd = ThreadedHTTPServer(server_address, IPEchoHandler)
-    log_info(f"Starting local IP echo server on port {port}...")
-    thread = threading.Thread(target=httpd.serve_forever)
-    thread.daemon = True
-    thread.start()
-    return httpd
-
 # --- 核心功能函数 ---
-
 def prepare_test_config(source_path, dest_path):
-    """读取源配置文件，注入测试所需的核心配置，并增加IP回显服务器的直连规则。"""
+    """读取源配置文件，注入测试所需的核心配置。"""
     log_info(f"Preparing test config from {source_path}...")
     try:
         with open(source_path, 'r', encoding='utf-8') as f:
@@ -74,7 +42,6 @@ def prepare_test_config(source_path, dest_path):
             'mode': 'Rule',
         })
 
-        # 注意：我们不再需要IP-CIDR规则，因为我们将请求公网IP
         if 'rules' not in config:
             config['rules'] = []
 
@@ -131,24 +98,39 @@ def check_proxy_delay(proxy, api_url, timeout, delay_limit, test_url):
         pass
     return None
 
-def get_exit_ip_via_proxy(proxy, runner_ip, echo_port, retries=3, initial_timeout=20):
-    """通过指定代理的SOCKS5出口，访问本地回显服务器以获取真实出口IP，并支持重试。"""
-    proxy_name_encoded = urllib.parse.quote(proxy['name'])
-    proxy_url = f'socks5h://{proxy_name_encoded}@127.0.0.1:7890'
+def get_exit_ip_via_proxy(proxy, retries=3, initial_timeout=10):
+    """通过指定代理访问 https://api64.ipify.org 以获取真实出口IP，并支持重试。"""
+    proxy_name = proxy.get("name")
+    if not proxy_name:
+        return None
+
+    # 假设 mihomo/clash 内核支持通过 SOCKS5 的用户名来选择出站代理，这并非标准行为，但在此遵循原作者的实现逻辑
+    proxy_url = f'socks5h://{urllib.parse.quote(proxy_name)}@127.0.0.1:7890'
+    target_url = 'https://api64.ipify.org'
 
     for attempt in range(retries):
         try:
-            timeout = initial_timeout * (1.5 ** attempt) # 指数退避
-            response = requests.get(f'http://{runner_ip}:{echo_port}', proxies={'http': proxy_url, 'https': proxy_url}, timeout=timeout)
+            timeout = initial_timeout * (1.5 ** attempt)  # 指数退避
+            response = requests.get(
+                target_url,
+                proxies={'https': proxy_url, 'http': proxy_url},
+                timeout=timeout
+            )
             response.raise_for_status()
-            proxy['exit_ip'] = response.text.strip()
-            log_info(f"Proxy '{proxy.get('name')}' exit IP: {proxy['exit_ip']} (Attempt {attempt + 1})")
-            return proxy
+            ip_address = response.text.strip()
+            
+            # 验证返回的是一个有效的IPv4或IPv6地址
+            if re.match(r'^(\d{1,3}\.){3}\d{1,3}$', ip_address) or re.match(r'^[a-f0-9:]+$', ip_address, re.IGNORECASE):
+                proxy['exit_ip'] = ip_address
+                log_info(f"Proxy '{proxy_name}' exit IP: {proxy['exit_ip']} (Attempt {attempt + 1})")
+                return proxy
+            else:
+                log_error(f"Proxy '{proxy_name}' received invalid IP response: '{ip_address}' (Attempt {attempt + 1})")
         except requests.exceptions.RequestException as e:
-            log_error(f"Proxy '{proxy.get('name')}' failed to get exit IP (RequestException, Attempt {attempt + 1}/{retries}): {e}")
+            log_error(f"Proxy '{proxy_name}' failed to get exit IP (RequestException, Attempt {attempt + 1}/{retries}): {e}")
         except Exception as e:
-            log_error(f"Proxy '{proxy.get('name')}' failed to get exit IP (Other Exception, Attempt {attempt + 1}/{retries}): {e}")
-        time.sleep(1) # 每次重试前等待1秒
+            log_error(f"Proxy '{proxy_name}' failed to get exit IP (Other Exception, Attempt {attempt + 1}/{retries}): {e}")
+        time.sleep(1)  # 每次重试前等待1秒
     return None
 
 def calibrate_and_rename_proxies(proxies_with_ip, geoip_db_path):
@@ -191,21 +173,13 @@ def calibrate_and_rename_proxies(proxies_with_ip, geoip_db_path):
     return final_proxies
 
 def main(args):
-    runner_ip = os.getenv('RUNNER_PUBLIC_IP')
-    if not runner_ip:
-        log_error("RUNNER_PUBLIC_IP environment variable not set. Cannot perform IP calibration.")
-        # 即使没有公网IP，我们也可以继续执行延迟测试，只是无法校准国家
-
-    ip_echo_server = run_ip_echo_server()
     test_config_path = "config_for_test.yaml"
     proxies_to_test = prepare_test_config(args.input_file, test_config_path)
     if not proxies_to_test:
-        ip_echo_server.shutdown()
         return
 
     mihomo_process = start_mihomo(args.clash_path, test_config_path)
     if not mihomo_process:
-        ip_echo_server.shutdown()
         return
 
     healthy_proxies = []
@@ -222,25 +196,22 @@ def main(args):
                     healthy_proxies.append(result)
         log_info(f"Found {len(healthy_proxies)} healthy proxies after delay test.")
 
-        if healthy_proxies and runner_ip:
+        if healthy_proxies:
             log_info(f"Fetching exit IP for {len(healthy_proxies)} healthy proxies...")
             with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
-                future_to_ip = {executor.submit(get_exit_ip_via_proxy, p, runner_ip, IP_ECHO_PORT): p for p in healthy_proxies}
+                future_to_ip = {executor.submit(get_exit_ip_via_proxy, p): p for p in healthy_proxies}
                 for future in as_completed(future_to_ip):
                     result = future.result()
                     if result:
                         proxies_with_ip.append(result)
             log_info(f"Successfully fetched IP for {len(proxies_with_ip)} proxies.")
-            # 如果成功获取了IP，就用带IP的列表进行后续处理
             final_proxies_to_save = calibrate_and_rename_proxies(proxies_with_ip, args.geoip_dat_path)
         else:
-            # 如果没有健康的节点，或者没有获取到Runner的IP，则跳过IP校准
             final_proxies_to_save = healthy_proxies
 
     finally:
         stop_mihomo(mihomo_process)
-        ip_echo_server.shutdown()
-        log_info("Cleaned up all background processes.")
+        log_info("Cleaned up mihomo process.")
 
     with open(args.output_file, 'w', encoding='utf-8') as f:
         yaml.dump({'proxies': final_proxies_to_save}, f, allow_unicode=True)
