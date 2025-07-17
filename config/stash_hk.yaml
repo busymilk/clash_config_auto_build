@@ -50,6 +50,28 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- name: 香港6|@ripaojiedian
+  network: tcp
+  password: 7367d04e-4c59-4dff-a50e-12e730a09891
+  port: 26193
+  server: 155.117.228.70
+  skip-cert-verify: true
+  type: trojan
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港2|@ripaojiedian
+  password: 9bfdde71b4c0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /cauejypbltqt
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 103.103.245.158
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-203.23.128.33-4885 | 0.272MB
   password: f8f7aCzcPKbsF8p3
@@ -58,7 +80,11 @@ proxies:
   type: ss
 proxy-groups:
 - name: ✈️ 选择代理
-  proxies: []
+  proxies:
+  - ⚡️ 自动优选
+  - ⚖️ 负载均衡
+  - 👆 手动选择
+  - DIRECT
   type: select
 - expected-status: 200
   include-all: true
