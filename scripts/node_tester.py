@@ -125,7 +125,11 @@ def get_exit_ip_via_proxy(proxy, runner_ip, echo_port):
         response.raise_for_status()
         proxy['exit_ip'] = response.text.strip()
         return proxy
-    except Exception:
+    except requests.exceptions.RequestException as e:
+        log_error(f"Proxy '{proxy.get('name')}' failed to get exit IP (RequestException): {e}")
+        return None
+    except Exception as e:
+        log_error(f"Proxy '{proxy.get('name')}' failed to get exit IP (Other Exception): {e}")
         return None
 
 def calibrate_and_rename_proxies(proxies_with_ip, geoip_db_path):
