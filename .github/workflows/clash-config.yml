@@ -39,7 +39,16 @@ jobs:
     - name: Create directories
       run: mkdir -p ${{ env.PROXY_DIR }} config
 
-    # 步骤5: 下载外部代理订阅文件 (使用环境变量)
+    # 步骤5: 下载上次发布的健康节点 (实现增量更新)
+    - name: Download Previous Healthy Nodes
+      run: |
+        echo "Downloading previous config.yaml from latest release..."
+        # 使用 curl 下载，如果下载失败 (例如第一次运行，还没有release)，则静默失败并继续
+        curl -L --fail -o ${{ env.PROXY_DIR }}/previous_config.yaml \
+          https://github.com/${{ github.repository }}/releases/latest/download/config.yaml || \
+          echo "Could not download previous config.yaml, proceeding without it."
+
+    # 步骤6: 下载外部代理订阅文件 (使用环境变量)
     - name: Download external proxies
       env:
         URL_LIST: ${{ vars.URL_LIST }}
