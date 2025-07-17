@@ -21,17 +21,27 @@ def log_error(message):
     print(f"[ERROR] {message}")
 
 # --- 核心功能函数 ---
-def prepare_test_config(source_path, dest_path):
-    """读取源配置文件，注入测试所需的核心配置。"""
-    log_info(f"Preparing test config from {source_path}...")
+def prepare_test_config(source_path, dest_path, template_path="config-template.yaml"):
+    """读取源配置文件，注入测试所需的核心配置，并合并模板中的DNS配置。"""
+    log_info(f"Preparing test config from {source_path} using template {template_path}...")
     try:
-        with open(source_path, 'r', encoding='utf-8') as f:
-            config = yaml.safe_load(f)
+        # Load the base template config
+        with open(template_path, 'r', encoding='utf-8') as f:
+            base_config = yaml.safe_load(f)
 
-        if not config or 'proxies' not in config or not config['proxies']:
+        # Load the proxies from the source_path
+        with open(source_path, 'r', encoding='utf-8') as f:
+            proxies_data = yaml.safe_load(f)
+
+        if not proxies_data or 'proxies' not in proxies_data or not proxies_data['proxies']:
             log_error(f"Source file {source_path} has no proxies.")
             return []
 
+        # Create the test config by merging base_config and proxies_data
+        # Start with a deep copy of the base config to avoid modifying the original template
+        config = yaml.safe_load(yaml.safe_dump(base_config))
+
+        # Add/overwrite essential test settings
         config.update({
             'external-controller': '127.0.0.1:9090',
             'log-level': 'info',
@@ -39,8 +49,12 @@ def prepare_test_config(source_path, dest_path):
             'mode': 'Rule',
         })
 
+        # Ensure rules section exists
         if 'rules' not in config:
             config['rules'] = []
+
+        # Add the proxies to the test config
+        config['proxies'] = proxies_data['proxies']
 
         with open(dest_path, 'w', encoding='utf-8') as f:
             yaml.dump(config, f, allow_unicode=True)
