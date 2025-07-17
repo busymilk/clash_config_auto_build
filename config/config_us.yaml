@@ -50,15 +50,109 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 美国 079
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.243-0176 | 39.674MB
+  password: shadowsocks
   port: 443
-  server: 135.148.74.155
-  servername: 147135004002.sec20org.com
+  server: 37.19.198.243
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.236-0170 | 64.899MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.236
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.160-0169 | 53.205MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.167-0172 | 182.857MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.170-0173 | 144.325MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.168-0175 | 178.762MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.169-0171 | 185.643MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-173.244.56.6-0177 | 47.958MB
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.6
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.131-0183 | 44.271MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.131
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-45.55.2.232-0238 | 36.921MB
+  password: 2170f8
+  port: 14293
+  server: 45.55.2.232
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.132-0182 | 40.079MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.132
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.130-0185 | 47.428MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.130
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-173.244.56.9-0178 | 2.854MB
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.9
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-104.192.226.106-0198 | 43.877MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-64.74.163.130-0346 | 35.198MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 64.74.163.130
+  type: ss
+- name: 🇺🇸US-138.197.5.103-0307 | 0.374MB
+  password: xxoo
+  port: 443
+  server: us.blazeppn.info
   skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+  sni: us.blazeppn.info
+  type: trojan
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.129-0201 | 0.0MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.129
+  type: ss
 - alterId: 0
   cipher: auto
   delay: 2889
@@ -75,28 +169,22 @@ proxies:
     headers:
       Host: us.kkp.me.eu.org
     path: /aa
-- name: 'Channel id: @ShadowProxy66🇺🇸'
-  password: 65a43b6e-19c5-4fab-b960-d110a07d66a4
-  port: 3234
-  server: 209.141.47.127
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 美国 013
-  network: ws
-  port: 8443
-  server: us01.sh-cloudflare.sbs
-  servername: us01.sh-cloudflare.sbs
+- name: 美国 079
+  port: 443
+  server: 135.148.74.155
+  servername: 147135004002.sec20org.com
+  skip-cert-verify: false
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: 2bd0c9d7-f239-437e-a1e1-6cf830af2a1a
-  ws-opts:
-    headers:
-      Host: us01.sh-cloudflare.sbs
-    path: /
+  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+- name: 🇺🇸US-192.3.107.252-0339 | 0.052MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 192.3.107.252
+  skip-cert-verify: false
+  sni: rc8.freeguard.org
+  type: trojan
 - name: 美国 060
   network: ws
   password: ttfang
@@ -108,69 +196,31 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 1890
-  h2-opts: {}
-  http-opts: {}
-  name: 美国 - 水牛城 - HostPapa - 17
-  network: ws
-  port: 8080
-  server: s1.cn-db.top
-  servername: 100-68-98-225.s1.cn-db.top
+- name: 'Channel id: @ShadowProxy66🇺🇸'
+  password: 65a43b6e-19c5-4fab-b960-d110a07d66a4
+  port: 3234
+  server: 209.141.47.127
   skip-cert-verify: true
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      HOST: 100-68-98-225.s1.cn-db.top
-    path: /dabai.in172.67.86.139
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 1996
-  h2-opts: {}
-  http-opts: {}
-  name: 美国 - 水牛城 - HostPapa - 18
-  network: ws
-  port: 80
-  server: s4.cn-db.top
-  servername: 100-242-127-44.s4.cn-db.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      HOST: 100-242-127-44.s4.cn-db.top
-    path: /dabai.in172.64.1.52
-- delay: 2361
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 103.160.204.26
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
-- delay: 2527
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2083
-  server: 194.53.53.249
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-94.131.21.174-0334 | 0.016MB
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: 94.131.21.174
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-94.131.21.174-0335 | 0.018MB
+  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
+  port: 54075
+  server: beta.mattenadene.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-104.167.197.25-0273 | 1.101MB
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  type: ss
 - name: 🇺🇸_美国_11
   network: ws
   port: 443
@@ -185,25 +235,6 @@ proxies:
     headers:
       host: wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET
     path: //
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 2224
-  h2-opts: {}
-  http-opts: {}
-  name: 美国 - 洛杉矶 - Cloudflare, Inc. - 2
-  network: ws
-  port: 443
-  server: api.jquery.com
-  servername: admin.kasrax.ir
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  ws-opts:
-    headers:
-      HOST: admin.kasrax.ir
-    path: /us.kkp.me.eu.org/aa
 - name: 🇺🇸_美国_14
   network: ws
   port: 443
@@ -218,6 +249,14 @@ proxies:
     headers:
       host: rayan-08.leila.dpdns.org
     path: /@filter_breaker
+- cipher: rc4-md5
+  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.151.182.253
+  type: ssr
 - name: 🇺🇸_美国_39
   network: ws
   port: 443
@@ -232,6 +271,34 @@ proxies:
     headers:
       host: DD3A34A9.bPB1-1TS.PaGeS.DEV
     path: /
+- name: 🇺🇸_美国_40
+  network: ws
+  port: 443
+  server: 172.67.68.240
+  servername: rayan-fg-4.medicalhistory.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
+  ws-opts:
+    headers:
+      host: rayan-fg-4.medicalhistory.filegear-sg.me
+    path: /?ed=2560
+- name: 🇺🇸_美国_51
+  network: ws
+  port: 443
+  server: 172.66.47.25
+  servername: GrOupYOUNeS.PAGes.DEV
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e2d6455c-9846-4502-8394-16b8c1c07b68
+  ws-opts:
+    headers:
+      host: GrOupYOUNeS.PAGes.DEV
+    path: /telegram@v2ray_alpha/?ed=2560
 - name: 🇺🇸_美国_47
   network: ws
   port: 443
@@ -260,20 +327,6 @@ proxies:
     headers:
       host: rayan-roof.atena.dpdns.org
     path: /
-- name: 🇺🇸_美国_49
-  network: ws
-  port: 443
-  server: 172.67.66.177
-  servername: rayan-roof.atena.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: db400287-fb42-441d-8a76-5624a8a96f49
-  ws-opts:
-    headers:
-      host: rayan-roof.atena.dpdns.org
-    path: /
 - name: 🇺🇸_美国_53
   network: ws
   port: 443
@@ -288,110 +341,137 @@ proxies:
     headers:
       host: rayan-08.leila.dpdns.org
     path: /@rayan_config
-- name: 🇺🇸_美国_51
+- name: 🇺🇸_美国_49
   network: ws
   port: 443
-  server: 172.66.47.25
-  servername: GrOupYOUNeS.PAGes.DEV
+  server: 172.67.66.177
+  servername: rayan-roof.atena.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: e2d6455c-9846-4502-8394-16b8c1c07b68
+  uuid: db400287-fb42-441d-8a76-5624a8a96f49
   ws-opts:
     headers:
-      host: GrOupYOUNeS.PAGes.DEV
-    path: /telegram@v2ray_alpha/?ed=2560
-- name: 🇺🇸_美国_40
-  network: ws
-  port: 443
-  server: 172.67.68.240
-  servername: rayan-fg-4.medicalhistory.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
-  ws-opts:
-    headers:
-      host: rayan-fg-4.medicalhistory.filegear-sg.me
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-204.136.10.115:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 204.136.10.115
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.160-096
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.160
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.236-097
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.236
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.243-103
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.243
-  type: ss
-- cipher: rc4-md5
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 107.151.182.253
-  type: ssr
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.170-100
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.169-098
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.169
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.167.197.25:57456
-  password: 360e21d21977dc11
-  port: 57456
-  server: 104.167.197.25
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.167-099
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.168-102
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  type: ss
-- name: 🇺🇸_美国_52
-  network: ws
-  port: 443
-  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
-  servername: smiTs.joOjehtor.it.cOm
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8938d63f-7dda-43be-9a1e-819adac28297
-  ws-opts:
-    headers:
-      host: smiTs.joOjehtor.it.cOm
+      host: rayan-roof.atena.dpdns.org
     path: /
+- delay: 2843
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 42
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 194.53.53.249
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 1823
+  h2-opts: {}
+  http-opts: {}
+  name: 美国 - 水牛城 - HostPapa - 4
+  network: ws
+  port: 2086
+  server: s3.cn-db.top
+  servername: 100-216-147-1.s3.cn-db.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      HOST: 100-216-147-1.s3.cn-db.top
+    path: /dabai.in104.20.109.71
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 2873
+  h2-opts: {}
+  http-opts: {}
+  name: 美国 - 水牛城 - HostPapa - 3
+  network: ws
+  port: 2095
+  server: s5.db-link01.top
+  servername: 100-61-120-107.s5.db-link01.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      HOST: 100-61-120-107.s5.db-link01.top
+    path: /dabai.in172.67.57.150
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 1890
+  h2-opts: {}
+  http-opts: {}
+  name: 美国 - 水牛城 - HostPapa - 17
+  network: ws
+  port: 8080
+  server: s1.cn-db.top
+  servername: 100-68-98-225.s1.cn-db.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      HOST: 100-68-98-225.s1.cn-db.top
+    path: /dabai.in172.67.86.139
+- delay: 2361
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 103.160.204.26
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 2381
+  h2-opts: {}
+  http-opts: {}
+  name: 美国 - 洛杉矶 - Leaseweb USA, Inc. - 6
+  network: ws
+  port: 8880
+  server: ssrsub.cloudflare.182682.xyz
+  servername: cdn-node-oss-99.paofu.de
+  skip-cert-verify: true
+  type: vmess
+  uuid: 69136cc7-d70e-4357-8230-ec82bec92c19
+  ws-opts:
+    headers:
+      HOST: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 1996
+  h2-opts: {}
+  http-opts: {}
+  name: 美国 - 水牛城 - HostPapa - 18
+  network: ws
+  port: 80
+  server: s4.cn-db.top
+  servername: 100-242-127-44.s4.cn-db.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      HOST: 100-242-127-44.s4.cn-db.top
+    path: /dabai.in172.64.1.52
 - name: 🇺🇸_美国_50
   network: ws
   port: 8443
@@ -420,90 +500,78 @@ proxies:
     headers:
       host: 0XmVfUlK85.vPbEtHoRvP002.iNfO
     path: /
-- cipher: aes-128-gcm
-  name: 🇺🇸US-173.244.56.9-105
-  password: shadowsocks
+- name: 🇺🇸_美国_52
+  network: ws
   port: 443
-  server: 173.244.56.9
-  type: ss
-- alterId: 0
+  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
+  servername: smiTs.joOjehtor.it.cOm
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8938d63f-7dda-43be-9a1e-819adac28297
+  ws-opts:
+    headers:
+      host: smiTs.joOjehtor.it.cOm
+    path: /
+- name: 🇺🇸_美国_19
+  network: ws
+  port: 443
+  server: nnctwclyx.codesofun.pp.ua
+  servername: nnctw.codesofun.pp.ua
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b9c63ff-6789-449d-e5fd-5b83fef2b440
+  ws-opts:
+    headers:
+      host: nnctw.codesofun.pp.ua
+    path: /2261acb5
+- alterId: '0'
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-orvps2.horsenma.net:8443
+  name: 🇺🇸_美国_12
   network: ws
   port: 8443
-  server: orvps2.horsenma.net
+  server: 104.17.121.140
+  tls: true
+  type: vmess
+  uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708
+  ws-opts:
+    headers:
+      host: mg-innocent-adjust-shape.trycloudflare.com
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 2224
+  h2-opts: {}
+  http-opts: {}
+  name: 美国 - 洛杉矶 - Cloudflare, Inc. - 2
+  network: ws
+  port: 443
+  server: api.jquery.com
+  servername: admin.kasrax.ir
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
   ws-opts:
     headers:
-      Host: orvps2.horsenma.net
-    path: /horsen
-- cipher: aes-256-cfb
-  name: 🇬🇧_GB_英国->🇺🇸_US_美国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-173.244.56.6-104
-  password: shadowsocks
-  port: 443
-  server: 173.244.56.6
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-104.192.226.106-124
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇲🇩_MD_摩尔多瓦->🇺🇸_US_美国_1@3
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-45.55.2.232-164
-  password: 2170f8
-  port: 14293
-  server: 45.55.2.232
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-64.74.163.130-271
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.130
-  type: ss
-- name: 🇺🇸US-138.197.5.103-233
-  password: xxoo
-  port: 443
-  server: us.blazeppn.info
-  skip-cert-verify: true
-  sni: us.blazeppn.info
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-94.131.21.174-259
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: 94.131.21.174
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-94.131.21.174-260
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-  port: 54075
-  server: beta.mattenadene.org
-  type: ss
-- name: 🇺🇸US-198.23.229.250-0333 | 0.021MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 198.23.229.250
-  skip-cert-verify: false
-  sni: rc6.freeguard.org
-  type: trojan
+      HOST: admin.kasrax.ir
+    path: /us.kkp.me.eu.org/aa
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸_美国_21
+  network: ws
+  port: 8880
+  server: www.visa.com.sg
+  type: vmess
+  uuid: 92e886f3-53c4-41a9-de97-a54f3abbdd9e
+  ws-opts:
+    headers:
+      host: does-consolidated-gs-links.trycloudflare.com
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
