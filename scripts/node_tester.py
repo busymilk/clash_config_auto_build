@@ -8,10 +8,10 @@ import requests
 import yaml
 
 # --- 全局配置 ---
-DEFAULT_TEST_URL = "https://www.gstatic.com/generate_204" # 默认延迟测试URL
-DEFAULT_DELAY_LIMIT = 3000  # 默认延迟上限 (ms)
-DEFAULT_TIMEOUT = 5000      # 默认API超时 (ms)
-DEFAULT_MAX_WORKERS = 80    # 默认并发线程数
+DEFAULT_TEST_URL = "https://www.apple.com/library/test/success.html" # 默认延迟测试URL
+DEFAULT_DELAY_LIMIT = 4000  # 默认延迟上限 (ms)
+DEFAULT_TIMEOUT = 6000      # 默认API超时 (ms)
+DEFAULT_MAX_WORKERS = 100    # 默认并发线程数
 
 # --- 日志记录 ---
 def log_info(message):
