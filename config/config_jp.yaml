@@ -49,7 +49,41 @@ ntp:
 profile:
   store-fake-ip: true
   store-selected: true
-proxies: []
+proxies:
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0267 | 23.184MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0269 | 22.932MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇯🇵JP-3.113.25.232-040
+  password: awsps0501
+  port: 443
+  server: 3.113.25.232
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
