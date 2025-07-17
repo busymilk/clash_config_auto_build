@@ -80,20 +80,31 @@ def stop_mihomo(process):
 def check_proxy_delay(proxy, api_url, timeout, delay_limit, test_url):
     """通过 mihomo API 测试单个代理的延迟。"""
     proxy_name = proxy.get("name")
-    if not proxy_name: return None
+    if not proxy_name:
+        log_error("Proxy name is missing.")
+        return None
     try:
         quoted_proxy_name = urllib.parse.quote(proxy_name)
         url = f"http://{api_url}/proxies/{quoted_proxy_name}/delay?timeout={timeout}&url={urllib.parse.quote(test_url)}"
         response = requests.get(url, timeout=(timeout / 1000) + 5)
-        response.raise_for_status()
+        response.raise_for_status() # This will raise an HTTPError for bad responses (4xx or 5xx)
         data = response.json()
         delay = data.get("delay", -1)
         if 0 < delay <= delay_limit:
             log_info(f"Proxy '{proxy_name}' PASSED delay test with {delay}ms.")
             return proxy
-    except Exception:
-        pass
-    return None
+        else:
+            log_error(f"Proxy '{proxy_name}' FAILED delay test: Delay {delay}ms not within 0-{delay_limit}ms.")
+            return None
+    except requests.exceptions.RequestException as e:
+        log_error(f"Proxy '{proxy_name}' FAILED delay test (RequestException): {e}")
+        return None
+    except ValueError as e: # Catches JSON decoding errors
+        log_error(f"Proxy '{proxy_name}' FAILED delay test (JSON Decode Error): {e}. Response content: {response.text[:200]}...")
+        return None
+    except Exception as e:
+        log_error(f"Proxy '{proxy_name}' FAILED delay test (Other Exception): {e}")
+        return None
 
 def main(args):
     test_config_path = "config_for_test.yaml"
