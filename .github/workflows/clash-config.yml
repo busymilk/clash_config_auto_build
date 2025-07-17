@@ -82,9 +82,11 @@ jobs:
         chmod +x mihomo
         mv mihomo /usr/local/bin/mihomo
 
-        # 2. 下载 GeoIP 数据库
+        # 2. 下载 GeoIP 数据库 (MaxMind DB格式)
         echo "Downloading GeoIP database..."
-        curl -L --fail -o geoip.dat https://github.com/Loyalsoldier/geoip/releases/latest/download/geoip.dat
+        # 我们需要一个MaxMind格式的数据库来配合geoip2库
+        # 使用P3TERX维护的镜像来下载
+        curl -L --fail -o geoip.mmdb https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb
 
         # 3. 运行测试和校准脚本
         echo "Running node tester and calibration script..."
@@ -92,7 +94,7 @@ jobs:
           --input-file all_unique_nodes.yaml \
           --output healthy_nodes_list.yaml \
           --clash-path /usr/local/bin/mihomo \
-          --geoip-dat-path ./geoip.dat \
+          --geoip-dat-path ./geoip.mmdb \
           --test-url "https://www.google.com/generate_204"
         
         # 4. 设置输出，供下一步使用
