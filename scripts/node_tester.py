@@ -60,7 +60,21 @@ def start_mihomo(mihomo_path, config_path):
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='utf-8'
         )
         time.sleep(5)
+        # 尝试读取mihomo的输出，以便诊断启动问题
+        stdout, stderr = process.communicate(timeout=1) # 使用communicate来获取输出，但设置短超时以避免阻塞
+        if stdout:
+            log_info(f"mihomo stdout: {stdout.strip()}")
+        if stderr:
+            log_error(f"mihomo stderr: {stderr.strip()}")
+
+        if process.poll() is not None: # 检查进程是否已经退出
+            log_error(f"mihomo process exited prematurely with code {process.returncode}.")
+            return None
+
         log_info("mihomo process started.")
+        return process
+    except subprocess.TimeoutExpired:
+        log_info("mihomo process started and is running in background (timeout on communicate)...")
         return process
     except Exception as e:
         log_error(f"Failed to start mihomo: {e}")
