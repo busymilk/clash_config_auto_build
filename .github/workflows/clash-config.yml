@@ -82,11 +82,12 @@ jobs:
 
         # 3. 执行两阶段测试
         echo "[PHASE 1/2] Running small speed test to filter nodes..."
-        # 使用一个极小的速度测试(-sl 100)来触发文件输出功能，这能有效过滤掉无法连接的节点
-        ./clash-speedtest -c config_for_test.yaml -output phase1_passed.yaml -sl 100
+        # 使用 -d 1 (下载1MB) 进行快速测试，以过滤掉无法连接的节点
+        ./clash-speedtest -c config_for_test.yaml -output phase1_passed.yaml -d 1
 
-        echo "[PHASE 2/2] Running speed test and renaming nodes..."
-        ./clash-speedtest -c phase1_passed.yaml -output final_healthy_config.yaml -sl 10240 -rename
+        echo "[PHASE 2/2] Running full speed test..."
+        # 使用 -d 10 (下载10MB) 进行精确测速，工具会自动重命名节点
+        ./clash-speedtest -c phase1_passed.yaml -output final_healthy_config.yaml -d 10
 
         # 4. 提取纯净的、健康的节点列表，为下一步做准备
         echo "Extracting healthy proxies list..."
