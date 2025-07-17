@@ -55,47 +55,48 @@ jobs:
           curl -sSL "$url" -o "$output" || echo "Failed to download: $url"
         done
 
-    # 步骤6: 生成所有配置文件 (由总指挥脚本全权负责)
-    - name: Generate All Configs
-      id: generate
-      # 将 PROXY_DIR 环境变量传递给 Python 脚本
-      env:
-        PROXY_DIR: ${{ env.PROXY_DIR }}
-      run: python -u scripts/generate_config.py
-
-    # 步骤7: 使用 clash-speedtest 进行两阶段节点过滤
-    - name: Two-Phase Node Filtering with clash-speedtest
+    # 步骤6: 合并所有订阅源的节点并去重
+    - name: Merge All Proxies
       run: |
-        # 下载并解压 clash-speedtest 工具
+        python scripts/merge_proxies.py \
+          --proxies-dir ${{ env.PROXY_DIR }} \
+          --output all_unique_nodes.yaml
+
+    # 步骤7: 集中进行两阶段节点测试
+    - name: Centralized Two-Phase Node Test
+      id: test_nodes
+      run: |
+        # 安装 yq 用于处理 yaml 文件
+        sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
+
+        # 1. 准备测试配置文件
+        echo "Preparing config file for testing..."
+        # 使用 yq 将节点列表合并到模板中，创建测试文件
+        yq eval-all 'select(fi == 0) * select(fi == 1)' config-template.yaml all_unique_nodes.yaml > config_for_test.yaml
+
+        # 2. 下载并准备 clash-speedtest 工具
         echo "Downloading clash-speedtest..."
-        # 使用 -L 进行重定向跟踪, -f/--fail 使其在HTTP错误时快速失败
-        curl -L --fail -o clash-speedtest.tar.gz https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_arm64.tar.gz
+        curl -L --fail -o clash-speedtest.tar.gz https://github.com/faceair/clash-speedtest/releases/download/v1.7.0/clash-speedtest_Linux_i386.tar.gz
         tar -zxvf clash-speedtest.tar.gz
         chmod +x clash-speedtest
-        
-        echo "--- Starting Two-Phase Filtering for all configs in config/ directory ---"
-        # 遍历 config 目录下的所有 yaml 文件
-        for config_file in config/*.yaml; do
-          echo "\n[PHASE 1/2] Processing $config_file for initial connectivity check..."
-          # 定义第一阶段的临时输出文件
-          phase1_filtered_file="${config_file%.yaml}_phase1.yaml"
-          
-          # 运行快速连通性测试 (使用 -fast 模式，仅测试延迟和连通性)
-          ./clash-speedtest -c "$config_file" -o "$phase1_filtered_file" -fast
-          echo "Phase 1 for $config_file completed."
 
-          echo "\n[PHASE 2/2] Processing $phase1_filtered_file for speed test and renaming..."
-          # 第二阶段：在第一阶段的基础上进行测速和重命名
-          # -sl 10240 使用10MB文件进行测试
-          # -rename 根据延迟和地区信息重命名节点
-          # 最终的输出会直接覆盖原始文件
-          ./clash-speedtest -c "$phase1_filtered_file" -o "$config_file" -sl 10240 -rename
-          echo "Phase 2 for $config_file completed. Final filtered config saved to $config_file."
+        # 3. 执行两阶段测试
+        echo "[PHASE 1/2] Running fast connectivity check..."
+        ./clash-speedtest -c config_for_test.yaml -o phase1_passed.yaml -fast
 
-          # 清理第一阶段的临时文件
-          rm "$phase1_filtered_file"
-        done
-        echo "\n--- All configurations have been filtered and updated. ---"
+        echo "[PHASE 2/2] Running speed test and renaming nodes..."
+        ./clash-speedtest -c phase1_passed.yaml -o final_healthy_config.yaml -sl 10240 -rename
+
+        # 4. 提取纯净的、健康的节点列表，为下一步做准备
+        echo "Extracting healthy proxies list..."
+        yq eval '.proxies' final_healthy_config.yaml > healthy_nodes_list.yaml
+        echo "::set-output name=healthy_nodes_file::healthy_nodes_list.yaml"
+
+    # 步骤8: 使用健康的节点分发生成所有最终配置文件
+    - name: Generate Final Configs from Healthy Nodes
+      id: generate
+      run: |
+        python scripts/generate_config.py --use-pre-tested-nodes ${{ steps.test_nodes.outputs.healthy_nodes_file }}
 
     # 步骤8: 上传所有构建产物
     - name: Upload All Config Artifacts
