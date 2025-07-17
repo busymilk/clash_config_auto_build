@@ -5,6 +5,7 @@ import time
 import urllib.parse
 import threading
 import os
+import socketserver # 导入 socketserver 模块
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -13,11 +14,11 @@ import yaml
 import geoip2.database
 
 # --- 全局配置 ---
-DEFAULT_TEST_URL = "https://www.google.com/generate_204"
-DEFAULT_DELAY_LIMIT = 3000
-DEFAULT_TIMEOUT = 5000
-DEFAULT_MAX_WORKERS = 80
-IP_ECHO_PORT = 8080
+DEFAULT_TEST_URL = "https://www.google.com/generate_204" # 默认延迟测试URL
+DEFAULT_DELAY_LIMIT = 3000  # 默认延迟上限 (ms)
+DEFAULT_TIMEOUT = 5000      # 默认API超时 (ms)
+DEFAULT_MAX_WORKERS = 80    # 默认并发线程数
+IP_ECHO_PORT = 8080         # 本地IP回显服务器端口
 
 # --- 日志记录 ---
 def log_info(message):
@@ -28,18 +29,21 @@ def log_error(message):
 
 # --- 本地IP回显服务器 ---
 class IPEchoHandler(BaseHTTPRequestHandler):
+    """一个简单的HTTP请求处理器，它会将来访者的IP地址作为响应返回。"""
     def do_GET(self):
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
         self.wfile.write(self.client_address[0].encode('utf-8'))
     def log_message(self, format, *args):
+        # 重写此方法以禁止在控制台打印每个HTTP请求的日志
         return
 
 class ThreadedHTTPServer(socketserver.ThreadingMixIn, HTTPServer):
     daemon_threads = True
 
 def run_ip_echo_server(port=IP_ECHO_PORT):
+    """在一个独立的守护线程中运行IP回显服务器。"""
     # 监听 0.0.0.0 以接收来自公网的请求
     server_address = ('0.0.0.0', port)
     # 使用多线程服务器
@@ -53,24 +57,30 @@ def run_ip_echo_server(port=IP_ECHO_PORT):
 # --- 核心功能函数 ---
 
 def prepare_test_config(source_path, dest_path):
+    """读取源配置文件，注入测试所需的核心配置，并增加IP回显服务器的直连规则。"""
     log_info(f"Preparing test config from {source_path}...")
     try:
         with open(source_path, 'r', encoding='utf-8') as f:
             config = yaml.safe_load(f)
+
         if not config or 'proxies' not in config or not config['proxies']:
-            log_error(f"Source file {source_path} is empty or has no proxies.")
+            log_error(f"Source file {source_path} has no proxies.")
             return []
+
         config.update({
             'external-controller': '127.0.0.1:9090',
             'log-level': 'info',
-            'mixed-port': 7890,
+            'mixed-port': 7890, # 必须开启mixed-port才能通过socks5选择出口节点
             'mode': 'Rule',
         })
+
         # 注意：我们不再需要IP-CIDR规则，因为我们将请求公网IP
         if 'rules' not in config:
             config['rules'] = []
+
         with open(dest_path, 'w', encoding='utf-8') as f:
             yaml.dump(config, f, allow_unicode=True)
+
         log_info(f'Test config prepared and saved to {dest_path}')
         return config.get("proxies", [])
     except Exception as e:
@@ -78,6 +88,7 @@ def prepare_test_config(source_path, dest_path):
         return []
 
 def start_mihomo(mihomo_path, config_path):
+    """启动 mihomo 核心进程。"""
     log_info(f"Starting mihomo with config: {config_path}...")
     try:
         process = subprocess.Popen(
@@ -92,6 +103,7 @@ def start_mihomo(mihomo_path, config_path):
         return None
 
 def stop_mihomo(process):
+    """停止 mihomo 核心进程。"""
     if process:
         log_info("Stopping mihomo process...")
         process.terminate()
@@ -102,6 +114,7 @@ def stop_mihomo(process):
         log_info("mihomo process stopped.")
 
 def check_proxy_delay(proxy, api_url, timeout, delay_limit, test_url):
+    """通过 mihomo API 测试单个代理的延迟。"""
     proxy_name = proxy.get("name")
     if not proxy_name: return None
     try:
@@ -112,7 +125,7 @@ def check_proxy_delay(proxy, api_url, timeout, delay_limit, test_url):
         data = response.json()
         delay = data.get("delay", -1)
         if 0 < delay <= delay_limit:
-            log_info(f"Proxy \'{proxy_name}\' PASSED delay test with {delay}ms.")
+            log_info(f"Proxy '{proxy_name}' PASSED delay test with {delay}ms.")
             return proxy
     except Exception:
         pass
@@ -139,6 +152,7 @@ def get_exit_ip_via_proxy(proxy, runner_ip, echo_port, retries=3, initial_timeou
     return None
 
 def calibrate_and_rename_proxies(proxies_with_ip, geoip_db_path):
+    """使用GeoIP数据库校准节点归属地，并根据结果重命名节点。"""
     log_info("Calibrating country codes...")
     reader = None
     try:
@@ -147,6 +161,7 @@ def calibrate_and_rename_proxies(proxies_with_ip, geoip_db_path):
         log_error(f"Failed to load GeoIP database: {e}")
         return proxies_with_ip
 
+    # 清理旧的地区标识，例如 [US], (HK), |SG| 等
     def clean_name(name):
         return re.sub(r'[\(\[【].*?[\)\]】]', '', name).strip()
 
