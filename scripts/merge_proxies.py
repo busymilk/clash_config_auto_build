@@ -4,6 +4,7 @@ import glob
 import logging
 import re
 import argparse
+import urllib.parse
 
 # --- 配置日志记录 ---
 # 设置日志的格式和级别，方便调试和追踪脚本执行情况
@@ -46,6 +47,25 @@ BLACKLIST_KEYWORDS = [
     '电报', '日期', '免费', '关注','频道'
 ]
 
+def parse_plugin_args(plugin_args_str):
+    args = {}
+    if not plugin_args_str:
+        return args
+    for part in plugin_args_str.split(';'):
+        if '=' in part:
+            key, value = part.split('=', 1)
+            # Handle boolean values
+            if value.lower() == 'true':
+                args[key] = True
+            elif value.lower() == 'false':
+                args[key] = False
+            else:
+                args[key] = value
+        else:
+            # Handle boolean flags like 'tls' without an explicit value
+            args[part] = True # Assume it's a boolean flag if no '='
+    return args
+
 def merge_proxies(proxies_dir, output_file, name_filter=None):
     """
     合并指定目录下的所有代理配置文件。
@@ -72,12 +92,52 @@ def merge_proxies(proxies_dir, output_file, name_filter=None):
                     continue
 
                 for proxy in data['proxies']:
-                    # ... (内部的节点处理逻辑保持不变)
                     name = proxy.get('name')
                     server = proxy.get('server')
-                    port = proxy.get('port')
+                    port_val = proxy.get('port')
                     proxy_type = proxy.get('type')
-                    identifier = (server, proxy_type, port)
+
+                    # --- 处理端口和插件信息 ---
+                    if isinstance(port_val, str):
+                        if '?plugin=' in port_val:
+                            port_str, plugin_query = port_val.split('?plugin=', 1)
+                            try:
+                                proxy['port'] = int(port_str)
+                            except ValueError:
+                                logging.warning(f"Invalid port format for proxy {name}: {port_str}. Skipping.")
+                                continue # Skip this proxy if port is not an int
+
+                            # Decode URL-encoded plugin query string
+                            plugin_query = urllib.parse.unquote(plugin_query)
+
+                            # The plugin type is usually the first part of the plugin_query
+                            # e.g., v2ray-plugin;mode=websocket...
+                            plugin_type_match = re.match(r'([^;]+);?(.*)', plugin_query)
+                            if plugin_type_match:
+                                plugin_type = plugin_type_match.group(1)
+                                plugin_args_str = plugin_type_match.group(2)
+                                
+                                plugin_args = parse_plugin_args(plugin_args_str)
+                                
+                                proxy['plugin'] = {
+                                    'type': plugin_type,
+                                    'args': plugin_args
+                                }
+                            else:
+                                # If no args, just the type
+                                proxy['plugin'] = {
+                                    'type': plugin_query,
+                                    'args': {}
+                                }
+                        else:
+                            # If it's a string but not a plugin URL, try to convert to int
+                            try:
+                                proxy['port'] = int(port_val)
+                            except ValueError:
+                                logging.warning(f"Invalid port format for proxy {name}: {port_val}. Skipping.")
+                                continue # Skip this proxy if port is not an int
+
+                    identifier = (server, proxy_type, proxy.get('port')) # Use the potentially updated port
 
                     if not all(identifier):
                         continue
