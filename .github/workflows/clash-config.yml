@@ -79,8 +79,8 @@ jobs:
           # 定义第一阶段的临时输出文件
           phase1_filtered_file="${config_file%.yaml}_phase1.yaml"
           
-          # 运行快速连通性测试 (-sl 100 使用100KB文件)
-          ./clash-speedtest -c "$config_file" -o "$phase1_filtered_file" -sl 100
+          # 运行快速连通性测试 (使用 -fast 模式，仅测试延迟和连通性)
+          ./clash-speedtest -c "$config_file" -o "$phase1_filtered_file" -fast
           echo "Phase 1 for $config_file completed."
 
           echo "\n[PHASE 2/2] Processing $phase1_filtered_file for speed test and renaming..."
