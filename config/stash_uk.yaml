@@ -69,6 +69,12 @@ proxies:
   server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-152
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-149
   password: shadowsocks
   port: 443
@@ -81,23 +87,11 @@ proxies:
   server: 85.210.120.237
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.195-152
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.79-154
   password: shadowsocks
   port: 443
   server: 212.102.53.79
   type: ss
-- name: 🇬🇧GB-109.107.159.98-081
-  password: 74260628090146500
-  port: 443
-  server: huge-turkey.shiner427.skin
-  skip-cert-verify: true
-  type: trojan
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-156
   password: shadowsocks
@@ -110,23 +104,23 @@ proxies:
   port: 443
   server: 212.102.53.81
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.19.69-142
-  password: W74XFALLLuw6m5IA
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-162
+  password: shadowsocks
   port: 443
-  server: series-a1.samanehha.co
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.36.164-148
-  password: u17T3BvpYaaiuW2c
-  port: 443
-  server: series-a2-mec.varzesh360.co
+  server: 212.102.53.193
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-85.210.19.69-150
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a2.samanehha.co
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.198-165
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-85.210.19.69-145
@@ -135,16 +129,10 @@ proxies:
   server: series-a2.varzesh360.co
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-131.145.74.102-143
-  password: 69MUii7VDwMqh7Hz
+  name: 🇬🇧GB-85.210.19.69-142
+  password: W74XFALLLuw6m5IA
   port: 443
-  server: admin.c4.webramz.co
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.36.164-146
-  password: u17T3BvpYaaiuW2c
-  port: 443
-  server: series-a2-mec.samanehha.co
+  server: series-a1.samanehha.co
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-85.210.36.164-157
@@ -159,22 +147,34 @@ proxies:
   server: admin.c1.webramz.co
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.193-162
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-160
   password: shadowsocks
   port: 443
   server: uk-dc1.yangon.club
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-131.145.74.102-143
+  password: 69MUii7VDwMqh7Hz
+  port: 443
+  server: admin.c4.webramz.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-85.210.36.164-146
+  password: u17T3BvpYaaiuW2c
+  port: 443
+  server: series-a2-mec.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-85.210.36.164-148
+  password: u17T3BvpYaaiuW2c
+  port: 443
+  server: series-a2-mec.varzesh360.co
+  type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.198-165
+  name: 🇬🇧GB-212.102.53.80-180
   password: shadowsocks
   port: 443
-  server: 212.102.53.198
+  server: 212.102.53.80
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-85.210.19.69-159
@@ -189,16 +189,22 @@ proxies:
   server: 62.100.205.48
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.80-180
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-141.98.101.178-178
   password: shadowsocks
   port: 443
   server: 141.98.101.178
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国->🇳🇱_NL_荷兰
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-131.145.29.247-0212 | 25.622MB
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: admin.c3.webramz.co
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-185.5.38.111-263
@@ -211,12 +217,6 @@ proxies:
   password: FjgGNNHQiELzxXmaHRxxtQbxDDvGXFxYdTbYe91JKZsjvKLHoY9rn9ruYE45377WjtU3m4kmXQZDXiHBJsgVfhmpawEoGvq9
   port: 55988
   server: mx2.drawnrisha.one
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
   type: ss
 proxy-groups:
 - name: ✈️ 选择代理
