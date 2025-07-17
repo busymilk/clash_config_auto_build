@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 import yaml
-from ip2geotools.databases.noncommercial import DbIpCity
+import geoip2.database
 
 # --- 全局配置 ---
 DEFAULT_TEST_URL = "https://www.google.com/generate_204" # 默认延迟测试URL
@@ -142,6 +142,14 @@ def get_exit_ip_via_proxy(proxy, echo_port):
 def calibrate_and_rename_proxies(proxies_with_ip, geoip_dat_path):
     """使用GeoIP数据库校准节点归属地，并根据结果重命名节点。"""
     log_info("Calibrating country codes for proxies with resolved IP...")
+    reader = None
+    try:
+        # 使用 with geoip2.database.Reader 打开数据库文件
+        reader = geoip2.database.Reader(geoip_dat_path)
+    except Exception as e:
+        log_error(f"Failed to load GeoIP database from {geoip_dat_path}: {e}")
+        # 如果数据库加载失败，则直接返回未重命名的节点
+        return proxies_with_ip
 
     # 清理旧的地区标识，例如 [US], (HK), |SG| 等
     def clean_name(name):
@@ -156,18 +164,24 @@ def calibrate_and_rename_proxies(proxies_with_ip, geoip_dat_path):
             continue
 
         try:
-            # 使用 ip2geotools 进行查询
-            response = DbIpCity.get(exit_ip, api_key='free', db_path=geoip_dat_path)
-            country_code = response.country
+            # 使用 geoip2 进行查询
+            response = reader.country(exit_ip)
+            country_code = response.country.iso_code
+        except geoip2.errors.AddressNotFoundError:
+            # 如果是私有地址或数据库中不存在的地址，则无法找到国家
+            country_code = None
         except Exception:
-            # 如果查询失败，则将国家代码设为None
+            # 其他查询错误
             country_code = None
 
-        if country_code and country_code != 'ZZ': # ZZ 表示未知或保留地址
+        if country_code:
             proxy['name'] = f"[{country_code}] {clean_name(original_name)}"
         else:
             proxy['name'] = clean_name(original_name)
         final_proxies.append(proxy)
+    
+    if reader:
+        reader.close()
             
     log_info("Finished calibrating and renaming proxies.")
     return final_proxies
