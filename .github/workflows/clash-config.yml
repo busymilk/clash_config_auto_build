@@ -62,38 +62,27 @@ jobs:
           --proxies-dir ${{ env.PROXY_DIR }} \
           --output all_unique_nodes.yaml
 
-    # 步骤7: 集中进行两阶段节点测试
-    - name: Centralized Two-Phase Node Test
+    # 步骤7: 使用新的Python脚本进行节点测试
+    - name: Test Nodes with Python Script
       id: test_nodes
       run: |
-        # 安装 yq 用于处理 yaml 文件
-        sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
+        # 1. 下载并准备 Clash Meta 核心
+        echo "Downloading Clash Meta executable..."
+        curl -L --fail -o clash.gz https://github.com/MetaCubeX/Clash.Meta/releases/download/v1.18.0/clash.meta-linux-amd64-v1.18.0.gz
+        gunzip clash.gz
+        chmod +x clash
+        mv clash /usr/local/bin/clash-meta
 
-        # 1. 准备测试配置文件
-        echo "Preparing config file for testing..."
-        # 使用 yq 将节点列表合并到模板中，创建测试文件
-        yq eval-all 'select(fi == 0) * select(fi == 1)' config-template.yaml all_unique_nodes.yaml > config_for_test.yaml
-
-        # 2. 下载并准备 clash-speedtest 工具
-        echo "Downloading clash-speedtest..."
-        curl -L --fail -o clash-speedtest.tar.gz https://github.com/faceair/clash-speedtest/releases/download/v1.7.0/clash-speedtest_Linux_i386.tar.gz
-        tar -zxvf clash-speedtest.tar.gz
-        chmod +x clash-speedtest
-
-        # 3. 执行两阶段测试
-        echo "[PHASE 1/2] Running latency test to filter dead nodes..."
-        # 使用 -download-size 0 跳过速度测试，并用 -max-latency 过滤掉延迟超时的节点
-        ./clash-speedtest -c config_for_test.yaml -output phase1_passed.yaml -download-size 0 -max-latency 2000ms
-
-        echo "[PHASE 2/2] Running full speed test and renaming..."
-        # 使用 -download-size 进行精确测速，并使用 -rename 参数重命名节点
-        # 10MB = 10 * 1024 * 1024 = 10485760 bytes
-        ./clash-speedtest -c phase1_passed.yaml -output final_healthy_config.yaml -download-size 10485760 -rename
-
-        # 4. 提取纯净的、健康的节点列表，为下一步做准备
-        echo "Extracting healthy proxies list..."
-        yq eval '.proxies' final_healthy_config.yaml > healthy_nodes_list.yaml
-        echo "::set-output name=healthy_nodes_file::healthy_nodes_list.yaml"
+        # 2. 运行测试脚本
+        echo "Running node tester script..."
+        python scripts/node_tester.py \
+          --input-file all_unique_nodes.yaml \
+          --output healthy_nodes_list.yaml \
+          --clash-path /usr/local/bin/clash-meta
+        
+        # 3. 设置输出，供下一步使用
+        echo "Setting output for next step..."
+        echo "healthy_nodes_file=healthy_nodes_list.yaml" >> $GITHUB_OUTPUT
 
     # 步骤8: 使用健康的节点分发生成所有最终配置文件
     - name: Generate Final Configs from Healthy Nodes
