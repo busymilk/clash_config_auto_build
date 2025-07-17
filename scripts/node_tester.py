@@ -1,14 +1,11 @@
 import argparse
-import re
 import subprocess
 import time
 import urllib.parse
-import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 import yaml
-import geoip2.database
 
 # --- 全局配置 ---
 DEFAULT_TEST_URL = "https://www.google.com/generate_204" # 默认延迟测试URL
@@ -98,80 +95,6 @@ def check_proxy_delay(proxy, api_url, timeout, delay_limit, test_url):
         pass
     return None
 
-def get_exit_ip_via_proxy(proxy, retries=3, initial_timeout=10):
-    """通过指定代理访问 https://api64.ipify.org 以获取真实出口IP，并支持重试。"""
-    proxy_name = proxy.get("name")
-    if not proxy_name:
-        return None
-
-    # 假设 mihomo/clash 内核支持通过 SOCKS5 的用户名来选择出站代理，这并非标准行为，但在此遵循原作者的实现逻辑
-    proxy_url = f'socks5h://{urllib.parse.quote(proxy_name)}@127.0.0.1:7890'
-    target_url = 'https://api64.ipify.org'
-
-    for attempt in range(retries):
-        try:
-            timeout = initial_timeout * (1.5 ** attempt)  # 指数退避
-            response = requests.get(
-                target_url,
-                proxies={'https': proxy_url, 'http': proxy_url},
-                timeout=timeout
-            )
-            response.raise_for_status()
-            ip_address = response.text.strip()
-            
-            # 验证返回的是一个有效的IPv4或IPv6地址
-            if re.match(r'^(\d{1,3}\.){3}\d{1,3}$', ip_address) or re.match(r'^[a-f0-9:]+$', ip_address, re.IGNORECASE):
-                proxy['exit_ip'] = ip_address
-                log_info(f"Proxy '{proxy_name}' exit IP: {proxy['exit_ip']} (Attempt {attempt + 1})")
-                return proxy
-            else:
-                log_error(f"Proxy '{proxy_name}' received invalid IP response: '{ip_address}' (Attempt {attempt + 1})")
-        except requests.exceptions.RequestException as e:
-            log_error(f"Proxy '{proxy_name}' failed to get exit IP (RequestException, Attempt {attempt + 1}/{retries}): {e}")
-        except Exception as e:
-            log_error(f"Proxy '{proxy_name}' failed to get exit IP (Other Exception, Attempt {attempt + 1}/{retries}): {e}")
-        time.sleep(1)  # 每次重试前等待1秒
-    return None
-
-def calibrate_and_rename_proxies(proxies_with_ip, geoip_db_path):
-    """使用GeoIP数据库校准节点归属地，并根据结果重命名节点。"""
-    log_info("Calibrating country codes...")
-    reader = None
-    try:
-        reader = geoip2.database.Reader(geoip_db_path)
-    except Exception as e:
-        log_error(f"Failed to load GeoIP database: {e}")
-        return proxies_with_ip
-
-    # 清理旧的地区标识，例如 [US], (HK), |SG| 等
-    def clean_name(name):
-        return re.sub(r'[\(\[【].*?[\)\]】]', '', name).strip()
-
-    final_proxies = []
-    for proxy in proxies_with_ip:
-        exit_ip = proxy.get('exit_ip')
-        original_name = proxy.get('name', '')
-        if not exit_ip:
-            continue
-        try:
-            response = reader.country(exit_ip)
-            country_code = response.country.iso_code
-        except geoip2.errors.AddressNotFoundError:
-            country_code = None
-        except Exception:
-            country_code = None
-
-        if country_code and country_code != 'ZZ':
-            proxy['name'] = f"[{country_code}] {clean_name(original_name)}"
-        else:
-            proxy['name'] = clean_name(original_name)
-        final_proxies.append(proxy)
-    
-    if reader:
-        reader.close()
-    log_info("Finished calibrating and renaming proxies.")
-    return final_proxies
-
 def main(args):
     test_config_path = "config_for_test.yaml"
     proxies_to_test = prepare_test_config(args.input_file, test_config_path)
@@ -183,7 +106,6 @@ def main(args):
         return
 
     healthy_proxies = []
-    proxies_with_ip = []
 
     try:
         log_info(f"Testing delay for {len(proxies_to_test)} proxies...")
@@ -196,18 +118,7 @@ def main(args):
                     healthy_proxies.append(result)
         log_info(f"Found {len(healthy_proxies)} healthy proxies after delay test.")
 
-        if healthy_proxies:
-            log_info(f"Fetching exit IP for {len(healthy_proxies)} healthy proxies...")
-            with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
-                future_to_ip = {executor.submit(get_exit_ip_via_proxy, p): p for p in healthy_proxies}
-                for future in as_completed(future_to_ip):
-                    result = future.result()
-                    if result:
-                        proxies_with_ip.append(result)
-            log_info(f"Successfully fetched IP for {len(proxies_with_ip)} proxies.")
-            final_proxies_to_save = calibrate_and_rename_proxies(proxies_with_ip, args.geoip_dat_path)
-        else:
-            final_proxies_to_save = healthy_proxies
+        final_proxies_to_save = healthy_proxies
 
     finally:
         stop_mihomo(mihomo_process)
@@ -222,7 +133,6 @@ if __name__ == "__main__":
     parser.add_argument("-i", "--input-file", required=True, help="Path to the input clash config file.")
     parser.add_argument("-o", "--output-file", required=True, help="Path to save the final list of healthy proxies.")
     parser.add_argument("-p", "--clash-path", required=True, help="Path to the mihomo executable file.")
-    parser.add_argument("-g", "--geoip-dat-path", required=True, help="Path to the geoip.dat file.")
     parser.add_argument("--test-url", default=DEFAULT_TEST_URL, help="URL for testing proxy delay.")
     parser.add_argument("--delay-limit", type=int, default=DEFAULT_DELAY_LIMIT, help="Maximum acceptable delay in ms.")
     parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT, help="Request timeout for delay test in ms.")
