@@ -49,7 +49,14 @@ ntp:
 profile:
   store-fake-ip: true
   store-selected: true
-proxies: []
+proxies:
+- cipher: aes-128-gcm
+  exit_ip: 40.116.93.48
+  name: '[US] 🇯🇵JP-149.22.87.241-0196 | 44.803MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies: []
