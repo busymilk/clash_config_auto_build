@@ -36,10 +36,14 @@ class IPEchoHandler(BaseHTTPRequestHandler):
     def log_message(self, format, *args):
         return
 
+class ThreadedHTTPServer(socketserver.ThreadingMixIn, HTTPServer):
+    daemon_threads = True
+
 def run_ip_echo_server(port=IP_ECHO_PORT):
     # 监听 0.0.0.0 以接收来自公网的请求
     server_address = ('0.0.0.0', port)
-    httpd = HTTPServer(server_address, IPEchoHandler)
+    # 使用多线程服务器
+    httpd = ThreadedHTTPServer(server_address, IPEchoHandler)
     log_info(f"Starting local IP echo server on port {port}...")
     thread = threading.Thread(target=httpd.serve_forever)
     thread.daemon = True
