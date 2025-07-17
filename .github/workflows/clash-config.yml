@@ -33,7 +33,7 @@ jobs:
 
     # 步骤3: 安装 Python 依赖
     - name: Install dependencies
-      run: pip install pyyaml requests
+      run: pip install pyyaml requests v2ray-util
 
     # 步骤4: 创建所需目录 (使用环境变量)
     - name: Create directories
@@ -71,26 +71,31 @@ jobs:
           --proxies-dir ${{ env.PROXY_DIR }} \
           --output all_unique_nodes.yaml
 
-    # 步骤7: 使用新的Python脚本进行节点测试
-    - name: Test Nodes with Python Script
+    # 步骤7: 使用新的Python脚本进行节点测试和IP归属地校准
+    - name: Test Nodes and Calibrate Country Code
       id: test_nodes
       run: |
-        # 1. 下载并准备 mihomo 核心
+        # 1. 下载 mihomo 核心
         echo "Downloading mihomo executable..."
-        # 我们将直接从最新的 release 下载，以保持更新
         curl -L --fail -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.19.11/mihomo-linux-amd64-v1.19.11.gz
         gunzip mihomo.gz
         chmod +x mihomo
         mv mihomo /usr/local/bin/mihomo
 
-        # 2. 运行测试脚本
-        echo "Running node tester script..."
+        # 2. 下载 GeoIP 数据库
+        echo "Downloading GeoIP database..."
+        curl -L --fail -o geoip.dat https://github.com/Loyalsoldier/geoip/releases/latest/download/geoip.dat
+
+        # 3. 运行测试和校准脚本
+        echo "Running node tester and calibration script..."
         python scripts/node_tester.py \
           --input-file all_unique_nodes.yaml \
           --output healthy_nodes_list.yaml \
-          --clash-path /usr/local/bin/mihomo
+          --clash-path /usr/local/bin/mihomo \
+          --geoip-dat-path ./geoip.dat \
+          --test-url "https://www.google.com/generate_204"
         
-        # 3. 设置输出，供下一步使用
+        # 4. 设置输出，供下一步使用
         echo "Setting output for next step..."
         echo "healthy_nodes_file=healthy_nodes_list.yaml" >> $GITHUB_OUTPUT
 
