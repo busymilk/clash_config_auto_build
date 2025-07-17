@@ -114,23 +114,25 @@ def check_proxy_delay(proxy, api_url, timeout, delay_limit, test_url):
         pass
     return None
 
-def get_exit_ip_via_proxy(proxy, runner_ip, echo_port):
-    """通过指定代理的SOCKS5出口，访问本地回显服务器以获取真实出口IP。"""
-    # 正确的mihomo SOCKS5 URL格式，是将节点名作为用户名传递
+def get_exit_ip_via_proxy(proxy, runner_ip, echo_port, retries=3, initial_timeout=20):
+    """通过指定代理的SOCKS5出口，访问本地回显服务器以获取真实出口IP，并支持重试。"""
     proxy_name_encoded = urllib.parse.quote(proxy['name'])
     proxy_url = f'socks5h://{proxy_name_encoded}@127.0.0.1:7890'
-    try:
-        # 请求的目标是运行器自身的公网IP
-        response = requests.get(f'http://{runner_ip}:{echo_port}', proxies={'http': proxy_url, 'https': proxy_url}, timeout=20)
-        response.raise_for_status()
-        proxy['exit_ip'] = response.text.strip()
-        return proxy
-    except requests.exceptions.RequestException as e:
-        log_error(f"Proxy '{proxy.get('name')}' failed to get exit IP (RequestException): {e}")
-        return None
-    except Exception as e:
-        log_error(f"Proxy '{proxy.get('name')}' failed to get exit IP (Other Exception): {e}")
-        return None
+
+    for attempt in range(retries):
+        try:
+            timeout = initial_timeout * (1.5 ** attempt) # 指数退避
+            response = requests.get(f'http://{runner_ip}:{echo_port}', proxies={'http': proxy_url, 'https': proxy_url}, timeout=timeout)
+            response.raise_for_status()
+            proxy['exit_ip'] = response.text.strip()
+            log_info(f"Proxy '{proxy.get('name')}' exit IP: {proxy['exit_ip']} (Attempt {attempt + 1})")
+            return proxy
+        except requests.exceptions.RequestException as e:
+            log_error(f"Proxy '{proxy.get('name')}' failed to get exit IP (RequestException, Attempt {attempt + 1}/{retries}): {e}")
+        except Exception as e:
+            log_error(f"Proxy '{proxy.get('name')}' failed to get exit IP (Other Exception, Attempt {attempt + 1}/{retries}): {e}")
+        time.sleep(1) # 每次重试前等待1秒
+    return None
 
 def calibrate_and_rename_proxies(proxies_with_ip, geoip_db_path):
     log_info("Calibrating country codes...")
