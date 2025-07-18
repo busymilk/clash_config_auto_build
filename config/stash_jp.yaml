@@ -50,17 +50,40 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0267 | 33.79MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
   type: ss
+- name: 🇯🇵 日本 01
+  password: 908e08bf-9e4b-4c34-b84f-73c6d724f88d
+  port: 443
+  server: 18.183.199.238
+  skip-cert-verify: false
+  sni: 33-cloud.jisdk82.co
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0269 | 32.509MB
+  name: 🇯🇵JP-149.22.87.241-152
   password: shadowsocks
   port: 443
   server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-153
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
   type: ss
 - cipher: aes-256-gcm
   name: 🇯🇵 日本 05
