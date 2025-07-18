@@ -50,6 +50,35 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- auth: bde0cf51-5bce-473a-8c7d-68949e7e5cfd
+  down: 200
+  name: 🇸🇬 新加坡 23
+  password: bde0cf51-5bce-473a-8c7d-68949e7e5cfd
+  port: 33251
+  server: sg4.youxuan.wiki
+  skip-cert-verify: false
+  sni: sg4.youxuan.wiki
+  type: hysteria2
+  udp: true
+  up: 200
+- name: 🇸🇬 新加坡 19
+  network: ws
+  password: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
+  port: 443
+  server: 123.interld123456789.com
+  sni: pM6229Ooj8UN.sg123123123.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: pM6229Ooj8UN.sg123123123.xyz
+    path: /answer
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-215
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - name: 🇸🇬 新加坡 17
   network: ws
   password: ttfang
