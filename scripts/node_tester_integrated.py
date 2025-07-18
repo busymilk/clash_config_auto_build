@@ -22,8 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from core.constants import NodeTestConfig, PathConfig
 from core.logger import setup_logger
-from core.geoip_detector_v2 import GeoIPDetectorV2
-from scripts.ip_detection_server import IPDetectionServer
+from core.geoip_detector_aws import AWSGeoIPDetector
 
 
 class IntegratedNodeTester:
@@ -33,7 +32,6 @@ class IntegratedNodeTester:
         self.logger = setup_logger("integrated_node_tester")
         self.args = args
         self.mihomo_process = None
-        self.ip_server = None
         self.geoip_detector = None
         
         # 设置信号处理
@@ -46,51 +44,14 @@ class IntegratedNodeTester:
         self.cleanup()
         sys.exit(0)
     
-    def start_ip_detection_server(self) -> bool:
-        """启动IP检测服务器"""
+    def init_geoip_detector(self) -> bool:
+        """初始化地理位置检测器"""
         if not self.args.enable_geoip:
             return True
         
-        self.logger.info("启动IP检测服务器...")
-        self.ip_server = IPDetectionServer(
-            host='0.0.0.0',  # 监听所有网络接口
-            port=self.args.ip_server_port
-        )
-        
-        if self.ip_server.start():
-            # 等待服务器就绪
-            if self.ip_server.wait_for_ready(timeout=10):
-                # 获取GitHub Actions运行器的公网IP
-                try:
-                    import subprocess
-                    result = subprocess.run(['curl', '-s', 'ifconfig.me'], 
-                                          capture_output=True, text=True, timeout=10)
-                    if result.returncode == 0 and result.stdout.strip():
-                        public_ip = result.stdout.strip()
-                        self.logger.info(f"检测到公网IP: {public_ip}")
-                        ip_server_url = f"http://{public_ip}:{self.args.ip_server_port}"
-                    else:
-                        # 降级到本地IP
-                        self.logger.warning("无法获取公网IP，使用本地地址")
-                        ip_server_url = f"http://127.0.0.1:{self.args.ip_server_port}"
-                except Exception as e:
-                    self.logger.warning(f"获取公网IP失败: {e}，使用本地地址")
-                    ip_server_url = f"http://127.0.0.1:{self.args.ip_server_port}"
-                
-                self.geoip_detector = GeoIPDetectorV2(ip_server_url=ip_server_url)
-                return True
-            else:
-                self.logger.error("IP检测服务器启动超时")
-                return False
-        else:
-            self.logger.error("IP检测服务器启动失败")
-            return False
-    
-    def stop_ip_detection_server(self):
-        """停止IP检测服务器"""
-        if self.ip_server:
-            self.ip_server.stop()
-            self.ip_server = None
+        self.logger.info("初始化AWS地理位置检测器...")
+        self.geoip_detector = AWSGeoIPDetector()
+        return True
     
     def prepare_test_config(self, source_path: str, dest_path: str, 
                           template_path: str = PathConfig.CONFIG_TEMPLATE) -> list:
@@ -320,9 +281,8 @@ class IntegratedNodeTester:
             self.stop_mihomo(self.mihomo_process)
             self.mihomo_process = None
         
-        # 停止IP检测服务器
-        if self.ip_server:
-            self.stop_ip_detection_server()
+        # 清理地理位置检测器
+        self.geoip_detector = None
         
         self.logger.info("资源清理完成")
 
@@ -331,10 +291,10 @@ class IntegratedNodeTester:
         test_config_path = NodeTestConfig.TEST_CONFIG_FILE
         
         try:
-            # 第一步：启动IP检测服务器（如果需要）
-            if not self.start_ip_detection_server():
+            # 第一步：初始化地理位置检测器（如果需要）
+            if not self.init_geoip_detector():
                 if self.args.enable_geoip:
-                    self.logger.error("IP检测服务器启动失败，退出")
+                    self.logger.error("地理位置检测器初始化失败，退出")
                     return
             
             # 第二步：准备测试配置
@@ -398,8 +358,6 @@ def main():
     # 地理位置检测参数
     parser.add_argument("--enable-geoip", action="store_true", default=False,
                        help="启用地理位置检测和节点重命名")
-    parser.add_argument("--ip-server-port", type=int, default=8080,
-                       help="IP检测服务器端口")
     parser.add_argument("--geoip-workers", type=int, default=3,
                        help="地理位置检测并发线程数")
     parser.add_argument("--geoip-timeout", type=int, default=20,

@@ -36,7 +36,6 @@ jobs:
       ENABLE_GEOIP: ${{ github.event.inputs.enable_geoip || 'true' }}
       GEOIP_WORKERS: ${{ github.event.inputs.geoip_workers || '3' }}
       GEOIP_TIMEOUT: "20"
-      IP_SERVER_PORT: "8080"
 
     steps:
     # 步骤1: 检出代码仓库
@@ -115,7 +114,7 @@ jobs:
         echo "配置信息:"
         echo "  - 启用地理位置检测: ${{ env.ENABLE_GEOIP }}"
         echo "  - 地理位置检测并发数: ${{ env.GEOIP_WORKERS }}"
-        echo "  - IP检测服务器端口: ${{ env.IP_SERVER_PORT }}"
+        echo "  - IP检测服务: AWS checkip.amazonaws.com"
         echo "  - 延迟限制: ${{ env.DELAY_LIMIT }}ms"
         echo "  - 最大并发数: ${{ env.MAX_WORKERS }}"
         
@@ -129,7 +128,6 @@ jobs:
         # 地理位置检测参数
         if [ "${{ env.ENABLE_GEOIP }}" = "true" ]; then
           cmd_args="$cmd_args --enable-geoip"
-          cmd_args="$cmd_args --ip-server-port ${{ env.IP_SERVER_PORT }}"
           cmd_args="$cmd_args --geoip-workers ${{ env.GEOIP_WORKERS }}"
           cmd_args="$cmd_args --geoip-timeout ${{ env.GEOIP_TIMEOUT }}"
           cmd_args="$cmd_args --save-geoip-details"
