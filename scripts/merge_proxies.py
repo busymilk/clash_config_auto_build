@@ -56,6 +56,7 @@ def merge_proxies(proxies_dir, output_file, name_filter=None):
     """
     merged_proxies = []
     seen_identifiers = set()
+    seen_names = set()
 
     proxy_files = glob.glob(f"{proxies_dir}/*.*")
     # logging.info(f"发现 {len(proxy_files)} 个代理文件，准备开始处理...")
@@ -84,13 +85,25 @@ def merge_proxies(proxies_dir, output_file, name_filter=None):
                         except (ValueError, TypeError):
                             logging.warning(f"Proxy '{name}' has invalid port format: '{port_val}'. Skipping this proxy.")
                             continue # Skip this proxy if port is not an int
-
+                    
                     identifier = (server, proxy_type, proxy.get('port'))
 
-                    if not all(identifier):
+                    # --- 优先检查并跳过重复的节点 (基于 server/port) ---
+                    if not all(identifier) or identifier in seen_identifiers:
                         continue
-                    if identifier in seen_identifiers:
-                        continue
+
+                    # --- 检查并重命名重复的节点名称 ---
+                    original_name = name
+                    counter = 2
+                    while name in seen_names:
+                        name = f"{original_name} #{counter}"
+                        counter += 1
+                    
+                    if original_name != name:
+                        logging.info(f"发现重复节点名称 '{original_name}'，重命名为 '{name}'")
+                        proxy['name'] = name
+
+                    # --- 黑名单和过滤器检查 ---
                     if any(keyword in name for keyword in BLACKLIST_KEYWORDS):
                         continue
                     if proxy_type == 'ss' and proxy.get('cipher', '').lower() == 'ss':
@@ -100,6 +113,7 @@ def merge_proxies(proxies_dir, output_file, name_filter=None):
                             continue
                     
                     seen_identifiers.add(identifier)
+                    seen_names.add(name)
                     merged_proxies.append(proxy)
 
         except yaml.YAMLError as e:
