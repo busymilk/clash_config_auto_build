@@ -50,17 +50,12 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- auth: bde0cf51-5bce-473a-8c7d-68949e7e5cfd
-  down: 200
-  name: 🇸🇬 新加坡 23
-  password: bde0cf51-5bce-473a-8c7d-68949e7e5cfd
-  port: 33251
-  server: sg4.youxuan.wiki
-  skip-cert-verify: false
-  sni: sg4.youxuan.wiki
-  type: hysteria2
-  udp: true
-  up: 200
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-215
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - name: 🇸🇬 新加坡 19
   network: ws
   password: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
@@ -73,12 +68,17 @@ proxies:
     headers:
       Host: pM6229Ooj8UN.sg123123123.xyz
     path: /answer
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-215
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
+- auth: bde0cf51-5bce-473a-8c7d-68949e7e5cfd
+  down: 200
+  name: 🇸🇬 新加坡 23
+  password: bde0cf51-5bce-473a-8c7d-68949e7e5cfd
+  port: 33251
+  server: sg4.youxuan.wiki
+  skip-cert-verify: false
+  sni: sg4.youxuan.wiki
+  type: hysteria2
+  udp: true
+  up: 200
 - name: 🇸🇬 新加坡 17
   network: ws
   password: ttfang
@@ -92,6 +92,34 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇸🇬 新加坡 24
+  network: tcp
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: sg3.interld123456789.com
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇸🇬 新加坡 20
+  network: tcp
+  port: 10002
+  reality-opts:
+    public-key: xnzUvDQZ4B45lUi40lFKOLWiJdPQW8LzhGsGandvvlc
+    short-id: ad081079
+  server: us3do.interld123456789.com
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b1d79bd-d819-4fe3-bc7d-699ce99bb86f
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
