@@ -1,153 +1,175 @@
 # -*- coding: utf-8 -*-
+"""
+Clash Config Auto Builder - 节点合并器 (重构版)
+合并指定目录下的所有代理配置文件，支持去重和地区过滤
+"""
+
 import yaml
 import glob
-import logging
-import re
 import argparse
+import sys
+import os
 
-# --- 配置日志记录 ---
-# 设置日志的格式和级别，方便调试和追踪脚本执行情况
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.StreamHandler()  # 输出到控制台
-    ]
-)
+# 添加项目根目录到Python路径
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# --- 常量定义 ---
-# 定义不同地区的正则表达式过滤器，用于根据节点名称筛选特定地区的代理
-# 使用更严格的单词边界 \b 来避免部分匹配造成的错误
-FILTER_PATTERNS = {
-    'hk': re.compile(
-        r'\b(HK|Hong[\s_-]?Kong|HKG|HGC)\b|香港|🇭🇰',
-        flags=re.IGNORECASE
-    ),
-    'us': re.compile(
-        r'\b(us|usa|america|united[\s-]?states)\b|美国|🇺🇸',
-        flags=re.IGNORECASE
-    ),
-    'jp': re.compile(
-        r'\b(jp|japan|tokyo|tyo|osaka|nippon)\b|日本|🇯🇵',
-        flags=re.IGNORECASE
-    ),
-    'uk': re.compile(
-        r'\b(uk|england|britain|united[\s-]?kingdom)\b|英国|🇬🇧',
-        flags=re.IGNORECASE
-    ),
-    'sg': re.compile(
-        r'\b(sg|singapore|sin)\b|新加坡|🇸🇬',
-        flags=re.IGNORECASE
-    ),
-}
+from config.constants import FILTER_PATTERNS, BLACKLIST_KEYWORDS
+from utils.logger import setup_logger
 
-# 定义不希望包含的代理名称关键词（黑名单），此规则对所有合并任务生效
-BLACKLIST_KEYWORDS = [
-    '日期', '免费', '关注', '回国', 'CN', 'China', '中国'
-]
 
-def merge_proxies(proxies_dir, output_file, name_filter=None):
+def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -> None:
     """
     合并指定目录下的所有代理配置文件。
 
-    :param proxies_dir: 存放代理配置文件的目录路径 (例如: "external_proxies")
-    :param output_file: 合并后输出的文件路径 (例如: "merged-proxies.yaml")
-    :param name_filter: 代理名称过滤器, 可选值为 'hk', 'us' 等, 或 None (不过滤)
+    Args:
+        proxies_dir: 存放代理配置文件的目录路径
+        output_file: 合并后输出的文件路径
+        name_filter: 代理名称过滤器, 可选值为 'hk', 'us' 等, 或 None (不过滤)
     """
+    logger = setup_logger("merge_proxies")
+    
     merged_proxies = []
     seen_identifiers = set()
     seen_names = set()
 
     proxy_files = glob.glob(f"{proxies_dir}/*.*")
-    # logging.info(f"发现 {len(proxy_files)} 个代理文件，准备开始处理...")
+    logger.info(f"发现 {len(proxy_files)} 个代理文件，准备开始处理...")
 
     for file_path in proxy_files:
         try:
             with open(file_path, 'r', encoding="utf-8") as f:
-                # 使用 yaml.safe_load 尝试解析
                 data = yaml.safe_load(f)
 
-                # 检查解析结果是否有效
-                if not isinstance(data, dict) or 'proxies' not in data or not isinstance(data['proxies'], list):
-                    logging.warning(f"跳过无效或格式不正确的文件: {file_path}")
+            # 检查解析结果是否有效
+            if not isinstance(data, dict) or 'proxies' not in data or not isinstance(data['proxies'], list):
+                logger.warning(f"跳过无效或格式不正确的文件: {file_path}")
+                continue
+
+            for proxy in data['proxies']:
+                if not _is_valid_proxy(proxy, logger):
+                    continue
+                
+                # 处理端口格式
+                if not _fix_port_format(proxy, logger):
+                    continue
+                
+                # 生成唯一标识符
+                identifier = _generate_identifier(proxy)
+                
+                # 检查重复节点
+                if not identifier or identifier in seen_identifiers:
                     continue
 
-                for proxy in data['proxies']:
-                    name = proxy.get('name')
-                    server = proxy.get('server')
-                    port_val = proxy.get('port')
-                    proxy_type = proxy.get('type')
-
-                    # --- 检查端口是否为整数 ---
-                    if not isinstance(port_val, int):
-                        try:
-                            proxy['port'] = int(port_val)
-                        except (ValueError, TypeError):
-                            logging.warning(f"Proxy '{name}' has invalid port format: '{port_val}'. Skipping this proxy.")
-                            continue # Skip this proxy if port is not an int
-                    
-                    identifier = (server, proxy_type, proxy.get('port'))
-
-                    # --- 优先检查并跳过重复的节点 (基于 server/port) ---
-                    if not all(identifier) or identifier in seen_identifiers:
-                        continue
-
-                    # --- 检查并重命名重复的节点名称 ---
-                    original_name = name
-                    counter = 2
-                    while name in seen_names:
-                        name = f"{original_name} #{counter}"
-                        counter += 1
-                    
-                    if original_name != name:
-                        logging.info(f"发现重复节点名称 '{original_name}'，重命名为 '{name}'")
-                        proxy['name'] = name
-
-                    # --- 黑名单和过滤器检查 ---
-                    if any(keyword in name for keyword in BLACKLIST_KEYWORDS):
-                        continue
-                    if proxy_type == 'ss' and proxy.get('cipher', '').lower() == 'ss':
-                        continue
-                    if name_filter and name_filter in FILTER_PATTERNS:
-                        if not FILTER_PATTERNS[name_filter].search(name):
-                            continue
-                    
-                    seen_identifiers.add(identifier)
-                    seen_names.add(name)
-                    merged_proxies.append(proxy)
+                # 处理重复名称
+                proxy_name = _handle_duplicate_name(proxy, seen_names, logger)
+                
+                # 应用过滤规则
+                if not _apply_filters(proxy_name, name_filter, logger):
+                    continue
+                
+                # 添加到结果集
+                seen_identifiers.add(identifier)
+                seen_names.add(proxy_name)
+                merged_proxies.append(proxy)
 
         except yaml.YAMLError as e:
-            # 如果文件不是有效的YAML格式，则捕获错误，打印警告并跳过
-            logging.warning(f"跳过无法解析的YAML文件: {file_path} - 错误: {e}")
+            logger.warning(f"跳过无法解析的YAML文件: {file_path} - 错误: {e}")
             continue
         except Exception as e:
-            # 捕获其他可能的IO错误等
-            logging.error(f"处理文件 {file_path} 时发生未知错误: {e}", exc_info=True)
+            logger.error(f"处理文件 {file_path} 时发生未知错误: {e}", exc_info=True)
             continue
 
-    logging.info(f"总共为 '{output_file}' 合并了 {len(merged_proxies)} 个唯一的代理。")
+    logger.info(f"总共为 '{output_file}' 合并了 {len(merged_proxies)} 个唯一的代理。")
 
+    # 写入结果文件
+    _write_output_file(merged_proxies, output_file, logger)
+
+
+def _is_valid_proxy(proxy: dict, logger) -> bool:
+    """检查代理配置是否有效"""
+    required_fields = ['name', 'server', 'port', 'type']
+    for field in required_fields:
+        if not proxy.get(field):
+            logger.warning(f"代理缺少必要字段 '{field}': {proxy}")
+            return False
+    return True
+
+
+def _fix_port_format(proxy: dict, logger) -> bool:
+    """修复端口格式，确保为整数"""
+    port_val = proxy.get('port')
+    if not isinstance(port_val, int):
+        try:
+            proxy['port'] = int(port_val)
+        except (ValueError, TypeError):
+            logger.warning(f"代理 '{proxy.get('name')}' 端口格式无效: '{port_val}'，跳过此代理。")
+            return False
+    return True
+
+
+def _generate_identifier(proxy: dict) -> tuple:
+    """生成代理的唯一标识符"""
+    return (proxy.get('server'), proxy.get('type'), proxy.get('port'))
+
+
+def _handle_duplicate_name(proxy: dict, seen_names: set, logger) -> str:
+    """处理重复的代理名称"""
+    original_name = proxy.get('name')
+    name = original_name
+    counter = 2
+    
+    while name in seen_names:
+        name = f"{original_name} #{counter}"
+        counter += 1
+    
+    if original_name != name:
+        logger.info(f"发现重复节点名称 '{original_name}'，重命名为 '{name}'")
+        proxy['name'] = name
+    
+    return name
+
+
+def _apply_filters(proxy_name: str, name_filter: str, logger) -> bool:
+    """应用黑名单和地区过滤器"""
+    # 黑名单检查
+    if any(keyword in proxy_name for keyword in BLACKLIST_KEYWORDS):
+        return False
+    
+    # 地区过滤器检查
+    if name_filter and name_filter in FILTER_PATTERNS:
+        if not FILTER_PATTERNS[name_filter].search(proxy_name):
+            return False
+    
+    return True
+
+
+def _write_output_file(merged_proxies: list, output_file: str, logger) -> None:
+    """写入合并结果到文件"""
     try:
         with open(output_file, 'w', encoding="utf-8") as f:
             yaml.dump({'proxies': merged_proxies}, f, default_flow_style=False, allow_unicode=True)
+        logger.info(f"成功写入合并结果到 {output_file}")
     except IOError as e:
-        logging.error(f"写入文件 {output_file} 失败: {e}")
+        logger.error(f"写入文件 {output_file} 失败: {e}")
+        raise
 
-if __name__ == "__main__":
+
+def main():
+    """主函数"""
     parser = argparse.ArgumentParser(
         description="合并 Clash 代理配置文件，支持按地区过滤和去重。"
     )
     parser.add_argument(
         '--proxies-dir',
         type=str,
-        required=True, # 由总指挥脚本提供，因此设为必填
+        required=True,
         help='存放代理配置文件的目录路径'
     )
     parser.add_argument(
         '--output',
         type=str,
         required=True,
-        help='合并后输出的文件路径 (例如: merged-proxies.yaml)'
+        help='合并后输出的文件路径'
     )
     parser.add_argument(
         '--filter',
@@ -157,5 +179,8 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-
     merge_proxies(args.proxies_dir, args.output, args.filter)
+
+
+if __name__ == "__main__":
+    main()

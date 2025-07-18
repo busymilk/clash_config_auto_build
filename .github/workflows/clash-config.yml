@@ -1,4 +1,4 @@
-name: Generate Clash Config
+name: Generate Clash Config (Refactored)
 
 on:
   schedule:
@@ -16,6 +16,11 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.TOKEN }}
       # 目录名的唯一真相来源：未来若要修改，只需改动这里
       PROXY_DIR: external_proxies
+      # 新增：可配置的参数
+      MIHOMO_VERSION: "v1.19.11"
+      DELAY_LIMIT: "4000"
+      MAX_WORKERS: "100"
+      LOG_LEVEL: "INFO"
 
     steps:
     # 步骤1: 检出代码仓库
@@ -37,7 +42,11 @@ jobs:
 
     # 步骤4: 创建所需目录 (使用环境变量)
     - name: Create directories
-      run: mkdir -p ${{ env.PROXY_DIR }} config
+      run: |
+        mkdir -p ${{ env.PROXY_DIR }} config utils
+        # 确保Python能找到我们的模块
+        touch config/__init__.py
+        touch utils/__init__.py
 
     # 步骤5: 下载上次发布的健康节点 (实现增量更新)
     - name: Download Previous Healthy Nodes
@@ -64,58 +73,62 @@ jobs:
           curl -sSL "$url" -o "$output" || echo "Failed to download: $url"
         done
 
-    # 步骤6: 合并所有订阅源的节点并去重
+    # 步骤7: 合并所有订阅源的节点并去重 (使用重构版本)
     - name: Merge All Proxies
       run: |
-        python scripts/merge_proxies.py \
+        python scripts/merge_proxies_refactored.py \
           --proxies-dir ${{ env.PROXY_DIR }} \
           --output all_unique_nodes.yaml
 
-    # 步骤7: 获取运行器公网IP
+    # 步骤8: 获取运行器公网IP
     - name: Get Runner Public IP
       id: get_ip
       run: echo "ip=$(curl -s ifconfig.me)" >> $GITHUB_OUTPUT
 
-    # 步骤7: 使用mihomo核心测试所有节点的健康状况
+    # 步骤9: 使用mihomo核心测试所有节点的健康状况 (使用重构版本)
     - name: Test All Nodes
       id: test_nodes
       env:
         # 在这里获取运行器的公网IP，并将其设置为环境变量，供Python脚本使用
         RUNNER_PUBLIC_IP: ${{ steps.get_ip.outputs.ip }}
       run: |
-        # 1. 下载 mihomo 核心
-        echo "Downloading mihomo executable..."
-        curl -L --fail -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.19.11/mihomo-linux-amd64-v1.19.11.gz
+        # 1. 下载 mihomo 核心 (使用环境变量中的版本)
+        echo "Downloading mihomo executable (version: ${{ env.MIHOMO_VERSION }})..."
+        curl -L --fail -o mihomo.gz \
+          https://github.com/MetaCubeX/mihomo/releases/download/v${{ env.MIHOMO_VERSION }}/mihomo-linux-amd64-v${{ env.MIHOMO_VERSION }}.gz
         gunzip mihomo.gz
         chmod +x mihomo
         mv mihomo /usr/local/bin/mihomo
 
-        # 2. 运行节点健康测试脚本
+        # 2. 运行节点健康测试脚本 (使用重构版本)
         echo "Running node tester script..."
-        python scripts/node_tester.py \
+        python scripts/node_tester_refactored.py \
           --input-file all_unique_nodes.yaml \
           --output healthy_nodes_list.yaml \
           --clash-path /usr/local/bin/mihomo \
-          --test-url "https://www.apple.com/library/test/success.html"
+          --test-url "https://www.apple.com/library/test/success.html" \
+          --delay-limit ${{ env.DELAY_LIMIT }} \
+          --max-workers ${{ env.MAX_WORKERS }}
         
         # 3. 设置输出，供下一步使用
         echo "Setting output for next step..."
         echo "healthy_nodes_file=healthy_nodes_list.yaml" >> $GITHUB_OUTPUT
 
-    # 步骤8: 使用健康的节点分发生成所有最终配置文件
+    # 步骤10: 使用健康的节点分发生成所有最终配置文件 (使用重构版本)
     - name: Generate Final Configs from Healthy Nodes
       id: generate
       run: |
-        python scripts/generate_config.py --use-pre-tested-nodes ${{ steps.test_nodes.outputs.healthy_nodes_file }}
+        python scripts/generate_config_refactored.py \
+          --use-pre-tested-nodes ${{ steps.test_nodes.outputs.healthy_nodes_file }}
 
-    # 步骤8: 上传所有构建产物
+    # 步骤11: 上传所有构建产物
     - name: Upload All Config Artifacts
       uses: actions/upload-artifact@v4
       with:
         name: clash-configs
         path: config/*.yaml
 
-    # 步骤8: 创建或更新 GitHub Release
+    # 步骤12: 创建或更新 GitHub Release
     - name: Create or Update Release
       uses: softprops/action-gh-release@v1
       with:
@@ -125,7 +138,7 @@ jobs:
         body: "Automated update of Clash configuration files."
         generate_release_notes: true
 
-    # 步骤9: 提交并推送配置文件的变更到仓库
+    # 步骤13: 提交并推送配置文件的变更到仓库
     - name: Commit and push config changes
       run: |
         git config --global user.name "github-actions[bot]"
@@ -141,13 +154,13 @@ jobs:
         git commit -m "$COMMIT_MSG"
         git push origin HEAD:main
 
-    # 步骤10: 刷新 jsDelivr 的 CDN 缓存
+    # 步骤14: 刷新 jsDelivr 的 CDN 缓存
     - name: Purge jsDelivr Cache
       if: success()
       env:
         FILES_TO_PURGE: ${{ steps.generate.outputs.generated_files }}
-        MAX_RETRIES: 3
-        RETRY_DELAY: 20
+        MAX_RETRIES: ${{ env.MAX_RETRIES || '3' }}
+        RETRY_DELAY: ${{ env.RETRY_DELAY || '20' }}
       run: |
         echo "Files to purge: $FILES_TO_PURGE"
         for file in $FILES_TO_PURGE; do
