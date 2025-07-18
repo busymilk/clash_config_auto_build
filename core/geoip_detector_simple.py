@@ -19,8 +19,14 @@ class SimpleGeoIPDetector:
     def __init__(self):
         self.logger = setup_logger("simple_geoip_detector")
         
-        # 不使用外部IP检测服务
-        self.ip_services = []
+        # 多个IP检测服务，提供冗余
+        self.ip_services = [
+            'https://api.ipify.org',
+            'https://ifconfig.me/ip',
+            'https://icanhazip.com',
+            'https://ipecho.net/plain',
+            'https://checkip.amazonaws.com'
+        ]
         
         # 多个GeoIP服务API，提供冗余
         self.geoip_services = [
@@ -139,9 +145,40 @@ class SimpleGeoIPDetector:
             # 等待代理切换生效
             time.sleep(3)
             
-            # 不使用外部IP检测服务，直接返回None
-            # 这样地理位置检测功能将被跳过，但不会影响延迟测试
-            self.logger.info(f"跳过代理 '{proxy_name}' 的地理位置检测（已禁用外部IP检测服务）")
+            # 第二步：通过代理访问外部IP检测服务
+            proxy_url = f"http://127.0.0.1:7890"  # mihomo的mixed-port
+            proxies = {
+                'http': proxy_url,
+                'https': proxy_url
+            }
+            
+            # 尝试多个IP检测服务
+            for service_url in self.ip_services:
+                try:
+                    response = requests.get(
+                        service_url,
+                        proxies=proxies,
+                        timeout=timeout,
+                        headers={'User-Agent': 'ClashConfigAutoBuilder/1.0'}
+                    )
+                    
+                    if response.status_code == 200:
+                        ip = response.text.strip()
+                        if self._is_valid_ip(ip):
+                            self.logger.info(f"代理 '{proxy_name}' 出口IP: {ip} (来源: {service_url})")
+                            return ip
+                        else:
+                            self.logger.debug(f"服务 {service_url} 返回无效IP: {ip}")
+                            continue
+                    else:
+                        self.logger.debug(f"服务 {service_url} 响应异常: {response.status_code}")
+                        continue
+                        
+                except Exception as e:
+                    self.logger.debug(f"IP检测服务 {service_url} 失败: {e}")
+                    continue
+            
+            self.logger.warning(f"无法获取代理 '{proxy_name}' 的出口IP")
             return None
             
         except requests.exceptions.ProxyError as e:
