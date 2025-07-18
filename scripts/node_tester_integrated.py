@@ -53,16 +53,31 @@ class IntegratedNodeTester:
         
         self.logger.info("启动IP检测服务器...")
         self.ip_server = IPDetectionServer(
-            host='127.0.0.1',  # 只监听本地
+            host='0.0.0.0',  # 监听所有网络接口
             port=self.args.ip_server_port
         )
         
         if self.ip_server.start():
             # 等待服务器就绪
             if self.ip_server.wait_for_ready(timeout=10):
-                self.geoip_detector = GeoIPDetectorV2(
-                    ip_server_url=f"http://127.0.0.1:{self.args.ip_server_port}"
-                )
+                # 获取GitHub Actions运行器的公网IP
+                try:
+                    import subprocess
+                    result = subprocess.run(['curl', '-s', 'ifconfig.me'], 
+                                          capture_output=True, text=True, timeout=10)
+                    if result.returncode == 0 and result.stdout.strip():
+                        public_ip = result.stdout.strip()
+                        self.logger.info(f"检测到公网IP: {public_ip}")
+                        ip_server_url = f"http://{public_ip}:{self.args.ip_server_port}"
+                    else:
+                        # 降级到本地IP
+                        self.logger.warning("无法获取公网IP，使用本地地址")
+                        ip_server_url = f"http://127.0.0.1:{self.args.ip_server_port}"
+                except Exception as e:
+                    self.logger.warning(f"获取公网IP失败: {e}，使用本地地址")
+                    ip_server_url = f"http://127.0.0.1:{self.args.ip_server_port}"
+                
+                self.geoip_detector = GeoIPDetectorV2(ip_server_url=ip_server_url)
                 return True
             else:
                 self.logger.error("IP检测服务器启动超时")
