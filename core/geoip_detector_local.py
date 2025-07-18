@@ -162,10 +162,13 @@ class LocalGeoIPDetector:
                          timeout: int = 15) -> Optional[str]:
         """通过代理获取出口IP地址"""
         try:
+            self.logger.debug(f"开始获取代理 '{proxy_name}' 的出口IP")
+            
             # 第一步：切换到指定代理
             switch_url = f"http://{api_url}/proxies/GLOBAL"
             switch_data = {"name": proxy_name}
             
+            self.logger.debug(f"切换代理到: {proxy_name}")
             response = requests.put(
                 switch_url, 
                 json=switch_data, 
@@ -173,11 +176,24 @@ class LocalGeoIPDetector:
                 headers={'Content-Type': 'application/json; charset=utf-8'}
             )
             if response.status_code != 204:
-                self.logger.warning(f"切换代理 '{proxy_name}' 失败: {response.status_code}")
+                self.logger.warning(f"切换代理 '{proxy_name}' 失败: HTTP {response.status_code}")
                 return None
             
             # 等待代理切换生效
+            self.logger.debug(f"等待代理 '{proxy_name}' 切换生效...")
             time.sleep(3)
+            
+            # 验证代理是否切换成功
+            try:
+                verify_response = requests.get(f"http://{api_url}/proxies/GLOBAL", timeout=3)
+                if verify_response.status_code == 200:
+                    current_proxy = verify_response.json().get('now', '')
+                    if current_proxy != proxy_name:
+                        self.logger.warning(f"代理切换验证失败: 期望 '{proxy_name}', 实际 '{current_proxy}'")
+                        return None
+                    self.logger.debug(f"代理切换验证成功: {current_proxy}")
+            except Exception as e:
+                self.logger.debug(f"代理切换验证失败: {e}")
             
             # 第二步：通过代理访问AWS IP检测服务
             proxy_url = f"http://127.0.0.1:7890"  # mihomo的mixed-port
@@ -189,6 +205,7 @@ class LocalGeoIPDetector:
             # 优先尝试IPv4，然后尝试IPv6
             for ip_version, service_url in self.ip_services.items():
                 try:
+                    self.logger.debug(f"通过代理 '{proxy_name}' 访问 {service_url}")
                     response = requests.get(
                         service_url,
                         proxies=proxies,
@@ -205,16 +222,28 @@ class LocalGeoIPDetector:
                             self.logger.debug(f"AWS {ip_version} 返回无效IP: {ip}")
                             continue
                     else:
-                        self.logger.debug(f"AWS {ip_version} 响应异常: {response.status_code}")
+                        self.logger.debug(f"AWS {ip_version} 响应异常: HTTP {response.status_code}")
                         continue
                         
+                except requests.exceptions.ProxyError as e:
+                    self.logger.debug(f"代理 '{proxy_name}' 连接AWS {ip_version} 失败: {e}")
+                    continue
+                except requests.exceptions.Timeout as e:
+                    self.logger.debug(f"代理 '{proxy_name}' 访问AWS {ip_version} 超时: {e}")
+                    continue
                 except Exception as e:
                     self.logger.debug(f"AWS {ip_version} 检测失败: {e}")
                     continue
             
-            self.logger.warning(f"无法获取代理 '{proxy_name}' 的出口IP")
+            self.logger.warning(f"无法获取代理 '{proxy_name}' 的出口IP (所有IP检测服务都失败)")
             return None
             
+        except requests.exceptions.ProxyError as e:
+            self.logger.warning(f"代理 '{proxy_name}' 连接失败: {e}")
+            return None
+        except requests.exceptions.Timeout as e:
+            self.logger.warning(f"代理 '{proxy_name}' 请求超时: {e}")
+            return None
         except Exception as e:
             self.logger.error(f"获取代理 '{proxy_name}' 出口IP时发生错误: {e}")
             return None
