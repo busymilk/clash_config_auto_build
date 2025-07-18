@@ -36,7 +36,7 @@ jobs:
       ENABLE_GEOIP: ${{ github.event.inputs.enable_geoip || 'true' }}
       GEOIP_WORKERS: ${{ github.event.inputs.geoip_workers || '3' }}
       GEOIP_TIMEOUT: "20"
-      IP_SERVER_PORT: "80"
+      IP_SERVER_PORT: "8080"
 
     steps:
     # 步骤1: 检出代码仓库
@@ -136,9 +136,25 @@ jobs:
         fi
         
         echo "执行命令: python scripts/node_tester_integrated.py $cmd_args"
-        python scripts/node_tester_integrated.py $cmd_args
         
-        echo "healthy_nodes_file=healthy_nodes_list.yaml" >> $GITHUB_OUTPUT
+        # 尝试运行集成版测试器
+        if python scripts/node_tester_integrated.py $cmd_args; then
+          echo "✅ 集成版节点测试成功"
+          echo "healthy_nodes_file=healthy_nodes_list.yaml" >> $GITHUB_OUTPUT
+        else
+          echo "❌ 集成版节点测试失败，降级到基础版本"
+          echo "使用基础版节点测试器..."
+          
+          # 降级到基础版本（不包含地理位置检测）
+          python scripts/node_tester.py \
+            --input-file all_unique_nodes.yaml \
+            --output healthy_nodes_list.yaml \
+            --clash-path /usr/local/bin/mihomo \
+            --delay-limit ${{ env.DELAY_LIMIT }} \
+            --max-workers ${{ env.MAX_WORKERS }}
+          
+          echo "healthy_nodes_file=healthy_nodes_list.yaml" >> $GITHUB_OUTPUT
+        fi
 
     # 步骤11: 生成最终配置文件
     - name: Generate Final Configs from Healthy Nodes

@@ -398,7 +398,7 @@ def main():
     # 地理位置检测参数
     parser.add_argument("--enable-geoip", action="store_true", default=False,
                        help="启用地理位置检测和节点重命名")
-    parser.add_argument("--ip-server-port", type=int, default=80,
+    parser.add_argument("--ip-server-port", type=int, default=8080,
                        help="IP检测服务器端口")
     parser.add_argument("--geoip-workers", type=int, default=3,
                        help="地理位置检测并发线程数")
