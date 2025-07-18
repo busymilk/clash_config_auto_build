@@ -76,3 +76,27 @@ configs_to_generate = [
 - 进入你 Fork 后的仓库，点击 `Settings` -> `Secrets and variables` -> `Actions`。
 - 在 `Repository variables` 部分，点击 `New repository variable`。
 - 创建一个名为 `URL_LIST` 的变量，将你的所有 Clash 订阅链接粘贴进去，**注意：多个链接之间必须用空格分隔**。
+
+### 6. 配置环境变量 (可选)
+
+项目支持通过环境变量调整运行参数，无需修改代码。你可以在 `.github/workflows/clash-config.yml` 文件的 `env` 部分修改这些变量：
+
+```yaml
+env:
+  # 代理下载目录
+  PROXY_DIR: external_proxies
+  # mihomo 版本
+  MIHOMO_VERSION: "v1.19.11"
+  # 最大可接受延迟 (毫秒)
+  DELAY_LIMIT: "4000"
+  # 并发测试线程数
+  MAX_WORKERS: "100"
+  # 日志级别 (INFO, DEBUG, WARNING, ERROR)
+  LOG_LEVEL: "INFO"
+```
+
+这些环境变量可以调整：
+- **MIHOMO_VERSION**: 用于测试的 mihomo 核心版本
+- **DELAY_LIMIT**: 节点测试的最大可接受延迟 (毫秒)
+- **MAX_WORKERS**: 并发测试的线程数，可根据需要调整
+- **LOG_LEVEL**: 日志输出级别，可选 INFO, DEBUG, WARNING, ERROR
