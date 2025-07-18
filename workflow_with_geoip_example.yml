@@ -1,0 +1,265 @@
+name: Generate Clash Config with GeoIP Detection
+
+on:
+  schedule:
+    # 每4小时运行一次（UTC时间）
+    - cron: '0 */4 * * *'
+  workflow_dispatch:  # 允许手动触发
+    inputs:
+      enable_geoip:
+        description: '启用地理位置检测'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+        - 'true'
+        - 'false'
+      geoip_workers:
+        description: '地理位置检测并发数'
+        required: false
+        default: '3'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      LANG: en_US.UTF-8
+      LC_ALL: en_US.UTF-8
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      # 基础配置
+      PROXY_DIR: external_proxies
+      MIHOMO_VERSION: "v1.19.11"
+      DELAY_LIMIT: "4000"
+      MAX_WORKERS: "100"
+      LOG_LEVEL: "INFO"
+      # 地理位置检测配置
+      ENABLE_GEOIP: ${{ github.event.inputs.enable_geoip || 'true' }}
+      GEOIP_WORKERS: ${{ github.event.inputs.geoip_workers || '3' }}
+      GEOIP_TIMEOUT: "20"
+      IP_SERVER_PORT: "8080"
+
+    steps:
+    # 步骤1: 检出代码仓库
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    # 步骤2: 设置 Python 环境
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    # 步骤3: 安装 Python 依赖
+    - name: Install dependencies
+      run: pip install -r requirements.txt pysocks
+
+    # 步骤4: 创建所需目录
+    - name: Create directories
+      run: |
+        mkdir -p ${{ env.PROXY_DIR }} config core
+        touch core/__init__.py
+
+    # 步骤5: 下载上次发布的健康节点
+    - name: Download Previous Healthy Nodes
+      run: |
+        echo "Downloading previous config.yaml from latest release..."
+        curl -L --fail -o ${{ env.PROXY_DIR }}/previous_config.yaml \
+          https://github.com/${{ github.repository }}/releases/latest/download/config.yaml || \
+          echo "Could not download previous config.yaml, proceeding without it."
+
+    # 步骤6: 下载外部代理订阅文件
+    - name: Download external proxies
+      env:
+        URL_LIST: ${{ vars.URL_LIST }}
+      run: |
+        IFS=' ' read -ra URLS <<< "$URL_LIST"
+        for url in "${URLS[@]}"; do
+          basename=$(echo "$url" | sed -E 's#^https?://[^/]+/##; s/[?#].*$//; s#/#_#g')
+          timestamp=$(date +%s%N)
+          filename="${basename}_${timestamp}.txt"
+          output="${{ env.PROXY_DIR }}/${filename}"
+          echo "Downloading $url to $output"
+          curl -sSL "$url" -o "$output" || echo "Failed to download: $url"
+        done
+
+    # 步骤7: 合并所有订阅源的节点并去重
+    - name: Merge All Proxies
+      run: |
+        python scripts/merge_proxies.py \
+          --proxies-dir ${{ env.PROXY_DIR }} \
+          --output all_unique_nodes.yaml
+
+    # 步骤8: 获取运行器公网IP（用于调试）
+    - name: Get Runner Public IP
+      id: get_ip
+      run: echo "ip=$(curl -s ifconfig.me)" >> $GITHUB_OUTPUT
+
+    # 步骤9: 下载并设置 mihomo 核心
+    - name: Setup mihomo
+      run: |
+        echo "Downloading mihomo executable (version: ${{ env.MIHOMO_VERSION }})..."
+        curl -L --fail -o mihomo.gz \
+          https://github.com/MetaCubeX/mihomo/releases/download/${{ env.MIHOMO_VERSION }}/mihomo-linux-amd64-compatible-${{ env.MIHOMO_VERSION }}.gz
+        gunzip mihomo.gz
+        chmod +x mihomo
+        mv mihomo /usr/local/bin/mihomo
+
+    # 步骤10: 集成版节点测试（包含地理位置检测）
+    - name: Test Nodes with Integrated GeoIP Detection
+      id: test_nodes
+      run: |
+        echo "开始集成版节点测试..."
+        echo "配置信息:"
+        echo "  - 启用地理位置检测: ${{ env.ENABLE_GEOIP }}"
+        echo "  - 地理位置检测并发数: ${{ env.GEOIP_WORKERS }}"
+        echo "  - IP检测服务器端口: ${{ env.IP_SERVER_PORT }}"
+        echo "  - 延迟限制: ${{ env.DELAY_LIMIT }}ms"
+        echo "  - 最大并发数: ${{ env.MAX_WORKERS }}"
+        
+        # 构建命令参数
+        cmd_args="--input-file all_unique_nodes.yaml"
+        cmd_args="$cmd_args --output healthy_nodes_list.yaml"
+        cmd_args="$cmd_args --clash-path /usr/local/bin/mihomo"
+        cmd_args="$cmd_args --delay-limit ${{ env.DELAY_LIMIT }}"
+        cmd_args="$cmd_args --max-workers ${{ env.MAX_WORKERS }}"
+        
+        # 地理位置检测参数
+        if [ "${{ env.ENABLE_GEOIP }}" = "true" ]; then
+          cmd_args="$cmd_args --enable-geoip"
+          cmd_args="$cmd_args --ip-server-port ${{ env.IP_SERVER_PORT }}"
+          cmd_args="$cmd_args --geoip-workers ${{ env.GEOIP_WORKERS }}"
+          cmd_args="$cmd_args --geoip-timeout ${{ env.GEOIP_TIMEOUT }}"
+          cmd_args="$cmd_args --save-geoip-details"
+        fi
+        
+        echo "执行命令: python scripts/node_tester_integrated.py $cmd_args"
+        python scripts/node_tester_integrated.py $cmd_args
+        
+        echo "healthy_nodes_file=healthy_nodes_list.yaml" >> $GITHUB_OUTPUT
+
+    # 步骤11: 生成最终配置文件
+    - name: Generate Final Configs from Healthy Nodes
+      id: generate
+      run: |
+        python scripts/generate_config.py \
+          --use-pre-tested-nodes ${{ steps.test_nodes.outputs.healthy_nodes_file }}
+
+    # 步骤12: 统计生成结果
+    - name: Generate Statistics
+      run: |
+        echo "📊 生成统计信息:"
+        echo "生成的配置文件:"
+        ls -la config/*.yaml | grep -E "(config|stash)" | while read -r line; do
+          file=$(echo "$line" | awk '{print $9}')
+          size=$(echo "$line" | awk '{print $5}')
+          echo "  - $file ($size bytes)"
+        done
+        
+        echo ""
+        echo "节点统计:"
+        if [ -f healthy_nodes_list.yaml ]; then
+          total_nodes=$(grep -c "^  - name:" healthy_nodes_list.yaml || echo "0")
+          echo "  - 总健康节点数: $total_nodes"
+        fi
+        
+        # 各地区节点统计
+        for region in hk us jp uk sg tw kr de ca au; do
+          if [ -f "config/config_${region}.yaml" ]; then
+            count=$(grep -c "^  - name:" "config/config_${region}.yaml" || echo "0")
+            region_upper=$(echo "$region" | tr '[:lower:]' '[:upper:]')
+            echo "  - ${region_upper} 节点数: $count"
+          fi
+        done
+
+    # 步骤13: 上传构建产物
+    - name: Upload All Config Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: clash-configs-with-geoip
+        path: |
+          config/*.yaml
+          healthy_nodes_list*.yaml
+
+    # 步骤14: 创建或更新 GitHub Release
+    - name: Create or Update Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: config/*.yaml
+        tag_name: latest-config
+        name: "🚀 Latest Clash Configurations (with GeoIP)"
+        body: |
+          🌍 **自动更新的 Clash 配置文件**
+          
+          **更新时间**: ${{ steps.get_ip.outputs.timestamp || github.run_id }}
+          **地理位置检测**: ${{ env.ENABLE_GEOIP == 'true' && '✅ 已启用' || '❌ 已禁用' }}
+          **运行器IP**: ${{ steps.get_ip.outputs.ip }}
+          
+          **📁 配置文件说明**:
+          - `config.yaml` - 所有健康节点 (标准版)
+          - `config_*.yaml` - 各地区节点 (标准版)  
+          - `stash.yaml` - 所有健康节点 (Stash版)
+          - `stash_*.yaml` - 各地区节点 (Stash版)
+          
+          **🌏 支持地区**: 香港🇭🇰 美国🇺🇸 日本🇯🇵 英国🇬🇧 新加坡🇸🇬 台湾🇹🇼 韩国🇰🇷 德国🇩🇪 加拿大🇨🇦 澳大利亚🇦🇺
+        generate_release_notes: true
+
+    # 步骤15: 提交配置文件变更
+    - name: Commit and push config changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        
+        if git diff --quiet --exit-code -- 'config/*.yaml'; then
+          echo "No changes to commit, skipping push."
+          exit 0
+        fi
+        
+        git add config/*.yaml
+        
+        # 构建提交信息
+        commit_msg="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M')"
+        if [ "${{ env.ENABLE_GEOIP }}" = "true" ]; then
+          commit_msg="$commit_msg with GeoIP detection"
+        fi
+        
+        git commit -m "$commit_msg"
+        git push origin HEAD:main
+
+    # 步骤16: 刷新 CDN 缓存
+    - name: Purge jsDelivr Cache
+      if: success()
+      env:
+        FILES_TO_PURGE: ${{ steps.generate.outputs.generated_files }}
+      run: |
+        echo "Files to purge: $FILES_TO_PURGE"
+        for file in $FILES_TO_PURGE; do
+          purge_url="https://purge.jsdelivr.net/gh/${{ github.repository }}@main/$file"
+          echo "Purging CDN cache for: $file"
+          
+          for ((i=1; i<=3; i++)); do
+            http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
+            if [ $http_code -eq 200 ]; then
+              echo "  ✅ Success (Attempt $i)"
+              break
+            elif [ $i -eq 3 ]; then
+              echo "  ❌ Failed after 3 attempts (HTTP code: $http_code)"
+            else
+              echo "  ⚠️ Failed with code $http_code, retrying..."
+              sleep 10
+            fi
+          done
+        done
+        echo "🎉 CDN cache purge completed."
+
+    # 步骤17: 清理临时文件
+    - name: Cleanup
+      if: always()
+      run: |
+        echo "清理临时文件..."
+        rm -f all_unique_nodes.yaml
+        rm -f config_for_test.yaml
+        rm -f mihomo.gz
+        echo "清理完成"

@@ -31,6 +31,26 @@ FILTER_PATTERNS = {
         r'\b(sg|singapore|sin)\b|新加坡|🇸🇬',
         flags=re.IGNORECASE
     ),
+    'tw': re.compile(
+        r'\b(tw|taiwan|taipei|tpe)\b|台湾|🇹🇼',
+        flags=re.IGNORECASE
+    ),
+    'kr': re.compile(
+        r'\b(kr|korea|seoul|kor)\b|韩国|🇰🇷',
+        flags=re.IGNORECASE
+    ),
+    'de': re.compile(
+        r'\b(de|germany|berlin|frankfurt)\b|德国|🇩🇪',
+        flags=re.IGNORECASE
+    ),
+    'ca': re.compile(
+        r'\b(ca|canada|toronto|vancouver)\b|加拿大|🇨🇦',
+        flags=re.IGNORECASE
+    ),
+    'au': re.compile(
+        r'\b(au|australia|sydney|melbourne)\b|澳大利亚|🇦🇺',
+        flags=re.IGNORECASE
+    ),
 }
 
 # =============================================================================
@@ -91,6 +111,11 @@ CONFIGS_TO_GENERATE = [
     {"filter": "jp", "output": "config/config_jp.yaml", "template": "config-template.yaml"},
     {"filter": "uk", "output": "config/config_uk.yaml", "template": "config-template.yaml"},
     {"filter": "sg", "output": "config/config_sg.yaml", "template": "config-template.yaml"},
+    {"filter": "tw", "output": "config/config_tw.yaml", "template": "config-template.yaml"},
+    {"filter": "kr", "output": "config/config_kr.yaml", "template": "config-template.yaml"},
+    {"filter": "de", "output": "config/config_de.yaml", "template": "config-template.yaml"},
+    {"filter": "ca", "output": "config/config_ca.yaml", "template": "config-template.yaml"},
+    {"filter": "au", "output": "config/config_au.yaml", "template": "config-template.yaml"},
     
     # Stash 专用配置
     {"filter": None, "output": "config/stash.yaml", "template": "stash-template.yaml"},
@@ -98,7 +123,12 @@ CONFIGS_TO_GENERATE = [
     {"filter": "us", "output": "config/stash_us.yaml", "template": "stash-template.yaml"},
     {"filter": "jp", "output": "config/stash_jp.yaml", "template": "stash-template.yaml"},
     {"filter": "uk", "output": "config/stash_uk.yaml", "template": "stash-template.yaml"},
-    {"filter": "sg", "output": "config/stash_sg.yaml", "template": "stash-template.yaml"}
+    {"filter": "sg", "output": "config/stash_sg.yaml", "template": "stash-template.yaml"},
+    {"filter": "tw", "output": "config/stash_tw.yaml", "template": "stash-template.yaml"},
+    {"filter": "kr", "output": "config/stash_kr.yaml", "template": "stash-template.yaml"},
+    {"filter": "de", "output": "config/stash_de.yaml", "template": "stash-template.yaml"},
+    {"filter": "ca", "output": "config/stash_ca.yaml", "template": "stash-template.yaml"},
+    {"filter": "au", "output": "config/stash_au.yaml", "template": "stash-template.yaml"}
 ]
 
 # =============================================================================
