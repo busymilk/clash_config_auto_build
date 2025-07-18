@@ -13,8 +13,8 @@ import argparse
 # 添加项目根目录到Python路径
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from config.constants import FILTER_PATTERNS, CONFIGS_TO_GENERATE, PathConfig
-from utils.logger import setup_logger
+from core.constants import FILTER_PATTERNS, CONFIGS_TO_GENERATE, PathConfig
+from core.logger import setup_logger
 
 
 class ConfigGenerator:

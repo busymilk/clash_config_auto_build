@@ -13,8 +13,8 @@ import os
 # 添加项目根目录到Python路径
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from config.constants import FILTER_PATTERNS, BLACKLIST_KEYWORDS
-from utils.logger import setup_logger
+from core.constants import FILTER_PATTERNS, BLACKLIST_KEYWORDS
+from core.logger import setup_logger
 
 
 def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -> None:
