@@ -138,7 +138,12 @@ class GeoIPDetectorV2:
             switch_url = f"http://{api_url}/proxies/GLOBAL"
             switch_data = {"name": proxy_name}
             
-            response = requests.put(switch_url, json=switch_data, timeout=5)
+            response = requests.put(
+                switch_url, 
+                json=switch_data, 
+                timeout=5,
+                headers={'Content-Type': 'application/json; charset=utf-8'}
+            )
             if response.status_code != 204:
                 self.logger.warning(f"切换代理 '{proxy_name}' 失败: {response.status_code}")
                 return None
@@ -154,13 +159,16 @@ class GeoIPDetectorV2:
             }
             
             # 访问我们的IP检测服务器
+            # 对代理名称进行URL编码以避免字符编码问题
+            encoded_proxy_name = urllib.parse.quote(proxy_name, safe='')
+            
             response = requests.get(
                 f"{self.ip_server_url}/ip",
                 proxies=proxies,
                 timeout=timeout,
                 headers={
                     'User-Agent': 'ClashConfigAutoBuilder/1.0',
-                    'X-Proxy-Name': proxy_name  # 添加代理名称到请求头
+                    'X-Proxy-Name': encoded_proxy_name  # URL编码后的代理名称
                 }
             )
             
