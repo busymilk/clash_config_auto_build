@@ -50,6 +50,12 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-219
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - name: 🇸🇬 新加坡 17
   network: ws
   password: ttfang
@@ -227,6 +233,8 @@ rules:
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN-SUFFIX,ghproxy.com,DIRECT
 - DOMAIN-SUFFIX,gofile.io,DIRECT
+- DOMAIN-SUFFIX,facefusion.io,✈️ 选择代理
+- DOMAIN-SUFFIX,anaconda.com,✈️ 选择代理
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
