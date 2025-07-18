@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from core.constants import NodeTestConfig, PathConfig
 from core.logger import setup_logger
-from core.geoip_detector_aws import AWSGeoIPDetector
+from core.geoip_detector_local import LocalGeoIPDetector
 
 
 class IntegratedNodeTester:
@@ -49,8 +49,8 @@ class IntegratedNodeTester:
         if not self.args.enable_geoip:
             return True
         
-        self.logger.info("初始化AWS地理位置检测器...")
-        self.geoip_detector = AWSGeoIPDetector()
+        self.logger.info("初始化本地GeoIP地理位置检测器...")
+        self.geoip_detector = LocalGeoIPDetector()
         return True
     
     def prepare_test_config(self, source_path: str, dest_path: str, 
