@@ -76,7 +76,7 @@ jobs:
     # 步骤7: 合并所有订阅源的节点并去重 (使用重构版本)
     - name: Merge All Proxies
       run: |
-        python scripts/merge_proxies_refactored.py \
+        python scripts/merge_proxies.py \
           --proxies-dir ${{ env.PROXY_DIR }} \
           --output all_unique_nodes.yaml
 
@@ -102,7 +102,7 @@ jobs:
 
         # 2. 运行节点健康测试脚本 (使用重构版本)
         echo "Running node tester script..."
-        python scripts/node_tester_refactored.py \
+        python scripts/node_tester.py \
           --input-file all_unique_nodes.yaml \
           --output healthy_nodes_list.yaml \
           --clash-path /usr/local/bin/mihomo \
@@ -118,7 +118,7 @@ jobs:
     - name: Generate Final Configs from Healthy Nodes
       id: generate
       run: |
-        python scripts/generate_config_refactored.py \
+        python scripts/generate_config.py \
           --use-pre-tested-nodes ${{ steps.test_nodes.outputs.healthy_nodes_file }}
 
     # 步骤11: 上传所有构建产物
