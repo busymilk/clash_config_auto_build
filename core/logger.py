@@ -6,7 +6,7 @@ Clash Config Auto Builder - 统一日志工具
 
 import logging
 import sys
-from config.constants import LogConfig
+from core.constants import LogConfig
 
 
 def setup_logger(name: str, level: str = None) -> logging.Logger:
