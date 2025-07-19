@@ -51,36 +51,23 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 🇹🇼 台湾-Taipei (ce8f84)
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇹🇼 台湾-Taipei (6fc893)
+  name: 🇹🇼 台湾-Taipei (8a49c3)
   password: qwerREWQ@@
   port: 64759
   server: 185.189.160.98
   type: ss
+- cipher: aes-256-cfb
+  name: 🇹🇼 台湾-Taipei (8f4149)
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾-Taipei (b099ff)
+  name: 🇹🇼 台湾-Taipei (d16e0e)
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇹🇼 台湾-Xizhi District (d44e31)
-  network: tcp
-  port: 49226
-  reality-opts:
-    public-key: vyqO2y1XKUzVQNuOAtBpYPaZJWxuvfA9CTVuoF9RClQ
-  server: tx-2.756794.xyz
-  servername: dash.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9244d7a3-6c74-4035-b64f-a90f3ee6e173
 - auth: ''
   fast-open: false
   name: 🇹🇼 台湾-Zhongli District (850de0)
@@ -92,6 +79,19 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇹🇼 台湾-Xizhi District (d7eb6c)
+  network: tcp
+  port: 49226
+  reality-opts:
+    public-key: vyqO2y1XKUzVQNuOAtBpYPaZJWxuvfA9CTVuoF9RClQ
+  server: tx-2.756794.xyz
+  servername: dash.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9244d7a3-6c74-4035-b64f-a90f3ee6e173
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

@@ -50,13 +50,7 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 加拿大 (480e36)
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- name: 🇨🇦 加拿大-Toronto (a4a7c8)
+- name: 🇨🇦 加拿大-Toronto (736833)
   port: 45877
   server: 104.248.105.52
   skip-cert-verify: false
@@ -64,7 +58,21 @@ proxies:
   type: vless
   udp: true
   uuid: 81ed7265-be10-498b-c96f-46789e81ac88
-- name: 🇨🇦 加拿大 (f04250)
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 加拿大 (603a65)
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- name: 🇨🇦 加拿大-Toronto (7b4ba4)
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 129.153.59.124
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 🇨🇦 加拿大 (c2dfda)
   network: ws
   port: 80
   server: 104.18.26.90
@@ -78,9 +86,28 @@ proxies:
     headers:
       Host: blaze-can-118.blazecanada.site
     path: /?ed=2560
+- name: 🇨🇦 加拿大-Toronto (d42ffd)
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 150.230.30.237
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: 🇨🇦 加拿大-Toronto (ae4691)
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 47262
+  server: 40.233.103.51
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇨🇦 加拿大-Toronto (a6dce4)
+  name: 🇨🇦 加拿大-Toronto (809c6e)
   network: tcp
   port: 42557
   reality-opts:
@@ -92,61 +119,59 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- client-fingerprint: chrome
-  name: 🇨🇦 加拿大-Montreal (0b7115)
-  network: ws
-  port: 8880
-  server: 108.162.198.63
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 加拿大-Vancouver (736c1e)
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 加拿大 (d3988a)
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
 - cipher: aes-256-cfb
-  name: 🇨🇦 加拿大-Vancouver (38c0ef)
+  name: 🇨🇦 加拿大-Vancouver (025b45)
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
   server: 79.127.233.170
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 加拿大-Vancouver (fb9c36)
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 加拿大 (66deae)
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
-- name: 🇨🇦 加拿大-Toronto (d42ffd)
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 150.230.30.237
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 🇨🇦 加拿大 (d3afd4)
+  name: 🇨🇦 加拿大-Toronto (25b8c6)
   network: ws
-  port: 80
-  server: 51.79.102.253
+  port: 2096
+  server: cc2dash.89060004.xyz
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  ws-headers:
+    Host: cc2dash.89060004.xyz
+  ws-path: /
+- auth: 378fd036-0b5b-4e2a-8bd6-b276933ae566
+  name: 🇨🇦 加拿大-Toronto (73d470)
+  password: 378fd036-0b5b-4e2a-8bd6-b276933ae566
+  port: 26523
+  server: yjjdjnd.yunjijd.xyz
+  skip-cert-verify: true
+  sni: yjjdjnd.yunjijd.xyz
+  type: hysteria2
+  udp: true
+- auth: 78e953b1-099f-40b8-9cda-f8bab72b532c
+  name: 🇨🇦 加拿大-Toronto (f7002c)
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 78e953b1-099f-40b8-9cda-f8bab72b532c
+  port: 35280
+  server: flyjnd.flylink.cyou
+  skip-cert-verify: true
+  sni: flyjnd.flylink.cyou
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

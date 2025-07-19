@@ -51,28 +51,17 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-128-gcm
-  name: 🇯🇵 日本-Tokyo (96582e)
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵 日本-Tokyo (788b58)
+  name: 🇯🇵 日本-Tokyo (d9540e)
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
-- auth: ''
-  fast-open: false
-  name: 🇯🇵 日本-Tokyo (f162d0)
-  password: jyEWQRbJATgWMu3XQtRvxb2h0
-  port: 25635
-  server: 47.79.34.232
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
+- cipher: aes-128-gcm
+  name: 🇯🇵 日本-Tokyo (f4f614)
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 - auth: ''
   fast-open: false
   name: 🇯🇵 日本-Tokyo (968738)
@@ -84,9 +73,31 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 日本-Tokyo (40b463)
+  network: tcp
+  port: 443
+  server: 3bd9.55dca.e048.f2-fef1f.yfjcs.com
+  servername: yfjp.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
+- auth: ''
+  fast-open: false
+  name: 🇯🇵 日本-Tokyo (f162d0)
+  password: jyEWQRbJATgWMu3XQtRvxb2h0
+  port: 25635
+  server: 47.79.34.232
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵 日本-Tokyo (657f2a)
+  name: 🇯🇵 日本-Tokyo (18fe83)
   network: tcp
   port: 56702
   reality-opts:
@@ -98,38 +109,15 @@ proxies:
   type: vless
   udp: true
   uuid: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
-- auth: ''
-  fast-open: false
-  name: 🇯🇵 日本-Tokyo (a7fb02)
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
-  name: 🇯🇵 日本-Tokyo (54ad2d)
-  password: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
-  port: 32000
-  ports: 32000-33000
-  server: jp4.interld123456789.com
-  skip-cert-verify: true
-  sni: 234224.1234567890spcloud.com
-  type: hysteria2
-  udp: true
-- auth: ''
-  fast-open: false
-  name: 🇯🇵 日本-Tokyo (3e347e)
+- auth: Y9vRstWcTHECGcKnayA2VYiUXs
+  name: 🇯🇵 日本-Tokyo (f8133b)
   password: Y9vRstWcTHECGcKnayA2VYiUXs
   port: 35562
   server: 13.112.101.203
-  servername: bing.com
   skip-cert-verify: true
   sni: bing.com
-  tfo: false
   type: hysteria2
+  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 🇯🇵 日本-Tokyo (55a18e)
@@ -146,6 +134,27 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
+- auth: ''
+  fast-open: false
+  name: 🇯🇵 日本-Tokyo (a7fb02)
+  password: wl4HYN9PPKs8d8IzGIt4yKqt0
+  port: 53348
+  server: 47.74.34.102
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
+  name: 🇯🇵 日本-Tokyo (d9b7e7)
+  password: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
+  port: 32000
+  ports: 32000-33000
+  server: jp4.interld123456789.com
+  skip-cert-verify: true
+  sni: 234224.1234567890spcloud.com
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
