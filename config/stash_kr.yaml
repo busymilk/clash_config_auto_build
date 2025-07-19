@@ -51,7 +51,7 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 🇰🇷 韩国-Seoul (86cfa7)
+  name: 🇰🇷 韩国-Seoul (e15838)
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -76,7 +76,24 @@ proxies:
     headers:
       host: ns.ylka.dpdns.org
     path: /?ed=2560
-- name: 🇰🇷 韩国 (273394)
+- auth: 518be9f7-4055-4830-a3d7-3884536fc056
+  name: 🇰🇷 韩国 (1a49ac)
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 518be9f7-4055-4830-a3d7-3884536fc056
+  port: 20357
+  server: nexiahg.688997.xyz
+  skip-cert-verify: true
+  sni: nexiahg.688997.xyz
+  type: hysteria2
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷 韩国-Gwanak-gu (191318)
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+- name: 🇰🇷 韩国 (a8c801)
   network: ws
   port: 12344
   server: 119.75.99.140
@@ -89,17 +106,6 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: telegram @wangcai2 /?ed=2560
-- auth: 18c77d82-a744-45e1-8a65-4f29a8547932
-  name: 🇰🇷 韩国 (02c7ca)
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 18c77d82-a744-45e1-8a65-4f29a8547932
-  port: 35310
-  server: flyhg.flylink.cyou
-  skip-cert-verify: true
-  sni: flyhg.flylink.cyou
-  type: hysteria2
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
