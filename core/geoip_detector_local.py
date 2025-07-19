@@ -159,7 +159,7 @@ class LocalGeoIPDetector:
         return False
     
     def get_proxy_exit_ip(self, proxy_name: str, api_url: str = "127.0.0.1:9090", 
-                         timeout: int = 15) -> Optional[str]:
+                         timeout: int = 15, skip_verification: bool = False) -> Optional[str]:
         """通过代理获取出口IP地址"""
         try:
             self.logger.debug(f"开始获取代理 '{proxy_name}' 的出口IP")
@@ -170,9 +170,9 @@ class LocalGeoIPDetector:
             
             # 尝试切换代理，最多重试3次
             switch_success = False
-            for attempt in range(3):
-                self.logger.debug(f"切换代理到: {proxy_name} (尝试 {attempt + 1}/3)")
-                
+            
+            # 如果跳过验证，则直接尝试切换一次
+            if skip_verification:
                 try:
                     response = requests.put(
                         switch_url, 
@@ -181,34 +181,60 @@ class LocalGeoIPDetector:
                         headers={'Content-Type': 'application/json; charset=utf-8'}
                     )
                     
-                    if response.status_code != 204:
-                        self.logger.debug(f"切换代理 '{proxy_name}' 失败: HTTP {response.status_code}")
-                        continue
-                    
-                    # 等待代理切换生效
-                    time.sleep(2)
-                    
-                    # 验证代理是否切换成功
-                    verify_response = requests.get(f"http://{api_url}/proxies/GLOBAL", timeout=3)
-                    if verify_response.status_code == 200:
-                        current_proxy = verify_response.json().get('now', '')
-                        if current_proxy == proxy_name:
-                            self.logger.debug(f"代理切换验证成功: {current_proxy}")
-                            switch_success = True
-                            break
-                        else:
-                            self.logger.debug(f"代理切换验证失败: 期望 '{proxy_name}', 实际 '{current_proxy}' (尝试 {attempt + 1})")
-                    
+                    if response.status_code == 204:
+                        self.logger.debug(f"代理 '{proxy_name}' 切换请求成功 (跳过验证)")
+                        time.sleep(3)  # 给足够时间切换
+                        switch_success = True
+                    else:
+                        self.logger.debug(f"代理 '{proxy_name}' 切换请求失败: HTTP {response.status_code}")
                 except Exception as e:
-                    self.logger.debug(f"代理切换尝试 {attempt + 1} 失败: {e}")
-                
-                # 如果不是最后一次尝试，等待一下再重试
-                if attempt < 2:
-                    time.sleep(1)
+                    self.logger.debug(f"代理 '{proxy_name}' 切换请求异常: {e}")
+            else:
+                # 正常的切换流程，带验证
+                for attempt in range(3):
+                    self.logger.debug(f"切换代理到: {proxy_name} (尝试 {attempt + 1}/3)")
+                    
+                    try:
+                        response = requests.put(
+                            switch_url, 
+                            json=switch_data, 
+                            timeout=5,
+                            headers={'Content-Type': 'application/json; charset=utf-8'}
+                        )
+                        
+                        if response.status_code != 204:
+                            self.logger.debug(f"切换代理 '{proxy_name}' 失败: HTTP {response.status_code}")
+                            continue
+                        
+                        # 等待代理切换生效
+                        time.sleep(2)
+                        
+                        # 验证代理是否切换成功
+                        verify_response = requests.get(f"http://{api_url}/proxies/GLOBAL", timeout=3)
+                        if verify_response.status_code == 200:
+                            current_proxy = verify_response.json().get('now', '')
+                            if current_proxy == proxy_name:
+                                self.logger.debug(f"代理切换验证成功: {current_proxy}")
+                                switch_success = True
+                                break
+                            else:
+                                self.logger.debug(f"代理切换验证失败: 期望 '{proxy_name}', 实际 '{current_proxy}' (尝试 {attempt + 1})")
+                        
+                    except Exception as e:
+                        self.logger.debug(f"代理切换尝试 {attempt + 1} 失败: {e}")
+                    
+                    # 如果不是最后一次尝试，等待一下再重试
+                    if attempt < 2:
+                        time.sleep(1)
             
             if not switch_success:
-                self.logger.warning(f"代理 '{proxy_name}' 切换失败 (已重试3次)")
-                return None
+                # 如果常规切换失败，尝试跳过验证的方式
+                if not skip_verification:
+                    self.logger.info(f"代理 '{proxy_name}' 常规切换失败，尝试跳过验证...")
+                    return self.get_proxy_exit_ip(proxy_name, api_url, timeout, skip_verification=True)
+                else:
+                    self.logger.warning(f"代理 '{proxy_name}' 切换失败 (已尝试跳过验证)")
+                    return None
             
             # 第二步：通过代理访问AWS IP检测服务
             proxy_url = f"http://127.0.0.1:7890"  # mihomo的mixed-port
@@ -509,7 +535,7 @@ class LocalGeoIPDetector:
         self.logger.info(f"地理位置检测完成！成功重命名 {renamed_count}/{len(proxies)} 个节点")
         return renamed_proxies
     
-    def _detect_single_node(self, proxy: dict, api_url: str, timeout: int) -> Optional[dict]:
+    def _detect_single_node(self, proxy: dict, api_url: str, timeout: int, skip_verification: bool = False) -> Optional[dict]:
         """检测单个节点的地理位置"""
         proxy_name = proxy.get('name')
         if not proxy_name:
@@ -517,7 +543,7 @@ class LocalGeoIPDetector:
         
         try:
             # 获取出口IP
-            exit_ip = self.get_proxy_exit_ip(proxy_name, api_url, timeout)
+            exit_ip = self.get_proxy_exit_ip(proxy_name, api_url, timeout, skip_verification)
             if not exit_ip:
                 return proxy
             
