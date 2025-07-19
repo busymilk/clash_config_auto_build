@@ -149,12 +149,16 @@ class GeoIPDetector:
             if error or not self._is_valid_ip(exit_ip):
                 if error:
                     self.logger.debug(f"Proxy '{proxy_name}' failed check: {error}")
-                renamed_proxies.append(original_proxy)
+                new_proxy = original_proxy.copy()
+                new_proxy['name'] = f"未知 {proxy_name}"
+                renamed_proxies.append(new_proxy)
                 continue
 
             location_info = self.get_ip_location(exit_ip)
             if not location_info:
-                renamed_proxies.append(original_proxy)
+                new_proxy = original_proxy.copy()
+                new_proxy['name'] = f"未知 {proxy_name}"
+                renamed_proxies.append(new_proxy)
                 continue
 
             new_name = self.generate_node_name(proxy_name, location_info)
