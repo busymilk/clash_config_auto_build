@@ -50,12 +50,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: 未知 🇬🇧GB-62.100.205.48-0180 | 31.09MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧 英国-London (880d0e)
   password: shadowsocks
@@ -63,22 +57,10 @@ proxies:
   server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (f31007)
+  name: 🇬🇧 英国-London (c67694)
   password: shadowsocks
   port: 443
-  server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (8e9eb2)
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (6da60a)
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
+  server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧 英国-London (a83502)
@@ -87,22 +69,34 @@ proxies:
   server: 212.102.53.194
   type: ss
 - cipher: aes-128-gcm
+  name: 🇬🇧 英国-London (6da60a)
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧 英国-London (f31007)
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
   name: 🇬🇧 英国-London (edc769)
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
+  name: 🇬🇧 英国-London (8e9eb2)
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
   name: 🇬🇧 英国-London (f222aa)
   password: shadowsocks
   port: 443
   server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (c67694)
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧 英国-London (6c73b4)
@@ -116,17 +110,28 @@ proxies:
   port: 443
   server: 212.102.53.193
   type: ss
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇬🇧 英国-Slough (eee5c7)
+  network: tcp
+  port: 443
+  server: 140.238.101.15
+  servername: 767w1-38dc0-9icf2.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧 英国-London (fe07ff)
   password: c40641c1f89e7acb
   port: 57456
   server: 46.226.163.225
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国-London (dbf324)
-  password: Bog0ELmMM9DSxDdQ
+- cipher: aes-128-gcm
+  name: 🇬🇧 英国-Manchester (42358c)
+  password: shadowsocks
   port: 443
-  server: 85.210.120.237
+  server: 141.98.101.178
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧 英国-London (bd2a69)
@@ -135,16 +140,34 @@ proxies:
   server: uk-dc1.yangon.club
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国-London (f04829)
-  password: W74XFALLLuw6m5IA
+  name: 🇬🇧 英国-London (2613b9)
+  password: WstuSnlu4ieA9M0L
   port: 443
-  server: series-a1.samanehha.co
+  server: admin.c2.webramz.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国-London (7bebdf)
+  password: u17T3BvpYaaiuW2c
+  port: 443
+  server: series-a2-mec.varzesh360.co
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧 英国-London (84ba4a)
   password: u17T3BvpYaaiuW2c
   port: 443
   server: series-a2-mec.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国-London (dbf324)
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 英国-London (2360cd)
+  password: 1xO2cqPazqjGfCfd
+  port: 443
+  server: freakconfig13.felafel.org
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧 英国-London (cd3e04)
@@ -159,40 +182,16 @@ proxies:
   server: admin.c1.webramz.co
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国-London (2360cd)
-  password: 1xO2cqPazqjGfCfd
-  port: 443
-  server: freakconfig13.felafel.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇬🇧 英国-London (0fb767)
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a2.samanehha.co
   type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧 英国-Manchester (42358c)
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国-London (7bebdf)
-  password: u17T3BvpYaaiuW2c
+  name: 🇬🇧 英国-London (f04829)
+  password: W74XFALLLuw6m5IA
   port: 443
-  server: series-a2-mec.varzesh360.co
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国-London (2613b9)
-  password: WstuSnlu4ieA9M0L
-  port: 443
-  server: admin.c2.webramz.co
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国-London (c53a0b)
-  password: 69MUii7VDwMqh7Hz
-  port: 443
-  server: admin.c4.webramz.co
+  server: series-a1.samanehha.co
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧 英国-London (293b89)

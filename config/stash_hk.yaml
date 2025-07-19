@@ -51,43 +51,26 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港-Hong Kong (474d9d)
+  name: 🇭🇰 香港-Hong Kong (1fc40d)
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- auth: ''
-  fast-open: false
-  name: 🇭🇰 香港-Hong Kong (ba4b80)
-  password: pEvU4tuQG1bxO1gbf5Mxj400Bc
-  port: 33223
-  server: 8.218.165.24
-  servername: bing.com
+- name: 🇭🇰 香港-Hong Kong (a43673)
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
   skip-cert-verify: true
-  sni: bing.com
-  tfo: false
+  sni: hk.nfsn666.gq
+  tls: false
   type: hysteria2
-- name: 🇭🇰 香港-Hong Kong (133846)
-  network: ws
-  port: 21415
-  server: 43.132.244.52
-  servername: tw.laoyoutiao.link
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: tw.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港-Hong Kong (a6342c)
+  client-fingerprint: chrome
+  name: 🇭🇰 香港-Hong Kong (b240db)
   network: ws
   port: 80
   server: 2112e4.7d79233c.shop
-  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -97,23 +80,34 @@ proxies:
     headers:
       Host: hk01s.7d79233c.shop
     path: /
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇭🇰 香港 (f1d842)
+  network: tcp
+  port: 443
+  server: 3bd9.55dca.e048.f64-fef1f.yfjcs.com
+  servername: yfhk2.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 香港 (55c159)
+  name: 🇭🇰 香港 (87cce8)
   network: ws
   port: 80
-  server: a2fc681c-szrb40-t15imh-1g8k0.hk3.p5pv.com
+  server: e380a6b2-szrb40-t167d0-ggww.hk.p5pv.com
   tls: false
   type: vmess
   udp: true
-  uuid: d4018e28-e328-11ed-98a7-f23c913c8d2b
+  uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港 (46c5ed)
+  name: 🇭🇰 香港 (9cff17)
   network: ws
   port: 80
   server: 28525806-szrb40-t167d0-ggww.hkt.tcpbbr.net
@@ -125,32 +119,8 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 (702ef0)
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇭🇰 香港 (e48f5d)
-  network: tcp
-  port: 443
-  server: 3bd9.55dca.e048.f64-fef1f.yfjcs.com
-  servername: yfhk2.xn--4gq62f52gppi29k.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 🇭🇰 香港 (6622e5)
   password: 9bfdde71b4c0
   plugin: v2ray-plugin
@@ -165,6 +135,59 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
+- auth: ''
+  fast-open: false
+  name: 🇭🇰 香港-Hong Kong (ba4b80)
+  password: pEvU4tuQG1bxO1gbf5Mxj400Bc
+  port: 33223
+  server: 8.218.165.24
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 (2a9eef)
+  network: ws
+  port: 80
+  server: 9a5eef13-szrb40-t167d0-ggww.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 (5019cc)
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d4018e28-e328-11ed-98a7-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 (8af0b7)
+  network: ws
+  port: 80
+  server: a2fc681c-szrb40-t15imh-1g8k0.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d4018e28-e328-11ed-98a7-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
