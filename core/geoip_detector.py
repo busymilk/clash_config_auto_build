@@ -108,33 +108,41 @@ class GeoIPDetector:
         return f"{location_str} {original_name}"
 
     def detect_and_rename_nodes(self, proxies: List[Dict], api_url: str, timeout: int, **kwargs) -> List[Dict]:
-        """Batch detect and rename nodes using a single content_check API call."""
-        self.logger.info(f"Starting batch GeoIP detection for {len(proxies)} nodes...")
+        """Batch detect and rename nodes using the /content_check endpoint."""
+        self.logger.info(f"Starting batch GeoIP detection for {len(proxies)} nodes via /content_check...")
 
         if not proxies:
             return []
 
         # Create a map of original names to proxy objects for easy lookup
         proxy_map = {p['name']: p for p in proxies}
+        
+        # This will hold the final list of proxies, processed or not
+        final_proxies = []
+        
+        # Keep track of which proxies have been processed by the API response
+        processed_proxies = set()
 
-        # Construct the batch check URL
-        proxy_names_str = '|'.join(urllib.parse.quote(p['name']) for p in proxies)
-        batch_check_url = f"http://{api_url}/proxies/{proxy_names_str}/check?url={urllib.parse.quote(self.ip_check_url)}"
+        # Construct the correct URL for the batch content_check API
+        encoded_check_url = urllib.parse.quote(self.ip_check_url)
+        timeout_str = f"{timeout}s"
+        batch_check_url = f"http://{api_url}/content_check?url={encoded_check_url}&timeout={timeout_str}"
+        self.logger.info(f"Calling batch GeoIP API: {batch_check_url}")
 
         try:
-            response = requests.get(batch_check_url, timeout=timeout)
+            # The timeout for the requests call should be slightly longer than the API timeout
+            response = requests.get(batch_check_url, timeout=timeout + 10)
             response.raise_for_status()
             results = response.json().get('results', [])
         except requests.exceptions.RequestException as e:
-            self.logger.error(f"Batch content_check API call failed: {e}")
-            return proxies # Return original proxies on failure
-        except ValueError: # JSONDecodeError
-            self.logger.error("Failed to decode JSON response from batch content_check API.")
-            return proxies
+            self.logger.error(f"Batch /content_check API call failed: {e}")
+            # On total failure, rename all nodes to "未知" and return
+            return [dict(p, name=f"未知 {p['name']}") for p in proxies]
+        except (ValueError, AttributeError): # JSONDecodeError or if 'results' is not a list
+            self.logger.error("Failed to decode or parse JSON response from /content_check API.")
+            return [dict(p, name=f"未知 {p['name']}") for p in proxies]
 
-        renamed_proxies = []
         renamed_count = 0
-
         for result in results:
             proxy_name = result.get('proxy')
             original_proxy = proxy_map.get(proxy_name)
@@ -142,27 +150,30 @@ class GeoIPDetector:
             if not original_proxy:
                 self.logger.warning(f"Proxy '{proxy_name}' from API response not found in original list.")
                 continue
-
+            
+            processed_proxies.add(proxy_name)
             exit_ip = result.get('content')
             error = result.get('error')
 
+            # Case 1: Detection failed (error or invalid IP)
             if error or not self._is_valid_ip(exit_ip):
                 if error:
                     self.logger.debug(f"Proxy '{proxy_name}' failed check: {error}")
                 new_proxy = original_proxy.copy()
                 new_proxy['name'] = f"未知 {proxy_name}"
-                renamed_proxies.append(new_proxy)
+                final_proxies.append(new_proxy)
                 continue
 
+            # Case 2: IP obtained, but GeoIP lookup failed
             location_info = self.get_ip_location(exit_ip)
             if not location_info:
                 new_proxy = original_proxy.copy()
                 new_proxy['name'] = f"未知 {proxy_name}"
-                renamed_proxies.append(new_proxy)
+                final_proxies.append(new_proxy)
                 continue
 
+            # Case 3: Success
             new_name = self.generate_node_name(proxy_name, location_info)
-            
             new_proxy = original_proxy.copy()
             new_proxy['name'] = new_name
             new_proxy['_original_name'] = proxy_name
@@ -171,11 +182,19 @@ class GeoIPDetector:
             new_proxy['_renamed'] = True
             
             self.logger.info(f"Node renamed: '{proxy_name}' -> '{new_name}'")
-            renamed_proxies.append(new_proxy)
+            final_proxies.append(new_proxy)
             renamed_count += 1
+            
+        # Add any proxies that were not in the API response back to the list
+        for proxy in proxies:
+            if proxy['name'] not in processed_proxies:
+                self.logger.warning(f"Proxy '{proxy['name']}' was not present in the API response.")
+                new_proxy = proxy.copy()
+                new_proxy['name'] = f"未知 {proxy['name']}"
+                final_proxies.append(new_proxy)
 
         self.logger.info(f"GeoIP detection complete. Renamed {renamed_count}/{len(proxies)} nodes.")
-        return renamed_proxies
+        return final_proxies
 
     def __del__(self):
         """Clean up resources."""
