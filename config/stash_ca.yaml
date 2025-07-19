@@ -51,6 +51,12 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0215 | 71.804MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0263 | 10.908MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
@@ -62,23 +68,6 @@ proxies:
   port: 80
   server: ca225.vpnbook.com
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0215 | 71.804MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- auth: 78e953b1-099f-40b8-9cda-f8bab72b532c
-  name: 🇨🇦 加拿大 23
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 78e953b1-099f-40b8-9cda-f8bab72b532c
-  port: 35280
-  server: flyjnd.flylink.cyou
-  skip-cert-verify: true
-  sni: flyjnd.flylink.cyou
-  type: hysteria2
-  udp: true
 - cipher: aes-256-cfb
   name: SSR-加拿大-79.127.233.170:989
   obfs: plain
