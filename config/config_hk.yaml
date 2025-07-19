@@ -50,22 +50,21 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 香港3|@ripaojiedian
-  network: ws
-  port: 80
-  server: 2112e4.7d79233c.shop
-  servername: ''
-  skip-cert-verify: false
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港2|@ripaojiedian
+  password: 9bfdde71b4c0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /cauejypbltqt
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 103.103.245.158
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
-  ws-opts:
-    headers:
-      Host: hk01s.7d79233c.shop
-    path: /
+  type: ss
 - auth: ''
   fast-open: false
   name: 🇭🇰👖TG频道@stymei1丨14
@@ -90,17 +89,6 @@ proxies:
   type: hysteria2
 - auth: ''
   fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨11
-  password: uyzMwZOG2JFOEXhjBnMX7bkf3o
-  port: 24742
-  server: 64.23.194.249
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
   name: 🇭🇰👖TG频道@stymei1丨13
   password: V9o2mn4BwochLNk4XkJobx0bY
   port: 25231
@@ -110,21 +98,70 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港2|@ripaojiedian
-  password: 9bfdde71b4c0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: newroot2v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /cauejypbltqt
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 103.103.245.158
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨11
+  password: uyzMwZOG2JFOEXhjBnMX7bkf3o
+  port: 24742
+  server: 64.23.194.249
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
   tfo: false
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港家宽 01
+  network: ws
+  port: 80
+  server: 28525806-szrb40-t167d0-ggww.hkt.tcpbbr.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-194
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
+- auth: 4e5c61c7-531b-4bce-99e9-df28413359ae
+  name: 🇭🇰 香港 20
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 4e5c61c7-531b-4bce-99e9-df28413359ae
+  port: 35260
+  server: flyxghy.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxghy.flylink.cyou
+  type: hysteria2
+  udp: true
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨5
+  password: Y9vRstWcTHECGcKnayA2VYiUXs
+  port: 35562
+  server: 13.112.101.203
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨9
+  password: pEvU4tuQG1bxO1gbf5Mxj400Bc
+  port: 33223
+  server: 8.218.165.24
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
 - auth: ''
   fast-open: false
   name: 🇭🇰👖TG频道@stymei1丨4
@@ -147,51 +184,6 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨9
-  password: pEvU4tuQG1bxO1gbf5Mxj400Bc
-  port: 33223
-  server: 8.218.165.24
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨3
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨5
-  password: Y9vRstWcTHECGcKnayA2VYiUXs
-  port: 35562
-  server: 13.112.101.203
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- cipher: chacha20-ietf
-  name: 🇭🇰HK-103.149.183.154-5219 | 3.384MB
-  password: asd123456
-  port: 8388
-  server: 103.149.183.154
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-5078 | 0.178MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - alterId: 2
   cipher: auto
   name: 🇭🇰 香港家宽 11

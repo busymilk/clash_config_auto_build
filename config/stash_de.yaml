@@ -50,35 +50,31 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: 🇬🇧_GB_英国->🇩🇪_DE_德国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-5054 | 0.14MB
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   type: ss
+- client-fingerprint: random
+  name: 🇩🇪 德国 01
+  network: ws
+  port: 443
+  server: 172.64.68.58
+  servername: hai.gdz.buzz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
+  ws-opts:
+    headers:
+      Host: hai.gdz.buzz
+    path: /?ed=2560
 - cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-5010 | 13.673MB
+  name: 🇩🇪DE-193.108.119.230-143
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0306 | 0.058MB
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
   type: ss
 - client-fingerprint: random
   name: 🇩🇪 德国 03
@@ -94,6 +90,18 @@ proxies:
     headers:
       Host: fandouhuayuan.pages.dev
     path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
 - name: 🇩🇪 德国 02
   network: ws
   port: 443
@@ -120,18 +128,6 @@ proxies:
     headers:
       Host: quiz.int.vidio.com.my-vpnvip.my.id
     path: /8.222.243.73-26385
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-45.144.54.33-006
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

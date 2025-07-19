@@ -50,38 +50,35 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇨🇦_加拿大
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: cx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cx.ylks0033.dpdns.org
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0367 | 34.474MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0286 | 1.2MB
+  name: 🇨🇦CA-142.4.216.225-0263 | 10.908MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0287 | 1.026MB
+  name: 🇨🇦CA-142.4.216.225-0267 | 14.204MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0215 | 71.804MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- auth: 78e953b1-099f-40b8-9cda-f8bab72b532c
+  name: 🇨🇦 加拿大 23
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 78e953b1-099f-40b8-9cda-f8bab72b532c
+  port: 35280
+  server: flyjnd.flylink.cyou
+  skip-cert-verify: true
+  sni: flyjnd.flylink.cyou
+  type: hysteria2
+  udp: true
 - cipher: aes-256-cfb
   name: SSR-加拿大-79.127.233.170:989
   obfs: plain

@@ -51,11 +51,16 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡3|@ripaojiedian
+  name: 🇸🇬SG-188.166.220.70-0644 | 15.313MB
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
-  tfo: false
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-5022 | 0.279MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
   type: ss
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
@@ -71,18 +76,6 @@ proxies:
   type: vless
   udp: true
   uuid: 7b1d79bd-d819-4fe3-bc7d-699ce99bb86f
-- name: 🇸🇬 新加坡 19
-  network: ws
-  password: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
-  port: 443
-  server: 123.interld123456789.com
-  sni: pM6229Ooj8UN.sg123123123.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: pM6229Ooj8UN.sg123123123.xyz
-    path: /answer
 - name: 🇸🇬 新加坡 17
   network: ws
   password: ttfang
@@ -96,6 +89,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- name: 🇸🇬 新加坡 19
+  network: ws
+  password: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
+  port: 443
+  server: 123.interld123456789.com
+  sni: pM6229Ooj8UN.sg123123123.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: pM6229Ooj8UN.sg123123123.xyz
+    path: /answer
 - client-fingerprint: firefox
   name: 🇸🇬 新加坡 15
   network: tcp
