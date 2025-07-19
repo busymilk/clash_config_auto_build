@@ -309,10 +309,58 @@ class IntegratedNodeTester:
                 self.logger.warning("没有健康的代理节点")
                 return
 
-            # 第五步：地理位置检测和重命名
+            # 第五步：生成只包含健康节点的配置并重启 mihomo
+            healthy_config_path = NodeTestConfig.TEST_CONFIG_FILE.replace('.yaml', '_healthy.yaml')
+            self.logger.info(f"生成只包含健康节点的配置: {healthy_config_path}")
+            
+            try:
+                with open(PathConfig.CONFIG_TEMPLATE, 'r', encoding='utf-8') as f:
+                    base_config = yaml.safe_load(f)
+                
+                base_config.update({
+                    'external-controller': '127.0.0.1:9090',
+                    'log-level': 'info',
+                    'mixed-port': 7890,
+                    'mode': 'Rule',
+                })
+                if 'rules' not in base_config:
+                    base_config['rules'] = []
+                
+                base_config['proxies'] = healthy_proxies
+                
+                # 添加代理组配置（地理位置检测需要）
+                if 'proxy-groups' not in base_config:
+                    base_config['proxy-groups'] = []
+                
+                all_proxy_names = [proxy['name'] for proxy in healthy_proxies]
+                global_group = {
+                    'name': 'GLOBAL',
+                    'type': 'select',
+                    'proxies': all_proxy_names
+                }
+                base_config['proxy-groups'].insert(0, global_group)
+
+                with open(healthy_config_path, 'w', encoding='utf-8') as f:
+                    yaml.dump(base_config, f, allow_unicode=True)
+                self.logger.info(f"健康节点配置已保存到 {healthy_config_path}")
+            except Exception as e:
+                self.logger.error(f"生成健康节点配置失败: {e}")
+                return
+
+            # 停止旧的 mihomo 进程
+            self.stop_mihomo(self.mihomo_process)
+            self.mihomo_process = None
+
+            # 启动新的 mihomo 进程
+            self.mihomo_process = self.start_mihomo(self.args.clash_path, healthy_config_path)
+            if not self.mihomo_process:
+                self.logger.error("使用健康节点配置启动 mihomo 失败")
+                return
+
+            # 第六步：地理位置检测和重命名
             renamed_proxies = self.detect_geoip_and_rename(healthy_proxies)
 
-            # 第六步：保存结果
+            # 第七步：保存结果
             self.save_healthy_nodes(renamed_proxies, self.args.output_file)
             
             self.logger.info("🎉 所有任务完成！")

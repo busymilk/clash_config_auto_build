@@ -103,9 +103,8 @@ class GeoIPDetector:
 
         emoji = country_info['emoji']
         country_name = country_info['name']
-        location_str = f"{emoji} {country_name}"
         
-        return f"{location_str} {original_name}"
+        return f"{emoji} {country_name}"
 
     def detect_and_rename_nodes(self, proxies: List[Dict], api_url: str, timeout: int, **kwargs) -> List[Dict]:
         """Batch detect and rename nodes using the /content_check endpoint."""
