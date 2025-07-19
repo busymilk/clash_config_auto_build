@@ -8,6 +8,7 @@ import os
 import requests
 import urllib.parse
 from typing import Dict, Optional, List
+import hashlib
 
 try:
     import geoip2.database
@@ -82,9 +83,13 @@ class GeoIPDetector:
         try:
             response = self.city_reader.city(ip)
             country_code = response.country.iso_code
+            city_name = response.city.name # Get city name
             if country_code:
-                location_info = {'country_code': country_code.upper()}
-                self.logger.info(f"IP {ip} location: {country_code} (from local DB)")
+                location_info = {
+                    'country_code': country_code.upper(),
+                    'city': city_name if city_name else '' # Include city name
+                }
+                self.logger.info(f"IP {ip} location: {country_code} {city_name} (from local DB)")
                 return location_info
         except geoip2.errors.AddressNotFoundError:
             self.logger.debug(f"IP {ip} not found in local GeoIP database.")
@@ -94,17 +99,30 @@ class GeoIPDetector:
         return None
 
     def generate_node_name(self, original_name: str, location_info: Dict) -> str:
-        """Generate new node name based on location."""
+        """Generate new node name based on location and a unique identifier."""
         country_code = location_info.get('country_code', '').upper()
+        city_name = location_info.get('city', '') # Get city name
         country_info = self.country_mapping.get(country_code)
 
+        # Generate a short unique identifier from the original name
+        # Using SHA256 hash and taking the first 6 characters for brevity
+        unique_id = hashlib.sha256(original_name.encode()).hexdigest()[:6]
+
         if not country_info:
-            return original_name
+            # If country info is not found, use "未知" and append unique_id
+            return f"未知 ({unique_id})"
 
         emoji = country_info['emoji']
         country_name = country_info['name']
+
+        # Construct the location string
+        if city_name:
+            location_str = f"{emoji} {country_name}-{city_name}"
+        else:
+            location_str = f"{emoji} {country_name}"
         
-        return f"{emoji} {country_name}"
+        # Combine location string with unique identifier
+        return f"{location_str} ({unique_id})"
 
     def detect_and_rename_nodes(self, proxies: List[Dict], api_url: str, timeout: int, **kwargs) -> List[Dict]:
         """Batch detect and rename nodes using the /content_check endpoint."""
