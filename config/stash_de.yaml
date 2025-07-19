@@ -50,32 +50,8 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-45.144.54.33-0883 | 15.099MB
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-5054 | 0.14MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
 - client-fingerprint: random
-  name: 🇩🇪 德国 01
+  name: 🇺🇸 美国 🇩🇪 德国 01
   network: ws
   port: 443
   server: 172.64.68.58
@@ -88,14 +64,21 @@ proxies:
     headers:
       Host: hai.gdz.buzz
     path: /?ed=2560
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-143
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+- name: 🇺🇸 美国 🇩🇪 德国 04
+  network: ws
+  port: 443
+  server: 104.24.71.251
+  servername: hai.gdz.buzz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
+  ws-opts:
+    headers:
+      Host: hai.gdz.buzz
+    path: /
 - client-fingerprint: random
-  name: 🇩🇪 德国 03
+  name: 🇺🇸 美国 🇩🇪 德国 03
   network: ws
   port: 2087
   server: 104.24.135.129
@@ -108,20 +91,20 @@ proxies:
     headers:
       Host: fandouhuayuan.pages.dev
     path: /?ed=2560
-- name: 🇩🇪 德国 02
+- name: 🇺🇸 美国 🇩🇪 德国 38
   network: ws
   port: 443
-  server: freevpn.ndeso.xyz
-  servername: freevpn.ndeso.xyz
+  server: freevpn.ndeso.web.id
+  servername: freevpn.ndeso.web.id
   tls: true
   type: vless
   udp: true
   uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
   ws-opts:
     headers:
-      Host: freevpn.ndeso.xyz
-    path: /Free-CF-Proxy-AU10
-- name: 🇩🇪 德国 13
+      Host: freevpn.ndeso.web.id
+    path: /Free-CF-Proxy-BD1
+- name: 🇺🇸 美国 🇩🇪 德国 13
   network: ws
   port: 443
   server: quiz.int.vidio.com
@@ -134,6 +117,68 @@ proxies:
     headers:
       Host: quiz.int.vidio.com.my-vpnvip.my.id
     path: /8.222.243.73-26385
+- name: 🇺🇸 美国 🇩🇪 德国 02
+  network: ws
+  port: 443
+  server: freevpn.ndeso.xyz
+  servername: freevpn.ndeso.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  ws-opts:
+    headers:
+      Host: freevpn.ndeso.xyz
+    path: /Free-CF-Proxy-AU10
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国 SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪 德国 🇩🇪DE-193.108.119.230-143
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国 SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- auth: 74332878-d170-41cc-be22-e08e0527a9b8
+  name: 🇩🇪 德国 🇩🇪 德国 10
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 74332878-d170-41cc-be22-e08e0527a9b8
+  port: 35230
+  server: flydg.flylink.cyou
+  skip-cert-verify: true
+  sni: flydg.flylink.cyou
+  type: hysteria2
+  udp: true
+- name: '🇩🇪 德国 🇺🇸_美国_50 #2'
+  network: ws
+  port: 8443
+  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
+  servername: Kz3V0zHz0P.dAsTaTsArD.oRg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
+  ws-opts:
+    headers:
+      host: Kz3V0zHz0P.dAsTaTsArD.oRg
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国 🇩🇪DE-147.45.178.200-273
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
