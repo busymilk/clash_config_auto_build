@@ -98,8 +98,6 @@ jobs:
       run: |
         echo "开始集成版节点测试..."
         echo "配置信息:"
-        echo "  - 启用地理位置检测: ${{ env.ENABLE_GEOIP }}"
-        echo "  - 地理位置检测并发数: ${{ env.GEOIP_WORKERS }}"
         echo "  - IP检测服务: AWS checkip.amazonaws.com"
         echo "  - 延迟限制: ${{ env.DELAY_LIMIT }}ms"
         echo "  - 最大并发数: ${{ env.MAX_WORKERS }}"
@@ -110,7 +108,6 @@ jobs:
         cmd_args="$cmd_args --clash-path /usr/local/bin/mihomo"
         cmd_args="$cmd_args --delay-limit ${{ env.DELAY_LIMIT }}"
         cmd_args="$cmd_args --max-workers ${{ env.MAX_WORKERS }}"
-        cmd_args="$cmd_args --enable-geoip"
         cmd_args="$cmd_args --geoip-timeout ${{ env.GEOIP_TIMEOUT }}"
         cmd_args="$cmd_args --save-geoip-details"
         
@@ -189,7 +186,7 @@ jobs:
           🌍 **自动更新的 Clash 配置文件**
           
           **更新时间**: ${{ steps.get_ip.outputs.timestamp || github.run_id }}
-          **地理位置检测**: ${{ env.ENABLE_GEOIP == 'true' && '✅ 已启用' || '❌ 已禁用' }}
+          **地理位置检测**: ✅ 已启用
           **运行器IP**: ${{ steps.get_ip.outputs.ip }}
           
           **📁 配置文件说明**:
@@ -215,10 +212,7 @@ jobs:
         git add config/*.yaml
         
         # 构建提交信息
-        commit_msg="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M')"
-        if [ "${{ env.ENABLE_GEOIP }}" = "true" ]; then
-          commit_msg="$commit_msg with GeoIP detection"
-        fi
+        commit_msg="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M') with GeoIP detection"
         
         git commit -m "$commit_msg"
         git push origin HEAD:main
