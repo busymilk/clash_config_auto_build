@@ -49,11 +49,41 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇩🇪 德国-Offenbach (b9f6fd)
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国-Frankfurt am Main (8237b2)
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国-Frankfurt am Main (466c57)
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪 德国-Frankfurt am Main (4804dd)
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国-Frankfurt am Main (0a3942)
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪 德国-Frankfurt am Main (d30e48)
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- name: 🇩🇪 德国-Offenbach (af374d)
   obfs: salamander
-  obfs-password: v2raybluecrystal
+  obfs-password: v2raybluecrystal2
   password: F6HtMurQGt
-  port: 20358
+  port: 16666
   server: 185.211.101.15
   skip-cert-verify: true
   tls: false
@@ -67,55 +97,20 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: 🇩🇪 德国-Offenbach (af374d)
+- name: 🇩🇪 德国-Offenbach (b9f6fd)
   obfs: salamander
-  obfs-password: v2raybluecrystal2
+  obfs-password: v2raybluecrystal
   password: F6HtMurQGt
-  port: 16666
+  port: 20358
   server: 185.211.101.15
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- cipher: aes-256-cfb
-  name: 未知 🇩🇪DE-80.92.204.106-0313 | 0.156MB
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 德国-Frankfurt am Main (466c57)
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 德国-Frankfurt am Main (8237b2)
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: rc4-md5
-  name: 🇩🇪 德国-Frankfurt am Main (5cfc93)
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇩🇪 德国-Frankfurt am Main (61f2e8)
-  network: tcp
-  port: 443
-  server: 141.147.33.180
-  servername: 767w1-85dc0-9yjd.xn--4gq62f52gppi29k.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 德国-Frankfurt am Main (a83a7f)
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
+  name: 🇩🇪 德国-Frankfurt am Main (174fbe)
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
   type: ss
 proxy-groups:
 - name: ✈️ 选择代理

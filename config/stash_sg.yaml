@@ -50,32 +50,17 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- auth: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
-  name: 未知 🇸🇬 新加坡-Kampong Loyang (d579df)
-  password: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
-  port: 20000
-  ports: 20000-55000
-  server: 168.138.184.187
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡-Singapore (301a34)
+  name: 🇸🇬 新加坡-Singapore (280261)
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
-  type: ss
-- cipher: chacha20-ietf
-  name: 🇸🇬 新加坡 (bce099)
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
+  tfo: false
   type: ss
 - alpn:
   - h3
   auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  name: 🇸🇬 新加坡 (cde88e)
+  name: 🇸🇬 新加坡 (b3d1bd)
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145
@@ -83,7 +68,13 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: 🇸🇬 新加坡-Singapore (b126da)
+- cipher: chacha20-ietf
+  name: 🇸🇬 新加坡 (bce099)
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- name: 🇸🇬 新加坡-Singapore (216c55)
   network: ws
   password: ttfang
   port: 443
@@ -97,7 +88,7 @@ proxies:
       Host: ttfang.fange.me
     path: /
 - client-fingerprint: firefox
-  name: 🇸🇬 新加坡 (9474aa)
+  name: 🇸🇬 新加坡 (c4de18)
   network: tcp
   port: 34045
   reality-opts:
