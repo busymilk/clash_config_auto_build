@@ -51,15 +51,29 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 加拿大 (dc7c1d)
+  name: 🇨🇦 加拿大 (c9be87)
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 加拿大-Toronto (969c49)
+  network: tcp
+  port: 42557
+  reality-opts:
+    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
+    short-id: f430927d
+  server: 129.153.63.0
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: 🇨🇦 加拿大-Toronto (dddfdb)
+  name: 🇨🇦 加拿大-Toronto (3fc99d)
   password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
   port: 47262
   server: 40.233.103.51
@@ -81,20 +95,6 @@ proxies:
     headers:
       Host: blaze-can-118.blazecanada.site
     path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 加拿大-Toronto (678ca3)
-  network: tcp
-  port: 42557
-  reality-opts:
-    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
-    short-id: f430927d
-  server: 129.153.63.0
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - cipher: aes-256-cfb
   name: 🇨🇦 加拿大-Vancouver (38c0ef)
   obfs: plain
@@ -103,6 +103,20 @@ proxies:
   protocol: origin
   server: 79.127.233.170
   type: ssr
+- client-fingerprint: chrome
+  name: 🇨🇦 加拿大-Montreal (29613c)
+  network: ws
+  port: 8880
+  server: 108.162.198.63
+  servername: sg.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: 🇨🇦 加拿大-Toronto (d42ffd)
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979

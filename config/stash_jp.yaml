@@ -51,16 +51,16 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-128-gcm
-  name: 🇯🇵 日本-Tokyo (017e8e)
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵 日本-Tokyo (413ea6)
+  name: 🇯🇵 日本-Tokyo (b4e673)
   password: shadowsocks
   port: 443
   server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵 日本-Tokyo (0dd2bd)
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
   type: ss
 - auth: ''
   fast-open: false
@@ -73,34 +73,25 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
+- name: 🇯🇵 日本-Fukuoka (14aa35)
+  network: ws
+  port: 18765
+  server: 14.36.181.53
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
 - auth: ''
   fast-open: false
   name: 🇯🇵 日本-Tokyo (3e347e)
   password: Y9vRstWcTHECGcKnayA2VYiUXs
   port: 35562
   server: 13.112.101.203
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇯🇵 日本-Tokyo (a7fb02)
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇯🇵 日本-Tokyo (968738)
-  password: kWlrCka5jzfKbD2z7ucwANEdZM
-  port: 26404
-  server: 47.245.53.59
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -120,19 +111,21 @@ proxies:
     headers:
       host: ns.ylka.dpdns.org
     path: /?ed=2560
-- name: 🇯🇵 日本-Fukuoka (f20376)
-  network: ws
-  port: 18765
-  server: 14.36.181.53
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /telegram🇨🇳@wangcai2/?ed=2560
+- cipher: aes-256-gcm
+  name: 未知 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

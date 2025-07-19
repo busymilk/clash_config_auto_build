@@ -50,11 +50,38 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: rc4-md5
-  name: 🇩🇪 德国-Frankfurt am Main (013661)
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- name: 🇩🇪 德国-Offenbach (b9f6fd)
+  obfs: salamander
+  obfs-password: v2raybluecrystal
+  password: F6HtMurQGt
+  port: 20358
+  server: 185.211.101.15
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: 🇩🇪 德国-Offenbach (d58768)
+  obfs: salamander
+  obfs-password: v2raybluecrystal3
+  password: F6HtMurQGt
+  port: 48233
+  server: 185.211.101.15
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: 🇩🇪 德国-Offenbach (af374d)
+  obfs: salamander
+  obfs-password: v2raybluecrystal2
+  password: F6HtMurQGt
+  port: 16666
+  server: 185.211.101.15
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- cipher: aes-256-cfb
+  name: 未知 🇩🇪DE-80.92.204.106-0313 | 0.156MB
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪 德国-Frankfurt am Main (466c57)
@@ -68,15 +95,15 @@ proxies:
   port: 44354
   server: 46.101.245.131
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 德国-Frankfurt am Main (425c89)
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
+- cipher: rc4-md5
+  name: 🇩🇪 德国-Frankfurt am Main (5cfc93)
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
   type: ss
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 🇩🇪 德国-Frankfurt am Main (8048c5)
+  name: 🇩🇪 德国-Frankfurt am Main (61f2e8)
   network: tcp
   port: 443
   server: 141.147.33.180
@@ -85,11 +112,11 @@ proxies:
   type: vless
   udp: true
   uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
-- cipher: aes-256-cfb
-  name: 🇩🇪 德国-Frankfurt am Main (bf6639)
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国-Frankfurt am Main (a83a7f)
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   type: ss
 proxy-groups:
 - name: ✈️ 选择代理
