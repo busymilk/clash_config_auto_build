@@ -5,15 +5,6 @@ on:
     # 每4小时运行一次（UTC时间）
     - cron: '0 */4 * * *'
   workflow_dispatch:  # 允许手动触发
-    inputs:
-      enable_geoip:
-        description: '启用地理位置检测'
-        required: false
-        default: 'true'
-        type: choice
-        options:
-        - 'true'
-        - 'false'
 
 jobs:
   generate:
@@ -29,7 +20,6 @@ jobs:
       MAX_WORKERS: "100"
       LOG_LEVEL: "INFO"
       # 地理位置检测配置
-      ENABLE_GEOIP: ${{ github.event.inputs.enable_geoip || 'true' }}
       GEOIP_TIMEOUT: "20"
 
     steps:
@@ -120,13 +110,9 @@ jobs:
         cmd_args="$cmd_args --clash-path /usr/local/bin/mihomo"
         cmd_args="$cmd_args --delay-limit ${{ env.DELAY_LIMIT }}"
         cmd_args="$cmd_args --max-workers ${{ env.MAX_WORKERS }}"
-        
-        # 地理位置检测参数
-        if [ "${{ env.ENABLE_GEOIP }}" = "true" ]; then
-          cmd_args="$cmd_args --enable-geoip"
-          cmd_args="$cmd_args --geoip-timeout ${{ env.GEOIP_TIMEOUT }}"
-          cmd_args="$cmd_args --save-geoip-details"
-        fi
+        cmd_args="$cmd_args --enable-geoip"
+        cmd_args="$cmd_args --geoip-timeout ${{ env.GEOIP_TIMEOUT }}"
+        cmd_args="$cmd_args --save-geoip-details"
         
         echo "执行命令: python scripts/node_tester_integrated.py $cmd_args"
         

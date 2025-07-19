@@ -46,9 +46,6 @@ class IntegratedNodeTester:
     
     def init_geoip_detector(self) -> bool:
         """初始化地理位置检测器"""
-        if not self.args.enable_geoip:
-            return True
-        
         self.logger.info("初始化GeoIP检测器...")
         self.geoip_detector = GeoIPDetector()
         return True
@@ -90,18 +87,17 @@ class IntegratedNodeTester:
             config['proxies'] = proxies_data['proxies']
             
             # 添加代理组配置（地理位置检测需要）
-            if self.args.enable_geoip:
-                if 'proxy-groups' not in config:
-                    config['proxy-groups'] = []
-                
-                # 创建全局选择组
-                all_proxy_names = [proxy['name'] for proxy in config['proxies']]
-                global_group = {
-                    'name': 'GLOBAL',
-                    'type': 'select',
-                    'proxies': all_proxy_names
-                }
-                config['proxy-groups'].insert(0, global_group)
+            if 'proxy-groups' not in config:
+                config['proxy-groups'] = []
+            
+            # 创建全局选择组
+            all_proxy_names = [proxy['name'] for proxy in config['proxies']]
+            global_group = {
+                'name': 'GLOBAL',
+                'type': 'select',
+                'proxies': all_proxy_names
+            }
+            config['proxy-groups'].insert(0, global_group)
 
             # 保存测试配置文件
             with open(dest_path, 'w', encoding='utf-8') as f:
@@ -232,7 +228,7 @@ class IntegratedNodeTester:
 
     def detect_geoip_and_rename(self, healthy_proxies: list) -> list:
         """检测健康节点的地理位置并重新命名"""
-        if not self.args.enable_geoip or not self.geoip_detector:
+        if not self.geoip_detector:
             self.logger.info("地理位置检测已禁用，跳过重命名")
             return healthy_proxies
         
@@ -261,7 +257,7 @@ class IntegratedNodeTester:
             self.logger.info(f"健康节点列表已保存到 {output_file}")
             
             # 保存详细信息（如果启用）
-            if self.args.enable_geoip and self.args.save_geoip_details:
+            if self.args.save_geoip_details:
                 details_file = output_file.replace('.yaml', '_geoip_details.yaml')
                 with open(details_file, 'w', encoding='utf-8') as f:
                     yaml.dump({'proxies': healthy_proxies}, f, allow_unicode=True)
@@ -290,11 +286,10 @@ class IntegratedNodeTester:
         test_config_path = NodeTestConfig.TEST_CONFIG_FILE
         
         try:
-            # 第一步：初始化地理位置检测器（如果需要）
+            # 第一步：初始化地理位置检测器
             if not self.init_geoip_detector():
-                if self.args.enable_geoip:
-                    self.logger.error("地理位置检测器初始化失败，退出")
-                    return
+                self.logger.error("地理位置检测器初始化失败，退出")
+                return
             
             # 第二步：准备测试配置
             proxies_to_test = self.prepare_test_config(self.args.input_file, test_config_path)
@@ -314,11 +309,8 @@ class IntegratedNodeTester:
                 self.logger.warning("没有健康的代理节点")
                 return
 
-            # 第五步：地理位置检测和重命名（可选）
-            if self.args.enable_geoip:
-                renamed_proxies = self.detect_geoip_and_rename(healthy_proxies)
-            else:
-                renamed_proxies = healthy_proxies
+            # 第五步：地理位置检测和重命名
+            renamed_proxies = self.detect_geoip_and_rename(healthy_proxies)
 
             # 第六步：保存结果
             self.save_healthy_nodes(renamed_proxies, self.args.output_file)
@@ -355,8 +347,6 @@ def main():
                        help="延迟测试并发线程数")
     
     # 地理位置检测参数
-    parser.add_argument("--enable-geoip", action="store_true", default=False,
-                       help="启用地理位置检测和节点重命名")
     parser.add_argument("--geoip-timeout", type=int, default=20,
                        help="地理位置检测超时时间(秒)")
     parser.add_argument("--save-geoip-details", action="store_true", default=False,
