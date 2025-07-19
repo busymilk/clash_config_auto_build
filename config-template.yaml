@@ -98,11 +98,11 @@ dns:
   #nameserver和fallback是并发,优先使用哪个看下面的配置规则，比如fallback-filter,上面的设置优先级高，匹配不到了才会走到nameserver fallback判断
   #这里不用fallback了，上面的判断已经够全了，nameserver用来兜底
   nameserver: #默认的域名解析服务器
-  - https://[2001:4860:4860::64]/dns-query
-  - tls://1dot1dot1dot1.cloudflare-dns.com
-  - tls://unfiltered.adguard-dns.com
-  - tls://dns.mullvad.net
-  - https://dns.nextdns.io/dns-query
+  - 'https://[2001:4860:4860::64]/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true'
+  - 'tls://1dot1dot1dot1.cloudflare-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true'
+  - 'tls://unfiltered.adguard-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true'
+  - 'tls://dns.mullvad.net#proxy&ecs=39.134.187.0/24&ecs-override=true'
+  - 'https://dns.nextdns.io/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true'
 
 #fake-ip 模式下，Clash 会将原始的域名（hostname）发送到预先配置的远端DNS 服务器进行解析
 #对fake-ip-filter中条目的查询行为会回退到redir-host，即在本地发起DNS查询，并返回真实IP结果
