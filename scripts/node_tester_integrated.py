@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from core.constants import NodeTestConfig, PathConfig
 from core.logger import setup_logger
-from core.geoip_detector_local import LocalGeoIPDetector
+from core.geoip_detector import GeoIPDetector
 
 
 class IntegratedNodeTester:
@@ -49,8 +49,8 @@ class IntegratedNodeTester:
         if not self.args.enable_geoip:
             return True
         
-        self.logger.info("初始化本地GeoIP地理位置检测器...")
-        self.geoip_detector = LocalGeoIPDetector()
+        self.logger.info("初始化GeoIP检测器...")
+        self.geoip_detector = GeoIPDetector()
         return True
     
     def prepare_test_config(self, source_path: str, dest_path: str, 
@@ -242,7 +242,6 @@ class IntegratedNodeTester:
         renamed_proxies = self.geoip_detector.detect_and_rename_nodes(
             proxies=healthy_proxies,
             api_url="127.0.0.1:9090",
-            max_workers=self.args.geoip_workers,
             timeout=self.args.geoip_timeout
         )
         
@@ -358,8 +357,6 @@ def main():
     # 地理位置检测参数
     parser.add_argument("--enable-geoip", action="store_true", default=False,
                        help="启用地理位置检测和节点重命名")
-    parser.add_argument("--geoip-workers", type=int, default=3,
-                       help="地理位置检测并发线程数")
     parser.add_argument("--geoip-timeout", type=int, default=20,
                        help="地理位置检测超时时间(秒)")
     parser.add_argument("--save-geoip-details", action="store_true", default=False,
