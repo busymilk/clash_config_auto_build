@@ -51,32 +51,28 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡-Singapore (c9df7f)
+  name: 🇸🇬 新加坡-Singapore (ee0b1a)
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
 - cipher: chacha20-ietf
-  name: 🇸🇬 新加坡 (2ac7bc)
+  name: 🇸🇬 新加坡 (f39c4a)
   password: asd123456
   port: 8388
   server: 103.36.91.23
   type: ss
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇸🇬 新加坡-Singapore (02a4f1)
-  network: tcp
-  port: 56702
-  reality-opts:
-    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
-    short-id: 792147b8
-  server: sg3.interld123456789.com
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
+- auth: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
+  name: 🇸🇬 新加坡-Kampong Loyang (97816a)
+  password: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
+  port: 20000
+  ports: 20000-55000
+  server: 168.138.184.187
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-  uuid: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
-- name: 🇸🇬 新加坡-Singapore (738493)
+- name: 🇸🇬 新加坡-Singapore (9a081b)
   network: ws
   password: ttfang
   port: 443
@@ -90,7 +86,21 @@ proxies:
       Host: ttfang.fange.me
     path: /
 - client-fingerprint: firefox
-  name: 🇸🇬 新加坡 (7fe557)
+  flow: xtls-rprx-vision
+  name: 🇸🇬 新加坡-Singapore (baef3d)
+  network: tcp
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: sg3.interld123456789.com
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
+- client-fingerprint: firefox
+  name: 🇸🇬 新加坡 (6d3a33)
   network: tcp
   port: 34045
   reality-opts:

@@ -51,7 +51,7 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港-Hong Kong (5d5c0d)
+  name: 🇭🇰 香港-Hong Kong (474d9d)
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -81,30 +81,25 @@ proxies:
     headers:
       Host: tw.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 🇭🇰 香港 (886a9c)
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港-Hong Kong (a6342c)
   network: ws
-  port: 443
-  server: nnchkclyx.codesofun.pp.ua
-  servername: nnchk.codesofun.pp.ua
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5f077162-99ad-424d-9f77-e5f7e37d9ef8
+  port: 80
+  server: 2112e4.7d79233c.shop
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf
   ws-opts:
     headers:
-      Host: nnchk.codesofun.pp.ua
-    path: /ea3ac731
-- name: 🇭🇰 香港-Hong Kong (a43673)
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
+      Host: hk01s.7d79233c.shop
+    path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 香港 (01ad86)
+  name: 🇭🇰 香港 (55c159)
   network: ws
   port: 80
   server: a2fc681c-szrb40-t15imh-1g8k0.hk3.p5pv.com
@@ -116,23 +111,9 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 (c245fd)
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 🇭🇰 香港 (7bf167)
+  name: 🇭🇰 香港 (46c5ed)
   network: ws
   port: 80
   server: 28525806-szrb40-t167d0-ggww.hkt.tcpbbr.net
@@ -144,6 +125,46 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 (702ef0)
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇭🇰 香港 (e48f5d)
+  network: tcp
+  port: 443
+  server: 3bd9.55dca.e048.f64-fef1f.yfjcs.com
+  servername: yfhk2.xn--4gq62f52gppi29k.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 (6622e5)
+  password: 9bfdde71b4c0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /cauejypbltqt
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 103.103.245.158
+  tfo: false
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
