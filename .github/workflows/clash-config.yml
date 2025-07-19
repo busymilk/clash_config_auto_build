@@ -14,10 +14,6 @@ on:
         options:
         - 'true'
         - 'false'
-      geoip_workers:
-        description: '地理位置检测并发数'
-        required: false
-        default: '3'
 
 jobs:
   generate:
@@ -34,7 +30,6 @@ jobs:
       LOG_LEVEL: "INFO"
       # 地理位置检测配置
       ENABLE_GEOIP: ${{ github.event.inputs.enable_geoip || 'true' }}
-      GEOIP_WORKERS: ${{ github.event.inputs.geoip_workers || '3' }}
       GEOIP_TIMEOUT: "20"
 
     steps:
@@ -129,7 +124,6 @@ jobs:
         # 地理位置检测参数
         if [ "${{ env.ENABLE_GEOIP }}" = "true" ]; then
           cmd_args="$cmd_args --enable-geoip"
-          cmd_args="$cmd_args --geoip-workers ${{ env.GEOIP_WORKERS }}"
           cmd_args="$cmd_args --geoip-timeout ${{ env.GEOIP_TIMEOUT }}"
           cmd_args="$cmd_args --save-geoip-details"
         fi
