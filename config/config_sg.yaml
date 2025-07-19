@@ -51,44 +51,19 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡 🇸🇬 新加坡3|@ripaojiedian
+  name: 🇸🇬 新加坡-Singapore (280261)
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   tfo: false
   type: ss
-- name: 🇸🇬 新加坡 HK_speednode_0065
-  network: ws
-  port: 55131
-  server: 46.3.104.106
-  servername: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3dad11ee-d5b6-4915-b3eb-9be0d7a3462a
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: sgsgsgsgsg.eessgrgrgrgr.cloudns.nz
-    path: /hiosedhfiosfiosdhiofhsdiofhisdofhsd
-    v2ray-http-upgrade: true
-    v2ray-http-upgrade-fast-open: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇸🇬 新加坡 🇺🇸 美国-Wheaton 24
-  network: tcp
-  port: 56702
-  reality-opts:
-    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
-    short-id: 792147b8
-  server: sg3.interld123456789.com
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
-- name: 🇸🇬 新加坡 🇸🇬 新加坡 17
+- cipher: chacha20-ietf
+  name: 🇸🇬 新加坡 (2ac7bc)
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- name: 🇸🇬 新加坡-Singapore (8f6c68)
   network: ws
   password: ttfang
   port: 443
@@ -102,7 +77,21 @@ proxies:
       Host: ttfang.fange.me
     path: /
 - client-fingerprint: firefox
-  name: 🇸🇬 新加坡 🇸🇬 新加坡 15
+  flow: xtls-rprx-vision
+  name: 🇸🇬 新加坡-Singapore (a94b42)
+  network: tcp
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: sg3.interld123456789.com
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
+- client-fingerprint: firefox
+  name: 🇸🇬 新加坡 (74ebea)
   network: tcp
   port: 34045
   reality-opts:

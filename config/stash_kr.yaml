@@ -51,31 +51,18 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 🇰🇷 韩国 🇰🇷KR-154.90.63.177-211
+  name: 🇰🇷 韩国-Seoul (86cfa7)
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
 - cipher: aes-256-cfb
-  name: 🇰🇷 韩国 🇰🇷KR-154.90.62.168-272
+  name: 🇰🇷 韩国 (770596)
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
-- name: 🇰🇷 韩国 🇰🇷 韩国 04
-  network: ws
-  port: 12344
-  server: 119.75.99.140
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: telegram @wangcai2 /?ed=2560
-- name: 🇰🇷 韩国 🇺🇸_美国_135
+- name: 🇰🇷 韩国 (af1132)
   network: ws
   port: 443
   server: 131.186.17.132
@@ -89,6 +76,30 @@ proxies:
     headers:
       host: ns.ylka.dpdns.org
     path: /?ed=2560
+- name: 🇰🇷 韩国 (273394)
+  network: ws
+  port: 12344
+  server: 119.75.99.140
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: telegram @wangcai2 /?ed=2560
+- auth: 18c77d82-a744-45e1-8a65-4f29a8547932
+  name: 🇰🇷 韩国 (02c7ca)
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 18c77d82-a744-45e1-8a65-4f29a8547932
+  port: 35310
+  server: flyhg.flylink.cyou
+  skip-cert-verify: true
+  sni: flyhg.flylink.cyou
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
