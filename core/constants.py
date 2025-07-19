@@ -11,46 +11,16 @@ import os
 # 地区过滤器配置
 # =============================================================================
 FILTER_PATTERNS = {
-    'hk': re.compile(
-        r'\b(HK|Hong[\s_-]?Kong|HKG|HGC)\b|香港|🇭🇰',
-        flags=re.IGNORECASE
-    ),
-    'us': re.compile(
-        r'\b(us|usa|america|united[\s-]?states)\b|美国|🇺🇸',
-        flags=re.IGNORECASE
-    ),
-    'jp': re.compile(
-        r'\b(jp|japan|tokyo|tyo|osaka|nippon)\b|日本|🇯🇵',
-        flags=re.IGNORECASE
-    ),
-    'uk': re.compile(
-        r'\b(uk|england|britain|united[\s-]?kingdom)\b|英国|🇬🇧',
-        flags=re.IGNORECASE
-    ),
-    'sg': re.compile(
-        r'\b(sg|singapore|sin)\b|新加坡|🇸🇬',
-        flags=re.IGNORECASE
-    ),
-    'tw': re.compile(
-        r'\b(tw|taiwan|taipei|tpe)\b|台湾|🇹🇼',
-        flags=re.IGNORECASE
-    ),
-    'kr': re.compile(
-        r'\b(kr|korea|seoul|kor)\b|韩国|🇰🇷',
-        flags=re.IGNORECASE
-    ),
-    'de': re.compile(
-        r'\b(de|germany|berlin|frankfurt)\b|德国|🇩🇪',
-        flags=re.IGNORECASE
-    ),
-    'ca': re.compile(
-        r'\b(ca|canada|toronto|vancouver)\b|加拿大|🇨🇦',
-        flags=re.IGNORECASE
-    ),
-    'au': re.compile(
-        r'\b(au|australia|sydney|melbourne)\b|澳大利亚|🇦🇺',
-        flags=re.IGNORECASE
-    ),
+    'hk': re.compile(r'香港|🇭🇰', flags=re.IGNORECASE),
+    'us': re.compile(r'美国|🇺🇸', flags=re.IGNORECASE),
+    'jp': re.compile(r'日本|🇯🇵', flags=re.IGNORECASE),
+    'uk': re.compile(r'英国|🇬🇧', flags=re.IGNORECASE),
+    'sg': re.compile(r'新加坡|🇸🇬', flags=re.IGNORECASE),
+    'tw': re.compile(r'台湾|🇹🇼', flags=re.IGNORECASE),
+    'kr': re.compile(r'韩国|🇰🇷', flags=re.IGNORECASE),
+    'de': re.compile(r'德国|🇩🇪', flags=re.IGNORECASE),
+    'ca': re.compile(r'加拿大|🇨🇦', flags=re.IGNORECASE),
+    'au': re.compile(r'澳大利亚|🇦🇺', flags=re.IGNORECASE),
 }
 
 # =============================================================================
