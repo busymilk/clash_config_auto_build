@@ -24,14 +24,13 @@ dns:
   fake-ip-range: 198.18.0.1/16
   ipv6: true
   nameserver:
-  - https://[2001:4860:4860::64]/dns-query
-  - tls://1dot1dot1dot1.cloudflare-dns.com
-  - tls://unfiltered.adguard-dns.com
-  - tls://dns.mullvad.net
-  - https://dns.nextdns.io/dns-query
+  - https://[2001:4860:4860::64]/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://1dot1dot1dot1.cloudflare-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://unfiltered.adguard-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://dns.mullvad.net#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - https://dns.nextdns.io/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
   proxy-server-nameserver:
-  - https://1.12.12.12/dns-query
-  - https://223.5.5.5/dns-query
+  - https://223.5.5.5/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
   use-system-hosts: false
 external-controller: 127.0.0.1:9090
 external-ui: ui
@@ -51,29 +50,33 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 🇰🇷 韩国-Seoul (ef2e2d)
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷 韩国-Gwanak-gu (96f392)
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷 韩国 (770596)
+  name: 🇰🇷 韩国 (44ab4f)
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷 韩国-Seoul (a92f55)
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - auth: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
-  name: 🇰🇷 韩国-Seoul (b7532a)
+  name: 🇰🇷 韩国-Seoul (d57f5a)
   password: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
   port: 20000
   ports: 20000-55000
   server: 132.226.235.134
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- auth: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
+  name: 🇰🇷 韩国-Seoul (89d5d4)
+  password: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
+  port: 20000
+  ports: 20000-55000
+  server: 193.122.106.44
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
@@ -92,32 +95,6 @@ proxies:
     headers:
       host: ns.ylka.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇰🇷 韩国-Gwanak-gu (191318)
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
-- auth: 86091081-f701-4307-80fb-171f26240e6f
-  name: 未知 🇰🇷 韩国 32
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 86091081-f701-4307-80fb-171f26240e6f
-  port: 35310
-  server: flyhg.flylink.cyou
-  skip-cert-verify: true
-  sni: flyhg.flylink.cyou
-  type: hysteria2
-  udp: true
-- auth: 3dfdc0cb-c5e1-48fc-acf5-69aa03e91f47
-  name: 未知 🇰🇷 韩国 (a167c0)
-  password: 3dfdc0cb-c5e1-48fc-acf5-69aa03e91f47
-  port: 18540
-  server: ztcloudkr.ztcloud.xyz
-  skip-cert-verify: true
-  sni: ztcloudkr.ztcloud.xyz
-  type: hysteria2
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

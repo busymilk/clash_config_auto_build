@@ -24,14 +24,13 @@ dns:
   fake-ip-range: 198.18.0.1/16
   ipv6: true
   nameserver:
-  - https://[2001:4860:4860::64]/dns-query
-  - tls://1dot1dot1dot1.cloudflare-dns.com
-  - tls://unfiltered.adguard-dns.com
-  - tls://dns.mullvad.net
-  - https://dns.nextdns.io/dns-query
+  - https://[2001:4860:4860::64]/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://1dot1dot1dot1.cloudflare-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://unfiltered.adguard-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://dns.mullvad.net#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - https://dns.nextdns.io/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
   proxy-server-nameserver:
-  - https://1.12.12.12/dns-query
-  - https://223.5.5.5/dns-query
+  - https://223.5.5.5/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
   use-system-hosts: false
 external-controller: 127.0.0.1:9090
 external-ui: ui
@@ -50,32 +49,16 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇸🇬 新加坡-Singapore (1ad1f4)
-  password: e10ea0d5-4244-4aec-9ba0-cafe77cc6d90
-  port: 443
-  server: aws-linkhy10.liangxin1.xyz
-  skip-cert-verify: true
-  sni: www.teslaautomation.de
-  tls: false
-  type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 🇸🇬 新加坡-Singapore (280261)
+  name: 🇸🇬 新加坡-Singapore (c9df7f)
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf
-  name: 🇸🇬 新加坡 (2ac7bc)
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
   type: ss
 - alpn:
   - h3
   auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  name: 🇸🇬 新加坡 (74e5b5)
+  name: 🇸🇬 新加坡 (09f711)
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145
@@ -84,7 +67,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
-  name: 🇸🇬 新加坡-Kampong Loyang (ebfaa3)
+  name: 🇸🇬 新加坡-Kampong Loyang (d579df)
   password: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
   port: 20000
   ports: 20000-55000
@@ -93,43 +76,7 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇸🇬 新加坡-Singapore (b84bb0)
-  network: tcp
-  port: 443
-  server: 3bd9.55dca.e048.f9-fef1f.yfjcs.com
-  servername: yfsg-1.xn--4gq62f52gppi29k.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 🇸🇬 新加坡-Singapore (898780)
-  network: tcp
-  port: 443
-  server: 3bd9.55dca.e048.f10-fef1f.yfjcs.com
-  servername: yfsg-1.xn--4gq62f52gppi29k.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇸🇬 新加坡-Singapore (973c62)
-  network: tcp
-  port: 56702
-  reality-opts:
-    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
-    short-id: 792147b8
-  server: sg3.interld123456789.com
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: a62bb87d-9ce2-4e6e-a04f-c60d4b0dd1d7
-- name: 🇸🇬 新加坡-Singapore (df2db7)
+- name: 🇸🇬 新加坡-Singapore (c4fb7e)
   network: ws
   password: ttfang
   port: 443
@@ -143,7 +90,7 @@ proxies:
       Host: ttfang.fange.me
     path: /
 - client-fingerprint: firefox
-  name: 🇸🇬 新加坡 (75a1d5)
+  name: 🇸🇬 新加坡 (66bfb0)
   network: tcp
   port: 34045
   reality-opts:

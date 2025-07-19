@@ -24,14 +24,13 @@ dns:
   fake-ip-range: 198.18.0.1/16
   ipv6: true
   nameserver:
-  - https://[2001:4860:4860::64]/dns-query
-  - tls://1dot1dot1dot1.cloudflare-dns.com
-  - tls://unfiltered.adguard-dns.com
-  - tls://dns.mullvad.net
-  - https://dns.nextdns.io/dns-query
+  - https://[2001:4860:4860::64]/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://1dot1dot1dot1.cloudflare-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://unfiltered.adguard-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://dns.mullvad.net#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - https://dns.nextdns.io/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
   proxy-server-nameserver:
-  - https://1.12.12.12/dns-query
-  - https://223.5.5.5/dns-query
+  - https://223.5.5.5/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
   use-system-hosts: false
 external-controller: 127.0.0.1:9090
 external-ui: ui
@@ -50,70 +49,47 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 德国-Frankfurt am Main (c28158)
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
 - cipher: rc4-md5
-  name: 🇩🇪 德国-Frankfurt am Main (3e0af5)
+  name: 🇩🇪 德国-Frankfurt am Main (013661)
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 德国-Frankfurt am Main (caa9c4)
+  name: 🇩🇪 德国-Frankfurt am Main (466c57)
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国-Frankfurt am Main (8237b2)
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
-- name: 🇩🇪 德国-Frankfurt am Main (6c06c6)
-  network: ws
-  port: 80
-  server: hopeful-appointment.seotoolsforyou.co.uk
-  tls: false
-  type: vless
-  udp: true
-  uuid: 491e4f76-42f0-43a7-a987-25072a68d5e4
-  ws-opts:
-    headers:
-      Host: hopeful-appointment.seotoolsforyou.co.uk
-    path: /
-- name: 🇩🇪 德国-Frankfurt am Main (fc4c05)
-  network: ws
-  port: 8443
-  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
-  servername: Kz3V0zHz0P.dAsTaTsArD.oRg
-  skip-cert-verify: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 德国-Frankfurt am Main (425c89)
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇩🇪 德国-Frankfurt am Main (8048c5)
+  network: tcp
+  port: 443
+  server: 141.147.33.180
+  servername: 767w1-85dc0-9yjd.xn--4gq62f52gppi29k.com
   tls: true
   type: vless
   udp: true
-  uuid: 337bf72e-bb79-4d5f-be3f-7822eb77100c
-  ws-opts:
-    headers:
-      host: Kz3V0zHz0P.dAsTaTsArD.oRg
-    path: /
-- auth: 378fd036-0b5b-4e2a-8bd6-b276933ae566
-  name: 🇩🇪 德国-Frankfurt am Main (263f96)
-  password: 378fd036-0b5b-4e2a-8bd6-b276933ae566
-  port: 26823
-  server: yjjddg.yunjijd.xyz
-  skip-cert-verify: true
-  sni: yjjddg.yunjijd.xyz
-  type: hysteria2
-  udp: true
-- auth: e7fb624e-fc57-4cf5-8a13-b83460c97385
-  name: 🇩🇪 德国-Frankfurt am Main (c80add)
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: e7fb624e-fc57-4cf5-8a13-b83460c97385
-  port: 20557
-  server: nexiadg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiadg.688997.xyz
-  type: hysteria2
-  udp: true
+  uuid: e390fd08-ee29-43ac-a3a8-ee2a4e9e9462
+- cipher: aes-256-cfb
+  name: 🇩🇪 德国-Frankfurt am Main (bf6639)
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
