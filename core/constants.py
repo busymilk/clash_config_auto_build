@@ -46,9 +46,6 @@ class NodeTestConfig:
     # 并发线程数
     DEFAULT_MAX_WORKERS = int(os.getenv('MAX_WORKERS', '100'))
     
-    # mihomo版本
-    MIHOMO_VERSION = os.getenv('MIHOMO_VERSION', 'v1.19.11')
-    
     # 测试配置文件名
     TEST_CONFIG_FILE = "config_for_test.yaml"
 
