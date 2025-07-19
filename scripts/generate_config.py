@@ -127,8 +127,7 @@ class ConfigGenerator:
             filtered_proxies = self.filter_nodes_by_region(all_nodes, filter_key)
             
             if not filtered_proxies and filter_key:
-                self.logger.warning(f"地区 '{filter_key}' 没有可用节点，跳过生成 {output_path}")
-                continue
+                self.logger.warning(f"地区 '{filter_key}' 没有可用节点，但仍会生成一个空的配置文件。")
             
             # 生成配置文件
             self.generate_config_from_template(
