@@ -51,16 +51,21 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 新加坡-Singapore (280261)
+  name: 🇸🇬 新加坡-Singapore (3ac8f8)
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
-  tfo: false
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇸🇬 新加坡 (c81d13)
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
   type: ss
 - alpn:
   - h3
   auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  name: 🇸🇬 新加坡 (b3d1bd)
+  name: 🇸🇬 新加坡 (271e04)
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145
@@ -68,13 +73,7 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf
-  name: 🇸🇬 新加坡 (bce099)
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- name: 🇸🇬 新加坡-Singapore (216c55)
+- name: 🇸🇬 新加坡-Singapore (12d9a3)
   network: ws
   password: ttfang
   port: 443
@@ -87,8 +86,22 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 新加坡-Singapore (9d0cfd)
+  network: ws
+  port: 8443
+  server: 104.17.121.140
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708
+  ws-opts:
+    headers:
+      Host: mg-innocent-adjust-shape.trycloudflare.com
+    path: /
 - client-fingerprint: firefox
-  name: 🇸🇬 新加坡 (c4de18)
+  name: 🇸🇬 新加坡 (a8a6e6)
   network: tcp
   port: 34045
   reality-opts:

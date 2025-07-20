@@ -50,13 +50,32 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- auth: ''
+  fast-open: false
+  name: 🇭🇰 香港-Hong Kong (ba4b80)
+  password: pEvU4tuQG1bxO1gbf5Mxj400Bc
+  port: 33223
+  server: 8.218.165.24
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港-Hong Kong (e3404d)
+  name: 🇭🇰 香港-Hong Kong (f5d71b)
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- name: 🇭🇰 香港-Hong Kong (9b4fd2)
+- name: 🇭🇰 香港-Hong Kong (a74d0e)
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
+  skip-cert-verify: true
+  sni: hk.nfsn666.gq
+  tls: false
+  type: hysteria2
+- name: 🇭🇰 香港-Hong Kong (e47539)
   network: ws
   port: 21415
   server: 43.132.244.52
@@ -70,40 +89,6 @@ proxies:
     headers:
       Host: tw.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- auth: ''
-  fast-open: false
-  name: 🇭🇰 香港-Hong Kong (5ab6a7)
-  password: pEvU4tuQG1bxO1gbf5Mxj400Bc
-  port: 33223
-  server: 8.218.165.24
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- name: 🇭🇰 香港-Hong Kong (ebd13c)
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 (6622e5)
-  password: 9bfdde71b4c0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: newroot2v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /cauejypbltqt
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 103.103.245.158
-  tfo: false
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
