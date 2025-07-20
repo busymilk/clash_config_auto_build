@@ -11,16 +11,17 @@ import os
 # 地区过滤器配置
 # =============================================================================
 FILTER_PATTERNS = {
-    'hk': re.compile(r'香港|🇭🇰', flags=re.IGNORECASE),
-    'us': re.compile(r'美国|🇺🇸', flags=re.IGNORECASE),
-    'jp': re.compile(r'日本|🇯🇵', flags=re.IGNORECASE),
-    'uk': re.compile(r'英国|🇬🇧', flags=re.IGNORECASE),
-    'sg': re.compile(r'新加坡|🇸🇬', flags=re.IGNORECASE),
-    'tw': re.compile(r'台湾|🇹🇼', flags=re.IGNORECASE),
-    'kr': re.compile(r'韩国|🇰🇷', flags=re.IGNORECASE),
-    'de': re.compile(r'德国|🇩🇪', flags=re.IGNORECASE),
-    'ca': re.compile(r'加拿大|🇨🇦', flags=re.IGNORECASE),
-    'au': re.compile(r'澳大利亚|🇦🇺', flags=re.IGNORECASE),
+    # 增加 \b 单词边界确保精确匹配，并补充英文全称、别称和原生语言名称
+    'hk': re.compile(r'香港|🇭🇰|\bHK\b|Hong Kong', flags=re.IGNORECASE),
+    'us': re.compile(r'美国|🇺🇸|\bUS\b|\bUSA\b|United States', flags=re.IGNORECASE),
+    'jp': re.compile(r'日本|🇯🇵|\bJP\b|Japan', flags=re.IGNORECASE),
+    'uk': re.compile(r'英国|🇬🇧|\bUK\b|\bGB\b|United Kingdom|England', flags=re.IGNORECASE),
+    'sg': re.compile(r'新加坡|🇸🇬|\bSG\b|Singapore', flags=re.IGNORECASE),
+    'tw': re.compile(r'台湾|🇹🇼|\bTW\b|Taiwan', flags=re.IGNORECASE),
+    'kr': re.compile(r'韩国|🇰🇷|\bKR\b|Korea|South Korea', flags=re.IGNORECASE),
+    'de': re.compile(r'德国|🇩🇪|\bDE\b|Germany|Deutschland', flags=re.IGNORECASE),
+    'ca': re.compile(r'加拿大|🇨🇦|\bCA\b|Canada', flags=re.IGNORECASE),
+    'au': re.compile(r'澳大利亚|🇦🇺|\bAU\b|Australia', flags=re.IGNORECASE),
 }
 
 # =============================================================================

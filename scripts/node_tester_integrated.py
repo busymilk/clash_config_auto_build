@@ -228,20 +228,8 @@ class IntegratedNodeTester:
 
     def detect_geoip_and_rename(self, healthy_proxies: list) -> list:
         """检测健康节点的地理位置并重新命名"""
-        if not self.geoip_detector:
-            self.logger.info("地理位置检测已禁用，跳过重命名")
-            return healthy_proxies
-        
-        self.logger.info(f"开始地理位置检测 {len(healthy_proxies)} 个健康节点...")
-        
-        # 使用地理位置检测器
-        renamed_proxies = self.geoip_detector.detect_and_rename_nodes(
-            proxies=healthy_proxies,
-            api_url="127.0.0.1:9090",
-            timeout=self.args.geoip_timeout
-        )
-        
-        return renamed_proxies
+        self.logger.info("根据用户要求，已禁用根据出口IP修改代理名称的功能，直接返回原始节点列表。")
+        return healthy_proxies
 
     def save_healthy_nodes(self, healthy_proxies: list, output_file: str) -> None:
         """保存健康节点到文件"""
