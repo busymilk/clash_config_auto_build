@@ -50,62 +50,68 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- name: 日本 001
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
 - cipher: aes-128-gcm
-  name: 🇯🇵 日本-Tokyo (9fc5f7)
+  name: 🇯🇵JP-149.22.87.204-0284 | 20.771MB
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: 🇯🇵 日本-Tokyo (d767a6)
+  name: 🇯🇵JP-149.22.87.241-0283 | 20.605MB
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-- auth: ''
-  fast-open: false
-  name: 🇯🇵 日本-Tokyo (a7fb02)
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
   tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇯🇵 日本-Tokyo (f162d0)
-  password: jyEWQRbJATgWMu3XQtRvxb2h0
-  port: 25635
-  server: 47.79.34.232
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇯🇵 日本-Tokyo (968738)
-  password: kWlrCka5jzfKbD2z7ucwANEdZM
-  port: 26404
-  server: 47.245.53.59
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇯🇵 日本-Tokyo (3e347e)
+  type: ss
+- auth: Y9vRstWcTHECGcKnayA2VYiUXs
+  name: 🇯🇵 日本 44
   password: Y9vRstWcTHECGcKnayA2VYiUXs
   port: 35562
   server: 13.112.101.203
-  servername: bing.com
   skip-cert-verify: true
   sni: bing.com
-  tfo: false
   type: hysteria2
+  udp: true
+- name: 🇯🇵_日本
+  network: ws
+  port: 12333
+  server: 121.80.244.179
+  servername: xn.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: xn.bgm2024.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

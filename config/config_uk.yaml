@@ -49,94 +49,120 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国-London (5bfec4)
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (2339f2)
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (9b0ed7)
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇬🇧 英国 (bb5cd1)
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 62.100.205.48
-  type: ssr
-- cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (27970e)
+  name: 🇬🇧GB-212.102.53.198-0392 | 32.619MB
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (1e2078)
+  name: 🇬🇧GB-212.102.53.79-0262 | 33.27MB
   password: shadowsocks
   port: 443
   server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧 英国-Manchester (c2933b)
+  name: 🇬🇧GB-212.102.53.197-0250 | 32.359MB
   password: shadowsocks
   port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇬🇧 英国 (ac5ea5)
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
+  server: 212.102.53.197
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (a43c55)
+  name: 🇬🇧GB-212.102.53.194-0113 | 33.199MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.78-0282 | 31.304MB
   password: shadowsocks
   port: 443
   server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (05d0ba)
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (5bac4a)
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (cd6290)
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (63cbff)
+  name: 🇬🇧GB-212.102.53.81-0251 | 31.93MB
   password: shadowsocks
   port: 443
   server: 212.102.53.81
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧 英国-London (e0b338)
+  name: 🇬🇧GB-212.102.53.80-0256 | 33.511MB
   password: shadowsocks
   port: 443
   server: 212.102.53.80
   type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-0249 | 31.552MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 英国-London (fe07ff)
+  name: 🇬🇧GB-85.210.120.237-0273 | 34.879MB
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-0257 | 31.913MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.196-0287 | 24.347MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.178-0307 | 25.214MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇬🇧GB-62.100.205.48-0253 | 31.402MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-185.5.38.111-5187 | 0.186MB
+  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+- name: 🇬🇧_英国_1
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: xn.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: xn.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_2
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: cv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cv.bgm2024.dpdns.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
   password: c40641c1f89e7acb
   port: 57456
   server: 46.226.163.225
