@@ -50,37 +50,23 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- auth: ''
-  fast-open: false
-  name: 🇭🇰 香港-Hong Kong (ba4b80)
-  password: pEvU4tuQG1bxO1gbf5Mxj400Bc
-  port: 33223
-  server: 8.218.165.24
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
+- cipher: chacha20-ietf
+  name: 未知 🇭🇰HK-103.149.183.154-5077 | 2.631MB
+  password: asd123456
+  port: 8388
+  server: 103.149.183.154
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰 香港-Hong Kong (f5d71b)
+  name: 🇭🇰 香港-Hong Kong (e2245d)
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- name: 🇭🇰 香港-Hong Kong (a74d0e)
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
-- name: 🇭🇰 香港-Hong Kong (e47539)
+- name: 🇭🇰 香港-Hong Kong (d1398e)
   network: ws
   port: 21415
   server: 43.132.244.52
   servername: tw.laoyoutiao.link
-  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -88,7 +74,7 @@ proxies:
   ws-opts:
     headers:
       Host: tw.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

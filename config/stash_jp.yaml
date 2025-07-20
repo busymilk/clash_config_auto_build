@@ -51,17 +51,39 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-128-gcm
-  name: 🇯🇵 日本-Tokyo (3621e2)
+  name: 🇯🇵 日本-Tokyo (9fc5f7)
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: 🇯🇵 日本-Tokyo (cee45b)
+  name: 🇯🇵 日本-Tokyo (d767a6)
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
+- auth: ''
+  fast-open: false
+  name: 🇯🇵 日本-Tokyo (a7fb02)
+  password: wl4HYN9PPKs8d8IzGIt4yKqt0
+  port: 53348
+  server: 47.74.34.102
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇯🇵 日本-Tokyo (f162d0)
+  password: jyEWQRbJATgWMu3XQtRvxb2h0
+  port: 25635
+  server: 47.79.34.232
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
 - auth: ''
   fast-open: false
   name: 🇯🇵 日本-Tokyo (968738)
@@ -75,42 +97,15 @@ proxies:
   type: hysteria2
 - auth: ''
   fast-open: false
-  name: 🇯🇵 日本-Tokyo (a7fb02)
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
+  name: 🇯🇵 日本-Tokyo (3e347e)
+  password: Y9vRstWcTHECGcKnayA2VYiUXs
+  port: 35562
+  server: 13.112.101.203
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
-- name: 未知 🇯🇵 日本-Fukuoka (088835)
-  network: ws
-  port: 18765
-  server: 14.36.181.53
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /telegram🇨🇳@wangcai2/?ed=2560
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本-Tokyo (2c05d1)
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  type: ss
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
