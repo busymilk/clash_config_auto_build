@@ -49,6 +49,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0284 | 20.771MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0283 | 20.605MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 - name: 日本 001
   network: ws
   password: trojan
@@ -60,18 +72,6 @@ proxies:
     headers:
       Host: wahaha.yingyangkuaixian.dpdns.org
     path: /
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-184
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-185
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

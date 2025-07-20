@@ -50,13 +50,13 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-106
+  name: 🇨🇦CA-79.127.233.170-0227 | 70.471MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-196
+  name: 🇨🇦CA-142.4.216.225-0315 | 10.137MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -80,20 +80,6 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: 🇨🇦 加拿大 (832cb7)
-  network: ws
-  port: 80
-  server: 104.18.26.90
-  servername: blaze-can-118.blazecanada.site
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
-  ws-opts:
-    headers:
-      Host: blaze-can-118.blazecanada.site
-    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇦 加拿大-Toronto (f09d57)
