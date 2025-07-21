@@ -49,15 +49,17 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- auth: kWlrCka5jzfKbD2z7ucwANEdZM
-  name: 🇯🇵 日本 21
-  password: kWlrCka5jzfKbD2z7ucwANEdZM
-  port: 26404
-  server: 47.245.53.59
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
+- name: 日本 001
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0227 | 18.981MB
   password: shadowsocks
@@ -70,6 +72,15 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
+- auth: kWlrCka5jzfKbD2z7ucwANEdZM
+  name: 🇯🇵 日本 21
+  password: kWlrCka5jzfKbD2z7ucwANEdZM
+  port: 26404
+  server: 47.245.53.59
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

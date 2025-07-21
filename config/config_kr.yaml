@@ -50,22 +50,16 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0304 | 0.681MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
   name: 🇰🇷KR-154.90.63.177-0314 | 0.629MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
-- cipher: aes-256-gcm
-  name: 🇰🇷KR-220.124.31.130-4952 | 3.075MB
-  password: NiznLvoIuy
-  port: 19378
-  server: 220.124.31.130
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0304 | 0.681MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
   type: ss
 - auth: fb83356a-2123-4d83-adcd-da5b5bb59287
   name: 🇰🇷 韩国 28
@@ -90,6 +84,12 @@ proxies:
     headers:
       host: ns.ylka.dpdns.org
     path: /?ed=2560
+- cipher: aes-256-gcm
+  name: 🇰🇷KR-220.124.31.130-4952 | 3.075MB
+  password: NiznLvoIuy
+  port: 19378
+  server: 220.124.31.130
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
