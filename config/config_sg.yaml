@@ -78,17 +78,6 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- alpn:
-  - h3
-  auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  name: '🇸🇬 新加坡 01 #2'
-  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  port: 43057
-  server: 203.174.82.145
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - name: 🇸🇬 新加坡-Singapore (11a40a)
   network: ws
   password: ttfang
@@ -102,19 +91,17 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- client-fingerprint: firefox
-  name: 🇸🇬 新加坡 (6157f6)
-  network: tcp
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 103.229.96.166
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: true
-  type: vless
+- alpn:
+  - h3
+  auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  name: '🇸🇬 新加坡 01 #2'
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
