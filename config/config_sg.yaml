@@ -49,33 +49,39 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- name: 🇸🇬 新加坡 06
+  network: tcp
+  port: 41283
+  server: 43.156.217.68
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4839e0b9-b275-47ea-81ab-9bfd38bbe7af
+- auth: fb83356a-2123-4d83-adcd-da5b5bb59287
+  name: 🇸🇬 新加坡 09
+  password: fb83356a-2123-4d83-adcd-da5b5bb59287
+  port: 44111
+  server: 217.142.190.72
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇸🇬SG-188.166.220.70-0289 | 0.856MB
+  name: 🇸🇬SG-188.166.220.70-0260 | 13.794MB
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
 - cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-0337 | 0.013MB
+  name: 🇸🇬SG-103.36.91.23-0322 | 0.311MB
   password: asd123456
   port: 8388
   server: 103.36.91.23
   type: ss
 - alpn:
   - h3
-  auth: c5cf6677-50f7-4fd2-abbc-c73f4cf7cfff
-  name: 🇸🇬 新加坡 06
-  password: c5cf6677-50f7-4fd2-abbc-c73f4cf7cfff
-  port: 57238
-  server: 192.229.85.46
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- alpn:
-  - h3
   auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  name: 🇸🇬 新加坡 01
+  name: '🇸🇬 新加坡 01 #2'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145

@@ -50,7 +50,7 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0334 | 0.025MB
+  name: 🇭🇰HK-203.23.128.33-4829 | 0.481MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -110,6 +110,24 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
+  name: 🇭🇰👖TG频道stymei1丨14
+  network: ws
+  port: 8880
+  server: 192.65.217.29
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: hk.laoyoutiao.link
+    path: /
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
   name: 🇭🇰👖TG频道stymei1丨4
   network: ws
   port: 8880
@@ -126,22 +144,25 @@ proxies:
     path: /Telegram@WangCai2
 - alterId: 0
   cipher: ''
+  client-fingerprint: random
   encryption: none
   flow: ''
-  name: 🇭🇰👖TG频道stymei1丨19
+  name: 🇭🇰👖TG频道stymei1丨27
   network: ws
-  port: 8880
-  server: 91.193.58.191
-  skip-cert-verify: false
+  port: 443
+  server: 104.18.26.90
+  servername: barayeiranmahsang.ghormehsabzi.dpdns.org
+  skip-cert-verify: true
+  sni: barayeiranmahsang.ghormehsabzi.dpdns.org
   tfo: false
-  tls: false
+  tls: true
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
   ws-opts:
     headers:
-      Host: us.laoyoutiao.link
-    path: /
+      Host: barayeiranmahsang.ghormehsabzi.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   cipher: ''
   encryption: none
@@ -182,10 +203,10 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇭🇰👖TG频道stymei1丨14
+  name: 🇭🇰👖TG频道stymei1丨19
   network: ws
   port: 8880
-  server: 192.65.217.29
+  server: 91.193.58.191
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -194,7 +215,7 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
+      Host: us.laoyoutiao.link
     path: /
 - alterId: 0
   cipher: ''
@@ -216,25 +237,22 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: ''
-  client-fingerprint: randomized
   encryption: none
   flow: ''
-  name: 🇭🇰👖TG频道stymei1丨11
+  name: 🇭🇰👖TG频道stymei1丨39
   network: ws
-  port: 8443
-  server: 162.159.129.67
-  servername: ns.ylka.dpdns.org
-  skip-cert-verify: true
-  sni: ns.ylka.dpdns.org
+  port: 80
+  server: 45.159.218.17
+  skip-cert-verify: false
   tfo: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 64d39d67-62dc-470c-a592-1d5a6ee87cb5
   ws-opts:
     headers:
-      Host: ns.ylka.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless
+      Host: worker-flat-disk-100d.b9563f65aef681.workers.dev
+    path: /
 - alterId: 0
   cipher: ''
   encryption: none
@@ -274,6 +292,20 @@ proxies:
       Host: blaze-can-118.blazecanada.site
     path: /?ed=2560/?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI
 - cipher: aes-256-gcm
+  name: '🇭🇰 香港 19 #2'
+  password: 23d03aa704c7
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: cmihk3v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /grqhyifio
+    tls: true
+  port: 636
+  server: 156.251.179.181
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   name: 🇭🇰 香港 10
   password: 941cbc4237e0
   plugin: v2ray-plugin
@@ -285,20 +317,6 @@ proxies:
     tls: true
   port: 636
   server: 121.127.231.239
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 19
-  password: 23d03aa704c7
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: cmihk3v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /grqhyifio
-    tls: true
-  port: 636
-  server: 156.251.179.181
   type: ss
   udp: true
 - name: 🇭🇰 香港-Hong Kong (d1398e)

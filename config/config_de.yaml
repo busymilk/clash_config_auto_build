@@ -50,39 +50,39 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-16
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-20
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-11
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
   password: a58fa62b4944ddbf
   port: 57456
   server: 147.45.178.200
   type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0290 | 1.335MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-5176 | 0.18MB
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
+  name: 🇩🇪DE-80.92.204.106-4806 | 1.201MB
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-5175 | 0.098MB
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
+  name: 🇩🇪DE-80.92.204.106-4807 | 1.098MB
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4808 | 0.355MB
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
   server: 80.92.204.106
   type: ss
 - alterId: 0
@@ -158,6 +158,12 @@ proxies:
     headers:
       Host: brmahasang.ahaysiahzangi.dpdns.org
     path: /?ed=2560
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0290 | 1.335MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -196,37 +202,6 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless
-- name: 🇩🇪👖TG频道@stymei1丨15
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2083
-  server: 156.238.18.196
-  servername: vle.amclubdns.dpdns.org
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨28
-  network: ws
-  port: 443
-  server: 172.67.66.177
-  servername: rayan-roof.atena.dpdns.org
-  skip-cert-verify: true
-  sni: rayan-roof.atena.dpdns.org
-  tfo: false
-  tls: true
-  type: vless
-  uuid: db400287-fb42-441d-8a76-5624a8a96f49
-  ws-opts:
-    headers:
-      Host: rayan-roof.atena.dpdns.org
-    path: /
 - name: 🇩🇪👖TG频道@stymei1丨10
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -240,25 +215,6 @@ proxies:
     headers:
       Host: vle.amclubdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan
-- alterId: 0
-  cipher: ''
-  client-fingerprint: chrome
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨33
-  network: ws
-  port: 443
-  server: 104.19.173.68
-  servername: rayan-fg-7.mohammad-janam.filegear-sg.me
-  skip-cert-verify: true
-  sni: rayan-fg-7.mohammad-janam.filegear-sg.me
-  tfo: false
-  tls: true
-  type: vless
-  uuid: e97a0128-4785-4323-a2a5-dd01ce49d359
-  ws-opts:
-    headers:
-      Host: rayan-fg-7.mohammad-janam.filegear-sg.me
-    path: /?ed=2560
 - alterId: 0
   cipher: ''
   client-fingerprint: randomized
@@ -278,6 +234,56 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨28
+  network: ws
+  port: 443
+  server: 172.67.66.177
+  servername: rayan-roof.atena.dpdns.org
+  skip-cert-verify: true
+  sni: rayan-roof.atena.dpdns.org
+  tfo: false
+  tls: true
+  type: vless
+  uuid: db400287-fb42-441d-8a76-5624a8a96f49
+  ws-opts:
+    headers:
+      Host: rayan-roof.atena.dpdns.org
+    path: /
+- alterId: 0
+  cipher: ''
+  client-fingerprint: chrome
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨33
+  network: ws
+  port: 443
+  server: 104.19.173.68
+  servername: rayan-fg-7.mohammad-janam.filegear-sg.me
+  skip-cert-verify: true
+  sni: rayan-fg-7.mohammad-janam.filegear-sg.me
+  tfo: false
+  tls: true
+  type: vless
+  uuid: e97a0128-4785-4323-a2a5-dd01ce49d359
+  ws-opts:
+    headers:
+      Host: rayan-fg-7.mohammad-janam.filegear-sg.me
+    path: /?ed=2560
+- name: 🇩🇪👖TG频道@stymei1丨15
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 156.238.18.196
+  servername: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
 - auth: dEvt5wSHGhobuYBR8kdo4aBvvqQ
   fast-open: false
   name: 🇩🇪👖TG频道@stymei1丨45
@@ -285,16 +291,6 @@ proxies:
   port: 6526
   server: 192.241.182.193
   skip-cert-verify: true
-  type: hysteria2
-- auth: J8Had1nwTgkNvWNN0WrucWq38
-  fast-open: false
-  name: 🇩🇪👖TG频道@stymei1丨39
-  password: J8Had1nwTgkNvWNN0WrucWq38
-  port: 33763
-  server: 146.190.51.60
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
   type: hysteria2
 - auth: V9o2mn4BwochLNk4XkJobx0bY
   fast-open: false
@@ -314,6 +310,16 @@ proxies:
   server: 64.23.194.249
   skip-cert-verify: true
   type: hysteria2
+- auth: J8Had1nwTgkNvWNN0WrucWq38
+  fast-open: false
+  name: 🇩🇪👖TG频道@stymei1丨39
+  password: J8Had1nwTgkNvWNN0WrucWq38
+  port: 33763
+  server: 146.190.51.60
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
 - alterId: 0
   cipher: auto
   flow: ''
@@ -324,24 +330,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 2babf34a-16f5-4e38-a885-738fdfc8eabf
-- auth: wl4HYN9PPKs8d8IzGIt4yKqt0
-  fast-open: false
-  name: 🇩🇪👖TG频道@stymei1丨47
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
-  skip-cert-verify: true
-  type: hysteria2
-- auth: jyEWQRbJATgWMu3XQtRvxb2h0
-  fast-open: false
-  name: 🇩🇪👖TG频道@stymei1丨38
-  password: jyEWQRbJATgWMu3XQtRvxb2h0
-  port: 25635
-  server: 47.79.34.232
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
 - alterId: 0
   cipher: ''
   flow: ''
@@ -369,18 +357,6 @@ proxies:
 - alterId: 0
   cipher: ''
   flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨18
-  network: tcp
-  port: 28279
-  server: 193.238.153.69
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: e6709700-7332-4fe6-a125-fbb781ce7a35
-- alterId: 0
-  cipher: ''
-  flow: ''
   name: 🇩🇪👖TG频道@stymei1丨19
   network: tcp
   port: 19728
@@ -390,6 +366,18 @@ proxies:
   tls: false
   type: vless
   uuid: 2fafdcd6-08c9-4891-d1ce-b7c4a44261ca
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨18
+  network: tcp
+  port: 28279
+  server: 193.238.153.69
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vless
+  uuid: e6709700-7332-4fe6-a125-fbb781ce7a35
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -408,6 +396,16 @@ proxies:
   tls: true
   type: vless
   uuid: fa92e9cd-b5be-4e00-8fc4-4543012d1fd0
+- auth: 0cb527d9-6117-4bcf-a52b-1704b3458cef
+  fast-open: false
+  name: 🇩🇪👖TG频道@stymei1丨60
+  password: 0cb527d9-6117-4bcf-a52b-1704b3458cef
+  port: 44594
+  server: 185.126.255.78
+  servername: dxobg4azmk.gafnode.sbs
+  skip-cert-verify: true
+  sni: dxobg4azmk.gafnode.sbs
+  type: hysteria2
 - alterId: 0
   cipher: ''
   client-fingerprint: random
@@ -444,15 +442,15 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- auth: 0cb527d9-6117-4bcf-a52b-1704b3458cef
+- auth: jyEWQRbJATgWMu3XQtRvxb2h0
   fast-open: false
-  name: 🇩🇪👖TG频道@stymei1丨60
-  password: 0cb527d9-6117-4bcf-a52b-1704b3458cef
-  port: 44594
-  server: 185.126.255.78
-  servername: dxobg4azmk.gafnode.sbs
+  name: 🇩🇪👖TG频道@stymei1丨38
+  password: jyEWQRbJATgWMu3XQtRvxb2h0
+  port: 25635
+  server: 47.79.34.232
+  servername: bing.com
   skip-cert-verify: true
-  sni: dxobg4azmk.gafnode.sbs
+  sni: bing.com
   type: hysteria2
 - auth: pEvU4tuQG1bxO1gbf5Mxj400Bc
   fast-open: false
@@ -463,6 +461,14 @@ proxies:
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
+  type: hysteria2
+- auth: wl4HYN9PPKs8d8IzGIt4yKqt0
+  fast-open: false
+  name: 🇩🇪👖TG频道@stymei1丨47
+  password: wl4HYN9PPKs8d8IzGIt4yKqt0
+  port: 53348
+  server: 47.74.34.102
+  skip-cert-verify: true
   type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理

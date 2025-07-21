@@ -49,20 +49,29 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- auth: fb83356a-2123-4d83-adcd-da5b5bb59287
+  name: 🇰🇷 韩国 28
+  password: fb83356a-2123-4d83-adcd-da5b5bb59287
+  port: 44005
+  server: 146.235.225.95
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0314 | 0.629MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - cipher: aes-256-gcm
-  name: 🇰🇷KR-220.124.31.130-5304 | 0.227MB
+  name: 🇰🇷KR-220.124.31.130-4952 | 3.075MB
   password: NiznLvoIuy
   port: 19378
   server: 220.124.31.130
   type: ss
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0346 | 0.09MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0320 | 0.064MB
+  name: 🇰🇷KR-154.90.62.168-0304 | 0.681MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -81,14 +90,6 @@ proxies:
     headers:
       host: ns.ylka.dpdns.org
     path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷_KR_韩国
-  network: tcp
-  port: 21791
-  server: 125.139.134.133
-  type: vmess
-  uuid: bc29535d-dcbe-4663-cfc3-16cb14ba13da
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
