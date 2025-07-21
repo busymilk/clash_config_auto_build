@@ -56,10 +56,10 @@ proxies:
   server: 188.166.220.70
   type: ss
 - cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-0322 | 0.309MB
+  name: 🇸🇬SG-103.36.91.32-0321 | 0.312MB
   password: asd123456
   port: 8388
-  server: 103.36.91.23
+  server: 103.36.91.32
   type: ss
 - alpn:
   - h3
@@ -72,15 +72,14 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- auth: fb83356a-2123-4d83-adcd-da5b5bb59287
-  name: 🇸🇬 新加坡 09
-  password: fb83356a-2123-4d83-adcd-da5b5bb59287
-  port: 44111
-  server: 217.142.190.72
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+- name: 🇸🇬 新加坡 06
+  network: tcp
+  port: 41283
+  server: 43.156.217.68
+  tls: false
+  type: vless
   udp: true
+  uuid: 4839e0b9-b275-47ea-81ab-9bfd38bbe7af
 - name: 🇸🇬 新加坡-Singapore (11a40a)
   network: ws
   password: ttfang
@@ -94,14 +93,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: 🇸🇬 新加坡 06
-  network: tcp
-  port: 41283
-  server: 43.156.217.68
-  tls: false
-  type: vless
-  udp: true
-  uuid: 4839e0b9-b275-47ea-81ab-9bfd38bbe7af
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
