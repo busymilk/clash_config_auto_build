@@ -120,7 +120,8 @@ proxy-groups:
     type: select
     proxies:
       - ⚡️ 自动优选
-      - ⚖️ 负载均衡
+      - ⚖️ 负载均衡-同一url同一节点
+      - ⚖️ 负载均衡-同一url不同节点
       - 👆 手动选择
       - DIRECT
 
@@ -135,9 +136,20 @@ proxy-groups:
     max-failed-times: 2 # 最大失败次数
     lazy: true # 懒加载，启动时不进行测试
 
-  - name: ⚖️ 负载均衡
+  - name: ⚖️ 负载均衡-同一url同一节点
     type: load-balance # 实现流量的负载均衡
     strategy: consistent-hashing # 轮询策略，确保同一目标地址使用同一节点
+    include-all-proxies: true
+    url: "https://www.apple.com/library/test/success.html"
+    expected-status: 200
+    interval: 60
+    timeout: 3000
+    max-failed-times: 2
+    lazy: true
+
+  - name: ⚖️ 负载均衡-同一url不同节点
+    type: load-balance # 实现流量的负载均衡
+    strategy: round-robin # 轮询策略，将会把所有的请求分配给策略组内不同的代理节点
     include-all-proxies: true
     url: "https://www.apple.com/library/test/success.html"
     expected-status: 200
