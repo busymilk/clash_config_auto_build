@@ -51,17 +51,26 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0314 | 0.629MB
+  name: 🇰🇷KR-154.90.63.177-0314 | 1.365MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0304 | 0.681MB
+  name: 🇰🇷KR-154.90.62.168-0304 | 0.025MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
+- auth: fb83356a-2123-4d83-adcd-da5b5bb59287
+  name: 🇰🇷 韩国 28
+  password: fb83356a-2123-4d83-adcd-da5b5bb59287
+  port: 44005
+  server: 146.235.225.95
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - name: 🇰🇷 韩国 (af1132)
   network: ws
   port: 443
@@ -76,15 +85,6 @@ proxies:
     headers:
       host: ns.ylka.dpdns.org
     path: /?ed=2560
-- auth: fb83356a-2123-4d83-adcd-da5b5bb59287
-  name: 🇰🇷 韩国 28
-  password: fb83356a-2123-4d83-adcd-da5b5bb59287
-  port: 44005
-  server: 146.235.225.95
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
