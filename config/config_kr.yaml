@@ -49,15 +49,12 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- auth: fb83356a-2123-4d83-adcd-da5b5bb59287
-  name: 🇰🇷 韩国 28
-  password: fb83356a-2123-4d83-adcd-da5b5bb59287
-  port: 44005
-  server: 146.235.225.95
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0304 | 0.681MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
 - cipher: aes-256-cfb
   name: 🇰🇷KR-154.90.63.177-0314 | 0.629MB
   password: f8f7aCzcPKbsF8p3
@@ -70,12 +67,15 @@ proxies:
   port: 19378
   server: 220.124.31.130
   type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0304 | 0.681MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
+- auth: fb83356a-2123-4d83-adcd-da5b5bb59287
+  name: 🇰🇷 韩国 28
+  password: fb83356a-2123-4d83-adcd-da5b5bb59287
+  port: 44005
+  server: 146.235.225.95
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - name: 🇰🇷 韩国 (af1132)
   network: ws
   port: 443
@@ -94,7 +94,8 @@ proxy-groups:
 - name: ✈️ 选择代理
   proxies:
   - ⚡️ 自动优选
-  - ⚖️ 负载均衡
+  - ⚖️ 负载均衡-同一url同一节点
+  - ⚖️ 负载均衡-同一url不同节点
   - 👆 手动选择
   - DIRECT
   type: select
@@ -113,8 +114,18 @@ proxy-groups:
   interval: 60
   lazy: true
   max-failed-times: 2
-  name: ⚖️ 负载均衡
+  name: ⚖️ 负载均衡-同一url同一节点
   strategy: consistent-hashing
+  timeout: 3000
+  type: load-balance
+  url: https://www.apple.com/library/test/success.html
+- expected-status: 200
+  include-all-proxies: true
+  interval: 60
+  lazy: true
+  max-failed-times: 2
+  name: ⚖️ 负载均衡-同一url不同节点
+  strategy: round-robin
   timeout: 3000
   type: load-balance
   url: https://www.apple.com/library/test/success.html

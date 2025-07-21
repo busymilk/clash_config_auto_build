@@ -49,6 +49,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-188.166.220.70-0260 | 13.794MB
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-0322 | 0.311MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - name: 🇸🇬 新加坡 06
   network: tcp
   port: 41283
@@ -66,18 +78,6 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬SG-188.166.220.70-0260 | 13.794MB
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-0322 | 0.311MB
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
 - alpn:
   - h3
   auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
@@ -119,7 +119,8 @@ proxy-groups:
 - name: ✈️ 选择代理
   proxies:
   - ⚡️ 自动优选
-  - ⚖️ 负载均衡
+  - ⚖️ 负载均衡-同一url同一节点
+  - ⚖️ 负载均衡-同一url不同节点
   - 👆 手动选择
   - DIRECT
   type: select
@@ -138,8 +139,18 @@ proxy-groups:
   interval: 60
   lazy: true
   max-failed-times: 2
-  name: ⚖️ 负载均衡
+  name: ⚖️ 负载均衡-同一url同一节点
   strategy: consistent-hashing
+  timeout: 3000
+  type: load-balance
+  url: https://www.apple.com/library/test/success.html
+- expected-status: 200
+  include-all-proxies: true
+  interval: 60
+  lazy: true
+  max-failed-times: 2
+  name: ⚖️ 负载均衡-同一url不同节点
+  strategy: round-robin
   timeout: 3000
   type: load-balance
   url: https://www.apple.com/library/test/success.html

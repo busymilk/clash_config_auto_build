@@ -49,12 +49,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
 - name: 🇦🇺_澳大利亚_1
   network: ws
   port: 23023
@@ -73,7 +67,8 @@ proxy-groups:
 - name: ✈️ 选择代理
   proxies:
   - ⚡️ 自动优选
-  - ⚖️ 负载均衡
+  - ⚖️ 负载均衡-同一url同一节点
+  - ⚖️ 负载均衡-同一url不同节点
   - 👆 手动选择
   - DIRECT
   type: select
@@ -92,8 +87,18 @@ proxy-groups:
   interval: 60
   lazy: true
   max-failed-times: 2
-  name: ⚖️ 负载均衡
+  name: ⚖️ 负载均衡-同一url同一节点
   strategy: consistent-hashing
+  timeout: 3000
+  type: load-balance
+  url: https://www.apple.com/library/test/success.html
+- expected-status: 200
+  include-all-proxies: true
+  interval: 60
+  lazy: true
+  max-failed-times: 2
+  name: ⚖️ 负载均衡-同一url不同节点
+  strategy: round-robin
   timeout: 3000
   type: load-balance
   url: https://www.apple.com/library/test/success.html
