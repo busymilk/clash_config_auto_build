@@ -50,6 +50,21 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港2|@ripaojiedian
+  password: 9bfdde71b4c0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /cauejypbltqt
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 103.103.245.158
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -85,42 +100,6 @@ proxies:
   ws-opts:
     headers:
       Host: hk.laoyoutiao.link
-    path: /
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇭🇰👖TG频道stymei1丨4
-  network: ws
-  port: 8880
-  server: 216.24.57.20
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /Telegram@WangCai2
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇭🇰👖TG频道stymei1丨19
-  network: ws
-  port: 8880
-  server: 91.193.58.191
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
     path: /
 - alterId: 0
   cipher: ''
@@ -181,27 +160,19 @@ proxies:
     headers:
       Host: wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET
     path: /
-- alterId: 0
-  cipher: ''
-  client-fingerprint: randomized
-  encryption: none
-  flow: ''
-  name: 🇭🇰👖TG频道stymei1丨11
+- name: 🇭🇰 香港 09
   network: ws
-  port: 8443
-  server: 162.159.129.67
-  servername: ns.ylka.dpdns.org
-  skip-cert-verify: true
-  sni: ns.ylka.dpdns.org
-  tfo: false
+  port: 21415
+  server: 43.132.244.52
+  servername: tw.laoyoutiao.link
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: ns.ylka.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless
+      Host: tw.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 06
   password: 23d03aa704c7
@@ -216,19 +187,6 @@ proxies:
   server: 156.251.179.181
   type: ss
   udp: true
-- name: 🇭🇰 香港 09
-  network: ws
-  port: 21415
-  server: 43.132.244.52
-  servername: tw.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: tw.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 10
   password: 941cbc4237e0

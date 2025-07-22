@@ -67,18 +67,6 @@ proxies:
   port: 989
   server: 79.127.233.170
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0315 | 4.841MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0373 | 49.129MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
 - alpn:
   - h3
   auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
@@ -86,6 +74,17 @@ proxies:
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
   server: 129.153.63.0
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- alpn:
+  - h3
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: 🇨🇦 加拿大 25
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 47262
+  server: 40.233.103.51
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
@@ -104,17 +103,12 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- alpn:
-  - h3
-  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: 🇨🇦 加拿大 25
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 47262
-  server: 40.233.103.51
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0315 | 4.841MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

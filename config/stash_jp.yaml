@@ -50,22 +50,17 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 🇯🇵 日本2|@ripaojiedian
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
+- name: 日本 001
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0310 | 20.759MB
   password: shadowsocks
@@ -78,17 +73,20 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- name: 日本 001
+- name: 🇯🇵_日本_35
   network: ws
-  password: trojan
   port: 443
-  server: 91.193.58.0
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  type: trojan
+  server: 160.16.56.195
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: wahaha.yingyangkuaixian.dpdns.org
-    path: /
+      host: jp.laoyoutiao.link
+    path: telegram@wangcai2/?ed=2560
 - auth: kWlrCka5jzfKbD2z7ucwANEdZM
   name: 🇯🇵 日本 21
   password: kWlrCka5jzfKbD2z7ucwANEdZM
