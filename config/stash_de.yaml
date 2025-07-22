@@ -50,74 +50,41 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: 🇩🇪_DE_德国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.60
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0924 | 6.145MB
+  name: 🇩🇪DE-185.177.229.245-16
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4807 | 1.414MB
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 80.92.204.106
-  type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0278 | 11.887MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4806 | 0.602MB
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-46.101.245.131-20
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  name: 🇩🇪DE-147.45.178.200-11
   password: a58fa62b4944ddbf
   port: 57456
   server: 147.45.178.200
   type: ss
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 42
-  network: ws
-  port: 443
-  server: 104.17.71.31
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇩🇪 德国 05
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
+  name: 🇩🇪DE-45.144.54.33-07
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪_DE_德国_0@8
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0348 | 1.031MB
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
   type: ss
 - client-fingerprint: random
   name: 🇩🇪 德国 04
@@ -133,6 +100,47 @@ proxies:
     headers:
       Host: hai.gdz.buzz
     path: /?ed=2560
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 42
+  network: ws
+  port: 443
+  server: 104.17.71.31
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: random
+  name: 🇩🇪 德国 24
+  network: ws
+  port: 2087
+  server: 104.24.135.129
+  servername: fandouhuayuan.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b5ea382-cbc6-4169-9f88-8200ca80c31a
+  ws-opts:
+    headers:
+      Host: fandouhuayuan.pages.dev
+    path: /?ed=2560
+- name: 🇩🇪 德国 05
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: 🇩🇪 德国 06
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -159,20 +167,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: random
-  name: 🇩🇪 德国 24
-  network: ws
-  port: 2087
-  server: 104.24.135.129
-  servername: fandouhuayuan.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7b5ea382-cbc6-4169-9f88-8200ca80c31a
-  ws-opts:
-    headers:
-      Host: fandouhuayuan.pages.dev
-    path: /?ed=2560
 - alterId: 0
   cipher: ''
   flow: ''
@@ -248,6 +242,12 @@ proxies:
     headers:
       Host: rayan-fg-2.hasan-kachal.filegear-sg.me
     path: /?ed=2560
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0278 | 11.887MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - auth: dEvt5wSHGhobuYBR8kdo4aBvvqQ
   fast-open: false
   name: 🇩🇪👖TG频道@stymei1丨45
@@ -294,19 +294,6 @@ proxies:
     headers:
       Host: rayan-fg-7.mohammad-janam.filegear-sg.me
     path: /?ed=2560
-- name: 🇩🇪👖TG频道@stymei1丨10
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 103.160.204.26
-  servername: vle.amclubdns.dpdns.org
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
 - name: 🇩🇪👖TG频道@stymei1丨15
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -320,6 +307,33 @@ proxies:
     headers:
       Host: vle.amclubdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan
+- name: 🇩🇪👖TG频道@stymei1丨10
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 103.160.204.26
+  servername: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- client-fingerprint: random
+  name: 🇩🇪 德国 07
+  network: ws
+  port: 443
+  server: 104.24.230.10
+  servername: jack.jack-cq.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 72982133-27fb-46fc-9061-61113e77e201
+  ws-opts:
+    headers:
+      Host: jack.jack-cq.click
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   flow: ''
@@ -333,49 +347,15 @@ proxies:
 - alterId: 0
   cipher: ''
   flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨18
+  name: 🇩🇪👖TG频道@stymei1丨20
   network: tcp
-  port: 28279
-  server: 193.238.153.69
+  port: 13305
+  server: 193.238.153.85
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vless
-  uuid: e6709700-7332-4fe6-a125-fbb781ce7a35
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨17
-  network: tcp
-  port: 33817
-  server: 193.238.153.84
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 133361c8-60e7-447a-dd5b-e7af60b9d115
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨19
-  network: tcp
-  port: 19728
-  server: 193.238.153.120
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 2fafdcd6-08c9-4891-d1ce-b7c4a44261ca
-- auth: 0cb527d9-6117-4bcf-a52b-1704b3458cef
-  fast-open: false
-  name: 🇩🇪👖TG频道@stymei1丨60
-  password: 0cb527d9-6117-4bcf-a52b-1704b3458cef
-  port: 44594
-  server: 185.126.255.78
-  servername: dxobg4azmk.gafnode.sbs
-  skip-cert-verify: true
-  sni: dxobg4azmk.gafnode.sbs
-  type: hysteria2
+  uuid: afdb6e6e-3145-4284-c15a-0a38030a8129
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -394,36 +374,16 @@ proxies:
   tls: true
   type: vless
   uuid: fa92e9cd-b5be-4e00-8fc4-4543012d1fd0
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨20
-  network: tcp
-  port: 13305
-  server: 193.238.153.85
+- auth: 0cb527d9-6117-4bcf-a52b-1704b3458cef
+  fast-open: false
+  name: 🇩🇪👖TG频道@stymei1丨60
+  password: 0cb527d9-6117-4bcf-a52b-1704b3458cef
+  port: 44594
+  server: 185.126.255.78
+  servername: dxobg4azmk.gafnode.sbs
   skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: afdb6e6e-3145-4284-c15a-0a38030a8129
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨2
-  network: ws
-  port: 443
-  server: 108.162.194.231
-  servername: rs-sg4.lzjnb.shop
-  skip-cert-verify: true
-  sni: rs-sg4.lzjnb.shop
-  tfo: false
-  tls: true
-  type: vless
-  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
-  ws-opts:
-    headers:
-      Host: rs-sg4.lzjnb.shop
-    path: /lzj
+  sni: dxobg4azmk.gafnode.sbs
+  type: hysteria2
 - alterId: 0
   cipher: ''
   client-fingerprint: random
@@ -442,6 +402,24 @@ proxies:
   tls: true
   type: vless
   uuid: aa1aac84-6a86-41b9-bd34-1a036e06976f
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨2
+  network: ws
+  port: 443
+  server: 108.162.194.231
+  servername: rs-sg4.lzjnb.shop
+  skip-cert-verify: true
+  sni: rs-sg4.lzjnb.shop
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
+  ws-opts:
+    headers:
+      Host: rs-sg4.lzjnb.shop
+    path: /lzj
 - auth: wl4HYN9PPKs8d8IzGIt4yKqt0
   fast-open: false
   name: 🇩🇪👖TG频道@stymei1丨47
