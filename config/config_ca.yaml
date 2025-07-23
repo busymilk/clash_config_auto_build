@@ -62,13 +62,30 @@ proxies:
   server: 142.4.216.225
   type: ss
 - cipher: aes-256-cfb
-  name: SSR-加拿大-79.127.233.170:989
+  group: SSRProvider
+  name: 🇨🇦CA-79.127.233.170-004
   obfs: plain
+  obfsparam: null
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
+  protoparam: null
   server: 79.127.233.170
   type: ssr
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 加拿大 17
+  network: tcp
+  port: 42557
+  reality-opts:
+    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
+    short-id: f430927d
+  server: 155.248.220.153
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
@@ -257,6 +274,7 @@ rules:
 - DOMAIN-SUFFIX,gofile.io,DIRECT
 - DOMAIN-SUFFIX,facefusion.io,✈️ 选择代理
 - DOMAIN-SUFFIX,anaconda.com,✈️ 选择代理
+- DOMAIN-SUFFIX,modelscope.cn,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
