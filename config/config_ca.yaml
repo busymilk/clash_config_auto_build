@@ -82,6 +82,12 @@ proxies:
   port: 990
   server: 79.127.233.170
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0356 | 1.021MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇦 加拿大 18
@@ -107,12 +113,6 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0356 | 1.021MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

@@ -49,6 +49,28 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本5|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 16a89ef:154955
+    mode: tls
+  port: 2377
+  server: 139.162.119.212
+  tfo: false
+  type: ss
+- name: 日本 001
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
 - cipher: aes-256-gcm
   name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
@@ -64,6 +86,18 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵_JP_日本->🇺🇸_US_美国_0@5
+  network: ws
+  port: 8880
+  server: 103.116.7.241
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0246 | 23.281MB
   password: shadowsocks
@@ -76,38 +110,6 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- name: 日本 001
-  network: ws
-  password: trojan
-  port: 443
-  server: 91.193.58.0
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: wahaha.yingyangkuaixian.dpdns.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵_JP_日本->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 103.116.7.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- auth: jyEWQRbJATgWMu3XQtRvxb2h0
-  name: 🇯🇵 日本 08
-  password: jyEWQRbJATgWMu3XQtRvxb2h0
-  port: 25635
-  server: 47.79.34.232
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
 - name: 🇯🇵_日本_35
   network: ws
   port: 443
@@ -122,6 +124,15 @@ proxies:
     headers:
       host: jp.laoyoutiao.link
     path: telegram@wangcai2/?ed=2560
+- auth: jyEWQRbJATgWMu3XQtRvxb2h0
+  name: 🇯🇵 日本 08
+  password: jyEWQRbJATgWMu3XQtRvxb2h0
+  port: 25635
+  server: 47.79.34.232
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
