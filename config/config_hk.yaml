@@ -124,6 +124,20 @@ proxies:
       Host: wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET
     path: /
 - cipher: aes-256-gcm
+  name: 🇭🇰 香港 17
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: 636
+  server: 156.251.179.139
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   name: '🇭🇰 香港 06 #2'
   password: 23d03aa704c7
   plugin: v2ray-plugin
@@ -136,6 +150,17 @@ proxies:
   port: 636
   server: 156.251.179.181
   type: ss
+  udp: true
+- alpn:
+  - h3
+  auth: cc83a02b-90ea-403b-9c76-27e4be95f637
+  name: 🇭🇰 香港 28
+  password: cc83a02b-90ea-403b-9c76-27e4be95f637
+  port: 50256
+  server: 154.204.181.230
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
   udp: true
 - name: 🇭🇰 香港 09
   network: ws

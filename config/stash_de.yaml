@@ -51,28 +51,40 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-16
+  name: 🇩🇪DE-185.177.229.245-0338 | 5.528MB
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-4800 | 18.858MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0374 | 1.874MB
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-20
+  name: 🇩🇪DE-46.101.245.131-0298 | 0.382MB
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪_DE_德国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.60
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-0387 | 0.313MB
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0348 | 1.031MB
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-45.144.54.33-0936 | 10.987MB
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
   type: ss
 - client-fingerprint: random
   name: 🇩🇪 德国 24
@@ -87,20 +99,6 @@ proxies:
   ws-opts:
     headers:
       Host: fandouhuayuan.pages.dev
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 🇩🇪 德国 04
-  network: ws
-  port: 443
-  server: 172.64.68.58
-  servername: hai.gdz.buzz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
-  ws-opts:
-    headers:
-      Host: hai.gdz.buzz
     path: /?ed=2560
 - client-fingerprint: randomized
   name: 🇩🇪 德国 42
@@ -132,6 +130,33 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /freecodes蘇小檸 | 華東電訊 | 解鎖Netflix
+- client-fingerprint: random
+  name: 🇩🇪 德国 04
+  network: ws
+  port: 443
+  server: 172.64.68.58
+  servername: hai.gdz.buzz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
+  ws-opts:
+    headers:
+      Host: hai.gdz.buzz
+    path: /?ed=2560
+- name: 🇩🇪 德国 01
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: 🇩🇪 德国 06
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -145,24 +170,11 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: 🇩🇪 德国 05
+- name: '🇩🇪 德国 05 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
   server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: 🇩🇪 德国 01
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -211,25 +223,6 @@ proxies:
     headers:
       Host: frieren.albedo.ddns-ip.net
     path: /proxyip=ayaka.shorekeeper.ir
-- alterId: 0
-  cipher: ''
-  client-fingerprint: chrome
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨31
-  network: ws
-  port: 443
-  server: 104.18.205.33
-  servername: rayan-fg-2.hasan-kachal.filegear-sg.me
-  skip-cert-verify: true
-  sni: rayan-fg-2.hasan-kachal.filegear-sg.me
-  tfo: false
-  tls: true
-  type: vless
-  uuid: a1650c69-531c-441f-bc6a-bd43565000a4
-  ws-opts:
-    headers:
-      Host: rayan-fg-2.hasan-kachal.filegear-sg.me
-    path: /?ed=2560
 - alterId: 0
   cipher: ''
   client-fingerprint: randomized
@@ -305,12 +298,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 2babf34a-16f5-4e38-a885-738fdfc8eabf
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0278 | 11.887MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+- auth: 0cb527d9-6117-4bcf-a52b-1704b3458cef
+  fast-open: false
+  name: 🇩🇪👖TG频道@stymei1丨60
+  password: 0cb527d9-6117-4bcf-a52b-1704b3458cef
+  port: 44594
+  server: 185.126.255.78
+  servername: dxobg4azmk.gafnode.sbs
+  skip-cert-verify: true
+  sni: dxobg4azmk.gafnode.sbs
+  type: hysteria2
 - alterId: 0
   cipher: ''
   flow: ''
@@ -323,34 +320,6 @@ proxies:
   tls: false
   type: vless
   uuid: afdb6e6e-3145-4284-c15a-0a38030a8129
-- alterId: 0
-  cipher: ''
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇩🇪👖TG频道@stymei1丨21
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: RW2LSBmmSe02gQ2e4OGfNmggZbuO4trpafPiNqVEajs
-    short-id: e0b8e166
-  server: 5.34.214.154
-  servername: ign.com
-  skip-cert-verify: true
-  sni: ign.com
-  tfo: false
-  tls: true
-  type: vless
-  uuid: fa92e9cd-b5be-4e00-8fc4-4543012d1fd0
-- auth: 0cb527d9-6117-4bcf-a52b-1704b3458cef
-  fast-open: false
-  name: 🇩🇪👖TG频道@stymei1丨60
-  password: 0cb527d9-6117-4bcf-a52b-1704b3458cef
-  port: 44594
-  server: 185.126.255.78
-  servername: dxobg4azmk.gafnode.sbs
-  skip-cert-verify: true
-  sni: dxobg4azmk.gafnode.sbs
-  type: hysteria2
 - alterId: 0
   cipher: ''
   client-fingerprint: random
@@ -387,6 +356,24 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
+- alterId: 0
+  cipher: ''
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪👖TG频道@stymei1丨21
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: RW2LSBmmSe02gQ2e4OGfNmggZbuO4trpafPiNqVEajs
+    short-id: e0b8e166
+  server: 5.34.214.154
+  servername: ign.com
+  skip-cert-verify: true
+  sni: ign.com
+  tfo: false
+  tls: true
+  type: vless
+  uuid: fa92e9cd-b5be-4e00-8fc4-4543012d1fd0
 - auth: wl4HYN9PPKs8d8IzGIt4yKqt0
   fast-open: false
   name: 🇩🇪👖TG频道@stymei1丨47

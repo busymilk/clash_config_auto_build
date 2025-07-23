@@ -50,28 +50,25 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-04
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0273 | 58.681MB
+  name: 🇨🇦CA-79.127.233.170-0233 | 71.538MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0315 | 4.841MB
+  name: 🇨🇦CA-142.4.216.225-0340 | 17.639MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
+- cipher: aes-256-cfb
+  name: SSR-加拿大-79.127.233.170:989
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
@@ -83,31 +80,6 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- alpn:
-  - h3
-  auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  name: 🇨🇦 加拿大 21
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.63.0
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 加拿大 22
-  network: tcp
-  port: 42557
-  reality-opts:
-    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
-    short-id: f430927d
-  server: 129.153.63.0
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
