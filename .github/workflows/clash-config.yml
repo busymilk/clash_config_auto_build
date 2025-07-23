@@ -91,6 +91,17 @@ jobs:
         chmod +x mihomo
         mv mihomo /usr/local/bin/mihomo
 
+    # 步骤: 验证并过滤所有代理节点的格式
+    - name: Validate and Filter All Proxies
+      id: validate_nodes
+      run: |
+        echo "开始验证并过滤所有合并后节点的格式..."
+        python scripts/validate_proxies.py \
+          --file all_unique_nodes.yaml \
+          --output-valid valid_nodes.yaml \
+          --mihomo-path /usr/local/bin/mihomo
+        echo "filtered_nodes_file=valid_nodes.yaml" >> $GITHUB_OUTPUT
+
     # 步骤10: 集成版节点测试（包含地理位置检测）
     - name: Test Nodes with Integrated GeoIP Detection
       id: test_nodes
@@ -102,7 +113,7 @@ jobs:
         echo "  - 最大并发数: ${{ env.MAX_WORKERS }}"
         
         # 构建命令参数
-        cmd_args="--input-file all_unique_nodes.yaml"
+        cmd_args="--input-file ${{ steps.validate_nodes.outputs.filtered_nodes_file }}"
         cmd_args="$cmd_args --output healthy_nodes_list.yaml"
         cmd_args="$cmd_args --clash-path /usr/local/bin/mihomo"
         cmd_args="$cmd_args --delay-limit ${{ env.DELAY_LIMIT }}"
@@ -185,7 +196,7 @@ jobs:
           echo "Purging CDN cache for: $file"
           
           for ((i=1; i<=3; i++)); do
-            http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
+            http_code=$(curl -s -o /dev/null -w "%{\http_code}" "$purge_url")
             if [ $http_code -eq 200 ]; then
               echo "  ✅ Success (Attempt $i)"
               break
@@ -205,171 +216,7 @@ jobs:
       run: |
         echo "清理临时文件..."
         rm -f all_unique_nodes.yaml
-        rm -f config_for_test.yaml
-        rm -f mihomo.gz
-        echo "清理完成"
-
-    # 步骤15: 提交配置文件变更
-    - name: Commit and push config changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        
-        if git diff --quiet --exit-code -- 'config/*.yaml'; then
-          echo "No changes to commit, skipping push."
-          exit 0
-        fi
-        
-        git add config/*.yaml
-        
-        # 构建提交信息
-        commit_msg="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M') with GeoIP detection"
-        
-        git commit -m "$commit_msg"
-        git push origin HEAD:main
-
-    # 步骤16: 刷新 CDN 缓存
-    - name: Purge jsDelivr Cache
-      if: success()
-      env:
-        FILES_TO_PURGE: ${{ steps.generate.outputs.generated_files }}
-      run: |
-        echo "Files to purge: $FILES_TO_PURGE"
-        for file in $FILES_TO_PURGE; do
-          purge_url="https://purge.jsdelivr.net/gh/${{ github.repository }}@main/$file"
-          echo "Purging CDN cache for: $file"
-          
-          for ((i=1; i<=3; i++)); do
-            http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
-            if [ $http_code -eq 200 ]; then
-              echo "  ✅ Success (Attempt $i)"
-              break
-            elif [ $i -eq 3 ]; then
-              echo "  ❌ Failed after 3 attempts (HTTP code: $http_code)"
-            else
-              echo "  ⚠️ Failed with code $http_code, retrying..."
-              sleep 10
-            fi
-          done
-        done
-        echo "🎉 CDN cache purge completed."
-
-    # 步骤17: 清理临时文件
-    - name: Cleanup
-      if: always()
-      run: |
-        echo "清理临时文件..."
-        rm -f all_unique_nodes.yaml
-        rm -f config_for_test.yaml
-        rm -f mihomo.gz
-        echo "清理完成"
-
-    # 步骤15: 提交配置文件变更
-    - name: Commit and push config changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        
-        if git diff --quiet --exit-code -- 'config/*.yaml'; then
-          echo "No changes to commit, skipping push."
-          exit 0
-        fi
-        
-        git add config/*.yaml
-        
-        # 构建提交信息
-        commit_msg="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M') with GeoIP detection"
-        
-        git commit -m "$commit_msg"
-        git push origin HEAD:main
-
-    # 步骤16: 刷新 CDN 缓存
-    - name: Purge jsDelivr Cache
-      if: success()
-      env:
-        FILES_TO_PURGE: ${{ steps.generate.outputs.generated_files }}
-      run: |
-        echo "Files to purge: $FILES_TO_PURGE"
-        for file in $FILES_TO_PURGE; do
-          purge_url="https://purge.jsdelivr.net/gh/${{ github.repository }}@main/$file"
-          echo "Purging CDN cache for: $file"
-          
-          for ((i=1; i<=3; i++)); do
-            http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
-            if [ $http_code -eq 200 ]; then
-              echo "  ✅ Success (Attempt $i)"
-              break
-            elif [ $i -eq 3 ]; then
-              echo "  ❌ Failed after 3 attempts (HTTP code: $http_code)"
-            else
-              echo "  ⚠️ Failed with code $http_code, retrying..."
-              sleep 10
-            fi
-          done
-        done
-        echo "🎉 CDN cache purge completed."
-
-    # 步骤17: 清理临时文件
-    - name: Cleanup
-      if: always()
-      run: |
-        echo "清理临时文件..."
-        rm -f all_unique_nodes.yaml
-        rm -f config_for_test.yaml
-        rm -f mihomo.gz
-        echo "清理完成"
-
-    # 步骤15: 提交配置文件变更
-    - name: Commit and push config changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        
-        if git diff --quiet --exit-code -- 'config/*.yaml'; then
-          echo "No changes to commit, skipping push."
-          exit 0
-        fi
-        
-        git add config/*.yaml
-        
-        # 构建提交信息
-        commit_msg="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M') with GeoIP detection"
-        
-        git commit -m "$commit_msg"
-        git push origin HEAD:main
-
-    # 步骤16: 刷新 CDN 缓存
-    - name: Purge jsDelivr Cache
-      if: success()
-      env:
-        FILES_TO_PURGE: ${{ steps.generate.outputs.generated_files }}
-      run: |
-        echo "Files to purge: $FILES_TO_PURGE"
-        for file in $FILES_TO_PURGE; do
-          purge_url="https://purge.jsdelivr.net/gh/${{ github.repository }}@main/$file"
-          echo "Purging CDN cache for: $file"
-          
-          for ((i=1; i<=3; i++)); do
-            http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
-            if [ $http_code -eq 200 ]; then
-              echo "  ✅ Success (Attempt $i)"
-              break
-            elif [ $i -eq 3 ]; then
-              echo "  ❌ Failed after 3 attempts (HTTP code: $http_code)"
-            else
-              echo "  ⚠️ Failed with code $http_code, retrying..."
-              sleep 10
-            fi
-          done
-        done
-        echo "🎉 CDN cache purge completed."
-
-    # 步骤17: 清理临时文件
-    - name: Cleanup
-      if: always()
-      run: |
-        echo "清理临时文件..."
-        rm -f all_unique_nodes.yaml
+        rm -f valid_nodes.yaml
         rm -f config_for_test.yaml
         rm -f mihomo.gz
         echo "清理完成"
