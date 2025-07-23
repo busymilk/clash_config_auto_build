@@ -196,7 +196,7 @@ jobs:
           echo "Purging CDN cache for: $file"
           
           for ((i=1; i<=3; i++)); do
-            http_code=$(curl -s -o /dev/null -w "%{\http_code}" "$purge_url")
+            http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
             if [ $http_code -eq 200 ]; then
               echo "  ✅ Success (Attempt $i)"
               break
