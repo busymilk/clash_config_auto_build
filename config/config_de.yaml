@@ -49,17 +49,38 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 28
+  network: ws
+  port: 443
+  server: 104.26.7.214
+  servername: rayan-fg-5.medicalhistory.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
+  ws-opts:
+    headers:
+      Host: rayan-fg-5.medicalhistory.filegear-sg.me
+    path: /?ed=2560
+- name: 🇩🇪 德国 32
+  network: ws
+  port: 80
+  server: 104.24.147.64
+  servername: ppal03-ppal03.letiwe3303.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
+  ws-opts:
+    headers:
+      Host: ppal03-ppal03.letiwe3303.workers.dev
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-185.177.229.245-016
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-45.144.54.33-007
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-46.101.245.131-020
@@ -73,6 +94,20 @@ proxies:
   port: 57456
   server: 147.45.178.200
   type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪 德国 21
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: jGmjU0vrRXCnIwn0rVatYKf5ihWZhMvqidp2ceY1QAM
+    short-id: 8c01e365
+  server: 87.228.119.32
+  servername: qjyovg.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 859b7d71-a9fc-4234-8e03-42eb876a170a
 - cipher: rc4-md5
   name: 🇩🇪DE-193.108.119.230-0307 | 14.127MB
   password: 14fFPrbezE3HDZzsMOr6
@@ -84,6 +119,12 @@ proxies:
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 80.92.204.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-45.144.54.33-007
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
   type: ss
 - cipher: aes-256-cfb
   name: 🇩🇪DE-80.92.204.106-4849 | 0.431MB
@@ -105,7 +146,7 @@ proxies:
     headers:
       Host: rayan-roof.atena.dpdns.org
     path: /
-- name: 🇩🇪 德国 01
+- name: '🇩🇪 德国 01 #2'
   network: ws
   port: 443
   server: 104.24.71.251
@@ -132,22 +173,6 @@ proxies:
     headers:
       Host: fandouhuayuan.pages.dev
     path: /?ed=2560
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨34
-  network: ws
-  port: 8880
-  server: 167.68.5.177
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /freecodes蘇小檸 | 華東電訊 | 解鎖Netflix
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -202,20 +227,6 @@ proxies:
     headers:
       Host: hai.gdz.buzz
     path: /?ed=2560
-- client-fingerprint: random
-  name: 🇩🇪 德国 07
-  network: ws
-  port: 443
-  server: 104.24.230.10
-  servername: jack.jack-cq.click
-  tls: true
-  type: vless
-  udp: true
-  uuid: 72982133-27fb-46fc-9061-61113e77e201
-  ws-opts:
-    headers:
-      Host: jack.jack-cq.click
-    path: /?ed=2560
 - client-fingerprint: randomized
   name: 🇩🇪 德国 42
   network: ws
@@ -230,19 +241,6 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇩🇪 德国 06
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 162.159.133.85
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -262,11 +260,11 @@ proxies:
     headers:
       Host: rayan-fg-7.mohammad-janam.filegear-sg.me
     path: /?ed=2560
-- name: '🇩🇪 德国 01 #2'
+- name: 🇩🇪 德国 06
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
+  port: 443
+  server: 162.159.133.85
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -275,6 +273,20 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- client-fingerprint: random
+  name: 🇩🇪 德国 07
+  network: ws
+  port: 443
+  server: 104.24.230.10
+  servername: jack.jack-cq.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 72982133-27fb-46fc-9061-61113e77e201
+  ws-opts:
+    headers:
+      Host: jack.jack-cq.click
+    path: /?ed=2560
 - name: '🇩🇪 德国 05 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -301,6 +313,19 @@ proxies:
     headers:
       Host: vle.amclubdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan
+- name: '🇩🇪 德国 01 #2 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - alterId: 0
   cipher: auto
   flow: ''
@@ -341,16 +366,6 @@ proxies:
   tls: true
   type: vless
   uuid: fa92e9cd-b5be-4e00-8fc4-4543012d1fd0
-- auth: 0cb527d9-6117-4bcf-a52b-1704b3458cef
-  fast-open: false
-  name: 🇩🇪👖TG频道@stymei1丨60
-  password: 0cb527d9-6117-4bcf-a52b-1704b3458cef
-  port: 44594
-  server: 185.126.255.78
-  servername: dxobg4azmk.gafnode.sbs
-  skip-cert-verify: true
-  sni: dxobg4azmk.gafnode.sbs
-  type: hysteria2
 - alterId: 0
   cipher: ''
   client-fingerprint: random
@@ -387,6 +402,16 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
+- auth: 0cb527d9-6117-4bcf-a52b-1704b3458cef
+  fast-open: false
+  name: 🇩🇪👖TG频道@stymei1丨60
+  password: 0cb527d9-6117-4bcf-a52b-1704b3458cef
+  port: 44594
+  server: 185.126.255.78
+  servername: dxobg4azmk.gafnode.sbs
+  skip-cert-verify: true
+  sni: dxobg4azmk.gafnode.sbs
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

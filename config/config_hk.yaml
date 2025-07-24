@@ -123,6 +123,26 @@ proxies:
     headers:
       Host: wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0340 | 1.768MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇭🇰 香港 19 #2'
+  password: 23d03aa704c7
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: cmihk3v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /grqhyifio
+    tls: true
+  port: 636
+  server: 156.251.179.181
+  type: ss
+  udp: true
 - name: 🇭🇰 香港 09
   network: ws
   port: 21415
@@ -149,29 +169,6 @@ proxies:
   port: 636
   server: 156.251.179.139
   type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '🇭🇰 香港 19 #2'
-  password: 23d03aa704c7
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: cmihk3v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /grqhyifio
-    tls: true
-  port: 636
-  server: 156.251.179.181
-  type: ss
-  udp: true
-- auth: nfsn666
-  name: 🇭🇰 香港 02
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  type: hysteria2
   udp: true
 proxy-groups:
 - name: ✈️ 选择代理
