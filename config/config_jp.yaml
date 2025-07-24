@@ -49,33 +49,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 日本 001
-  network: ws
-  password: trojan
-  port: 443
-  server: 91.193.58.0
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: wahaha.yingyangkuaixian.dpdns.org
-    path: /
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 🇯🇵 日本2|@ripaojiedian
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0246 | 35.549MB
   password: shadowsocks
@@ -88,6 +61,17 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
+- name: 日本 001
+  network: ws
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: wahaha.yingyangkuaixian.dpdns.org
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 🇯🇵 日本5|@ripaojiedian
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -287,7 +271,6 @@ rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN-SUFFIX,ghproxy.com,DIRECT
-- DOMAIN-SUFFIX,gofile.io,DIRECT
 - DOMAIN-SUFFIX,facefusion.io,✈️ 选择代理
 - DOMAIN-SUFFIX,anaconda.com,✈️ 选择代理
 - DOMAIN-SUFFIX,modelscope.cn,DIRECT
