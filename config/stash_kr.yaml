@@ -50,6 +50,37 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-256-gcm
+  name: 🇰🇷KR-220.124.31.130-0292 | 0.233MB
+  password: NiznLvoIuy
+  port: 19378
+  server: 220.124.31.130
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-3.38.134.57-0660 | 0.084MB
+  password: amazonskr05
+  port: 443
+  server: 3.38.134.57
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0338 | 0.147MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- name: 🇰🇷 韩国 21
+  network: ws
+  port: 12217
+  server: 121.149.121.84
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: Telegram@WangCai2/?ed=2560
 - name: 🇰🇷_韩国_1
   network: ws
   port: 50000
@@ -65,42 +96,11 @@ proxies:
       host: ccc.ylks0033.dpdns.org
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-3.38.134.57-0660 | 0.084MB
-  password: amazonskr05
-  port: 443
-  server: 3.38.134.57
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0338 | 0.147MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
   name: 🇰🇷KR-154.90.62.168-0306 | 0.03MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
-- cipher: aes-256-gcm
-  name: 🇰🇷KR-220.124.31.130-0292 | 0.233MB
-  password: NiznLvoIuy
-  port: 19378
-  server: 220.124.31.130
-  type: ss
-- name: 🇰🇷 韩国 21
-  network: ws
-  port: 12217
-  server: 121.149.121.84
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: Telegram@WangCai2/?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

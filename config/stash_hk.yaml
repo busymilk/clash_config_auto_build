@@ -85,27 +85,6 @@ proxies:
     path: /TelegramU0001F1E8U0001F1F3
 - alterId: 0
   cipher: ''
-  client-fingerprint: random
-  encryption: none
-  flow: ''
-  name: 🇭🇰👖TG频道stymei1丨27
-  network: ws
-  port: 443
-  server: 104.18.26.90
-  servername: barayeiranmahsang.ghormehsabzi.dpdns.org
-  skip-cert-verify: true
-  sni: barayeiranmahsang.ghormehsabzi.dpdns.org
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
-  ws-opts:
-    headers:
-      Host: barayeiranmahsang.ghormehsabzi.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: ''
   encryption: none
   flow: ''
   name: 🇭🇰👖TG频道stymei1丨20
@@ -130,6 +109,20 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
+- cipher: aes-256-gcm
+  name: '🇭🇰 香港 17 #2'
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: 636
+  server: 156.251.179.139
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 10
   password: 23d03aa704c7
@@ -157,20 +150,6 @@ proxies:
     headers:
       Host: tw.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
-- cipher: aes-256-gcm
-  name: '🇭🇰 香港 17 #2'
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    tls: true
-  port: 636
-  server: 156.251.179.139
-  type: ss
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
