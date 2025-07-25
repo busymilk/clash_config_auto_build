@@ -49,6 +49,26 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- name: 🇩🇪_德国_2
+  network: ws
+  port: 8443
+  server: 130.61.51.100
+  servername: x1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: x1.ylka.dpdns.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-11
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-185.177.229.245-16
   password: oXGp1+ihlfKg826H
@@ -56,35 +76,49 @@ proxies:
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-45.144.54.33-07
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-46.101.245.131-20
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-11
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
 - cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0268 | 0.634MB
+  name: 🇩🇪DE-193.108.119.230-0298 | 17.988MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0295 | 0.101MB
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4943 | 0.112MB
+  name: 🇩🇪DE-80.92.204.106-0337 | 1.726MB
   password: Sn5B7jTqr76aCJT8
   port: 9097
   server: 80.92.204.106
   type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0342 | 1.532MB
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 80.92.204.106
+  type: ss
+- client-fingerprint: random
+  name: 🇩🇪 德国 19
+  network: ws
+  port: 443
+  server: 104.24.230.10
+  servername: jack.jack-cq.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 72982133-27fb-46fc-9061-61113e77e201
+  ws-opts:
+    headers:
+      Host: jack.jack-cq.click
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: '🇩🇪 德国 05 #2'
   network: ws
@@ -113,6 +147,25 @@ proxies:
     headers:
       Host: rayan-roof.atena.dpdns.org
     path: /
+- alterId: 0
+  cipher: ''
+  client-fingerprint: chrome
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨30
+  network: ws
+  port: 8443
+  server: 104.26.7.89
+  servername: brmahasang.ahaysiahzangi.dpdns.org
+  skip-cert-verify: true
+  sni: brmahasang.ahaysiahzangi.dpdns.org
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f5cf098f-5143-440f-a490-7fc24ff27fb0
+  ws-opts:
+    headers:
+      Host: brmahasang.ahaysiahzangi.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: random
   name: 🇩🇪 德国 24
   network: ws
@@ -148,31 +201,6 @@ proxies:
     headers:
       Host: frieren.albedo.ddns-ip.net
     path: /proxyip=ayaka.shorekeeper.ir
-- alterId: 0
-  cipher: ''
-  client-fingerprint: chrome
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨30
-  network: ws
-  port: 8443
-  server: 104.26.7.89
-  servername: brmahasang.ahaysiahzangi.dpdns.org
-  skip-cert-verify: true
-  sni: brmahasang.ahaysiahzangi.dpdns.org
-  tfo: false
-  tls: true
-  type: vless
-  uuid: f5cf098f-5143-440f-a490-7fc24ff27fb0
-  ws-opts:
-    headers:
-      Host: brmahasang.ahaysiahzangi.dpdns.org
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-45.144.54.33-07
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -219,11 +247,25 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '🇩🇪 德国 05 #2 #2'
+- client-fingerprint: random
+  name: '🇩🇪 德国 04 #2'
+  network: ws
+  port: 443
+  server: 172.64.68.58
+  servername: hai.gdz.buzz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
+  ws-opts:
+    headers:
+      Host: hai.gdz.buzz
+    path: /?ed=2560
+- name: '🇩🇪 德国 01 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
+  port: 2053
+  server: 162.159.129.11
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -245,39 +287,11 @@ proxies:
     headers:
       Host: hai.gdz.buzz
     path: /
-- client-fingerprint: random
-  name: '🇩🇪 德国 04 #2'
-  network: ws
-  port: 443
-  server: 172.64.68.58
-  servername: hai.gdz.buzz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
-  ws-opts:
-    headers:
-      Host: hai.gdz.buzz
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 🇩🇪 德国 07
-  network: ws
-  port: 443
-  server: 104.24.230.10
-  servername: jack.jack-cq.click
-  tls: true
-  type: vless
-  udp: true
-  uuid: 72982133-27fb-46fc-9061-61113e77e201
-  ws-opts:
-    headers:
-      Host: jack.jack-cq.click
-    path: /?ed=2560
-- name: '🇩🇪 德国 01 #2 #2'
+- name: '🇩🇪 德国 05 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
+  port: 2087
+  server: 104.25.254.4
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan

@@ -49,17 +49,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 日本 001
-  network: ws
-  password: trojan
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0295 | 21.063MB
+  password: shadowsocks
   port: 443
-  server: 91.193.58.0
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: wahaha.yingyangkuaixian.dpdns.org
-    path: /
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0294 | 21.6MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - auth: wl4HYN9PPKs8d8IzGIt4yKqt0
   name: 🇯🇵 日本 25
   password: wl4HYN9PPKs8d8IzGIt4yKqt0
@@ -69,44 +70,6 @@ proxies:
   sni: bing.com
   type: hysteria2
   udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本2|@ripaojiedian
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0257 | 0.831MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0262 | 0.731MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本5|@ripaojiedian
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 16a89ef:154955
-    mode: tls
-  port: 2377
-  server: 139.162.119.212
-  tfo: false
-  type: ss
 - name: 🇯🇵_日本_35
   network: ws
   port: 443
