@@ -50,6 +50,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0256 | 18.107MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0255 | 12.768MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - cipher: aes-256-gcm
   name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
@@ -65,31 +77,6 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0294 | 21.6MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0295 | 21.063MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- name: 🇯🇵 日本 05
-  network: ws
-  port: 18765
-  server: 14.36.181.53
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /telegram🇨🇳@wangcai2/?ed=2560
 - name: 🇯🇵_日本_35
   network: ws
   port: 443
@@ -104,6 +91,19 @@ proxies:
     headers:
       host: jp.laoyoutiao.link
     path: telegram@wangcai2/?ed=2560
+- name: 🇯🇵 日本 05
+  network: ws
+  port: 18765
+  server: 14.36.181.53
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
 - auth: wl4HYN9PPKs8d8IzGIt4yKqt0
   name: 🇯🇵 日本 25
   password: wl4HYN9PPKs8d8IzGIt4yKqt0
@@ -113,20 +113,6 @@ proxies:
   sni: bing.com
   type: hysteria2
   udp: true
-- name: 🇯🇵_日本_5
-  network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: x2.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: x2.ylka.dpdns.org
-    path: /?ed=2560
 - auth: kWlrCka5jzfKbD2z7ucwANEdZM
   name: 🇯🇵 日本 03
   password: kWlrCka5jzfKbD2z7ucwANEdZM
