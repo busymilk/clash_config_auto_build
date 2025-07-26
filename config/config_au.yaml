@@ -48,13 +48,7 @@ ntp:
 profile:
   store-fake-ip: true
   store-selected: true
-proxies:
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
+proxies: []
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -234,6 +228,7 @@ rules:
 - DOMAIN-SUFFIX,modelscope.cn,DIRECT
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
+- DOMAIN-SUFFIX,1fichier.com,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT

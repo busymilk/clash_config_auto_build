@@ -49,17 +49,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 日本 001
-  network: ws
-  password: trojan
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0256 | 33.545MB
+  password: shadowsocks
   port: 443
-  server: 91.193.58.0
-  sni: wahaha.yingyangkuaixian.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: wahaha.yingyangkuaixian.dpdns.org
-    path: /
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0255 | 31.389MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - cipher: aes-256-gcm
   name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
@@ -75,18 +76,19 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0256 | 33.545MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0255 | 31.389MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
+- name: 🇯🇵 日本 24
+  network: ws
+  password: Aimer
+  port: 12158
+  server: 222.104.2.192
+  skip-cert-verify: true
+  sni: epgz.aimercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgz.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_35
   network: ws
   port: 443
@@ -311,6 +313,7 @@ rules:
 - DOMAIN-SUFFIX,modelscope.cn,DIRECT
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
+- DOMAIN-SUFFIX,1fichier.com,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT

@@ -50,32 +50,30 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇰🇷 韩国 14
-  network: ws
-  password: Aimer
-  port: 12411
-  server: 14.50.215.31
-  skip-cert-verify: true
-  sni: epgz.aimercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgz.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷 韩国 20
-  network: ws
-  password: Aimer
-  port: 12440
-  server: 121.170.83.233
-  skip-cert-verify: true
-  sni: epgz.aimercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgz.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: aes-256-gcm
+  name: 🇰🇷KR-220.124.31.130-0280 | 20.59MB
+  password: NiznLvoIuy
+  port: 19378
+  server: 220.124.31.130
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0327 | 5.269MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0328 | 0.225MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-3.38.186.95-37
+  password: amazonskr05
+  port: 443
+  server: 3.38.186.95
+  type: ss
 - name: 🇰🇷_韩国_1
   network: ws
   port: 50000
@@ -90,18 +88,6 @@ proxies:
     headers:
       host: 1n.bgm2024.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0327 | 5.269MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0328 | 0.225MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

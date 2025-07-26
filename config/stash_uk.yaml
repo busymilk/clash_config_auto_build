@@ -51,42 +51,22 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇬🇧_GB_英国_1@6
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
-- name: 🇬🇧_英国
-  network: ws
+  name: 🇬🇧GB-85.210.120.237-0234 | 41.096MB
+  password: Bog0ELmMM9DSxDdQ
   port: 443
-  server: 217.163.76.201
-  servername: 1n.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: 1n.bgm2024.dpdns.org
-    path: /?ed=2560
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.78-0218 | 41.666MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
+  server: 85.210.120.237
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.196-0217 | 41.764MB
   password: shadowsocks
   port: 443
   server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.78-0218 | 41.666MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-0053 | 41.324MB
@@ -99,6 +79,12 @@ proxies:
   password: shadowsocks
   port: 443
   server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.80-0237 | 41.118MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.193-0240 | 41.082MB
@@ -119,12 +105,6 @@ proxies:
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.80-0237 | 41.118MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.195-0221 | 37.969MB
   password: shadowsocks
   port: 443
@@ -137,16 +117,36 @@ proxies:
   server: 212.102.53.197
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.120.237-0234 | 41.096MB
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
+  name: 🇬🇧GB-46.226.163.225-0312 | 4.749MB
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-141.98.101.178-0244 | 28.046MB
   password: shadowsocks
   port: 443
   server: 141.98.101.178
+  type: ss
+- name: 🇬🇧_英国
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: 1n.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: 1n.bgm2024.dpdns.org
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 🇬🇧GB-62.100.205.48-0248 | 27.19MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
   type: ss
 - name: 🇬🇧_英国_2
   network: ws
@@ -162,12 +162,6 @@ proxies:
     headers:
       host: rAyAn-12.LeIlA.DpDnS.OrG
     path: /@rayan_config
-- cipher: aes-256-cfb
-  name: 🇬🇧GB-62.100.205.48-0248 | 27.19MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
 - alterId: '0'
   cipher: auto
   name: '🇬🇧_英国_1 #2'
