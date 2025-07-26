@@ -49,6 +49,41 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-256-cfb
+  name: SSR-加拿大-79.127.233.170:989
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 加拿大 01
+  network: tcp
+  port: 26113
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  server: 40.233.119.160
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0171 | 46.738MB
   password: f8f7aCzcPKbsF8p3
@@ -67,50 +102,6 @@ proxies:
   port: 80
   server: 142.4.216.225
   type: ss
-- alpn:
-  - h3
-  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: 🇨🇦 加拿大 01
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 47262
-  server: 40.233.103.51
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- cipher: aes-256-cfb
-  name: SSR-加拿大-79.127.233.170:989
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 加拿大 20
-  network: tcp
-  port: 26113
-  reality-opts:
-    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-    short-id: 1fbd20fd
-  server: 40.233.119.160
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: '🇨🇦 加拿大 14 #2'
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 40.233.119.160
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇦 加拿大 14
@@ -125,6 +116,17 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: '🇨🇦 加拿大 14 #2'
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.119.160
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - alpn:
   - h3
   auth: 2429bee3-e0c1-47dd-b420-75e6512b184b

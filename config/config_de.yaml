@@ -50,10 +50,36 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0273 | 30.376MB
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 64
+  network: ws
+  port: 443
+  server: 172.67.66.177
+  servername: rayan-roof.atena.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: db400287-fb42-441d-8a76-5624a8a96f49
+  ws-opts:
+    headers:
+      Host: rayan-roof.atena.dpdns.org
+    path: /V2ray_Alpha/?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   type: ss
 - cipher: rc4-md5
   name: 🇩🇪DE-193.108.119.230-0261 | 31.015MB
@@ -61,29 +87,11 @@ proxies:
   port: 8080
   server: 193.108.119.230
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-45.144.54.33-0260 | 13.225MB
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
 - cipher: aes-256-cfb
   name: 🇩🇪DE-80.92.204.106-4745 | 7.412MB
   password: EXN3S3eQpjE7EJu8
   port: 9027
   server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0290 | 3.181MB
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 80.92.204.106
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-0340 | 2.21MB
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
   type: ss
 - alterId: 0
   cipher: ''
@@ -143,24 +151,6 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨4
-  network: ws
-  port: 8880
-  server: 156.238.18.17
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: yd.laoyoutiao.link
-    path: /Telegram🇨🇳
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
   name: 🇩🇪👖TG频道@stymei1丨3
   network: ws
   port: 8880
@@ -197,19 +187,19 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨15
+  name: 🇩🇪👖TG频道@stymei1丨4
   network: ws
   port: 8880
-  server: 104.234.239.251
+  server: 156.238.18.17
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: cf.d3z.net
+      Host: yd.laoyoutiao.link
     path: /Telegram🇨🇳
 - alterId: 0
   cipher: ''
@@ -233,20 +223,20 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨19
+  name: 🇩🇪👖TG频道@stymei1丨15
   network: ws
   port: 8880
-  server: 140.99.233.156
+  server: 104.234.239.251
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
   ws-opts:
     headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳
 - alterId: 0
   cipher: ''
   encryption: none
@@ -265,6 +255,24 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨19
+  network: ws
+  port: 8880
+  server: 140.99.233.156
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   cipher: ''
   encryption: none
@@ -338,6 +346,12 @@ proxies:
   ws-opts:
     headers: {}
     path: /?ed=2560&PROT_TYPE=trojan
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0290 | 3.181MB
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 80.92.204.106
+  type: ss
 - client-fingerprint: chrome
   name: 🇩🇪👖TG频道@stymei1丨1
   network: ws
@@ -368,33 +382,6 @@ proxies:
     headers:
       Host: rayan-fg-5.medicalhistory.filegear-sg.me
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- alterId: 0
-  cipher: ''
-  client-fingerprint: chrome
-  encryption: none
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨6
-  network: ws
-  port: 2083
-  server: 160.153.0.11
-  servername: fraG2.MAhSAAmINI.cC
-  skip-cert-verify: true
-  sni: fraG2.MAhSAAmINI.cC
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5e802e1a-3c82-41ec-aaca-f6371b8b86a5
-  ws-opts:
-    headers:
-      Host: fraG2.MAhSAAmINI.cC
-    path: /CPI
 - client-fingerprint: random
   name: 🇩🇪 德国 23
   network: ws
@@ -442,20 +429,6 @@ proxies:
     headers:
       Host: brmahasang.ahaysiahzangi.dpdns.org
     path: /?ed=2560
-- client-fingerprint: random
-  name: '🇩🇪 德国 04 #2'
-  network: ws
-  port: 443
-  server: 172.64.68.58
-  servername: hai.gdz.buzz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
-  ws-opts:
-    headers:
-      Host: hai.gdz.buzz
-    path: /?ed=2560
 - alpn:
   - http%2F1.1
   alterId: 0
@@ -477,6 +450,20 @@ proxies:
     headers:
       Host: frieren.albedo.ddns-ip.net
     path: /proxyip=ayaka.shorekeeper.ir
+- client-fingerprint: random
+  name: '🇩🇪 德国 04 #2'
+  network: ws
+  port: 443
+  server: 172.64.68.58
+  servername: hai.gdz.buzz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
+  ws-opts:
+    headers:
+      Host: hai.gdz.buzz
+    path: /?ed=2560
 - client-fingerprint: randomized
   name: '🇩🇪 德国 42 #2'
   network: ws
@@ -491,33 +478,6 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 23 #2'
-  network: ws
-  port: 443
-  server: 172.67.66.177
-  servername: rayan-roof.atena.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: db400287-fb42-441d-8a76-5624a8a96f49
-  ws-opts:
-    headers:
-      Host: rayan-roof.atena.dpdns.org
-    path: /
-- name: '🇩🇪👖TG频道@stymei1丨10 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 103.160.204.26
-  servername: vle.amclubdns.dpdns.org
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -550,19 +510,6 @@ proxies:
     headers:
       Host: hai.gdz.buzz
     path: /
-- name: '🇩🇪 德国 01 #2 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: '🇩🇪 德国 06 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -576,6 +523,53 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '🇩🇪👖TG频道@stymei1丨10 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 103.160.204.26
+  servername: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- name: '🇩🇪 德国 01 #2 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- alterId: 0
+  cipher: ''
+  client-fingerprint: chrome
+  encryption: none
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨6
+  network: ws
+  port: 2083
+  server: 160.153.0.11
+  servername: fraG2.MAhSAAmINI.cC
+  skip-cert-verify: true
+  sni: fraG2.MAhSAAmINI.cC
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e802e1a-3c82-41ec-aaca-f6371b8b86a5
+  ws-opts:
+    headers:
+      Host: fraG2.MAhSAAmINI.cC
+    path: /CPI
 - name: '🇩🇪 德国 05 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c

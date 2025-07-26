@@ -61,18 +61,6 @@ proxies:
     headers:
       Host: wahaha.yingyangkuaixian.dpdns.org
     path: /
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0256 | 33.545MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0255 | 31.389MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 - cipher: aes-256-gcm
   name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
@@ -88,28 +76,18 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- auth: jyEWQRbJATgWMu3XQtRvxb2h0
-  name: 🇯🇵 日本 07
-  password: jyEWQRbJATgWMu3XQtRvxb2h0
-  port: 25635
-  server: 47.79.34.232
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- name: 🇯🇵 日本 23
-  network: ws
-  password: Aimer
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0256 | 33.545MB
+  password: shadowsocks
   port: 443
-  server: 147.78.247.7
-  skip-cert-verify: true
-  sni: epgz.aimercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgz.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0255 | 31.389MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - name: 🇯🇵_日本_35
   network: ws
   port: 443
@@ -124,11 +102,11 @@ proxies:
     headers:
       host: jp.laoyoutiao.link
     path: telegram@wangcai2/?ed=2560
-- auth: wl4HYN9PPKs8d8IzGIt4yKqt0
-  name: 🇯🇵 日本 16
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
+- auth: jyEWQRbJATgWMu3XQtRvxb2h0
+  name: 🇯🇵 日本 07
+  password: jyEWQRbJATgWMu3XQtRvxb2h0
+  port: 25635
+  server: 47.79.34.232
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
@@ -146,11 +124,11 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: /telegram🇨🇳@wangcai2/?ed=2560
-- auth: kWlrCka5jzfKbD2z7ucwANEdZM
-  name: 🇯🇵 日本 03
-  password: kWlrCka5jzfKbD2z7ucwANEdZM
-  port: 26404
-  server: 47.245.53.59
+- auth: wl4HYN9PPKs8d8IzGIt4yKqt0
+  name: '🇯🇵 日本 16 #2'
+  password: wl4HYN9PPKs8d8IzGIt4yKqt0
+  port: 53348
+  server: 47.74.34.102
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
