@@ -57,16 +57,16 @@ proxies:
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-20
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-45.144.54.33-07
   password: LiHQX9cDbdooBHlIg0eiqQ
   port: 34803
   server: 45.144.54.33
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-46.101.245.131-20
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-147.45.178.200-11
@@ -75,25 +75,13 @@ proxies:
   server: 147.45.178.200
   type: ss
 - cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0254 | 5.608MB
+  name: 🇩🇪DE-193.108.119.230-0281 | 13.806MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4968 | 1.152MB
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4969 | 1.055MB
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4928 | 1.429MB
+  name: 🇩🇪DE-80.92.204.106-0314 | 2.454MB
   password: a3GFYt36Sm82Vys9
   port: 9000
   server: 80.92.204.106
@@ -134,38 +122,6 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨19
-  network: ws
-  port: 8880
-  server: 140.99.233.156
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 61
-  network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
   name: 🇩🇪👖TG频道@stymei1丨7
   network: ws
   port: 8880
@@ -184,10 +140,10 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨5
+  name: 🇩🇪👖TG频道@stymei1丨19
   network: ws
   port: 8880
-  server: 147.78.140.29
+  server: 140.99.233.156
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -196,8 +152,40 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨16
+  network: ws
+  port: 8880
+  server: 104.254.140.188
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 61
+  network: ws
+  port: 2053
+  server: 162.159.129.11
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - alterId: 0
   cipher: ''
   encryption: none
@@ -220,6 +208,24 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨5
+  network: ws
+  port: 8880
+  server: 147.78.140.29
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: hk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
   name: 🇩🇪👖TG频道@stymei1丨3
   network: ws
   port: 8880
@@ -234,24 +240,6 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: /Telegram🇨🇳
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨16
-  network: ws
-  port: 8880
-  server: 104.254.140.188
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   cipher: ''
   encryption: none
@@ -341,20 +329,6 @@ proxies:
     headers:
       Host: rayan-roof.atena.dpdns.org
     path: /V2ray_Alpha/?ed=2560
-- client-fingerprint: chrome
-  name: 🇩🇪 德国 11
-  network: ws
-  port: 443
-  server: 104.26.7.214
-  servername: rayan-fg-5.medicalhistory.filegear-sg.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
-  ws-opts:
-    headers:
-      Host: rayan-fg-5.medicalhistory.filegear-sg.me
-    path: /?ed=2560
 - client-fingerprint: random
   name: '🇩🇪 德国 24 #2'
   network: ws
@@ -390,6 +364,20 @@ proxies:
     headers:
       Host: frieren.albedo.ddns-ip.net
     path: /proxyip=ayaka.shorekeeper.ir
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 11
+  network: ws
+  port: 443
+  server: 104.26.7.214
+  servername: rayan-fg-5.medicalhistory.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
+  ws-opts:
+    headers:
+      Host: rayan-fg-5.medicalhistory.filegear-sg.me
+    path: /?ed=2560
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -474,33 +462,19 @@ proxies:
     headers:
       Host: hai.gdz.buzz
     path: /?ed=2560
-- name: '🇩🇪 德国 01 #2'
+- name: '🇩🇪 德国 06 #2'
   network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 443
-  server: 104.24.71.251
-  servername: hai.gdz.buzz
-  tls: true
-  type: vless
+  server: 162.159.133.85
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
   udp: true
-  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
   ws-opts:
     headers:
-      Host: hai.gdz.buzz
-    path: /
-- client-fingerprint: chrome
-  name: 🇩🇪 德国 19
-  network: ws
-  port: 2083
-  server: 160.153.0.11
-  servername: fraG2.MAhSAAmINI.cC
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5e802e1a-3c82-41ec-aaca-f6371b8b86a5
-  ws-opts:
-    headers:
-      Host: fraG2.MAhSAAmINI.cC
-    path: /CPI
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: randomized
   name: '🇩🇪 德国 42 #2'
   network: ws
@@ -515,32 +489,19 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '🇩🇪 德国 06 #2'
+- name: '🇩🇪 德国 01 #2'
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 443
-  server: 162.159.133.85
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
+  server: 104.24.71.251
+  servername: hai.gdz.buzz
+  tls: true
+  type: vless
   udp: true
+  uuid: 8f7fe273-e06d-47d5-9deb-d7b3c95dc573
   ws-opts:
     headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇩🇪 德国 05 #2 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+      Host: hai.gdz.buzz
+    path: /
 - name: '🇩🇪👖TG频道@stymei1丨10 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -554,6 +515,19 @@ proxies:
     headers:
       Host: vle.amclubdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan
+- name: '🇩🇪 德国 05 #2 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: '🇩🇪 德国 01 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -580,6 +554,126 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- alterId: 0
+  cipher: auto
+  country: 🇩🇪DE
+  delay: 543
+  h2-opts: {}
+  http-opts: {}
+  name: 德国 - 法兰克福 - DigitalOcean, LLC - 4
+  network: tcp
+  port: 1901
+  server: 165.22.76.53
+  skip-cert-verify: true
+  type: vmess
+  uuid: dd37eb89-a92a-4102-af35-eac7f2a95367
+- cipher: chacha20-ietf-poly1305
+  country: 🇩🇪DE
+  delay: 536
+  name: 德国 - 法兰克福 - DigitalOcean, LLC - 3
+  password: RekTXARvUfSommAPQNcCLQ
+  port: 1080
+  server: 165.22.76.53
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  delay: 578
+  name: 德国 - 法兰克福 - Global Connectivity Solutions LLP - 2
+  password: DXQocbpII6cMgNuMK5xClQ
+  port: 25607
+  server: 85.208.139.158
+  type: ss
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 19
+  network: ws
+  port: 2083
+  server: 160.153.0.11
+  servername: fraG2.MAhSAAmINI.cC
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e802e1a-3c82-41ec-aaca-f6371b8b86a5
+  ws-opts:
+    headers:
+      Host: fraG2.MAhSAAmINI.cC
+    path: /CPI
+- country: 🇩🇪DE
+  delay: 1990
+  name: 德国 - Frankfurt am Main - Amazon.com, Inc. - 11
+  password: telegram-id-directvpn
+  port: 22223
+  server: 18.159.77.32
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇩🇪DE
+  delay: 1990
+  name: 德国 - Frankfurt am Main - Amazon.com, Inc. - 10
+  password: telegram-id-directvpn
+  port: 22223
+  server: 18.157.93.118
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇩🇪DE
+  delay: 687
+  name: 德国 - Frankfurt am Main - Amazon.com, Inc. - 6
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.159.77.32
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇩🇪DE
+  delay: 655
+  name: 德国 - Frankfurt am Main - Amazon.com, Inc. - 7
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.157.93.118
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 692
+  h2-opts: {}
+  http-opts: {}
+  name: 德国 - 兰河畔林堡 - OVH SAS - 8
+  network: ws
+  port: 2083
+  server: 172.67.72.15
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 670
+  h2-opts: {}
+  http-opts: {}
+  name: 德国 - 兰河畔林堡 - OVH SAS - 9
+  network: ws
+  port: 2083
+  server: 104.26.5.16
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome

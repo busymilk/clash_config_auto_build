@@ -60,20 +60,20 @@ proxies:
   protoparam: null
   server: 79.127.233.170
   type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0370 | 46.522MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
 - cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0190 | 46.937MB
+  name: 🇨🇦CA-79.127.233.170-0251 | 33.361MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0192 | 34.969MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0273 | 1.057MB
+  name: 🇨🇦CA-142.4.216.225-0288 | 5.427MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -92,20 +92,25 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 加拿大 01
-  network: tcp
-  port: 26113
-  reality-opts:
-    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-    short-id: 1fbd20fd
-  server: 40.233.119.160
-  servername: www.yahoo.com
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 1590
+  h2-opts: {}
+  http-opts: {}
+  name: 加拿大 - 多伦多 - HostPapa - 2
+  network: ws
+  port: 2087
+  server: 104.21.3.189
+  servername: cc2d2.89060004.xyz
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  type: vmess
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  ws-opts:
+    headers:
+      HOST: cc2d2.89060004.xyz
+    path: /
 - alpn:
   - h3
   auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
@@ -128,6 +133,20 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 加拿大 01
+  network: tcp
+  port: 26113
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  server: 40.233.119.160
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
