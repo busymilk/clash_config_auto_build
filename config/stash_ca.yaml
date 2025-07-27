@@ -58,12 +58,6 @@ proxies:
   protocol: origin
   server: 79.127.233.170
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0370 | 46.522MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -77,18 +71,6 @@ proxies:
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0288 | 5.427MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0251 | 33.361MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
@@ -108,6 +90,35 @@ proxies:
     headers:
       HOST: cc2d2.89060004.xyz
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0370 | 46.522MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0288 | 5.427MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0251 | 33.361MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 🇨🇦 加拿大 13
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.119.160
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇦 加拿大 01
@@ -122,17 +133,6 @@ proxies:
   type: vless
   udp: true
   uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 🇨🇦 加拿大 13
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 40.233.119.160
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

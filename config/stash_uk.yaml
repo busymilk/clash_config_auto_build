@@ -56,6 +56,20 @@ proxies:
   port: 57456
   server: 46.226.163.225
   type: ss
+- name: 🇬🇧_英国_1
+  network: ws
+  port: 443
+  server: 45.8.211.236
+  servername: rAyAn-12.LeIlA.DpDnS.OrG
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
+  ws-opts:
+    headers:
+      host: rAyAn-12.LeIlA.DpDnS.OrG
+    path: /@rayan_config
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-85.210.120.237-0230 | 41.442MB
   password: Bog0ELmMM9DSxDdQ
@@ -122,46 +136,18 @@ proxies:
   port: 443
   server: 212.102.53.196
   type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-141.98.101.178-0272 | 30.186MB
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
 - cipher: aes-256-cfb
   name: 🇬🇧GB-62.100.205.48-0257 | 17.694MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
   type: ss
-- name: 🇬🇧_英国
-  network: ws
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.178-0272 | 30.186MB
+  password: shadowsocks
   port: 443
-  server: 217.163.76.201
-  servername: 1n.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: 1n.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_2
-  network: ws
-  port: 443
-  server: 45.8.211.236
-  servername: rAyAn-12.LeIlA.DpDnS.OrG
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7a80a8d9-92f9-4f0a-8352-9005a8215ab8
-  ws-opts:
-    headers:
-      host: rAyAn-12.LeIlA.DpDnS.OrG
-    path: /@rayan_config
+  server: 141.98.101.178
+  type: ss
 - alterId: '0'
   cipher: auto
   name: '🇬🇧_英国_1 #2'
