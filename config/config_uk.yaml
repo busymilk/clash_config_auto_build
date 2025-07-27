@@ -50,25 +50,11 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-23
+  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
   password: c40641c1f89e7acb
   port: 57456
   server: 46.226.163.225
   type: ss
-- name: 🇬🇧_英国
-  network: ws
-  port: 443
-  server: 217.163.76.201
-  servername: 1n.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: 1n.bgm2024.dpdns.org
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-85.210.120.237-0230 | 41.442MB
   password: Bog0ELmMM9DSxDdQ
@@ -147,6 +133,20 @@ proxies:
   port: 989
   server: 62.100.205.48
   type: ss
+- name: 🇬🇧_英国
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: 1n.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: 1n.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇬🇧_英国_2
   network: ws
   port: 443
