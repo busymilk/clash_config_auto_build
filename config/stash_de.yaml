@@ -50,45 +50,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-斯洛文尼亚-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.144.54.33:34803
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇩🇪DE
-  delay: 543
-  h2-opts: {}
-  http-opts: {}
-  name: 德国 - 法兰克福 - DigitalOcean, LLC - 4
-  network: tcp
-  port: 1901
-  server: 165.22.76.53
-  skip-cert-verify: true
-  type: vmess
-  uuid: dd37eb89-a92a-4102-af35-eac7f2a95367
-- cipher: chacha20-ietf-poly1305
-  country: 🇩🇪DE
-  delay: 536
-  name: 德国 - 法兰克福 - DigitalOcean, LLC - 3
-  password: RekTXARvUfSommAPQNcCLQ
-  port: 1080
-  server: 165.22.76.53
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
@@ -127,11 +88,27 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
+- country: 🇩🇪DE
+  delay: 1343
+  name: 德国 - 杜塞尔多夫 - Cloudflare, Inc. - 5
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: true
+  sni: dus.freeguard.org
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   type: ss
 - alterId: 0
   cipher: ''
@@ -169,66 +146,6 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨7
-  network: ws
-  port: 8880
-  server: 185.238.228.20
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0281 | 13.806MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨16
-  network: ws
-  port: 8880
-  server: 104.254.140.188
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨4
-  network: ws
-  port: 8880
-  server: 156.238.18.17
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: yd.laoyoutiao.link
-    path: /Telegram🇨🇳
 - alterId: 0
   cipher: ''
   encryption: none
@@ -287,6 +204,42 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨4
+  network: ws
+  port: 8880
+  server: 156.238.18.17
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: yd.laoyoutiao.link
+    path: /Telegram🇨🇳
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨16
+  network: ws
+  port: 8880
+  server: 104.254.140.188
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
   name: 🇩🇪👖TG频道@stymei1丨15
   network: ws
   port: 8880
@@ -317,24 +270,6 @@ proxies:
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - alterId: 0
   cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨18
-  network: ws
-  port: 8880
-  server: 199.34.229.247
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram🇨🇳
-- alterId: 0
-  cipher: ''
   client-fingerprint: chrome
   encryption: none
   flow: ''
@@ -354,6 +289,12 @@ proxies:
     headers:
       Host: rayan-fg-2.hasan-kachal.filegear-sg.me
     path: /
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0281 | 13.806MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -373,11 +314,44 @@ proxies:
     headers:
       Host: brmahasang.ahaysiahzangi.dpdns.org
     path: /?ed=2560
+- alterId: 0
+  cipher: ''
+  client-fingerprint: chrome
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨33
+  network: ws
+  port: 443
+  server: 104.19.173.68
+  servername: rayan-fg-7.mohammad-janam.filegear-sg.me
+  skip-cert-verify: true
+  sni: rayan-fg-7.mohammad-janam.filegear-sg.me
+  tfo: false
+  tls: true
+  type: vless
+  uuid: e97a0128-4785-4323-a2a5-dd01ce49d359
+  ws-opts:
+    headers:
+      Host: rayan-fg-7.mohammad-janam.filegear-sg.me
+    path: /?ed=2560
 - client-fingerprint: randomized
   name: '🇩🇪 德国 42 #2'
   network: ws
   port: 443
   server: 104.17.71.31
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 65
+  network: ws
+  port: 443
+  server: 162.159.133.85
   servername: vle.amclubsdns.dpdns.org
   tls: true
   type: vless
@@ -403,25 +377,38 @@ proxies:
   ws-opts:
     headers: {}
     path: /?ed=2560&PROT_TYPE=trojan
-- alterId: 0
-  cipher: ''
-  client-fingerprint: chrome
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨33
+- name: '🇩🇪👖TG频道@stymei1丨10 #2'
   network: ws
-  port: 443
-  server: 104.19.173.68
-  servername: rayan-fg-7.mohammad-janam.filegear-sg.me
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 103.160.204.26
+  servername: vle.amclubdns.dpdns.org
   skip-cert-verify: true
-  sni: rayan-fg-7.mohammad-janam.filegear-sg.me
-  tfo: false
-  tls: true
-  type: vless
-  uuid: e97a0128-4785-4323-a2a5-dd01ce49d359
+  sni: vle.amclubdns.dpdns.org
+  type: trojan
   ws-opts:
     headers:
-      Host: rayan-fg-7.mohammad-janam.filegear-sg.me
-    path: /?ed=2560
+      Host: vle.amclubdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan
+- name: '🇩🇪 德国 01 #2 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
 - name: 🇩🇪 德国 62
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -448,32 +435,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇩🇪 德国 01 #2 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇩🇪👖TG频道@stymei1丨10 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 103.160.204.26
-  servername: vle.amclubdns.dpdns.org
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
 - name: '🇩🇪 德国 05 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -487,20 +448,12 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 65
-  network: ws
-  port: 443
-  server: 162.159.133.85
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0314 | 2.454MB
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 80.92.204.106
+  type: ss
 - client-fingerprint: chrome
   name: 🇩🇪 德国 19
   network: ws
@@ -534,9 +487,39 @@ proxies:
   type: vless
   uuid: fa92e9cd-b5be-4e00-8fc4-4543012d1fd0
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0314 | 2.454MB
-  password: a3GFYt36Sm82Vys9
-  port: 9000
+  name: 🇩🇪DE-80.92.204.106-4889 | 1.901MB
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-2000 | 2.601MB
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4919 | 1.327MB
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-斯洛文尼亚-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.144.54.33:34803
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4920 | 2.098MB
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0280 | 1.542MB
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
   server: 80.92.204.106
   type: ss
 proxy-groups:
