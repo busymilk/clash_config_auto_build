@@ -50,17 +50,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alterId: 0
-  cipher: auto
-  delay: 738
-  name: 新加坡 - 新加坡 - Contabo Asia Private Limited - 1
-  port: 8080
-  server: 109.123.239.98
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9322d0e6-4275-52bb-826c-73090306f0bc
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-188.166.220.70-0260 | 12.701MB
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-5140 | 0.312MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -137,24 +138,6 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨36
-  network: ws
-  port: 8880
-  server: 156.238.18.160
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
   name: 🇸🇬👖TG频道@stymei1丨29
   network: ws
   port: 80
@@ -187,6 +170,24 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇸🇬👖TG频道@stymei1丨36
+  network: ws
+  port: 8880
+  server: 156.238.18.160
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
   cipher: ''
   encryption: none
@@ -259,12 +260,28 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬SG-188.166.220.70-0279 | 13.203MB
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
+- alterId: 0
+  cipher: auto
+  delay: 738
+  name: 新加坡 - 新加坡 - Contabo Asia Private Limited - 1
+  port: 8080
+  server: 109.123.239.98
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9322d0e6-4275-52bb-826c-73090306f0bc
+- alpn:
+  - h3
+  auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  name: 🇸🇬 新加坡 09
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: ''
   encryption: none
@@ -296,12 +313,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-0342 | 0.311MB
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
 - client-fingerprint: chrome
   name: 🇸🇬👖TG频道@stymei1丨2
   network: ws
