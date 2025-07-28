@@ -50,29 +50,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-004
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0203 | 32.449MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0292 | 1.072MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
@@ -92,17 +69,29 @@ proxies:
     headers:
       HOST: cc2d2.89060004.xyz
     path: /
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 🇨🇦 加拿大 13
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 40.233.119.160
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
+- cipher: aes-256-cfb
+  group: SSRProvider
+  name: 🇨🇦CA-79.127.233.170-004
+  obfs: plain
+  obfsparam: null
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  protoparam: null
+  server: 79.127.233.170
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0292 | 1.072MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0203 | 32.449MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇦 加拿大 01
@@ -117,6 +106,17 @@ proxies:
   type: vless
   udp: true
   uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 🇨🇦 加拿大 13
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.119.160
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
