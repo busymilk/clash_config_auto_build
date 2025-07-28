@@ -51,16 +51,16 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0281 | 43.457MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0282 | 48.623MB
   password: shadowsocks
   port: 443
   server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0281 | 43.457MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
   type: ss
 - cipher: aes-256-gcm
   name: 🇯🇵 日本 02
@@ -90,33 +90,15 @@ proxies:
     headers:
       host: jp.laoyoutiao.link
     path: telegram@wangcai2/?ed=2560
-- name: 🇯🇵_日本_4
-  network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: x02.ylka.dpdns.org
+- auth: kWlrCka5jzfKbD2z7ucwANEdZM
+  name: 🇯🇵 日本 12
+  password: kWlrCka5jzfKbD2z7ucwANEdZM
+  port: 26404
+  server: 47.245.53.59
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: bing.com
+  type: hysteria2
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: x02.ylka.dpdns.org
-    path: /?ed=2560
-- name: 🇯🇵 日本 15
-  network: ws
-  port: 18765
-  server: 14.36.181.53
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /telegram🇨🇳@wangcai2/?ed=2560
 - name: 🇯🇵 日本 01
   network: ws
   port: 12020
@@ -130,6 +112,19 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: /telegram@wangcai2/?ed=2560
+- name: 🇯🇵 日本 15
+  network: ws
+  port: 18765
+  server: 14.36.181.53
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

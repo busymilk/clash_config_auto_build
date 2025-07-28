@@ -49,6 +49,30 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-46.226.163.225-23
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.79-0249 | 31.385MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-0250 | 30.536MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.78-0253 | 29.74MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-0086 | 30.444MB
   password: shadowsocks
@@ -62,40 +86,10 @@ proxies:
   server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.78-0253 | 29.74MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.79-0249 | 31.385MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0254 | 28.732MB
   password: shadowsocks
   port: 443
   server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.195-0250 | 30.536MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.120.237-0209 | 17.44MB
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.81-0236 | 25.568MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.198-0248 | 27.737MB
@@ -110,6 +104,18 @@ proxies:
   server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0236 | 25.568MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-85.210.120.237-0209 | 17.44MB
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  type: ss
+- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.80-0257 | 24.967MB
   password: shadowsocks
   port: 443
@@ -120,18 +126,6 @@ proxies:
   password: shadowsocks
   port: 443
   server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-0300 | 2.609MB
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇬🇧GB-62.100.205.48-0283 | 33.978MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
   type: ss
 - name: '🇬🇧_英国_1 #2'
   network: ws
@@ -155,6 +149,12 @@ proxies:
   server: 82.197.69.131
   type: vmess
   uuid: 5a89386a-827b-4f54-8778-2f1b5122c6ef
+- cipher: aes-256-cfb
+  name: 🇬🇧GB-62.100.205.48-0283 | 33.978MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
