@@ -50,16 +50,10 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇸🇬SG-188.166.220.70-0288 | 18.018MB
+  name: 🇸🇬SG-188.166.220.70-0288 | 15.79MB
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
-  type: ss
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-0355 | 0.308MB
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
   type: ss
 - alterId: 0
   cipher: auto
@@ -72,6 +66,12 @@ proxies:
   type: vmess
   udp: true
   uuid: 9322d0e6-4275-52bb-826c-73090306f0bc
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-0355 | 2.596MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -130,24 +130,6 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨18
-  network: ws
-  port: 8880
-  server: 91.193.58.63
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
   name: 🇸🇬👖TG频道@stymei1丨23
   network: ws
   port: 80
@@ -162,6 +144,24 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
     path: /Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇸🇬👖TG频道@stymei1丨18
+  network: ws
+  port: 8880
+  server: 91.193.58.63
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
 - alterId: 0
   cipher: ''
   encryption: none
