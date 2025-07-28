@@ -64,44 +64,6 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 12
-  password: 23d03aa704c7
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: cmihk3v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /grqhyifio
-    tls: true
-  port: 636
-  server: 156.251.179.181
-  type: ss
-  udp: true
-- name: 🇭🇰 香港 04
-  network: ws
-  port: 21415
-  server: 43.132.244.52
-  servername: tw.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: tw.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
-- alpn:
-  - h3
-  auth: cc83a02b-90ea-403b-9c76-27e4be95f637
-  name: 🇭🇰 香港 14
-  password: cc83a02b-90ea-403b-9c76-27e4be95f637
-  port: 50256
-  server: 154.204.181.230
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: ''
   encryption: none
@@ -120,6 +82,44 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
+- name: 🇭🇰 香港 04
+  network: ws
+  port: 21415
+  server: 43.132.244.52
+  servername: tw.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: tw.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 12
+  password: 23d03aa704c7
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: cmihk3v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /grqhyifio
+    tls: true
+  port: 636
+  server: 156.251.179.181
+  type: ss
+  udp: true
+- alpn:
+  - h3
+  auth: cc83a02b-90ea-403b-9c76-27e4be95f637
+  name: 🇭🇰 香港 14
+  password: cc83a02b-90ea-403b-9c76-27e4be95f637
+  port: 50256
+  server: 154.204.181.230
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - cipher: aes-256-gcm
   name: '🇭🇰 香港 05 #2 #2'
   password: 0b191076d18f
