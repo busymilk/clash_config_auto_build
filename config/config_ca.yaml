@@ -49,14 +49,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: SSR-加拿大-79.127.233.170:989
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -70,16 +62,24 @@ proxies:
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0223 | 61.634MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
 - cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0265 | 40.542MB
+  name: SSR-加拿大-79.127.233.170:989
+  obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0225 | 131.309MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-4815 | 133.044MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
   server: 79.127.233.170
   type: ss
 - alterId: 0
@@ -102,7 +102,7 @@ proxies:
       HOST: cc2d2.89060004.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0319 | 22.491MB
+  name: 🇨🇦CA-142.4.216.225-0253 | 12.132MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -110,7 +110,7 @@ proxies:
 - alpn:
   - h3
   auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 🇨🇦 加拿大 07
+  name: 🇨🇦 加拿大 09
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 40.233.119.160
