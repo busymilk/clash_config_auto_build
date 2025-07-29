@@ -50,20 +50,8 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0255 | 28.432MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0254 | 28.019MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 - cipher: aes-256-gcm
-  name: 🇯🇵 日本 06
+  name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -71,24 +59,55 @@ proxies:
     mode: websocket
     mux: true
     path: /dchlbvrbbotc
+    skip-cert-verify: false
     tls: true
   port: 636
-  server: 137.220.191.38
+  server: 137.220.191.40
+  tfo: false
   type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0254 | 28.019MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0255 | 28.432MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵_JP_日本->🇺🇸_US_美国
+  network: ws
+  port: 8880
+  server: 103.116.7.241
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
+- auth: zO3j18CpknDJ09KzlHN0Gq2lvM
+  name: 🇯🇵 日本 31
+  password: zO3j18CpknDJ09KzlHN0Gq2lvM
+  port: 19245
+  server: 18.181.145.34
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
   udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本 05
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
+- auth: cxNljb4xxlAkHH8JSIDK6pXEj0
+  name: 🇯🇵 日本 38
+  password: cxNljb4xxlAkHH8JSIDK6pXEj0
+  port: 6095
+  server: 57.181.41.42
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
   udp: true
 - name: 🇯🇵_日本_35
   network: ws
@@ -104,19 +123,34 @@ proxies:
     headers:
       host: jp.laoyoutiao.link
     path: telegram@wangcai2/?ed=2560
-- name: 🇯🇵 日本 15
-  network: ws
-  port: 18765
-  server: 14.36.181.53
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本 05
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /bezradrqccl
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  type: ss
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /telegram🇨🇳@wangcai2/?ed=2560
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本 06
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    tls: true
+  port: 636
+  server: 137.220.191.38
+  type: ss
+  udp: true
 - name: 🇯🇵 日本 01
   network: ws
   port: 12020
@@ -130,6 +164,19 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: /telegram@wangcai2/?ed=2560
+- name: 🇯🇵 日本 15
+  network: ws
+  port: 18765
+  server: 14.36.181.53
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
