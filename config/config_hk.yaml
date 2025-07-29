@@ -82,31 +82,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 009
-  password: 941cbc4237e0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kh36v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /tkzhhylcfuf
-    tls: true
-  port: 636
-  server: 121.127.231.239
-  type: ss
-  udp: true
-- alpn:
-  - h3
-  auth: cc83a02b-90ea-403b-9c76-27e4be95f637
-  name: 🇭🇰 香港 14
-  password: cc83a02b-90ea-403b-9c76-27e4be95f637
-  port: 50256
-  server: 154.204.181.230
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - name: 🇭🇰 香港 04
   network: ws
   port: 21415
@@ -147,6 +122,31 @@ proxies:
   port: 636
   server: 156.251.179.136
   type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 009
+  password: 941cbc4237e0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kh36v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /tkzhhylcfuf
+    tls: true
+  port: 636
+  server: 121.127.231.239
+  type: ss
+  udp: true
+- alpn:
+  - h3
+  auth: cc83a02b-90ea-403b-9c76-27e4be95f637
+  name: 🇭🇰 香港 14
+  password: cc83a02b-90ea-403b-9c76-27e4be95f637
+  port: 50256
+  server: 154.204.181.230
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
   udp: true
 proxy-groups:
 - name: ✈️ 选择代理

@@ -50,17 +50,17 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alterId: 0
-  cipher: auto
-  delay: 738
-  name: 新加坡 - 新加坡 - Contabo Asia Private Limited - 1
-  port: 8080
-  server: 109.123.239.98
+- alpn:
+  - h3
+  auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  name: 🇸🇬 新加坡 08
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-  uuid: 9322d0e6-4275-52bb-826c-73090306f0bc
 - cipher: chacha20-ietf-poly1305
   name: 🇸🇬SG-188.166.220.70-0284 | 29.049MB
   password: 24Wk2NSszrfHn22zem1lYV
@@ -211,17 +211,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- alpn:
-  - h3
-  auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  name: 🇸🇬 新加坡 09
-  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  port: 43057
-  server: 203.174.82.145
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - name: 🇸🇬 新加坡-Singapore (11a40a)
   network: ws
   password: ttfang
