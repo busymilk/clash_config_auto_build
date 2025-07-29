@@ -49,41 +49,12 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alpn:
-  - h3
-  auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  name: 🇸🇬 新加坡 08
-  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  port: 43057
-  server: 203.174.82.145
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇸🇬SG-188.166.220.70-0284 | 29.049MB
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨21
-  network: ws
-  port: 8880
-  server: 156.238.18.11
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: ''
   encryption: none
@@ -102,6 +73,24 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇸🇬👖TG频道@stymei1丨21
+  network: ws
+  port: 8880
+  server: 156.238.18.11
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   cipher: ''
   encryption: none
@@ -160,24 +149,6 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨4
-  network: ws
-  port: 8880
-  server: 156.238.18.77
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: yd.laoyoutiao.link
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
   name: 🇸🇬👖TG频道@stymei1丨7
   network: ws
   port: 8880
@@ -210,6 +181,35 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇸🇬👖TG频道@stymei1丨4
+  network: ws
+  port: 8880
+  server: 156.238.18.77
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: yd.laoyoutiao.link
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+- alpn:
+  - h3
+  auth: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  name: 🇸🇬 新加坡 08
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - name: 🇸🇬 新加坡-Singapore (11a40a)
   network: ws
   password: ttfang
