@@ -49,24 +49,32 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- auth: cxNljb4xxlAkHH8JSIDK6pXEj0
-  name: 🇯🇵 日本 10
-  password: cxNljb4xxlAkHH8JSIDK6pXEj0
-  port: 6095
-  server: 57.181.41.42
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵_JP_日本->🇺🇸_US_美国
+  network: ws
+  port: 8880
+  server: 103.116.7.241
   skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- auth: wl4HYN9PPKs8d8IzGIt4yKqt0
-  name: 🇯🇵 日本 09
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
+  sni: ''
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0279 | 30.139MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0290 | 29.569MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 - name: 🇯🇵 日本 01
   network: ws
   port: 12020
@@ -80,32 +88,6 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: /telegram@wangcai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵_JP_日本->🇺🇸_US_美国_0@3
-  network: ws
-  port: 8880
-  server: 103.116.7.241
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0282 | 48.623MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0281 | 43.457MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
 - name: 🇯🇵_日本_35
   network: ws
   port: 443

@@ -49,15 +49,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- auth: L9ckbqdTsZflCHixBWRV3pm6PWM
-  name: 🇭🇰 香港 09
-  password: L9ckbqdTsZflCHixBWRV3pm6PWM
-  port: 3317
-  server: 43.199.76.128
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
 - cipher: aes-256-gcm
   name: 🇭🇰 香港2|@ripaojiedian
   password: 9bfdde71b4c0
@@ -73,19 +64,6 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-103.181.165.26-56
-  network: tcp
-  port: 49597
-  server: 103.181.165.26
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 103.181.165.26
-  ws-path: /
 - alterId: 0
   cipher: ''
   encryption: none
@@ -104,6 +82,31 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 009
+  password: 941cbc4237e0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kh36v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /tkzhhylcfuf
+    tls: true
+  port: 636
+  server: 121.127.231.239
+  type: ss
+  udp: true
+- alpn:
+  - h3
+  auth: cc83a02b-90ea-403b-9c76-27e4be95f637
+  name: 🇭🇰 香港 14
+  password: cc83a02b-90ea-403b-9c76-27e4be95f637
+  port: 50256
+  server: 154.204.181.230
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - name: 🇭🇰 香港 04
   network: ws
   port: 21415
@@ -118,20 +121,6 @@ proxies:
       Host: tw.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
 - cipher: aes-256-gcm
-  name: '🇭🇰 香港 05 #2'
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    tls: true
-  port: 636
-  server: 156.251.179.136
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
   name: 🇭🇰 香港 12
   password: 23d03aa704c7
   plugin: v2ray-plugin
@@ -145,16 +134,19 @@ proxies:
   server: 156.251.179.181
   type: ss
   udp: true
-- alpn:
-  - h3
-  auth: cc83a02b-90ea-403b-9c76-27e4be95f637
-  name: 🇭🇰 香港 14
-  password: cc83a02b-90ea-403b-9c76-27e4be95f637
-  port: 50256
-  server: 154.204.181.230
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+- cipher: aes-256-gcm
+  name: '🇭🇰 香港 05 #2'
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: 636
+  server: 156.251.179.136
+  type: ss
   udp: true
 proxy-groups:
 - name: ✈️ 选择代理
