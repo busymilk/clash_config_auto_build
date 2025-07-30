@@ -50,6 +50,12 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-4815 | 117.095MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
 - cipher: aes-256-cfb
   name: 🇨🇦CA-79.127.233.170-0225 | 116.389MB
   password: f8f7aCzcPKbsF8p3
@@ -57,45 +63,14 @@ proxies:
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-4815 | 117.095MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦_CA_加拿大
-  password: 8WE1wtdKhEnE9X92kqh6Ut
-  port: 63089
-  server: 167.17.190.41
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0253 | 32.13MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 1590
-  h2-opts: {}
-  http-opts: {}
-  name: 加拿大 - 多伦多 - HostPapa - 2
-  network: ws
-  port: 2087
-  server: 104.21.3.189
-  servername: cc2d2.89060004.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
-  ws-opts:
-    headers:
-      HOST: cc2d2.89060004.xyz
-    path: /
 - cipher: aes-256-cfb
   group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-04
+  name: 🇨🇦CA-79.127.233.170-004
   obfs: plain
   obfsparam: null
   password: f8f7aCzcPKbsF8p3

@@ -56,17 +56,29 @@ proxies:
   port: 1866
   server: 185.177.229.245
   type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-5284 | 25.857MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-147.45.178.200-0242 | 20.839MB
   password: a58fa62b4944ddbf
   port: 57456
   server: 147.45.178.200
   type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-5284 | 25.857MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-46.101.245.131-020
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-45.144.54.33-007
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
   type: ss
 - alterId: 0
   cipher: auto
@@ -106,12 +118,6 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-20
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -166,19 +172,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- name: 🇩🇪 德国 21
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - alterId: 0
   cipher: ''
   encryption: none
@@ -215,6 +208,19 @@ proxies:
     headers:
       Host: yd.laoyoutiao.link
     path: /Telegram🇨🇳
+- name: 🇩🇪 德国 21
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 8443
+  server: 162.159.129.67
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -271,38 +277,11 @@ proxies:
   ws-opts:
     headers: {}
     path: /?ed=2560&PROT_TYPE=trojan
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 61
-  network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - name: '🇩🇪 德国 05 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
   server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇩🇪 德国 06 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 162.159.133.85
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -325,6 +304,19 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '🇩🇪 德国 06 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 162.159.133.85
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -344,6 +336,20 @@ proxies:
     headers:
       Host: rayan-fg-7.mohammad-janam.filegear-sg.me
     path: /?ed=2560
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 61
+  network: ws
+  port: 2053
+  server: 162.159.129.11
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - name: '🇩🇪 德国 01 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -358,17 +364,25 @@ proxies:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4919 | 15.455MB
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
   name: 🇩🇪DE-80.92.204.106-0312 | 3.073MB
   password: a3GFYt36Sm82Vys9
   port: 9000
   server: 80.92.204.106
   type: ss
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 15
+  network: ws
+  port: 443
+  server: 104.25.141.157
+  servername: rayan-10.parastoo.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4768df-0fbb-4cc1-8fd3-7c6fea95742a
+  ws-opts:
+    headers:
+      Host: rayan-10.parastoo.dpdns.org
+    path: /@Rayan_Config
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -387,6 +401,22 @@ proxies:
   tls: true
   type: vless
   uuid: fa92e9cd-b5be-4e00-8fc4-4543012d1fd0
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4919 | 15.455MB
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 80.92.204.106
+  type: ss
+- name: 🇩🇪 德国 20
+  network: ws
+  port: 8080
+  server: 85.133.202.90
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6e8e9178-24dd-4b56-b5d8-fe753237be24
+  ws-opts:
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
