@@ -50,6 +50,31 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- name: 🇨🇦_加拿大
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: hx.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: hx.ylks0033.dpdns.org
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  group: SSRProvider
+  name: 🇨🇦CA-79.127.233.170-004
+  obfs: plain
+  obfsparam: null
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  protoparam: null
+  server: 79.127.233.170
+  type: ssr
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-4815 | 117.095MB
   password: f8f7aCzcPKbsF8p3
@@ -68,28 +93,25 @@ proxies:
   port: 80
   server: 142.4.216.225
   type: ss
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-004
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 🇨🇦 加拿大 09
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 40.233.119.160
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 1590
+  h2-opts: {}
+  http-opts: {}
+  name: 加拿大 - 多伦多 - HostPapa - 2
+  network: ws
+  port: 2087
+  server: 104.21.3.189
+  servername: cc2d2.89060004.xyz
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
+  tls: true
+  type: vmess
+  uuid: 2fc37713-3017-497e-ff2d-965f826a19a3
+  ws-opts:
+    headers:
+      HOST: cc2d2.89060004.xyz
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: '🇨🇦 加拿大 08 #2'
@@ -104,6 +126,17 @@ proxies:
   type: vless
   udp: true
   uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 🇨🇦 加拿大 09
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.119.160
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

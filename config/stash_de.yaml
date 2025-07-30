@@ -51,7 +51,13 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0275 | 21.531MB
+  name: 🇩🇪DE-46.101.245.131-020
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-016
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
@@ -62,43 +68,6 @@ proxies:
   port: 8080
   server: 193.108.119.230
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0242 | 20.839MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-020
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-45.144.54.33-007
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 692
-  h2-opts: {}
-  http-opts: {}
-  name: 德国 - 兰河畔林堡 - OVH SAS - 8
-  network: ws
-  port: 2083
-  server: 172.67.72.15
-  servername: blaze-ger-248.blazecloudmain.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
-  ws-opts:
-    headers:
-      HOST: blaze-ger-248.blazecloudmain.site
-    path: /linkwsrt?ed=2560
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
@@ -118,6 +87,31 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 692
+  h2-opts: {}
+  http-opts: {}
+  name: 德国 - 兰河畔林堡 - OVH SAS - 8
+  network: ws
+  port: 2083
+  server: 172.67.72.15
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-011
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -261,22 +255,6 @@ proxies:
     headers:
       Host: brmahasang.ahaysiahzangi.dpdns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 🇩🇪👖TG频道@stymei1丨2
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2083
-  server: 194.53.53.249
-  servername: vle.amclubdns.dpdns.org
-  skip-cert-verify: true
-  sni: vle.amclubdns.dpdns.org
-  tfo: false
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    headers: {}
-    path: /?ed=2560&PROT_TYPE=trojan
 - name: '🇩🇪 德国 05 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -291,10 +269,10 @@ proxies:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: randomized
-  name: 🇩🇪 德国 65
+  name: 🇩🇪 德国 61
   network: ws
-  port: 443
-  server: 162.159.133.85
+  port: 2053
+  server: 162.159.129.11
   servername: vle.amclubsdns.dpdns.org
   tls: true
   type: vless
@@ -337,10 +315,10 @@ proxies:
       Host: rayan-fg-7.mohammad-janam.filegear-sg.me
     path: /?ed=2560
 - client-fingerprint: randomized
-  name: 🇩🇪 德国 61
+  name: 🇩🇪 德国 65
   network: ws
-  port: 2053
-  server: 162.159.129.11
+  port: 443
+  server: 162.159.133.85
   servername: vle.amclubsdns.dpdns.org
   tls: true
   type: vless
@@ -350,6 +328,22 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: chrome
+  name: 🇩🇪👖TG频道@stymei1丨2
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2083
+  server: 194.53.53.249
+  servername: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  sni: vle.amclubdns.dpdns.org
+  tfo: false
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {}
+    path: /?ed=2560&PROT_TYPE=trojan
 - name: '🇩🇪 德国 01 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -363,12 +357,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0312 | 3.073MB
-  password: a3GFYt36Sm82Vys9
-  port: 9000
-  server: 80.92.204.106
-  type: ss
 - client-fingerprint: chrome
   name: 🇩🇪 德国 15
   network: ws
@@ -383,6 +371,12 @@ proxies:
     headers:
       Host: rayan-10.parastoo.dpdns.org
     path: /@Rayan_Config
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0312 | 3.073MB
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome

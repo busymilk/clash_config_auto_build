@@ -50,6 +50,7 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 🇭🇰 香港2|@ripaojiedian
   password: 9bfdde71b4c0
   plugin: v2ray-plugin
@@ -64,6 +65,20 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 003
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: 636
+  server: 156.251.179.136
+  type: ss
+  udp: true
 - alterId: 0
   cipher: ''
   encryption: none
@@ -82,19 +97,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- name: 🇭🇰 香港 04
-  network: ws
-  port: 21415
-  server: 43.132.244.52
-  servername: tw.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: tw.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
 - alpn:
   - h3
   auth: cc83a02b-90ea-403b-9c76-27e4be95f637
@@ -134,20 +136,19 @@ proxies:
   server: 121.127.231.239
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: '🇭🇰 香港 05 #2'
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    tls: true
-  port: 636
-  server: 156.251.179.136
-  type: ss
+- name: 🇭🇰 香港 04
+  network: ws
+  port: 21415
+  server: 43.132.244.52
+  servername: tw.laoyoutiao.link
+  tls: true
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: tw.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560security=tls
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
