@@ -50,18 +50,16 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: 🇸🇬SG
-  delay: 1362
-  name: 新加坡 - 新加坡 - DigitalOcean, LLC - 1
-  password: HBWP5MZVXfvDu2NcrqctpIcs3so/B3IuxPR7nNGxhJc=
-  port: 14956
-  server: 128.199.88.201
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇸🇬SG-188.166.220.70-0215 | 0.517MB
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
+  type: ss
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-4848 | 0.309MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
   type: ss
 - alterId: 0
   cipher: ''
@@ -81,6 +79,14 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  country: 🇸🇬SG
+  delay: 1362
+  name: 新加坡 - 新加坡 - DigitalOcean, LLC - 1
+  password: HBWP5MZVXfvDu2NcrqctpIcs3so/B3IuxPR7nNGxhJc=
+  port: 14956
+  server: 128.199.88.201
+  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -121,24 +127,6 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨18
-  network: ws
-  port: 8880
-  server: 91.193.58.63
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
   name: 🇸🇬👖TG频道@stymei1丨23
   network: ws
   port: 80
@@ -157,10 +145,10 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨4
+  name: 🇸🇬👖TG频道@stymei1丨18
   network: ws
   port: 8880
-  server: 156.238.18.77
+  server: 91.193.58.63
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -169,8 +157,8 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: yd.laoyoutiao.link
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
 - alterId: 0
   cipher: ''
   encryption: none
@@ -207,12 +195,24 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-4848 | 0.309MB
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇸🇬👖TG频道@stymei1丨4
+  network: ws
+  port: 8880
+  server: 156.238.18.77
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: yd.laoyoutiao.link
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
 - name: 🇸🇬 新加坡-Singapore (11a40a)
   network: ws
   password: ttfang
@@ -422,6 +422,7 @@ rules:
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
+- PROCESS-NAME,Telegram,✈️ 选择代理
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
