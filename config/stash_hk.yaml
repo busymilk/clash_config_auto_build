@@ -51,35 +51,6 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-gcm
-  name: 🇭🇰 香港 011
-  password: 23d03aa704c7
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: cmihk3v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /grqhyifio
-    tls: true
-  port: 636
-  server: 156.251.179.181
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 010
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    tls: true
-  port: 636
-  server: 156.251.179.139
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 🇭🇰 香港2|@ripaojiedian
   password: 9bfdde71b4c0
   plugin: v2ray-plugin
@@ -94,14 +65,6 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- name: 'Channel id: @ShadowProxy66🇭🇰 #1'
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
 - alterId: 0
   cipher: ''
   encryption: none
@@ -120,6 +83,34 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 010
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: 636
+  server: 156.251.179.139
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 011
+  password: 23d03aa704c7
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: cmihk3v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /grqhyifio
+    tls: true
+  port: 636
+  server: 156.251.179.181
+  type: ss
+  udp: true
 - name: 🇭🇰 香港 04
   network: ws
   port: 21415
