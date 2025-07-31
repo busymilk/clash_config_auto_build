@@ -50,23 +50,17 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.78-0213 | 36.763MB
   password: shadowsocks
   port: 443
   server: 212.102.53.78
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0226 | 36.188MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.79-0222 | 35.924MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.193-0223 | 36.256MB
@@ -80,17 +74,29 @@ proxies:
   port: 443
   server: 212.102.53.195
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.120.237-0176 | 35.653MB
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.198-0220 | 35.675MB
   password: shadowsocks
   port: 443
   server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.196-0226 | 36.188MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.79-0222 | 35.924MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-85.210.120.237-0176 | 35.653MB
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.80-0227 | 35.626MB
@@ -121,12 +127,6 @@ proxies:
   password: shadowsocks
   port: 443
   server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-0966 | 22.979MB
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
   type: ss
 proxy-groups:
 - name: ✈️ 选择代理

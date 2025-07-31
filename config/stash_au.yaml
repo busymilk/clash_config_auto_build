@@ -50,6 +50,12 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - name: 🇦🇺_澳大利亚_4
   network: ws
   port: 9950
@@ -64,19 +70,6 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸_US_美国->🇦🇺_AU_澳大利亚_1@14
-  network: ws
-  port: 8080
-  server: 104.24.66.175
-  sni: ''
-  type: vmess
-  uuid: 31209e40-be60-4d60-ad48-9765a0c5d087
-  ws-opts:
-    headers:
-      host: cfphdde1.reachheadphones.com
-    path: /ws2/nextlife
 - name: 🇦🇺_澳大利亚
   network: ws
   port: 11111
