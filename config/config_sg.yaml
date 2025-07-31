@@ -49,6 +49,12 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-188.166.220.70-0268 | 3.694MB
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
+  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -143,24 +149,6 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨7
-  network: ws
-  port: 8880
-  server: 213.241.198.63
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram🇨🇳
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
   name: 🇸🇬👖TG频道@stymei1丨4
   network: ws
   port: 8880
@@ -179,6 +167,24 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
+  name: 🇸🇬👖TG频道@stymei1丨7
+  network: ws
+  port: 8880
+  server: 213.241.198.63
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
   name: 🇸🇬👖TG频道@stymei1丨22
   network: ws
   port: 8880
@@ -193,25 +199,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬SG-188.166.220.70-0268 | 13.966MB
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
-- name: 🇸🇬 新加坡-Singapore (11a40a)
-  network: ws
-  password: ttfang
-  port: 443
-  server: 139.180.154.158
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
 - client-fingerprint: chrome
   name: 🇸🇬👖TG频道@stymei1丨2
   network: ws
@@ -227,6 +214,19 @@ proxies:
   udp: true
   ws-opts:
     headers: {}
+    path: /
+- name: 🇸🇬 新加坡-Singapore (11a40a)
+  network: ws
+  password: ttfang
+  port: 443
+  server: 139.180.154.158
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
     path: /
 proxy-groups:
 - name: ✈️ 选择代理

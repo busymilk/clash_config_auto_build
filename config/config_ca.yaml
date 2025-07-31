@@ -50,6 +50,24 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0233 | 44.484MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0172 | 24.291MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0255 | 3.775MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: aes-256-cfb
   name: SSR-加拿大-79.127.233.170:989
   obfs: plain
   password: f8f7aCzcPKbsF8p3
@@ -57,48 +75,6 @@ proxies:
   protocol: origin
   server: 79.127.233.170
   type: ssr
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  skip-cert-verify: true
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- alpn:
-  - h3
-  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: 🇨🇦 加拿大 08
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 47262
-  server: 40.233.103.51
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0233 | 49.741MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0172 | 33.721MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0255 | 16.764MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - name: 🇨🇦 加拿大 01
   network: ws
   port: 80
@@ -112,6 +88,17 @@ proxies:
     headers:
       Host: blaze-can-118.blazecanada.site
     path: /?ed=2560
+- alpn:
+  - h3
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: 🇨🇦 加拿大 08
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 47262
+  server: 40.233.103.51
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

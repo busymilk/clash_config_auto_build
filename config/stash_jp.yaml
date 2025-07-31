@@ -50,18 +50,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵_日本_3
-  network: ws
-  port: 8880
-  server: 103.116.7.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0263 | 4.475MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0266 | 4.195MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 - name: 🇯🇵_日本_13
   network: ws
   port: 2083
@@ -76,6 +76,19 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵_JP_日本->🇺🇸_US_美国
+  network: ws
+  port: 8880
+  server: 103.116.7.241
+  sni: ''
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - name: 🇯🇵_日本_10
   network: ws
   port: 443
@@ -104,18 +117,6 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0266 | 18.484MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0263 | 18.911MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 - name: 🇯🇵_日本_35
   network: ws
   port: 443
