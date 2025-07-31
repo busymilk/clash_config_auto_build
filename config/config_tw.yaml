@@ -49,6 +49,19 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-256-cfb
+  name: '🇹🇼 台湾 05 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳TW-223.165.4.173-5090 | 0.205MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 223.165.4.173
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇹🇼TW-45.121.48.174-051
@@ -62,19 +75,6 @@ proxies:
   ws-headers:
     Host: 45.121.48.174
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳TW-223.165.4.173-5090 | 0.205MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 223.165.4.173
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇹🇼 台湾 05 #2'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
