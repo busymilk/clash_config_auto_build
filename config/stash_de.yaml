@@ -50,7 +50,65 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇩🇪 德国 04
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-46.101.245.131-0236 | 30.698MB
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-45.144.54.33-0257 | 13.971MB
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-0278 | 6.412MB
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-0247 | 26.908MB
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0269 | 11.605MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 22
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 04
+  network: ws
+  port: 8443
+  server: 162.159.129.67
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '🇩🇪 德国 04 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2053
@@ -63,40 +121,10 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0251 | 6.855MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-斯洛文尼亚-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.144.54.33:34803
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4827 | 0.588MB
-  password: XPtzA9sCug3SPR4c
-  port: 9025
+  name: 🇩🇪DE-80.92.204.106-4796 | 0.628MB
+  password: ZET59LF6DvCC8KVt
+  port: 9005
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -106,9 +134,9 @@ proxies:
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4796 | 0.628MB
-  password: ZET59LF6DvCC8KVt
-  port: 9005
+  name: 🇩🇪DE-80.92.204.106-4827 | 0.588MB
+  password: XPtzA9sCug3SPR4c
+  port: 9025
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -253,6 +281,20 @@ proxies:
     headers:
       Host: rayan-fg-2.hasan-kachal.filegear-sg.me
     path: /
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 65
+  network: ws
+  port: 443
+  server: 162.159.133.85
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -286,25 +328,11 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 65
-  network: ws
-  port: 443
-  server: 162.159.133.85
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '🇩🇪 德国 05 #2 #2'
+- name: '🇩🇪 德国 06 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
+  port: 443
+  server: 162.159.133.85
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -312,6 +340,19 @@ proxies:
   ws-opts:
     headers:
       Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: 🇩🇪 德国 21
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 8443
+  server: 162.159.129.67
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: chrome
   name: 🇩🇪👖TG频道@stymei1丨2
@@ -329,24 +370,11 @@ proxies:
   ws-opts:
     headers: {}
     path: /?ed=2560&PROT_TYPE=trojan
-- name: 🇩🇪 德国 21
+- name: '🇩🇪 德国 05 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇩🇪 德国 06 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 162.159.133.85
+  port: 2087
+  server: 104.25.254.4
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -358,13 +386,13 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
-  delay: 670
+  delay: 692
   h2-opts: {}
   http-opts: {}
-  name: 德国 - 兰河畔林堡 - OVH SAS - 9
+  name: 德国 - 兰河畔林堡 - OVH SAS - 8
   network: ws
   port: 2083
-  server: 104.26.5.16
+  server: 172.67.72.15
   servername: blaze-ger-248.blazecloudmain.site
   skip-cert-verify: true
   tls: true
@@ -377,13 +405,13 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
-  delay: 692
+  delay: 670
   h2-opts: {}
   http-opts: {}
-  name: 德国 - 兰河畔林堡 - OVH SAS - 8
+  name: 德国 - 兰河畔林堡 - OVH SAS - 9
   network: ws
   port: 2083
-  server: 172.67.72.15
+  server: 104.26.5.16
   servername: blaze-ger-248.blazecloudmain.site
   skip-cert-verify: true
   tls: true
