@@ -74,6 +74,19 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
+- name: 🇭🇰 香港 023
+  network: ws
+  password: Aimer
+  port: 666
+  server: 206.237.12.130
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   cipher: ''
   encryption: none
