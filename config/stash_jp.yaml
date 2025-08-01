@@ -50,17 +50,33 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0250 | 28.753MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0253 | 28.836MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵_JP_日本->🇺🇸_US_美国_0@7
+  network: ws
+  port: 8880
+  server: 103.116.7.241
+  sni: ''
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
   type: ss
 - name: 🇯🇵_日本_2
   network: ws
@@ -100,18 +116,32 @@ proxies:
   uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
   ws-opts:
     path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵_日本_4
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0281 | 6.823MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0282 | 3.646MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- name: 🇯🇵_日本_1
   network: ws
-  port: 8880
-  server: 103.116.7.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  port: 12333
+  server: 121.80.244.179
+  servername: m1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
+      host: m1.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: '🇯🇵_日本_13 #2'
   network: ws
   port: 2083
@@ -126,6 +156,20 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: chrome
+  name: 🇯🇵 日本 14
+  network: ws
+  port: 18765
+  server: 14.36.181.53
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
 - name: 🇯🇵 日本 03
   network: ws
   password: Aimer
