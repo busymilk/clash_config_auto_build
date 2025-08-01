@@ -49,6 +49,76 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- name: 🇰🇷_韩国_4
+  network: ws
+  port: 12365
+  server: 14.47.175.40
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_1
+  network: ws
+  port: 443
+  server: 61.111.250.34
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_2
+  network: ws
+  port: 10033
+  server: 222.110.14.159
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_3
+  network: ws
+  port: 50000
+  server: 118.41.13.65
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_6
+  network: ws
+  port: 12546
+  server: 211.228.207.178
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - auth: ''
   fast-open: false
   name: 🇰🇷👖TG频道@stymei1丨1
@@ -60,20 +130,37 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
-- name: 🇰🇷_韩国_17
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨2
+  password: wl4HYN9PPKs8d8IzGIt4yKqt0
+  port: 53348
+  server: 47.74.34.102
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- name: 🇰🇷_韩国_5
   network: ws
-  port: 12270
-  server: 119.200.48.55
-  servername: edga.aimercc.dpdns.org
+  port: 50000
+  server: 115.94.98.93
+  servername: v1.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: edga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: v1.bgm2024.dpdns.org
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0354 | 2.64MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - name: 🇰🇷_韩国_16
   network: ws
   port: 12398
@@ -102,17 +189,20 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- auth: ''
-  fast-open: false
-  name: 🇰🇷👖TG频道@stymei1丨2
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
-  servername: bing.com
+- name: 🇰🇷_韩国_17
+  network: ws
+  port: 12270
+  server: 119.200.48.55
+  servername: edga.aimercc.dpdns.org
   skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷 韩国 06
   network: ws
   port: 30055
@@ -127,17 +217,24 @@ proxies:
       Host: jp.laoyoutiao.link
     path: Telegram@WangCai2/?ed=2560
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0354 | 2.64MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
   name: 🇰🇷KR-154.90.62.168-5154 | 0.431MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
+- name: 🇰🇷 韩国 04
+  network: ws
+  port: 12196
+  server: 202.150.185.128
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /
 - name: 🇰🇷_韩国_18
   network: ws
   port: 50000
@@ -152,30 +249,6 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- auth: ''
-  fast-open: false
-  name: 🇰🇷👖TG频道@stymei1丨3
-  password: kWlrCka5jzfKbD2z7ucwANEdZM
-  port: 26404
-  server: 47.245.53.59
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- name: 🇰🇷 韩国 04
-  network: ws
-  port: 12196
-  server: 202.150.185.128
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

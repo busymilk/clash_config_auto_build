@@ -50,6 +50,20 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- name: 🇦🇺_澳大利亚_1
+  network: ws
+  port: 23023
+  server: 43.165.191.25
+  servername: v1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: v1.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇦🇺_澳大利亚
   network: ws
   port: 11111
