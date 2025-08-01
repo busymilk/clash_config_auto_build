@@ -50,9 +50,27 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0189 | 33.342MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0269 | 22.446MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0188 | 32.156MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
 - cipher: aes-256-cfb
   group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-004
+  name: 🇨🇦CA-79.127.233.170-023
   obfs: plain
   obfsparam: null
   password: f8f7aCzcPKbsF8p3
@@ -61,36 +79,6 @@ proxies:
   protoparam: null
   server: 79.127.233.170
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0269 | 22.446MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0189 | 33.342MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0188 | 32.156MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@8
-  network: ws
-  port: 8880
-  server: 205.233.181.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc

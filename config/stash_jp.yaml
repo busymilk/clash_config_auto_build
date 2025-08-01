@@ -51,16 +51,32 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0250 | 28.753MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.241-0253 | 28.836MB
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0250 | 28.753MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
   type: ss
 - name: '🇯🇵_日本_13 #2'
   network: ws
@@ -90,20 +106,6 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_1
-  network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: m1.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: m1.bgm2024.dpdns.org
-    path: /?ed=2560
 - name: 🇯🇵_日本_3
   network: ws
   port: 443
@@ -128,16 +130,32 @@ proxies:
   uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
   ws-opts:
     path: /
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵_日本_7
+- name: 🇯🇵 日本 03
   network: ws
-  port: 20521
-  server: 210.87.111.241
-  type: vmess
-  uuid: 90c24365-8f6d-49d7-9f1a-6f1d361c8315
+  password: Aimer
+  port: 443
+  server: 160.16.82.82
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
   ws-opts:
-    path: /
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇯🇵 日本 27
+  network: ws
+  password: Aimer
+  port: 22345
+  server: 61.73.77.47
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
   name: 🇯🇵 日本 08
   password: 70a0b8103356
@@ -152,6 +170,20 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
+- name: 🇯🇵_日本_1
+  network: ws
+  port: 12333
+  server: 121.80.244.179
+  servername: m1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: m1.bgm2024.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
