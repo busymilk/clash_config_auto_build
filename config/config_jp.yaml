@@ -70,13 +70,48 @@ proxies:
   network: ws
   port: 8880
   server: 103.116.7.241
-  sni: ''
   type: vmess
   uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   ws-opts:
     headers:
       host: TG.WangCai2.s2.db-link02.top
     path: /dabai.in
+- name: 🇯🇵_日本_1
+  network: ws
+  port: 2083
+  server: 103.116.7.103
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0281 | 6.823MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0282 | 3.646MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵_日本_24
+  network: ws
+  port: 20521
+  server: 223.135.156.179
+  type: vmess
+  uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
+  ws-opts:
+    path: /
 - name: 🇯🇵_日本_2
   network: ws
   port: 443
@@ -105,16 +140,6 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵_日本_24
-  network: ws
-  port: 20521
-  server: 223.135.156.179
-  type: vmess
-  uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
-  ws-opts:
-    path: /
 - name: 🇯🇵 日本 17
   network: ws
   password: Aimer
@@ -128,56 +153,6 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵_日本_7
-  network: ws
-  port: 20521
-  server: 210.87.111.241
-  type: vmess
-  uuid: 90c24365-8f6d-49d7-9f1a-6f1d361c8315
-  ws-opts:
-    path: /
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0281 | 6.823MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0282 | 3.646MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- name: '🇯🇵_日本_13 #2'
-  network: ws
-  port: 2083
-  server: 103.116.7.103
-  servername: edga.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  name: 🇯🇵 日本 14
-  network: ws
-  port: 18765
-  server: 14.36.181.53
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /telegram🇨🇳@wangcai2/?ed=2560
 - name: 🇯🇵 日本 03
   network: ws
   password: Aimer
@@ -218,6 +193,20 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵 日本 14
+  network: ws
+  port: 18765
+  server: 14.36.181.53
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

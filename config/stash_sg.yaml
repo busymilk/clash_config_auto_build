@@ -50,6 +50,12 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG-188.166.220.70-0285 | 3.845MB
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
+  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -68,12 +74,6 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬SG-188.166.220.70-0285 | 3.845MB
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -111,6 +111,19 @@ proxies:
       Host: cs.laoyoutiao.link
     path: /Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
+  cipher: auto
+  name: 🇸🇬SG-210.87.111.241-058
+  network: ws
+  port: 20521
+  server: 210.87.111.241
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 90c24365-8f6d-49d7-9f1a-6f1d361c8315
+  ws-headers:
+    Host: 210.87.111.241
+  ws-path: /
+- alterId: 0
   cipher: ''
   encryption: none
   flow: ''
@@ -128,24 +141,6 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨23
-  network: ws
-  port: 80
-  server: 141.193.213.78
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: cs.laoyoutiao.link
-    path: /Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560
 - alterId: 0
   cipher: ''
   encryption: none
@@ -182,6 +177,24 @@ proxies:
     headers:
       Host: yd.laoyoutiao.link
     path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇸🇬👖TG频道@stymei1丨23
+  network: ws
+  port: 80
+  server: 141.193.213.78
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: cs.laoyoutiao.link
+    path: /Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560
 - alterId: 0
   cipher: ''
   encryption: none

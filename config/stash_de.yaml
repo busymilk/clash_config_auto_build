@@ -51,10 +51,16 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪_DE_德国
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.87.175.166
+  name: 🇩🇪DE-45.144.54.33-026
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-030
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-185.177.229.245-035
@@ -68,31 +74,12 @@ proxies:
   port: 44354
   server: 46.101.245.131
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-030
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4847 | 2.313MB
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-45.144.54.33-026
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE-171.22.31.187-049
-  network: tcp
-  port: 35879
-  server: 171.22.31.187
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: deff1354-92b9-42cc-8ee6-46dead4e1c5d
-  ws-headers:
-    Host: 171.22.31.187
-  ws-path: /
 - cipher: aes-256-cfb
   name: 🇩🇪DE-80.92.204.106-4786 | 2.245MB
   password: EXN3S3eQpjE7EJu8
@@ -100,9 +87,27 @@ proxies:
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4847 | 2.313MB
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
+  name: 🇩🇪DE-80.92.204.106-4789 | 2.17MB
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4784 | 1.896MB
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4788 | 2.164MB
+  password: VP8ZPxQpJtZRCjfZ
+  port: 9080
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4848 | 2.087MB
+  password: XPtzA9sCug3SPR4c
+  port: 9025
   server: 80.92.204.106
   type: ss
 - name: 🇩🇪 德国 03
@@ -118,12 +123,6 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4848 | 2.087MB
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 80.92.204.106
-  type: ss
 - alterId: 0
   cipher: ''
   encryption: none
@@ -142,38 +141,6 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 22
-  network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨5
-  network: ws
-  port: 8880
-  server: 147.78.140.29
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3
 - alterId: 0
   cipher: ''
   encryption: none
@@ -196,6 +163,24 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨5
+  network: ws
+  port: 8880
+  server: 147.78.140.29
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: hk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
   name: 🇩🇪👖TG频道@stymei1丨15
   network: ws
   port: 8880
@@ -210,6 +195,19 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE-171.22.31.187-049
+  network: tcp
+  port: 35879
+  server: 171.22.31.187
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: deff1354-92b9-42cc-8ee6-46dead4e1c5d
+  ws-headers:
+    Host: 171.22.31.187
+  ws-path: /
 - alterId: 0
   cipher: ''
   encryption: none
@@ -228,39 +226,6 @@ proxies:
     headers:
       Host: yd.laoyoutiao.link
     path: /Telegram🇨🇳
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 04
-  network: ws
-  port: 8443
-  server: 162.159.129.67
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- alterId: 0
-  cipher: ''
-  client-fingerprint: chrome
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨30
-  network: ws
-  port: 8443
-  server: 104.26.7.89
-  servername: brmahasang.ahaysiahzangi.dpdns.org
-  skip-cert-verify: true
-  sni: brmahasang.ahaysiahzangi.dpdns.org
-  tfo: false
-  tls: true
-  type: vless
-  uuid: f5cf098f-5143-440f-a490-7fc24ff27fb0
-  ws-opts:
-    headers:
-      Host: brmahasang.ahaysiahzangi.dpdns.org
-    path: /?ed=2560
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -282,47 +247,25 @@ proxies:
     headers:
       Host: rayan-fg-2.hasan-kachal.filegear-sg.me
     path: /
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 65
+- alterId: 0
+  cipher: ''
+  client-fingerprint: chrome
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨30
   network: ws
-  port: 443
-  server: 162.159.133.85
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 61
-  network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '🇩🇪 德国 04 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
+  port: 8443
+  server: 104.26.7.89
+  servername: brmahasang.ahaysiahzangi.dpdns.org
   skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
-  udp: true
+  sni: brmahasang.ahaysiahzangi.dpdns.org
+  tfo: false
+  tls: true
+  type: vless
+  uuid: f5cf098f-5143-440f-a490-7fc24ff27fb0
   ws-opts:
     headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+      Host: brmahasang.ahaysiahzangi.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -371,6 +314,19 @@ proxies:
   ws-opts:
     headers: {}
     path: /?ed=2560&PROT_TYPE=trojan
+- name: '🇩🇪 德国 04 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: '🇩🇪 德国 05 #2 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -384,6 +340,12 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4796 | 0.628MB
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
@@ -403,30 +365,6 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4796 | 0.628MB
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4790 | 1.847MB
-  password: f63gg8EruDnUrmz4
-  port: 9010
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4784 | 1.896MB
-  password: a3GFYt36Sm82Vys9
-  port: 9000
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4789 | 2.17MB
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 80.92.204.106
-  type: ss
 - cipher: rc4-md5
   name: 🇩🇪DE-193.108.119.230-0268 | 19.089MB
   password: 14fFPrbezE3HDZzsMOr6
