@@ -50,18 +50,19 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇰🇷 韩国 13
+- name: 🇰🇷_韩国_1
   network: ws
-  password: Aimer
-  port: 50000
-  server: 118.43.111.141
+  port: 12403
+  server: 112.171.112.109
+  servername: edga.aimercc.dpdns.org
   skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: epga.aimercc.dpdns.org
+      host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷_韩国_2
   network: ws
@@ -77,6 +78,25 @@ proxies:
     headers:
       host: hx1.ylks0033.dpdns.org
     path: /?ed=2560
+- name: 🇰🇷 韩国 13
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 118.43.111.141
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-5180 | 2.147MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - name: 🇰🇷_韩国_4
   network: ws
   port: 50000
@@ -91,12 +111,6 @@ proxies:
     headers:
       host: hx1.ylks0033.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-5180 | 2.147MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
 - cipher: aes-256-cfb
   name: 🇰🇷KR-154.90.62.168-5181 | 1.79MB
   password: f8f7aCzcPKbsF8p3
@@ -159,19 +173,19 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷 韩国 08
+- name: '🇰🇷 韩国 06 #2'
   network: ws
-  password: Aimer
-  port: 12270
-  server: 119.200.48.55
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
+  port: 30055
+  server: 121.171.82.130
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: jp.laoyoutiao.link
+    path: Telegram@WangCai2/?ed=2560
 - name: 🇰🇷_韩国_16
   network: ws
   port: 12398
@@ -186,6 +200,19 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷 韩国 08
+  network: ws
+  password: Aimer
+  port: 12270
+  server: 119.200.48.55
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷 韩国 06
   network: ws
   password: Aimer
@@ -199,32 +226,6 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷 韩国 01
-  network: ws
-  port: 12196
-  server: 202.150.185.128
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /
-- name: '🇰🇷 韩国 06 #2'
-  network: ws
-  port: 30055
-  server: 121.171.82.130
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: Telegram@WangCai2/?ed=2560
 - name: 🇰🇷_韩国_17
   network: ws
   port: 12270
@@ -239,6 +240,19 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷 韩国 01
+  network: ws
+  port: 12196
+  server: 202.150.185.128
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /
 - name: '🇰🇷 韩国 13 #2'
   network: ws
   password: Aimer

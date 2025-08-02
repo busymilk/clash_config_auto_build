@@ -50,42 +50,26 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-023
+  name: SSR-加拿大-79.127.233.170:989
   obfs: plain
-  obfsparam: null
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
-  protoparam: null
   server: 79.127.233.170
   type: ssr
-- name: 🇨🇦_加拿大
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
   network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: hx1.ylks0033.dpdns.org
+  port: 80
+  server: 51.79.102.253
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
-    headers:
-      host: hx1.ylks0033.dpdns.org
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0192 | 69.875MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0250 | 48.715MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
   name: 🇨🇦_CA_加拿大->🇺🇸_US_美国
@@ -98,23 +82,24 @@ proxies:
     headers:
       host: TG.WangCai2.s2.db-link02.top
     path: /dabai.in
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0216 | 67.887MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0283 | 3.719MB
+  name: 🇨🇦CA-79.127.233.170-0219 | 49.581MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0300 | 20.007MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 🇨🇦 加拿大 08
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 40.233.119.160
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
@@ -126,6 +111,20 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 加拿大 26
+  network: tcp
+  port: 26113
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  server: 40.233.119.160
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
