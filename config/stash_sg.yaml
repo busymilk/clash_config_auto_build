@@ -50,25 +50,33 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬SG-210.87.111.241-058
-  network: ws
-  port: 20521
-  server: 210.87.111.241
+- auth: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  name: 🇸🇬 新加坡 52
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 18.143.180.14
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 90c24365-8f6d-49d7-9f1a-6f1d361c8315
-  ws-headers:
-    Host: 210.87.111.241
-  ws-path: /
+  sni: bing.com
+  type: hysteria2
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇸🇬SG-188.166.220.70-0284 | 15.692MB
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬SG-210.87.111.241-0995 | 10.611MB
+  network: ws
+  port: 20521
+  server: 210.87.111.241
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 90c24365-8f6d-49d7-9f1a-6f1d361c8315
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: ''
   encryption: none

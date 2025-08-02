@@ -49,6 +49,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵_JP_日本->🇺🇸_US_美国_0@15
+  network: ws
+  port: 8880
+  server: 103.116.7.241
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - name: 🇯🇵_日本_1
   network: ws
   port: 2083
@@ -63,32 +75,17 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本2|@ripaojiedian
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0279 | 20.451MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0280 | 21.723MB
   password: shadowsocks
   port: 443
   server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0279 | 20.451MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
   type: ss
 - alterId: 0
   cipher: auto
@@ -116,6 +113,19 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇯🇵 日本 17
+  network: ws
+  password: Aimer
+  port: 17892
+  server: 103.117.103.192
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_3
   network: ws
   port: 443
@@ -130,37 +140,11 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵 日本 17
-  network: ws
-  password: Aimer
-  port: 17892
-  server: 103.117.103.192
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵 日本 03
   network: ws
   password: Aimer
   port: 443
   server: 160.16.82.82
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵 日本 27
-  network: ws
-  password: Aimer
-  port: 22345
-  server: 61.73.77.47
   skip-cert-verify: true
   sni: epga.aimercc.dpdns.org
   type: trojan
@@ -183,6 +167,19 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
+- name: 🇯🇵 日本 27
+  network: ws
+  password: Aimer
+  port: 22345
+  server: 61.73.77.47
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
   name: 🇯🇵 日本 14
   network: ws
