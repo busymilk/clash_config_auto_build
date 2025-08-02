@@ -50,13 +50,27 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
+  name: 🇬🇧GB-46.226.163.225-048
   password: c40641c1f89e7acb
   port: 57456
   server: 46.226.163.225
   type: ss
+- name: 'Channel id: @ShadowProxy66🇬🇧'
+  password: cf125f42-759d-4112-82c3-014d2ffcb1e7
+  port: 1443
+  server: 185.85.242.177
+  skip-cert-verify: true
+  sni: gbr1.587458.xyz
+  tls: false
+  type: hysteria2
 - cipher: aes-256-cfb
-  name: 🇬🇧_GB_英国_0@21
+  name: 🇬🇧GB-62.100.205.48-010
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -76,10 +90,10 @@ proxies:
   server: 212.102.53.194
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0253 | 31.764MB
+  name: 🇬🇧GB-212.102.53.78-0241 | 32.4MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.196
+  server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.193-0237 | 31.829MB
@@ -88,10 +102,16 @@ proxies:
   server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.79-0265 | 31.53MB
+  name: 🇬🇧GB-212.102.53.196-0253 | 31.764MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.79
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-0251 | 31.66MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.198-0247 | 31.595MB
@@ -100,10 +120,10 @@ proxies:
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.195-0251 | 31.66MB
+  name: 🇬🇧GB-212.102.53.79-0265 | 31.53MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.195
+  server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.81-0255 | 31.296MB
@@ -171,12 +191,6 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-cfb
-  name: 🇬🇧GB-62.100.205.48-010
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
