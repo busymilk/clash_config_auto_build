@@ -39,10 +39,10 @@ class NodeTestConfig:
     DEFAULT_TEST_URL = "https://www.google.com/generate_204"
     
     # 延迟限制 (ms)
-    DEFAULT_DELAY_LIMIT = int(os.getenv('DELAY_LIMIT', '4000'))
+    DEFAULT_DELAY_LIMIT = int(os.getenv('DELAY_LIMIT', '3000'))
     
     # API超时 (ms)
-    DEFAULT_TIMEOUT = int(os.getenv('API_TIMEOUT', '6000'))
+    DEFAULT_TIMEOUT = int(os.getenv('API_TIMEOUT', '4000'))
     
     # 并发线程数
     DEFAULT_MAX_WORKERS = int(os.getenv('MAX_WORKERS', '100'))
