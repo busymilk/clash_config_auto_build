@@ -49,7 +49,7 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: '[80ms] [140ms] 🇯🇵_日本_4'
+- name: '[93ms] 🇯🇵_日本_4'
   network: ws
   port: 2083
   server: 103.116.7.103
@@ -64,20 +64,31 @@ proxies:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-128-gcm
-  name: '[373ms] 🇯🇵JP-149.22.87.204-0302 | 4.599MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: '[395ms] 🇯🇵JP-149.22.87.241-0305 | 4.744MB'
+  name: '[540ms] 🇯🇵JP-149.22.87.241-0305 | 4.744MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
+- cipher: aes-128-gcm
+  name: '[543ms] 🇯🇵JP-149.22.87.204-0302 | 4.599MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- client-fingerprint: chrome
+  delay: 1273
+  name: '[720ms] 日本 - 东京 - Akamai Technologies, Inc. - 1'
+  password: 7ZkPnMNGly
+  port: 1935
+  server: 139.162.91.197
+  server_url: x1-japan-linode-v2-pwlzp.devefun.org
+  skip-cert-verify: false
+  sni: x1-japan-linode-v2-pwlzp.devefun.org
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '[503ms] 🇯🇵JP-223.135.156.179-0317 | 4.157MB'
+  name: '[726ms] 🇯🇵JP-223.135.156.179-0317 | 4.157MB'
   network: ws
   port: 20521
   server: 223.135.156.179
@@ -87,7 +98,7 @@ proxies:
   uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
   ws-opts:
     path: /
-- name: '[520ms] [500ms] [526ms] [491ms] [515ms] 🇯🇵_日本_2 #2'
+- name: '[756ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 160.16.82.82
@@ -101,58 +112,21 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[617ms] [615ms] [655ms] [639ms] [620ms] 🇯🇵 日本 03 #2'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 160.16.82.82
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[634ms] [622ms] [631ms] [628ms] [596ms] 🇯🇵 日本 28'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 160.16.101.34
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
-  delay: 1273
-  name: '[774ms] [476ms] [485ms] [462ms] [463ms] 日本 - 东京 - Akamai Technologies, Inc.
-    - 1'
-  password: 7ZkPnMNGly
-  port: 1935
-  server: 139.162.91.197
-  server_url: x1-japan-linode-v2-pwlzp.devefun.org
-  skip-cert-verify: false
-  sni: x1-japan-linode-v2-pwlzp.devefun.org
-  type: trojan
-  udp: true
-- name: '[819ms] [805ms] [1531ms] [865ms] [801ms] 🇯🇵 日本 30'
+  name: '[759ms] 🇯🇵 日本 34'
   network: ws
-  password: Aimer
-  port: 22345
-  server: 61.73.77.47
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
+  port: 1450
+  server: 152.70.82.70
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[945ms] [831ms] 🇯🇵_日本_2'
+      Host: jp.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- name: '[811ms] 🇯🇵_日本_2'
   network: ws
   port: 7000
   server: 158.101.139.31
@@ -166,14 +140,70 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- name: '[1020ms] Channel id: @ShadowProxy66🇯🇵 #2'
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
+- name: '[911ms] 🇯🇵 日本 03 #2'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 160.16.82.82
   skip-cert-verify: true
-  tls: false
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[921ms] 🇯🇵 日本 28'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 160.16.101.34
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: auto
+  name: '[939ms] 🇯🇵_JP_日本->🇺🇸_US_美国_0@8'
+  network: ws
+  port: 8880
+  server: 103.116.7.241
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
+- auth: d455fd1a-3e0b-4290-8287-58be7320f3d1
+  name: '[946ms] 🇯🇵 日本 31'
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: d455fd1a-3e0b-4290-8287-58be7320f3d1
+  port: 35300
+  server: 212.192.221.221
+  server_url: flyrb.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxg.flylink.cyou
   type: hysteria2
-- name: '[1167ms] [861ms] [888ms] [848ms] [846ms] 🇯🇵 日本 22'
+  udp: true
+- name: '[1076ms] 🇯🇵 日本 30'
+  network: ws
+  password: Aimer
+  port: 22345
+  server: 61.73.77.47
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1122ms] 🇯🇵 日本 22'
   network: ws
   password: Aimer
   port: 31337
@@ -187,7 +217,7 @@ proxies:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
-  name: '[1273ms] [1165ms] [1389ms] [1092ms] [1113ms] 🇯🇵 日本 32'
+  name: '[2999ms] 🇯🇵 日本 32'
   network: ws
   port: 18765
   server: 14.36.181.53
@@ -200,20 +230,8 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: /telegram🇨🇳@wangcai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '[1495ms] 🇯🇵_JP_日本->🇺🇸_US_美国'
-  network: ws
-  port: 8880
-  server: 103.116.7.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
 - cipher: aes-256-gcm
-  name: '[1503ms] 🇯🇵 日本 01'
+  name: '[3409ms] 🇯🇵 日本 01'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
