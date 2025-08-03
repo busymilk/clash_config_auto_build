@@ -129,9 +129,9 @@ proxy-groups:
     type: url-test # 通过 URL 测试选择延迟最低的节点
     tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     include-all-proxies: true # 包含所有节点进行测试
-    url: "https://www.apple.com/library/test/success.html" # 使用 Google 的专用网络连通性测试 URL，更轻量高效
-    expected-status: 200 # 期望获得 204 状态码，确保测试的准确性，避免被劫持
-    interval: 60 # 健康检查间隔（秒）
+    url: "https://www.google.com/generate_204" # 使用 Google的专用网络连通性测试 URL，更轻量高效
+    expected-status: 204 # 期望获得 204 状态码，确保测试的准确性，避免被劫持
+    interval: 120 # 健康检查间隔（秒）
     timeout: 3000 # 健康检查超时时间（毫秒）
     max-failed-times: 2 # 最大失败次数
     lazy: true # 懒加载，启动时不进行测试
@@ -140,9 +140,9 @@ proxy-groups:
     type: load-balance # 实现流量的负载均衡
     strategy: consistent-hashing # 轮询策略，确保同一目标地址使用同一节点
     include-all-proxies: true
-    url: "https://www.apple.com/library/test/success.html"
-    expected-status: 200
-    interval: 60
+    url: "https://www.google.com/generate_204"
+    expected-status: 204
+    interval: 120
     timeout: 3000
     max-failed-times: 2
     lazy: true
@@ -151,9 +151,9 @@ proxy-groups:
     type: load-balance # 实现流量的负载均衡
     strategy: round-robin # 轮询策略，将会把所有的请求分配给策略组内不同的代理节点
     include-all-proxies: true
-    url: "https://www.apple.com/library/test/success.html"
-    expected-status: 200
-    interval: 60
+    url: "https://www.google.com/generate_204"
+    expected-status: 204
+    interval: 120
     timeout: 3000
     max-failed-times: 2
     lazy: true
@@ -161,12 +161,34 @@ proxy-groups:
   - name: 👆 手动选择
     type: select # 手动选择节点
     include-all-proxies: true
-    url: "https://www.apple.com/library/test/success.html"
-    expected-status: 200
-    interval: 60
+    url: "https://www.google.com/generate_204"
+    expected-status: 204
+    interval: 120
     timeout: 3000
     max-failed-times: 2
     lazy: true
+
+  - name: GoogleApi #没办法，好多代理可以访问google，但是googleapis访问不了。。。
+    type: url-test # 通过 URL 测试选择延迟最低的节点
+    tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
+    include-all-proxies: true # 包含所有节点进行测试
+    url: "https://googleapis.com" # 使用 Google Api
+    expected-status: 404 # 你没看错，确实是404，404恰恰证明了访问到了googleapi，而且给了结果。不是半路链接被重置等异常
+    interval: 120 # 健康检查间隔（秒）
+    timeout: 3000 # 健康检查超时时间（毫秒）
+    max-failed-times: 2 # 最大失败次数
+    lazy: true # 懒加载，启动时不进行测试
+
+  - name: Telegram #没办法，好多代理可以访问google，但是Telegram访问不了。。。
+    type: url-test # 通过 URL 测试选择延迟最低的节点
+    tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
+    include-all-proxies: true # 包含所有节点进行测试
+    url: "https://api.telegram.org"
+    expected-status: 302 # 你没看错，确实是302重定向，能确认可以访问tg了
+    interval: 120 # 健康检查间隔（秒）
+    timeout: 3000 # 健康检查超时时间（毫秒）
+    max-failed-times: 2 # 最大失败次数
+    lazy: true # 懒加载，启动时不进行测试
 
 # 规则集提供者 (Rule Providers)
 rule-providers:
@@ -266,6 +288,13 @@ rule-providers:
     path: ./ruleset/geoip_cn_ip.rules
     interval: 86400
 
+  geoip_telegram_ip:
+    type: http
+    behavior: ipcidr
+    format: text
+    url: "https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_telegram.txt"
+    path: ./ruleset/geoip_telegram.rules
+    interval: 86400
 
   other_direct_applications:
     type: http
@@ -312,7 +341,7 @@ rules:
   - 'DOMAIN-SUFFIX,akfamily.xyz,DIRECT'
   - 'DOMAIN,shared.cdn.queniuqe.com,DIRECT'
   - 'DOMAIN-SUFFIX,1fichier.com,DIRECT'
-  - 'PROCESS-NAME,Telegram,✈️ 选择代理'
+  - 'PROCESS-NAME,Telegram,Telegram'
   
   
   
@@ -332,10 +361,11 @@ rules:
   - RULE-SET,geosite_@ads,REJECT
 #---------------------------------------------------------
 #特定域名
+  - 'DOMAIN-KEYWORD,googleapis,GoogleApi' #Gemini用
   - RULE-SET,geosite_apple,DIRECT
   - RULE-SET,geosite_bing,✈️ 选择代理
   - RULE-SET,geosite_google,✈️ 选择代理
-  - RULE-SET,geosite_telegram,✈️ 选择代理
+  - RULE-SET,geosite_telegram,Telegram
 #---------------------------------------------------------
 #原版geolocation-cn域名集合里掺杂的@!cn部分国外域名
   - RULE-SET,geosite_@!cn_domains,✈️ 选择代理
@@ -350,9 +380,14 @@ rules:
 #国内域名
   - RULE-SET,geosite_cn,DIRECT
 #---------------------------------------------------------
+
 #内网ip
   - RULE-SET,geoip_lan_ip,DIRECT
   - RULE-SET,other_ssk_lan_ip,DIRECT
+
+#国外ip
+  - RULE-SET,geoip_telegram_ip,Telegram
+
 #国内ip
   - RULE-SET,geoip_cn_ip,DIRECT
 #---------------------------------------------------------
