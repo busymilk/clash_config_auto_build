@@ -119,11 +119,11 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷 韩国 10
+- name: 🇰🇷 韩国 15
   network: ws
   password: Aimer
-  port: 31210
-  server: 59.21.57.149
+  port: 10911
+  server: 112.162.240.23
   skip-cert-verify: true
   sni: epga.aimercc.dpdns.org
   type: trojan
@@ -138,6 +138,19 @@ proxies:
   port: 989
   server: 154.90.63.177
   type: ss
+- name: 🇰🇷 韩国 10
+  network: ws
+  password: Aimer
+  port: 31210
+  server: 59.21.57.149
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: '🇰🇷_韩国_4 #2'
   network: ws
   port: 12365
@@ -166,13 +179,6 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-cfb
-  name: 🇰🇷 韩国 04
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-  udp: true
 - name: 🇰🇷 韩国 14
   network: ws
   password: Aimer
@@ -186,19 +192,27 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '🇰🇷 韩国 13 #2'
+- name: '🇰🇷_韩国_2 #2'
   network: ws
-  password: Aimer
-  port: 50000
-  server: 118.43.111.141
+  port: 10001
+  server: 119.202.158.65
+  servername: hx1.ylks0033.dpdns.org
   skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: hx1.ylks0033.dpdns.org
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 🇰🇷 韩国 04
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
 - name: '🇰🇷 韩国 13 #2 #2'
   network: ws
   password: Aimer
@@ -238,6 +252,19 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '🇰🇷 韩国 13 #2'
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 118.43.111.141
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: '🇰🇷 韩国 01 #2'
   network: ws
   port: 12196
@@ -251,20 +278,6 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: /
-- name: '🇰🇷_韩国_2 #2'
-  network: ws
-  port: 10001
-  server: 119.202.158.65
-  servername: hx1.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: hx1.ylks0033.dpdns.org
-    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
