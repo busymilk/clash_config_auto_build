@@ -49,12 +49,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
 - name: 🇦🇺_澳大利亚_1
   network: ws
   port: 443
@@ -68,20 +62,6 @@ proxies:
   ws-opts:
     headers:
       host: zx1.ylka.dpdns.org
-    path: /?ed=2560
-- name: 🇦🇺_澳大利亚_3
-  network: ws
-  port: 443
-  server: 185.148.14.40
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
     path: /?ed=2560
 - name: 🇦🇺_澳大利亚_5
   network: ws
@@ -133,45 +113,65 @@ proxy-groups:
   - 👆 手动选择
   - DIRECT
   type: select
-- expected-status: 200
+- expected-status: 204
   include-all-proxies: true
-  interval: 60
+  interval: 120
   lazy: true
   max-failed-times: 2
   name: ⚡️ 自动优选
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://www.apple.com/library/test/success.html
-- expected-status: 200
+  url: https://www.google.com/generate_204
+- expected-status: 204
   include-all-proxies: true
-  interval: 60
+  interval: 120
   lazy: true
   max-failed-times: 2
   name: ⚖️ 负载均衡-同一url同一节点
   strategy: consistent-hashing
   timeout: 3000
   type: load-balance
-  url: https://www.apple.com/library/test/success.html
-- expected-status: 200
+  url: https://www.google.com/generate_204
+- expected-status: 204
   include-all-proxies: true
-  interval: 60
+  interval: 120
   lazy: true
   max-failed-times: 2
   name: ⚖️ 负载均衡-同一url不同节点
   strategy: round-robin
   timeout: 3000
   type: load-balance
-  url: https://www.apple.com/library/test/success.html
-- expected-status: 200
+  url: https://www.google.com/generate_204
+- expected-status: 204
   include-all-proxies: true
-  interval: 60
+  interval: 120
   lazy: true
   max-failed-times: 2
   name: 👆 手动选择
   timeout: 3000
   type: select
-  url: https://www.apple.com/library/test/success.html
+  url: https://www.google.com/generate_204
+- expected-status: 404
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: GoogleApi
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://googleapis.com
+- expected-status: 302
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: Telegram
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://api.telegram.org
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr
@@ -187,6 +187,13 @@ rule-providers:
     path: ./ruleset/geoip_lan_ip.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_private.txt
+  geoip_telegram_ip:
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/geoip_telegram.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_telegram.txt
   geosite_!cn:
     behavior: classical
     format: yaml
@@ -304,16 +311,17 @@ rules:
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
-- PROCESS-NAME,Telegram,✈️ 选择代理
+- PROCESS-NAME,Telegram,Telegram
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
 - RULE-SET,geosite_@ads,REJECT
+- DOMAIN-KEYWORD,googleapis,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
-- RULE-SET,geosite_telegram,✈️ 选择代理
+- RULE-SET,geosite_telegram,Telegram
 - RULE-SET,geosite_@!cn_domains,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
@@ -321,6 +329,7 @@ rules:
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT
 - RULE-SET,other_ssk_lan_ip,DIRECT
+- RULE-SET,geoip_telegram_ip,Telegram
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:

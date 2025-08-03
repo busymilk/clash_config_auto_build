@@ -49,6 +49,20 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- client-fingerprint: chrome
+  name: 🇸🇬 新加坡 03
+  network: ws
+  port: 443
+  server: 3.0.39.179
+  servername: jd.chenchuanjin.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f4522b1a-7cc2-4d4b-84c5-357242e052bb
+  ws-opts:
+    headers:
+      Host: jd.chenchuanjin.sbs
+    path: /
 - name: 'Channel id: @ShadowProxy66🇸🇬'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
@@ -157,10 +171,10 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨22
+  name: 🇸🇬👖TG频道@stymei1丨4
   network: ws
   port: 8880
-  server: 102.177.176.29
+  server: 156.238.18.77
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -169,8 +183,8 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3
+      Host: yd.laoyoutiao.link
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
 - alterId: 0
   cipher: ''
   encryption: none
@@ -193,10 +207,10 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨4
+  name: 🇸🇬👖TG频道@stymei1丨22
   network: ws
   port: 8880
-  server: 156.238.18.77
+  server: 102.177.176.29
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -205,8 +219,8 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: yd.laoyoutiao.link
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+      Host: hk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3
 - name: 🇸🇬 新加坡 19
   network: ws
   port: 443
@@ -220,20 +234,6 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- client-fingerprint: chrome
-  name: 🇸🇬 新加坡 20
-  network: ws
-  port: 443
-  server: 3.0.39.179
-  servername: jd.chenchuanjin.sbs
-  tls: true
-  type: vless
-  udp: true
-  uuid: f4522b1a-7cc2-4d4b-84c5-357242e052bb
-  ws-opts:
-    headers:
-      Host: jd.chenchuanjin.sbs
-    path: /
 - name: 🇸🇬 新加坡-Singapore (11a40a)
   network: ws
   password: ttfang
@@ -256,45 +256,65 @@ proxy-groups:
   - 👆 手动选择
   - DIRECT
   type: select
-- expected-status: 200
+- expected-status: 204
   include-all-proxies: true
-  interval: 60
+  interval: 120
   lazy: true
   max-failed-times: 2
   name: ⚡️ 自动优选
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://www.apple.com/library/test/success.html
-- expected-status: 200
+  url: https://www.google.com/generate_204
+- expected-status: 204
   include-all-proxies: true
-  interval: 60
+  interval: 120
   lazy: true
   max-failed-times: 2
   name: ⚖️ 负载均衡-同一url同一节点
   strategy: consistent-hashing
   timeout: 3000
   type: load-balance
-  url: https://www.apple.com/library/test/success.html
-- expected-status: 200
+  url: https://www.google.com/generate_204
+- expected-status: 204
   include-all-proxies: true
-  interval: 60
+  interval: 120
   lazy: true
   max-failed-times: 2
   name: ⚖️ 负载均衡-同一url不同节点
   strategy: round-robin
   timeout: 3000
   type: load-balance
-  url: https://www.apple.com/library/test/success.html
-- expected-status: 200
+  url: https://www.google.com/generate_204
+- expected-status: 204
   include-all-proxies: true
-  interval: 60
+  interval: 120
   lazy: true
   max-failed-times: 2
   name: 👆 手动选择
   timeout: 3000
   type: select
-  url: https://www.apple.com/library/test/success.html
+  url: https://www.google.com/generate_204
+- expected-status: 404
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: GoogleApi
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://googleapis.com
+- expected-status: 302
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: Telegram
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://api.telegram.org
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr
@@ -310,6 +330,13 @@ rule-providers:
     path: ./ruleset/geoip_lan_ip.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_private.txt
+  geoip_telegram_ip:
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/geoip_telegram.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_telegram.txt
   geosite_!cn:
     behavior: classical
     format: yaml
@@ -427,16 +454,17 @@ rules:
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
-- PROCESS-NAME,Telegram,✈️ 选择代理
+- PROCESS-NAME,Telegram,Telegram
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
 - RULE-SET,geosite_@ads,REJECT
+- DOMAIN-KEYWORD,googleapis,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
-- RULE-SET,geosite_telegram,✈️ 选择代理
+- RULE-SET,geosite_telegram,Telegram
 - RULE-SET,geosite_@!cn_domains,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
@@ -444,6 +472,7 @@ rules:
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT
 - RULE-SET,other_ssk_lan_ip,DIRECT
+- RULE-SET,geoip_telegram_ip,Telegram
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:
