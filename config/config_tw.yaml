@@ -50,32 +50,13 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-256-cfb
-  name: '[706ms] 🇹🇼 台湾 05 #2'
+  name: '[575ms] 🇹🇼 台湾 05 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '[848ms] 🇨🇳TW-223.165.4.173-5283 | 2.456MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 223.165.4.173
-  type: ss
-- name: '[898ms] 🇹🇼 台湾 02'
-  network: ws
-  password: Aimer
-  port: 10240
-  server: 34.81.140.124
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[985ms] 🇹🇼 台湾 09'
+- name: '[656ms] 🇹🇼 台湾 09'
   network: ws
   port: 43
   server: 61.220.128.226
@@ -88,6 +69,25 @@ proxies:
     headers:
       Host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[731ms] 🇹🇼 台湾 02'
+  network: ws
+  password: Aimer
+  port: 10240
+  server: 34.81.140.124
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: chacha20-ietf-poly1305
+  name: '[2459ms] 🇨🇳TW-223.165.4.173-5283 | 2.456MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 223.165.4.173
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
