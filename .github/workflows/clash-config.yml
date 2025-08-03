@@ -78,11 +78,6 @@ jobs:
           --proxies-dir ${{ env.PROXY_DIR }} \
           --output all_unique_nodes.yaml
 
-    # 步骤8: 获取运行器公网IP（用于调试）
-    - name: Get Runner Public IP
-      id: get_ip
-      run: echo "ip=$(curl -s ifconfig.me)" >> $GITHUB_OUTPUT
-
     - name: Setup mihomo
       run: |
         echo "Downloading mihomo executable from busymilk/mihomo..."
@@ -142,6 +137,11 @@ jobs:
           config/*.yaml
           healthy_nodes_list*.yaml
 
+    # 新增步骤: 获取当前时间
+    - name: Get Current Time
+      id: get_time
+      run: echo "timestamp=$(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
+
     # 步骤14: 创建或更新 GitHub Release
     - name: Create or Update Release
       uses: softprops/action-gh-release@v1
@@ -152,17 +152,16 @@ jobs:
         body: |
           🌍 **自动更新的 Clash 配置文件**
           
-          **更新时间**: ${{ steps.get_ip.outputs.timestamp || github.run_id }}
+          **更新时间**: ${{ steps.get_time.outputs.timestamp }}
           **地理位置检测**: ✅ 已启用
-          **运行器IP**: ${{ steps.get_ip.outputs.ip }}
           
-          **📁 配置文件说明**:
+          📁 **配置文件说明**:
           - `config.yaml` - 所有健康节点 (标准版)
           - `config_*.yaml` - 各地区节点 (标准版)  
           - `stash.yaml` - 所有健康节点 (Stash版)
           - `stash_*.yaml` - 各地区节点 (Stash版)
           
-          **🌏 支持地区**: 香港🇭🇰 美国🇺🇸 日本🇯🇵 英国🇬🇧 新加坡🇸🇬 台湾🇹🇼 韩国🇰🇷 德国🇩🇪 加拿大🇨🇦 澳大利亚🇦🇺
+          🌏 **支持地区**: 香港🇭🇰 美国🇺🇸 日本🇯🇵 英国🇬🇧 新加坡🇸🇬 台湾🇹🇼 韩国🇰🇷 德国🇩🇪 加拿大🇨🇦 澳大利亚🇦🇺
         generate_release_notes: true
 
     # 步骤15: 提交配置文件变更
@@ -196,7 +195,7 @@ jobs:
           echo "Purging CDN cache for: $file"
           
           for ((i=1; i<=3; i++)); do
-            http_code=$(curl -s -o /dev/null -w "%{http_code}" "$purge_url")
+            http_code=$(curl -s -o /dev/null -w "%{\http_code}" "$purge_url")
             if [ $http_code -eq 200 ]; then
               echo "  ✅ Success (Attempt $i)"
               break
