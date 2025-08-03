@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from core.constants import FILTER_PATTERNS, BLACKLIST_KEYWORDS, DnsConfig
 from core.logger import setup_logger
 
-DELAY_PREFIX_RE = re.compile(r'^[\s*\d+ms]\s*')
+DELAY_PREFIX_RE = re.compile(r'^(?:\[\s*\d+ms\]\s*)+')
 
 def _resolve_domain_with_q(domain_info: tuple, logger):
     """使用 q 工具解析域名，手动处理CNAME，优先IPv6，使用正确的语法。"""
