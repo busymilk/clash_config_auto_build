@@ -1,4 +1,4 @@
-name: Generate Clash Config with GeoIP Detection
+name: Generate Clash Config
 
 on:
   schedule:
@@ -18,8 +18,6 @@ jobs:
       DELAY_LIMIT: "4000"
       MAX_WORKERS: "100"
       LOG_LEVEL: "INFO"
-      # 地理位置检测配置
-      GEOIP_TIMEOUT: "30"
 
     steps:
     # 步骤1: 检出代码仓库
@@ -97,13 +95,12 @@ jobs:
           --mihomo-path /usr/local/bin/mihomo
         echo "filtered_nodes_file=valid_nodes.yaml" >> $GITHUB_OUTPUT
 
-    # 步骤10: 集成版节点测试（包含地理位置检测）
-    - name: Test Nodes with Integrated GeoIP Detection
+    # 步骤10: 测试节点延迟
+    - name: Test Node Latency
       id: test_nodes
       run: |
-        echo "开始集成版节点测试..."
+        echo "开始测试节点延迟..."
         echo "配置信息:"
-        echo "  - IP检测服务: AWS checkip.amazonaws.com"
         echo "  - 延迟限制: ${{ env.DELAY_LIMIT }}ms"
         echo "  - 最大并发数: ${{ env.MAX_WORKERS }}"
         
@@ -113,8 +110,6 @@ jobs:
         cmd_args="$cmd_args --clash-path /usr/local/bin/mihomo"
         cmd_args="$cmd_args --delay-limit ${{ env.DELAY_LIMIT }}"
         cmd_args="$cmd_args --max-workers ${{ env.MAX_WORKERS }}"
-        cmd_args="$cmd_args --geoip-timeout ${{ env.GEOIP_TIMEOUT }}"
-        cmd_args="$cmd_args --save-geoip-details"
         
         echo "执行命令: python scripts/node_tester_integrated.py $cmd_args"
         python scripts/node_tester_integrated.py $cmd_args
@@ -132,28 +127,28 @@ jobs:
     - name: Upload All Config Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: clash-configs-with-geoip
+        name: clash-configs
         path: |
           config/*.yaml
-          healthy_nodes_list*.yaml
+          healthy_nodes_list.yaml
 
-    # 新增步骤: 获取当前时间
+    # 步骤14: 获取当前时间
     - name: Get Current Time
       id: get_time
       run: echo "timestamp=$(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
 
-    # 步骤14: 创建或更新 GitHub Release
+    # 步骤15: 创建或更新 GitHub Release
     - name: Create or Update Release
       uses: softprops/action-gh-release@v1
       with:
         files: config/*.yaml
         tag_name: latest-config
-        name: "🚀 Latest Clash Configurations (with GeoIP)"
+        name: "🚀 Latest Clash Configurations"
         body: |
           🌍 **自动更新的 Clash 配置文件**
           
           **更新时间**: ${{ steps.get_time.outputs.timestamp }}
-          **地理位置检测**: ✅ 已启用
+          **分类方式**: 按节点名称自动分类 (Name-based Classification)
           
           📁 **配置文件说明**:
           - `config.yaml` - 所有健康节点 (标准版)
@@ -164,7 +159,7 @@ jobs:
           🌏 **支持地区**: 香港🇭🇰 美国🇺🇸 日本🇯🇵 英国🇬🇧 新加坡🇸🇬 台湾🇹🇼 韩国🇰🇷 德国🇩🇪 加拿大🇨🇦 澳大利亚🇦🇺
         generate_release_notes: true
 
-    # 步骤15: 提交配置文件变更
+    # 步骤16: 提交配置文件变更
     - name: Commit and push config changes
       run: |
         git config --global user.name "github-actions[bot]"
@@ -178,12 +173,12 @@ jobs:
         git add config/*.yaml
         
         # 构建提交信息
-        commit_msg="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M') with GeoIP detection"
+        commit_msg="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M')"
         
         git commit -m "$commit_msg"
         git push origin HEAD:main
 
-    # 步骤16: 刷新 CDN 缓存
+    # 步骤17: 刷新 CDN 缓存
     - name: Purge jsDelivr Cache
       if: success()
       env:
@@ -209,7 +204,7 @@ jobs:
         done
         echo "🎉 CDN cache purge completed."
 
-    # 步骤17: 清理临时文件
+    # 步骤18: 清理临时文件
     - name: Cleanup
       if: always()
       run: |
