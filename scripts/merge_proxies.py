@@ -17,6 +17,12 @@ from core.constants import FILTER_PATTERNS, BLACKLIST_KEYWORDS
 from core.logger import setup_logger
 
 
+import re
+
+# 用于匹配和移除类似于 [ 123ms] 或 [1234ms] 的前缀
+DELAY_PREFIX_RE = re.compile(r'^\[\s*\d+ms\]\s*')
+
+
 def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -> None:
     """
     合并指定目录下的所有代理配置文件。
@@ -48,6 +54,13 @@ def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -
             for proxy in data['proxies']:
                 if not _is_valid_proxy(proxy, logger):
                     continue
+
+                # 清理可能存在的旧延迟信息前缀
+                original_name = proxy.get('name', '')
+                cleaned_name = DELAY_PREFIX_RE.sub('', original_name).strip()
+                if original_name != cleaned_name:
+                    proxy['name'] = cleaned_name
+                    logger.debug(f"清理节点 '{original_name}' 的延迟前缀 -> '{cleaned_name}'")
                 
                 # 处理端口格式
                 if not _fix_port_format(proxy, logger):

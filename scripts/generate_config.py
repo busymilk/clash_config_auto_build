@@ -123,16 +123,28 @@ class ConfigGenerator:
             output_path = config_info.get("output")
             template_name = config_info.get("template")
             
-            # 根据地区过滤器筛选节点
+            # 1. 根据地区过滤器筛选节点 (在原始名称上进行)
             filtered_proxies = self.filter_nodes_by_region(all_nodes, filter_key)
             
             if not filtered_proxies and filter_key:
                 self.logger.warning(f"地区 '{filter_key}' 没有可用节点，但仍会生成一个空的配置文件。")
+
+            # 2. 准备用于生成的节点列表 (深拷贝以避免修改原始列表)
+            proxies_for_generation = yaml.safe_load(yaml.safe_dump(filtered_proxies))
+
+            # 3. 对即将生成的列表进行重命名
+            for node in proxies_for_generation:
+                delay = node.get('_delay')
+                if delay is not None:
+                    delay_str = f"[{delay}ms]"
+                    node['name'] = f"{delay_str} {node['name']}"
+                    # 清理临时字段
+                    del node['_delay']
             
-            # 生成配置文件
+            # 4. 生成配置文件
             self.generate_config_from_template(
                 base_config=self.templates[template_name],
-                proxies_list=filtered_proxies,
+                proxies_list=proxies_for_generation,
                 output_path=output_path
             )
             generated_files.append(output_path)
@@ -160,20 +172,11 @@ class ConfigGenerator:
                 self.logger.error("没有可用的节点，退出程序")
                 sys.exit(1)
 
-            # 1. 按延迟排序
+            # 1. 按延迟对所有节点进行全局排序
             all_nodes.sort(key=lambda p: p.get('_delay', float('inf')))
             self.logger.info("所有健康节点已按延迟升序排序。")
 
-            # 2. 重命名节点以包含延迟信息
-            for node in all_nodes:
-                delay = node.get('_delay')
-                if delay is not None:
-                    # 格式化延迟，使其右对齐，总宽度为4个字符
-                    delay_str = f"[{str(delay).rjust(4)}ms]"
-                    node['name'] = f"{delay_str} {node['name']}"
-            self.logger.info("所有健康节点已按延迟信息重命名。")
-
-            # 3. 清理临时延迟字段并生成配置
+            # 2. 生成所有配置文件 (重命名逻辑已移入此函数)
             generated_files = self.generate_all_configs(all_nodes)
             
             self.output_to_github_actions(generated_files)
