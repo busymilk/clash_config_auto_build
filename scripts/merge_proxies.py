@@ -10,7 +10,7 @@ import sys
 import os
 import re
 import ipaddress
-from dns import resolver, edns, query, message
+from dns import resolver, edns
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 添加项目根目录到Python路径
@@ -21,13 +21,18 @@ from core.logger import setup_logger
 
 DELAY_PREFIX_RE = re.compile(r'^\[\s*\d+ms\]\s*')
 
-def _init_dns_servers(logger):
+def _init_resolver(logger):
+    """初始化DNS解析器"""
+    res = resolver.Resolver()
     if DnsConfig.CUSTOM_DNS_SERVERS:
-        logger.info(f"使用自定义DNS服务器: {DnsConfig.CUSTOM_DNS_SERVERS}")
-        return DnsConfig.CUSTOM_DNS_SERVERS
-    return ['8.8.8.8', '1.1.1.1']
+        res.nameservers = DnsConfig.CUSTOM_DNS_SERVERS
+        logger.info(f"使用自定义DNS服务器: {res.nameservers}")
+    res.timeout = 3.0
+    res.lifetime = 3.0
+    return res
 
-def _resolve_domain(domain_info: tuple, nameservers: list, logger):
+def _resolve_domain(domain_info: tuple, resolver_instance, logger):
+    """使用高级解析器解析域名，自动处理CNAME。"""
     domain, proxy = domain_info
     ecs_option = None
     if DnsConfig.ECS_IP:
@@ -38,35 +43,31 @@ def _resolve_domain(domain_info: tuple, nameservers: list, logger):
         except ValueError:
             pass # 日志在主函数中只记录一次
 
-    def do_query(qname, rdtype):
-        q = message.make_query(qname, rdtype, use_edns=ecs_option is not None, options=[ecs_option] if ecs_option else None)
-        for ns in nameservers:
-            try:
-                r = query.udp(q, ns, timeout=2.0)
-                if r.answer:
-                    return r.answer[0][0].to_text()
-            except Exception:
-                continue
+    try:
+        # 优先解析 AAAA (IPv6)
+        answers = resolver_instance.resolve(domain, 'AAAA', ednsoptions=[ecs_option] if ecs_option else None)
+        ip = str(answers[0])
+        logger.info(f"成功将域名 '{domain}' 解析为 IPv6: {ip}")
+        proxy['server'] = ip
+        return proxy
+    except (resolver.NoAnswer, resolver.NXDOMAIN, resolver.Timeout):
+        try:
+            # 如果没有IPv6记录，则尝试解析 A (IPv4)
+            answers = resolver_instance.resolve(domain, 'A', ednsoptions=[ecs_option] if ecs_option else None)
+            ip = str(answers[0])
+            logger.info(f"成功将域名 '{domain}' 解析为 IPv4: {ip}")
+            proxy['server'] = ip
+            return proxy
+        except (resolver.NoAnswer, resolver.NXDOMAIN, resolver.Timeout):
+            logger.warning(f"无法将域名 '{domain}' 解析为 IPv4 或 IPv6，节点 '{proxy.get('name')}' 将被丢弃。")
+            return None
+    except Exception as e:
+        logger.error(f"解析域名 '{domain}' 时发生未知错误: {e}")
         return None
-
-    ipv6 = do_query(domain, 'AAAA')
-    if ipv6:
-        logger.info(f"成功将域名 '{domain}' 解析为 IPv6: {ipv6}")
-        proxy['server'] = ipv6
-        return proxy
-
-    ipv4 = do_query(domain, 'A')
-    if ipv4:
-        logger.info(f"成功将域名 '{domain}' 解析为 IPv4: {ipv4}")
-        proxy['server'] = ipv4
-        return proxy
-
-    logger.warning(f"无法解析域名 '{domain}'，节点 '{proxy.get('name')}' 将被丢弃。")
-    return None
 
 def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -> None:
     logger = setup_logger("merge_proxies")
-    dns_servers = _init_dns_servers(logger)
+    resolver_instance = _init_resolver(logger)
     
     all_proxies, ip_proxies, domain_proxies = [], [], []
     seen_identifiers = set()
@@ -102,12 +103,13 @@ def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -
             domain_proxies.append(proxy)
 
     logger.info(f"待解析域名共 {len(domain_proxies)} 个，开始并发解析...")
-    if DnsConfig.ECS_IP and not any(c for c in ['ip_address'] if hasattr(ipaddress, c)):
-         logger.warning(f"无效的ECS IP地址: '{DnsConfig.ECS_IP}'，已禁用ECS功能。")
+    if DnsConfig.ECS_IP:
+        try: ipaddress.ip_address(DnsConfig.ECS_IP)
+        except ValueError: logger.warning(f"无效的ECS IP地址: '{DnsConfig.ECS_IP}'，已禁用ECS功能。")
 
     resolved_proxies = []
     with ThreadPoolExecutor(max_workers=100) as executor:
-        future_to_domain = {executor.submit(_resolve_domain, (p.get('server_url'), p), dns_servers, logger): p for p in domain_proxies}
+        future_to_domain = {executor.submit(_resolve_domain, (p.get('server_url'), p), resolver_instance, logger): p for p in domain_proxies}
         for future in as_completed(future_to_domain):
             result = future.result()
             if result:
