@@ -64,9 +64,21 @@ CONFIGS_TO_GENERATE = [
 ]
 ```
 
-### 3. 修改代理下载目录 (可选)
+### 3. 配置DNS解析 (可选)
 
-如果你想修改存放订阅文件的目录名称（默认为 `external_proxies`），你只需要修改 `.github/workflows/clash-config.yml` 文件顶部 `env` 部分的 `PROXY_DIR` 变量即可。整个流程会自动适应这个新名称。
+本项目允许你精细化控制域名解析的行为，以获取最优的CDN节点IP。所有相关配置都在 `core/constants.py` 文件中的 `DnsConfig` 类里：
+
+```python
+# core/constants.py
+
+class DnsConfig:
+    # 自定义DNS服务器列表。如果为空列表，则使用系统默认配置。
+    CUSTOM_DNS_SERVERS = ['8.8.8.8', '1.1.1.1']
+
+    # 用于 EDNS 客户端子网 (ECS) 的IP地址。留空字符串则禁用ECS。
+    # 这可以模拟从指定地区发起DNS查询，以获得地理位置更优的IP。
+    ECS_IP = '114.114.114.114'
+```
 
 ### 4. 添加订阅链接
 

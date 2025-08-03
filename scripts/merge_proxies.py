@@ -11,35 +11,49 @@ import sys
 import os
 import re
 import ipaddress
-import dns.resolver
+from dns import resolver, edns
 
 # 添加项目根目录到Python路径
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from core.constants import FILTER_PATTERNS, BLACKLIST_KEYWORDS
+from core.constants import FILTER_PATTERNS, BLACKLIST_KEYWORDS, DnsConfig
 from core.logger import setup_logger
 
 # 用于匹配和移除类似于 [ 123ms] 或 [1234ms] 的前缀
 DELAY_PREFIX_RE = re.compile(r'^\[\s*\d+ms\]\s*')
 
-# 配置DNS解析器
-DNS_RESOLVER = dns.resolver.Resolver()
-DNS_RESOLVER.nameservers = ['8.8.8.8', '1.1.1.1'] # 使用公共DNS
-DNS_RESOLVER.timeout = 3.0
-DNS_RESOLVER.lifetime = 3.0
+def _init_resolver(logger):
+    """初始化DNS解析器"""
+    res = resolver.Resolver()
+    if DnsConfig.CUSTOM_DNS_SERVERS:
+        res.nameservers = DnsConfig.CUSTOM_DNS_SERVERS
+        logger.info(f"使用自定义DNS服务器: {res.nameservers}")
+    res.timeout = 3.0
+    res.lifetime = 3.0
+    return res
 
-def _resolve_domain_to_ip(domain: str, logger) -> str | None:
+def _resolve_domain_to_ip(domain: str, resolver_instance, logger) -> str | None:
     """使用指定的DNS服务器将域名解析为IP地址，优先返回IPv6。"""
-    try:
-        # 优先解析 AAAA (IPv6)
-        answers = DNS_RESOLVER.resolve(domain, 'AAAA')
-        return str(answers[0])
-    except (dns.resolver.NoAnswer, dns.resolver.NXDOMAIN, dns.exception.Timeout):
+    ecs_option = None
+    if DnsConfig.ECS_IP:
         try:
-            # 如果没有IPv6记录，则尝试解析 A (IPv4)
-            answers = DNS_RESOLVER.resolve(domain, 'A')
+            ecs_ip_obj = ipaddress.ip_address(DnsConfig.ECS_IP)
+            prefix = 24 if ecs_ip_obj.version == 4 else 56
+            ecs_option = edns.ECSOption(ecs_ip_obj.exploded, prefix)
+            logger.debug(f"为域名 '{domain}' 的解析启用ECS，IP: {DnsConfig.ECS_IP}")
+        except ValueError:
+            logger.warning(f"无效的ECS IP地址: '{DnsConfig.ECS_IP}'，已禁用ECS功能。")
+
+    use_ecs = [ecs_option] if ecs_option else None
+
+    try:
+        answers = resolver_instance.resolve(domain, 'AAAA', use_edns=use_ecs)
+        return str(answers[0])
+    except (resolver.NoAnswer, resolver.NXDOMAIN, resolver.Timeout):
+        try:
+            answers = resolver_instance.resolve(domain, 'A', use_edns=use_ecs)
             return str(answers[0])
-        except (dns.resolver.NoAnswer, dns.resolver.NXDOMAIN, dns.exception.Timeout) as e:
+        except (resolver.NoAnswer, resolver.NXDOMAIN, resolver.Timeout) as e:
             logger.warning(f"无法将域名 '{domain}' 解析为 IPv4 或 IPv6: {e}")
             return None
     except Exception as e:
@@ -49,10 +63,9 @@ def _resolve_domain_to_ip(domain: str, logger) -> str | None:
 def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -> None:
     """合并、解析并过滤指定目录下的所有代理配置文件。"""
     logger = setup_logger("merge_proxies")
+    resolver_instance = _init_resolver(logger)
     
-    merged_proxies = []
-    seen_identifiers = set()
-    seen_names = set()
+    merged_proxies, seen_identifiers, seen_names = [], set(), set()
 
     proxy_files = glob.glob(f"{proxies_dir}/*.*")
     logger.info(f"发现 {len(proxy_files)} 个代理文件，准备开始处理...")
@@ -70,43 +83,34 @@ def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -
                 if not _is_valid_proxy(proxy, logger):
                     continue
 
-                # 1. 清理节点名称中的旧延迟信息
                 original_name = proxy.get('name', '')
-                cleaned_name = DELAY_PREFIX_RE.sub('', original_name).strip()
-                if original_name != cleaned_name:
-                    proxy['name'] = cleaned_name
+                proxy['name'] = DELAY_PREFIX_RE.sub('', original_name).strip()
                 
-                # 2. 修复端口格式
                 if not _fix_port_format(proxy, logger):
                     continue
 
-                # 3. 解析域名 (如果 server 字段是域名)
                 server_address = proxy.get('server', '')
                 try:
                     ipaddress.ip_address(server_address)
                 except ValueError:
-                    # 不是IP地址，是域名
                     if 'server_url' not in proxy:
-                        proxy['server_url'] = server_address # 标记原始域名
+                        proxy['server_url'] = server_address
                     
-                    resolved_ip = _resolve_domain_to_ip(server_address, logger)
+                    resolved_ip = _resolve_domain_to_ip(server_address, resolver_instance, logger)
                     if resolved_ip:
                         proxy['server'] = resolved_ip
                     else:
                         logger.warning(f"因域名解析失败，跳过节点: {proxy.get('name')}")
-                        continue # 解析失败，抛弃此节点
+                        continue
 
-                # 4. 生成唯一标识符 (核心去重逻辑)
                 identifier = _generate_identifier(proxy)
                 if not identifier or identifier in seen_identifiers:
                     continue
 
-                # 5. 处理重名并应用过滤器
                 proxy_name = _handle_duplicate_name(proxy, seen_names, logger)
                 if not _apply_filters(proxy_name, name_filter, logger):
                     continue
                 
-                # 6. 添加到结果集
                 seen_identifiers.add(identifier)
                 seen_names.add(proxy_name)
                 merged_proxies.append(proxy)
@@ -119,12 +123,9 @@ def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -
     _write_output_file(merged_proxies, output_file, logger)
 
 def _is_valid_proxy(proxy: dict, logger) -> bool:
-    """检查代理配置是否有效"""
-    required_fields = ['name', 'server', 'port', 'type']
-    return all(proxy.get(field) for field in required_fields)
+    return all(proxy.get(field) for field in ['name', 'server', 'port', 'type'])
 
 def _fix_port_format(proxy: dict, logger) -> bool:
-    """修复端口格式，确保为整数"""
     try:
         proxy['port'] = int(proxy.get('port'))
         return True
@@ -133,16 +134,12 @@ def _fix_port_format(proxy: dict, logger) -> bool:
         return False
 
 def _generate_identifier(proxy: dict) -> tuple:
-    """根据 server_url (如果存在) 或 server 生成唯一标识符"""
-    # 您的核心思想：优先使用原始域名作为唯一标识的一部分
     server_key = proxy.get('server_url', proxy.get('server'))
     return (server_key, proxy.get('type'), proxy.get('port'))
 
 def _handle_duplicate_name(proxy: dict, seen_names: set, logger) -> str:
-    """处理重复的代理名称"""
     original_name = proxy.get('name')
-    name = original_name
-    counter = 2
+    name, counter = original_name, 2
     while name in seen_names:
         name = f"{original_name} #{counter}"
         counter += 1
@@ -151,16 +148,13 @@ def _handle_duplicate_name(proxy: dict, seen_names: set, logger) -> str:
     return name
 
 def _apply_filters(proxy_name: str, name_filter: str, logger) -> bool:
-    """应用黑名单和地区过滤器"""
     if any(keyword in proxy_name for keyword in BLACKLIST_KEYWORDS):
         return False
-    if name_filter and name_filter in FILTER_PATTERNS:
-        if not FILTER_PATTERNS[name_filter].search(proxy_name):
-            return False
+    if name_filter and name_filter in FILTER_PATTERNS and not FILTER_PATTERNS[name_filter].search(proxy_name):
+        return False
     return True
 
 def _write_output_file(merged_proxies: list, output_file: str, logger) -> None:
-    """写入合并结果到文件"""
     try:
         with open(output_file, 'w', encoding="utf-8") as f:
             yaml.dump({'proxies': merged_proxies}, f, default_flow_style=False, allow_unicode=True)
