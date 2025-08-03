@@ -99,11 +99,6 @@ jobs:
     - name: Test Node Latency
       id: test_nodes
       run: |
-        echo "开始测试节点延迟..."
-        echo "配置信息:"
-        echo "  - 延迟限制: ${{ env.DELAY_LIMIT }}ms"
-        echo "  - 最大并发数: ${{ env.MAX_WORKERS }}"
-        
         # 构建命令参数
         cmd_args="--input-file ${{ steps.validate_nodes.outputs.filtered_nodes_file }}"
         cmd_args="$cmd_args --output healthy_nodes_list.yaml"
@@ -190,7 +185,7 @@ jobs:
           echo "Purging CDN cache for: $file"
           
           for ((i=1; i<=3; i++)); do
-            http_code=$(curl -s -o /dev/null -w "%{\http_code}" "$purge_url")
+            http_code=$(curl -s -o /dev/null -w '%{http_code}' "$purge_url")
             if [ $http_code -eq 200 ]; then
               echo "  ✅ Success (Attempt $i)"
               break
