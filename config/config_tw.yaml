@@ -49,16 +49,14 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- _delay: 548
-  cipher: aes-256-cfb
-  name: '[ 548ms] 🇹🇼 台湾 05 #2'
+- cipher: aes-256-cfb
+  name: '[577ms] 🇹🇼 台湾 05 #2'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
-- _delay: 589
-  name: '[ 589ms] 🇹🇼 台湾 09'
+- name: '[610ms] 🇹🇼 台湾 09'
   network: ws
   port: 43
   server: 61.220.128.226
@@ -71,8 +69,7 @@ proxies:
     headers:
       Host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- _delay: 883
-  name: '[ 883ms] 🇹🇼 台湾 02'
+- name: '[752ms] 🇹🇼 台湾 02'
   network: ws
   password: Aimer
   port: 10240
@@ -85,8 +82,7 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- _delay: 1022
-  name: '[1022ms] 🇹🇼 台湾|@ripaojiedian'
+- name: '[999ms] 🇹🇼 台湾|@ripaojiedian'
   password: test.+
   port: 30443
   server: cmhkb.ssv.vc
@@ -95,10 +91,15 @@ proxies:
   tls: true
   type: http
   username: test
-- _delay: 2694
-  alterId: 0
+- cipher: chacha20-ietf-poly1305
+  name: '[1605ms] 🇨🇳TW-223.165.4.173-5283 | 2.456MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 223.165.4.173
+  type: ss
+- alterId: 0
   cipher: auto
-  name: '[2694ms] 🇹🇼TW-45.121.48.174-079'
+  name: '[3662ms] 🇹🇼TW-45.121.48.174-079'
   network: tcp
   port: 20788
   server: 45.121.48.174

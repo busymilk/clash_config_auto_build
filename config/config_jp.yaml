@@ -49,8 +49,7 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- _delay: 45
-  name: '[  45ms] 🇯🇵_日本_4'
+- name: '[84ms] 🇯🇵_日本_4'
   network: ws
   port: 2083
   server: 103.116.7.103
@@ -64,24 +63,21 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- _delay: 358
-  cipher: aes-128-gcm
-  name: '[ 358ms] 🇯🇵JP-149.22.87.241-0279 | 33.213MB'
+- cipher: aes-128-gcm
+  name: '[367ms] 🇯🇵JP-149.22.87.241-0305 | 4.744MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-- _delay: 359
-  cipher: aes-128-gcm
-  name: '[ 359ms] 🇯🇵JP-149.22.87.204-0280 | 33.376MB'
+- cipher: aes-128-gcm
+  name: '[367ms] 🇯🇵JP-149.22.87.204-0302 | 4.599MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
-- _delay: 473
-  alterId: 0
+- alterId: 0
   cipher: auto
-  name: '[ 473ms] 🇯🇵JP-223.135.156.179-5484 | 1.324MB'
+  name: '[491ms] 🇯🇵JP-223.135.156.179-0317 | 4.157MB'
   network: ws
   port: 20521
   server: 223.135.156.179
@@ -91,52 +87,7 @@ proxies:
   uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
   ws-opts:
     path: /
-- _delay: 512
-  name: '[ 512ms] 🇯🇵_日本_2 #2'
-  network: ws
-  port: 443
-  server: 160.16.82.82
-  servername: edga.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- _delay: 606
-  name: '[ 606ms] 🇯🇵 日本 03 #2'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 160.16.82.82
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- _delay: 630
-  name: '[ 630ms] 🇯🇵_日本_1'
-  network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
-- _delay: 647
-  name: '[ 647ms] 🇯🇵 日本 28'
+- name: '[657ms] 🇯🇵 日本 28'
   network: ws
   password: Aimer
   port: 443
@@ -149,23 +100,46 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- _delay: 678
-  cipher: aes-256-gcm
-  name: '[ 678ms] 🇯🇵 日本 55'
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
+- name: '[657ms] 🇯🇵 日本 04 #2'
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 47.79.85.208
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
   udp: true
-- _delay: 697
-  name: '[ 697ms] 🇯🇵_日本_2'
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[668ms] 🇯🇵 日本 18'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 8.209.224.148
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[676ms] 🇯🇵 日本 03 #2'
+  network: ws
+  password: Aimer
+  port: 443
+  server: 160.16.82.82
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[680ms] 🇯🇵_日本_2'
   network: ws
   port: 7000
   server: 158.101.139.31
@@ -179,24 +153,9 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- _delay: 706
-  name: '[ 706ms] 🇯🇵 日本 04 #2'
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 47.79.85.208
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- _delay: 801
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   delay: 1273
-  name: '[ 801ms] 日本 - 东京 - Akamai Technologies, Inc. - 1'
+  name: '[720ms] 日本 - 东京 - Akamai Technologies, Inc. - 1'
   password: 7ZkPnMNGly
   port: 1935
   server: x1-japan-linode-v2-pwlzp.devefun.org
@@ -204,22 +163,35 @@ proxies:
   sni: x1-japan-linode-v2-pwlzp.devefun.org
   type: trojan
   udp: true
-- _delay: 804
-  name: '[ 804ms] 🇯🇵 日本 22'
+- name: '[727ms] 🇯🇵_日本_2 #2'
   network: ws
-  password: Aimer
-  port: 31337
-  server: 59.16.161.150
+  port: 443
+  server: 160.16.82.82
+  servername: edga.aimercc.dpdns.org
   skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: epga.aimercc.dpdns.org
+      host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- _delay: 830
-  name: '[ 830ms] 🇯🇵 日本 30'
+- cipher: aes-256-gcm
+  name: '[752ms] 🇯🇵 日本 55'
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /bezradrqccl
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  type: ss
+  udp: true
+- name: '[859ms] 🇯🇵 日本 30'
   network: ws
   password: Aimer
   port: 22345
@@ -232,23 +204,21 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- _delay: 1077
-  name: '[1077ms] 🇯🇵 日本 47'
+- name: '[896ms] 🇯🇵 日本 22'
   network: ws
-  port: 50000
-  server: tp50000.kr.proxyip.fgfw.eu.org
-  servername: test.saas.cname.123153.xyz
-  tls: true
-  type: vless
+  password: Aimer
+  port: 31337
+  server: 59.16.161.150
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
   udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: test.saas.cname.123153.xyz
-    path: /snippets
-- _delay: 2153
-  client-fingerprint: chrome
-  name: '[2153ms] 🇯🇵 日本 32'
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: chrome
+  name: '[1092ms] 🇯🇵 日本 32'
   network: ws
   port: 18765
   server: 14.36.181.53
@@ -261,6 +231,19 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: /telegram🇨🇳@wangcai2/?ed=2560
+- name: '[1293ms] 🇯🇵 日本 47'
+  network: ws
+  port: 50000
+  server: tp50000.kr.proxyip.fgfw.eu.org
+  servername: test.saas.cname.123153.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: test.saas.cname.123153.xyz
+    path: /snippets
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
