@@ -56,6 +56,19 @@ proxies:
   port: 37708
   server: 188.166.220.70
   type: ss
+- name: 🇸🇬 新加坡 19
+  network: ws
+  port: 443
+  server: 108.162.194.231
+  servername: rs-sg4.lzjnb.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
+  ws-opts:
+    headers:
+      Host: rs-sg4.lzjnb.shop
+    path: /lzj
 - alterId: 0
   cipher: ''
   encryption: none
@@ -200,19 +213,6 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- name: 🇸🇬 新加坡 02
-  network: ws
-  port: 443
-  server: 108.162.194.231
-  servername: rs-sg4.lzjnb.shop
-  tls: true
-  type: vless
-  udp: true
-  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
-  ws-opts:
-    headers:
-      Host: rs-sg4.lzjnb.shop
-    path: /lzj
 - name: 🇸🇬 新加坡 12
   network: ws
   password: Aimer

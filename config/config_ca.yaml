@@ -49,6 +49,50 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0216 | 45.003MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0219 | 39.796MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0300 | 30.131MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0292 | 30.088MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: ca225.vpnbook.com
+  type: ss
+- cipher: aes-256-cfb
+  name: SSR-加拿大-79.127.233.170:989
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦_CA_加拿大->🇺🇸_US_美国
+  network: ws
+  port: 8880
+  server: 205.233.181.241
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - name: 🇨🇦_加拿大_1
   network: ws
   port: 443
@@ -77,17 +121,6 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-029
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
 - alpn:
   - h3
   auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
@@ -99,30 +132,6 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0216 | 45.003MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0219 | 39.796MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0300 | 30.131MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0292 | 30.088MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇦 加拿大 31

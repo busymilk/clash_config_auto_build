@@ -50,6 +50,42 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0279 | 33.213MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0280 | 33.376MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵JP-223.135.156.179-5484 | 1.324MB
+  network: ws
+  port: 20521
+  server: 223.135.156.179
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵_JP_日本->🇺🇸_US_美国
+  network: ws
+  port: 8880
+  server: 103.116.7.241
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - client-fingerprint: chrome
   delay: 1273
   name: 日本 - 东京 - Akamai Technologies, Inc. - 1
@@ -75,6 +111,20 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 🇯🇵 日本 32
+  network: ws
+  port: 18765
+  server: 14.36.181.53
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /telegram🇨🇳@wangcai2/?ed=2560
 - name: 🇯🇵_日本_4
   network: ws
   port: 2083
@@ -89,6 +139,19 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇯🇵 日本 47
+  network: ws
+  port: 50000
+  server: tp50000.kr.proxyip.fgfw.eu.org
+  servername: test.saas.cname.123153.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: test.saas.cname.123153.xyz
+    path: /snippets
 - name: 🇯🇵_日本_2
   network: ws
   port: 7000
@@ -116,30 +179,6 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0280 | 33.376MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0279 | 33.213MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵JP-223.135.156.179-5484 | 1.324MB
-  network: ws
-  port: 20521
-  server: 223.135.156.179
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
-  ws-opts:
-    path: /
 - name: '🇯🇵_日本_2 #2'
   network: ws
   port: 443
@@ -154,7 +193,7 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵 日本 04
+- name: '🇯🇵 日本 04 #2'
   network: ws
   password: Aimer
   port: 8443
@@ -207,20 +246,6 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  name: 🇯🇵 日本 14
-  network: ws
-  port: 18765
-  server: 14.36.181.53
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /telegram🇨🇳@wangcai2/?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
