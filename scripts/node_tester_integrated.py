@@ -117,8 +117,8 @@ class NodeTester:
             self.logger.info("mihomo 进程已停止")
             self.mihomo_process = None
 
-    def check_proxy_delay(self, proxy: dict) -> dict:
-        """测试单个代理的延迟"""
+    def check_proxy_delay(self, proxy: dict) -> tuple:
+        """测试单个代理的延迟，返回 (proxy, delay) 元组或 None"""
         proxy_name = proxy.get("name")
         if not proxy_name:
             return None
@@ -140,7 +140,7 @@ class NodeTester:
             
             if 0 < delay <= delay_limit:
                 self.logger.info(f"代理 '{proxy_name}' 延迟测试通过: {delay}ms")
-                return proxy
+                return proxy, delay
             else:
                 self.logger.debug(f"代理 '{proxy_name}' 延迟测试失败: {delay}ms")
                 return None
@@ -153,7 +153,7 @@ class NodeTester:
         """并发测试所有代理节点的延迟"""
         self.logger.info(f"开始延迟测试 {len(proxies_to_test)} 个代理节点...")
         
-        healthy_proxies = []
+        healthy_proxies_with_delay = []
         with ThreadPoolExecutor(max_workers=self.args.max_workers) as executor:
             future_to_proxy = {executor.submit(self.check_proxy_delay, proxy): proxy for proxy in proxies_to_test}
             
@@ -163,19 +163,24 @@ class NodeTester:
                 completed_count += 1
                 result = future.result()
                 if result:
-                    healthy_proxies.append(result)
+                    healthy_proxies_with_delay.append(result)
                 
                 if completed_count % 100 == 0 or completed_count == total_count:
-                    self.logger.info(f"延迟测试进度: {completed_count}/{total_count}, 健康节点: {len(healthy_proxies)}")
+                    self.logger.info(f"延迟测试进度: {completed_count}/{total_count}, 健康节点: {len(healthy_proxies_with_delay)}")
         
-        self.logger.info(f"延迟测试完成！健康节点: {len(healthy_proxies)}/{total_count}")
-        return healthy_proxies
+        self.logger.info(f"延迟测试完成！健康节点: {len(healthy_proxies_with_delay)}/{total_count}")
+        return healthy_proxies_with_delay
 
-    def save_healthy_nodes(self, healthy_proxies: list, output_file: str) -> None:
-        """保存健康节点到文件"""
+    def save_healthy_nodes(self, healthy_proxies_with_delay: list, output_file: str) -> None:
+        """保存健康节点到文件，并附加延迟信息"""
+        proxies_to_save = []
+        for proxy, delay in healthy_proxies_with_delay:
+            proxy['_delay'] = delay  # 将延迟信息作为一个临时字段存入 proxy 对象
+            proxies_to_save.append(proxy)
+
         try:
             with open(output_file, 'w', encoding='utf-8') as f:
-                yaml.dump({'proxies': healthy_proxies}, f, allow_unicode=True)
+                yaml.dump({'proxies': proxies_to_save}, f, allow_unicode=True)
             self.logger.info(f"健康节点列表已保存到 {output_file}")
         except Exception as e:
             self.logger.error(f"保存健康节点失败: {e}")

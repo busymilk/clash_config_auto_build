@@ -153,20 +153,29 @@ class ConfigGenerator:
     def run(self, pre_tested_nodes_file: str = None) -> None:
         """主执行函数"""
         try:
-            # 加载模板文件
             self.load_templates()
-            
-            # 加载健康节点
             all_nodes = self.load_healthy_nodes(pre_tested_nodes_file)
-            
+
             if not all_nodes:
                 self.logger.error("没有可用的节点，退出程序")
                 sys.exit(1)
-            
-            # 生成所有配置文件
+
+            # 1. 按延迟排序
+            all_nodes.sort(key=lambda p: p.get('_delay', float('inf')))
+            self.logger.info("所有健康节点已按延迟升序排序。")
+
+            # 2. 重命名节点以包含延迟信息
+            for node in all_nodes:
+                delay = node.get('_delay')
+                if delay is not None:
+                    # 格式化延迟，使其右对齐，总宽度为4个字符
+                    delay_str = f"[{str(delay).rjust(4)}ms]"
+                    node['name'] = f"{delay_str} {node['name']}"
+            self.logger.info("所有健康节点已按延迟信息重命名。")
+
+            # 3. 清理临时延迟字段并生成配置
             generated_files = self.generate_all_configs(all_nodes)
             
-            # 输出到 GitHub Actions
             self.output_to_github_actions(generated_files)
             
             self.logger.info("🎉 所有任务已成功完成！")
