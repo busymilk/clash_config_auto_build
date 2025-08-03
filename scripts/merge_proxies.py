@@ -11,7 +11,7 @@ import sys
 import os
 import re
 import ipaddress
-from dns import resolver, edns, query
+from dns import resolver, edns, query, message
 
 # 添加项目根目录到Python路径
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -42,7 +42,7 @@ def _resolve_domain_to_ip(domain: str, nameservers: list, logger) -> str | None:
             logger.warning(f"无效的ECS IP地址: '{DnsConfig.ECS_IP}'，已禁用ECS功能。")
 
     def do_query(qname, rdtype):
-        q = dns.message.make_query(qname, rdtype, use_edns=ecs_option is not None, options=[ecs_option] if ecs_option else None)
+        q = message.make_query(qname, rdtype, use_edns=ecs_option is not None, options=[ecs_option] if ecs_option else None)
         for ns in nameservers:
             try:
                 r = query.udp(q, ns, timeout=2.0)
