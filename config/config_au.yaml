@@ -49,20 +49,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇦🇺_澳大利亚
-  network: ws
-  port: 11111
-  server: 185.248.184.34
-  servername: edga.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇦🇺_澳大利亚_5
   network: ws
   port: 443
@@ -77,6 +63,20 @@ proxies:
     headers:
       host: ax1.ylka.dpdns.org
     path: /?ed=2560
+- name: 🇦🇺_澳大利亚
+  network: ws
+  port: 11111
+  server: 185.248.184.34
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇦🇺 澳大利亚 05
   network: ws
   password: Aimer

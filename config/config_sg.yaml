@@ -55,19 +55,6 @@ proxies:
   port: 37708
   server: 188.166.220.70
   type: ss
-- name: 🇸🇬 新加坡 19
-  network: ws
-  port: 443
-  server: 108.162.194.231
-  servername: rs-sg4.lzjnb.shop
-  tls: true
-  type: vless
-  udp: true
-  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
-  ws-opts:
-    headers:
-      Host: rs-sg4.lzjnb.shop
-    path: /lzj
 - alterId: 0
   cipher: ''
   encryption: none
@@ -180,24 +167,6 @@ proxies:
   cipher: ''
   encryption: none
   flow: ''
-  name: 🇸🇬👖TG频道@stymei1丨4
-  network: ws
-  port: 8880
-  server: 156.238.18.77
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: yd.laoyoutiao.link
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
   name: 🇸🇬👖TG频道@stymei1丨22
   network: ws
   port: 8880
@@ -212,19 +181,37 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
-- name: 🇸🇬 新加坡 12
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇸🇬👖TG频道@stymei1丨4
   network: ws
-  password: Aimer
-  port: 443
-  server: 43.156.116.194
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
+  port: 8880
+  server: 156.238.18.77
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: yd.laoyoutiao.link
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed
+- name: 🇸🇬 新加坡 19
+  network: ws
+  port: 443
+  server: 108.162.194.231
+  servername: rs-sg4.lzjnb.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
+  ws-opts:
+    headers:
+      Host: rs-sg4.lzjnb.shop
+    path: /lzj
 - name: 🇸🇬 新加坡-Singapore (11a40a)
   network: ws
   password: ttfang

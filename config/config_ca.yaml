@@ -49,6 +49,18 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@0
+  network: ws
+  port: 8880
+  server: 205.233.181.241
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 - cipher: aes-256-cfb
   name: 🇨🇦CA-79.127.233.170-0216 | 45.003MB
   password: f8f7aCzcPKbsF8p3
@@ -162,6 +174,20 @@ proxies:
   type: vless
   udp: true
   uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 加拿大 20
+  network: tcp
+  port: 42557
+  reality-opts:
+    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
+    short-id: f430927d
+  server: 155.248.221.146
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
