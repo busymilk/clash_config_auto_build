@@ -37,8 +37,6 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt pysocks
-        # 下载GeoIP数据库
-        python scripts/download_geoip_db.py
 
     # 步骤4: 创建所需目录
     - name: Create directories
