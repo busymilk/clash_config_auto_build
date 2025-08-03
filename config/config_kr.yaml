@@ -49,6 +49,13 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: aes-256-cfb
+  name: 🇰🇷 韩国家宽 01
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+  udp: true
 - name: 🇰🇷_韩国_3
   network: ws
   port: 12398
@@ -119,19 +126,6 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷 韩国 15
-  network: ws
-  password: Aimer
-  port: 10911
-  server: 112.162.240.23
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-cfb
   name: 🇰🇷KR-154.90.63.177-5180 | 2.147MB
   password: f8f7aCzcPKbsF8p3
@@ -151,6 +145,19 @@ proxies:
   ws-opts:
     headers:
       host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷 韩国 15
+  network: ws
+  password: Aimer
+  port: 10911
+  server: 112.162.240.23
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: '🇰🇷_韩国_4 #2'
   network: ws
@@ -179,6 +186,13 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: aes-256-cfb
+  name: 🇰🇷 韩国 04
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
 - name: 🇰🇷 韩国 08
   network: ws
   password: Aimer
@@ -192,13 +206,6 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-cfb
-  name: 🇰🇷 韩国 04
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-  udp: true
 - name: 🇰🇷 韩国 14
   network: ws
   password: Aimer
@@ -238,19 +245,6 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '🇰🇷 韩国 01 #2'
-  network: ws
-  port: 12196
-  server: 202.150.185.128
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /
 - name: '🇰🇷 韩国 13 #2'
   network: ws
   password: Aimer
@@ -264,6 +258,19 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '🇰🇷 韩国 01 #2'
+  network: ws
+  port: 12196
+  server: 202.150.185.128
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -274,6 +281,7 @@ proxy-groups:
   - DIRECT
   type: select
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -284,6 +292,7 @@ proxy-groups:
   type: url-test
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -294,6 +303,7 @@ proxy-groups:
   type: load-balance
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -304,6 +314,7 @@ proxy-groups:
   type: load-balance
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -313,6 +324,7 @@ proxy-groups:
   type: select
   url: https://www.google.com/generate_204
 - expected-status: 404
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -323,6 +335,7 @@ proxy-groups:
   type: url-test
   url: https://googleapis.com
 - expected-status: 302
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true

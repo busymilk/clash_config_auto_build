@@ -49,20 +49,6 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 🇦🇺_澳大利亚_5
-  network: ws
-  port: 443
-  server: 119.13.79.23
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇦🇺_澳大利亚
   network: ws
   port: 11111
@@ -77,6 +63,20 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇦🇺_澳大利亚_5
+  network: ws
+  port: 443
+  server: 119.13.79.23
+  servername: ax1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ax1.ylka.dpdns.org
+    path: /?ed=2560
 - name: 🇦🇺 澳大利亚 05
   network: ws
   password: Aimer
@@ -100,6 +100,7 @@ proxy-groups:
   - DIRECT
   type: select
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -110,6 +111,7 @@ proxy-groups:
   type: url-test
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -120,6 +122,7 @@ proxy-groups:
   type: load-balance
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -130,6 +133,7 @@ proxy-groups:
   type: load-balance
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -139,6 +143,7 @@ proxy-groups:
   type: select
   url: https://www.google.com/generate_204
 - expected-status: 404
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -149,6 +154,7 @@ proxy-groups:
   type: url-test
   url: https://googleapis.com
 - expected-status: 302
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true

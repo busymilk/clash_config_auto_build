@@ -88,6 +88,7 @@ proxy-groups:
   - DIRECT
   type: select
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -98,6 +99,7 @@ proxy-groups:
   type: url-test
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -108,6 +110,7 @@ proxy-groups:
   type: load-balance
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -118,6 +121,7 @@ proxy-groups:
   type: load-balance
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -127,6 +131,7 @@ proxy-groups:
   type: select
   url: https://www.google.com/generate_204
 - expected-status: 404
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -137,6 +142,7 @@ proxy-groups:
   type: url-test
   url: https://googleapis.com
 - expected-status: 302
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true

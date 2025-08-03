@@ -49,11 +49,25 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE-91.99.153.39-7386 | 38.037MB
+  network: ws
+  port: 39130
+  server: 91.99.153.39
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 985af489-fb16-491a-813c-fdd91b6b06ee
+  ws-opts:
+    headers:
+      Host: panel.arushasoft.com
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0968 | 32.404MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
+  name: 🇩🇪DE-185.177.229.245-0296 | 18.788MB
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
   type: ss
 - alterId: 0
   cipher: auto
@@ -70,6 +84,13 @@ proxies:
     headers:
       Host: de2.v4vmess.xyz
     path: /
+- name: 🇩🇪DE-139.162.179.106-4866 | 40.699MB
+  password: 3aIMXgxQ3F
+  port: 1935
+  server: x1-germany-linode-v2-jk001.devefun.org
+  skip-cert-verify: false
+  sni: x1-germany-linode-v2-jk001.devefun.org
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇩🇪DE-171.22.31.187-013
@@ -83,12 +104,34 @@ proxies:
   ws-headers:
     Host: 171.22.31.187
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 24
+  network: ws
+  port: 443
+  server: cdnjs.com
+  servername: rayan-navy.foton.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1d173704-d5cc-4ce2-8b06-3a9a71037530
+  ws-opts:
+    headers:
+      Host: rayan-navy.foton.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 04
+  network: ws
+  port: 8443
+  server: 162.159.129.67
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - name: 🇩🇪 德国 51
   network: ws
   port: 80
@@ -115,11 +158,11 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- name: 🇩🇪_德国_4
+- name: 🇩🇪_德国_5
   network: ws
   port: 443
-  server: 91.107.251.232
-  servername: zx1.ylka.dpdns.org
+  server: 91.107.254.116
+  servername: ax1.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -127,7 +170,7 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: zx1.ylka.dpdns.org
+      host: ax1.ylka.dpdns.org
     path: /?ed=2560
 - name: 🇩🇪_德国_6
   network: ws
@@ -143,20 +186,6 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- name: 🇩🇪_德国_5
-  network: ws
-  port: 443
-  server: 91.107.254.116
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇩🇪 德国 13
   network: ws
   password: bpb-trojan
@@ -169,20 +198,6 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
-- name: 🇩🇪_德国_1
-  network: ws
-  port: 2053
-  server: 141.94.70.243
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇩🇪 德国 37
   network: ws
   port: 8880
@@ -227,19 +242,20 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 🇩🇪 德国 02
+- name: 🇩🇪_德国_1
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 162.159.129.67
+  port: 2053
+  server: 141.94.70.243
+  servername: ax1.ylka.dpdns.org
   skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+      host: ax1.ylka.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   cipher: ''
   encryption: none
@@ -258,24 +274,19 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: /Telegram🇨🇳
-- alterId: 0
-  cipher: ''
-  encryption: none
-  flow: ''
-  name: 🇩🇪👖TG频道@stymei1丨15
+- name: 🇩🇪 德国 02
   network: ws
-  port: 8880
-  server: 104.234.239.251
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 8443
+  server: 162.159.129.67
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
   ws-opts:
     headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - alterId: 0
   cipher: ''
   encryption: none
@@ -294,6 +305,24 @@ proxies:
     headers:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
+- alterId: 0
+  cipher: ''
+  encryption: none
+  flow: ''
+  name: 🇩🇪👖TG频道@stymei1丨15
+  network: ws
+  port: 8880
+  server: 104.234.239.251
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳
 - alterId: 0
   cipher: ''
   encryption: none
@@ -365,6 +394,32 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '🇩🇪 德国 04 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '🇩🇪 德国 05 #2 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -384,32 +439,36 @@ proxies:
     headers:
       Host: rayan-fg-7.mohammad-janam.filegear-sg.me
     path: /?ed=2560
-- name: '🇩🇪 德国 05 #2 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇩🇪 德国 04 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
-  skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4796 | 0.628MB
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4788 | 2.164MB
+  password: VP8ZPxQpJtZRCjfZ
+  port: 9080
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4847 | 2.313MB
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4789 | 2.17MB
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 80.92.204.106
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0293 | 14.193MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
@@ -429,42 +488,6 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4789 | 2.17MB
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4796 | 0.628MB
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4788 | 2.164MB
-  password: VP8ZPxQpJtZRCjfZ
-  port: 9080
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4847 | 2.313MB
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
-  type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0293 | 14.193MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-4786 | 2.245MB
-  password: EXN3S3eQpjE7EJu8
-  port: 9027
-  server: 80.92.204.106
-  type: ss
 - alterId: 0
   cipher: ''
   client-fingerprint: chrome
@@ -483,6 +506,12 @@ proxies:
   tls: true
   type: vless
   uuid: fa92e9cd-b5be-4e00-8fc4-4543012d1fd0
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-4786 | 2.245MB
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
+  server: 80.92.204.106
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -493,6 +522,7 @@ proxy-groups:
   - DIRECT
   type: select
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -503,6 +533,7 @@ proxy-groups:
   type: url-test
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -513,6 +544,7 @@ proxy-groups:
   type: load-balance
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -523,6 +555,7 @@ proxy-groups:
   type: load-balance
   url: https://www.google.com/generate_204
 - expected-status: 204
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -532,6 +565,7 @@ proxy-groups:
   type: select
   url: https://www.google.com/generate_204
 - expected-status: 404
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
@@ -542,6 +576,7 @@ proxy-groups:
   type: url-test
   url: https://googleapis.com
 - expected-status: 302
+  include-all: true
   include-all-proxies: true
   interval: 120
   lazy: true
