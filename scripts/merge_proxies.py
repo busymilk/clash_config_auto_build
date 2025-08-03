@@ -47,11 +47,11 @@ def _resolve_domain_to_ip(domain: str, resolver_instance, logger) -> str | None:
     use_ecs = [ecs_option] if ecs_option else None
 
     try:
-        answers = resolver_instance.resolve(domain, 'AAAA', use_edns=use_ecs)
+        answers = resolver_instance.resolve(domain, 'AAAA', ednsoptions=use_ecs)
         return str(answers[0])
     except (resolver.NoAnswer, resolver.NXDOMAIN, resolver.Timeout):
         try:
-            answers = resolver_instance.resolve(domain, 'A', use_edns=use_ecs)
+            answers = resolver_instance.resolve(domain, 'A', ednsoptions=use_ecs)
             return str(answers[0])
         except (resolver.NoAnswer, resolver.NXDOMAIN, resolver.Timeout) as e:
             logger.warning(f"无法将域名 '{domain}' 解析为 IPv4 或 IPv6: {e}")
