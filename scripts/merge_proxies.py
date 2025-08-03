@@ -11,7 +11,7 @@ import sys
 import os
 import re
 import ipaddress
-from dns import resolver, edns
+from dns import resolver, edns, query
 
 # 添加项目根目录到Python路径
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -24,15 +24,12 @@ DELAY_PREFIX_RE = re.compile(r'^\[\s*\d+ms\]\s*')
 
 def _init_resolver(logger):
     """初始化DNS解析器"""
-    res = resolver.Resolver()
+    # Resolver is not used directly for queries anymore, but can be used for config
     if DnsConfig.CUSTOM_DNS_SERVERS:
-        res.nameservers = DnsConfig.CUSTOM_DNS_SERVERS
-        logger.info(f"使用自定义DNS服务器: {res.nameservers}")
-    res.timeout = 3.0
-    res.lifetime = 3.0
-    return res
+        logger.info(f"使用自定义DNS服务器: {DnsConfig.CUSTOM_DNS_SERVERS}")
+    return DnsConfig.CUSTOM_DNS_SERVERS or ['8.8.8.8', '1.1.1.1']
 
-def _resolve_domain_to_ip(domain: str, resolver_instance, logger) -> str | None:
+def _resolve_domain_to_ip(domain: str, nameservers: list, logger) -> str | None:
     """使用指定的DNS服务器将域名解析为IP地址，优先返回IPv6。"""
     ecs_option = None
     if DnsConfig.ECS_IP:
@@ -44,21 +41,29 @@ def _resolve_domain_to_ip(domain: str, resolver_instance, logger) -> str | None:
         except ValueError:
             logger.warning(f"无效的ECS IP地址: '{DnsConfig.ECS_IP}'，已禁用ECS功能。")
 
-    use_ecs = [ecs_option] if ecs_option else None
-
-    try:
-        answers = resolver_instance.resolve(domain, 'AAAA', ednsoptions=use_ecs)
-        return str(answers[0])
-    except (resolver.NoAnswer, resolver.NXDOMAIN, resolver.Timeout):
-        try:
-            answers = resolver_instance.resolve(domain, 'A', ednsoptions=use_ecs)
-            return str(answers[0])
-        except (resolver.NoAnswer, resolver.NXDOMAIN, resolver.Timeout) as e:
-            logger.warning(f"无法将域名 '{domain}' 解析为 IPv4 或 IPv6: {e}")
-            return None
-    except Exception as e:
-        logger.error(f"解析域名 '{domain}' 时发生未知错误: {e}")
+    def do_query(qname, rdtype):
+        q = dns.message.make_query(qname, rdtype, use_edns=ecs_option is not None, options=[ecs_option] if ecs_option else None)
+        for ns in nameservers:
+            try:
+                r = query.udp(q, ns, timeout=2.0)
+                if r.answer:
+                    return r.answer[0][0].to_text()
+            except Exception as e:
+                logger.debug(f"通过 {ns} 查询 {qname} ({rdtype}) 失败: {e}")
         return None
+
+    # 优先解析 AAAA (IPv6)
+    ipv6 = do_query(domain, 'AAAA')
+    if ipv6:
+        return ipv6
+    
+    # 如果没有IPv6记录，则尝试解析 A (IPv4)
+    ipv4 = do_query(domain, 'A')
+    if ipv4:
+        return ipv4
+
+    logger.warning(f"无法将域名 '{domain}' 解析为 IPv4 或 IPv6")
+    return None
 
 def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -> None:
     """合并、解析并过滤指定目录下的所有代理配置文件。"""
