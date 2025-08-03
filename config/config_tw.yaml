@@ -1,0 +1,359 @@
+allow-lan: true
+dns:
+  default-nameserver:
+  - https://[2001:4860:4860::64]/dns-query
+  - 94.140.14.141
+  - udp://[2a10:50c0::1:ff]
+  - udp://[2a10:50c0::2:ff]
+  - 149.112.112.9
+  - 149.112.112.112
+  - udp://[2620:fe::fe]
+  - udp://[2620:fe::9]
+  direct-nameserver:
+  - https://1.12.12.12/dns-query
+  - https://223.5.5.5/dns-query
+  direct-nameserver-follow-policy: false
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - +.tvkuai.com
+  - RULE-SET,other_ssk_lan_non_ip
+  - RULE-SET,geosite_private_domains
+  - RULE-SET,geosite_connectivity_check
+  fake-ip-filter-mode: blacklist
+  fake-ip-range: 198.18.0.1/16
+  ipv6: true
+  nameserver:
+  - https://[2001:4860:4860::64]/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://1dot1dot1dot1.cloudflare-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://unfiltered.adguard-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - tls://dns.mullvad.net#proxy&ecs=39.134.187.0/24&ecs-override=true
+  - https://dns.nextdns.io/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
+  proxy-server-nameserver:
+  - https://223.5.5.5/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
+  use-system-hosts: false
+external-controller: 127.0.0.1:9090
+external-ui: ui
+external-ui-url: https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip
+find-process-mode: strict
+global-client-fingerprint: firefox
+ipv6: true
+mixed-port: 7890
+ntp:
+  enable: true
+  interval: 30
+  port: 123
+  server: time.apple.com
+  write-to-system: false
+profile:
+  store-fake-ip: true
+  store-selected: true
+proxies:
+- cipher: aes-256-cfb
+  name: '[682ms] [748ms] [423ms] [625ms] [575ms] 🇹🇼 台湾 05 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+  udp: true
+- name: '[694ms] [726ms] [711ms] [659ms] 🇹🇼 台湾 01'
+  network: ws
+  port: 443
+  server: 104.24.168.41
+  server_url: nnctwclyx.codesofun.pp.ua
+  servername: nnctw.codesofun.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b9c63ff-6789-449d-e5fd-5b83fef2b440
+  ws-opts:
+    headers:
+      Host: nnctw.codesofun.pp.ua
+    path: /2261acb5
+- name: '[757ms] [766ms] [1346ms] 🇹🇼 台湾|@ripaojiedian'
+  password: test.+
+  port: 30443
+  server: 1.170.197.70
+  server_url: cmhkb.ssv.vc
+  skip-cert-verify: false
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  username: test
+- name: '[843ms] 🇹🇼 台湾 02'
+  network: ws
+  password: Aimer
+  port: 10240
+  server: 34.81.140.124
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+proxy-groups:
+- name: ✈️ 选择代理
+  proxies:
+  - ⚡️ 自动优选
+  - ⚖️ 负载均衡-同一url同一节点
+  - ⚖️ 负载均衡-同一url不同节点
+  - 👆 手动选择
+  - DIRECT
+  type: select
+- expected-status: 204
+  include-all: true
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: ⚡️ 自动优选
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://www.google.com/generate_204
+- expected-status: 204
+  include-all: true
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: ⚖️ 负载均衡-同一url同一节点
+  strategy: consistent-hashing
+  timeout: 3000
+  type: load-balance
+  url: https://www.google.com/generate_204
+- expected-status: 204
+  include-all: true
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: ⚖️ 负载均衡-同一url不同节点
+  strategy: round-robin
+  timeout: 3000
+  type: load-balance
+  url: https://www.google.com/generate_204
+- expected-status: 204
+  include-all: true
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: 👆 手动选择
+  timeout: 3000
+  type: select
+  url: https://www.google.com/generate_204
+- expected-status: 404
+  include-all: true
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: GoogleApi
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://googleapis.com
+- expected-status: 302
+  include-all: true
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: Telegram
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://api.telegram.org
+rule-providers:
+  geoip_cn_ip:
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/geoip_cn_ip.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_cn.txt
+  geoip_lan_ip:
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/geoip_lan_ip.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_private.txt
+  geoip_telegram_ip:
+    behavior: ipcidr
+    format: text
+    interval: 86400
+    path: ./ruleset/geoip_telegram.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/geoip-rules-generated/geoip_telegram.txt
+  geosite_!cn:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_!cn.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/geolocation-!cn.txt
+  geosite_@!cn_domains:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_@!cn_domains.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_!cn.txt
+  geosite_@ads:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_@ads.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_ads.txt
+  geosite_@cn_domains:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_@cn_domains.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/collect_tag_cn.txt
+  geosite_apple:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_apple.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/apple.txt
+  geosite_bing:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_bing.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/bing.txt
+  geosite_cn:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_cn.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/cn.txt
+  geosite_connectivity_check:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_connectivity_check.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/connectivity-check.txt
+  geosite_google:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_google.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/google.txt
+  geosite_private_domains:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_private_domains.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/private.txt
+  geosite_telegram:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/geosite_telegram.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  other_direct_applications:
+    behavior: classical
+    interval: 86400
+    path: ./ruleset/other_direct_applications.yaml
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+  other_ssk_global_non_ip:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./sukkaw_ruleset/ssk_global_non_ip.txt
+    type: http
+    url: https://ruleset.skk.moe/Clash/non_ip/global.txt
+  other_ssk_lan_ip:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./sukkaw_ruleset/ssk_lan_ip.txt
+    type: http
+    url: https://ruleset.skk.moe/Clash/ip/lan.txt
+  other_ssk_lan_non_ip:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./sukkaw_ruleset/ssk_lan_non_ip.txt
+    type: http
+    url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
+rules:
+- DOMAIN,time.apple.com,DIRECT
+- DOMAIN,cdn.jsdelivr.net,DIRECT
+- DOMAIN,a.ppconverter.eu.org,DIRECT
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- DOMAIN-SUFFIX,ghproxy.com,DIRECT
+- DOMAIN-SUFFIX,facefusion.io,✈️ 选择代理
+- DOMAIN-SUFFIX,anaconda.com,✈️ 选择代理
+- DOMAIN-SUFFIX,modelscope.cn,DIRECT
+- DOMAIN-SUFFIX,akfamily.xyz,DIRECT
+- DOMAIN,shared.cdn.queniuqe.com,DIRECT
+- DOMAIN-SUFFIX,1fichier.com,DIRECT
+- PROCESS-NAME,Telegram,Telegram
+- RULE-SET,other_direct_applications,DIRECT
+- RULE-SET,other_ssk_lan_non_ip,DIRECT
+- RULE-SET,geosite_private_domains,DIRECT
+- RULE-SET,geosite_connectivity_check,DIRECT
+- RULE-SET,geosite_@ads,REJECT
+- DOMAIN-KEYWORD,googleapis,GoogleApi
+- RULE-SET,geosite_apple,DIRECT
+- RULE-SET,geosite_bing,✈️ 选择代理
+- RULE-SET,geosite_google,✈️ 选择代理
+- RULE-SET,geosite_telegram,Telegram
+- RULE-SET,geosite_@!cn_domains,✈️ 选择代理
+- RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
+- RULE-SET,geosite_@cn_domains,DIRECT
+- RULE-SET,geosite_!cn,✈️ 选择代理
+- RULE-SET,geosite_cn,DIRECT
+- RULE-SET,geoip_lan_ip,DIRECT
+- RULE-SET,other_ssk_lan_ip,DIRECT
+- RULE-SET,geoip_telegram_ip,Telegram
+- RULE-SET,geoip_cn_ip,DIRECT
+- MATCH,✈️ 选择代理
+sniffer:
+  enable: true
+  skip-domain:
+  - Mijia Cloud
+  - +.push.apple.com
+  sniff:
+    HTTP:
+      override-destination: true
+      ports:
+      - 80
+      - 8080-8880
+    QUIC:
+      ports:
+      - 443
+      - 8443
+    TLS:
+      ports:
+      - 443
+      - 8443
+tcp-concurrent: true
+tun:
+  auto-detect-interface: true
+  auto-redirect: true
+  auto-route: true
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  enable: false
+  stack: gvisor
+unified-delay: true
