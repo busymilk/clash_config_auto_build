@@ -19,53 +19,70 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from core.constants import FILTER_PATTERNS, BLACKLIST_KEYWORDS, DnsConfig
 from core.logger import setup_logger
 
-DELAY_PREFIX_RE = re.compile(r'^\[\s*\d+ms\]\s*')
+DELAY_PREFIX_RE = re.compile(r'^[\s*\d+ms]\s*')
 
 def _resolve_domain_with_q(domain_info: tuple, logger):
-    """使用 q 工具解析域名，自动处理CNAME，优先IPv6。"""
-    domain, proxy = domain_info
-    
+    """使用 q 工具解析域名，手动处理CNAME，优先IPv6。"""
+    original_domain, proxy = domain_info
+    domain_to_query = original_domain
+
     dns_servers = DnsConfig.CUSTOM_DNS_SERVERS or ['8.8.8.8', '1.1.1.1']
-    dns_server_str = f"@{dns_servers[0]}" # q 工具一次似乎只接受一个DNS服务器
+    dns_server_str = f"@{dns_servers[0]}"
 
     ecs_ip_str = ""
     if DnsConfig.ECS_IP:
         try:
             ecs_ip_obj = ipaddress.ip_address(DnsConfig.ECS_IP)
             prefix = 24 if ecs_ip_obj.version == 4 else 56
-            ecs_ip_str = f"--ecs {ecs_ip_obj.exploded}/{prefix}"
+            ecs_ip_str = f"--subnet={ecs_ip_obj.exploded}/{prefix}"
         except ValueError:
             logger.warning(f"无效的ECS IP地址: '{DnsConfig.ECS_IP}'，已禁用ECS功能。")
 
+    # 1. 手动处理 CNAME
+    cname_cmd = f"q CNAME {original_domain} {dns_server_str} {ecs_ip_str} --one"
+    try:
+        cname_result = subprocess.run(cname_cmd, shell=True, capture_output=True, text=True, timeout=5)
+        if cname_result.returncode == 0 and cname_result.stdout:
+            # q 工具返回的cname末尾有个点，需要移除
+            new_domain = cname_result.stdout.strip().rstrip('.')
+            if new_domain != original_domain:
+                logger.info(f"域名 '{original_domain}' 的 CNAME 是 '{new_domain}'，将解析新域名。")
+                domain_to_query = new_domain
+    except subprocess.TimeoutExpired:
+        pass # CNAME查询失败不是致命错误
+
     def do_query(record_type):
-        cmd = f"q {record_type} {domain} {dns_server_str} {ecs_ip_str} --cname --one"
+        cmd = f"q {record_type} {domain_to_query} {dns_server_str} {ecs_ip_str}"
         try:
             result = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=5)
             if result.returncode == 0 and result.stdout:
-                # q 的输出很干净，直接就是IP
-                ip = result.stdout.strip()
-                # 验证一下确实是IP
-                ipaddress.ip_address(ip)
-                return ip
-        except (subprocess.TimeoutExpired, ValueError) as e:
+                # 遍历所有返回的行，找到第一个合法的IP
+                for line in result.stdout.strip().split('\n'):
+                    try:
+                        ip = line.strip()
+                        ipaddress.ip_address(ip)
+                        return ip
+                    except ValueError:
+                        continue # 忽略无效的行
+        except subprocess.TimeoutExpired as e:
             logger.debug(f"执行命令 '{cmd}' 失败: {e}")
         return None
 
-    # 优先解析 AAAA (IPv6)
+    # 2. 优先解析 AAAA (IPv6)
     ipv6 = do_query('AAAA')
     if ipv6:
-        logger.info(f"成功将域名 '{domain}' 解析为 IPv6: {ipv6}")
+        logger.info(f"成功将域名 '{original_domain}' 解析为 IPv6: {ipv6}")
         proxy['server'] = ipv6
         return proxy
 
-    # 如果没有IPv6记录，则尝试解析 A (IPv4)
+    # 3. 如果没有IPv6记录，则尝试解析 A (IPv4)
     ipv4 = do_query('A')
     if ipv4:
-        logger.info(f"成功将域名 '{domain}' 解析为 IPv4: {ipv4}")
+        logger.info(f"成功将域名 '{original_domain}' 解析为 IPv4: {ipv4}")
         proxy['server'] = ipv4
         return proxy
 
-    logger.warning(f"无法解析域名 '{domain}'，节点 '{proxy.get('name')}' 将被丢弃。")
+    logger.warning(f"无法解析域名 '{original_domain}'，节点 '{proxy.get('name')}' 将被丢弃。")
     return None
 
 def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -> None:
