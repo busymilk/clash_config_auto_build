@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Clash Config Auto Builder - 节点合并器 (重构版)
-合并指定目录下的所有代理配置文件，支持去重和地区过滤
+Clash Config Auto Builder - 节点合并与解析器
+合并、解析、去重并过滤指定目录下的所有代理配置文件
 """
 
 import yaml
@@ -9,6 +9,9 @@ import glob
 import argparse
 import sys
 import os
+import re
+import ipaddress
+import dns.resolver
 
 # 添加项目根目录到Python路径
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -16,22 +19,35 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from core.constants import FILTER_PATTERNS, BLACKLIST_KEYWORDS
 from core.logger import setup_logger
 
-
-import re
-
 # 用于匹配和移除类似于 [ 123ms] 或 [1234ms] 的前缀
 DELAY_PREFIX_RE = re.compile(r'^\[\s*\d+ms\]\s*')
 
+# 配置DNS解析器
+DNS_RESOLVER = dns.resolver.Resolver()
+DNS_RESOLVER.nameservers = ['8.8.8.8', '1.1.1.1'] # 使用公共DNS
+DNS_RESOLVER.timeout = 3.0
+DNS_RESOLVER.lifetime = 3.0
+
+def _resolve_domain_to_ip(domain: str, logger) -> str | None:
+    """使用指定的DNS服务器将域名解析为IP地址，优先返回IPv6。"""
+    try:
+        # 优先解析 AAAA (IPv6)
+        answers = DNS_RESOLVER.resolve(domain, 'AAAA')
+        return str(answers[0])
+    except (dns.resolver.NoAnswer, dns.resolver.NXDOMAIN, dns.exception.Timeout):
+        try:
+            # 如果没有IPv6记录，则尝试解析 A (IPv4)
+            answers = DNS_RESOLVER.resolve(domain, 'A')
+            return str(answers[0])
+        except (dns.resolver.NoAnswer, dns.resolver.NXDOMAIN, dns.exception.Timeout) as e:
+            logger.warning(f"无法将域名 '{domain}' 解析为 IPv4 或 IPv6: {e}")
+            return None
+    except Exception as e:
+        logger.error(f"解析域名 '{domain}' 时发生未知错误: {e}")
+        return None
 
 def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -> None:
-    """
-    合并指定目录下的所有代理配置文件。
-
-    Args:
-        proxies_dir: 存放代理配置文件的目录路径
-        output_file: 合并后输出的文件路径
-        name_filter: 代理名称过滤器, 可选值为 'hk', 'us' 等, 或 None (不过滤)
-    """
+    """合并、解析并过滤指定目录下的所有代理配置文件。"""
     logger = setup_logger("merge_proxies")
     
     merged_proxies = []
@@ -46,7 +62,6 @@ def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -
             with open(file_path, 'r', encoding="utf-8") as f:
                 data = yaml.safe_load(f)
 
-            # 检查解析结果是否有效
             if not isinstance(data, dict) or 'proxies' not in data or not isinstance(data['proxies'], list):
                 logger.warning(f"跳过无效或格式不正确的文件: {file_path}")
                 continue
@@ -55,106 +70,94 @@ def merge_proxies(proxies_dir: str, output_file: str, name_filter: str = None) -
                 if not _is_valid_proxy(proxy, logger):
                     continue
 
-                # 清理可能存在的旧延迟信息前缀
+                # 1. 清理节点名称中的旧延迟信息
                 original_name = proxy.get('name', '')
                 cleaned_name = DELAY_PREFIX_RE.sub('', original_name).strip()
                 if original_name != cleaned_name:
                     proxy['name'] = cleaned_name
-                    logger.debug(f"清理节点 '{original_name}' 的延迟前缀 -> '{cleaned_name}'")
                 
-                # 处理端口格式
+                # 2. 修复端口格式
                 if not _fix_port_format(proxy, logger):
                     continue
-                
-                # 生成唯一标识符
+
+                # 3. 解析域名 (如果 server 字段是域名)
+                server_address = proxy.get('server', '')
+                try:
+                    ipaddress.ip_address(server_address)
+                except ValueError:
+                    # 不是IP地址，是域名
+                    if 'server_url' not in proxy:
+                        proxy['server_url'] = server_address # 标记原始域名
+                    
+                    resolved_ip = _resolve_domain_to_ip(server_address, logger)
+                    if resolved_ip:
+                        proxy['server'] = resolved_ip
+                    else:
+                        logger.warning(f"因域名解析失败，跳过节点: {proxy.get('name')}")
+                        continue # 解析失败，抛弃此节点
+
+                # 4. 生成唯一标识符 (核心去重逻辑)
                 identifier = _generate_identifier(proxy)
-                
-                # 检查重复节点
                 if not identifier or identifier in seen_identifiers:
                     continue
 
-                # 处理重复名称
+                # 5. 处理重名并应用过滤器
                 proxy_name = _handle_duplicate_name(proxy, seen_names, logger)
-                
-                # 应用过滤规则
                 if not _apply_filters(proxy_name, name_filter, logger):
                     continue
                 
-                # 添加到结果集
+                # 6. 添加到结果集
                 seen_identifiers.add(identifier)
                 seen_names.add(proxy_name)
                 merged_proxies.append(proxy)
 
-        except yaml.YAMLError as e:
-            logger.warning(f"跳过无法解析的YAML文件: {file_path} - 错误: {e}")
-            continue
         except Exception as e:
-            logger.error(f"处理文件 {file_path} 时发生未知错误: {e}", exc_info=True)
+            logger.error(f"处理文件 {file_path} 时发生严重错误: {e}", exc_info=True)
             continue
 
     logger.info(f"总共为 '{output_file}' 合并了 {len(merged_proxies)} 个唯一的代理。")
-
-    # 写入结果文件
     _write_output_file(merged_proxies, output_file, logger)
-
 
 def _is_valid_proxy(proxy: dict, logger) -> bool:
     """检查代理配置是否有效"""
     required_fields = ['name', 'server', 'port', 'type']
-    for field in required_fields:
-        if not proxy.get(field):
-            logger.warning(f"代理缺少必要字段 '{field}': {proxy}")
-            return False
-    return True
-
+    return all(proxy.get(field) for field in required_fields)
 
 def _fix_port_format(proxy: dict, logger) -> bool:
     """修复端口格式，确保为整数"""
-    port_val = proxy.get('port')
-    if not isinstance(port_val, int):
-        try:
-            proxy['port'] = int(port_val)
-        except (ValueError, TypeError):
-            logger.warning(f"代理 '{proxy.get('name')}' 端口格式无效: '{port_val}'，跳过此代理。")
-            return False
-    return True
-
+    try:
+        proxy['port'] = int(proxy.get('port'))
+        return True
+    except (ValueError, TypeError):
+        logger.warning(f"代理 '{proxy.get('name')}' 端口格式无效，跳过。")
+        return False
 
 def _generate_identifier(proxy: dict) -> tuple:
-    """生成代理的唯一标识符"""
-    return (proxy.get('server'), proxy.get('type'), proxy.get('port'))
-
+    """根据 server_url (如果存在) 或 server 生成唯一标识符"""
+    # 您的核心思想：优先使用原始域名作为唯一标识的一部分
+    server_key = proxy.get('server_url', proxy.get('server'))
+    return (server_key, proxy.get('type'), proxy.get('port'))
 
 def _handle_duplicate_name(proxy: dict, seen_names: set, logger) -> str:
     """处理重复的代理名称"""
     original_name = proxy.get('name')
     name = original_name
     counter = 2
-    
     while name in seen_names:
         name = f"{original_name} #{counter}"
         counter += 1
-    
     if original_name != name:
-        logger.info(f"发现重复节点名称 '{original_name}'，重命名为 '{name}'")
         proxy['name'] = name
-    
     return name
-
 
 def _apply_filters(proxy_name: str, name_filter: str, logger) -> bool:
     """应用黑名单和地区过滤器"""
-    # 黑名单检查
     if any(keyword in proxy_name for keyword in BLACKLIST_KEYWORDS):
         return False
-    
-    # 地区过滤器检查
     if name_filter and name_filter in FILTER_PATTERNS:
         if not FILTER_PATTERNS[name_filter].search(proxy_name):
             return False
-    
     return True
-
 
 def _write_output_file(merged_proxies: list, output_file: str, logger) -> None:
     """写入合并结果到文件"""
@@ -166,34 +169,13 @@ def _write_output_file(merged_proxies: list, output_file: str, logger) -> None:
         logger.error(f"写入文件 {output_file} 失败: {e}")
         raise
 
-
 def main():
-    """主函数"""
-    parser = argparse.ArgumentParser(
-        description="合并 Clash 代理配置文件，支持按地区过滤和去重。"
-    )
-    parser.add_argument(
-        '--proxies-dir',
-        type=str,
-        required=True,
-        help='存放代理配置文件的目录路径'
-    )
-    parser.add_argument(
-        '--output',
-        type=str,
-        required=True,
-        help='合并后输出的文件路径'
-    )
-    parser.add_argument(
-        '--filter',
-        type=str,
-        choices=list(FILTER_PATTERNS.keys()),
-        help="根据地区关键词过滤代理名称"
-    )
-
+    parser = argparse.ArgumentParser(description="合并、解析并过滤Clash代理配置文件。")
+    parser.add_argument('--proxies-dir', type=str, required=True, help='存放代理配置文件的目录路径')
+    parser.add_argument('--output', type=str, required=True, help='合并后输出的文件路径')
+    parser.add_argument('--filter', type=str, choices=list(FILTER_PATTERNS.keys()), help="根据地区关键词过滤代理名称")
     args = parser.parse_args()
     merge_proxies(args.proxies_dir, args.output, args.filter)
-
 
 if __name__ == "__main__":
     main()
