@@ -50,38 +50,7 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: 'Channel id: @ShadowProxy66🇯🇵 #2'
-  password: wl4HYN9PPKs8d8IzGIt4yKqt0
-  port: 53348
-  server: 47.74.34.102
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵_JP_日本->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 103.116.7.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.241-0279 | 15.973MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0280 | 17.621MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- name: 🇯🇵_日本_1
+- name: 🇯🇵_日本_4
   network: ws
   port: 2083
   server: 103.116.7.103
@@ -95,9 +64,83 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇯🇵_日本_1
+  network: ws
+  port: 12333
+  server: 121.80.244.179
+  servername: ax1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ax1.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇯🇵_日本_2
+  network: ws
+  port: 7000
+  server: 158.101.139.31
+  servername: zx1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx1.ylka.dpdns.org
+    path: /?ed=2560
+- name: 'Channel id: @ShadowProxy66🇯🇵 #2'
+  password: wl4HYN9PPKs8d8IzGIt4yKqt0
+  port: 53348
+  server: 47.74.34.102
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵_日本_5
+  network: ws
+  port: 8880
+  server: 103.116.7.241
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0280 | 33.376MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.241-0279 | 33.213MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇯🇵JP-223.135.156.179-5484 | 2.638MB
+  name: 🇯🇵JP-223.135.156.179-5484 | 1.324MB
   network: ws
   port: 20521
   server: 223.135.156.179
@@ -107,11 +150,25 @@ proxies:
   uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
   ws-opts:
     path: /
-- name: 🇯🇵 日本 04
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 日本 03
+  network: ws
+  port: 80
+  server: 190.93.246.151
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: pj.sevens.cf
+    path: /rongseven
+- name: 🇯🇵 日本 28
   network: ws
   password: Aimer
-  port: 8443
-  server: 47.79.85.208
+  port: 443
+  server: 160.16.101.34
   skip-cert-verify: true
   sni: epga.aimercc.dpdns.org
   type: trojan
@@ -120,20 +177,20 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本 55
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
+- name: '🇯🇵_日本_2 #2'
+  network: ws
+  port: 443
+  server: 160.16.82.82
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_3
   network: ws
   port: 443
@@ -148,21 +205,20 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_2
+- name: 🇯🇵 日本 04
   network: ws
-  port: 443
-  server: 160.16.82.82
-  servername: edga.aimercc.dpdns.org
+  password: Aimer
+  port: 8443
+  server: 47.79.85.208
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epga.aimercc.dpdns.org
+  type: trojan
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edga.aimercc.dpdns.org
+      Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵 日本 03
+- name: '🇯🇵 日本 03 #2'
   network: ws
   password: Aimer
   port: 443
@@ -188,6 +244,20 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本 55
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /bezradrqccl
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  type: ss
+  udp: true
 - name: 🇯🇵 日本 27
   network: ws
   password: Aimer
@@ -201,34 +271,6 @@ proxies:
     headers:
       Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '🇯🇵_日本_1 #2'
-  network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
-- name: '🇯🇵_日本_2 #2'
-  network: ws
-  port: 7000
-  server: 158.101.139.31
-  servername: zx1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx1.ylka.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: 🇯🇵 日本 14
   network: ws
