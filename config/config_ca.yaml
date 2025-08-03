@@ -49,21 +49,44 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: '[108ms] 🇨🇦_加拿大_1'
-  network: ws
-  port: 443
-  server: 142.171.123.125
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '[134ms] 🇨🇦 加拿大 20'
+  network: tcp
+  port: 42557
+  reality-opts:
+    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
+    short-id: f430927d
+  server: 155.248.221.146
+  servername: www.yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
-- name: '[124ms] 🇨🇦_加拿大_3'
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- cipher: chacha20-ietf-poly1305
+  name: '[181ms] 🇨🇦CA-79.127.233.170-0222 | 50.086MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  name: '[191ms] 🇨🇦CA-79.127.233.170-0212 | 48.942MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  group: SSRProvider
+  name: '[197ms] 🇨🇦CA-79.127.233.170-016'
+  obfs: plain
+  obfsparam: null
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  protoparam: null
+  server: 79.127.233.170
+  type: ssr
+- name: '[241ms] 🇨🇦_加拿大_3'
   network: ws
   port: 443
   server: 66.103.210.62
@@ -77,44 +100,23 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: '[163ms] 🇨🇦CA-79.127.233.170-0212 | 48.942MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[171ms] 🇨🇦CA-79.127.233.170-0222 | 50.086MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: '[225ms] 🇨🇦CA-79.127.233.170-016'
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: '[257ms] 🇨🇦CA-142.4.216.225-0306 | 4.791MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[315ms] 🇨🇦CA-142.4.216.225-0328 | 4.591MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: ca225.vpnbook.com
-  type: ss
+- name: '[294ms] 🇨🇦_加拿大_1'
+  network: ws
+  port: 443
+  server: 142.171.123.125
+  servername: ax1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ax1.ylka.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[336ms] 🇨🇦 加拿大 31'
+  name: '[385ms] 🇨🇦 加拿大 31'
   network: tcp
   port: 59303
   reality-opts:
@@ -128,32 +130,7 @@ proxies:
   uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[341ms] 🇨🇦 加拿大 20'
-  network: tcp
-  port: 42557
-  reality-opts:
-    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
-    short-id: f430927d
-  server: 155.248.221.146
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- alpn:
-  - h3
-  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: '[387ms] 🇨🇦 加拿大 08 #2'
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 47262
-  server: 40.233.103.51
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[584ms] 🇨🇦 加拿大 16'
+  name: '[663ms] 🇨🇦 加拿大 16'
   network: tcp
   port: 26113
   reality-opts:
@@ -167,8 +144,32 @@ proxies:
   uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
 - alpn:
   - h3
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: '[694ms] 🇨🇦 加拿大 08 #2'
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 47262
+  server: 40.233.103.51
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- name: '[851ms] 🇨🇦 加拿大 05'
+  network: ws
+  port: 443
+  server: 172.67.175.139
+  servername: 999O0.859886.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 288124da-0d68-42f4-9f48-70dc4dcc55a6
+  ws-opts:
+    headers:
+      Host: 999O0.859886.xyz
+    path: /e49RZLgIb0TdfgF5HdHEIupMZeK
+- alpn:
+  - h3
   auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: '[760ms] 🇨🇦 加拿大 18'
+  name: '[1060ms] 🇨🇦 加拿大 18'
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 40.233.119.160
@@ -176,18 +177,12 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '[2304ms] 🇨🇦_CA_加拿大->🇺🇸_US_美国'
-  network: ws
-  port: 8880
-  server: 205.233.181.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
+- cipher: chacha20-ietf-poly1305
+  name: '[2683ms] 🇨🇦CA-142.4.216.225-0306 | 4.791MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

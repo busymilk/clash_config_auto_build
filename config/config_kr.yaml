@@ -49,27 +49,20 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: '[793ms] 🇰🇷_韩国_4'
-  network: ws
-  port: 12270
-  server: 119.200.48.55
-  servername: edga.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-cfb
-  name: '[807ms] 🇰🇷KR-154.90.63.177-5338 | 2.92MB'
+  name: '[817ms] 🇰🇷KR-154.90.63.177-5338 | 2.92MB'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
-- name: '[811ms] 🇰🇷_韩国_2 #2 #2'
+- cipher: aes-256-cfb
+  name: '[886ms] 🇰🇷 韩国 04 #2'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- name: '[913ms] 🇰🇷_韩国_2 #2 #2'
   network: ws
   port: 10033
   server: 222.110.14.159
@@ -83,7 +76,21 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[816ms] 🇰🇷_韩国_3'
+- name: '[918ms] 🇰🇷_韩国_4'
+  network: ws
+  port: 12270
+  server: 119.200.48.55
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[925ms] 🇰🇷_韩国_3'
   network: ws
   port: 12398
   server: 121.157.92.194
@@ -97,7 +104,7 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[826ms] 🇰🇷_韩国_4 #2'
+- name: '[955ms] 🇰🇷_韩国_4 #2'
   network: ws
   port: 12365
   server: 14.47.175.40
@@ -111,7 +118,7 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[838ms] 🇰🇷 韩国 14'
+- name: '[972ms] 🇰🇷 韩国 14'
   network: ws
   port: 12546
   server: 211.228.207.178
@@ -124,21 +131,7 @@ proxies:
     headers:
       Host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[846ms] 🇰🇷_韩国_1'
-  network: ws
-  port: 12335
-  server: 121.170.103.94
-  servername: zx1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx1.ylka.dpdns.org
-    path: /?ed=2560
-- name: '[856ms] 🇰🇷_韩国_2'
+- name: '[985ms] 🇰🇷_韩国_2'
   network: ws
   port: 50000
   server: 221.161.207.216
@@ -152,98 +145,7 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- name: '[883ms] 🇰🇷 韩国 08'
-  network: ws
-  password: Aimer
-  port: 12398
-  server: 121.157.92.194
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[883ms] 🇰🇷 韩国 14 #2'
-  network: ws
-  password: Aimer
-  port: 12187
-  server: 61.83.148.156
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[892ms] 🇰🇷 韩国 10'
-  network: ws
-  password: Aimer
-  port: 31210
-  server: 59.21.57.149
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[903ms] 🇰🇷 韩国 13 #2'
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 118.43.111.141
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[905ms] 🇰🇷 韩国 13 #2 #2'
-  network: ws
-  password: Aimer
-  port: 18043
-  server: 222.121.121.198
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[916ms] 🇰🇷 韩国 08 #2'
-  network: ws
-  password: Aimer
-  port: 12270
-  server: 119.200.48.55
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1025ms] 🇰🇷 韩国 15'
-  network: ws
-  password: Aimer
-  port: 10911
-  server: 112.162.240.23
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1083ms] 🇰🇷 韩国 15 #2'
+- name: '[998ms] 🇰🇷 韩国 15 #2'
   network: ws
   port: 30055
   server: 121.171.82.130
@@ -256,28 +158,111 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: Telegram@WangCai2/?ed=2560
-- cipher: aes-256-cfb
-  name: '[1467ms] 🇰🇷 韩国 04'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-  udp: true
-- name: '[1908ms] 🇰🇷_韩国_7'
+- name: '[1040ms] 🇰🇷 韩国 08'
   network: ws
-  port: 12403
-  server: 112.171.112.109
-  servername: edga.aimercc.dpdns.org
+  password: Aimer
+  port: 12398
+  server: 121.157.92.194
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epga.aimercc.dpdns.org
+  type: trojan
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edga.aimercc.dpdns.org
+      Host: epga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[3053ms] 🇰🇷 韩国 01 #2'
+- name: '[1060ms] 🇰🇷 韩国 10'
+  network: ws
+  password: Aimer
+  port: 31210
+  server: 59.21.57.149
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1063ms] 🇰🇷 韩国 08 #2'
+  network: ws
+  password: Aimer
+  port: 12270
+  server: 119.200.48.55
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1068ms] 🇰🇷 韩国 14 #2'
+  network: ws
+  password: Aimer
+  port: 12187
+  server: 61.83.148.156
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1076ms] 🇰🇷 韩国 04'
+  network: ws
+  password: Aimer
+  port: 12118
+  server: 121.186.198.94
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1089ms] 🇰🇷 韩国 13 #2 #2'
+  network: ws
+  password: Aimer
+  port: 18043
+  server: 222.121.121.198
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1098ms] 🇰🇷 韩国 13 #2'
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 118.43.111.141
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1121ms] 🇰🇷 韩国 15'
+  network: ws
+  password: Aimer
+  port: 10911
+  server: 112.162.240.23
+  skip-cert-verify: true
+  sni: epga.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1131ms] 🇰🇷 韩国 01 #2'
   network: ws
   port: 12196
   server: 202.150.185.128
@@ -290,6 +275,20 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: /
+- name: '[1701ms] 🇰🇷_韩国_1'
+  network: ws
+  port: 12335
+  server: 121.170.103.94
+  servername: zx1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zx1.ylka.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
