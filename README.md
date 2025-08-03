@@ -16,7 +16,6 @@
     2.  **集中延迟测试**: 只对“母列表”进行一次严格的健康检查（延迟测试）。
     3.  **分发生成**: 使用经过延迟测试的健康节点列表，根据优化后的地区规则，生成所有最终的配置文件。
 - **多版本生成**: 同时生成 `全部节点` 和多个 `地区限定节点` 版本的配置文件。
-- **双模板支持**: 支持标准 Clash 客户端 (`config-template.yaml`) 和 Stash (`stash-template.yaml`)。
 - **自动发布与刷新**: 每次更新后，自动将最新的配置文件发布到 GitHub Release，并刷新 jsDelivr 的 CDN 缓存。
 
 ## 🚀 最终效果
@@ -35,37 +34,30 @@
 - `config/config_us.yaml`: **仅包含**美国地区的健康节点。
 - ... 以此类推。
 
-### Stash 专用版本 (使用 `stash-template.yaml`)
-- `config/stash.yaml`: 包含**所有**健康节点，配置针对 Stash 优化。
-- `config/stash_hk.yaml`: **仅包含**香港地区的健康节点，配置针对 Stash 优化。
-- `config/stash_us.yaml`: **仅包含**美国地区的健康节点，配置针对 Stash 优化。
-- ... 以此类推.
-
 ## 🔧 如何使用与自定义
 
 ### 1. 修改核心模板文件
 
-项目现在有两个核心模板文件，分别对应不同的客户端：
+项目现在只有一个核心模板文件：
 
 - **`config-template.yaml`**: 用于所有**标准 Clash**客户端。
-- **`stash-template.yaml`**: 专为 **Stash** 客户端优化，包含一些专属配置。
 
-如果你需要修改通用配置（如 DNS、路由规则等），请根据你的需要，修改对应的模板文件。如果希望两边都生效，则需要**同时修改这两个文件**。
+如果你需要修改通用配置（如 DNS、路由规则等），请直接修改此文件。
 
 ### 2. 管理输出版本 (唯一的真相来源)
 
-项目的核心控制逻辑位于 `scripts/generate_config.py` 文件中的 `CONFIGS_TO_GENERATE` 列表。这个列表是**唯一的真相来源**，它决定了整个项目需要生成哪些版本的配置文件。
+项目的核心控制逻辑位于 `core/constants.py` 文件中的 `CONFIGS_TO_GENERATE` 列表。这个列表是**唯一的真相来源**，它决定了整个项目需要生成哪些版本的配置文件。
 
 ```python
 # core/constants.py
 
 CONFIGS_TO_GENERATE = [
     # ...
-    # 示例：增加一个“台湾”地区的 Stash 配置
+    # 示例：增加一个“台湾”地区的 Clash 配置
     {
         "filter": "tw", # 对应 FILTER_PATTERNS 中的过滤器名称
-        "output": "config/stash_tw.yaml",
-        "template": "stash-template.yaml" # 指定使用的模板
+        "output": "config/config_tw.yaml",
+        "template": "config-template.yaml" # 指定使用的模板
     },
     # ...
 ]
@@ -95,6 +87,4 @@ env:
   MAX_WORKERS: "100"
   # 日志级别 (INFO, DEBUG, WARNING, ERROR)
   LOG_LEVEL: "INFO"
-  # 地理位置检测超时时间 (秒)
-  GEOIP_TIMEOUT: "20"
 ```

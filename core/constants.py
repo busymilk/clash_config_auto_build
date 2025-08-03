@@ -62,7 +62,6 @@ class PathConfig:
     
     # 模板文件
     CONFIG_TEMPLATE = "config-template.yaml"
-    STASH_TEMPLATE = "stash-template.yaml"
     
     # 临时文件
     TEMP_MERGED_FILE = "all_merged_nodes.yaml"
@@ -84,19 +83,6 @@ CONFIGS_TO_GENERATE = [
     {"filter": "de", "output": "config/config_de.yaml", "template": "config-template.yaml"},
     {"filter": "ca", "output": "config/config_ca.yaml", "template": "config-template.yaml"},
     {"filter": "au", "output": "config/config_au.yaml", "template": "config-template.yaml"},
-    
-    # Stash 专用配置
-    {"filter": None, "output": "config/stash.yaml", "template": "stash-template.yaml"},
-    {"filter": "hk", "output": "config/stash_hk.yaml", "template": "stash-template.yaml"},
-    {"filter": "us", "output": "config/stash_us.yaml", "template": "stash-template.yaml"},
-    {"filter": "jp", "output": "config/stash_jp.yaml", "template": "stash-template.yaml"},
-    {"filter": "uk", "output": "config/stash_uk.yaml", "template": "stash-template.yaml"},
-    {"filter": "sg", "output": "config/stash_sg.yaml", "template": "stash-template.yaml"},
-    {"filter": "tw", "output": "config/stash_tw.yaml", "template": "stash-template.yaml"},
-    {"filter": "kr", "output": "config/stash_kr.yaml", "template": "stash-template.yaml"},
-    {"filter": "de", "output": "config/stash_de.yaml", "template": "stash-template.yaml"},
-    {"filter": "ca", "output": "config/stash_ca.yaml", "template": "stash-template.yaml"},
-    {"filter": "au", "output": "config/stash_au.yaml", "template": "stash-template.yaml"}
 ]
 
 # =============================================================================
