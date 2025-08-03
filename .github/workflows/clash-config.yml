@@ -42,10 +42,11 @@ jobs:
     - name: Install q DNS Utility
       run: |
         echo "Installing q DNS utility..."
-        Q_VERSION="v1.1.1" # 可以指定一个稳定版本
+        Q_VERSION="v0.19.2" # 使用您提供的正确版本号
         Q_URL="https://github.com/natesales/q/releases/download/${Q_VERSION}/q_${Q_VERSION}_linux_amd64.tar.gz"
         curl -sSL "$Q_URL" -o q.tar.gz
         tar -xzf q.tar.gz
+        chmod +x q
         sudo mv q /usr/local/bin/
         echo "q utility installed successfully."
 
