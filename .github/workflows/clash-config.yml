@@ -167,17 +167,12 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         
-        if git diff --quiet --exit-code -- 'config/*.yaml'; then
-          echo "No changes to commit, skipping push."
-          exit 0
-        fi
-        
         git add config/*.yaml
         
         # 构建提交信息
         commit_msg="chore(auto-update): Update config files at $(date +'%Y-%m-%d %H:%M')"
         
-        git commit -m "$commit_msg"
+        git commit -m "$commit_msg" || echo "No changes to commit."
         git push origin HEAD:main
 
     # 步骤17: 刷新 CDN 缓存
