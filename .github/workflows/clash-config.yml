@@ -52,7 +52,7 @@ jobs:
     # 步骤4: 创建所需目录
     - name: Create directories
       run: |
-        mkdir -p ${{ env.PROXY_DIR }} config core
+        mkdir -p ${{ env.PROXY_DIR }} config
         touch core/__init__.py
 
     # 步骤5: 下载上次发布的健康节点
