@@ -223,15 +223,6 @@ def main():
     parser.add_argument("--timeout", type=int, default=NodeTestConfig.DEFAULT_TIMEOUT, help="延迟测试请求超时时间(ms)")
     parser.add_argument("--max-workers", type=int, default=NodeTestConfig.DEFAULT_MAX_WORKERS, help="并发测试线程数")
     args = parser.parse_args()
-    
-    # 安装必要的Python库
-    try:
-        import bs4
-    except ImportError:
-        print("检测到缺少 beautifulsoup4 库，正在尝试自动安装...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "beautifulsoup4"])
-        print("安装完成，请重新运行脚本。")
-        sys.exit(0)
 
     checker = NodeHealthChecker(args)
     checker.run()
