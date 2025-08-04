@@ -50,67 +50,46 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[92ms] 🇨🇦CA-142.4.216.225-0306 | 4.791MB'
+  name: '[93ms] 🇨🇦CA-142.4.216.225-0278 | 10.277MB'
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[95ms] 🇨🇦CA-142.4.216.225-0328 | 4.591MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  server_url: ca225.vpnbook.com
+- cipher: aes-256-cfb
+  name: '[262ms] 🇨🇦CA-79.127.233.170-0185 | 91.682MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[157ms] 🇨🇦 加拿大 20'
-  network: tcp
-  port: 42557
-  reality-opts:
-    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
-    short-id: f430927d
-  server: 155.248.221.146
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[168ms] 🇨🇦 加拿大 31'
-  network: tcp
-  port: 59303
-  reality-opts:
-    public-key: FHm9vc9hi1aK9jz8CqCjhJvT0bxzsD470FvOyubB6EA
-    short-id: bbe06294
-  server: 192.18.150.167
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
 - cipher: chacha20-ietf-poly1305
-  name: '[259ms] 🇨🇦CA-79.127.233.170-0222 | 50.086MB'
+  name: '[270ms] 🇨🇦CA-79.127.233.170-0184 | 151.801MB'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
 - cipher: aes-256-cfb
-  name: '[270ms] 🇨🇦CA-79.127.233.170-0212 | 48.942MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: '[343ms] SSR-加拿大-79.127.233.170:989'
+  name: '[276ms] SSR-加拿大-79.127.233.170:989'
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
   server: 79.127.233.170
   type: ssr
-- name: '[455ms] 🇨🇦_加拿大_3'
+- name: '[365ms] 🇨🇦_加拿大_1'
+  network: ws
+  port: 443
+  server: 142.171.123.125
+  servername: ax1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ax1.ylka.dpdns.org
+    path: /?ed=2560
+- name: '[389ms] 🇨🇦_加拿大_3'
   network: ws
   port: 443
   server: 66.103.210.62
@@ -128,7 +107,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: '[475ms] VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80'
+  name: '[416ms] VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80'
   network: ws
   port: 80
   server: 51.79.102.253
@@ -137,24 +116,10 @@ proxies:
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: '[525ms] 🇨🇦_加拿大_1'
-  network: ws
-  port: 443
-  server: 142.171.123.125
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
 - alpn:
   - h3
   auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: '[669ms] 🇨🇦 加拿大 18'
+  name: '[477ms] 🇨🇦 加拿大 18'
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 40.233.119.160
@@ -162,32 +127,6 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[717ms] 🇨🇦 加拿大 16'
-  network: tcp
-  port: 26113
-  reality-opts:
-    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-    short-id: 1fbd20fd
-  server: 40.233.119.160
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-- alterId: 0
-  cipher: auto
-  name: '[1273ms] 🇨🇦_CA_加拿大->🇺🇸_US_美国'
-  network: ws
-  port: 8880
-  server: 205.233.181.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

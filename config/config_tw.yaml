@@ -49,41 +49,19 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: aes-256-cfb
-  name: '[570ms] 🇹🇼 台湾 05 #2'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-  udp: true
-- name: '[984ms] 🇹🇼 台湾 01'
+- alterId: 0
+  cipher: auto
+  name: '[932ms] 🇨🇳TW-103.61.139.137-5364 | 11.01MB'
   network: ws
-  port: 443
-  server: 104.24.168.41
-  server_url: nnctwclyx.codesofun.pp.ua
-  servername: nnctw.codesofun.pp.ua
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8b9c63ff-6789-449d-e5fd-5b83fef2b440
+  port: 20521
+  server: 103.61.139.137
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
   ws-opts:
-    headers:
-      Host: nnctw.codesofun.pp.ua
-    path: /2261acb5
-- name: '[989ms] 🇹🇼 台湾 02'
-  network: ws
-  password: Aimer
-  port: 10240
-  server: 34.81.140.124
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[996ms] 🇹🇼 台湾|@ripaojiedian'
+    path: /
+- name: '[995ms] 🇹🇼 台湾|@ripaojiedian'
   password: test.+
   port: 30443
   server: 1.170.197.70
