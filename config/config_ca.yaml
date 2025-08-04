@@ -49,57 +49,30 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: '[106ms] 🇨🇦 加拿大 18'
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 40.233.119.160
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '[110ms] 🇨🇦CA-142.4.216.225-0278 | 10.277MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '[159ms] VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80'
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  skip-cert-verify: true
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- cipher: chacha20-ietf-poly1305
-  name: '[188ms] 🇨🇦CA-79.127.233.170-0184 | 151.801MB'
+  name: '[187ms] 🇨🇦CA-79.127.233.170-0184 | 151.801MB'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
 - cipher: aes-256-cfb
-  name: '[190ms] SSR-加拿大-79.127.233.170:989'
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
-- cipher: aes-256-cfb
-  name: '[197ms] 🇨🇦CA-79.127.233.170-0185 | 91.682MB'
+  name: '[198ms] 🇨🇦CA-79.127.233.170-0185 | 91.682MB'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
   type: ss
-- name: '[247ms] 🇨🇦_加拿大_1'
+- cipher: aes-256-cfb
+  group: SSRProvider
+  name: '[259ms] 🇨🇦CA-79.127.233.170-032'
+  obfs: plain
+  obfsparam: null
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  protoparam: null
+  server: 79.127.233.170
+  type: ssr
+- name: '[264ms] 🇨🇦_加拿大_1'
   network: ws
   port: 443
   server: 142.171.123.125
@@ -113,7 +86,7 @@ proxies:
     headers:
       host: ax1.ylka.dpdns.org
     path: /?ed=2560
-- name: '[259ms] 🇨🇦_加拿大_3'
+- name: '[443ms] 🇨🇦_加拿大_3'
   network: ws
   port: 443
   server: 66.103.210.62
@@ -127,18 +100,6 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '[2712ms] 🇨🇦_CA_加拿大->🇺🇸_US_美国_0@10'
-  network: ws
-  port: 8880
-  server: 205.233.181.241
-  type: vmess
-  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s2.db-link02.top
-    path: /dabai.in
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
