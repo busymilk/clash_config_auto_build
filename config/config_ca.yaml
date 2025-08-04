@@ -49,30 +49,27 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '[95ms] 🇨🇦CA-142.4.216.225-0278 | 1.902MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - cipher: aes-256-cfb
-  group: SSRProvider
-  name: '[249ms] 🇨🇦CA-79.127.233.170-032'
+  name: '[252ms] SSR-加拿大-79.127.233.170:989'
   obfs: plain
-  obfsparam: null
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
-  protoparam: null
   server: 79.127.233.170
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: '[256ms] 🇨🇦CA-79.127.233.170-0184 | 270.441MB'
+  name: '[260ms] 🇨🇦CA-79.127.233.170-0184 | 270.441MB'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
-- name: '[332ms] 🇨🇦_加拿大_1'
+- cipher: aes-256-cfb
+  name: '[261ms] 🇨🇦CA-79.127.233.170-0185 | 48.664MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- name: '[323ms] 🇨🇦_加拿大_1'
   network: ws
   port: 443
   server: 142.171.123.125
@@ -86,13 +83,13 @@ proxies:
     headers:
       host: ax1.ylka.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: '[353ms] 🇨🇦CA-79.127.233.170-0185 | 48.664MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
+- cipher: chacha20-ietf-poly1305
+  name: '[411ms] 🇨🇦CA-142.4.216.225-0278 | 1.902MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
   type: ss
-- name: '[436ms] 🇨🇦_加拿大_3'
+- name: '[474ms] 🇨🇦_加拿大_3'
   network: ws
   port: 443
   server: 66.103.210.62
@@ -106,6 +103,31 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '[515ms] VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80'
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- alterId: 0
+  cipher: auto
+  name: '[3843ms] 🇨🇦_CA_加拿大->🇺🇸_US_美国'
+  network: ws
+  port: 8880
+  server: 205.233.181.241
+  type: vmess
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+    path: /dabai.in
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
