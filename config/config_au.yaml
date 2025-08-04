@@ -50,12 +50,26 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[288ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  name: '[279ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
-- name: '[2713ms] 🇦🇺_澳大利亚_5'
+- name: '[773ms] 🇦🇺_澳大利亚_1'
+  network: ws
+  port: 23023
+  server: 43.165.191.25
+  servername: v01.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: v01.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: '[1032ms] 🇦🇺_澳大利亚_5'
   network: ws
   port: 443
   server: 119.13.79.23

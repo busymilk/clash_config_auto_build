@@ -49,10 +49,10 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: '[1074ms] 🇰🇷_韩国_4'
+- name: '[1031ms] 🇰🇷_韩国_2'
   network: ws
-  port: 12270
-  server: 119.200.48.55
+  port: 10033
+  server: 222.110.14.159
   servername: edga.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -63,10 +63,10 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1084ms] 🇰🇷_韩国_3'
+- name: '[1038ms] 🇰🇷_韩国_3'
   network: ws
-  port: 12398
-  server: 121.157.92.194
+  port: 12365
+  server: 14.47.175.40
   servername: edga.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -77,7 +77,7 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1110ms] 🇰🇷_韩国_7'
+- name: '[1048ms] 🇰🇷_韩国_7 #2'
   network: ws
   port: 12403
   server: 112.171.112.109
@@ -91,7 +91,77 @@ proxies:
     headers:
       host: edga.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1322ms] 🇰🇷_韩国_2'
+- name: '[1059ms] 🇰🇷_韩国_4'
+  network: ws
+  port: 50000
+  server: 115.94.98.93
+  servername: v01.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: v01.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: '[1085ms] 🇰🇷_韩国_4 #2'
+  network: ws
+  port: 12270
+  server: 119.200.48.55
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1101ms] 🇰🇷_韩国_6'
+  network: ws
+  port: 12335
+  server: 121.170.103.94
+  servername: ax1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ax1.ylka.dpdns.org
+    path: /?ed=2560
+- name: '[1113ms] 🇰🇷_韩国_3 #2'
+  network: ws
+  port: 12398
+  server: 121.157.92.194
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1690ms] 🇰🇷_韩国_7'
+  network: ws
+  port: 12546
+  server: 211.228.207.178
+  servername: edga.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edga.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[2001ms] 🇰🇷_韩国_1'
   network: ws
   port: 50000
   server: 221.161.207.216
