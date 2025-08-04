@@ -49,33 +49,56 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- client-fingerprint: randomized
+  name: '[174ms] 🇩🇪 德国 05'
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- alterId: 0
+  cipher: auto
+  country: 🇩🇪DE
+  delay: 1670
+  h2-opts: {}
+  http-opts: {}
+  name: '[292ms] 德国 - Falkenstein - Hetzner Online GmbH - 1'
+  network: tcp
+  port: 14090
+  server: 45.93.168.40
+  server_url: fast5.daallygold.com
+  servername: telewebion.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 37fc85cf-30d6-4f25-a19b-cfa5732ff6ca
 - cipher: chacha20-ietf-poly1305
-  name: '[342ms] 🇩🇪DE-91.219.23.165-110'
-  password: Wxnt17A2bShe9u2pI2o62K
-  port: 12445
-  server: 91.219.23.165
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[356ms] 🇩🇪DE-46.101.245.131-0259 | 17.638MB'
+  name: '[304ms] 🇩🇪DE-46.101.245.131-0259 | 3.184MB'
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[359ms] 🇩🇪DE-147.45.178.200-0265 | 14.96MB'
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
+  name: '[337ms] 🇩🇪DE-185.177.229.245-044'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[410ms] 🇩🇪DE-45.144.54.33-0273 | 13.643MB'
+  name: '[353ms] 🇩🇪DE-45.144.54.33-0273 | 2.028MB'
   password: LiHQX9cDbdooBHlIg0eiqQ
   port: 34803
   server: 45.144.54.33
   type: ss
 - alterId: 0
   cipher: auto
-  name: '[486ms] 🇩🇪DE-178.63.227.249-0291 | 10.713MB'
+  name: '[432ms] 🇩🇪DE-178.63.227.249-0291 | 10.713MB'
   network: ws
   port: 8080
   server: 178.63.227.249
@@ -89,21 +112,7 @@ proxies:
     headers:
       Host: de2.v4vmess.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: '[530ms] 🇩🇪DE-91.99.153.39-0248 | 20.053MB'
-  network: ws
-  port: 39130
-  server: 91.99.153.39
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 985af489-fb16-491a-813c-fdd91b6b06ee
-  ws-opts:
-    headers:
-      Host: panel.arushasoft.com
-    path: /
-- name: '[536ms] 🇩🇪_德国_1'
+- name: '[442ms] 🇩🇪_德国_1'
   network: ws
   port: 2053
   server: 141.94.70.243
@@ -117,7 +126,7 @@ proxies:
     headers:
       host: ax1.ylka.dpdns.org
     path: /?ed=2560
-- name: '[573ms] 🇩🇪_德国_5'
+- name: '[498ms] 🇩🇪_德国_5'
   network: ws
   port: 443
   server: 91.107.254.116
@@ -131,7 +140,7 @@ proxies:
     headers:
       host: ax1.ylka.dpdns.org
     path: /?ed=2560
-- name: '[583ms] 🇩🇪_德国_3'
+- name: '[527ms] 🇩🇪_德国_3'
   network: ws
   port: 8443
   server: 91.107.159.178
@@ -145,7 +154,7 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- name: '[590ms] 🇩🇪_德国_4'
+- name: '[555ms] 🇩🇪_德国_4'
   network: ws
   port: 443
   server: 91.107.251.232
@@ -159,7 +168,7 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- name: '[766ms] 🇩🇪_德国_6'
+- name: '[586ms] 🇩🇪_德国_6'
   network: ws
   port: 443
   server: 91.107.189.217
@@ -173,14 +182,6 @@ proxies:
     headers:
       host: zx1.ylka.dpdns.org
     path: /?ed=2560
-- name: '[1098ms] 🇩🇪 德国 37'
-  network: tcp
-  port: 38918
-  server: 46.29.34.205
-  tls: false
-  type: vless
-  udp: true
-  uuid: fb9183fc-f0bb-4d19-8c8b-704b017d04b8
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
