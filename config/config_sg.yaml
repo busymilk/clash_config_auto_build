@@ -50,12 +50,20 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[696ms] 🇸🇬SG-188.166.220.70-0284 | 14.406MB'
+  name: '[515ms] 🇸🇬SG-188.166.220.70-0284 | 14.406MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
-- name: '[1034ms] 🇸🇬 新加坡 22'
+- cipher: aes-256-gcm
+  name: '[563ms] 🇸🇬 新加坡 16'
+  password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
+  port: 34502
+  server: 18.141.140.115
+  server_url: cgroup.node3.s2.nodelist-airport.com
+  type: ss
+  udp: true
+- name: '[864ms] 🇸🇬 新加坡 22'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -68,7 +76,7 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[2351ms] Channel id: @ShadowProxy66🇸🇬'
+- name: '[1826ms] Channel id: @ShadowProxy66🇸🇬'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145

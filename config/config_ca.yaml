@@ -49,14 +49,28 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '[90ms] 🇨🇦CA-142.4.216.225-0299 | 3.046MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
+- cipher: aes-256-cfb
+  name: '[122ms] SSR-加拿大-79.127.233.170:989'
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
+- cipher: aes-256-cfb
+  name: '[131ms] 🇨🇦CA-79.127.233.170-0263 | 49.423MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[96ms] 🇨🇦CA-142.4.216.225-0297 | 12.397MB'
+  name: '[149ms] 🇨🇦CA-79.127.233.170-0212 | 35.112MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[251ms] 🇨🇦CA-142.4.216.225-0297 | 12.397MB'
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -65,7 +79,7 @@ proxies:
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: '[217ms] 🇨🇦 加拿大 16'
+  name: '[369ms] 🇨🇦 加拿大 16'
   password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
   port: 54530
   server: 192.18.150.167
@@ -73,28 +87,21 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- cipher: aes-256-cfb
-  name: '[263ms] 🇨🇦CA-79.127.233.170-0263 | 49.423MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: '[263ms] SSR-加拿大-79.127.233.170:989'
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: '[270ms] 🇨🇦CA-79.127.233.170-0212 | 35.112MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '[398ms] VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80'
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - auth: 4f91921f-1318-430a-8879-6f3b7216fdc6
-  name: '[2524ms] 🇨🇦 加拿大 02'
+  name: '[469ms] 🇨🇦 加拿大 02'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 4f91921f-1318-430a-8879-6f3b7216fdc6
@@ -105,6 +112,12 @@ proxies:
   sni: jnd.dport.top
   type: hysteria2
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '[1156ms] 🇨🇦CA-142.4.216.225-0299 | 3.046MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
