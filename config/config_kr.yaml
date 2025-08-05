@@ -49,13 +49,34 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '[733ms] 🇷🇴_RO_罗马尼亚->🇰🇷_KR_韩国'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
-  type: ss
-- name: '[1063ms] 🇰🇷_韩国_4'
+- name: '[1022ms] 🇰🇷_韩国_3'
+  network: ws
+  port: 10001
+  server: 119.202.158.65
+  servername: hz1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: hz1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: '[1145ms] 🇰🇷 韩国 02'
+  network: ws
+  port: 30055
+  server: 121.171.82.130
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: Telegram@WangCai2/?ed=2560
+- name: '[1195ms] 🇰🇷_韩国_4'
   network: ws
   port: 50000
   server: 115.94.98.93
