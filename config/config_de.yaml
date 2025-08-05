@@ -50,7 +50,7 @@ profile:
   store-selected: true
 proxies:
 - client-fingerprint: randomized
-  name: '[224ms] 🇩🇪 德国 05'
+  name: '[191ms] 🇩🇪 德国 05'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -69,7 +69,7 @@ proxies:
   delay: 1670
   h2-opts: {}
   http-opts: {}
-  name: '[297ms] 德国 - Falkenstein - Hetzner Online GmbH - 1'
+  name: '[283ms] 德国 - Falkenstein - Hetzner Online GmbH - 1'
   network: tcp
   port: 14090
   server: 45.93.168.40
@@ -79,14 +79,55 @@ proxies:
   type: vmess
   uuid: 37fc85cf-30d6-4f25-a19b-cfa5732ff6ca
 - cipher: chacha20-ietf-poly1305
-  name: '[405ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
+  name: '[293ms] 🇩🇪DE-185.177.229.245-044'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[296ms] 🇩🇪DE-46.101.245.131-0259 | 3.184MB'
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[314ms] 🇩🇪DE-45.144.54.33-0273 | 2.028MB'
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '[377ms] 🇩🇪 德国 03'
+  network: tcp
+  port: 30938
+  reality-opts:
+    public-key: OkwhFGkP6NhXbmfBpBKqJ_HDNEcqbkp0mMc9HeYVBBE
+    short-id: 9f2b1f07
+  server: 109.61.16.89
+  server_url: antimage.fonixapp.org
+  servername: indeed.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
 - alterId: 0
   cipher: auto
-  name: '[406ms] 🇩🇪DE-178.63.227.249-0291 | 10.713MB'
+  name: '[410ms] 🇩🇪DE-91.99.153.39-0248 | 13.082MB'
+  network: ws
+  port: 39130
+  server: 91.99.153.39
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 985af489-fb16-491a-813c-fdd91b6b06ee
+  ws-opts:
+    headers:
+      Host: panel.arushasoft.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '[410ms] 🇩🇪DE-178.63.227.249-0291 | 10.713MB'
   network: ws
   port: 8080
   server: 178.63.227.249
@@ -100,102 +141,6 @@ proxies:
     headers:
       Host: de2.v4vmess.xyz
     path: /
-- alterId: 0
-  cipher: auto
-  name: '[420ms] 🇩🇪DE-91.99.153.39-0248 | 13.082MB'
-  network: ws
-  port: 39130
-  server: 91.99.153.39
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 985af489-fb16-491a-813c-fdd91b6b06ee
-  ws-opts:
-    headers:
-      Host: panel.arushasoft.com
-    path: /
-- name: '[439ms] 🇩🇪_德国_1'
-  network: ws
-  port: 2053
-  server: 141.94.70.243
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
-- name: '[510ms] 🇩🇪_德国_5'
-  network: ws
-  port: 443
-  server: 91.107.254.116
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
-- name: '[511ms] 🇩🇪_德国_4'
-  network: ws
-  port: 443
-  server: 91.107.251.232
-  servername: zx1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx1.ylka.dpdns.org
-    path: /?ed=2560
-- name: '[533ms] 🇩🇪_德国_3'
-  network: ws
-  port: 8443
-  server: 91.107.159.178
-  servername: zx1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx1.ylka.dpdns.org
-    path: /?ed=2560
-- name: '[538ms] 🇩🇪_德国_6'
-  network: ws
-  port: 443
-  server: 91.107.189.217
-  servername: zx1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx1.ylka.dpdns.org
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: '[619ms] SS-斯洛文尼亚-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.144.54.33:34803'
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[2704ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

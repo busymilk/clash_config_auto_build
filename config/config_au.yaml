@@ -49,7 +49,7 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: '[753ms] 🇦🇺_澳大利亚_1'
+- name: '[704ms] 🇦🇺_澳大利亚_1'
   network: ws
   port: 23023
   server: 43.165.191.25
@@ -63,33 +63,6 @@ proxies:
     headers:
       host: v01.bgm2024.dpdns.org
     path: /?ed=2560
-- name: '[1280ms] 🇦🇺_澳大利亚_5'
-  network: ws
-  port: 443
-  server: 119.13.79.23
-  servername: ax1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax1.ylka.dpdns.org
-    path: /?ed=2560
-- name: '[1593ms] 🇦🇺 澳大利亚 01'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 172.204.24.35
-  skip-cert-verify: true
-  sni: epga.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epga.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
