@@ -49,8 +49,22 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  delay: 1586
+  name: '[286ms] 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1'
+  password: 7PPaSwxp3LLgJmWcpSclK6
+  port: 25607
+  server: 85.208.139.158
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '[304ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
 - client-fingerprint: randomized
-  name: '[222ms] 🇩🇪 德国 05'
+  name: '[307ms] 🇩🇪 德国 05'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -64,26 +78,20 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[279ms] 🇩🇪DE-185.177.229.245-0289 | 5.614MB'
+  name: '[316ms] 🇩🇪DE-185.177.229.245-0289 | 6.355MB'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[320ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[324ms] 🇩🇪DE-45.144.54.33-0932 | 15.477MB'
+  name: '[325ms] SS-斯洛文尼亚-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.144.54.33:34803'
   password: LiHQX9cDbdooBHlIg0eiqQ
   port: 34803
   server: 45.144.54.33
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[370ms] 🇩🇪 德国 03'
+  name: '[369ms] 🇩🇪 德国 03'
   network: tcp
   port: 30938
   reality-opts:
@@ -96,7 +104,13 @@ proxies:
   type: vless
   udp: true
   uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
-- name: '[399ms] 🇩🇪 德国 18'
+- cipher: chacha20-ietf-poly1305
+  name: '[400ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- name: '[505ms] 🇩🇪 德国 18'
   network: ws
   port: 80
   server: 104.17.148.22
@@ -109,14 +123,46 @@ proxies:
     headers:
       Host: NIce-APartMEnt.ZULAir.ORg
     path: /?ed=2048
-- cipher: rc4-md5
-  name: '[445ms] 🇩🇪DE-193.108.119.230-0290 | 12.148MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 974
+  h2-opts: {}
+  http-opts: {}
+  name: '[544ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  network: ws
+  port: 2083
+  server: 104.26.5.16
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 1026
+  h2-opts: {}
+  http-opts: {}
+  name: '[644ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  network: ws
+  port: 2083
+  server: 172.67.72.15
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
 - auth: e21fcd4e-1d46-4b16-b8f4-4c9c51d90879
-  name: '[694ms] 🇩🇪 德国 04'
+  name: '[652ms] 🇩🇪 德国 04'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: e21fcd4e-1d46-4b16-b8f4-4c9c51d90879
@@ -127,13 +173,19 @@ proxies:
   sni: dehub.xg-hub.icu
   type: hysteria2
   udp: true
+- cipher: rc4-md5
+  name: '[688ms] 🇩🇪DE-193.108.119.230-0290 | 7.238MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇩🇪DE
   delay: 1670
   h2-opts: {}
   http-opts: {}
-  name: '[1466ms] 德国 - Falkenstein - Hetzner Online GmbH - 1'
+  name: '[864ms] 德国 - Falkenstein - Hetzner Online GmbH - 1'
   network: tcp
   port: 14090
   server: 45.93.168.40
@@ -142,12 +194,33 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: 37fc85cf-30d6-4f25-a19b-cfa5732ff6ca
-- cipher: chacha20-ietf-poly1305
-  name: '[1576ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
+- cipher: aes-256-cfb
+  name: '[1043ms] 🇩🇪DE-80.92.204.106-4906 | 2.959MB'
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 80.92.204.106
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🏁ZZ
+  delay: 1639
+  name: '[2516ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  password: trErto8XzLALaQEslTp_jw
+  port: 2222
+  server: 2.59.133.216
+  server_url: universal.opengate.wiki
+  type: ss
+- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  name: '[2967ms] 🇩🇪 德国 08'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  port: 33653
+  server: 213.108.198.123
+  server_url: dg.dport.top
+  skip-cert-verify: true
+  sni: dg.dport.top
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

@@ -48,7 +48,17 @@ ntp:
 profile:
   store-fake-ip: true
   store-selected: true
-proxies: []
+proxies:
+- name: '[3240ms] 🇹🇼 台湾|@ripaojiedian'
+  password: test.+
+  port: 30443
+  server: 1.170.195.64
+  server_url: cmhkb.ssv.vc
+  skip-cert-verify: false
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  username: test
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
