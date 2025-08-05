@@ -50,7 +50,7 @@ profile:
   store-selected: true
 proxies:
 - client-fingerprint: randomized
-  name: '[191ms] 🇩🇪 德国 05'
+  name: '[269ms] 🇩🇪 德国 05'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -63,13 +63,19 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- cipher: chacha20-ietf-poly1305
+  name: '[451ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🇩🇪DE
   delay: 1670
   h2-opts: {}
   http-opts: {}
-  name: '[283ms] 德国 - Falkenstein - Hetzner Online GmbH - 1'
+  name: '[479ms] 德国 - Falkenstein - Hetzner Online GmbH - 1'
   network: tcp
   port: 14090
   server: 45.93.168.40
@@ -79,26 +85,27 @@ proxies:
   type: vmess
   uuid: 37fc85cf-30d6-4f25-a19b-cfa5732ff6ca
 - cipher: chacha20-ietf-poly1305
-  name: '[293ms] 🇩🇪DE-185.177.229.245-044'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[296ms] 🇩🇪DE-46.101.245.131-0259 | 3.184MB'
+  name: '[526ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[314ms] 🇩🇪DE-45.144.54.33-0273 | 2.028MB'
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
+- name: '[544ms] 🇩🇪 德国 18'
+  network: ws
+  port: 80
+  server: 104.17.148.22
+  server_url: www.speedtest.net.cdn.cloudflare.net
+  tls: false
+  type: vless
+  udp: true
+  uuid: 323b04df-9596-4b4b-a0dc-27bec648e28f
+  ws-opts:
+    headers:
+      Host: NIce-APartMEnt.ZULAir.ORg
+    path: /?ed=2048
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[377ms] 🇩🇪 德国 03'
+  name: '[614ms] 🇩🇪 德国 03'
   network: tcp
   port: 30938
   reality-opts:
@@ -111,23 +118,15 @@ proxies:
   type: vless
   udp: true
   uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
+- cipher: rc4-md5
+  name: '[622ms] 🇩🇪DE-193.108.119.230-0290 | 12.148MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '[410ms] 🇩🇪DE-91.99.153.39-0248 | 13.082MB'
-  network: ws
-  port: 39130
-  server: 91.99.153.39
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 985af489-fb16-491a-813c-fdd91b6b06ee
-  ws-opts:
-    headers:
-      Host: panel.arushasoft.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '[410ms] 🇩🇪DE-178.63.227.249-0291 | 10.713MB'
+  name: '[675ms] 🇩🇪DE-178.63.227.249-0291 | 10.713MB'
   network: ws
   port: 8080
   server: 178.63.227.249
@@ -141,6 +140,12 @@ proxies:
     headers:
       Host: de2.v4vmess.xyz
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '[2731ms] SS-斯洛文尼亚-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.144.54.33:34803'
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

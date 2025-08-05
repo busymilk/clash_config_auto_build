@@ -50,12 +50,12 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[732ms] 🇸🇬SG-188.166.220.70-0287 | 4.593MB'
+  name: '[556ms] 🇸🇬SG-188.166.220.70-0284 | 14.406MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
-- name: '[1324ms] 🇸🇬 新加坡 22'
+- name: '[797ms] 🇸🇬 新加坡 22'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -68,6 +68,23 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
+- auth: m1o75lGkBsA1vZ2EV1iOnKEy80
+  name: '[989ms] 🇸🇬 新加坡 04'
+  password: m1o75lGkBsA1vZ2EV1iOnKEy80
+  port: 15750
+  server: 18.139.227.121
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- name: '[1373ms] Channel id: @ShadowProxy66🇸🇬'
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
