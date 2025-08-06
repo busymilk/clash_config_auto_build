@@ -122,7 +122,7 @@ proxy-groups:
     tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     include-all-proxies: true # 包含所有节点进行测试
     include-all: true
-    url: "https://www.google.com/generate_204" # 使用 Google的专用网络连通性测试 URL，更轻量高效
+    url: "https://cp.cloudflare.com/generate_204" 
     expected-status: 204 # 期望获得 204 状态码，确保测试的准确性，避免被劫持
     interval: 120 # 健康检查间隔（秒）
     timeout: 3000 # 健康检查超时时间（毫秒）
@@ -134,7 +134,7 @@ proxy-groups:
     strategy: consistent-hashing # 轮询策略，确保同一目标地址使用同一节点
     include-all-proxies: true
     include-all: true
-    url: "https://www.google.com/generate_204"
+    url: "https://cp.cloudflare.com/generate_204"
     expected-status: 204
     interval: 120
     timeout: 3000
@@ -146,7 +146,7 @@ proxy-groups:
     strategy: round-robin # 轮询策略，将会把所有的请求分配给策略组内不同的代理节点
     include-all-proxies: true
     include-all: true
-    url: "https://www.google.com/generate_204"
+    url: "https://cp.cloudflare.com/generate_204"
     expected-status: 204
     interval: 120
     timeout: 3000
@@ -157,7 +157,7 @@ proxy-groups:
     type: select # 手动选择节点
     include-all-proxies: true
     include-all: true
-    url: "https://www.google.com/generate_204"
+    url: "https://cp.cloudflare.com/generate_204"
     expected-status: 204
     interval: 120
     timeout: 3000
