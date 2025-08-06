@@ -396,11 +396,11 @@ rules:
 #如果使用no-resolve，则域名请求走到ip规则匹配了，就跳过这一条规则，走下一条。
 #相当于使用no-resolve的规则只会对直接ip类的请求起作用
 #内网ip
-  - RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
-  - RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
+  - 'RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)'
+  - 'RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)'
 
 #国外ip
-  - RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
+  - 'RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)'
 
 #国内ip
   - RULE-SET,geoip_cn_ip,DIRECT
