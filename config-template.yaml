@@ -32,7 +32,7 @@ find-process-mode: strict
 global-client-fingerprint: firefox
 
 profile:
-  store-selected: true # 记录手动选择的代理
+  store-selected: false # 不记录手动选择的代理，代理节点经常失效，没记录的必要
   store-fake-ip: true # 记录 fake-ip 的映射关系
 
 sniffer:
