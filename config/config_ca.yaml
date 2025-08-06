@@ -47,22 +47,56 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-256-cfb
+  group: SSRProvider
+  name: '[118ms] 🇨🇦CA-79.127.233.170-020'
+  obfs: plain
+  obfsparam: null
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  protoparam: null
+  server: 79.127.233.170
+  type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: '[90ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
+  name: '[118ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  name: '[125ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[91ms] 🇨🇦CA-142.4.216.225-0297 | 3.931MB'
+  name: '[244ms] 🇨🇦CA-142.4.216.225-0297 | 3.931MB'
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   server_url: ca225.vpnbook.com
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[257ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- alpn:
+  - h3
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: '[301ms] 🇨🇦 加拿大 77'
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 192.18.150.167
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[175ms] 🇨🇦 加拿大 73'
+  name: '[316ms] 🇨🇦 加拿大 73'
   network: tcp
   port: 59303
   reality-opts:
@@ -75,42 +109,25 @@ proxies:
   udp: true
   uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
 - alpn:
-  - h3
-  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: '[218ms] 🇨🇦 加拿大 77'
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 54530
-  server: 192.18.150.167
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  - h2
+  client-fingerprint: chrome
+  name: '[457ms] 🇨🇦 加拿大 32'
+  network: ws
+  port: 2096
+  server: 104.18.90.237
+  server_url: upwork.com
+  servername: baNG.MiRAclEHeaRtBit.iCU.
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '[258ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: '[262ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: '[267ms] 🇨🇦CA-79.127.233.170-020'
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
+  uuid: 31f787f5-fd25-49ea-b86c-0362f02cc7a3
+  ws-opts:
+    headers:
+      Host: BaNG.MiRACleHearTBit.ICu.
+    path: /api/ai/socket/@V2RayyNGvpn?ed=2048
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[444ms] 🇨🇦 加拿大 63'
+  name: '[609ms] 🇨🇦 加拿大 63'
   network: tcp
   port: 26113
   reality-opts:
@@ -124,7 +141,7 @@ proxies:
   uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[460ms] 🇨🇦 加拿大 78'
+  name: '[698ms] 🇨🇦 加拿大 78'
   network: tcp
   port: 42557
   reality-opts:

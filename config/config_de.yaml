@@ -48,7 +48,7 @@ profile:
   store-selected: false
 proxies:
 - client-fingerprint: randomized
-  name: '[151ms] 🇩🇪 德国 08'
+  name: '[152ms] 🇩🇪 德国 08'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -61,44 +61,57 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '[237ms] 🇩🇪 德国 01'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- cipher: chacha20-ietf-poly1305
+  name: '[470ms] 🇩🇪DE-185.177.229.245-032'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - cipher: chacha20-ietf-poly1305
   delay: 1586
-  name: '[289ms] 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1'
+  name: '[476ms] 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1'
   password: 7PPaSwxp3LLgJmWcpSclK6
   port: 25607
   server: 85.208.139.158
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '[296ms] 🇩🇪DE-185.177.229.245-032'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[306ms] 🇩🇪DE-46.101.245.131-036'
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
+  name: '[522ms] 🇩🇪DE-147.45.178.200-027'
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🏁ZZ
   delay: 1639
-  name: '[334ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  name: '[545ms] 德国 - 法兰克福 - dataforest GmbH - 2'
   password: trErto8XzLALaQEslTp_jw
   port: 2222
   server: 176.96.136.168
   server_url: universal.opengate.wiki
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[346ms] 🇩🇪DE-45.144.54.33-023'
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
+  name: '[593ms] 🇩🇪DE-46.101.245.131-036'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[368ms] 🇩🇪 德国 03'
+  name: '[657ms] 🇩🇪 德国 03'
   network: tcp
   port: 30938
   reality-opts:
@@ -111,45 +124,19 @@ proxies:
   type: vless
   udp: true
   uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
-- name: '[423ms] 🇩🇪 德国 18'
-  network: ws
-  port: 4002
-  server: 45.145.42.229
-  servername: hv1.ylks0033.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: hv1.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 974
-  h2-opts: {}
-  http-opts: {}
-  name: '[510ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
-  network: ws
-  port: 2083
-  server: 104.26.5.16
-  servername: blaze-ger-248.blazecloudmain.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
-  ws-opts:
-    headers:
-      HOST: blaze-ger-248.blazecloudmain.site
-    path: /linkwsrt?ed=2560
+- cipher: rc4-md5
+  name: '[721ms] 🇩🇪DE-193.108.119.230-0290 | 19.21MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[511ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[865ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
   server: 172.67.72.15
@@ -162,12 +149,37 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
-- cipher: rc4-md5
-  name: '[1001ms] 🇩🇪DE-193.108.119.230-0290 | 19.21MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 974
+  h2-opts: {}
+  http-opts: {}
+  name: '[967ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  network: ws
+  port: 2083
+  server: 104.26.5.16
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
+- auth: 3d9d0485-e27f-4a82-820b-2251c14710b6
+  name: '[1719ms] 🇩🇪 德国 08 #2'
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 3d9d0485-e27f-4a82-820b-2251c14710b6
+  port: 35230
+  server: 213.108.198.123
+  server_url: flydg.flylink.cyou
+  skip-cert-verify: true
+  sni: flydg.flylink.cyou
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
