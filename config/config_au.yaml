@@ -47,13 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '[275ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- name: '[325ms] 🇦🇺_澳大利亚_1'
+- name: '[242ms] 🇦🇺_澳大利亚_1'
   network: ws
   port: 11002
   server: 185.148.13.32
@@ -85,7 +79,7 @@ proxy-groups:
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 204
   include-all: true
   include-all-proxies: true
@@ -96,7 +90,7 @@ proxy-groups:
   strategy: consistent-hashing
   timeout: 3000
   type: load-balance
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 204
   include-all: true
   include-all-proxies: true
@@ -107,7 +101,7 @@ proxy-groups:
   strategy: round-robin
   timeout: 3000
   type: load-balance
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 204
   include-all: true
   include-all-proxies: true
@@ -117,7 +111,7 @@ proxy-groups:
   name: 👆 手动选择
   timeout: 3000
   type: select
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 404
   include-all: true
   include-all-proxies: true

@@ -48,20 +48,20 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[523ms] 🇯🇵JP-149.22.87.204-0281 | 28.016MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: '[544ms] 🇯🇵JP-149.22.87.241-0279 | 28.52MB'
+  name: '[438ms] 🇯🇵JP-149.22.87.241-0279 | 28.52MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
+- cipher: aes-128-gcm
+  name: '[439ms] 🇯🇵JP-149.22.87.204-0281 | 28.016MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '[697ms] 🇯🇵JP-223.135.156.179-0292 | 22.252MB'
+  name: '[586ms] 🇯🇵JP-223.135.156.179-0292 | 22.252MB'
   network: ws
   port: 20521
   server: 223.135.156.179
@@ -71,7 +71,7 @@ proxies:
   uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
   ws-opts:
     path: /
-- name: '[728ms] 🇯🇵_日本_2'
+- name: '[632ms] 🇯🇵_日本_2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -85,6 +85,32 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- auth: f5ab377f-da4c-41ff-8e98-c730c723d46a
+  name: '[1088ms] 🇯🇵 日本 31'
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: f5ab377f-da4c-41ff-8e98-c730c723d46a
+  port: 35300
+  server: 212.192.221.221
+  server_url: flyrb.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxg.flylink.cyou
+  type: hysteria2
+  udp: true
+- name: '[1220ms] 🇯🇵_日本_1'
+  network: ws
+  port: 12333
+  server: 121.80.244.179
+  servername: ax01.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ax01.ylka.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -103,7 +129,7 @@ proxy-groups:
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 204
   include-all: true
   include-all-proxies: true
@@ -114,7 +140,7 @@ proxy-groups:
   strategy: consistent-hashing
   timeout: 3000
   type: load-balance
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 204
   include-all: true
   include-all-proxies: true
@@ -125,7 +151,7 @@ proxy-groups:
   strategy: round-robin
   timeout: 3000
   type: load-balance
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 204
   include-all: true
   include-all-proxies: true
@@ -135,7 +161,7 @@ proxy-groups:
   name: 👆 手动选择
   timeout: 3000
   type: select
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 404
   include-all: true
   include-all-proxies: true

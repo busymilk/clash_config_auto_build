@@ -46,7 +46,17 @@ ntp:
 profile:
   store-fake-ip: true
   store-selected: false
-proxies: []
+proxies:
+- name: '[856ms] 🇹🇼 台湾|@ripaojiedian'
+  password: test.+
+  port: 30443
+  server: 1.170.195.64
+  server_url: cmhkb.ssv.vc
+  skip-cert-verify: false
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  username: test
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -65,7 +75,7 @@ proxy-groups:
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 204
   include-all: true
   include-all-proxies: true
@@ -76,7 +86,7 @@ proxy-groups:
   strategy: consistent-hashing
   timeout: 3000
   type: load-balance
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 204
   include-all: true
   include-all-proxies: true
@@ -87,7 +97,7 @@ proxy-groups:
   strategy: round-robin
   timeout: 3000
   type: load-balance
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 204
   include-all: true
   include-all-proxies: true
@@ -97,7 +107,7 @@ proxy-groups:
   name: 👆 手动选择
   timeout: 3000
   type: select
-  url: https://www.google.com/generate_204
+  url: https://cp.cloudflare.com/generate_204
 - expected-status: 404
   include-all: true
   include-all-proxies: true
