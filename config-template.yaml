@@ -86,9 +86,12 @@ dns:
 
   #nameserver 在fakerip模式下的核心作用，已经从“获取IP地址”转变成了“验证域名的存在性”
   #针对我这个项目里配置文件的作用，只是为了验证要访问的域名是否存在
+  #使用no-resolve可以默认域名存在，不用解析判断，也就是用不到nameserver了。
   #存在了，进行规则匹配，否则没必要规则匹配走后续的流程，这里之所以不选国内的dns，不是怕返回错误的ip，即使返回错误的ip也会触发后续的流程规则，直连的走direct-nameserver解析，代理的直接让代理节点进行解析，本地不进行操控
   #第一是怕返回无此域名，第二是防止被记录了。
   #常见的代理协议都支持远端解析。
+  #规则为ip类型的，也会触发nameserver，因为域名必须解析了才能知道ip是否匹配，然后才能根据规则判断走直连还是代理，no-resolve也可以避免这个情况，跳过解析，域名的请求不会
+  #走到规则为ip类型的判断，只有直接进行ip请求的才会命中。
   nameserver: #默认的域名解析服务器
   - 'https://[2001:4860:4860::64]/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true'
   - 'tls://1dot1dot1dot1.cloudflare-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true'
@@ -339,6 +342,12 @@ rule-providers:
 
 # 路由规则 (Rules) #参考：https://www.aloxaf.com/2025/04/how_to_use_geosite/ 重要是@cn 和 @!cn 的使用以及先后顺序
 rules:
+
+  #---------------------------------------------------------
+  #广告拦截
+  - RULE-SET,geosite_@ads,REJECT(,no-resolve)
+  #---------------------------------------------------------
+  #自己增加的规则
   - DOMAIN,time.apple.com,DIRECT
   - DOMAIN,cdn.jsdelivr.net,DIRECT
   - DOMAIN,a.ppconverter.eu.org,DIRECT
@@ -353,9 +362,6 @@ rules:
   - 'DOMAIN-SUFFIX,1fichier.com,DIRECT'
   - 'PROCESS-NAME,Telegram,Telegram'(,no-resolve)
   - 'DOMAIN-SUFFIX,v2ex.com,v2ex'(,no-resolve)
-  
-  
-  
  #---------------------------------------------------------
 #直连应用
   - RULE-SET,other_direct_applications,DIRECT
@@ -366,9 +372,6 @@ rules:
 #---------------------------------------------------------
 #连通性测试
   - RULE-SET,geosite_connectivity_check,DIRECT
-#---------------------------------------------------------
-#广告拦截
-  - RULE-SET,geosite_@ads,REJECT
 #---------------------------------------------------------
 #特定域名
   - 'DOMAIN-KEYWORD,googleapis,GoogleApi(,no-resolve)' #Gemini用
@@ -401,5 +404,6 @@ rules:
 #国内ip
   - RULE-SET,geoip_cn_ip,DIRECT
 #---------------------------------------------------------
-#兜底规则
+#兜底规则 这里不写no-resolve，是默认上面那些规则里的域名都是真实存在的（对于自己来说，域名不存在的情况比较小，谁会经常访问一个不存在的域名呢）
+#漏到这里的都是没命中的，需要nameserver解析判断下是否域名存在（如果是域名的话）
   - MATCH,✈️ 选择代理
