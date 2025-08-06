@@ -29,8 +29,6 @@ dns:
   - tls://unfiltered.adguard-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
   - tls://dns.mullvad.net#proxy&ecs=39.134.187.0/24&ecs-override=true
   - https://dns.nextdns.io/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
-  proxy-server-nameserver:
-  - https://223.5.5.5/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
   use-system-hosts: false
 external-controller: 127.0.0.1:9090
 external-ui: ui
@@ -47,10 +45,10 @@ ntp:
   write-to-system: false
 profile:
   store-fake-ip: true
-  store-selected: true
+  store-selected: false
 proxies:
 - client-fingerprint: randomized
-  name: '[354ms] 🇩🇪 德国 08'
+  name: '[142ms] 🇩🇪 德国 08'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -64,51 +62,36 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[476ms] 🇩🇪DE-46.101.245.131-036'
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
+  name: '[275ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
   delay: 1586
-  name: '[494ms] 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1'
+  name: '[279ms] 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1'
   password: 7PPaSwxp3LLgJmWcpSclK6
   port: 25607
   server: 85.208.139.158
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: '[287ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: 🏁ZZ
   delay: 1639
-  name: '[533ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  name: '[324ms] 德国 - 法兰克福 - dataforest GmbH - 2'
   password: trErto8XzLALaQEslTp_jw
   port: 2222
   server: 176.96.136.168
   server_url: universal.opengate.wiki
   type: ss
-- cipher: aes-256-cfb
-  name: '[585ms] 🇩🇪DE-80.92.204.106-4906 | 3.872MB'
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 80.92.204.106
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[631ms] 🇩🇪 德国 03'
-  network: tcp
-  port: 30938
-  reality-opts:
-    public-key: OkwhFGkP6NhXbmfBpBKqJ_HDNEcqbkp0mMc9HeYVBBE
-    short-id: 9f2b1f07
-  server: 109.61.16.89
-  server_url: antimage.fonixapp.org
-  servername: indeed.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
 - cipher: rc4-md5
-  name: '[649ms] 🇩🇪DE-193.108.119.230-0290 | 19.21MB'
+  name: '[346ms] 🇩🇪DE-193.108.119.230-0290 | 19.21MB'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -116,29 +99,10 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
-  delay: 1026
-  h2-opts: {}
-  http-opts: {}
-  name: '[823ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
-  network: ws
-  port: 2083
-  server: 172.67.72.15
-  servername: blaze-ger-248.blazecloudmain.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
-  ws-opts:
-    headers:
-      HOST: blaze-ger-248.blazecloudmain.site
-    path: /linkwsrt?ed=2560
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
   delay: 974
   h2-opts: {}
   http-opts: {}
-  name: '[841ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  name: '[503ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
   network: ws
   port: 2083
   server: 104.26.5.16
@@ -151,8 +115,27 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 1026
+  h2-opts: {}
+  http-opts: {}
+  name: '[527ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  network: ws
+  port: 2083
+  server: 172.67.72.15
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
 - auth: b5a8e1b6-7e26-43ca-ac80-b9683c98d26f
-  name: '[1451ms] 🇩🇪 德国 02'
+  name: '[541ms] 🇩🇪 德国 02'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: b5a8e1b6-7e26-43ca-ac80-b9683c98d26f
@@ -164,10 +147,41 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '[2164ms] 🇩🇪DE-147.45.178.200-027'
+  name: '[544ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
   password: a58fa62b4944ddbf
   port: 57456
   server: 147.45.178.200
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '[893ms] 🇩🇪 德国 05'
+  port: 22947
+  server: 46.29.34.205
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d7291fc4-1702-4826-8fe1-ab301b1c8f82
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '[1185ms] 🇩🇪 德国 03'
+  network: tcp
+  port: 30938
+  reality-opts:
+    public-key: OkwhFGkP6NhXbmfBpBKqJ_HDNEcqbkp0mMc9HeYVBBE
+    short-id: 9f2b1f07
+  server: 109.61.16.89
+  server_url: antimage.fonixapp.org
+  servername: indeed.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
+- cipher: chacha20-ietf-poly1305
+  name: '[2499ms] SS-斯洛文尼亚-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-45.144.54.33:34803'
+  password: LiHQX9cDbdooBHlIg0eiqQ
+  port: 34803
+  server: 45.144.54.33
   type: ss
 proxy-groups:
 - name: ✈️ 选择代理
@@ -176,7 +190,6 @@ proxy-groups:
   - ⚖️ 负载均衡-同一url同一节点
   - ⚖️ 负载均衡-同一url不同节点
   - 👆 手动选择
-  - DIRECT
   type: select
 - expected-status: 204
   include-all: true
@@ -381,6 +394,7 @@ rule-providers:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
+- RULE-SET,geosite_@ads,REJECT
 - DOMAIN,time.apple.com,DIRECT
 - DOMAIN,cdn.jsdelivr.net,DIRECT
 - DOMAIN,a.ppconverter.eu.org,DIRECT
@@ -399,7 +413,6 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,geosite_@ads,REJECT
 - DOMAIN-KEYWORD,googleapis,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
@@ -410,9 +423,9 @@ rules:
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
-- RULE-SET,geoip_lan_ip,DIRECT
-- RULE-SET,other_ssk_lan_ip,DIRECT
-- RULE-SET,geoip_telegram_ip,Telegram
+- RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
+- RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
+- RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:

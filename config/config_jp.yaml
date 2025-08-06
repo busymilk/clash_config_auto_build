@@ -29,8 +29,6 @@ dns:
   - tls://unfiltered.adguard-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
   - tls://dns.mullvad.net#proxy&ecs=39.134.187.0/24&ecs-override=true
   - https://dns.nextdns.io/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
-  proxy-server-nameserver:
-  - https://223.5.5.5/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
   use-system-hosts: false
 external-controller: 127.0.0.1:9090
 external-ui: ui
@@ -47,23 +45,23 @@ ntp:
   write-to-system: false
 profile:
   store-fake-ip: true
-  store-selected: true
+  store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[355ms] 🇯🇵JP-149.22.87.241-0279 | 28.52MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: '[357ms] 🇯🇵JP-149.22.87.204-0281 | 28.016MB'
+  name: '[523ms] 🇯🇵JP-149.22.87.204-0281 | 28.016MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
+- cipher: aes-128-gcm
+  name: '[544ms] 🇯🇵JP-149.22.87.241-0279 | 28.52MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '[492ms] 🇯🇵JP-223.135.156.179-0292 | 22.252MB'
+  name: '[697ms] 🇯🇵JP-223.135.156.179-0292 | 22.252MB'
   network: ws
   port: 20521
   server: 223.135.156.179
@@ -73,7 +71,7 @@ proxies:
   uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
   ws-opts:
     path: /
-- name: '[522ms] 🇯🇵_日本_2'
+- name: '[728ms] 🇯🇵_日本_2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -87,35 +85,6 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-gcm
-  name: '[884ms] 🇯🇵 日本 23'
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '[3429ms] 🇯🇵 日本2|@ripaojiedian'
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -123,7 +92,6 @@ proxy-groups:
   - ⚖️ 负载均衡-同一url同一节点
   - ⚖️ 负载均衡-同一url不同节点
   - 👆 手动选择
-  - DIRECT
   type: select
 - expected-status: 204
   include-all: true
@@ -328,6 +296,7 @@ rule-providers:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
+- RULE-SET,geosite_@ads,REJECT
 - DOMAIN,time.apple.com,DIRECT
 - DOMAIN,cdn.jsdelivr.net,DIRECT
 - DOMAIN,a.ppconverter.eu.org,DIRECT
@@ -346,7 +315,6 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,geosite_@ads,REJECT
 - DOMAIN-KEYWORD,googleapis,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
@@ -357,9 +325,9 @@ rules:
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
-- RULE-SET,geoip_lan_ip,DIRECT
-- RULE-SET,other_ssk_lan_ip,DIRECT
-- RULE-SET,geoip_telegram_ip,Telegram
+- RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
+- RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
+- RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:

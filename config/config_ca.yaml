@@ -29,8 +29,6 @@ dns:
   - tls://unfiltered.adguard-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true
   - tls://dns.mullvad.net#proxy&ecs=39.134.187.0/24&ecs-override=true
   - https://dns.nextdns.io/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
-  proxy-server-nameserver:
-  - https://223.5.5.5/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true
   use-system-hosts: false
 external-controller: 127.0.0.1:9090
 external-ui: ui
@@ -47,51 +45,18 @@ ntp:
   write-to-system: false
 profile:
   store-fake-ip: true
-  store-selected: true
+  store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[108ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: '[124ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: '[169ms] 🇨🇦CA-79.127.233.170-020'
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: '[262ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
+  name: '[77ms] 🇨🇦CA-142.4.216.225-0297 | 3.931MB'
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
+  server_url: ca225.vpnbook.com
   type: ss
-- alpn:
-  - h3
-  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: '[286ms] 🇨🇦 加拿大 77'
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 54530
-  server: 192.18.150.167
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[339ms] 🇨🇦 加拿大 20'
+  name: '[134ms] 🇨🇦 加拿大 20'
   network: tcp
   port: 59303
   reality-opts:
@@ -103,8 +68,19 @@ proxies:
   type: vless
   udp: true
   uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+- alpn:
+  - h3
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: '[211ms] 🇨🇦 加拿大 77'
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 192.18.150.167
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - auth: 4f91921f-1318-430a-8879-6f3b7216fdc6
-  name: '[404ms] 🇨🇦 加拿大 55'
+  name: '[232ms] 🇨🇦 加拿大 55'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 4f91921f-1318-430a-8879-6f3b7216fdc6
@@ -115,9 +91,29 @@ proxies:
   sni: jnd.dport.top
   type: hysteria2
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '[259ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  name: '[330ms] SSR-加拿大-79.127.233.170:989'
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
+- cipher: aes-256-cfb
+  name: '[337ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[676ms] 🇨🇦 加拿大 78'
+  name: '[436ms] 🇨🇦 加拿大 78'
   network: tcp
   port: 42557
   reality-opts:
@@ -129,6 +125,25 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '[577ms] VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80'
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- cipher: chacha20-ietf-poly1305
+  name: '[2934ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -136,7 +151,6 @@ proxy-groups:
   - ⚖️ 负载均衡-同一url同一节点
   - ⚖️ 负载均衡-同一url不同节点
   - 👆 手动选择
-  - DIRECT
   type: select
 - expected-status: 204
   include-all: true
@@ -341,6 +355,7 @@ rule-providers:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
+- RULE-SET,geosite_@ads,REJECT
 - DOMAIN,time.apple.com,DIRECT
 - DOMAIN,cdn.jsdelivr.net,DIRECT
 - DOMAIN,a.ppconverter.eu.org,DIRECT
@@ -359,7 +374,6 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,geosite_@ads,REJECT
 - DOMAIN-KEYWORD,googleapis,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
@@ -370,9 +384,9 @@ rules:
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
-- RULE-SET,geoip_lan_ip,DIRECT
-- RULE-SET,other_ssk_lan_ip,DIRECT
-- RULE-SET,geoip_telegram_ip,Telegram
+- RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
+- RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
+- RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:
