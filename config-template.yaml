@@ -13,18 +13,6 @@ external-controller: 127.0.0.1:9090
 external-ui: ui
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
-#不再需要 geodata-mode 和 geox-url，因为我们使用 rule-set
-# GeoIP/GeoSite 相关配置
-# geodata-mode: true
-# geo-auto-update: true
-# geo-update-interval: 12 # 更新间隔，单位为小时
-# geox-url:
-#   geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat"
-#   mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb"
-#   # geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
-#   geosite: "https://cdn.jsdelivr.net/gh/v2fly/domain-list-community@release/dlc.dat" #使用原版规则，里面有@cn 和@!cn
-#   asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
-
 # 进程匹配模式 (仅适用于 macOS/Linux)
 find-process-mode: strict
 
@@ -95,8 +83,11 @@ dns:
   - https://1.12.12.12/dns-query
   - https://223.5.5.5/dns-query
 
-  #nameserver和fallback是并发,优先使用哪个看下面的配置规则，比如fallback-filter,上面的设置优先级高，匹配不到了才会走到nameserver fallback判断
-  #这里不用fallback了，上面的判断已经够全了，nameserver用来兜底
+
+  #nameserver 在fakerip模式下的核心作用，已经从“获取IP地址”转变成了“验证域名的存在性”
+  #针对我这个项目里配置文件的作用，只是为了验证要访问的域名是否存在
+  #存在了，进行规则匹配，否则没必要规则匹配走后续的流程，这里之所以不选国内的dns，不是怕返回错误的ip，即使返回错误的ip也会触发后续的流程规则，直连的走direct-nameserver解析，代理的直接让代理节点进行解析，本地不进行操控
+  #第一是怕返回无此域名，第二是防止被记录了。
   nameserver: #默认的域名解析服务器
   - 'https://[2001:4860:4860::64]/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true'
   - 'tls://1dot1dot1dot1.cloudflare-dns.com#proxy&ecs=39.134.187.0/24&ecs-override=true'
