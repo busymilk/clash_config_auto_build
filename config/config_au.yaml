@@ -46,7 +46,21 @@ ntp:
 profile:
   store-fake-ip: true
   store-selected: false
-proxies: []
+proxies:
+- name: '[384ms] 🇦🇺_澳大利亚_1'
+  network: ws
+  port: 11002
+  server: 185.148.13.32
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -287,9 +301,9 @@ rules:
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
-- RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
+- RULE-SET,geoip_lan_ip,DIRECT,no-resolve
+- RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
+- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:

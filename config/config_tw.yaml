@@ -47,16 +47,19 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[1655ms] 🇹🇼 台湾|@ripaojiedian'
-  password: test.+
-  port: 30443
-  server: 1.170.195.64
-  server_url: cmhkb.ssv.vc
-  skip-cert-verify: false
-  sni: cmhkb.ssv.vc
-  tls: true
-  type: http
-  username: test
+- name: '[1148ms] 🇹🇼 台湾 01'
+  network: ws
+  password: ttfang
+  port: 81
+  server: 220.135.202.250
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -297,9 +300,9 @@ rules:
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
-- RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
+- RULE-SET,geoip_lan_ip,DIRECT,no-resolve
+- RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
+- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:

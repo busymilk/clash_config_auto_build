@@ -48,7 +48,7 @@ profile:
   store-selected: false
 proxies:
 - client-fingerprint: randomized
-  name: '[283ms] 🇩🇪 德国 08'
+  name: '[151ms] 🇩🇪 德国 08'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -62,34 +62,43 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[343ms] 🇩🇪DE-185.177.229.245-032'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
   delay: 1586
-  name: '[344ms] 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1'
+  name: '[289ms] 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1'
   password: 7PPaSwxp3LLgJmWcpSclK6
   port: 25607
   server: 85.208.139.158
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '[383ms] 🇩🇪DE-45.144.54.33-023'
+  name: '[296ms] 🇩🇪DE-185.177.229.245-032'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[306ms] 🇩🇪DE-46.101.245.131-036'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🏁ZZ
+  delay: 1639
+  name: '[334ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  password: trErto8XzLALaQEslTp_jw
+  port: 2222
+  server: 176.96.136.168
+  server_url: universal.opengate.wiki
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[346ms] 🇩🇪DE-45.144.54.33-023'
   password: LiHQX9cDbdooBHlIg0eiqQ
   port: 34803
   server: 45.144.54.33
   type: ss
-- cipher: rc4-md5
-  name: '[447ms] 🇩🇪DE-193.108.119.230-0290 | 19.21MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[471ms] 🇩🇪 德国 03'
+  name: '[368ms] 🇩🇪 德国 03'
   network: tcp
   port: 30938
   reality-opts:
@@ -102,16 +111,7 @@ proxies:
   type: vless
   udp: true
   uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
-- cipher: chacha20-ietf-poly1305
-  country: 🏁ZZ
-  delay: 1639
-  name: '[519ms] 德国 - 法兰克福 - dataforest GmbH - 2'
-  password: trErto8XzLALaQEslTp_jw
-  port: 2222
-  server: 176.96.136.168
-  server_url: universal.opengate.wiki
-  type: ss
-- name: '[583ms] 🇩🇪 德国 18'
+- name: '[423ms] 🇩🇪 德国 18'
   network: ws
   port: 4002
   server: 45.145.42.229
@@ -130,7 +130,7 @@ proxies:
   delay: 974
   h2-opts: {}
   http-opts: {}
-  name: '[665ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  name: '[510ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
   network: ws
   port: 2083
   server: 104.26.5.16
@@ -149,7 +149,7 @@ proxies:
   delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[672ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[511ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
   server: 172.67.72.15
@@ -162,16 +162,12 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '[1489ms] 🇩🇪 德国 05'
-  port: 22947
-  server: 46.29.34.205
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d7291fc4-1702-4826-8fe1-ab301b1c8f82
+- cipher: rc4-md5
+  name: '[1001ms] 🇩🇪DE-193.108.119.230-0290 | 19.21MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -412,9 +408,9 @@ rules:
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
-- RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
+- RULE-SET,geoip_lan_ip,DIRECT,no-resolve
+- RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
+- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:

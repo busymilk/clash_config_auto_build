@@ -47,86 +47,86 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: '[257ms] 🇬🇧GB-85.210.120.237-0238 | 38.175MB'
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  type: ss
 - cipher: aes-128-gcm
-  name: '[291ms] 🇬🇧GB-212.102.53.197-0247 | 40.857MB'
+  name: '[262ms] 🇬🇧GB-212.102.53.196-0268 | 39.058MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: '[263ms] 🇬🇧GB-212.102.53.197-0247 | 40.857MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   type: ss
 - cipher: aes-128-gcm
-  name: '[294ms] 🇬🇧GB-212.102.53.78-0240 | 38.48MB'
+  name: '[264ms] 🇬🇧GB-212.102.53.79-0251 | 42.468MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.78
+  server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
-  name: '[295ms] 🇬🇧GB-212.102.53.195-0242 | 39.994MB'
+  name: '[265ms] 🇬🇧GB-212.102.53.194-0092 | 39.29MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: '[267ms] 🇬🇧GB-212.102.53.195-0242 | 39.994MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
-  name: '[295ms] 🇬🇧GB-212.102.53.80-0253 | 38.861MB'
+  name: '[267ms] 🇬🇧GB-212.102.53.78-0240 | 38.48MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.80
+  server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
-  name: '[298ms] 🇬🇧GB-212.102.53.198-0244 | 42.601MB'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  name: '[298ms] 🇬🇧GB-212.102.53.193-0273 | 42.197MB'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-128-gcm
-  name: '[299ms] 🇬🇧GB-212.102.53.197-0243 | 21.688MB'
+  name: '[267ms] 🇬🇧GB-212.102.53.197-0243 | 21.688MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   server_url: uk-dc1.yangon.club
   type: ss
 - cipher: aes-128-gcm
-  name: '[300ms] 🇬🇧GB-212.102.53.194-0092 | 39.29MB'
+  name: '[268ms] 🇬🇧GB-212.102.53.80-0253 | 38.861MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.194
+  server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
-  name: '[301ms] 🇬🇧GB-212.102.53.196-0268 | 39.058MB'
+  name: '[269ms] 🇬🇧GB-212.102.53.198-0244 | 42.601MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.196
+  server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  name: '[302ms] 🇬🇧GB-212.102.53.79-0251 | 42.468MB'
+  name: '[272ms] 🇬🇧GB-212.102.53.193-0273 | 42.197MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.79
+  server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
-  name: '[302ms] 🇬🇧GB-212.102.53.81-0239 | 39.038MB'
+  name: '[316ms] 🇬🇧GB-141.98.101.178-0345 | 28.907MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.81
+  server: 141.98.101.178
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[309ms] 🇬🇧GB-85.210.120.237-0238 | 38.175MB'
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[377ms] 🇬🇧GB-46.226.163.225-039'
+  name: '[326ms] 🇬🇧GB-46.226.163.225-039'
   password: c40641c1f89e7acb
   port: 57456
   server: 46.226.163.225
   type: ss
-- name: '[440ms] GB 🇬🇧 | @v2xay'
+- name: '[373ms] GB 🇬🇧 | @v2xay'
   password: cf125f42-759d-4112-82c3-014d2ffcb1e7
   port: 1443
   server: 185.85.242.177
@@ -134,17 +134,9 @@ proxies:
   sni: gbr1.587458.xyz
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  delay: 2491
-  name: '[732ms] 英国 - 伦敦 - Global Connectivity Solutions LLP - 1'
-  password: PPDI4eTCSUzQ
-  port: 443
-  server: 89.185.84.172
-  type: ss
-  udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '[1192ms] 🇬🇧 英国 114'
+  name: '[384ms] 🇬🇧 英国 114'
   network: tcp
   port: 32782
   reality-opts:
@@ -157,6 +149,14 @@ proxies:
   type: vless
   udp: true
   uuid: 946d9734-3506-406e-8196-6394b8b88995
+- cipher: chacha20-ietf-poly1305
+  delay: 2491
+  name: '[687ms] 英国 - 伦敦 - Global Connectivity Solutions LLP - 1'
+  password: PPDI4eTCSUzQ
+  port: 443
+  server: 89.185.84.172
+  type: ss
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -397,9 +397,9 @@ rules:
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
-- RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
+- RULE-SET,geoip_lan_ip,DIRECT,no-resolve
+- RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
+- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:

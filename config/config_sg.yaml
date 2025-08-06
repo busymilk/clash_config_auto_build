@@ -47,7 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[95ms] 🇸🇬 新加坡 70'
+- name: '[64ms] 🇸🇬 新加坡 70'
   network: ws
   port: 8880
   server: 94.140.0.156
@@ -61,13 +61,13 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: '[628ms] 🇸🇬SG-188.166.220.70-0284 | 14.406MB'
+  name: '[688ms] 🇸🇬SG-188.166.220.70-0284 | 14.406MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
 - auth: a068e412
-  name: '[834ms] 🇸🇬 新加坡 69'
+  name: '[901ms] 🇸🇬 新加坡 69'
   password: a068e412
   port: 9513
   server: 92.112.23.70
@@ -75,7 +75,16 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: '[897ms] 🇸🇬 新加坡 65'
+- auth: 664S8kkvFHXmO1auxV6A9gKAHI
+  name: '[942ms] 🇸🇬 新加坡 10'
+  password: 664S8kkvFHXmO1auxV6A9gKAHI
+  port: 8030
+  server: 18.143.168.252
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- name: '[984ms] 🇸🇬 新加坡 65'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -88,7 +97,7 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[1479ms] 🇸🇬 新加坡 09'
+- name: '[1556ms] 🇸🇬 新加坡 09'
   network: ws
   password: ttfang
   port: 1111
@@ -341,9 +350,9 @@ rules:
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
-- RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
-- RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
+- RULE-SET,geoip_lan_ip,DIRECT,no-resolve
+- RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
+- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT
 - MATCH,✈️ 选择代理
 sniffer:
