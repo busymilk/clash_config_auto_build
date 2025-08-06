@@ -86,8 +86,9 @@ dns:
   - udp://[2620:fe::fe]
   - udp://[2620:fe::9]
 
-  proxy-server-nameserver: #代理节点域名解析服务器，仅用于解析代理节点的域名（需要确保dns无污染，否则没法连接代理服务器啊）,如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
-  - 'https://223.5.5.5/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true'
+  #这里用不到proxy-server-nameserver了，github action脚本里写了，会解析好域名的ip后替换节点为直接的ip，没有解析这一步了
+  #proxy-server-nameserver: #代理节点域名解析服务器，仅用于解析代理节点的域名（需要确保dns无污染，否则没法连接代理服务器啊）,如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
+  #- 'https://223.5.5.5/dns-query#proxy&ecs=39.134.187.0/24&ecs-override=true'
 
   direct-nameserver-follow-policy: false #是否遵循 nameserver-policy，默认为不遵守，仅当 direct-nameserver 不为空时生效
   direct-nameserver: #用于 direct 直连出口域名解析的 DNS 服务器，如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
