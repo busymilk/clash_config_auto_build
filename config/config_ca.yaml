@@ -48,21 +48,21 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[134ms] 🇨🇦CA-142.4.216.225-0297 | 3.931MB'
+  name: '[97ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[100ms] 🇨🇦CA-142.4.216.225-0297 | 3.931MB'
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   server_url: ca225.vpnbook.com
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[172ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[194ms] 🇨🇦 加拿大 73'
+  name: '[134ms] 🇨🇦 加拿大 73'
   network: tcp
   port: 59303
   reality-opts:
@@ -74,26 +74,9 @@ proxies:
   type: vless
   udp: true
   uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-- alpn:
-  - h3
-  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: '[221ms] 🇨🇦 加拿大 77'
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 54530
-  server: 192.18.150.167
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '[235ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
 - cipher: aes-256-cfb
   group: SSRProvider
-  name: '[245ms] 🇨🇦CA-79.127.233.170-020'
+  name: '[188ms] 🇨🇦CA-79.127.233.170-020'
   obfs: plain
   obfsparam: null
   password: f8f7aCzcPKbsF8p3
@@ -102,14 +85,14 @@ proxies:
   protoparam: null
   server: 79.127.233.170
   type: ssr
-- cipher: aes-256-cfb
-  name: '[311ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
+- cipher: chacha20-ietf-poly1305
+  name: '[190ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
   password: f8f7aCzcPKbsF8p3
-  port: 989
+  port: 990
   server: 79.127.233.170
   type: ss
 - auth: 4f91921f-1318-430a-8879-6f3b7216fdc6
-  name: '[371ms] 🇨🇦 加拿大 55'
+  name: '[209ms] 🇨🇦 加拿大 55'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 4f91921f-1318-430a-8879-6f3b7216fdc6
@@ -120,23 +103,26 @@ proxies:
   sni: jnd.dport.top
   type: hysteria2
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[465ms] 🇨🇦 加拿大 63'
-  network: tcp
-  port: 26113
-  reality-opts:
-    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-    short-id: 1fbd20fd
-  server: 150.230.24.245
-  servername: www.yahoo.com
-  tls: true
-  type: vless
+- alpn:
+  - h3
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: '[237ms] 🇨🇦 加拿大 77'
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 192.18.150.167
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+- cipher: aes-256-cfb
+  name: '[256ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[475ms] 🇨🇦 加拿大 78'
+  name: '[416ms] 🇨🇦 加拿大 78'
   network: tcp
   port: 42557
   reality-opts:
@@ -148,6 +134,20 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '[533ms] 🇨🇦 加拿大 63'
+  network: tcp
+  port: 26113
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  server: 150.230.24.245
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
