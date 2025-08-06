@@ -47,7 +47,17 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[758ms] 🇹🇼 台湾 01'
+- name: '[711ms] 🇹🇼 台湾|@ripaojiedian'
+  password: test.+
+  port: 30443
+  server: 1.170.195.64
+  server_url: cmhkb.ssv.vc
+  skip-cert-verify: false
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  username: test
+- name: '[876ms] 🇹🇼 台湾 01'
   network: ws
   password: ttfang
   port: 81
@@ -60,16 +70,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[3013ms] 🇹🇼 台湾|@ripaojiedian'
-  password: test.+
-  port: 30443
-  server: 1.170.195.64
-  server_url: cmhkb.ssv.vc
-  skip-cert-verify: false
-  sni: cmhkb.ssv.vc
-  tls: true
-  type: http
-  username: test
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

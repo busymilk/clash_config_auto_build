@@ -48,18 +48,18 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[355ms] 🇯🇵JP-149.22.87.204-0290 | 7.686MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
   name: '[355ms] 🇯🇵JP-149.22.87.241-0289 | 7.678MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-- name: '[518ms] 🇯🇵_日本_2'
+- cipher: aes-128-gcm
+  name: '[357ms] 🇯🇵JP-149.22.87.204-0290 | 7.686MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- name: '[516ms] 🇯🇵_日本_2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -73,8 +73,16 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[726ms] Channel id: @ShadowProxy66🇯🇵 #2'
+  password: bd109dec-b7b5-4f0b-a77d-1181c148712c
+  port: 53272
+  server: 47.79.32.141
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  name: '[577ms] 🇯🇵 日本 03'
+  name: '[1109ms] 🇯🇵 日本 03'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
@@ -85,14 +93,36 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '[1617ms] Channel id: @ShadowProxy66🇯🇵 #2'
-  password: bd109dec-b7b5-4f0b-a77d-1181c148712c
-  port: 53272
-  server: 47.79.32.141
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: '[2555ms] 🇯🇵 日本2|@ripaojiedian'
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
+- name: '[2725ms] 🇯🇵_日本_1'
+  network: ws
+  port: 12333
+  server: 121.80.244.179
+  servername: ax01.ylka.dpdns.org
   skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ax01.ylka.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
