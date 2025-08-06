@@ -48,53 +48,12 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[656ms] 🇷🇴_RO_罗马尼亚->🇰🇷_KR_韩国_1@8'
+  name: '[718ms] 🇷🇴_RO_罗马尼亚->🇰🇷_KR_韩国_1@8'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.237.38
   type: ss
-- name: '[832ms] 🇰🇷_韩国_6'
-  network: ws
-  port: 30029
-  server: 117.123.23.173
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[865ms] 🇰🇷_韩国_3'
-  network: ws
-  port: 50000
-  server: 221.161.207.216
-  servername: ax01.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax01.ylka.dpdns.org
-    path: /?ed=2560
-- name: '[1026ms] 🇰🇷 韩国 15'
-  network: ws
-  port: 12196
-  server: 202.150.185.128
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /
-- name: '[1084ms] 🇰🇷_韩国_2'
+- name: '[745ms] 🇰🇷_韩国_2'
   network: ws
   port: 12335
   server: 121.170.103.94
@@ -108,21 +67,7 @@ proxies:
     headers:
       host: ax01.ylka.dpdns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: '[1101ms] 🇰🇷 韩国 17'
-  network: ws
-  port: 58474
-  server: 152.70.232.251
-  servername: chou3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0c561336-b0c7-4b18-96d1-863240a224ab
-  ws-opts:
-    headers:
-      Host: chou3.pages.dev
-    path: /
-- name: '[1267ms] 🇰🇷 韩国 08'
+- name: '[813ms] 🇰🇷 韩国 08'
   network: ws
   port: 30055
   server: 121.171.82.130
@@ -135,36 +80,49 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: Telegram@WangCai2/?ed=2560
-- alterId: 64
-  cipher: auto
-  name: '[1435ms] 🇰🇷 韩国 23'
+- name: '[1017ms] 🇰🇷 韩国 15'
   network: ws
-  port: 443
-  server: 202.79.161.21
-  servername: www.20850772.xyz
-  skip-cert-verify: false
+  port: 12196
+  server: 202.150.185.128
+  servername: jp.laoyoutiao.link
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: www.20850772.xyz
-    path: /path/191019072927
-- auth: 3041a64e-a812-4feb-bb00-8cb94e72f5e6
-  name: '[1724ms] 🇰🇷 韩国 01'
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 3041a64e-a812-4feb-bb00-8cb94e72f5e6
-  port: 33656
-  server: 203.32.26.70
-  server_url: hg.dport.top
+      Host: jp.laoyoutiao.link
+    path: /
+- name: '[1282ms] 🇰🇷_韩国_3'
+  network: ws
+  port: 50000
+  server: 221.161.207.216
+  servername: ax01.ylka.dpdns.org
   skip-cert-verify: true
-  sni: hg.dport.top
-  type: hysteria2
+  tls: true
+  type: vless
   udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ax01.ylka.dpdns.org
+    path: /?ed=2560
+- name: '[1831ms] 🇰🇷_韩国_6'
+  network: ws
+  port: 30029
+  server: 117.123.23.173
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - auth: 2dd0ee4c-30a5-4ab2-8d40-c4b80c835171
-  name: '[1797ms] 🇰🇷 韩国 04'
+  name: '[3408ms] 🇰🇷 韩国 04'
   obfs: salamander
   obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
   password: 2dd0ee4c-30a5-4ab2-8d40-c4b80c835171
@@ -173,6 +131,18 @@ proxies:
   server_url: flyhg.flylink.cyou
   skip-cert-verify: true
   sni: flyhg.flylink.cyou
+  type: hysteria2
+  udp: true
+- auth: 3041a64e-a812-4feb-bb00-8cb94e72f5e6
+  name: '[3828ms] 🇰🇷 韩国 01'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 3041a64e-a812-4feb-bb00-8cb94e72f5e6
+  port: 33656
+  server: 203.32.26.70
+  server_url: hg.dport.top
+  skip-cert-verify: true
+  sni: hg.dport.top
   type: hysteria2
   udp: true
 proxy-groups:
