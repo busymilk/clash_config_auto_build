@@ -49,10 +49,46 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: '[114ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  name: '[121ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  group: SSRProvider
+  name: '[124ms] 🇨🇦CA-79.127.233.170-020'
+  obfs: plain
+  obfsparam: null
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  protoparam: null
+  server: 79.127.233.170
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: '[240ms] 🇨🇦CA-142.4.216.225-0297 | 12.397MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  server_url: ca225.vpnbook.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[241ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: '[93ms] 🇨🇦 加拿大 16'
+  name: '[288ms] 🇨🇦 加拿大 77'
   password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
   port: 54530
   server: 192.18.150.167
@@ -60,15 +96,9 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '[107ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[119ms] 🇨🇦 加拿大 20'
+  name: '[337ms] 🇨🇦 加拿大 20'
   network: tcp
   port: 59303
   reality-opts:
@@ -80,36 +110,20 @@ proxies:
   type: vless
   udp: true
   uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-- cipher: chacha20-ietf-poly1305
-  name: '[132ms] 🇨🇦CA-142.4.216.225-0297 | 12.397MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  server_url: ca225.vpnbook.com
-  type: ss
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: '[187ms] 🇨🇦CA-79.127.233.170-020'
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: '[189ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: '[197ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '[622ms] 🇨🇦 加拿大 78'
+  network: tcp
+  port: 42557
+  reality-opts:
+    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
+    short-id: f430927d
+  server: 129.153.52.235
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -184,6 +198,17 @@ proxy-groups:
   tolerance: 10
   type: url-test
   url: https://api.telegram.org
+- expected-status: 204
+  include-all: true
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: v2ex
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://www.v2ex.com/generate_204
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr

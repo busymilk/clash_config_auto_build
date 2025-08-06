@@ -48,17 +48,7 @@ ntp:
 profile:
   store-fake-ip: true
   store-selected: true
-proxies:
-- name: '[2688ms] 🇹🇼 台湾|@ripaojiedian'
-  password: test.+
-  port: 30443
-  server: 1.170.195.64
-  server_url: cmhkb.ssv.vc
-  skip-cert-verify: false
-  sni: cmhkb.ssv.vc
-  tls: true
-  type: http
-  username: test
+proxies: []
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -133,6 +123,17 @@ proxy-groups:
   tolerance: 10
   type: url-test
   url: https://api.telegram.org
+- expected-status: 204
+  include-all: true
+  include-all-proxies: true
+  interval: 120
+  lazy: true
+  max-failed-times: 2
+  name: v2ex
+  timeout: 3000
+  tolerance: 10
+  type: url-test
+  url: https://www.v2ex.com/generate_204
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr
