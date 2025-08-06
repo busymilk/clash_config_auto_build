@@ -50,20 +50,20 @@ profile:
   store-selected: true
 proxies:
 - cipher: aes-128-gcm
-  name: '[355ms] 🇯🇵JP-149.22.87.204-0281 | 28.016MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: '[357ms] 🇯🇵JP-149.22.87.241-0279 | 28.52MB'
+  name: '[355ms] 🇯🇵JP-149.22.87.241-0279 | 28.52MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
+- cipher: aes-128-gcm
+  name: '[357ms] 🇯🇵JP-149.22.87.204-0281 | 28.016MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '[474ms] 🇯🇵JP-223.135.156.179-0292 | 22.252MB'
+  name: '[492ms] 🇯🇵JP-223.135.156.179-0292 | 22.252MB'
   network: ws
   port: 20521
   server: 223.135.156.179
@@ -73,7 +73,7 @@ proxies:
   uuid: c1bf2f6d-a111-4b0f-bde8-ece652fdee86
   ws-opts:
     path: /
-- name: '[542ms] 🇯🇵_日本_2'
+- name: '[522ms] 🇯🇵_日本_2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -87,34 +87,8 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[733ms] 🇯🇵_日本_1'
-  network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: ax01.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax01.ylka.dpdns.org
-    path: /?ed=2560
-- auth: 3041a64e-a812-4feb-bb00-8cb94e72f5e6
-  name: '[1447ms] 🇯🇵 日本 03'
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 3041a64e-a812-4feb-bb00-8cb94e72f5e6
-  port: 33657
-  server: 212.192.221.221
-  server_url: rb.dport.top
-  skip-cert-verify: true
-  sni: rb.dport.top
-  type: hysteria2
-  udp: true
 - cipher: aes-256-gcm
-  name: '[1465ms] 🇯🇵 日本 23'
+  name: '[884ms] 🇯🇵 日本 23'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -128,7 +102,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '[1942ms] 🇯🇵 日本2|@ripaojiedian'
+  name: '[3429ms] 🇯🇵 日本2|@ripaojiedian'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -367,6 +341,7 @@ rules:
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
 - PROCESS-NAME,Telegram,Telegram
+- DOMAIN-SUFFIX,v2ex.com,v2ex
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT

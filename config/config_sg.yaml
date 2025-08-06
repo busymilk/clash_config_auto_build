@@ -49,7 +49,7 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: '[45ms] 🇸🇬 新加坡 70'
+- name: '[87ms] 🇸🇬 新加坡 70'
   network: ws
   port: 8880
   server: 94.140.0.156
@@ -63,13 +63,13 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: '[526ms] 🇸🇬SG-188.166.220.70-0284 | 14.406MB'
+  name: '[513ms] 🇸🇬SG-188.166.220.70-0284 | 14.406MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
 - auth: a068e412
-  name: '[698ms] 🇸🇬 新加坡 69'
+  name: '[697ms] 🇸🇬 新加坡 69'
   password: a068e412
   port: 9513
   server: 92.112.23.70
@@ -77,7 +77,7 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: '[742ms] 🇸🇬 新加坡 22'
+- name: '[783ms] 🇸🇬 新加坡 22'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -90,7 +90,7 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[1200ms] 🇸🇬 新加坡 09'
+- name: '[1199ms] 🇸🇬 新加坡 09'
   network: ws
   password: ttfang
   port: 1111
@@ -103,6 +103,14 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- name: '[1837ms] Channel id: @ShadowProxy66🇸🇬'
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -328,6 +336,7 @@ rules:
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
 - PROCESS-NAME,Telegram,Telegram
+- DOMAIN-SUFFIX,v2ex.com,v2ex
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT

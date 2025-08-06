@@ -49,35 +49,7 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: '[796ms] 🇰🇷_韩国_1'
-  network: ws
-  port: 50000
-  server: 210.101.111.224
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[835ms] 🇰🇷_韩国_3'
-  network: ws
-  port: 50000
-  server: 221.161.207.216
-  servername: ax01.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: ax01.ylka.dpdns.org
-    path: /?ed=2560
-- name: '[848ms] 🇰🇷_韩国_2'
+- name: '[795ms] 🇰🇷_韩国_2'
   network: ws
   port: 12335
   server: 121.170.103.94
@@ -91,7 +63,20 @@ proxies:
     headers:
       host: ax01.ylka.dpdns.org
     path: /?ed=2560
-- name: '[921ms] 🇰🇷_韩国_6'
+- name: '[809ms] 🇰🇷 韩国 08'
+  network: ws
+  port: 30055
+  server: 121.171.82.130
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: Telegram@WangCai2/?ed=2560
+- name: '[814ms] 🇰🇷_韩国_6'
   network: ws
   port: 30029
   server: 117.123.23.173
@@ -105,33 +90,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[966ms] 🇰🇷 韩国 01'
-  network: ws
-  port: 12196
-  server: 202.150.185.128
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /
-- name: '[1435ms] 🇰🇷 韩国 08'
-  network: ws
-  port: 30055
-  server: 121.171.82.130
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: Telegram@WangCai2/?ed=2560
-- name: '[2258ms] 🇰🇷_韩国_4'
+- name: '[911ms] 🇰🇷_韩国_4'
   network: ws
   port: 50000
   server: 115.94.98.93
@@ -145,18 +104,47 @@ proxies:
     headers:
       host: hz1.ylks0033.dpdns.org
     path: /?ed=2560
-- auth: 74332878-d170-41cc-be22-e08e0527a9b8
-  name: '[2266ms] 🇰🇷 韩国 26'
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 74332878-d170-41cc-be22-e08e0527a9b8
-  port: 35310
-  server: 203.32.26.70
-  server_url: flyhg.flylink.cyou
+- name: '[951ms] 🇰🇷_韩国_1'
+  network: ws
+  port: 50000
+  server: 210.101.111.224
+  servername: edgb.aimercc.dpdns.org
   skip-cert-verify: true
-  sni: flyhg.flylink.cyou
-  type: hysteria2
+  tls: true
+  type: vless
   udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1034ms] 🇰🇷_韩国_3'
+  network: ws
+  port: 50000
+  server: 221.161.207.216
+  servername: ax01.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: ax01.ylka.dpdns.org
+    path: /?ed=2560
+- name: '[1210ms] 🇰🇷 韩国 01'
+  network: ws
+  port: 12196
+  server: 202.150.185.128
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -382,6 +370,7 @@ rules:
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
 - PROCESS-NAME,Telegram,Telegram
+- DOMAIN-SUFFIX,v2ex.com,v2ex
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT

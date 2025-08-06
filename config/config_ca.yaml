@@ -50,20 +50,20 @@ profile:
   store-selected: true
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[114ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
+  name: '[108ms] 🇨🇦CA-79.127.233.170-0212 | 38.34MB'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
 - cipher: aes-256-cfb
-  name: '[121ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
+  name: '[124ms] 🇨🇦CA-79.127.233.170-0263 | 45.463MB'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
   type: ss
 - cipher: aes-256-cfb
   group: SSRProvider
-  name: '[124ms] 🇨🇦CA-79.127.233.170-020'
+  name: '[169ms] 🇨🇦CA-79.127.233.170-020'
   obfs: plain
   obfsparam: null
   password: f8f7aCzcPKbsF8p3
@@ -73,14 +73,7 @@ proxies:
   server: 79.127.233.170
   type: ssr
 - cipher: chacha20-ietf-poly1305
-  name: '[240ms] 🇨🇦CA-142.4.216.225-0297 | 12.397MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  server_url: ca225.vpnbook.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[241ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
+  name: '[262ms] 🇨🇦CA-142.4.216.225-0299 | 4.261MB'
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -88,7 +81,7 @@ proxies:
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: '[288ms] 🇨🇦 加拿大 77'
+  name: '[286ms] 🇨🇦 加拿大 77'
   password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
   port: 54530
   server: 192.18.150.167
@@ -98,7 +91,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[337ms] 🇨🇦 加拿大 20'
+  name: '[339ms] 🇨🇦 加拿大 20'
   network: tcp
   port: 59303
   reality-opts:
@@ -110,9 +103,21 @@ proxies:
   type: vless
   udp: true
   uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+- auth: 4f91921f-1318-430a-8879-6f3b7216fdc6
+  name: '[404ms] 🇨🇦 加拿大 55'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 4f91921f-1318-430a-8879-6f3b7216fdc6
+  port: 33651
+  server: 209.200.246.235
+  server_url: jnd.dport.top
+  skip-cert-verify: true
+  sni: jnd.dport.top
+  type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[622ms] 🇨🇦 加拿大 78'
+  name: '[676ms] 🇨🇦 加拿大 78'
   network: tcp
   port: 42557
   reality-opts:
@@ -349,6 +354,7 @@ rules:
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
 - PROCESS-NAME,Telegram,Telegram
+- DOMAIN-SUFFIX,v2ex.com,v2ex
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT

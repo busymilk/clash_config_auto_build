@@ -50,7 +50,7 @@ profile:
   store-selected: true
 proxies:
 - client-fingerprint: randomized
-  name: '[107ms] 🇩🇪 德国 08'
+  name: '[354ms] 🇩🇪 德国 08'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -64,49 +64,37 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[470ms] 🇩🇪DE-185.177.229.245-0289 | 13.015MB'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
+  name: '[476ms] 🇩🇪DE-46.101.245.131-036'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   type: ss
 - cipher: chacha20-ietf-poly1305
   delay: 1586
-  name: '[483ms] 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1'
+  name: '[494ms] 德国 - 法兰克福 - Global Connectivity Solutions LLP - 1'
   password: 7PPaSwxp3LLgJmWcpSclK6
   port: 25607
   server: 85.208.139.158
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '[506ms] 🇩🇪DE-46.101.245.131-036'
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[520ms] 🇩🇪DE-45.144.54.33-023'
-  password: LiHQX9cDbdooBHlIg0eiqQ
-  port: 34803
-  server: 45.144.54.33
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🏁ZZ
   delay: 1639
-  name: '[534ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  name: '[533ms] 德国 - 法兰克福 - dataforest GmbH - 2'
   password: trErto8XzLALaQEslTp_jw
   port: 2222
   server: 176.96.136.168
   server_url: universal.opengate.wiki
   type: ss
 - cipher: aes-256-cfb
-  name: '[597ms] 🇩🇪DE-80.92.204.106-4906 | 3.872MB'
+  name: '[585ms] 🇩🇪DE-80.92.204.106-4906 | 3.872MB'
   password: FAdUvMJUq5vDgKEq
   port: 9006
   server: 80.92.204.106
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[652ms] 🇩🇪 德国 03'
+  name: '[631ms] 🇩🇪 德国 03'
   network: tcp
   port: 30938
   reality-opts:
@@ -120,7 +108,7 @@ proxies:
   udp: true
   uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
 - cipher: rc4-md5
-  name: '[667ms] 🇩🇪DE-193.108.119.230-0290 | 19.21MB'
+  name: '[649ms] 🇩🇪DE-193.108.119.230-0290 | 19.21MB'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -128,29 +116,10 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
-  delay: 974
-  h2-opts: {}
-  http-opts: {}
-  name: '[867ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
-  network: ws
-  port: 2083
-  server: 104.26.5.16
-  servername: blaze-ger-248.blazecloudmain.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
-  ws-opts:
-    headers:
-      HOST: blaze-ger-248.blazecloudmain.site
-    path: /linkwsrt?ed=2560
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
   delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[873ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[823ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
   server: 172.67.72.15
@@ -163,8 +132,39 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 974
+  h2-opts: {}
+  http-opts: {}
+  name: '[841ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  network: ws
+  port: 2083
+  server: 104.26.5.16
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
+- auth: b5a8e1b6-7e26-43ca-ac80-b9683c98d26f
+  name: '[1451ms] 🇩🇪 德国 02'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: b5a8e1b6-7e26-43ca-ac80-b9683c98d26f
+  port: 25784
+  server: 213.108.198.123
+  server_url: dehub.xg-hub.icu
+  skip-cert-verify: true
+  sni: dehub.xg-hub.icu
+  type: hysteria2
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '[1042ms] 🇩🇪DE-147.45.178.200-027'
+  name: '[2164ms] 🇩🇪DE-147.45.178.200-027'
   password: a58fa62b4944ddbf
   port: 57456
   server: 147.45.178.200
@@ -394,6 +394,7 @@ rules:
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
 - PROCESS-NAME,Telegram,Telegram
+- DOMAIN-SUFFIX,v2ex.com,v2ex
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT

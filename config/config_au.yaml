@@ -49,7 +49,7 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- name: '[111ms] 🇦🇺_澳大利亚_1'
+- name: '[83ms] 🇦🇺_澳大利亚_1'
   network: ws
   port: 11002
   server: 185.148.13.32
@@ -288,6 +288,7 @@ rules:
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
 - PROCESS-NAME,Telegram,Telegram
+- DOMAIN-SUFFIX,v2ex.com,v2ex
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
