@@ -391,12 +391,16 @@ rules:
   - RULE-SET,geosite_cn,DIRECT
 #---------------------------------------------------------
 
+#走到ip规则这里的，都是域名的漏网之鱼，或者直接ip类型的请求
+#(,no-resolve)是跳过域名对ip的匹配，正常情况下域名为了匹配ip规则，会在本地进行dns解析（也就是nameserver），获得了ip然后用获得的ip来对ip规则进行匹配
+#如果使用no-resolve，则域名请求走到ip规则匹配了，就跳过这一条规则，走下一条。
+#相当于使用no-resolve的规则只会对直接ip类的请求起作用
 #内网ip
-  - RULE-SET,geoip_lan_ip,DIRECT
-  - RULE-SET,other_ssk_lan_ip,DIRECT
+  - RULE-SET,geoip_lan_ip,DIRECT(,no-resolve)
+  - RULE-SET,other_ssk_lan_ip,DIRECT(,no-resolve)
 
 #国外ip
-  - RULE-SET,geoip_telegram_ip,Telegram
+  - RULE-SET,geoip_telegram_ip,Telegram(,no-resolve)
 
 #国内ip
   - RULE-SET,geoip_cn_ip,DIRECT
