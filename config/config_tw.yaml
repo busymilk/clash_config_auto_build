@@ -47,20 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '[1287ms] 🇹🇼TW-103.61.139.137-059'
-  network: ws
-  port: 20521
-  server: 103.61.139.137
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
-  ws-headers:
-    Host: 103.61.139.137
-  ws-path: /
-- name: '[2966ms] 🇹🇼 台湾|@ripaojiedian'
+- name: '[869ms] 🇹🇼 台湾|@ripaojiedian'
   password: test.+
   port: 30443
   server: 1.170.195.64
@@ -70,7 +57,7 @@ proxies:
   tls: true
   type: http
   username: test
-- name: '[3325ms] 🇹🇼 台湾 20'
+- name: '[974ms] 🇹🇼 台湾 20'
   network: ws
   password: ttfang
   port: 81
@@ -266,6 +253,13 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  irs_gemini_site:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/irs_gemini_site.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/Gemini/Gemini_No_Resolve.yaml
   loy_gfw:
     behavior: domain
     format: text
@@ -329,7 +323,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- DOMAIN-KEYWORD,googleapis,GoogleApi
+- RULE-SET,irs_gemini_site,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
