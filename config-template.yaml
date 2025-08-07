@@ -432,7 +432,7 @@ rules:
   - RULE-SET,geoip_telegram_ip,Telegram,no-resolve
 
 #国内ip
-  - RULE-SET,geoip_cn_ip,DIRECT
+  - RULE-SET,geoip_cn_ip,DIRECT,no-resolve
 #---------------------------------------------------------
 #兜底规则 这里不写no-resolve，是默认上面那些规则里的域名都是真实存在的（对于自己来说，域名不存在的情况比较小，谁会经常访问一个不存在的域名呢）
 #漏到这里的都是没命中的，需要nameserver解析判断下是否域名存在（如果是域名的话）
