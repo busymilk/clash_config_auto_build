@@ -48,13 +48,13 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-256-cfb
-  name: '[1042ms] 🇹🇼 台湾 19'
+  name: '[812ms] 🇹🇼 台湾 19'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
-- name: '[1231ms] 🇹🇼 台湾|@ripaojiedian'
+- name: '[852ms] 🇹🇼 台湾|@ripaojiedian'
   password: test.+
   port: 30443
   server: 1.170.195.64
@@ -66,7 +66,7 @@ proxies:
   username: test
 - alterId: 0
   cipher: auto
-  name: '[1495ms] 🇹🇼TW-103.61.139.137-059'
+  name: '[1243ms] 🇹🇼TW-103.61.139.137-059'
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -344,7 +344,7 @@ rules:
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
 - RULE-SET,geoip_telegram_ip,Telegram,no-resolve
-- RULE-SET,geoip_cn_ip,DIRECT
+- RULE-SET,geoip_cn_ip,DIRECT,no-resolve
 - MATCH,✈️ 选择代理
 sniffer:
   enable: true
