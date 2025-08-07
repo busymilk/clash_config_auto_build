@@ -48,20 +48,20 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[355ms] 🇯🇵JP-149.22.87.241-0276 | 28.481MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: '[356ms] 🇯🇵JP-149.22.87.204-0277 | 27.694MB'
+  name: '[466ms] 🇯🇵JP-149.22.87.204-0277 | 27.694MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
+- cipher: aes-128-gcm
+  name: '[467ms] 🇯🇵JP-149.22.87.241-0276 | 28.481MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '[469ms] 🇯🇵 日本 69'
+  name: '[618ms] 🇯🇵 日本 69'
   network: tcp
   port: 56702
   reality-opts:
@@ -74,46 +74,7 @@ proxies:
   type: vless
   udp: true
   uuid: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-- name: '[512ms] 🇯🇵_日本_2 #2'
-  network: ws
-  port: 443
-  server: 168.138.46.67
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[538ms] 🇯🇵_日本_2'
-  network: ws
-  port: 47001
-  server: 158.101.154.245
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- auth: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-  name: '[570ms] 🇯🇵 日本 51'
-  password: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-  port: 32000
-  ports: 32000-33000
-  server: 172.104.107.246
-  server_url: jp4.interld123456789.com
-  skip-cert-verify: true
-  sni: 234224.1234567890spcloud.com
-  type: hysteria2
-  udp: true
-- name: '[711ms] 🇯🇵_日本_3'
+- name: '[668ms] 🇯🇵_日本_3'
   network: ws
   port: 443
   server: 13.115.232.94
@@ -127,8 +88,47 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[671ms] 🇯🇵_日本_2'
+  network: ws
+  port: 47001
+  server: 158.101.154.245
+  servername: edgb.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[750ms] 🇯🇵_日本_2 #2'
+  network: ws
+  port: 443
+  server: 168.138.46.67
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- auth: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
+  name: '[834ms] 🇯🇵 日本 51'
+  password: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
+  port: 32000
+  ports: 32000-33000
+  server: 172.104.107.246
+  server_url: jp4.interld123456789.com
+  skip-cert-verify: true
+  sni: 234224.1234567890spcloud.com
+  type: hysteria2
+  udp: true
 - cipher: aes-256-gcm
-  name: '[870ms] 🇯🇵 日本 37'
+  name: '[1258ms] 🇯🇵 日本 37'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -140,6 +140,18 @@ proxies:
   port: 636
   server: 137.220.142.139
   type: ss
+  udp: true
+- auth: fb2c6765-73a4-41c4-8474-781730af9c2b
+  name: '[3920ms] 🇯🇵 日本 17'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: fb2c6765-73a4-41c4-8474-781730af9c2b
+  port: 33657
+  server: 212.192.221.221
+  server_url: rb.dport.top
+  skip-cert-verify: true
+  sni: rb.dport.top
+  type: hysteria2
   udp: true
 proxy-groups:
 - name: ✈️ 选择代理
@@ -192,7 +204,7 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 404
+- expected-status: 204
   include-all: true
   include-all-proxies: true
   interval: 120
@@ -202,7 +214,7 @@ proxy-groups:
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://googleapis.com
+  url: https://www.google.com/generate_204
 - expected-status: 302
   include-all: true
   include-all-proxies: true

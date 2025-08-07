@@ -48,13 +48,23 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-256-cfb
-  name: '[673ms] 🇹🇼 台湾 19'
+  name: '[884ms] 🇹🇼 台湾 19'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
-- name: '[756ms] 🇹🇼 台湾 20'
+- name: '[952ms] 🇹🇼 台湾|@ripaojiedian'
+  password: test.+
+  port: 30443
+  server: 1.170.195.64
+  server_url: cmhkb.ssv.vc
+  skip-cert-verify: false
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  username: test
+- name: '[954ms] 🇹🇼 台湾 20'
   network: ws
   password: ttfang
   port: 81
@@ -69,7 +79,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '[1448ms] 🇹🇼TW-103.61.139.137-059'
+  name: '[2142ms] 🇹🇼TW-103.61.139.137-059'
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -131,7 +141,7 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 404
+- expected-status: 204
   include-all: true
   include-all-proxies: true
   interval: 120
@@ -141,7 +151,7 @@ proxy-groups:
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://googleapis.com
+  url: https://www.google.com/generate_204
 - expected-status: 302
   include-all: true
   include-all-proxies: true

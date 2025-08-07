@@ -47,21 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- client-fingerprint: randomized
-  name: '[91ms] 🇩🇪 德国 08'
-  network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '[211ms] 🇩🇪 德国 01'
+- name: '[146ms] 🇩🇪 德国 01'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
@@ -74,7 +60,21 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '[220ms] 🇩🇪 德国 04'
+- client-fingerprint: randomized
+  name: '[152ms] 🇩🇪 德国 08'
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '[206ms] 🇩🇪 德国 04'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2053
@@ -88,29 +88,65 @@ proxies:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[477ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  name: '[323ms] 🇩🇪DE-185.177.229.245-032'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
+- name: '[370ms] 🇩🇪 德国 05'
+  network: tcp
+  port: 2020
+  server: 78.46.230.173
+  tls: false
+  type: vless
+  udp: true
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
 - cipher: chacha20-ietf-poly1305
   country: 🏁ZZ
   delay: 1639
-  name: '[630ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  name: '[373ms] 德国 - 法兰克福 - dataforest GmbH - 2'
   password: trErto8XzLALaQEslTp_jw
   port: 2222
   server: 176.96.136.168
   server_url: universal.opengate.wiki
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[666ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
+- alterId: 0
+  cipher: auto
+  name: '[409ms] 🇩🇪DE-91.107.146.130-055'
+  network: tcp
+  port: 42684
+  server: 91.107.146.130
+  server_url: panel1.ipyar.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c4bd9eba-8aea-4d5e-a2ee-b5de65ac14e1
+  ws-headers:
+    Host: panel1.ipyar.org
+  ws-path: /
+- cipher: rc4-md5
+  name: '[447ms] 🇩🇪DE-193.108.119.230-0288 | 26.584MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
   type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '[474ms] 🇩🇪 德国 18'
+  network: tcp
+  port: 56701
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: 152.53.231.109
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[698ms] 🇩🇪 德国 03'
+  name: '[492ms] 🇩🇪 德国 03'
   network: tcp
   port: 30938
   reality-opts:
@@ -123,41 +159,13 @@ proxies:
   type: vless
   udp: true
   uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '[722ms] 🇩🇪 德国 18'
-  network: tcp
-  port: 56701
-  reality-opts:
-    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
-    short-id: 792147b8
-  server: 152.53.231.109
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-- cipher: rc4-md5
-  name: '[778ms] 🇩🇪DE-193.108.119.230-0288 | 26.584MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- name: '[848ms] 🇩🇪 德国 05'
-  network: tcp
-  port: 2020
-  server: 78.46.230.173
-  tls: false
-  type: vless
-  udp: true
-  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   delay: 974
   h2-opts: {}
   http-opts: {}
-  name: '[886ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  name: '[573ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
   network: ws
   port: 2083
   server: 104.26.5.16
@@ -176,7 +184,7 @@ proxies:
   delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[896ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[616ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
   server: 172.67.72.15
@@ -189,7 +197,7 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
-- name: '[922ms] 🇩🇪 德国 19'
+- name: '[3469ms] 🇩🇪 德国 19'
   network: ws
   port: 80
   server: 104.17.148.22
@@ -202,12 +210,6 @@ proxies:
     headers:
       Host: NIce-APartMEnt.ZULAir.ORg
     path: /?ed=2048
-- cipher: chacha20-ietf-poly1305
-  name: '[1581ms] 🇩🇪_DE_德国_0@5'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.28
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -259,7 +261,7 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 404
+- expected-status: 204
   include-all: true
   include-all-proxies: true
   interval: 120
@@ -269,7 +271,7 @@ proxy-groups:
   timeout: 3000
   tolerance: 10
   type: url-test
-  url: https://googleapis.com
+  url: https://www.google.com/generate_204
 - expected-status: 302
   include-all: true
   include-all-proxies: true
