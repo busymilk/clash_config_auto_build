@@ -48,25 +48,32 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[122ms] 🇨🇦CA-142.4.216.225-0297 | 3.931MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  server_url: ca225.vpnbook.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[172ms] 🇨🇦CA-142.4.216.225-0337 | 7.453MB'
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[255ms] 🇨🇦CA-79.127.233.170-0254 | 67.848MB'
+  name: '[117ms] 🇨🇦CA-79.127.233.170-0254 | 67.848MB'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
-- name: '[261ms] 🇨🇦 加拿大 31'
+- cipher: aes-256-cfb
+  name: '[141ms] 🇨🇦CA-79.127.233.170-0208 | 35.118MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  name: '[142ms] SSR-加拿大-79.127.233.170:989'
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: '[241ms] 🇨🇦CA-142.4.216.225-0337 | 7.453MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- name: '[314ms] 🇨🇦 加拿大 31'
   network: ws
   port: 80
   server: 104.18.26.90
@@ -79,22 +86,8 @@ proxies:
     headers:
       Host: blaze-can-118.blazecanada.site
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: '[281ms] 🇨🇦CA-79.127.233.170-0208 | 35.118MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: '[293ms] SSR-加拿大-79.127.233.170:989'
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
 - auth: 87c96676-4887-432e-a1d7-89213be6333f
-  name: '[313ms] 🇨🇦 加拿大 34'
+  name: '[386ms] 🇨🇦 加拿大 34'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 87c96676-4887-432e-a1d7-89213be6333f
@@ -105,10 +98,23 @@ proxies:
   sni: jnd.dport.top
   type: hysteria2
   udp: true
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '[453ms] VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80'
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alpn:
   - h2
   client-fingerprint: chrome
-  name: '[354ms] 🇨🇦 加拿大 65'
+  name: '[511ms] 🇨🇦 加拿大 65'
   network: ws
   port: 2096
   server: 104.18.89.237
@@ -122,47 +128,27 @@ proxies:
     headers:
       Host: BaNG.MiRACleHearTBit.ICu.
     path: /api/ai/socket/@V2RayyNGvpn?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: '[631ms] 🇨🇦CA-142.4.216.225-0297 | 3.931MB'
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  server_url: ca225.vpnbook.com
+  type: ss
 - alpn:
   - h3
-  auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  name: '[426ms] 🇨🇦 加拿大 45'
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.52.235
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: '[743ms] 🇨🇦 加拿大 60'
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 150.230.24.245
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '[438ms] VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80'
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  skip-cert-verify: true
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[565ms] 🇨🇦 加拿大 63'
-  network: tcp
-  port: 26113
-  reality-opts:
-    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-    short-id: 1fbd20fd
-  server: 150.230.24.245
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: '[1113ms] 🇨🇦 加拿大 62'
+  name: '[964ms] 🇨🇦 加拿大 62'
   network: tcp
   port: 42557
   reality-opts:
@@ -174,6 +160,31 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- alpn:
+  - h3
+  auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  name: '[1213ms] 🇨🇦 加拿大 45'
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 129.153.52.235
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '[2128ms] 🇨🇦 加拿大 63'
+  network: tcp
+  port: 26113
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  server: 150.230.24.245
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
