@@ -48,22 +48,13 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[600ms] 🇸🇬SG-188.166.220.70-5216 | 26.741MB'
+  name: '[566ms] 🇸🇬SG-188.166.220.70-5216 | 26.741MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
-- auth: a068e412
-  name: '[796ms] 🇸🇬 新加坡 69'
-  password: a068e412
-  port: 9513
-  server: 92.112.23.70
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - auth: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-  name: '[800ms] 🇸🇬 新加坡 96'
+  name: '[711ms] 🇸🇬 新加坡 96'
   password: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
   port: 32000
   ports: 32000-33000
@@ -73,7 +64,24 @@ proxies:
   sni: 234224.1234567890spcloud.com
   type: hysteria2
   udp: true
-- name: '[895ms] 🇸🇬 新加坡 65'
+- name: '[722ms] Channel id: @ShadowProxy66🇸🇬 #1'
+  password: 664S8kkvFHXmO1auxV6A9gKAHI
+  port: 8030
+  server: 18.143.168.252
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- auth: a068e412
+  name: '[729ms] 🇸🇬 新加坡 69'
+  password: a068e412
+  port: 9513
+  server: 92.112.23.70
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- name: '[785ms] 🇸🇬 新加坡 65'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -86,15 +94,15 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[1057ms] 🇸🇬@FreakConfig'
-  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  port: 43057
-  server: 203.174.82.145
+- name: '[903ms] Channel id: @ShadowProxy66🇸🇬'
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 18.143.180.14
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: bing.com
   tls: false
   type: hysteria2
-- name: '[1336ms] 🇸🇬 新加坡 09'
+- name: '[1263ms] 🇸🇬 新加坡 09'
   network: ws
   password: ttfang
   port: 1111
@@ -107,6 +115,14 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- name: '[3231ms] 🇸🇬@FreakConfig'
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -290,6 +306,13 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  loy_reject:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/loy_reject.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/reject-list.txt
   other_direct_applications:
     behavior: classical
     interval: 86400
@@ -318,6 +341,7 @@ rule-providers:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
+- RULE-SET,loy_reject,REJECT
 - RULE-SET,geosite_@ads,REJECT
 - DOMAIN,time.apple.com,DIRECT
 - DOMAIN,cdn.jsdelivr.net,DIRECT
@@ -343,10 +367,10 @@ rules:
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
 - RULE-SET,geosite_telegram,Telegram
-- RULE-SET,geosite_@!cn_domains,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
+- RULE-SET,geosite_@!cn_domains,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve

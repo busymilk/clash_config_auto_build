@@ -47,17 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[902ms] 🇹🇼 台湾|@ripaojiedian'
-  password: test.+
-  port: 30443
-  server: 1.170.195.64
-  server_url: cmhkb.ssv.vc
-  skip-cert-verify: false
-  sni: cmhkb.ssv.vc
-  tls: true
-  type: http
-  username: test
-- name: '[905ms] 🇹🇼 台湾 01'
+- name: '[916ms] 🇹🇼 台湾 01'
   network: ws
   password: ttfang
   port: 81
@@ -70,9 +60,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- name: '[1327ms] 🇹🇼 台湾|@ripaojiedian'
+  password: test.+
+  port: 30443
+  server: 1.170.195.64
+  server_url: cmhkb.ssv.vc
+  skip-cert-verify: false
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  username: test
 - alterId: 0
   cipher: auto
-  name: '[2028ms] 🇹🇼TW-103.61.139.137-059'
+  name: '[2075ms] 🇹🇼TW-103.61.139.137-059'
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -266,6 +266,13 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  loy_reject:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/loy_reject.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/reject-list.txt
   other_direct_applications:
     behavior: classical
     interval: 86400
@@ -294,6 +301,7 @@ rule-providers:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
+- RULE-SET,loy_reject,REJECT
 - RULE-SET,geosite_@ads,REJECT
 - DOMAIN,time.apple.com,DIRECT
 - DOMAIN,cdn.jsdelivr.net,DIRECT
@@ -319,10 +327,10 @@ rules:
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
 - RULE-SET,geosite_telegram,Telegram
-- RULE-SET,geosite_@!cn_domains,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
+- RULE-SET,geosite_@!cn_domains,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve

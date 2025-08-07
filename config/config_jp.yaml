@@ -48,20 +48,20 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[438ms] 🇯🇵JP-149.22.87.241-0276 | 28.481MB'
+  name: '[369ms] 🇯🇵JP-149.22.87.241-0276 | 28.481MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
-  name: '[440ms] 🇯🇵JP-149.22.87.204-0277 | 27.694MB'
+  name: '[376ms] 🇯🇵JP-149.22.87.204-0277 | 27.694MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '[581ms] 🇯🇵 日本 69'
+  name: '[495ms] 🇯🇵 日本 69'
   network: tcp
   port: 56702
   reality-opts:
@@ -74,29 +74,18 @@ proxies:
   type: vless
   udp: true
   uuid: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-- name: '[589ms] Channel id: @ShadowProxy66🇯🇵 #2'
-  password: bd109dec-b7b5-4f0b-a77d-1181c148712c
-  port: 53272
-  server: 47.79.32.141
+- auth: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
+  name: '[518ms] 🇯🇵 日本 51'
+  password: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
+  port: 32000
+  ports: 32000-33000
+  server: 172.104.107.246
+  server_url: jp4.interld123456789.com
   skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
+  sni: 234224.1234567890spcloud.com
   type: hysteria2
-- name: '[652ms] 🇯🇵_日本_3'
-  network: ws
-  port: 443
-  server: 13.115.232.94
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[664ms] 🇯🇵_日本_2 #2'
+- name: '[531ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -110,7 +99,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[684ms] 🇯🇵_日本_2'
+- name: '[615ms] 🇯🇵_日本_2'
   network: ws
   port: 47001
   server: 158.101.154.245
@@ -124,8 +113,17 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[2050ms] 日本3|@ripaojiedian'
+  network: tcp
+  password: 6b5b43c9-05bd-471e-b502-d52c0dbd55fd
+  port: 23008
+  server: 111.243.105.181
+  server_url: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
 - auth: 18c77d82-a744-45e1-8a65-4f29a8547932
-  name: '[1246ms] 🇯🇵 日本 25'
+  name: '[2377ms] 🇯🇵 日本 25'
   obfs: salamander
   obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
   password: 18c77d82-a744-45e1-8a65-4f29a8547932
@@ -136,8 +134,16 @@ proxies:
   sni: flyxg.flylink.cyou
   type: hysteria2
   udp: true
+- name: '[2815ms] Channel id: @ShadowProxy66🇯🇵 #2'
+  password: bd109dec-b7b5-4f0b-a77d-1181c148712c
+  port: 53272
+  server: 47.79.32.141
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  name: '[1469ms] 🇯🇵 日本 03'
+  name: '[2878ms] 🇯🇵 日本 03'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
@@ -148,15 +154,6 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '[1808ms] 日本3|@ripaojiedian'
-  network: tcp
-  password: 6b5b43c9-05bd-471e-b502-d52c0dbd55fd
-  port: 23008
-  server: 111.243.105.181
-  server_url: okanc.iepl.cac.cab
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -340,6 +337,13 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  loy_reject:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/loy_reject.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/reject-list.txt
   other_direct_applications:
     behavior: classical
     interval: 86400
@@ -368,6 +372,7 @@ rule-providers:
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
 rules:
+- RULE-SET,loy_reject,REJECT
 - RULE-SET,geosite_@ads,REJECT
 - DOMAIN,time.apple.com,DIRECT
 - DOMAIN,cdn.jsdelivr.net,DIRECT
@@ -393,10 +398,10 @@ rules:
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
 - RULE-SET,geosite_telegram,Telegram
-- RULE-SET,geosite_@!cn_domains,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
+- RULE-SET,geosite_@!cn_domains,✈️ 选择代理
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
