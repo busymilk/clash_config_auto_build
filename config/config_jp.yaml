@@ -47,9 +47,21 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-128-gcm
+  name: '[360ms] 🇯🇵JP-149.22.87.241-0276 | 28.481MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: '[361ms] 🇯🇵JP-149.22.87.204-0277 | 27.694MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '[468ms] 🇯🇵 日本 69'
+  name: '[466ms] 🇯🇵 日本 69'
   network: tcp
   port: 56702
   reality-opts:
@@ -62,34 +74,8 @@ proxies:
   type: vless
   udp: true
   uuid: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-- name: '[553ms] 🇯🇵_日本_2'
-  network: ws
-  port: 47001
-  server: 158.101.154.245
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-128-gcm
-  name: '[558ms] 🇯🇵JP-149.22.87.204-0277 | 27.694MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: '[562ms] 🇯🇵JP-149.22.87.241-0276 | 28.481MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
 - auth: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-  name: '[753ms] 🇯🇵 日本 51'
+  name: '[471ms] 🇯🇵 日本 51'
   password: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
   port: 32000
   ports: 32000-33000
@@ -99,21 +85,7 @@ proxies:
   sni: 234224.1234567890spcloud.com
   type: hysteria2
   udp: true
-- name: '[777ms] 🇯🇵_日本_3'
-  network: ws
-  port: 443
-  server: 13.115.232.94
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[896ms] 🇯🇵_日本_2 #2'
+- name: '[517ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -127,8 +99,48 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[587ms] 🇯🇵_日本_2'
+  network: ws
+  port: 47001
+  server: 158.101.154.245
+  servername: edgb.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[763ms] 🇯🇵_日本_3'
+  network: ws
+  port: 443
+  server: 13.115.232.94
+  servername: edgb.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- auth: 2dd0ee4c-30a5-4ab2-8d40-c4b80c835171
+  name: '[1451ms] 🇯🇵 日本 23'
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 2dd0ee4c-30a5-4ab2-8d40-c4b80c835171
+  port: 35300
+  server: 212.192.221.221
+  server_url: flyrb.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxg.flylink.cyou
+  type: hysteria2
+  udp: true
 - auth: fb2c6765-73a4-41c4-8474-781730af9c2b
-  name: '[1172ms] 🇯🇵 日本 17'
+  name: '[2182ms] 🇯🇵 日本 17'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: fb2c6765-73a4-41c4-8474-781730af9c2b
@@ -138,20 +150,6 @@ proxies:
   skip-cert-verify: true
   sni: rb.dport.top
   type: hysteria2
-  udp: true
-- cipher: aes-256-gcm
-  name: '[2075ms] 🇯🇵 日本 37'
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
   udp: true
 proxy-groups:
 - name: ✈️ 选择代理

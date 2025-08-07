@@ -48,7 +48,7 @@ profile:
   store-selected: false
 proxies:
 - auth: a068e412
-  name: '[731ms] 🇸🇬 新加坡 69'
+  name: '[695ms] 🇸🇬 新加坡 69'
   password: a068e412
   port: 9513
   server: 92.112.23.70
@@ -56,18 +56,13 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   udp: true
-- auth: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-  name: '[972ms] 🇸🇬 新加坡 96'
-  password: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-  port: 32000
-  ports: 32000-33000
-  server: 172.104.63.223
-  server_url: sg1.interld123456789.com
-  skip-cert-verify: true
-  sni: 234224.1234567890spcloud.com
-  type: hysteria2
-  udp: true
-- name: '[1015ms] 🇸🇬 新加坡 95'
+- cipher: chacha20-ietf-poly1305
+  name: '[714ms] 🇸🇬SG-188.166.220.70-5216 | 26.741MB'
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
+  type: ss
+- name: '[794ms] 🇸🇬 新加坡 95'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -80,7 +75,18 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[1251ms] 🇸🇬 新加坡 09'
+- auth: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
+  name: '[1016ms] 🇸🇬 新加坡 96'
+  password: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
+  port: 32000
+  ports: 32000-33000
+  server: 172.104.63.223
+  server_url: sg1.interld123456789.com
+  skip-cert-verify: true
+  sni: 234224.1234567890spcloud.com
+  type: hysteria2
+  udp: true
+- name: '[1198ms] 🇸🇬 新加坡 09'
   network: ws
   password: ttfang
   port: 1111
@@ -93,7 +99,7 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[3553ms] 🇸🇬@FreakConfig'
+- name: '[2192ms] 🇸🇬@FreakConfig'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145
@@ -101,12 +107,6 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: '[3708ms] 🇸🇬SG-188.166.220.70-5216 | 26.741MB'
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
