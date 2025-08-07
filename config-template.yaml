@@ -210,7 +210,14 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/reject-list.txt"
     path: ./ruleset/loy_reject.rules
     interval: 86400
-
+  loy_gfw:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt"
+    path: ./ruleset/loy_gfw.rules
+    interval: 86400
+    
   # --- GeoSite 域名规则集 ---
   geosite_@ads:
     type: http
@@ -388,7 +395,8 @@ rules:
   - RULE-SET,geosite_google,✈️ 选择代理
   - RULE-SET,geosite_telegram,Telegram
 #---------------------------------------------------------
-#国外域名补充（被国内dns污染的）——ssk规则集
+#国外域名补充（被国内dns污染的,或者被墙的）——ssk and gfw
+  - RULE-SET,loy_gfw,✈️ 选择代理
   - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
   
 #原版geolocation-!cn域名集合里掺杂的@cn国内域名
