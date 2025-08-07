@@ -1,0 +1,24 @@
+# 来源：https://cloud.google.com/gemini/docs/discover/set-up-gemini?hl=zh-cn#configure-firewall-API-traffic
+
+payload:
+  # oauth2.googleapis.com： 用於登入 Google Cloud。
+  - DOMAIN-SUFFIX,oauth2.googleapis.com
+  # serviceusage.googleapis.com： 用於檢查使用者的 Gemini Code Assist 專案是否已正確設定。
+  - DOMAIN-SUFFIX,serviceusage.googleapis.com
+  # cloudaicompanion.googleapis.com：Gemini 版 Google Cloud API 的主要端點。
+  - DOMAIN-SUFFIX,cloudaicompanion.googleapis.com
+  # cloudcode-pa.googleapis.com：提供 IDE 相關功能的內部 API。
+  - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+  # cloudresourcemanager.googleapis.com： 用於 IDE 的專案挑選器。如果專案是在 settings.json 檔案中明確設定，可能就不需要 Resource Manager API。
+  - DOMAIN-SUFFIX,cloudresourcemanager.googleapis.com
+  # people.googleapis.com：提供設定檔和聯絡人相關資訊的存取權。
+  - DOMAIN-SUFFIX,people.googleapis.com
+  # firebaselogging-pa.googleapis.com：用於傳送產品遙測資料的內部 API，包括建議是否已接受的事件。
+  - DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
+  # feedback-pa.googleapis.com：用於在 IDE 中提交意見回饋的內部 API。
+  - DOMAIN-SUFFIX,feedback-pa.googleapis.com
+  # apihub.googleapis.com： Cloud Code API 瀏覽器功能會使用這個檔案。
+  - DOMAIN-SUFFIX,apihub.googleapis.com
+  # lh3.googleusercontent.com 和 lh5.googleusercontent.com：用於取得使用者相片。
+  - DOMAIN-SUFFIX,lh3.googleusercontent.com
+  - DOMAIN-SUFFIX,lh5.googleusercontent.com
