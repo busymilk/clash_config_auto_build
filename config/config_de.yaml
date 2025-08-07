@@ -47,21 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- client-fingerprint: randomized
-  name: '[218ms] 🇩🇪 德国 08'
+- name: '[189ms] 🇩🇪 德国 03'
   network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
   server: 104.25.254.4
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
   udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
   ws-opts:
     headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '[230ms] 🇩🇪 德国 04'
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '[213ms] 🇩🇪 德国 04'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2053
@@ -74,55 +73,27 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '[340ms] 🇩🇪 德国 01'
+- client-fingerprint: randomized
+  name: '[237ms] 🇩🇪 德国 08'
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
   server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
   udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
   ws-opts:
     headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[445ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  name: '[280ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '[496ms] 🇩🇪DE-91.107.146.130-055'
-  network: tcp
-  port: 42684
-  server: 91.107.146.130
-  server_url: panel1.ipyar.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c4bd9eba-8aea-4d5e-a2ee-b5de65ac14e1
-  ws-headers:
-    Host: panel1.ipyar.org
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🏁ZZ
-  delay: 1639
-  name: '[530ms] 德国 - 法兰克福 - dataforest GmbH - 2'
-  password: trErto8XzLALaQEslTp_jw
-  port: 2222
-  server: 176.96.136.168
-  server_url: universal.opengate.wiki
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[600ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- name: '[607ms] 🇩🇪 德国 05'
+- name: '[310ms] 🇩🇪 德国 05'
   network: tcp
   port: 2020
   server: 78.46.230.173
@@ -130,13 +101,47 @@ proxies:
   type: vless
   udp: true
   uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
+- cipher: chacha20-ietf-poly1305
+  name: '[325ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🏁ZZ
+  delay: 1639
+  name: '[344ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  password: trErto8XzLALaQEslTp_jw
+  port: 2222
+  server: 176.96.136.168
+  server_url: universal.opengate.wiki
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '[365ms] 🇩🇪DE-46.101.152.68-050'
+  network: ws
+  port: 20086
+  server: 46.101.152.68
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e3501cb6-af9a-44ab-bb4b-48aa5fca2ae8
+  ws-headers:
+    Host: 46.101.152.68
+  ws-path: /
+- cipher: rc4-md5
+  name: '[396ms] 🇩🇪DE-193.108.119.230-0270 | 7.091MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   delay: 974
   h2-opts: {}
   http-opts: {}
-  name: '[897ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  name: '[504ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
   network: ws
   port: 2083
   server: 104.26.5.16
@@ -151,11 +156,24 @@ proxies:
     path: /linkwsrt?ed=2560
 - alterId: 0
   cipher: auto
+  name: '[518ms] 🇩🇪DE-95.169.172.206-094'
+  network: ws
+  port: 20086
+  server: 95.169.172.206
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 56a2cae7-ea52-4762-bfc8-481543b68bde
+  ws-headers:
+    Host: 95.169.172.206
+  ws-path: /
+- alterId: 0
+  cipher: auto
   country: 🏁ZZ
   delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[907ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[522ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
   server: 172.67.72.15
@@ -168,18 +186,6 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: '[1037ms] 🇩🇪_DE_德国_0@5'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.28
-  type: ss
-- cipher: rc4-md5
-  name: '[1871ms] 🇩🇪DE-193.108.119.230-0288 | 26.584MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -363,13 +369,6 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
-  irs_gemini_site:
-    behavior: classical
-    format: yaml
-    interval: 86400
-    path: ./ruleset/irs_gemini_site.rules
-    type: http
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/Gemini/Gemini_No_Resolve.yaml
   loy_gfw:
     behavior: domain
     format: text
@@ -411,6 +410,13 @@ rule-providers:
     path: ./sukkaw_ruleset/ssk_lan_non_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
+  self_gemini_site:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/self_gemini_site.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/clash_config_auto_build@refs/heads/main/rules/gemini_rules.yaml
 rules:
 - RULE-SET,loy_reject,REJECT
 - RULE-SET,geosite_@ads,REJECT
@@ -433,7 +439,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,irs_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理

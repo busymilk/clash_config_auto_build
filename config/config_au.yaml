@@ -48,26 +48,12 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[445ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  name: '[280ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
-- name: '[565ms] 🇦🇺_澳大利亚_2'
-  network: ws
-  port: 23023
-  server: 43.165.191.25
-  servername: r1.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: r1.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '[1009ms] 🇦🇺_澳大利亚_3'
+- name: '[1255ms] 🇦🇺_澳大利亚_3'
   network: ws
   port: 12443
   server: 43.132.239.42
@@ -83,7 +69,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 2
   cipher: auto
-  name: '[2683ms] 🇦🇺 澳大利亚 28'
+  name: '[1710ms] 🇦🇺 澳大利亚 28'
   network: ws
   port: 30835
   server: 36.151.194.29
@@ -97,18 +83,20 @@ proxies:
     headers:
       Host: v35.heduian.link
     path: /oooo
-- auth: f1be5278-9d77-472a-8d8e-324418370271
-  name: '[3116ms] 🇦🇺 澳大利亚 07'
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: f1be5278-9d77-472a-8d8e-324418370271
-  port: 35310
-  server: 203.32.26.70
-  server_url: flyhg.flylink.cyou
+- name: '[2011ms] 🇦🇺_澳大利亚_2'
+  network: ws
+  port: 23023
+  server: 43.165.191.25
+  servername: r1.bgm2024.dpdns.org
   skip-cert-verify: true
-  sni: flyhg.flylink.cyou
-  type: hysteria2
+  tls: true
+  type: vless
   udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: r1.bgm2024.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -292,13 +280,6 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
-  irs_gemini_site:
-    behavior: classical
-    format: yaml
-    interval: 86400
-    path: ./ruleset/irs_gemini_site.rules
-    type: http
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/Gemini/Gemini_No_Resolve.yaml
   loy_gfw:
     behavior: domain
     format: text
@@ -340,6 +321,13 @@ rule-providers:
     path: ./sukkaw_ruleset/ssk_lan_non_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
+  self_gemini_site:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/self_gemini_site.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/clash_config_auto_build@refs/heads/main/rules/gemini_rules.yaml
 rules:
 - RULE-SET,loy_reject,REJECT
 - RULE-SET,geosite_@ads,REJECT
@@ -362,7 +350,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,irs_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理

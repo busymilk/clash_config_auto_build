@@ -48,25 +48,15 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-256-cfb
-  name: '[554ms] 🇹🇼 台湾 19'
+  name: '[955ms] 🇹🇼 台湾 19'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
-- name: '[952ms] 🇹🇼 台湾|@ripaojiedian'
-  password: test.+
-  port: 30443
-  server: 1.170.195.64
-  server_url: cmhkb.ssv.vc
-  skip-cert-verify: false
-  sni: cmhkb.ssv.vc
-  tls: true
-  type: http
-  username: test
 - alterId: 0
   cipher: auto
-  name: '[2864ms] 🇹🇼TW-103.61.139.137-059'
+  name: '[2826ms] 🇹🇼TW-103.61.139.137-059'
   network: ws
   port: 20521
   server: 103.61.139.137
@@ -260,13 +250,6 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
-  irs_gemini_site:
-    behavior: classical
-    format: yaml
-    interval: 86400
-    path: ./ruleset/irs_gemini_site.rules
-    type: http
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/Gemini/Gemini_No_Resolve.yaml
   loy_gfw:
     behavior: domain
     format: text
@@ -308,6 +291,13 @@ rule-providers:
     path: ./sukkaw_ruleset/ssk_lan_non_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
+  self_gemini_site:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/self_gemini_site.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/clash_config_auto_build@refs/heads/main/rules/gemini_rules.yaml
 rules:
 - RULE-SET,loy_reject,REJECT
 - RULE-SET,geosite_@ads,REJECT
@@ -330,7 +320,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,irs_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理

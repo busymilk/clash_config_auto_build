@@ -47,94 +47,122 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-128-gcm
-  name: '[436ms] 🇬🇧GB-212.102.53.79-0239 | 35.653MB'
-  password: shadowsocks
+- cipher: chacha20-ietf-poly1305
+  name: '[237ms] 🇬🇧GB-85.210.120.237-0222 | 41.991MB'
+  password: Bog0ELmMM9DSxDdQ
   port: 443
-  server: 212.102.53.79
+  server: 85.210.120.237
   type: ss
 - cipher: aes-128-gcm
-  name: '[437ms] 🇬🇧GB-212.102.53.196-0248 | 33.237MB'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
-  name: '[439ms] 🇬🇧GB-212.102.53.78-0253 | 31.694MB'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- cipher: aes-128-gcm
-  name: '[441ms] 🇬🇧GB-212.102.53.194-0088 | 36.239MB'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: aes-128-gcm
-  name: '[441ms] 🇬🇧GB-212.102.53.80-0251 | 35.78MB'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
-  name: '[441ms] 🇬🇧GB-212.102.53.193-0240 | 35.375MB'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-128-gcm
-  name: '[442ms] 🇬🇧GB-212.102.53.81-0249 | 35.123MB'
+  name: '[255ms] 🇬🇧GB-212.102.53.81-0234 | 37.697MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.81
   type: ss
 - cipher: aes-128-gcm
-  name: '[444ms] 🇬🇧GB-212.102.53.197-0243 | 21.688MB'
+  name: '[257ms] 🇬🇧GB-212.102.53.80-0227 | 39.565MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
+- cipher: aes-128-gcm
+  name: '[257ms] 🇬🇧GB-212.102.53.197-0226 | 40.107MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: '[258ms] 🇬🇧GB-212.102.53.78-0257 | 38.257MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  type: ss
+- cipher: aes-128-gcm
+  name: '[259ms] 🇬🇧GB-212.102.53.195-0242 | 38.327MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: '[261ms] 🇬🇧GB-212.102.53.197-0243 | 21.688MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   server_url: uk-dc1.yangon.club
   type: ss
 - cipher: aes-128-gcm
-  name: '[445ms] 🇬🇧GB-212.102.53.198-0236 | 35.88MB'
+  name: '[262ms] 🇬🇧GB-212.102.53.198-0224 | 39.491MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  name: '[450ms] 🇬🇧GB-212.102.53.195-0244 | 33.701MB'
+  name: '[262ms] 🇬🇧GB-212.102.53.196-0248 | 37.623MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.195
+  server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
-  name: '[451ms] 🇬🇧GB-212.102.53.197-0242 | 35.785MB'
+  name: '[262ms] 🇬🇧GB-212.102.53.79-0228 | 30.292MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.197
+  server: 212.102.53.79
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[457ms] 🇬🇧GB-85.210.120.237-0255 | 36.182MB'
-  password: Bog0ELmMM9DSxDdQ
+- cipher: aes-128-gcm
+  name: '[263ms] 🇬🇧GB-212.102.53.194-0082 | 39.545MB'
+  password: shadowsocks
   port: 443
-  server: 85.210.120.237
+  server: 212.102.53.194
   type: ss
+- cipher: aes-128-gcm
+  name: '[263ms] 🇬🇧GB-212.102.53.193-0231 | 33.242MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '[322ms] 🇬🇧GB-8.211.193.97-086'
+  network: ws
+  port: 20086
+  server: 8.211.193.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3276eb8f-93cf-4180-b94d-9c5d528ad3cc
+  ws-headers:
+    Host: 8.211.193.97
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '[325ms] 🇬🇧GB-206.245.227.178-076'
+  network: ws
+  port: 20086
+  server: 206.245.227.178
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 69cb8460-005c-4657-8904-1847d7e29812
+  ws-headers:
+    Host: 206.245.227.178
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
-  name: '[533ms] SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456'
+  delay: 2491
+  name: '[328ms] 英国 - 伦敦 - Global Connectivity Solutions LLP - 1'
+  password: PPDI4eTCSUzQ
+  port: 443
+  server: 89.185.84.172
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '[351ms] SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456'
   password: c40641c1f89e7acb
   port: 57456
   server: 46.226.163.225
   type: ss
-- cipher: aes-128-gcm
-  name: '[605ms] 🇬🇧GB-141.98.101.178-0275 | 27.373MB'
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '[1119ms] 🇬🇧 英国 003'
+  name: '[390ms] 🇬🇧 英国 003'
   network: tcp
   port: 32782
   reality-opts:
@@ -147,12 +175,25 @@ proxies:
   type: vless
   udp: true
   uuid: c6e3dddc-ce7d-4ab2-82f2-cc62bcda01cd
-- cipher: chacha20-ietf-poly1305
-  name: '[1203ms] 🇬🇧GB-89.185.84.172-5402 | 35.278MB'
-  password: PPDI4eTCSUzQ
+- cipher: aes-128-gcm
+  name: '[419ms] 🇬🇧GB-141.98.101.178-0266 | 5.319MB'
+  password: shadowsocks
   port: 443
-  server: 89.185.84.172
+  server: 141.98.101.178
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '[1131ms] 🇬🇧GB-103.179.143.72-055'
+  network: ws
+  port: 20086
+  server: 103.179.143.72
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e4fb8324-6b6e-4c48-987c-04668271028d
+  ws-headers:
+    Host: 103.179.143.72
+  ws-path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -336,13 +377,6 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
-  irs_gemini_site:
-    behavior: classical
-    format: yaml
-    interval: 86400
-    path: ./ruleset/irs_gemini_site.rules
-    type: http
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/Gemini/Gemini_No_Resolve.yaml
   loy_gfw:
     behavior: domain
     format: text
@@ -384,6 +418,13 @@ rule-providers:
     path: ./sukkaw_ruleset/ssk_lan_non_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
+  self_gemini_site:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/self_gemini_site.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/clash_config_auto_build@refs/heads/main/rules/gemini_rules.yaml
 rules:
 - RULE-SET,loy_reject,REJECT
 - RULE-SET,geosite_@ads,REJECT
@@ -406,7 +447,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,irs_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理

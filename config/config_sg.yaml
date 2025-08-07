@@ -47,22 +47,13 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- auth: a068e412
-  name: '[695ms] 🇸🇬 新加坡 69'
-  password: a068e412
-  port: 9513
-  server: 92.112.23.70
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '[714ms] 🇸🇬SG-188.166.220.70-5216 | 26.741MB'
+  name: '[776ms] 🇸🇬SG-188.166.220.70-0268 | 13.419MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
-- name: '[794ms] 🇸🇬 新加坡 95'
+- name: '[1040ms] 🇸🇬 新加坡 95'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -75,18 +66,7 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- auth: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-  name: '[1016ms] 🇸🇬 新加坡 96'
-  password: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
-  port: 32000
-  ports: 32000-33000
-  server: 172.104.63.223
-  server_url: sg1.interld123456789.com
-  skip-cert-verify: true
-  sni: 234224.1234567890spcloud.com
-  type: hysteria2
-  udp: true
-- name: '[1198ms] 🇸🇬 新加坡 09'
+- name: '[1530ms] 🇸🇬 新加坡 09'
   network: ws
   password: ttfang
   port: 1111
@@ -99,7 +79,7 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[2192ms] 🇸🇬@FreakConfig'
+- name: '[2104ms] 🇸🇬@FreakConfig'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145
@@ -290,13 +270,6 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
-  irs_gemini_site:
-    behavior: classical
-    format: yaml
-    interval: 86400
-    path: ./ruleset/irs_gemini_site.rules
-    type: http
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@refs/heads/master/rule/Clash/Gemini/Gemini_No_Resolve.yaml
   loy_gfw:
     behavior: domain
     format: text
@@ -338,6 +311,13 @@ rule-providers:
     path: ./sukkaw_ruleset/ssk_lan_non_ip.txt
     type: http
     url: https://ruleset.skk.moe/Clash/non_ip/lan.txt
+  self_gemini_site:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./ruleset/self_gemini_site.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/busymilk/clash_config_auto_build@refs/heads/main/rules/gemini_rules.yaml
 rules:
 - RULE-SET,loy_reject,REJECT
 - RULE-SET,geosite_@ads,REJECT
@@ -360,7 +340,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,irs_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,GoogleApi
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
