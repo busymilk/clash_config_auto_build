@@ -202,6 +202,15 @@ proxy-groups:
 
 # 规则集提供者 (Rule Providers)
 rule-providers:
+  # --- Loyalsoldier 规则集 ---
+  loy_reject:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/reject-list.txt"
+    path: ./ruleset/loy_reject.rules
+    interval: 86400
+
   # --- GeoSite 域名规则集 ---
   geosite_@ads:
     type: http
@@ -342,6 +351,7 @@ rules:
 
   #---------------------------------------------------------
   #广告拦截
+  - RULE-SET,loy_reject,REJECT
   - RULE-SET,geosite_@ads,REJECT
   #---------------------------------------------------------
   #自己增加的规则
