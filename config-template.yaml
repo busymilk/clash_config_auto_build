@@ -169,8 +169,8 @@ proxy-groups:
     tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
     include-all-proxies: true # 包含所有节点进行测试
     include-all: true
-    url: "https://googleapis.com" # 使用 Google Api
-    expected-status: 404 # 你没看错，确实是404，404恰恰证明了访问到了googleapi，而且给了结果。不是半路链接被重置等异常
+    url: "https://www.google.com/generate_204" # gstatic是访问cdn的，这个链接是用来访问主站的。
+    expected-status: 204 #
     interval: 120 # 健康检查间隔（秒）
     timeout: 3000 # 健康检查超时时间（毫秒）
     max-failed-times: 2 # 最大失败次数
