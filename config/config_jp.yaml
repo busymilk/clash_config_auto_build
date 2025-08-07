@@ -48,26 +48,41 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[468ms] 🇯🇵JP-149.22.87.204-0277 | 27.694MB'
+  name: '[438ms] 🇯🇵JP-149.22.87.241-0276 | 28.481MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
+- cipher: aes-128-gcm
+  name: '[440ms] 🇯🇵JP-149.22.87.204-0277 | 27.694MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
-- name: '[663ms] 🇯🇵_日本_2 #2'
-  network: ws
-  port: 47001
-  server: 158.101.154.245
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '[581ms] 🇯🇵 日本 69'
+  network: tcp
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: 172.104.107.246
+  server_url: jp4.interld123456789.com
+  servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[674ms] 🇯🇵_日本_3'
+  uuid: 00c2e56d-e305-48f1-92ac-9d152ff60f2d
+- name: '[589ms] Channel id: @ShadowProxy66🇯🇵 #2'
+  password: bd109dec-b7b5-4f0b-a77d-1181c148712c
+  port: 53272
+  server: 47.79.32.141
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '[652ms] 🇯🇵_日本_3'
   network: ws
   port: 443
   server: 13.115.232.94
@@ -81,13 +96,7 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-128-gcm
-  name: '[689ms] 🇯🇵JP-149.22.87.241-0276 | 28.481MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- name: '[871ms] 🇯🇵_日本_2'
+- name: '[664ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -101,16 +110,34 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1553ms] Channel id: @ShadowProxy66🇯🇵 #2'
-  password: bd109dec-b7b5-4f0b-a77d-1181c148712c
-  port: 53272
-  server: 47.79.32.141
+- name: '[684ms] 🇯🇵_日本_2'
+  network: ws
+  port: 47001
+  server: 158.101.154.245
+  servername: edgb.esslh.filegear-sg.me
   skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- auth: 18c77d82-a744-45e1-8a65-4f29a8547932
+  name: '[1246ms] 🇯🇵 日本 25'
+  obfs: salamander
+  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
+  password: 18c77d82-a744-45e1-8a65-4f29a8547932
+  port: 35300
+  server: 212.192.221.221
+  server_url: flyrb.flylink.cyou
+  skip-cert-verify: true
+  sni: flyxg.flylink.cyou
   type: hysteria2
+  udp: true
 - auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  name: '[2183ms] 🇯🇵 日本 03'
+  name: '[1469ms] 🇯🇵 日本 03'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
@@ -121,7 +148,7 @@ proxies:
   sni: rb.dport.top
   type: hysteria2
   udp: true
-- name: '[2677ms] 日本3|@ripaojiedian'
+- name: '[1808ms] 日本3|@ripaojiedian'
   network: tcp
   password: 6b5b43c9-05bd-471e-b502-d52c0dbd55fd
   port: 23008
@@ -356,6 +383,7 @@ rules:
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
 - PROCESS-NAME,Telegram,Telegram
 - DOMAIN-SUFFIX,v2ex.com,v2ex
+- DOMAIN-KEYWORD,alibaba-cn,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
