@@ -48,12 +48,12 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[419ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  name: '[319ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
-- name: '[547ms] 🇦🇺_澳大利亚_2'
+- name: '[675ms] 🇦🇺_澳大利亚_2'
   network: ws
   port: 23023
   server: 43.165.191.25
@@ -67,7 +67,7 @@ proxies:
     headers:
       host: r1.bgm2024.dpdns.org
     path: /?ed=2560
-- name: '[997ms] 🇦🇺_澳大利亚_3'
+- name: '[1185ms] 🇦🇺_澳大利亚_3'
   network: ws
   port: 12443
   server: 43.132.239.42
@@ -81,6 +81,18 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  name: '[2677ms] 🇦🇺 澳大利亚 03'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  port: 33656
+  server: 203.32.26.70
+  server_url: hg.dport.top
+  skip-cert-verify: true
+  sni: hg.dport.top
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -264,6 +276,13 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  loy_gfw:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/loy_gfw.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt
   loy_reject:
     behavior: domain
     format: text
@@ -325,6 +344,7 @@ rules:
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
 - RULE-SET,geosite_telegram,Telegram
+- RULE-SET,loy_gfw,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理

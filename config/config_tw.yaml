@@ -47,7 +47,30 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[916ms] 🇹🇼 台湾 01'
+- alterId: 0
+  cipher: auto
+  name: '[1287ms] 🇹🇼TW-103.61.139.137-059'
+  network: ws
+  port: 20521
+  server: 103.61.139.137
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  ws-headers:
+    Host: 103.61.139.137
+  ws-path: /
+- name: '[2966ms] 🇹🇼 台湾|@ripaojiedian'
+  password: test.+
+  port: 30443
+  server: 1.170.195.64
+  server_url: cmhkb.ssv.vc
+  skip-cert-verify: false
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  username: test
+- name: '[3325ms] 🇹🇼 台湾 20'
   network: ws
   password: ttfang
   port: 81
@@ -60,29 +83,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[1327ms] 🇹🇼 台湾|@ripaojiedian'
-  password: test.+
-  port: 30443
-  server: 1.170.195.64
-  server_url: cmhkb.ssv.vc
-  skip-cert-verify: false
-  sni: cmhkb.ssv.vc
-  tls: true
-  type: http
-  username: test
-- alterId: 0
-  cipher: auto
-  name: '[2075ms] 🇹🇼TW-103.61.139.137-059'
-  network: ws
-  port: 20521
-  server: 103.61.139.137
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
-  ws-headers:
-    Host: 103.61.139.137
-  ws-path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -266,6 +266,13 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  loy_gfw:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/loy_gfw.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt
   loy_reject:
     behavior: domain
     format: text
@@ -327,6 +334,7 @@ rules:
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
 - RULE-SET,geosite_telegram,Telegram
+- RULE-SET,loy_gfw,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理

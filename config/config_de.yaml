@@ -48,7 +48,7 @@ profile:
   store-selected: false
 proxies:
 - client-fingerprint: randomized
-  name: '[124ms] 🇩🇪 德国 08'
+  name: '[148ms] 🇩🇪 德国 08'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -61,20 +61,7 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '[192ms] 🇩🇪 德国 01'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '[212ms] 🇩🇪 德国 04'
+- name: '[155ms] 🇩🇪 德国 04'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2053
@@ -87,44 +74,35 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '[156ms] 🇩🇪 德国 01'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[413ms] 🇩🇪_DE_德国'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.28
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[419ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  name: '[319ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
-- name: '[451ms] 🇩🇪 德国 05'
-  network: tcp
-  port: 2020
-  server: 78.46.230.173
-  tls: false
-  type: vless
-  udp: true
-  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
-- alterId: 0
-  cipher: auto
-  name: '[457ms] 🇩🇪DE-91.107.146.130-055'
-  network: tcp
-  port: 42684
-  server: 91.107.146.130
-  server_url: panel1.ipyar.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c4bd9eba-8aea-4d5e-a2ee-b5de65ac14e1
-  ws-headers:
-    Host: panel1.ipyar.org
-  ws-path: /
+- cipher: rc4-md5
+  name: '[359ms] 🇩🇪DE-193.108.119.230-0288 | 26.584MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🏁ZZ
   delay: 1639
-  name: '[470ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  name: '[391ms] 德国 - 法兰克福 - dataforest GmbH - 2'
   password: trErto8XzLALaQEslTp_jw
   port: 2222
   server: 176.96.136.168
@@ -132,7 +110,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[560ms] 🇩🇪 德国 03'
+  name: '[455ms] 🇩🇪 德国 03'
   network: tcp
   port: 30938
   reality-opts:
@@ -145,7 +123,15 @@ proxies:
   type: vless
   udp: true
   uuid: 1068814a-6d43-40d9-a127-0f6b6b77ccfc
-- name: '[598ms] 🇩🇪 德国 19'
+- name: '[472ms] 🇩🇪 德国 05'
+  network: tcp
+  port: 2020
+  server: 78.46.230.173
+  tls: false
+  type: vless
+  udp: true
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
+- name: '[581ms] 🇩🇪 德国 19'
   network: ws
   port: 80
   server: 104.17.148.22
@@ -158,38 +144,13 @@ proxies:
     headers:
       Host: NIce-APartMEnt.ZULAir.ORg
     path: /?ed=2048
-- cipher: rc4-md5
-  name: '[845ms] 🇩🇪DE-193.108.119.230-0288 | 26.584MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 974
-  h2-opts: {}
-  http-opts: {}
-  name: '[878ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
-  network: ws
-  port: 2083
-  server: 104.26.5.16
-  servername: blaze-ger-248.blazecloudmain.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
-  ws-opts:
-    headers:
-      HOST: blaze-ger-248.blazecloudmain.site
-    path: /linkwsrt?ed=2560
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[884ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[584ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
   server: 172.67.72.15
@@ -202,11 +163,30 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 974
+  h2-opts: {}
+  http-opts: {}
+  name: '[594ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  network: ws
+  port: 2083
+  server: 104.26.5.16
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: '[1319ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
+  name: '[780ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   type: ss
 proxy-groups:
 - name: ✈️ 选择代理
@@ -391,6 +371,13 @@ rule-providers:
     path: ./ruleset/geosite_telegram.rules
     type: http
     url: https://cdn.jsdelivr.net/gh/busymilk/v2fly-domain-list-community_rule_set@main/clash-rules-generated/telegram.txt
+  loy_gfw:
+    behavior: domain
+    format: text
+    interval: 86400
+    path: ./ruleset/loy_gfw.rules
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt
   loy_reject:
     behavior: domain
     format: text
@@ -452,6 +439,7 @@ rules:
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
 - RULE-SET,geosite_telegram,Telegram
+- RULE-SET,loy_gfw,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
 - RULE-SET,geosite_!cn,✈️ 选择代理
