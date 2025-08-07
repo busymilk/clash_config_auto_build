@@ -48,12 +48,26 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[280ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  name: '[290ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
-- name: '[1255ms] 🇦🇺_澳大利亚_3'
+- name: '[720ms] 🇦🇺_澳大利亚_2'
+  network: ws
+  port: 23023
+  server: 43.165.191.25
+  servername: r1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: r1.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: '[1215ms] 🇦🇺_澳大利亚_3'
   network: ws
   port: 12443
   server: 43.132.239.42
@@ -69,7 +83,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 2
   cipher: auto
-  name: '[1710ms] 🇦🇺 澳大利亚 28'
+  name: '[1811ms] 🇦🇺 澳大利亚 28'
   network: ws
   port: 30835
   server: 36.151.194.29
@@ -83,20 +97,6 @@ proxies:
     headers:
       Host: v35.heduian.link
     path: /oooo
-- name: '[2011ms] 🇦🇺_澳大利亚_2'
-  network: ws
-  port: 23023
-  server: 43.165.191.25
-  servername: r1.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: r1.bgm2024.dpdns.org
-    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

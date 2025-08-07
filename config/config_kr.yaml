@@ -47,14 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-cfb
-  name: '[800ms] 🇰🇷 韩国家宽 01'
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
-  udp: true
-- name: '[900ms] 🇰🇷_韩国_19'
+- name: '[930ms] 🇰🇷_韩国_19'
   network: ws
   port: 18087
   server: 61.79.14.39
@@ -68,9 +61,16 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: aes-256-cfb
+  name: '[957ms] 🇰🇷 韩国家宽 01'
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '[971ms] 🇰🇷KR-8.220.219.122-057'
+  name: '[989ms] 🇰🇷KR-8.220.219.122-057'
   network: ws
   port: 20086
   server: 8.220.219.122
@@ -81,21 +81,7 @@ proxies:
   ws-headers:
     Host: 8.220.219.122
   ws-path: /
-- name: '[1035ms] 🇰🇷_韩国_20'
-  network: ws
-  port: 10048
-  server: 175.200.140.27
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1051ms] 🇰🇷 韩国 10'
+- name: '[1001ms] 🇰🇷 韩国 10'
   network: ws
   port: 10066
   server: 211.217.31.160
@@ -108,104 +94,7 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: Telegram@freecodes/?ed=2560
-- name: '[1060ms] 🇰🇷_韩国_23'
-  network: ws
-  port: 10025
-  server: 183.98.166.19
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1067ms] 🇰🇷_韩国_24'
-  network: ws
-  port: 50000
-  server: 49.172.20.66
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1068ms] 🇰🇷_韩国_21'
-  network: ws
-  port: 50000
-  server: 115.94.98.93
-  servername: r1.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: r1.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '[1078ms] 🇰🇷_韩国_22'
-  network: ws
-  port: 12542
-  server: 175.207.220.224
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  name: '[1232ms] 🇰🇷 韩国 15'
-  network: ws
-  port: 58474
-  server: 152.70.232.251
-  servername: chou3.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0c561336-b0c7-4b18-96d1-863240a224ab
-  ws-opts:
-    headers:
-      Host: chou3.pages.dev
-    path: /
-- name: '[1237ms] 🇰🇷 韩国 15 #2'
-  network: ws
-  port: 12196
-  server: 202.150.185.128
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /
-- name: '[1313ms] 🇰🇷 韩国 24'
-  network: ws
-  port: 50000
-  server: 222.119.218.222
-  server_url: tp50000.kr.proxyip.fgfw.eu.org
-  servername: test.saas.cname.123153.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: test.saas.cname.123153.xyz
-    path: /snippets
-- name: '[1335ms] 🇰🇷_韩国_6 #2'
+- name: '[1006ms] 🇰🇷_韩国_6 #2'
   network: ws
   port: 30029
   server: 117.123.23.173
@@ -219,6 +108,104 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1009ms] 🇰🇷_韩国_23'
+  network: ws
+  port: 10025
+  server: 183.98.166.19
+  servername: edgb.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1026ms] 🇰🇷_韩国_21'
+  network: ws
+  port: 50000
+  server: 115.94.98.93
+  servername: r1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: r1.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: '[1060ms] 🇰🇷_韩国_22'
+  network: ws
+  port: 12542
+  server: 175.207.220.224
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1077ms] 🇰🇷_韩国_20'
+  network: ws
+  port: 10048
+  server: 175.200.140.27
+  servername: edgb.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: chrome
+  name: '[1206ms] 🇰🇷 韩国 15'
+  network: ws
+  port: 58474
+  server: 152.70.232.251
+  servername: chou3.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0c561336-b0c7-4b18-96d1-863240a224ab
+  ws-opts:
+    headers:
+      Host: chou3.pages.dev
+    path: /
+- name: '[1254ms] 🇰🇷_韩国_24'
+  network: ws
+  port: 50000
+  server: 49.172.20.66
+  servername: edgb.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1302ms] 🇰🇷 韩国 24'
+  network: ws
+  port: 50000
+  server: 222.119.218.222
+  server_url: tp50000.kr.proxyip.fgfw.eu.org
+  servername: test.saas.cname.123153.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: test.saas.cname.123153.xyz
+    path: /snippets
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
