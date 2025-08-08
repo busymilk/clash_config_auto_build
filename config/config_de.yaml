@@ -47,7 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[155ms] 🇩🇪 德国 12'
+- name: '[64ms] 🇩🇪 德国 12'
   network: ws
   password: Aimer
   port: 2096
@@ -60,50 +60,10 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[199ms] 🇩🇪 德国 04'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '[313ms] 🇩🇪 德国 03'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: randomized
-  name: '[325ms] 🇩🇪 德国 08'
-  network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - alpn:
   - http/1.1
   client-fingerprint: randomized
-  name: '[422ms] 🇩🇪 德国 23'
+  name: '[64ms] 🇩🇪 德国 23'
   network: ws
   port: 2053
   server: 172.67.171.131
@@ -116,19 +76,62 @@ proxies:
     headers:
       Host: invincible.fafa20.shop
     path: /yRVRnY2jDtjg67UV/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
+- name: '[68ms] 🇩🇪 德国 13'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 172.67.68.56
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: randomized
+  name: '[252ms] 🇩🇪 德国 08'
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[458ms] 🇩🇪DE-185.177.229.245-045'
+  name: '[282ms] 🇩🇪DE-185.177.229.245-0331 | 3.894MB'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
+- name: '[301ms] 🇩🇪 德国 03'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[513ms] 🇩🇪_DE_德国_1_0@10'
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.166
+  country: 🏁ZZ
+  delay: 1639
+  name: '[336ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  password: trErto8XzLALaQEslTp_jw
+  port: 2222
+  server: 176.96.136.168
+  server_url: universal.opengate.wiki
   type: ss
-- name: '[515ms] 🇩🇪 德国 05'
+- name: '[411ms] 🇩🇪 德国 05'
   network: tcp
   port: 2020
   server: 78.46.230.173
@@ -136,18 +139,18 @@ proxies:
   type: vless
   udp: true
   uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
-- cipher: chacha20-ietf-poly1305
-  country: 🏁ZZ
-  delay: 1639
-  name: '[548ms] 德国 - 法兰克福 - dataforest GmbH - 2'
-  password: trErto8XzLALaQEslTp_jw
-  port: 2222
-  server: 176.96.136.168
-  server_url: universal.opengate.wiki
-  type: ss
+- name: '[419ms] @SaghiVpnXBOT 🇩🇪[🇩🇪]'
+  password: xnChC7dKZ8
+  port: 443
+  server: 91.98.34.130
+  server_url: android.yas-nowin.ir
+  skip-cert-verify: false
+  sni: android.yas-nowin.ir
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: '[680ms] 🇩🇪DE-91.99.185.216-080'
+  name: '[423ms] 🇩🇪DE-91.99.185.216-080'
   network: ws
   port: 20086
   server: 91.99.185.216
@@ -158,13 +161,20 @@ proxies:
   ws-headers:
     Host: 91.99.185.216
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: '[763ms] 🇩🇪_DE_德国_3_0@25'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.58
-  type: ss
-- name: '[789ms] 🇩🇪 德国 18'
+- name: '[427ms] 🇩🇪 德国 04'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '[467ms] 🇩🇪 德国 18'
   network: ws
   port: 443
   server: 172.67.155.120
@@ -184,7 +194,7 @@ proxies:
   delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[890ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[801ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
   server: 172.67.72.15
@@ -203,7 +213,7 @@ proxies:
   delay: 974
   h2-opts: {}
   http-opts: {}
-  name: '[912ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  name: '[822ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
   network: ws
   port: 2083
   server: 104.26.5.16
@@ -217,25 +227,23 @@ proxies:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
 - cipher: rc4-md5
-  name: '[1039ms] 🇩🇪_DE_德国_0@8'
+  name: '[1447ms] 🇩🇪_DE_德国'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[3601ms] 🇩🇪_DE_德国_1@5'
+  name: '[2431ms] 🇩🇪_DE_德国_1'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[3460ms] 🇩🇪_DE_德国_3'
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 45.87.175.28
+  server: 45.87.175.58
   type: ss
-- name: '[3948ms] 🇩🇪 德国 16'
-  network: tcp
-  port: 38918
-  server: 46.29.34.205
-  tls: false
-  type: vless
-  udp: true
-  uuid: fb9183fc-f0bb-4d19-8c8b-704b017d04b8
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
