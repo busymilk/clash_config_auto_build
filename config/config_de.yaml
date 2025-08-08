@@ -47,46 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- client-fingerprint: randomized
-  name: '[151ms] 🇩🇪 德国 08'
+- name: '[46ms] 🇩🇪 德国 06'
   network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '[187ms] 🇩🇪 德国 04'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
+  password: Aimer
+  port: 2096
+  server: 172.67.70.33
   skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- cipher: chacha20-ietf-poly1305
-  name: '[276ms] 🇩🇪_DE_德国_1'
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[280ms] 🇩🇪DE-185.177.229.245-0931 | 6.528MB'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- name: '[282ms] 🇩🇪 德国 03'
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[142ms] 🇩🇪 德国 03'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
@@ -99,16 +73,73 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '[161ms] 🇩🇪 德国 04'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- client-fingerprint: randomized
+  name: '[180ms] 🇩🇪 德国 08'
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[321ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
+  name: '[252ms] 🇩🇪_DE_德国_3'
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.58
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[264ms] 🇩🇪_DE_德国_1'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[267ms] 🇩🇪_DE_德国_2'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[273ms] 🇩🇪DE-185.177.229.245-037'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[280ms] 🇩🇪DE-46.101.245.131-041'
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: '[298ms] 🇩🇪DE-147.45.178.200-032'
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: 🏁ZZ
   delay: 1639
-  name: '[330ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  name: '[323ms] 德国 - 法兰克福 - dataforest GmbH - 2'
   password: trErto8XzLALaQEslTp_jw
   port: 2222
   server: 176.96.136.168
@@ -116,7 +147,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '[377ms] 🇩🇪DE-46.101.152.68-050'
+  name: '[361ms] 🇩🇪DE-46.101.152.68-050'
   network: ws
   port: 20086
   server: 46.101.152.68
@@ -127,9 +158,29 @@ proxies:
   ws-headers:
     Host: 46.101.152.68
   ws-path: /
+- name: '[396ms] 🇩🇪 德国 18'
+  network: ws
+  port: 443
+  server: 172.67.155.120
+  server_url: tencent-app.baipiao0721-dns78655.eu
+  servername: de01.kittycdn.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: f183287e-5b2a-4e5b-8de1-976ed52436c1
+  ws-opts:
+    headers:
+      Host: de01.kittycdn.pp.ua
+    path: /
+- cipher: rc4-md5
+  name: '[401ms] 🇩🇪_DE_德国'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '[396ms] 🇩🇪DE-91.99.185.216-080'
+  name: '[406ms] 🇩🇪DE-91.99.185.216-080'
   network: ws
   port: 20086
   server: 91.99.185.216
@@ -140,33 +191,16 @@ proxies:
   ws-headers:
     Host: 91.99.185.216
   ws-path: /
-- cipher: rc4-md5
-  name: '[437ms] 🇩🇪DE-193.108.119.230-0270 | 7.091MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 974
-  h2-opts: {}
-  http-opts: {}
-  name: '[513ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
-  network: ws
-  port: 2083
-  server: 104.26.5.16
-  servername: blaze-ger-248.blazecloudmain.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
-  ws-opts:
-    headers:
-      HOST: blaze-ger-248.blazecloudmain.site
-    path: /linkwsrt?ed=2560
+- name: '[414ms] 🇩🇪 德国 05'
+  network: tcp
+  port: 2020
+  server: 78.46.230.173
+  tls: false
+  type: vless
+  udp: true
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
 - auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  name: '[518ms] 🇩🇪 德国 17'
+  name: '[489ms] 🇩🇪 德国 17'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
@@ -183,7 +217,7 @@ proxies:
   delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[544ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[529ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
   server: 172.67.72.15
@@ -196,20 +230,33 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
-- name: '[626ms] 🇩🇪 德国 05'
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 974
+  h2-opts: {}
+  http-opts: {}
+  name: '[535ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  network: ws
+  port: 2083
+  server: 104.26.5.16
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
+- name: '[1028ms] 🇩🇪 德国 11'
   network: tcp
-  port: 2020
-  server: 78.46.230.173
+  port: 38918
+  server: 46.29.34.205
   tls: false
   type: vless
   udp: true
-  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
-- cipher: chacha20-ietf-poly1305
-  name: '[3442ms] 🇩🇪_DE_德国_2'
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.199
-  type: ss
+  uuid: fb9183fc-f0bb-4d19-8c8b-704b017d04b8
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

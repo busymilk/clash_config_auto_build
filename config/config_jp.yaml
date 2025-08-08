@@ -48,32 +48,25 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[520ms] 🇯🇵JP-149.22.87.204-0265 | 18.082MB'
+  name: '[535ms] 🇯🇵JP-149.22.87.204-0265 | 24.363MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: '[521ms] 🇯🇵JP-149.22.87.241-0264 | 14.424MB'
+  name: '[539ms] 🇯🇵JP-149.22.87.241-0264 | 23.808MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-- name: '[724ms] 🇯🇵_日本_2'
-  network: ws
-  port: 47001
-  server: 158.101.154.245
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: '[563ms] 🇯🇵 日本 100'
+  password: ljqdalu13..
+  port: 8313
+  server: 52.195.8.246
+  type: ss
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[736ms] 🇯🇵_日本_2 #2'
+- name: '[786ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -87,7 +80,21 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1848ms] 日本5|@ripaojiedian'
+- name: '[843ms] 🇯🇵_日本'
+  network: ws
+  port: 47001
+  server: 158.101.154.245
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1923ms] 日本5|@ripaojiedian'
   network: tcp
   password: 6bc1c915-2fee-469b-b0e2-01968be45bf6
   port: 23007

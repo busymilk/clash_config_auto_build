@@ -49,7 +49,7 @@ profile:
 proxies:
 - alterId: 0
   cipher: auto
-  name: '[94ms] 🇰🇷_KR_韩国->🇺🇸_US_美国'
+  name: '[17ms] 🇰🇷_KR_韩国->🇺🇸_US_美国'
   network: ws
   port: 20086
   server: 154.223.19.231
@@ -57,9 +57,23 @@ proxies:
   uuid: bfb323d3-239e-4e1b-bfa8-13f68385931e
   ws-opts:
     path: /
+- name: '[938ms] 🇰🇷_韩国_1'
+  network: ws
+  port: 18087
+  server: 61.79.14.39
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   cipher: auto
-  name: '[970ms] 🇰🇷KR-8.220.219.122-057'
+  name: '[1000ms] 🇰🇷KR-8.220.219.122-057'
   network: ws
   port: 20086
   server: 8.220.219.122
@@ -70,7 +84,34 @@ proxies:
   ws-headers:
     Host: 8.220.219.122
   ws-path: /
-- name: '[1007ms] 🇰🇷_韩国_6 #2'
+- name: '[1020ms] 🇰🇷_韩国_6'
+  network: ws
+  port: 50000
+  server: 121.143.196.49
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1040ms] 🇰🇷 韩国 10'
+  network: ws
+  port: 10066
+  server: 211.217.31.160
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: Telegram@freecodes/?ed=2560
+- name: '[1046ms] 🇰🇷_韩国_2'
   network: ws
   port: 30029
   server: 117.123.23.173
@@ -84,49 +125,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1079ms] 🇰🇷_韩国_20'
-  network: ws
-  port: 10048
-  server: 175.200.140.27
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1094ms] 🇰🇷_韩国_22'
-  network: ws
-  port: 12542
-  server: 175.207.220.224
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1150ms] 🇰🇷_韩国_23'
-  network: ws
-  port: 10025
-  server: 183.98.166.19
-  servername: edgb.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1312ms] 🇰🇷_韩国_24'
+- name: '[1085ms] 🇰🇷_韩国_9'
   network: ws
   port: 50000
   server: 49.172.20.66
@@ -140,7 +139,35 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1419ms] 🇰🇷 韩国 24'
+- name: '[1159ms] 🇰🇷_韩国_8'
+  network: ws
+  port: 50000
+  server: 115.94.98.93
+  servername: sk1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sk1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: '[1165ms] 🇰🇷_韩国_4'
+  network: ws
+  port: 10025
+  server: 183.98.166.19
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1300ms] 🇰🇷 韩国 24'
   network: ws
   port: 50000
   server: 222.119.218.222
@@ -155,7 +182,7 @@ proxies:
       Host: test.saas.cname.123153.xyz
     path: /snippets
 - auth: 18c77d82-a744-45e1-8a65-4f29a8547932
-  name: '[1690ms] 🇰🇷 韩国 22'
+  name: '[1453ms] 🇰🇷 韩国 22'
   obfs: salamander
   obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
   password: 18c77d82-a744-45e1-8a65-4f29a8547932
@@ -166,33 +193,34 @@ proxies:
   sni: flyhg.flylink.cyou
   type: hysteria2
   udp: true
-- name: '[1754ms] 🇰🇷 韩国 10'
+- name: '[2679ms] 🇰🇷_韩国_3'
   network: ws
-  port: 10066
-  server: 211.217.31.160
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: Telegram@freecodes/?ed=2560
-- name: '[1824ms] 🇰🇷_韩国_21'
-  network: ws
-  port: 50000
-  server: 115.94.98.93
-  servername: r1.bgm2024.dpdns.org
+  port: 10048
+  server: 175.200.140.27
+  servername: edgb.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: r1.bgm2024.dpdns.org
-    path: /?ed=2560
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[2981ms] 🇰🇷_韩国_7'
+  network: ws
+  port: 12542
+  server: 175.207.220.224
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
