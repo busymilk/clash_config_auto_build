@@ -48,18 +48,18 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[469ms] 🇯🇵JP-149.22.87.241-0264 | 23.808MB'
+  name: '[356ms] 🇯🇵JP-149.22.87.241-0264 | 23.808MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
 - cipher: aes-128-gcm
-  name: '[475ms] 🇯🇵JP-149.22.87.204-0265 | 24.363MB'
+  name: '[360ms] 🇯🇵JP-149.22.87.204-0265 | 24.363MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
-- name: '[666ms] 🇯🇵_日本'
+- name: '[506ms] 🇯🇵_日本'
   network: ws
   port: 47001
   server: 158.101.154.245
@@ -73,7 +73,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[700ms] 🇯🇵_日本_2 #2'
+- name: '[515ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -87,7 +87,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1080ms] 🇯🇵 日本 43'
+- name: '[819ms] 🇯🇵 日本 43'
   network: ws
   password: Aimer
   port: 12158
@@ -101,7 +101,7 @@ proxies:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
-  name: '[1942ms] 🇯🇵 日本 01'
+  name: '[826ms] 🇯🇵 日本 01'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -114,9 +114,21 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
+- name: '[877ms] 🇯🇵 日本 41'
+  network: ws
+  password: Aimer
+  port: 19902
+  server: 220.85.122.216
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: '[3973ms] 🇯🇵 日本2|@ripaojiedian'
+  name: '[1452ms] 🇯🇵 日本2|@ripaojiedian'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -130,6 +142,14 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
+- name: '[1527ms] Channel id: @ShadowProxy66🇯🇵 #2'
+  password: bd109dec-b7b5-4f0b-a77d-1181c148712c
+  port: 53272
+  server: 47.79.32.141
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
