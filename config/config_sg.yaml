@@ -48,30 +48,20 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[696ms] 🇸🇬 新加坡 01 #2'
+  name: '[511ms] 🇸🇬 新加坡 01 #2'
   password: ztn4Pw2XQuy/qKGvHfvV9swe64RmgE3QyamTqff9dhA=
   port: 57905
   server: 165.22.49.146
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '[698ms] 🇸🇬SG-188.166.220.70-0262 | 18.965MB'
+  name: '[525ms] 🇸🇬SG-188.166.220.70-0262 | 18.965MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '[709ms] 🇸🇬 新加坡 18'
-  port: 31103
-  server: 47.130.155.218
-  server_url: cgroup.node3.v.nodelist-airport.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
 - auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[926ms] 🇸🇬 新加坡 12'
+  name: '[682ms] 🇸🇬 新加坡 12'
   password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
   port: 35000
   ports: 35000-39000
@@ -80,17 +70,20 @@ proxies:
   sni: www.apple.com
   type: hysteria2
   udp: true
-- auth: 5OiuCsPmULZ0lJwts89fegLJE
-  name: '[957ms] 🇸🇬 新加坡 04'
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 54.169.224.169
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: '[682ms] 🇸🇬SG-47.84.62.1-5301 | 19.413MB'
+  network: ws
+  port: 20086
+  server: 47.84.62.1
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
+  ws-opts:
+    path: /
 - client-fingerprint: chrome
-  name: '[1034ms] 🇸🇬 新加坡 01'
+  name: '[1045ms] 🇸🇬 新加坡 01'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -103,7 +96,7 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[1649ms] 🇸🇬 新加坡 09 #2'
+- name: '[1214ms] 🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
   port: 1111
@@ -116,18 +109,14 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- alterId: 0
-  cipher: auto
-  name: '[1673ms] 🇸🇬SG-47.84.62.1-5301 | 19.413MB'
-  network: ws
-  port: 20086
-  server: 47.84.62.1
-  skip-cert-verify: false
+- name: '[2804ms] 🇸🇬@FreakConfig'
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
+  skip-cert-verify: true
+  sni: www.bing.com
   tls: false
-  type: vmess
-  uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
-  ws-opts:
-    path: /
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
