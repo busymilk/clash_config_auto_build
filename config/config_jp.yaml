@@ -48,18 +48,18 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[469ms] 🇯🇵JP-149.22.87.204-0289 | 50.042MB'
+  name: '[509ms] 🇯🇵JP-149.22.87.204-0289 | 50.042MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: '[476ms] 🇯🇵JP-149.22.87.241-0281 | 53.811MB'
+  name: '[521ms] 🇯🇵JP-149.22.87.241-0281 | 53.811MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-- name: '[638ms] 🇯🇵_日本'
+- name: '[718ms] 🇯🇵_日本'
   network: ws
   port: 47001
   server: 158.101.154.245
@@ -73,7 +73,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[673ms] 🇯🇵_日本_2 #2'
+- name: '[760ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -87,18 +87,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- auth: c2d2aecb-3606-4490-8d7f-780816e4aad1
-  name: '[728ms] 🇯🇵 日本 32'
-  obfs: salamander
-  obfs-password: fyfDEqPQ2TzaTD8p
-  password: c2d2aecb-3606-4490-8d7f-780816e4aad1
-  port: 2053
-  server: 47.245.30.45
-  skip-cert-verify: true
-  sni: jp01.kittycdn.pp.ua
-  type: hysteria2
-  udp: true
-- name: '[1025ms] 🇯🇵 日本 39'
+- name: '[1069ms] 🇯🇵 日本 39'
   network: ws
   password: Aimer
   port: 17000
@@ -111,7 +100,20 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1036ms] 🇯🇵 日本 43'
+- name: '[1127ms] 🇯🇵 日本 62'
+  network: ws
+  password: Aimer
+  port: 38880
+  server: 59.19.192.51
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1156ms] 🇯🇵 日本 43'
   network: ws
   password: Aimer
   port: 12158
@@ -124,7 +126,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1045ms] 🇯🇵 日本 63'
+- name: '[1208ms] 🇯🇵 日本 63'
   network: ws
   password: Aimer
   port: 28015
@@ -138,7 +140,22 @@ proxies:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
-  name: '[1137ms] 🇯🇵 日本 01'
+  name: '[2533ms] 🇯🇵 日本2|@ripaojiedian'
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: '[2782ms] 🇯🇵 日本 01'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -151,26 +168,17 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- auth: 06529b18-fbec-4586-982e-497f529d17a1
-  name: '[1184ms] 🇯🇵 日本 07'
+- auth: 758cff51-703f-427d-b87f-d4e8b559c529
+  name: '[3261ms] 🇯🇵 日本 41'
   obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: 06529b18-fbec-4586-982e-497f529d17a1
-  port: 35300
-  server: 212.192.221.221
-  server_url: flyrb.flylink.cyou
+  obfs-password: fyfDEqPQ2TzaTD8p
+  password: 758cff51-703f-427d-b87f-d4e8b559c529
+  port: 2053
+  server: 47.245.30.45
   skip-cert-verify: true
-  sni: flyxg.flylink.cyou
+  sni: jp01.kittycdn.pp.ua
   type: hysteria2
   udp: true
-- name: '[1355ms] Channel id: @ShadowProxy66🇯🇵 #1'
-  password: bd109dec-b7b5-4f0b-a77d-1181c148712c
-  port: 53272
-  server: 47.79.32.141
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -405,6 +413,7 @@ rule-providers:
 rules:
 - RULE-SET,loy_reject,REJECT
 - RULE-SET,geosite_@ads,REJECT
+- DOMAIN-SUFFIX,dahuatech.com,DIRECT
 - DOMAIN,time.apple.com,DIRECT
 - DOMAIN,cdn.jsdelivr.net,DIRECT
 - DOMAIN,a.ppconverter.eu.org,DIRECT
