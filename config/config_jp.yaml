@@ -48,40 +48,26 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[354ms] 🇯🇵JP-149.22.87.241-0189 | 29.656MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- cipher: aes-128-gcm
-  name: '[356ms] 🇯🇵JP-149.22.87.204-0191 | 26.523MB'
+  name: '[355ms] 🇯🇵JP-149.22.87.204-0311 | 23.694MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
+- cipher: aes-128-gcm
+  name: '[356ms] 🇯🇵JP-149.22.87.241-0189 | 29.656MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 - cipher: aes-256-gcm
-  name: '[443ms] 🇯🇵 日本 37'
+  name: '[371ms] 🇯🇵 日本 37'
   password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
   port: 51205
   server: 13.158.141.107
   server_url: cgroup.node1.s2.nodelist-airport.com
   type: ss
   udp: true
-- name: '[491ms] 🇯🇵_日本 #2'
-  network: ws
-  port: 47001
-  server: 158.101.154.245
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[523ms] 🇯🇵_日本_2 #2'
+- name: '[516ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -95,20 +81,21 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[775ms] 🇯🇵 日本 62'
+- name: '[544ms] 🇯🇵_日本 #2'
   network: ws
-  password: Aimer
-  port: 38880
-  server: 59.19.192.51
+  port: 47001
+  server: 158.101.154.245
+  servername: edgb.aimercc.dpdns.org
   skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: epgb.aimercc.dpdns.org
+      host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[870ms] 🇯🇵 日本 63'
+- name: '[817ms] 🇯🇵 日本 63'
   network: ws
   password: Aimer
   port: 28015
@@ -121,8 +108,21 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[837ms] 🇯🇵 日本 39'
+  network: ws
+  password: Aimer
+  port: 17000
+  server: 183.106.218.118
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
-  name: '[905ms] 🇯🇵 日本 01 #2'
+  name: '[991ms] 🇯🇵 日本 01 #2'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -135,8 +135,21 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
+- name: '[1869ms] 🇯🇵 日本 24'
+  network: ws
+  password: Aimer
+  port: 38880
+  server: 59.19.192.51
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
-  name: '[1106ms] 🇯🇵 日本2|@ripaojiedian'
+  name: '[2893ms] 🇯🇵 日本2|@ripaojiedian'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -150,8 +163,20 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
+- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  name: '[3222ms] 🇯🇵 日本 28'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  port: 33657
+  server: 212.192.221.221
+  server_url: rb.dport.top
+  skip-cert-verify: true
+  sni: rb.dport.top
+  type: hysteria2
+  udp: true
 - auth: f2aec126-fc53-4fb1-9c15-b283a3ea56ac
-  name: '[1528ms] 🇯🇵 日本 15'
+  name: '[3461ms] 🇯🇵 日本 15'
   obfs: salamander
   obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
   password: f2aec126-fc53-4fb1-9c15-b283a3ea56ac
@@ -162,19 +187,6 @@ proxies:
   sni: flyxg.flylink.cyou
   type: hysteria2
   udp: true
-- name: '[1866ms] 🇯🇵 日本 39'
-  network: ws
-  password: Aimer
-  port: 17000
-  server: 183.106.218.118
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
