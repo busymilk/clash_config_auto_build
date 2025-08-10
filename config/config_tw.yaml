@@ -48,13 +48,23 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-256-cfb
-  name: '[627ms] 🇹🇼 台湾 19'
+  name: '[711ms] 🇹🇼 台湾 19'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
-- name: '[779ms] 🇹🇼 台湾 05'
+- name: '[1197ms] 🇹🇼 台湾|@ripaojiedian'
+  password: test.+
+  port: 30443
+  server: 1.170.195.64
+  server_url: cmhkb.ssv.vc
+  skip-cert-verify: false
+  sni: cmhkb.ssv.vc
+  tls: true
+  type: http
+  username: test
+- name: '[1951ms] 🇹🇼 台湾 05'
   network: ws
   password: ttfang
   port: 81
@@ -67,16 +77,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[1112ms] 🇹🇼 台湾|@ripaojiedian'
-  password: test.+
-  port: 30443
-  server: 1.170.195.64
-  server_url: cmhkb.ssv.vc
-  skip-cert-verify: false
-  sni: cmhkb.ssv.vc
-  tls: true
-  type: http
-  username: test
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

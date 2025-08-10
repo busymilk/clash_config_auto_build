@@ -47,20 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[47ms] 🇩🇪 德国 14 #2'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 172.66.207.17
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[56ms] 🇩🇪 德国 14'
+- name: '[47ms] 🇩🇪 德国 14'
   network: ws
   password: Aimer
   port: 2096
@@ -73,11 +60,24 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[83ms] 🇩🇪 德国 13'
+- name: '[55ms] 🇩🇪 德国 48'
+  network: ws
+  port: 8880
+  server: 141.101.113.143
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+  ws-opts:
+    headers:
+      Host: yg.bantony199.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: '[61ms] 🇩🇪 德国 14 #2'
   network: ws
   password: Aimer
-  port: 2096
-  server: 172.67.68.56
+  port: 2083
+  server: 172.66.207.17
   skip-cert-verify: true
   sni: epgb.aimercc.dpdns.org
   type: trojan
@@ -89,7 +89,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: randomized
-  name: '[165ms] 🇩🇪 德国 23'
+  name: '[62ms] 🇩🇪 德国 23'
   network: ws
   port: 2053
   server: 172.67.171.131
@@ -102,7 +102,61 @@ proxies:
     headers:
       Host: invincible.fafa20.shop
     path: /yRVRnY2jDtjg67UV/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
-- name: '[178ms] 🇩🇪 德国 03'
+- name: '[67ms] 🇩🇪 德国 13'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 172.67.68.56
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: random
+  name: '[85ms] 🇩🇪 德国 53'
+  network: ws
+  port: 443
+  server: 104.24.230.10
+  servername: jack.jack-cq.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 72982133-27fb-46fc-9061-61113e77e201
+  ws-opts:
+    headers:
+      Host: jack.jack-cq.click
+    path: /?ed=2560
+- name: '[115ms] 🇩🇪 德国 01'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- client-fingerprint: randomized
+  name: '[171ms] 🇩🇪 德国 11'
+  network: ws
+  port: 2053
+  server: 162.159.129.11
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '[187ms] 🇩🇪 德国 03'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
@@ -116,7 +170,7 @@ proxies:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: randomized
-  name: '[211ms] 🇩🇪 德国 08'
+  name: '[220ms] 🇩🇪 德国 08'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -129,52 +183,31 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: randomized
-  name: '[331ms] 🇩🇪 德国 11'
-  network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '[360ms] 🇩🇪 德国 01'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[460ms] 🇩🇪_DE_德国_3_1@25'
+  name: '[314ms] 🇩🇪_DE_德国_3_1@25'
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.58
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[465ms] 🇩🇪DE-185.177.229.245-0370 | 3.706MB'
+  name: '[318ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[489ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
+  name: '[334ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[364ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
   password: a58fa62b4944ddbf
   port: 57456
   server: 147.45.178.200
   type: ss
-- name: '[514ms] 🇩🇪 德国 05'
+- name: '[372ms] 🇩🇪 德国 05'
   network: tcp
   port: 2020
   server: 78.46.230.173
@@ -183,29 +216,35 @@ proxies:
   udp: true
   uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
 - cipher: chacha20-ietf-poly1305
-  name: '[518ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
   country: 🏁ZZ
   delay: 1639
-  name: '[519ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  name: '[372ms] 德国 - 法兰克福 - dataforest GmbH - 2'
   password: trErto8XzLALaQEslTp_jw
   port: 2222
   server: 176.96.136.168
   server_url: universal.opengate.wiki
   type: ss
-- cipher: aes-256-cfb
-  name: '[603ms] 🇩🇪DE-80.92.204.106-4894 | 3.803MB'
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
-  server: 80.92.204.106
+- cipher: rc4-md5
+  name: '[448ms] 🇩🇪DE-193.108.119.230-0352 | 21.181MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
   type: ss
 - alterId: 0
   cipher: auto
-  name: '[672ms] 🇩🇪DE-46.165.194.96-0354 | 5.067MB'
+  name: '[458ms] 🇩🇪DE-46.165.194.90-0355 | 3.851MB'
+  network: ws
+  port: 20086
+  server: 46.165.194.90
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f2a9f149-cb6a-4669-9097-2d8cb2d4ea7e
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '[477ms] 🇩🇪DE-46.165.194.96-0354 | 4.26MB'
   network: ws
   port: 20086
   server: 46.165.194.96
@@ -217,7 +256,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '[673ms] 🇩🇪DE-91.99.185.216-0300 | 18.993MB'
+  name: '[485ms] 🇩🇪DE-91.99.185.216-0300 | 30.213MB'
   network: ws
   port: 20086
   server: 91.99.185.216
@@ -227,25 +266,7 @@ proxies:
   uuid: 7bd6a1ea-a220-4f1c-afed-6cfb8ab96ad9
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: '[674ms] 🇩🇪DE-46.165.194.90-0355 | 4.865MB'
-  network: ws
-  port: 20086
-  server: 46.165.194.90
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f2a9f149-cb6a-4669-9097-2d8cb2d4ea7e
-  ws-opts:
-    path: /
-- cipher: rc4-md5
-  name: '[812ms] 🇩🇪DE-193.108.119.230-0352 | 9.251MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- name: '[829ms] 🇩🇪 德国 18'
+- name: '[494ms] 🇩🇪 德国 18'
   network: ws
   port: 443
   server: 172.67.155.120
@@ -259,16 +280,22 @@ proxies:
     headers:
       Host: de01.kittycdn.pp.ua
     path: /
+- cipher: aes-256-cfb
+  name: '[577ms] 🇩🇪DE-80.92.204.106-4894 | 3.803MB'
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
-  delay: 1026
+  delay: 974
   h2-opts: {}
   http-opts: {}
-  name: '[868ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[622ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
   network: ws
   port: 2083
-  server: 172.67.72.15
+  server: 104.26.5.16
   servername: blaze-ger-248.blazecloudmain.site
   skip-cert-verify: true
   tls: true
@@ -281,13 +308,13 @@ proxies:
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
-  delay: 974
+  delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[897ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  name: '[632ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
-  server: 104.26.5.16
+  server: 172.67.72.15
   servername: blaze-ger-248.blazecloudmain.site
   skip-cert-verify: true
   tls: true
@@ -301,7 +328,7 @@ proxies:
   - h3
   - h2
   client-fingerprint: chrome
-  name: '[1048ms] 🇩🇪 德国 03 #2'
+  name: '[759ms] 🇩🇪 德国 03 #2'
   network: ws
   port: 443
   server: 104.19.144.33
@@ -314,7 +341,7 @@ proxies:
     headers:
       Host: 148BpJi0Zp.GiGa1.OrG
     path: /
-- name: '[1073ms] 🇩🇪 德国 05 #2'
+- name: '[846ms] 🇩🇪 德国 05 #2'
   network: tcp
   port: 443
   server: 185.141.171.9
