@@ -47,20 +47,9 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- alpn:
-  - h3
-  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: '[140ms] 🇨🇦 加拿大 09'
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 54530
-  server: 192.18.150.167
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[188ms] 🇨🇦 加拿大 07'
+  name: '[125ms] 🇨🇦 加拿大 07'
   network: tcp
   port: 59303
   reality-opts:
@@ -72,43 +61,20 @@ proxies:
   type: vless
   udp: true
   uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-- cipher: chacha20-ietf-poly1305
-  name: '[233ms] 🇨🇦CA-79.127.233.170-0227 | 77.346MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: '[239ms] 🇨🇦CA-79.127.233.170-0242 | 109.351MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: '[243ms] 🇨🇦CA-79.127.233.170-016'
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
 - alpn:
   - h3
-  auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  name: '[403ms] 🇨🇦 加拿大 45'
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.52.235
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: '[126ms] 🇨🇦 加拿大 09'
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 192.18.150.167
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[433ms] 🇨🇦 加拿大 62'
+  name: '[232ms] 🇨🇦 加拿大 62'
   network: tcp
   port: 42557
   reality-opts:
@@ -120,10 +86,54 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- cipher: aes-256-cfb
+  name: '[249ms] 🇨🇦CA-79.127.233.170-0242 | 109.351MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[260ms] 🇨🇦CA-79.127.233.170-0227 | 77.346MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- alpn:
+  - h3
+  auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  name: '[262ms] 🇨🇦 加拿大 45'
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 129.153.52.235
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- cipher: aes-256-cfb
+  name: '[273ms] SSR-加拿大-79.127.233.170:989'
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: '[342ms] VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80'
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: '[490ms] 🇨🇦 加拿大 05'
+  name: '[601ms] 🇨🇦 加拿大 05'
   password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
   port: 47262
   server: 40.233.103.51

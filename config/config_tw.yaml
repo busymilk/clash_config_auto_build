@@ -47,14 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-cfb
-  name: '[756ms] 🇹🇼 台湾 19'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-  udp: true
-- name: '[859ms] 🇹🇼 台湾|@ripaojiedian'
+- name: '[1003ms] 🇹🇼 台湾|@ripaojiedian'
   password: test.+
   port: 30443
   server: 1.170.195.64
@@ -64,7 +57,7 @@ proxies:
   tls: true
   type: http
   username: test
-- name: '[961ms] 🇹🇼 台湾 05'
+- name: '[1082ms] 🇹🇼 台湾 05'
   network: ws
   password: ttfang
   port: 81
@@ -77,6 +70,13 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- cipher: aes-256-cfb
+  name: '[2576ms] 🇹🇼 台湾 19'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
