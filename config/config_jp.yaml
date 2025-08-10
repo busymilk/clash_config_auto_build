@@ -48,26 +48,31 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[355ms] 🇯🇵JP-149.22.87.204-0311 | 23.694MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: '[356ms] 🇯🇵JP-149.22.87.241-0189 | 29.656MB'
+  name: '[355ms] 🇯🇵JP-149.22.87.241-0189 | 29.656MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
-- cipher: aes-256-gcm
-  name: '[371ms] 🇯🇵 日本 37'
-  password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae
-  port: 51205
-  server: 13.158.141.107
-  server_url: cgroup.node1.s2.nodelist-airport.com
+- cipher: aes-128-gcm
+  name: '[356ms] 🇯🇵JP-149.22.87.204-0311 | 23.694MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
   type: ss
+- client-fingerprint: ios
+  name: '[506ms] 🇯🇵 日本 68'
+  network: ws
+  port: 443
+  server: 69.84.182.18
+  tls: true
+  type: vless
   udp: true
-- name: '[516ms] 🇯🇵_日本_2 #2'
+  uuid: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  ws-opts:
+    headers:
+      Host: jpa1.xn--ghqu5fm27b67w.com
+    path: /pq/jp1
+- name: '[517ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -81,7 +86,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[544ms] 🇯🇵_日本 #2'
+- name: '[521ms] 🇯🇵_日本 #2'
   network: ws
   port: 47001
   server: 158.101.154.245
@@ -95,20 +100,26 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[817ms] 🇯🇵 日本 63'
-  network: ws
-  password: Aimer
-  port: 28015
-  server: 222.114.159.171
+- name: '[524ms] Channel id: @ShadowProxy66🇯🇵 #1'
+  password: bd109dec-b7b5-4f0b-a77d-1181c148712c
+  port: 53272
+  server: 47.79.32.141
   skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- auth: 32bfb429-6ba2-48cb-9a37-674a1df0952c
+  name: '[577ms] 🇯🇵 日本 24'
+  obfs: salamander
+  obfs-password: fyfDEqPQ2TzaTD8p
+  password: 32bfb429-6ba2-48cb-9a37-674a1df0952c
+  port: 2053
+  server: 47.245.30.45
+  skip-cert-verify: true
+  sni: jp01.kittycdn.pp.ua
+  type: hysteria2
   udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[837ms] 🇯🇵 日本 39'
+- name: '[843ms] 🇯🇵 日本 39'
   network: ws
   password: Aimer
   port: 17000
@@ -121,8 +132,21 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[850ms] 🇯🇵 日本 63'
+  network: ws
+  password: Aimer
+  port: 28015
+  server: 222.114.159.171
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
-  name: '[991ms] 🇯🇵 日本 01 #2'
+  name: '[961ms] 🇯🇵 日本 01 #2'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -135,21 +159,8 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- name: '[1869ms] 🇯🇵 日本 24'
-  network: ws
-  password: Aimer
-  port: 38880
-  server: 59.19.192.51
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
-  name: '[2893ms] 🇯🇵 日本2|@ripaojiedian'
+  name: '[1001ms] 🇯🇵 日本2|@ripaojiedian'
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -163,30 +174,19 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  name: '[3222ms] 🇯🇵 日本 28'
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  port: 33657
-  server: 212.192.221.221
-  server_url: rb.dport.top
+- name: '[1856ms] 🇯🇵 日本 24 #2'
+  network: ws
+  password: Aimer
+  port: 38880
+  server: 59.19.192.51
   skip-cert-verify: true
-  sni: rb.dport.top
-  type: hysteria2
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
   udp: true
-- auth: f2aec126-fc53-4fb1-9c15-b283a3ea56ac
-  name: '[3461ms] 🇯🇵 日本 15'
-  obfs: salamander
-  obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
-  password: f2aec126-fc53-4fb1-9c15-b283a3ea56ac
-  port: 35300
-  server: 212.192.221.221
-  server_url: flyrb.flylink.cyou
-  skip-cert-verify: true
-  sni: flyxg.flylink.cyou
-  type: hysteria2
-  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
