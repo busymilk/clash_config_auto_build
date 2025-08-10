@@ -47,14 +47,22 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '[318ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
+- name: '[649ms] 🇦🇺_澳大利亚_2'
+  network: ws
+  port: 23023
+  server: 43.165.191.25
+  servername: c01.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: c01.bgm2024.dpdns.org
+    path: /?ed=2560
 - auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[896ms] 🇦🇺 澳大利亚 01'
+  name: '[810ms] 🇦🇺 澳大利亚 01'
   password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
   port: 35000
   ports: 35000-39000
@@ -64,7 +72,7 @@ proxies:
   type: hysteria2
   udp: true
 - auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[913ms] 🇦🇺 澳大利亚 02'
+  name: '[842ms] 🇦🇺 澳大利亚 02'
   password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
   port: 35000
   ports: 35000-39000
@@ -73,7 +81,7 @@ proxies:
   sni: api.push.apple.com
   type: hysteria2
   udp: true
-- name: '[1128ms] 🇦🇺_澳大利亚_3'
+- name: '[1170ms] 🇦🇺_澳大利亚_3'
   network: ws
   port: 12443
   server: 43.132.239.42
@@ -88,7 +96,7 @@ proxies:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - auth: 3041a64e-a812-4feb-bb00-8cb94e72f5e6
-  name: '[1779ms] 🇦🇺 澳大利亚 07'
+  name: '[2148ms] 🇦🇺 澳大利亚 07'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 3041a64e-a812-4feb-bb00-8cb94e72f5e6

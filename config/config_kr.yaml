@@ -47,39 +47,9 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[790ms] 🇰🇷 韩国 19'
-  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  port: 35000
-  ports: 35000-39000
-  server: 152.69.225.196
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-  udp: true
-- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[804ms] 🇰🇷 韩国 20 #2'
-  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  port: 35000
-  ports: 35000-39000
-  server: 146.56.100.103
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-  udp: true
-- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[811ms] 🇰🇷 韩国 03'
-  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  port: 35000
-  ports: 35000-39000
-  server: 146.56.164.36
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '[847ms] 🇰🇷KR-183.109.131.75-0395 | 6.921MB'
+  name: '[770ms] 🇰🇷KR-183.109.131.75-0395 | 6.921MB'
   network: ws
   port: 20086
   server: 183.109.131.75
@@ -89,114 +59,37 @@ proxies:
   uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
   ws-opts:
     path: /
-- name: '[1005ms] 🇰🇷_韩国_6'
-  network: ws
-  port: 50001
-  server: 182.208.209.54
-  servername: edgb.aimercc.dpdns.org
+- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  name: '[775ms] 🇰🇷 韩国 20 #2'
+  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  port: 35000
+  ports: 35000-39000
+  server: 146.56.100.103
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: www.apple.com
+  type: hysteria2
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1033ms] 🇰🇷 韩国 22'
-  network: ws
-  port: 50000
-  server: 49.172.20.66
-  servername: edgb.esslh.filegear-sg.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edgb.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1089ms] 🇰🇷_韩国_12'
-  network: ws
-  port: 15903
-  server: 14.35.29.177
-  servername: edgb.aimercc.dpdns.org
+- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  name: '[809ms] 🇰🇷 韩国 19'
+  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  port: 35000
+  ports: 35000-39000
+  server: 152.69.225.196
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: www.apple.com
+  type: hysteria2
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1126ms] 🇰🇷 韩国 08'
-  network: ws
-  password: Aimer
-  port: 12488
-  server: 222.103.28.108
+- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  name: '[832ms] 🇰🇷 韩国 03'
+  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  port: 35000
+  ports: 35000-39000
+  server: 146.56.164.36
   skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
+  sni: api.push.apple.com
+  type: hysteria2
   udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1132ms] 🇰🇷_韩国_14'
-  network: ws
-  port: 12542
-  server: 175.207.220.224
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1142ms] 🇰🇷 韩国 11'
-  network: ws
-  password: Aimer
-  port: 12429
-  server: 125.139.152.24
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1144ms] 🇰🇷 韩国 10'
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 14.46.199.74
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1154ms] 🇰🇷 韩国 03 #2'
-  network: ws
-  password: Aimer
-  port: 18045
-  server: 119.207.56.167
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1180ms] 🇰🇷 韩国 07'
+- name: '[896ms] 🇰🇷 韩国 07'
   network: ws
   port: 10066
   server: 211.217.31.160
@@ -209,20 +102,35 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: Telegram@freecodes/?ed=2560
-- name: '[1186ms] 🇰🇷 韩国 09'
+- name: '[918ms] 🇰🇷_韩国_15'
   network: ws
-  port: 12196
-  server: 202.150.185.128
-  servername: jp.laoyoutiao.link
+  port: 50000
+  server: 115.94.98.93
+  servername: c01.bgm2024.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: jp.laoyoutiao.link
-    path: /
-- name: '[1228ms] 🇰🇷_韩国_7'
+      host: c01.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: '[931ms] 🇰🇷_韩国_17'
+  network: ws
+  port: 10025
+  server: 183.98.166.19
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[936ms] 🇰🇷_韩国_7'
   network: ws
   port: 10048
   server: 175.200.140.27
@@ -236,7 +144,87 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1229ms] 🇰🇷 韩国 11 #2'
+- name: '[938ms] 🇰🇷_韩国_14'
+  network: ws
+  port: 12542
+  server: 175.207.220.224
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[956ms] 🇰🇷 韩国 22'
+  network: ws
+  port: 50000
+  server: 49.172.20.66
+  servername: edgb.esslh.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edgb.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[972ms] 🇰🇷_韩国_6'
+  network: ws
+  port: 50001
+  server: 182.208.209.54
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1000ms] 🇰🇷 韩国 10'
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 14.46.199.74
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1022ms] 🇰🇷 韩国 08'
+  network: ws
+  password: Aimer
+  port: 12488
+  server: 222.103.28.108
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1070ms] 🇰🇷 韩国 11'
+  network: ws
+  password: Aimer
+  port: 12429
+  server: 125.139.152.24
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1073ms] 🇰🇷 韩国 11 #2'
   network: ws
   password: Aimer
   port: 50000
@@ -249,21 +237,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1309ms] 🇰🇷_韩国_5'
-  network: ws
-  port: 50000
-  server: 14.48.170.40
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1353ms] 🇰🇷 韩国 12 #2'
+- name: '[1084ms] 🇰🇷 韩国 12 #2'
   network: ws
   password: Aimer
   port: 12542
@@ -276,7 +250,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1393ms] 🇰🇷 韩国 24'
+- name: '[1102ms] 🇰🇷 韩国 24'
   network: ws
   port: 50000
   server: 222.119.218.222
@@ -290,7 +264,47 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
-- name: '[1481ms] 🇰🇷_韩国_1'
+- name: '[1127ms] 🇰🇷 韩国 03 #2'
+  network: ws
+  password: Aimer
+  port: 18045
+  server: 119.207.56.167
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1133ms] 🇰🇷_韩国_12'
+  network: ws
+  port: 15903
+  server: 14.35.29.177
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1133ms] 🇰🇷 韩国 09'
+  network: ws
+  port: 12196
+  server: 202.150.185.128
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /
+- name: '[1165ms] 🇰🇷_韩国_1'
   network: ws
   port: 50000
   server: 221.161.207.216
@@ -304,7 +318,7 @@ proxies:
     headers:
       host: cv1.ylka.dpdns.org
     path: /?ed=2560
-- name: '[1603ms] 🇰🇷 韩国 02'
+- name: '[1951ms] 🇰🇷 韩国 02'
   network: ws
   password: Aimer
   port: 22107
@@ -317,8 +331,36 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1968ms] 🇰🇷_韩国_5'
+  network: ws
+  port: 50000
+  server: 14.48.170.40
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[2138ms] 🇰🇷_韩国_13'
+  network: ws
+  port: 50000
+  server: 121.143.196.49
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - auth: 06529b18-fbec-4586-982e-497f529d17a1
-  name: '[1904ms] 🇰🇷 韩国 29'
+  name: '[2369ms] 🇰🇷 韩国 29'
   obfs: salamander
   obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==
   password: 06529b18-fbec-4586-982e-497f529d17a1

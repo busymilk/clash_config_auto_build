@@ -48,13 +48,35 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[686ms] 🇸🇬SG-188.166.220.70-0317 | 30.436MB'
+  name: '[610ms] 🇸🇬SG-188.166.220.70-0317 | 30.436MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
 - auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[852ms] 🇸🇬 新加坡 12'
+  name: '[790ms] 🇸🇬 新加坡 13'
+  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  port: 35000
+  ports: 35000-39000
+  server: 152.69.220.212
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '[793ms] 🇸🇬SG-47.84.62.1-0320 | 27.82MB'
+  network: ws
+  port: 20086
+  server: 47.84.62.1
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
+  ws-opts:
+    path: /
+- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  name: '[899ms] 🇸🇬 新加坡 12'
   password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
   port: 35000
   ports: 35000-39000
@@ -64,7 +86,7 @@ proxies:
   type: hysteria2
   udp: true
 - client-fingerprint: chrome
-  name: '[905ms] 🇸🇬 新加坡 01'
+  name: '[950ms] 🇸🇬 新加坡 01'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -77,17 +99,7 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[909ms] 🇸🇬 新加坡 13'
-  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  port: 35000
-  ports: 35000-39000
-  server: 152.69.220.212
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-  udp: true
-- name: '[1399ms] 🇸🇬 新加坡 09 #2'
+- name: '[1344ms] 🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
   port: 1111
