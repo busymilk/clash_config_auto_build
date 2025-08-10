@@ -48,14 +48,20 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[540ms] 🇯🇵JP-149.22.87.204-0254 | 2.686MB'
+  name: '[366ms] 🇯🇵JP-149.22.87.204-0254 | 2.686MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
+- cipher: aes-128-gcm
+  name: '[367ms] 🇯🇵JP-149.22.87.241-0251 | 2.855MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.241
+  type: ss
 - country: 🇯🇵JP
   delay: 2822
-  name: '[715ms] 日本 - 东京 - Amazon Technologies Inc. - 1'
+  name: '[479ms] 日本 - 东京 - Amazon Technologies Inc. - 1'
   password: 0xC6Mws4Dg
   port: 1935
   server: 54.168.52.254
@@ -64,21 +70,7 @@ proxies:
   sni: x2-japan-amazon-v2.devefun.org
   type: trojan
   udp: true
-- name: '[761ms] 🇯🇵_日本_2 #2'
-  network: ws
-  port: 443
-  server: 168.138.46.67
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[777ms] 🇯🇵_日本 #2'
+- name: '[514ms] 🇯🇵_日本 #2'
   network: ws
   port: 47001
   server: 158.101.154.245
@@ -92,8 +84,22 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[529ms] 🇯🇵_日本_2 #2'
+  network: ws
+  port: 443
+  server: 168.138.46.67
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: ios
-  name: '[822ms] 🇯🇵 日本 68'
+  name: '[552ms] 🇯🇵 日本 68'
   network: ws
   port: 443
   server: 69.84.182.18
@@ -105,8 +111,35 @@ proxies:
     headers:
       Host: jpa1.xn--ghqu5fm27b67w.com
     path: /pq/jp1
+- name: '[774ms] 🇯🇵 日本 27'
+  network: ws
+  password: Aimer
+  port: 38880
+  server: 59.19.192.51
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[806ms] 🇯🇵_日本_5'
+  network: ws
+  port: 12333
+  server: 121.80.244.179
+  servername: z01.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: z01.bgm2024.dpdns.org
+    path: /?ed=2560
 - auth: e4070ce4-2a18-4ccd-b2b2-5e598bacac64
-  name: '[1064ms] 🇯🇵 日本 10'
+  name: '[865ms] 🇯🇵 日本 10'
   obfs: salamander
   obfs-password: fyfDEqPQ2TzaTD8p
   password: e4070ce4-2a18-4ccd-b2b2-5e598bacac64
@@ -118,7 +151,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   delay: 1559
-  name: '[2928ms] 日本 - 东京 - CTG Server Ltd. - 2'
+  name: '[1532ms] 日本 - 东京 - CTG Server Ltd. - 2'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:

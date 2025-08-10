@@ -47,13 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-cfb
-  name: '[714ms] 🇦🇺AU-13.239.86.92-0655 | 2.383MB'
-  password: amazonskr05
-  port: 443
-  server: 13.239.86.92
-  type: ss
-- name: '[824ms] 🇦🇺_澳大利亚_2'
+- name: '[521ms] 🇦🇺_澳大利亚_2'
   network: ws
   port: 23023
   server: 43.165.191.25
@@ -67,18 +61,14 @@ proxies:
     headers:
       host: c01.bgm2024.dpdns.org
     path: /?ed=2560
+- cipher: aes-256-cfb
+  name: '[544ms] 🇦🇺AU-13.239.86.92-0655 | 2.383MB'
+  password: amazonskr05
+  port: 443
+  server: 13.239.86.92
+  type: ss
 - auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[951ms] 🇦🇺 澳大利亚 01'
-  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  port: 35000
-  ports: 35000-39000
-  server: 159.13.35.245
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-  udp: true
-- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[975ms] 🇦🇺 澳大利亚 02'
+  name: '[852ms] 🇦🇺 澳大利亚 02'
   password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
   port: 35000
   ports: 35000-39000
@@ -87,7 +77,17 @@ proxies:
   sni: api.push.apple.com
   type: hysteria2
   udp: true
-- name: '[1287ms] 🇦🇺_澳大利亚_3'
+- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  name: '[859ms] 🇦🇺 澳大利亚 01'
+  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
+  port: 35000
+  ports: 35000-39000
+  server: 159.13.35.245
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
+  udp: true
+- name: '[1017ms] 🇦🇺_澳大利亚_3'
   network: ws
   port: 12443
   server: 43.132.239.42
@@ -101,18 +101,6 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- auth: 3041a64e-a812-4feb-bb00-8cb94e72f5e6
-  name: '[2151ms] 🇦🇺 澳大利亚 07'
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 3041a64e-a812-4feb-bb00-8cb94e72f5e6
-  port: 33656
-  server: 203.32.26.70
-  server_url: hg.dport.top
-  skip-cert-verify: true
-  sni: hg.dport.top
-  type: hysteria2
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
