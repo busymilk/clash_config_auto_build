@@ -47,48 +47,53 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[37ms] 🇩🇪 德国 48'
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: '[51ms] 🇩🇪 德国 23'
   network: ws
-  port: 8880
-  server: 141.101.113.143
-  servername: Telegram-channel-WangCai2
-  tls: false
+  port: 2053
+  server: 172.67.171.131
+  servername: inVINCIble.fAFA20.Shop
+  tls: true
   type: vless
   udp: true
-  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+  uuid: 376734bc-4db8-4317-b451-af0262cb01c7
   ws-opts:
     headers:
-      Host: yg.bantony199.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: '[96ms] 🇩🇪 德国 03'
+      Host: invincible.fafa20.shop
+    path: /yRVRnY2jDtjg67UV/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
+- name: '[68ms] 🇩🇪 德国 02'
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
+  password: Aimer
+  port: 2083
+  server: 172.66.207.17
   skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
+  sni: epgb.aimercc.dpdns.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: random
-  name: '[116ms] 🇩🇪 德国 53'
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: chrome
+  delay: 997
+  name: '[79ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 21'
   network: ws
+  password: bpb-trojan
   port: 443
-  server: 104.24.230.10
-  servername: jack.jack-cq.click
-  tls: true
-  type: vless
+  server: 162.159.153.2
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  type: trojan
   udp: true
-  uuid: 72982133-27fb-46fc-9061-61113e77e201
   ws-opts:
     headers:
-      Host: jack.jack-cq.click
-    path: /?ed=2560
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /tr?ed=2560
 - client-fingerprint: randomized
-  name: '[168ms] 🇩🇪 德国 11'
+  name: '[141ms] 🇩🇪 德国 11'
   network: ws
   port: 2053
   server: 162.159.129.11
@@ -102,7 +107,7 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: randomized
-  name: '[173ms] 🇩🇪 德国 08'
+  name: '[142ms] 🇩🇪 德国 08'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -115,23 +120,20 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- alpn:
-  - http/1.1
-  client-fingerprint: randomized
-  name: '[187ms] 🇩🇪 德国 23'
+- name: '[159ms] 🇩🇪 德国 03'
   network: ws
-  port: 2053
-  server: 172.67.171.131
-  servername: inVINCIble.fAFA20.Shop
-  tls: true
-  type: vless
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
   udp: true
-  uuid: 376734bc-4db8-4317-b451-af0262cb01c7
   ws-opts:
     headers:
-      Host: invincible.fafa20.shop
-    path: /yRVRnY2jDtjg67UV/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
-- name: '[216ms] 🇩🇪 德国 01'
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '[172ms] 🇩🇪 德国 01'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2053
@@ -145,12 +147,38 @@ proxies:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: '[277ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
+  name: '[273ms] 🇩🇪DE-185.177.229.245-028'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
-- name: '[314ms] 🇩🇪 德国 05'
+- cipher: chacha20-ietf-poly1305
+  name: '[292ms] 🇩🇪DE-46.101.245.131-032'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇩🇪DE
+  delay: 1472
+  h2-opts: {}
+  http-opts: {}
+  name: '[304ms] 德国 - Frankfurt Am Main - Hetzner Online AG - 2'
+  network: tcp
+  port: 32020
+  server: 91.107.150.80
+  server_url: s3.ipyar.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
+- cipher: chacha20-ietf-poly1305
+  name: '[326ms] 🇩🇪DE-147.45.178.200-023'
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- name: '[327ms] 🇩🇪 德国 05'
   network: tcp
   port: 2020
   server: 78.46.230.173
@@ -161,72 +189,40 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🏁ZZ
   delay: 1639
-  name: '[332ms] 德国 - 法兰克福 - dataforest GmbH - 2'
+  name: '[327ms] 德国 - 法兰克福 - dataforest GmbH - 2'
   password: trErto8XzLALaQEslTp_jw
   port: 2222
   server: 176.96.136.168
   server_url: universal.opengate.wiki
   type: ss
+- cipher: aes-256-cfb
+  name: '[403ms] 🇩🇪DE-80.92.204.106-4885 | 0.106MB'
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '[405ms] 🇩🇪DE-46.165.194.96-0354 | 4.26MB'
-  network: ws
-  port: 20086
-  server: 46.165.194.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '[428ms] 🇩🇪DE-91.99.185.216-0300 | 30.213MB'
-  network: ws
-  port: 20086
-  server: 91.99.185.216
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7bd6a1ea-a220-4f1c-afed-6cfb8ab96ad9
-  ws-opts:
-    path: /
-- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[457ms] 🇩🇪 德国 09'
-  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  port: 35000
-  ports: 35000-39000
-  server: 141.147.19.58
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 974
+  country: 🇬🇧GB
+  delay: 1169
   h2-opts: {}
   http-opts: {}
-  name: '[543ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  name: '[403ms] 德国 - 法兰克福 - SEBEK sp. z o.o - 1'
   network: ws
-  port: 2083
-  server: 104.26.5.16
-  servername: blaze-ger-248.blazecloudmain.site
+  port: 20521
+  server: 148.253.209.172
   skip-cert-verify: true
-  tls: true
   type: vmess
-  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  uuid: 42364c51-2b0d-4b93-81dc-fc907757e470
   ws-opts:
-    headers:
-      HOST: blaze-ger-248.blazecloudmain.site
-    path: /linkwsrt?ed=2560
+    path: /
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
   delay: 1026
   h2-opts: {}
   http-opts: {}
-  name: '[558ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
+  name: '[541ms] 德国 - 兰河畔林堡 - OVH SAS - 4'
   network: ws
   port: 2083
   server: 172.67.72.15
@@ -239,23 +235,48 @@ proxies:
     headers:
       HOST: blaze-ger-248.blazecloudmain.site
     path: /linkwsrt?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: '[596ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  delay: 2181
+  h2-opts: {}
+  http-opts: {}
+  name: '[583ms] 德国 - 兰河畔林堡 - OVH SAS - 3'
+  network: ws
+  port: 2083
+  server: 104.26.5.16
+  servername: blaze-ger-248.blazecloudmain.site
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c208e0ae-6f6d-4745-99da-44a44744c530
+  ws-opts:
+    headers:
+      HOST: blaze-ger-248.blazecloudmain.site
+    path: /linkwsrt?ed=2560
+- cipher: aes-256-cfb
+  name: '[586ms] 🇩🇪DE-80.92.204.106-0413 | 0.107MB'
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
   type: ss
-- cipher: rc4-md5
-  name: '[634ms] 🇩🇪DE-193.108.119.230-0352 | 21.181MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '[604ms] 🇩🇪DE-91.99.185.216-0313 | 18.908MB'
+  network: ws
+  port: 20086
+  server: 91.99.185.216
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7bd6a1ea-a220-4f1c-afed-6cfb8ab96ad9
+  ws-opts:
+    path: /
 - alpn:
   - h3
   - h2
   client-fingerprint: chrome
-  name: '[646ms] 🇩🇪 德国 03 #2'
+  name: '[1212ms] 🇩🇪 德国 03 #2'
   network: ws
   port: 443
   server: 104.19.144.33
@@ -268,18 +289,15 @@ proxies:
     headers:
       Host: 148BpJi0Zp.GiGa1.OrG
     path: /
-- name: '[756ms] 🇩🇪 德国 05 #2'
-  network: tcp
-  port: 443
-  server: 185.141.171.9
-  server_url: panke1.dadasoratmolayi.com
-  tls: false
-  type: vless
-  udp: true
-  uuid: 91d233a2-08a8-4006-ac8b-597fb41ea2bb
+- cipher: rc4-md5
+  name: '[2167ms] 🇩🇪DE-193.108.119.230-0356 | 2.146MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '[2816ms] 🇩🇪DE-46.165.194.90-0355 | 3.851MB'
+  name: '[3311ms] 🇩🇪DE-46.165.194.90-5098 | 1.473MB'
   network: ws
   port: 20086
   server: 46.165.194.90
