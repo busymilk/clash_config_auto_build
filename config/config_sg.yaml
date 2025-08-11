@@ -48,14 +48,14 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[696ms] 🇸🇬SG-188.166.220.70-0320 | 2.372MB'
+  name: '[517ms] 🇸🇬SG-188.166.220.70-0256 | 25.258MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
 - alterId: 0
   cipher: auto
-  name: '[901ms] 🇸🇬SG-47.84.62.1-0316 | 2.318MB'
+  name: '[681ms] 🇸🇬SG-47.84.62.1-0264 | 24.533MB'
   network: ws
   port: 20086
   server: 47.84.62.1
@@ -65,7 +65,21 @@ proxies:
   uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
   ws-opts:
     path: /
-- name: '[1017ms] 🇸🇬 新加坡 20'
+- name: '[732ms] 🇸🇬_新加坡_2'
+  network: ws
+  port: 443
+  server: 150.109.11.223
+  servername: edgb.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[857ms] 🇸🇬 新加坡 20'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -78,7 +92,7 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[1472ms] 🇸🇬 新加坡 09 #2'
+- name: '[1206ms] 🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
   port: 1111
@@ -91,14 +105,14 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[1630ms] 新加坡3|@ripaojiedian'
-  network: tcp
-  password: f60cd513-7b83-4b64-936c-f7e88e95dacd
-  port: 8233
-  server: 120.240.118.187
+- name: '[1752ms] 🇸🇬@FreakConfig'
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
   skip-cert-verify: true
-  sni: steamcdn-a.akamaihd.net
-  type: trojan
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
