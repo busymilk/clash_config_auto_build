@@ -48,52 +48,24 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[548ms] 🇸🇬SG-188.166.220.70-0320 | 2.372MB'
+  name: '[696ms] 🇸🇬SG-188.166.220.70-0320 | 2.372MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
-- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[709ms] 🇸🇬 新加坡 09'
-  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  port: 35000
-  ports: 35000-39000
-  server: 140.245.46.17
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-  udp: true
-- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[722ms] 🇸🇬 新加坡 13'
-  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  port: 35000
-  ports: 35000-39000
-  server: 152.69.220.212
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-  udp: true
-- auth: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  name: '[727ms] 🇸🇬 新加坡 16'
-  password: 1ce0d5df-7408-429d-bcfa-654720d5bb02
-  port: 35000
-  ports: 35000-39000
-  server: 158.178.236.104
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-  udp: true
-- auth: 5OiuCsPmULZ0lJwts89fegLJE
-  name: '[728ms] 🇸🇬 新加坡 04'
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 54.169.224.169
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  name: '[862ms] 🇸🇬 新加坡 01'
+- alterId: 0
+  cipher: auto
+  name: '[901ms] 🇸🇬SG-47.84.62.1-0316 | 2.318MB'
+  network: ws
+  port: 20086
+  server: 47.84.62.1
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
+  ws-opts:
+    path: /
+- name: '[1017ms] 🇸🇬 新加坡 20'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -106,7 +78,7 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[1224ms] 🇸🇬 新加坡 09 #2'
+- name: '[1472ms] 🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
   port: 1111
@@ -119,26 +91,14 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[1692ms] 🇸🇬@FreakConfig'
-  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  port: 43057
-  server: 203.174.82.145
+- name: '[1630ms] 新加坡3|@ripaojiedian'
+  network: tcp
+  password: f60cd513-7b83-4b64-936c-f7e88e95dacd
+  port: 8233
+  server: 120.240.118.187
   skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: '[3913ms] 🇸🇬SG-47.84.62.1-0316 | 2.318MB'
-  network: ws
-  port: 20086
-  server: 47.84.62.1
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
-  ws-opts:
-    path: /
+  sni: steamcdn-a.akamaihd.net
+  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

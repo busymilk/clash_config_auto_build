@@ -47,21 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[93ms] 🇬🇧_英国_1'
-  network: ws
-  port: 443
-  server: 217.163.76.84
-  servername: c01.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: c01.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '[113ms] 🇬🇧_英国_2'
+- name: '[60ms] 🇬🇧_英国_2'
   network: ws
   port: 443
   server: 217.163.76.201
@@ -75,94 +61,134 @@ proxies:
     headers:
       host: c01.bgm2024.dpdns.org
     path: /?ed=2560
-- cipher: aes-128-gcm
-  name: '[390ms] 🇬🇧GB-212.102.53.81-0296 | 13.345MB'
-  password: shadowsocks
+- name: '[71ms] 🇬🇧_英国_1'
+  network: ws
   port: 443
-  server: 212.102.53.81
+  server: 217.163.76.84
+  servername: c01.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: c01.bgm2024.dpdns.org
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: '[257ms] 🇬🇧_GB_英国_1@8'
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: '[263ms] 🇬🇧GB-85.210.120.237-0291 | 32.906MB'
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
   type: ss
 - cipher: aes-128-gcm
-  name: '[397ms] 🇬🇧GB-212.102.53.193-0299 | 29.561MB'
+  name: '[265ms] 🇬🇧GB-212.102.53.80-0318 | 24.698MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.193
+  server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
-  name: '[399ms] 🇬🇧GB-212.102.53.79-0308 | 25.529MB'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  type: ss
-- cipher: aes-128-gcm
-  name: '[402ms] 🇬🇧GB-212.102.53.197-0297 | 28.995MB'
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: '[402ms] 🇬🇧GB-212.102.53.197-0243 | 21.688MB'
+  name: '[265ms] 🇬🇧GB-212.102.53.197-0243 | 21.688MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   server_url: uk-dc1.yangon.club
   type: ss
 - cipher: aes-128-gcm
-  name: '[406ms] 🇬🇧GB-212.102.53.194-0107 | 30.154MB'
+  name: '[266ms] 🇬🇧GB-212.102.53.193-0299 | 29.561MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
+- cipher: aes-128-gcm
+  name: '[266ms] 🇬🇧GB-212.102.53.197-0297 | 28.995MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: '[267ms] 🇬🇧GB-212.102.53.194-0107 | 30.154MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.194
   type: ss
 - cipher: aes-128-gcm
-  name: '[408ms] 🇬🇧GB-212.102.53.195-0303 | 29.546MB'
+  name: '[267ms] 🇬🇧GB-212.102.53.195-0303 | 29.546MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
-  name: '[408ms] 🇬🇧GB-212.102.53.198-0298 | 27.536MB'
+  name: '[267ms] 🇬🇧GB-212.102.53.79-0308 | 25.529MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.198
+  server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
-  name: '[408ms] 🇬🇧GB-212.102.53.80-0318 | 24.698MB'
+  name: '[267ms] 🇬🇧GB-212.102.53.81-0296 | 13.345MB'
   password: shadowsocks
   port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[419ms] 🇬🇧GB-85.210.120.237-0291 | 32.906MB'
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
+  server: 212.102.53.81
   type: ss
 - cipher: aes-128-gcm
-  name: '[434ms] 🇬🇧GB-141.98.101.178-0345 | 5.935MB'
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: aes-128-gcm
-  name: '[435ms] 🇬🇧GB-212.102.53.196-0309 | 12.303MB'
+  name: '[267ms] 🇬🇧GB-212.102.53.196-0309 | 12.303MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
-  name: '[438ms] 🇬🇧GB-212.102.53.78-0304 | 28.009MB'
+  name: '[276ms] 🇬🇧GB-212.102.53.198-0298 | 27.536MB'
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  name: '[289ms] 🇬🇧GB-212.102.53.78-0304 | 28.009MB'
   password: shadowsocks
   port: 443
   server: 212.102.53.78
   type: ss
+- cipher: aes-128-gcm
+  name: '[291ms] 🇬🇧GB-141.98.101.178-0345 | 5.935MB'
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[491ms] 🇬🇧GB-46.226.163.225-035'
+  name: '[331ms] SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456'
   password: c40641c1f89e7acb
   port: 57456
   server: 46.226.163.225
   type: ss
 - alterId: 0
   cipher: auto
-  name: '[570ms] 🇬🇧GB-64.227.45.92-0328 | 30.15MB'
+  name: '[331ms] 🇬🇧GB-154.62.185.113-0314 | 4.523MB'
+  network: ws
+  port: 20086
+  server: 154.62.185.113
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fe59873f-462d-4d99-a462-2979ce968993
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: '[333ms] 🇬🇧GB-62.100.205.48-000'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '[348ms] 🇬🇧GB-64.227.45.92-0328 | 30.15MB'
   network: ws
   port: 20086
   server: 64.227.45.92
@@ -174,33 +200,33 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '[576ms] 🇬🇧GB-154.62.185.216-0315 | 5.084MB'
+  name: '[350ms] 🇬🇧GB-81.168.83.197-5103 | 12.286MB'
   network: ws
   port: 20086
-  server: 154.62.185.216
+  server: 81.168.83.197
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 20ed1673-8f9e-485b-9956-147768fce851
+  uuid: b8695084-badc-4237-9459-7bfe78feaaf8
   ws-opts:
     path: /
 - alterId: 0
   cipher: auto
-  name: '[578ms] 🇬🇧GB-154.62.185.113-0314 | 4.523MB'
+  name: '[352ms] 🇬🇧GB-173.208.51.193-0366 | 1.115MB'
   network: ws
   port: 20086
-  server: 154.62.185.113
+  server: 173.208.51.193
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: fe59873f-462d-4d99-a462-2979ce968993
+  uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
   ws-opts:
     path: /
 - alpn:
   - h3
   client-fingerprint: randomized
   delay: 1460
-  name: '[804ms] 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5'
+  name: '[469ms] 英国 - 豪恩斯洛 - Cloudflare, Inc. - 5'
   network: ws
   password: Aimer
   port: 2053
@@ -215,7 +241,21 @@ proxies:
         AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
         Safari/537.36
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1366ms] 🇬🇧 英国 41'
+- name: '[528ms] 🇬🇧 英国 01'
+  network: ws
+  port: 2096
+  server: 104.19.144.33
+  server_url: ipw.gfdv54cvghhgfhgj-njhgj64.info
+  servername: 638899136128783410.amsterdam-prx-dnraaal.info
+  tls: true
+  type: vless
+  udp: true
+  uuid: 666a2803-43f2-4317-9661-dc978d869d47
+  ws-opts:
+    headers:
+      Host: 638899136128783410.amsterdam-prx-dnraaal.info
+    path: /dahstrws
+- name: '[1326ms] 🇬🇧 英国 41'
   network: ws
   port: 8443
   server: 172.67.153.156
