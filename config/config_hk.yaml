@@ -48,26 +48,26 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[642ms] 🇭🇰HK-18.162.146.85-4987 | 1.132MB'
-  password: ljqdalu13..
-  port: 8319
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[644ms] 🇭🇰HK-18.162.146.85-4985 | 1.169MB'
+  name: '[686ms] 🇭🇰HK-18.162.146.85-0401 | 0.009MB'
   password: ljqdalu13..
   port: 8313
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[659ms] 🇭🇰HK-18.162.146.85-4986 | 1.023MB'
+  name: '[688ms] 🇭🇰HK-18.162.146.85-0403 | 0.006MB'
   password: ljqdalu13..
   port: 8316
   server: 18.162.146.85
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[693ms] 🇭🇰HK-18.162.146.85-0402 | 0.01MB'
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
+  type: ss
 - alterId: 2
   cipher: auto
-  name: '[892ms] 🇭🇰HK-1.65.139.5-4902 | 0.314MB'
+  name: '[927ms] 🇭🇰HK-1.65.139.5-4902 | 0.314MB'
   network: ws
   port: 80
   server: 1.65.207.5
@@ -81,47 +81,22 @@ proxies:
     headers:
       Host: 12ee28bb-symkg0-t02swp-fa3p.hk3.p5pv.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: '[1001ms] 🇭🇰HK-203.23.128.33-4897 | 0.02MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- auth: NjEkAYYNqFKUbrksyW1COBtdpU
-  name: '[1451ms] 🇭🇰 香港 01'
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: 2428
-  server: 47.239.220.214
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- name: '[1582ms] Channel id: @ShadowProxy66🇭🇰 #1'
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
-- alterId: 2
-  cipher: auto
-  name: '[1648ms] 🇭🇰HK-1.36.223.36-4840 | 0.417MB'
-  network: ws
-  port: 80
-  server: 1.65.207.5
-  server_url: b2d5cb20-sv2sg0-t7qy26-14g76.hk3.p5pv.com
-  servername: 🇭🇰HK-1.36.223.36-4840 | 0.417MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4729b4c8-1790-11eb-8684-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: b2d5cb20-sv2sg0-t7qy26-14g76.hk3.p5pv.com
-    path: /
 - cipher: aes-256-gcm
-  name: '[1679ms] 🇭🇰 香港 11 #2'
+  name: '[1410ms] 🇭🇰 香港 57'
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: 636
+  server: 156.251.179.139
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '[1501ms] 🇭🇰 香港 11 #2'
   password: 23d03aa704c7
   plugin: v2ray-plugin
   plugin-opts:
@@ -134,14 +109,8 @@ proxies:
   server: 156.251.179.181
   type: ss
   udp: true
-- name: '[1842ms] 🇭🇰HK-194.104.147.74-057'
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  skip-cert-verify: true
-  type: trojan
 - cipher: aes-256-gcm
-  name: '[2044ms] 🇭🇰 香港2|@ripaojiedian'
+  name: '[1673ms] 🇭🇰 香港2|@ripaojiedian'
   password: 9bfdde71b4c0
   plugin: v2ray-plugin
   plugin-opts:
@@ -154,6 +123,26 @@ proxies:
   port: 636
   server: 103.103.245.158
   type: ss
+- name: '[1943ms] 🇭🇰HK-194.104.147.74-057'
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  port: 1066
+  server: 194.104.147.74
+  skip-cert-verify: true
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '[2012ms] 🇭🇰HK-203.23.128.33-4897 | 0.02MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- name: '[3346ms] Channel id: @ShadowProxy66🇭🇰 #1'
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
+  skip-cert-verify: true
+  sni: hk.nfsn666.gq
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

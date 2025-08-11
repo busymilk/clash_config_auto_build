@@ -47,15 +47,9 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '[647ms] 🇸🇬SG-188.166.220.70-0256 | 25.258MB'
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '[843ms] 🇸🇬SG-47.84.62.1-0264 | 24.533MB'
+  name: '[936ms] 🇸🇬SG-47.84.62.1-0313 | 1.427MB'
   network: ws
   port: 20086
   server: 47.84.62.1
@@ -65,7 +59,20 @@ proxies:
   uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
   ws-opts:
     path: /
-- name: '[880ms] 🇸🇬_新加坡_2'
+- name: '[1002ms] 🇸🇬 新加坡 25'
+  network: ws
+  port: 443
+  server: 108.162.194.231
+  servername: rs-sg4.lzjnb.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
+  ws-opts:
+    headers:
+      Host: rs-sg4.lzjnb.shop
+    path: /lzj
+- name: '[1011ms] 🇸🇬_新加坡_2'
   network: ws
   port: 443
   server: 150.109.11.223
@@ -79,31 +86,15 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[944ms] 🇸🇬 新加坡 25'
-  network: ws
-  port: 443
-  server: 108.162.194.231
-  servername: rs-sg4.lzjnb.shop
-  tls: true
-  type: vless
-  udp: true
-  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
-  ws-opts:
-    headers:
-      Host: rs-sg4.lzjnb.shop
-    path: /lzj
-- name: '[960ms] 新加坡1'
-  obfs: salamander
-  obfs-password: LNAnPYDfFyesRAVn
-  password: 9f2245e8-04fb-488d-80cf-ac8e8b53da82
-  port: 21190
-  server: 146.190.104.189
-  server_url: xjp1.gy6688.xyz
+- name: '[1374ms] 🇸🇬@FreakConfig'
+  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
+  port: 43057
+  server: 203.174.82.145
   skip-cert-verify: true
-  sni: xjp1.gy6688.xyz
+  sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '[1386ms] 🇸🇬 新加坡 09 #2'
+- name: '[1466ms] 🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
   port: 1111
@@ -116,14 +107,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[3730ms] 🇸🇬@FreakConfig'
-  password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
-  port: 43057
-  server: 203.174.82.145
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
