@@ -47,9 +47,15 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: '[647ms] 🇸🇬SG-188.166.220.70-0256 | 25.258MB'
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '[681ms] 🇸🇬SG-47.84.62.1-0264 | 24.533MB'
+  name: '[843ms] 🇸🇬SG-47.84.62.1-0264 | 24.533MB'
   network: ws
   port: 20086
   server: 47.84.62.1
@@ -59,7 +65,7 @@ proxies:
   uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
   ws-opts:
     path: /
-- name: '[769ms] 🇸🇬_新加坡_2'
+- name: '[880ms] 🇸🇬_新加坡_2'
   network: ws
   port: 443
   server: 150.109.11.223
@@ -73,7 +79,7 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[854ms] 🇸🇬 新加坡 20'
+- name: '[944ms] 🇸🇬 新加坡 25'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -86,7 +92,18 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[1213ms] 🇸🇬 新加坡 09 #2'
+- name: '[960ms] 新加坡1'
+  obfs: salamander
+  obfs-password: LNAnPYDfFyesRAVn
+  password: 9f2245e8-04fb-488d-80cf-ac8e8b53da82
+  port: 21190
+  server: 146.190.104.189
+  server_url: xjp1.gy6688.xyz
+  skip-cert-verify: true
+  sni: xjp1.gy6688.xyz
+  tls: false
+  type: hysteria2
+- name: '[1386ms] 🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
   port: 1111
@@ -99,7 +116,7 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[1251ms] 🇸🇬@FreakConfig'
+- name: '[3730ms] 🇸🇬@FreakConfig'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145
@@ -107,12 +124,6 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: '[1812ms] 🇸🇬SG-188.166.220.70-0256 | 25.258MB'
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

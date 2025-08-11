@@ -48,26 +48,65 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[529ms] 🇭🇰HK-18.162.146.85-4987 | 1.132MB'
+  name: '[642ms] 🇭🇰HK-18.162.146.85-4987 | 1.132MB'
   password: ljqdalu13..
   port: 8319
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[551ms] 🇭🇰HK-18.162.146.85-4986 | 1.023MB'
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[555ms] 🇭🇰HK-18.162.146.85-4985 | 1.169MB'
+  name: '[644ms] 🇭🇰HK-18.162.146.85-4985 | 1.169MB'
   password: ljqdalu13..
   port: 8313
   server: 18.162.146.85
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[659ms] 🇭🇰HK-18.162.146.85-4986 | 1.023MB'
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
 - alterId: 2
   cipher: auto
-  name: '[688ms] 🇭🇰HK-1.36.223.36-4840 | 0.417MB'
+  name: '[892ms] 🇭🇰HK-1.65.139.5-4902 | 0.314MB'
+  network: ws
+  port: 80
+  server: 1.65.207.5
+  server_url: 12ee28bb-symkg0-t02swp-fa3p.hk3.p5pv.com
+  servername: 🇭🇰HK-1.65.139.5-4902 | 0.314MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 905fcd78-866c-81e1-3cb8-1beb59d661ab
+  ws-opts:
+    headers:
+      Host: 12ee28bb-symkg0-t02swp-fa3p.hk3.p5pv.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: '[1001ms] 🇭🇰HK-203.23.128.33-4897 | 0.02MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- auth: NjEkAYYNqFKUbrksyW1COBtdpU
+  name: '[1451ms] 🇭🇰 香港 01'
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- name: '[1582ms] Channel id: @ShadowProxy66🇭🇰 #1'
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
+  skip-cert-verify: true
+  sni: hk.nfsn666.gq
+  tls: false
+  type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: '[1648ms] 🇭🇰HK-1.36.223.36-4840 | 0.417MB'
   network: ws
   port: 80
   server: 1.65.207.5
@@ -82,7 +121,7 @@ proxies:
       Host: b2d5cb20-sv2sg0-t7qy26-14g76.hk3.p5pv.com
     path: /
 - cipher: aes-256-gcm
-  name: '[1247ms] 🇭🇰 香港 11'
+  name: '[1679ms] 🇭🇰 香港 11 #2'
   password: 23d03aa704c7
   plugin: v2ray-plugin
   plugin-opts:
@@ -95,22 +134,14 @@ proxies:
   server: 156.251.179.181
   type: ss
   udp: true
-- name: '[1859ms] 🇭🇰HK-194.104.147.74-057'
+- name: '[1842ms] 🇭🇰HK-194.104.147.74-057'
   password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
   port: 1066
   server: 194.104.147.74
   skip-cert-verify: true
   type: trojan
-- name: '[2950ms] Channel id: @ShadowProxy66🇭🇰'
-  password: cc83a02b-90ea-403b-9c76-27e4be95f637
-  port: 50256
-  server: 154.204.181.230
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - cipher: aes-256-gcm
-  name: '[3181ms] 🇭🇰 香港2|@ripaojiedian'
+  name: '[2044ms] 🇭🇰 香港2|@ripaojiedian'
   password: 9bfdde71b4c0
   plugin: v2ray-plugin
   plugin-opts:

@@ -47,27 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '[445ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- name: '[546ms] 🇦🇺_澳大利亚_2 #2'
-  network: ws
-  port: 23023
-  server: 43.165.191.25
-  servername: c01.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: c01.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '[779ms] 🇦🇺_澳大利亚_4'
+- name: '[880ms] 🇦🇺_澳大利亚_4'
   network: ws
   port: 443
   server: 43.160.202.92
@@ -81,10 +61,21 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1034ms] 🇦🇺_澳大利亚_3'
+- name: '[904ms] 澳大利亚'
+  obfs: salamander
+  obfs-password: cP2sbTFOTkuTq1sW
+  password: 9f2245e8-04fb-488d-80cf-ac8e8b53da82
+  port: 25977
+  server: 170.64.128.177
+  server_url: au1.gy6688.xyz
+  skip-cert-verify: true
+  sni: au1.gy6688.xyz
+  tls: false
+  type: hysteria2
+- name: '[1155ms] 🇦🇺_澳大利亚_3 #2'
   network: ws
   port: 12443
-  server: 43.132.253.32
+  server: 43.132.239.42
   servername: edgb.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -95,10 +86,10 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1046ms] 🇦🇺_澳大利亚_3 #2'
+- name: '[1167ms] 🇦🇺_澳大利亚_3'
   network: ws
   port: 12443
-  server: 43.132.239.42
+  server: 43.132.253.32
   servername: edgb.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
