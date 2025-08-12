@@ -47,7 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[199ms] 🇯🇵_日本_7'
+- name: '[99ms] 🇯🇵_日本_7'
   network: ws
   port: 2083
   server: 103.116.7.103
@@ -62,7 +62,7 @@ proxies:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-128-gcm
-  name: '[542ms] 🇯🇵JP-149.22.87.204-0404 | 0.021MB'
+  name: '[540ms] 🇯🇵JP-149.22.87.204-0404 | 0.021MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -78,7 +78,7 @@ proxies:
   sni: x2-japan-amazon-v2.devefun.org
   type: trojan
   udp: true
-- name: '[744ms] 🇯🇵_日本 #2'
+- name: '[779ms] 🇯🇵_日本 #2'
   network: ws
   port: 47001
   server: 158.101.154.245
@@ -92,7 +92,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[763ms] 🇯🇵_日本_2 #2'
+- name: '[781ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -106,18 +106,39 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- auth: c2d2aecb-3606-4490-8d7f-780816e4aad1
-  name: '[821ms] 🇯🇵 日本 61'
+- auth: b2d475ba-4393-48ae-9471-a9ebc6830cad
+  name: '[832ms] 🇯🇵 日本 13'
   obfs: salamander
   obfs-password: fyfDEqPQ2TzaTD8p
-  password: c2d2aecb-3606-4490-8d7f-780816e4aad1
+  password: b2d475ba-4393-48ae-9471-a9ebc6830cad
   port: 2053
   server: 47.245.30.45
   skip-cert-verify: true
   sni: jp01.kittycdn.pp.ua
   type: hysteria2
   udp: true
-- name: '[1077ms] 🇯🇵 日本 27'
+- name: '[1062ms] 日本3|@ripaojiedian'
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 193
+  server: 36.156.102.78
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: '[1141ms] 🇯🇵 日本 53'
+  network: ws
+  password: Aimer
+  port: 17000
+  server: 183.106.218.118
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1155ms] 🇯🇵 日本 27'
   network: ws
   password: Aimer
   port: 38880
@@ -132,7 +153,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
   delay: 1559
-  name: '[1079ms] 日本 - 东京 - CTG Server Ltd. - 2'
+  name: '[1267ms] 日本 - 东京 - CTG Server Ltd. - 2'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -145,19 +166,20 @@ proxies:
   port: 636
   server: 137.220.142.139
   type: ss
-- name: '[1275ms] 🇯🇵 日本 53'
-  network: ws
-  password: Aimer
-  port: 17000
-  server: 183.106.218.118
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: aes-256-gcm
+  name: '[2524ms] 🇯🇵 日本2|@ripaojiedian'
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
