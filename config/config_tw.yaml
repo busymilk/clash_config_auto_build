@@ -49,7 +49,7 @@ profile:
 proxies:
 - alterId: 0
   cipher: auto
-  name: '[842ms] 🇹🇼TW-45.121.48.174-048'
+  name: '[654ms] 🇹🇼TW-45.121.48.174-048'
   network: tcp
   port: 20788
   server: 45.121.48.174
@@ -60,32 +60,6 @@ proxies:
   ws-headers:
     Host: 45.121.48.174
   ws-path: /
-- cipher: aes-256-cfb
-  name: '[908ms] 🇹🇼 台湾 19'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-  udp: true
-- name: '[1013ms] 🇹🇼 台湾 01'
-  network: ws
-  password: ttfang
-  port: 81
-  server: 220.135.202.250
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: '[2043ms] 🇨🇳TW-223.165.4.173-4920 | 0.374MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 223.165.4.173
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
