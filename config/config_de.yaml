@@ -47,9 +47,38 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: '[43ms] 🇩🇪 德国 10'
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 172.66.207.17
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: '[77ms] 🇩🇪 德国 05'
+  network: ws
+  port: 2096
+  server: 162.159.153.222
+  servername: wxf838.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: de94335a-a85c-473d-8ad5-1743261fc7f7
+  ws-opts:
+    headers:
+      Host: wxf838.sbs
+    path: /?proxyip=proxyip.fxxk.dedyn.io
 - client-fingerprint: chrome
   delay: 997
-  name: '[71ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 21'
+  name: '[79ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 21'
   network: ws
   password: bpb-trojan
   port: 443
@@ -63,7 +92,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
         AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /tr?ed=2560
-- name: '[86ms] 🇩🇪 德国 06'
+- name: '[150ms] 🇩🇪 德国 06'
   network: ws
   password: Aimer
   port: 2096
@@ -76,50 +105,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: '[87ms] 🇩🇪 德国 05'
-  network: ws
-  port: 2096
-  server: 162.159.153.222
-  servername: wxf838.sbs
-  tls: true
-  type: vless
-  udp: true
-  uuid: de94335a-a85c-473d-8ad5-1743261fc7f7
-  ws-opts:
-    headers:
-      Host: wxf838.sbs
-    path: /?proxyip=proxyip.fxxk.dedyn.io
-- client-fingerprint: randomized
-  name: '[184ms] 🇩🇪 德国 11'
-  network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '[194ms] 🇩🇪 德国 10'
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 172.66.207.17
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[196ms] 🇩🇪 德国 04'
+- name: '[234ms] 🇩🇪 德国 04'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2053
@@ -132,39 +118,8 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '[230ms] 🇩🇪 德国 12'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- cipher: chacha20-ietf-poly1305
-  name: '[320ms] 🇩🇪DE-185.177.229.245-0309 | 3.669MB'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[332ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: aes-256-cfb
-  name: '[368ms] 🇩🇪DE-80.92.204.106-0384 | 0.51MB'
-  password: EXN3S3eQpjE7EJu8
-  port: 9027
-  server: 80.92.204.106
-  type: ss
 - client-fingerprint: randomized
-  name: '[403ms] 🇩🇪 德国 08'
+  name: '[246ms] 🇩🇪 德国 08'
   network: ws
   port: 2087
   server: 104.25.254.4
@@ -177,21 +132,54 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- cipher: aes-256-cfb
-  name: '[417ms] 🇩🇪DE-80.92.204.106-4826 | 2.433MB'
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 80.92.204.106
+- client-fingerprint: randomized
+  name: '[270ms] 🇩🇪 德国 11'
+  network: ws
+  port: 2053
+  server: 162.159.129.11
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- cipher: chacha20-ietf-poly1305
+  name: '[273ms] 🇩🇪DE-185.177.229.245-0309 | 3.669MB'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
   type: ss
-- cipher: rc4-md5
-  name: '[448ms] 🇩🇪DE-193.108.119.230-0313 | 5.682MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+- name: '[360ms] 🇩🇪 德国 12'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - alterId: 0
   cipher: auto
-  name: '[468ms] 🇩🇪DE-46.165.194.90-0307 | 4.675MB'
+  name: '[401ms] 🇩🇪DE-46.165.194.96-0308 | 5.086MB'
+  network: ws
+  port: 20086
+  server: 46.165.194.96
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '[413ms] 🇩🇪DE-46.165.194.90-0307 | 4.675MB'
   network: ws
   port: 20086
   server: 46.165.194.90
@@ -203,7 +191,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '[485ms] 🇩🇪DE-91.99.185.216-0275 | 17.232MB'
+  name: '[529ms] 🇩🇪DE-91.99.185.216-0275 | 17.232MB'
   network: ws
   port: 20086
   server: 91.99.185.216
@@ -214,25 +202,19 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-cfb
-  name: '[489ms] 🇩🇪DE-80.92.204.106-0351 | 4.859MB'
+  name: '[684ms] 🇩🇪DE-80.92.204.106-0351 | 4.859MB'
   password: cp8pRSUAyLhTfVWH
   port: 9064
   server: 80.92.204.106
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '[491ms] 🇩🇪DE-46.165.194.96-0308 | 5.086MB'
-  network: ws
-  port: 20086
-  server: 46.165.194.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
-  ws-opts:
-    path: /
+- cipher: rc4-md5
+  name: '[737ms] 🇩🇪DE-193.108.119.230-0313 | 5.682MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - auth: 5fbe139f-c1e0-4b92-bb3c-7f68035962c3
-  name: '[739ms] 🇩🇪 德国 22'
+  name: '[737ms] 🇩🇪 德国 22'
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 5fbe139f-c1e0-4b92-bb3c-7f68035962c3
@@ -243,7 +225,7 @@ proxies:
   sni: dg.dport.top
   type: hysteria2
   udp: true
-- name: '[1658ms] 🇩🇪 德国 26'
+- name: '[1023ms] 🇩🇪 德国 26'
   network: ws
   port: 8080
   server: 172.66.40.99
@@ -255,6 +237,30 @@ proxies:
     headers:
       Host: www.speedtest.net.tax.gov.ir.aparat.com.a.3.jEy.dPdNs.org.
     path: /Telegram@vpnjeyTelegram@vpnjeyTelegram@vpnjey
+- cipher: aes-256-cfb
+  name: '[1026ms] 🇩🇪DE-80.92.204.106-0384 | 0.51MB'
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: '[1301ms] 🇩🇪DE-80.92.204.106-4826 | 2.433MB'
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: '[1349ms] 🇩🇪DE-80.92.204.106-4831 | 1.772MB'
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 80.92.204.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[2155ms] 🇩🇪DE-46.101.245.131-0345 | 0.3MB'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
