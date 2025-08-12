@@ -47,15 +47,9 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '[546ms] 🇸🇬SG-188.166.220.70-0340 | 17.623MB'
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '[683ms] 🇸🇬SG-47.84.62.1-0339 | 17.384MB'
+  name: '[934ms] 🇸🇬SG-47.84.62.1-0339 | 17.384MB'
   network: ws
   port: 20086
   server: 47.84.62.1
@@ -65,7 +59,15 @@ proxies:
   uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
   ws-opts:
     path: /
-- name: '[784ms] 🇸🇬_新加坡_2'
+- name: '[972ms] SG #2'
+  password: Y5kSCRNcOSz5YQUkjehzVXeT2mk
+  port: 19298
+  server: 175.41.154.215
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: '[985ms] 🇸🇬_新加坡_2'
   network: ws
   port: 443
   server: 150.109.11.223
@@ -79,26 +81,16 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1037ms] 🇸🇬 新加坡 25'
-  network: ws
-  port: 443
-  server: 108.162.194.231
-  servername: rs-sg4.lzjnb.shop
-  tls: true
-  type: vless
+- auth: 5OiuCsPmULZ0lJwts89fegLJE
+  name: '[1318ms] 🇸🇬 新加坡 10'
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 54.169.224.169
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
   udp: true
-  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
-  ws-opts:
-    headers:
-      Host: rs-sg4.lzjnb.shop
-    path: /lzj
-- cipher: chacha20-ietf
-  name: '[1082ms] 🇸🇬SG-103.36.91.23-4905 | 0.306MB'
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- name: '[1201ms] 🇸🇬 新加坡 09 #2'
+- name: '[1497ms] 🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
   port: 1111
@@ -111,7 +103,35 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[2500ms] 🇸🇬@FreakConfig'
+- auth: fm0evDIT5qJkjg2PBNuYguxgdEs
+  name: '[1579ms] 🇸🇬 新加坡 03'
+  password: fm0evDIT5qJkjg2PBNuYguxgdEs
+  port: 30156
+  server: 13.212.7.86
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '[1723ms] 🇸🇬SG-188.166.220.70-0340 | 17.623MB'
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
+  type: ss
+- name: '[1805ms] 🇸🇬 新加坡 25'
+  network: ws
+  port: 443
+  server: 108.162.194.231
+  servername: rs-sg4.lzjnb.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
+  ws-opts:
+    headers:
+      Host: rs-sg4.lzjnb.shop
+    path: /lzj
+- name: '[2657ms] 🇸🇬@FreakConfig'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145
