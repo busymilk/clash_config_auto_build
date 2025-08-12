@@ -48,42 +48,26 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[835ms] 🇭🇰HK-203.23.128.33-0415 | 0.23MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
+  name: '[609ms] 🇭🇰HK-18.162.146.85-0354 | 0.329MB'
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
   type: ss
-- cipher: aes-256-gcm
-  name: '[1379ms] 🇭🇰 香港 05 #2'
-  password: 941cbc4237e0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kh36v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /tkzhhylcfuf
-    tls: true
-  port: 636
-  server: 121.127.231.239
+- cipher: chacha20-ietf-poly1305
+  name: '[610ms] 🇭🇰HK-18.162.146.85-0353 | 0.33MB'
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
   type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '[1590ms] 🇭🇰 香港 05'
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    tls: true
-  port: 636
-  server: 156.251.179.139
+- cipher: chacha20-ietf-poly1305
+  name: '[618ms] 🇭🇰HK-18.162.146.85-0352 | 0.329MB'
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
   type: ss
-  udp: true
 - alterId: 2
   cipher: auto
-  name: '[1627ms] 🇭🇰 香港家宽 04'
+  name: '[1107ms] 🇭🇰 香港家宽 04'
   network: ws
   port: 80
   server: 119.236.146.226
@@ -98,14 +82,14 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- name: '[1883ms] 🇭🇰HK-194.104.147.74-057'
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  skip-cert-verify: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '[1584ms] 🇭🇰HK-203.23.128.33-0358 | 0.309MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - cipher: aes-256-gcm
-  name: '[1956ms] 🇭🇰 香港 14'
+  name: '[1742ms] 🇭🇰 香港 14'
   password: 23d03aa704c7
   plugin: v2ray-plugin
   plugin-opts:
@@ -116,6 +100,40 @@ proxies:
     tls: true
   port: 636
   server: 156.251.179.181
+  type: ss
+  udp: true
+- name: '[1871ms] 🇭🇰HK-194.104.147.74-057'
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  port: 1066
+  server: 194.104.147.74
+  skip-cert-verify: true
+  type: trojan
+- cipher: aes-256-gcm
+  name: '[1917ms] 🇭🇰 香港 05 #2'
+  password: 941cbc4237e0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kh36v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /tkzhhylcfuf
+    tls: true
+  port: 636
+  server: 121.127.231.239
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '[2270ms] 🇭🇰 香港 05'
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: 636
+  server: 156.251.179.139
   type: ss
   udp: true
 proxy-groups:
