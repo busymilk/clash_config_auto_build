@@ -48,52 +48,53 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[668ms] 🇭🇰HK-18.162.146.85-0352 | 0.329MB'
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[670ms] 🇭🇰HK-18.162.146.85-0353 | 0.33MB'
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[697ms] 🇭🇰HK-18.162.146.85-0354 | 0.329MB'
+  name: '[671ms] 🇭🇰HK-18.162.146.85-0354 | 0.329MB'
   password: ljqdalu13..
   port: 8319
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[885ms] 🇭🇰HK-203.23.128.33-0358 | 0.309MB'
+  name: '[672ms] 🇭🇰HK-18.162.146.85-0353 | 0.33MB'
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[683ms] 🇭🇰HK-18.162.146.85-0352 | 0.329MB'
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[787ms] 🇭🇰HK-203.23.128.33-0358 | 0.309MB'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- name: '[910ms] 香港'
-  password: 38589924-caf7-4857-812b-80020febd3ff
-  port: 10880
-  server: 8.218.59.108
-  server_url: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+- name: '[913ms] 香港 #1'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
   skip-cert-verify: true
-  sni: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  sni: bing.com
   tls: false
   type: hysteria2
-- name: '[1136ms] 🇭🇰 香港 10'
-  network: ws
-  password: Aimer
-  port: 10031
-  server: 46.232.109.221
+- name: '[953ms] 🇭🇰HK'
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
   skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1145ms] 🇭🇰 香港 09'
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: '[957ms] HK'
+  password: Cyi3TPih9FtQRwsZAh8aT6ynGJk
+  port: 2166
+  server: 54.169.144.240
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- name: '[1136ms] 🇭🇰 香港 09'
   network: ws
   password: Aimer
   port: 7000
@@ -106,7 +107,20 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1159ms] 🇭🇰 香港 16'
+- name: '[1163ms] 🇭🇰 香港 10'
+  network: ws
+  password: Aimer
+  port: 10031
+  server: 46.232.109.221
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1177ms] 🇭🇰 香港 16'
   network: ws
   password: Aimer
   port: 20800
@@ -119,28 +133,17 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-gcm
-  name: '[1453ms] 🇭🇰 香港 05'
-  password: 941cbc4237e0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kh36v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /tkzhhylcfuf
-    tls: true
-  port: 636
-  server: 121.127.231.239
+- cipher: chacha20-ietf-poly1305
+  delay: 683
+  name: '[1289ms] 菲律宾 - 马尼拉 - Kaopu Cloud HK Limited - 1'
+  password: 628726b8-9371-4bdd-aab5-d864a492a492
+  port: 35791
+  server: 183.240.227.188
+  server_url: t1.fttos.xyz
   type: ss
   udp: true
-- name: '[1920ms] 🇭🇰HK-194.104.147.74-057'
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  skip-cert-verify: true
-  type: trojan
 - cipher: aes-256-gcm
-  name: '[2114ms] 🇭🇰 香港 14'
+  name: '[1518ms] 🇭🇰 香港 14'
   password: 23d03aa704c7
   plugin: v2ray-plugin
   plugin-opts:
@@ -154,21 +157,27 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '[2223ms] 🇭🇰 香港 05 #2'
-  password: 0b191076d18f
+  name: '[1666ms] 🇭🇰 香港 05'
+  password: 941cbc4237e0
   plugin: v2ray-plugin
   plugin-opts:
-    host: hk6v1.dsjsapp.com
+    host: kh36v1.dsjsapp.com
     mode: websocket
     mux: true
-    path: /ugiibpkbca
+    path: /tkzhhylcfuf
     tls: true
   port: 636
-  server: 156.251.179.139
+  server: 121.127.231.239
   type: ss
   udp: true
+- name: '[1941ms] 🇭🇰HK-194.104.147.74-057'
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  port: 1066
+  server: 194.104.147.74
+  skip-cert-verify: true
+  type: trojan
 - cipher: aes-256-gcm
-  name: '[2435ms] 🇭🇰 香港 07'
+  name: '[3074ms] 🇭🇰 香港 07'
   password: 0b191076d18f
   plugin: v2ray-plugin
   plugin-opts:
@@ -181,21 +190,6 @@ proxies:
   server: 156.251.179.136
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: '[3154ms] 🇭🇰 香港2|@ripaojiedian'
-  password: 9bfdde71b4c0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: newroot2v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /cauejypbltqt
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 103.103.245.158
-  tfo: false
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

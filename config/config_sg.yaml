@@ -47,7 +47,22 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[976ms] 🇸🇬_新加坡_2'
+- cipher: chacha20-ietf-poly1305
+  name: '[690ms] 🇸🇬SG-188.166.220.70-0338 | 0.392MB'
+  password: 24Wk2NSszrfHn22zem1lYV
+  port: 37708
+  server: 188.166.220.70
+  type: ss
+- auth: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  name: '[929ms] 🇸🇬 新加坡 20'
+  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  port: 30308
+  server: 47.236.104.81
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- name: '[978ms] 🇸🇬_新加坡_2'
   network: ws
   port: 443
   server: 150.109.11.223
@@ -61,7 +76,46 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1481ms] 🇸🇬 新加坡 09 #2'
+- name: '[1037ms] 新加坡'
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 54.169.224.169
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: '[1084ms] SG #2'
+  password: Y5kSCRNcOSz5YQUkjehzVXeT2mk
+  port: 19298
+  server: 175.41.154.215
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf
+  name: '[1204ms] 🇸🇬SG-103.36.91.23-0389 | 0.309MB'
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- auth: 3bHUJd0UcQubtxnkgfmWqSyoCA
+  name: '[1227ms] 🇸🇬 新加坡 08'
+  password: 3bHUJd0UcQubtxnkgfmWqSyoCA
+  port: 28911
+  server: 52.77.240.89
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- name: '[1253ms] SG'
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 54.255.144.66
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: '[1526ms] 🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
   port: 1111
@@ -74,7 +128,7 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '[2917ms] 🇸🇬 新加坡 25'
+- name: '[2450ms] 🇸🇬 新加坡 25'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -87,12 +141,6 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- cipher: chacha20-ietf-poly1305
-  name: '[3846ms] 🇸🇬SG-188.166.220.70-0338 | 0.392MB'
-  password: 24Wk2NSszrfHn22zem1lYV
-  port: 37708
-  server: 188.166.220.70
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
