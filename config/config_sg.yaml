@@ -48,12 +48,24 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[706ms] 🇸🇬SG-188.166.220.70-0338 | 0.392MB'
+  name: '[621ms] 🇸🇬SG-188.166.220.70-0338 | 0.392MB'
   password: 24Wk2NSszrfHn22zem1lYV
   port: 37708
   server: 188.166.220.70
   type: ss
-- name: '[939ms] SG #2'
+- alterId: 0
+  cipher: auto
+  name: '[853ms] 🇸🇬SG-47.84.62.1-0295 | 17.586MB'
+  network: ws
+  port: 20086
+  server: 47.84.62.1
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d2a0bcd7-e32d-4b71-91a9-5fd7043b7025
+  ws-opts:
+    path: /
+- name: '[862ms] SG #2'
   password: Y5kSCRNcOSz5YQUkjehzVXeT2mk
   port: 19298
   server: 175.41.154.215
@@ -61,7 +73,7 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: '[1067ms] 🇸🇬_新加坡_2'
+- name: '[881ms] 🇸🇬_新加坡_2'
   network: ws
   port: 443
   server: 150.109.11.223
@@ -75,7 +87,7 @@ proxies:
     headers:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1110ms] 🇸🇬 新加坡 25'
+- name: '[913ms] 🇸🇬 新加坡 25'
   network: ws
   port: 443
   server: 108.162.194.231
@@ -88,7 +100,23 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: '[1500ms] 🇸🇬 新加坡 09 #2'
+- name: '[1111ms] SG'
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 54.255.144.66
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: '[1186ms] SG #1'
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 54.169.224.169
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: '[1493ms] 🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
   port: 1111
