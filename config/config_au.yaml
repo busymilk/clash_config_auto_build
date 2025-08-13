@@ -47,13 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '[277ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- name: '[732ms] 🇦🇺_澳大利亚_2'
+- name: '[772ms] 🇦🇺_澳大利亚_2'
   network: ws
   port: 23023
   server: 43.165.191.25
@@ -67,7 +61,7 @@ proxies:
     headers:
       host: az.bgm2024.dpdns.org
     path: /?ed=2560
-- name: '[949ms] 🇦🇺_澳大利亚_4'
+- name: '[968ms] 🇦🇺_澳大利亚_4'
   network: ws
   port: 443
   server: 43.160.202.92
@@ -81,21 +75,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1197ms] 🇦🇺_澳大利亚_3'
-  network: ws
-  port: 12443
-  server: 43.132.253.32
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1218ms] 🇦🇺_澳大利亚_3 #2'
+- name: '[1261ms] 🇦🇺_澳大利亚_3 #2'
   network: ws
   port: 12443
   server: 43.132.239.42
@@ -109,6 +89,32 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1343ms] 🇦🇺_澳大利亚_3'
+  network: ws
+  port: 12443
+  server: 43.132.253.32
+  servername: edgb.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- auth: ab0a8cd1-fbc5-4e15-bdc3-6a907d333c33
+  name: '[1394ms] 🇦🇺 澳大利亚 01'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: ab0a8cd1-fbc5-4e15-bdc3-6a907d333c33
+  port: 33656
+  server: 203.32.26.70
+  server_url: hg.dport.top
+  skip-cert-verify: true
+  sni: hg.dport.top
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

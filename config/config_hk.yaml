@@ -48,43 +48,39 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[669ms] 🇭🇰HK-18.162.146.85-0353 | 0.33MB'
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[672ms] 🇭🇰HK-18.162.146.85-0352 | 0.329MB'
+  name: '[668ms] 🇭🇰HK-18.162.146.85-0352 | 0.329MB'
   password: ljqdalu13..
   port: 8316
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[673ms] 🇭🇰HK-18.162.146.85-0354 | 0.329MB'
+  name: '[670ms] 🇭🇰HK-18.162.146.85-0353 | 0.33MB'
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[697ms] 🇭🇰HK-18.162.146.85-0354 | 0.329MB'
   password: ljqdalu13..
   port: 8319
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[755ms] 🇭🇰HK-203.23.128.33-0358 | 0.309MB'
+  name: '[885ms] 🇭🇰HK-203.23.128.33-0358 | 0.309MB'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- name: '[1131ms] 🇭🇰 香港 09'
-  network: ws
-  password: Aimer
-  port: 7000
-  server: 202.85.53.160
+- name: '[910ms] 香港'
+  password: 38589924-caf7-4857-812b-80020febd3ff
+  port: 10880
+  server: 8.218.59.108
+  server_url: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
   skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1170ms] 🇭🇰 香港 10'
+  sni: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  tls: false
+  type: hysteria2
+- name: '[1136ms] 🇭🇰 香港 10'
   network: ws
   password: Aimer
   port: 10031
@@ -97,36 +93,54 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1145ms] 🇭🇰 香港 09'
+  network: ws
+  password: Aimer
+  port: 7000
+  server: 202.85.53.160
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1159ms] 🇭🇰 香港 16'
+  network: ws
+  password: Aimer
+  port: 20800
+  server: 183.178.254.158
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
-  name: '[1461ms] 🇭🇰 香港 05 #2'
-  password: 0b191076d18f
+  name: '[1453ms] 🇭🇰 香港 05'
+  password: 941cbc4237e0
   plugin: v2ray-plugin
   plugin-opts:
-    host: hk6v1.dsjsapp.com
+    host: kh36v1.dsjsapp.com
     mode: websocket
     mux: true
-    path: /ugiibpkbca
+    path: /tkzhhylcfuf
     tls: true
   port: 636
-  server: 156.251.179.139
+  server: 121.127.231.239
   type: ss
   udp: true
+- name: '[1920ms] 🇭🇰HK-194.104.147.74-057'
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  port: 1066
+  server: 194.104.147.74
+  skip-cert-verify: true
+  type: trojan
 - cipher: aes-256-gcm
-  name: '[1470ms] 🇭🇰 香港 07'
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    tls: true
-  port: 636
-  server: 156.251.179.136
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '[1502ms] 🇭🇰 香港 14'
+  name: '[2114ms] 🇭🇰 香港 14'
   password: 23d03aa704c7
   plugin: v2ray-plugin
   plugin-opts:
@@ -140,33 +154,48 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '[1803ms] 🇭🇰 香港 05'
-  password: 941cbc4237e0
+  name: '[2223ms] 🇭🇰 香港 05 #2'
+  password: 0b191076d18f
   plugin: v2ray-plugin
   plugin-opts:
-    host: kh36v1.dsjsapp.com
+    host: hk6v1.dsjsapp.com
     mode: websocket
     mux: true
-    path: /tkzhhylcfuf
+    path: /ugiibpkbca
     tls: true
   port: 636
-  server: 121.127.231.239
+  server: 156.251.179.139
   type: ss
   udp: true
-- name: '[1940ms] 🇭🇰HK-194.104.147.74-057'
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  skip-cert-verify: true
-  type: trojan
-- name: '[2270ms] Channel id: @ShadowProxy66🇭🇰 #1'
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
+- cipher: aes-256-gcm
+  name: '[2435ms] 🇭🇰 香港 07'
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: 636
+  server: 156.251.179.136
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '[3154ms] 🇭🇰 香港2|@ripaojiedian'
+  password: 9bfdde71b4c0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /cauejypbltqt
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 103.103.245.158
+  tfo: false
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

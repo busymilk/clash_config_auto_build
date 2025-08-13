@@ -47,7 +47,7 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '[86ms] 🇯🇵_日本_7'
+- name: '[167ms] 🇯🇵_日本_7'
   network: ws
   port: 2083
   server: 103.116.7.103
@@ -62,14 +62,21 @@ proxies:
       host: edgb.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-128-gcm
-  name: '[521ms] 🇯🇵JP-149.22.87.204-0386 | 27.123MB'
+  name: '[520ms] 🇯🇵JP-149.22.87.204-0386 | 27.123MB'
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[541ms] 🇯🇵 日本 13'
+  password: 799511fd-fd75-44f9-993b-e8a4b8a8a620
+  port: 12378
+  server: 23.27.201.149
+  type: ss
+  udp: true
 - country: 🇯🇵JP
   delay: 2822
-  name: '[685ms] 日本 - 东京 - Amazon Technologies Inc. - 1'
+  name: '[689ms] 日本 - 东京 - Amazon Technologies Inc. - 1'
   password: 0xC6Mws4Dg
   port: 1935
   server: 54.168.52.254
@@ -78,21 +85,7 @@ proxies:
   sni: x2-japan-amazon-v2.devefun.org
   type: trojan
   udp: true
-- name: '[732ms] 🇯🇵_日本 #2'
-  network: ws
-  port: 47001
-  server: 158.101.154.245
-  servername: edgb.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[748ms] 🇯🇵_日本_2 #2'
+- name: '[769ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -106,21 +99,23 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- auth: ce41ee06-2fb2-4dee-bdf6-6204b9cd539c
-  name: '[780ms] 🇯🇵 日本 10'
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: ce41ee06-2fb2-4dee-bdf6-6204b9cd539c
-  port: 33657
-  server: 212.192.221.221
-  server_url: rb.dport.top
+- name: '[770ms] 🇯🇵_日本 #2'
+  network: ws
+  port: 47001
+  server: 158.101.154.245
+  servername: edgb.aimercc.dpdns.org
   skip-cert-verify: true
-  sni: rb.dport.top
-  type: hysteria2
+  tls: true
+  type: vless
   udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: aes-256-gcm
   delay: 1559
-  name: '[1068ms] 日本 - 东京 - CTG Server Ltd. - 2'
+  name: '[1066ms] 日本 - 东京 - CTG Server Ltd. - 2'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -133,20 +128,7 @@ proxies:
   port: 636
   server: 137.220.142.139
   type: ss
-- name: '[1182ms] 🇯🇵 日本 09'
-  network: ws
-  password: Aimer
-  port: 17000
-  server: 183.106.218.118
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1230ms] 🇯🇵 日本 15'
+- name: '[1178ms] 🇯🇵 日本 15'
   network: ws
   password: Aimer
   port: 12367
@@ -159,6 +141,32 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[1819ms] 🇯🇵_日本_3'
+  network: ws
+  port: 12333
+  server: 121.80.244.179
+  servername: a1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: a1.bgm2024.dpdns.org
+    path: /?ed=2560
+- auth: ce41ee06-2fb2-4dee-bdf6-6204b9cd539c
+  name: '[1979ms] 🇯🇵 日本 10'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: ce41ee06-2fb2-4dee-bdf6-6204b9cd539c
+  port: 33657
+  server: 212.192.221.221
+  server_url: rb.dport.top
+  skip-cert-verify: true
+  sni: rb.dport.top
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
