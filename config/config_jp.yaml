@@ -47,44 +47,23 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-128-gcm
-  name: '[532ms] 🇯🇵JP-149.22.87.204-0386 | 27.123MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- alterId: 0
-  cipher: auto
-  delay: 670
-  name: '[534ms] 日本 - 东京 - Amazon Technologies Inc. - 56'
-  port: 10202
-  server: 52.194.190.190
-  server_url: tls.85.node-for-bigairport.win
-  type: vmess
-  udp: true
-  uuid: 792e0bdb-01db-450c-94c4-925151eb396e
 - cipher: chacha20-ietf-poly1305
-  name: '[564ms] 🇯🇵 日本 13'
+  name: '[354ms] 🇯🇵 日本 13'
   password: 799511fd-fd75-44f9-993b-e8a4b8a8a620
   port: 12378
   server: 23.27.201.149
   type: ss
   udp: true
-- country: 🇯🇵JP
-  delay: 2822
-  name: '[687ms] 日本 - 东京 - Amazon Technologies Inc. - 1'
-  password: 0xC6Mws4Dg
-  port: 1935
-  server: 54.168.52.254
-  server_url: x2-japan-amazon-v2.devefun.org
-  skip-cert-verify: true
-  sni: x2-japan-amazon-v2.devefun.org
-  type: trojan
-  udp: true
+- cipher: aes-128-gcm
+  name: '[356ms] 🇯🇵JP-149.22.87.204-0239 | 27.123MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - alterId: '2'
   cipher: auto
   delay: 767
-  name: '[696ms] 日本 - Chiyoda City - GMO GlobalSign Holdings K.K. - 11'
+  name: '[465ms] 日本 - Chiyoda City - GMO GlobalSign Holdings K.K. - 11'
   network: ws
   port: 10001
   server: 153.122.118.128
@@ -96,15 +75,18 @@ proxies:
     headers:
       Host: download.visualstudio.microsoft.com
     path: /download/pr/9b564b8a-a26d-4bb3-8f30-1101ae71a55a/2cee4f9e4c0e77e3d0f866fdf690864e/windowsdesktop-runtime-5.0.8-win-x64.exe
-- name: '[703ms] 日本'
-  password: oATw4IRtuUOozpOLFflGnWjtg
-  port: 18219
-  server: 52.193.71.150
+- country: 🇯🇵JP
+  delay: 2822
+  name: '[467ms] 日本 - 东京 - Amazon Technologies Inc. - 1'
+  password: 0xC6Mws4Dg
+  port: 1935
+  server: 54.168.52.254
+  server_url: x2-japan-amazon-v2.devefun.org
   skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: '[722ms] 🇯🇵_日本 #2'
+  sni: x2-japan-amazon-v2.devefun.org
+  type: trojan
+  udp: true
+- name: '[506ms] 🇯🇵_日本 #2'
   network: ws
   port: 47001
   server: 158.101.154.245
@@ -118,7 +100,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[742ms] 🇯🇵_日本_2 #2'
+- name: '[522ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -132,8 +114,16 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[605ms] 日本'
+  password: oATw4IRtuUOozpOLFflGnWjtg
+  port: 18219
+  server: 52.193.71.150
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - cipher: aes-256-gcm
-  name: '[1060ms] 🇯🇵 日本 01'
+  name: '[813ms] 🇯🇵 日本 01'
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -146,7 +136,21 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- name: '[1211ms] 🇯🇵 日本 15'
+- delay: 492
+  name: '[846ms] 日本 - 福岡市 - Cloudflare, Inc. - 47'
+  network: ws
+  password: Aimer
+  port: 17000
+  server: 183.106.218.118
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: '[895ms] 🇯🇵 日本 15'
   network: ws
   password: Aimer
   port: 12367
@@ -161,7 +165,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: chacha20-ietf-poly1305
   delay: 685
-  name: '[1435ms] 日本 - 东京 - Akile LTD - 10'
+  name: '[1229ms] 日本 - 东京 - Akile LTD - 10'
   password: 628726b8-9371-4bdd-aab5-d864a492a492
   port: 35794
   server: 183.240.227.188
@@ -170,7 +174,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 1023
-  name: '[2128ms] 日本 - 东京 - Akile LTD - 9'
+  name: '[1967ms] 日本 - 东京 - Akile LTD - 9'
   password: 628726b8-9371-4bdd-aab5-d864a492a492
   port: 35782
   server: 183.240.227.188

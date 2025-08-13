@@ -48,7 +48,7 @@ profile:
   store-selected: false
 proxies:
 - client-fingerprint: chrome
-  name: '[76ms] 🇩🇪 德国 29'
+  name: '[66ms] 🇩🇪 德国 29'
   network: ws
   port: 443
   server: 104.18.26.90
@@ -64,7 +64,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: random
-  name: '[111ms] 🇩🇪 德国 09 #2'
+  name: '[69ms] 🇩🇪 德国 09 #2'
   network: ws
   port: 2096
   server: 162.159.153.222
@@ -78,8 +78,8 @@ proxies:
       Host: wxf838.sbs
     path: /?proxyip=proxyip.fxxk.dedyn.io
 - client-fingerprint: chrome
-  delay: 997
-  name: '[111ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 21'
+  delay: 2318
+  name: '[107ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 2'
   network: ws
   password: bpb-trojan
   port: 443
@@ -89,73 +89,27 @@ proxies:
   type: trojan
   udp: true
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /tr?ed=2560
-- client-fingerprint: randomized
-  name: '[140ms] 🇩🇪 德国 12'
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+    max-early-data: 2560
+    path: /tr
+- delay: 1596
+  name: '[134ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 43'
   network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: chrome
-  delay: 2252
-  name: '[156ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 111'
-  network: ws
-  password: trojan
-  port: 8443
-  server: 104.26.13.31
-  skip-cert-verify: false
-  sni: qianlang.pages.dev
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 162.159.133.85
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
-        Gecko) Chrome/11.0.696.3 Safari/534.24
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: '[282ms] 🇩🇪DE-185.177.229.245-029'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[283ms] 🇩🇪DE-147.45.178.200-024'
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- client-fingerprint: randomized
-  name: '[293ms] 🇩🇪 德国 09'
-  network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- cipher: chacha20-ietf-poly1305
-  name: '[375ms] 🇩🇪DE-46.101.245.131-033'
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- name: '[398ms] 🇩🇪 德国 04'
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '[158ms] 🇩🇪 德国 04'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2053
@@ -168,90 +122,35 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- alterId: 0
-  cipher: auto
-  name: '[401ms] 🇩🇪DE-46.165.194.90-0307 | 4.675MB'
+- client-fingerprint: randomized
+  name: '[173ms] 🇩🇪 德国 12'
   network: ws
-  port: 20086
-  server: 46.165.194.90
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f2a9f149-cb6a-4669-9097-2d8cb2d4ea7e
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '[422ms] 🇩🇪DE-46.165.194.96-0308 | 5.086MB'
-  network: ws
-  port: 20086
-  server: 46.165.194.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: '[506ms] 🇩🇪DE-84.200.91.228-4840 | 5.539MB'
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '[545ms] 🇩🇪DE-91.99.185.216-0275 | 17.232MB'
-  network: ws
-  port: 20086
-  server: 91.99.185.216
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 7bd6a1ea-a220-4f1c-afed-6cfb8ab96ad9
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: '[703ms] 🇩🇪DE-80.92.204.106-0376 | 0.565MB'
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
-  type: ss
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: '[721ms] 🇩🇪 德国 02'
-  network: ws
-  port: 443
-  server: 104.19.144.33
-  servername: 148BpJi0Zp.GiGa1.OrG
+  port: 2053
+  server: 162.159.129.11
+  servername: vle.amclubsapp.dpdns.org
   tls: true
   type: vless
   udp: true
-  uuid: 0d0782a3-2c62-4936-b893-5790188778ea
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
   ws-opts:
     headers:
-      Host: 148BpJi0Zp.GiGa1.OrG
-    path: /
-- cipher: aes-256-cfb
-  name: '[796ms] 🇩🇪DE-80.92.204.106-0361 | 0.53MB'
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 80.92.204.106
-  type: ss
-- auth: c1e0429f-cd87-490b-be6a-35081da58522
-  name: '[816ms] 🇩🇪 德国 12 #3'
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: c1e0429f-cd87-490b-be6a-35081da58522
-  port: 20557
-  server: 213.108.198.123
-  server_url: nexiadg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiadg.688997.xyz
-  type: hysteria2
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: randomized
+  name: '[181ms] 🇩🇪 德国 09'
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
   udp: true
-- name: '[831ms] 🇩🇪 德国 12 #2'
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '[371ms] 🇩🇪 德国 12 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
@@ -264,6 +163,88 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- cipher: chacha20-ietf-poly1305
+  name: '[479ms] 🇩🇪DE-185.177.229.245-0336 | 3.857MB'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: aes-256-cfb
+  name: '[584ms] 🇩🇪DE-80.92.204.106-0376 | 0.565MB'
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[646ms] 🇩🇪DE-147.45.178.200-0327 | 19.308MB'
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '[669ms] 🇩🇪DE-91.99.185.216-0275 | 17.232MB'
+  network: ws
+  port: 20086
+  server: 91.99.185.216
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7bd6a1ea-a220-4f1c-afed-6cfb8ab96ad9
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '[683ms] 🇩🇪DE-46.165.194.90-0331 | 5.298MB'
+  network: ws
+  port: 20086
+  server: 46.165.194.90
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f2a9f149-cb6a-4669-9097-2d8cb2d4ea7e
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '[685ms] 🇩🇪DE-46.165.194.96-0332 | 5.195MB'
+  network: ws
+  port: 20086
+  server: 46.165.194.96
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
+  ws-opts:
+    path: /
+- auth: c1e0429f-cd87-490b-be6a-35081da58522
+  name: '[755ms] 🇩🇪 德国 12 #3'
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: c1e0429f-cd87-490b-be6a-35081da58522
+  port: 20557
+  server: 213.108.198.123
+  server_url: nexiadg.688997.xyz
+  skip-cert-verify: true
+  sni: nexiadg.688997.xyz
+  type: hysteria2
+  udp: true
+- cipher: rc4-md5
+  name: '[1221ms] 🇩🇪DE-193.108.119.230-4839 | 1.004MB'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  delay: 793
+  name: '[1290ms] 德国 - 法兰克福 - Dominic Scholz trading as ITP-Solutions GmbH & Co. KG
+    - 15'
+  password: 628726b8-9371-4bdd-aab5-d864a492a492
+  port: 35789
+  server: 183.240.227.188
+  server_url: t1.fttos.xyz
+  type: ss
+  udp: true
 - http-opts:
     headers:
       Host:
@@ -271,7 +252,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '[1142ms] 🇩🇪 德国 10'
+  name: '[1494ms] 🇩🇪 德国 10'
   network: http
   port: 2083
   server: 109.94.164.184
@@ -281,28 +262,24 @@ proxies:
   type: vless
   udp: true
   uuid: 59290e80-153b-4d2c-8a5b-8a1922608832
+- cipher: chacha20-ietf-poly1305
+  name: '[1984ms] 🇩🇪DE-84.200.91.228-4840 | 5.539MB'
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
+  type: ss
 - cipher: aes-256-cfb
-  name: '[1174ms] 🇩🇪DE-80.92.204.106-0362 | 0.51MB'
+  name: '[3645ms] 🇩🇪DE-80.92.204.106-0361 | 0.53MB'
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: '[3886ms] 🇩🇪DE-80.92.204.106-0362 | 0.51MB'
   password: Sn5B7jTqr76aCJT8
   port: 9097
   server: 80.92.204.106
   type: ss
-- cipher: rc4-md5
-  name: '[1204ms] 🇩🇪DE-193.108.119.230-0313 | 5.682MB'
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  delay: 793
-  name: '[1597ms] 德国 - 法兰克福 - Dominic Scholz trading as ITP-Solutions GmbH & Co. KG
-    - 15'
-  password: 628726b8-9371-4bdd-aab5-d864a492a492
-  port: 35789
-  server: 183.240.227.188
-  server_url: t1.fttos.xyz
-  type: ss
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
