@@ -10,7 +10,8 @@ from threading import Lock
 
 # --- 日志配置 ---
 # 从环境变量中读取日志级别，默认为 INFO
-log_level = os.environ.get("LOG_LEVEL", "INFO").upper()
+#log_level = os.environ.get("LOG_LEVEL", "INFO").upper()
+log_level = os.environ.get("LOG_LEVEL", "DEBUG").upper()
 logging.basicConfig(level=log_level, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # --- 全局锁 ---
