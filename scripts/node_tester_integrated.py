@@ -63,7 +63,7 @@ def test_node_pipeline(proxy_name: str, args: argparse.Namespace) -> tuple[str, 
             ]
             result = subprocess.run(cmd_openssl, capture_output=True, text=True, timeout=args.handshake_timeout, check=False, encoding='utf-8', errors='ignore')
             
-            if result.returncode == 0 and "Protocol" in result.stdout and "Verify return code: 0 (ok)" in result.stdout:
+            if result.returncode == 0 and "Verify return code: 0 (ok)" in result.stdout:
                 logging.info(f"节点 {proxy_name}: ✅ TLS握手测试通过")
                 return proxy_name, True
             else:
