@@ -1,4 +1,3 @@
-
 # Clash Config Auto Builder
 
 [![Generate Clash Config](https://github.com/busymilk/clash_config_auto_build/actions/workflows/clash-config.yml/badge.svg)](https://github.com/busymilk/clash_config_auto_build/actions/workflows/clash-config.yml)
@@ -33,6 +32,56 @@
 - `config/config_hk.yaml`: **仅包含**香港地区的健康节点。
 - `config/config_us.yaml`: **仅包含**美国地区的健康节点。
 - ... 以此类推。
+
+## 部署到 Vercel (提供受密码保护的订阅链接)
+
+除了通过 GitHub Release 下载，你还可以将此项目部署到 Vercel，以获得一个私有的、受密码保护的订阅链接，方便在国内直接访问。
+
+### 工作原理
+
+我们利用 Vercel 的边缘函数 (`api/[file].ts`) 拦截所有对 `.yaml` 文件的请求。该函数会验证 URL 中是否包含正确的访问令牌 (`token`)。
+
+- **验证通过**: 返回 `config` 目录中对应的 YAML 文件内容。
+- **验证失败**: 返回 `401 Unauthorized` 错误，保护你的配置文件不被泄露。
+
+### 设置步骤
+
+1.  **Fork 本仓库**
+
+2.  **登录 Vercel**
+    使用你的 GitHub 账号登录 Vercel。
+
+3.  **导入项目 (Import Project)**
+    - 在 Vercel Dashboard 点击 `Add New...` -> `Project`。
+    - 选择你 Fork 的 GitHub 仓库并点击 `Import`。
+
+4.  **配置项目**
+    - **Framework Preset**: Vercel 应该会自动识别为 `Other`。保持默认即可。
+    - **Environment Variables (重要)**: 
+        - 展开 `Environment Variables` 部分。
+        - 添加一个新变量：
+            - **Name**: `ACCESS_TOKEN`
+            - **Value**: 设置一个你自己才知道的强密码/令牌。例如，你可以使用一个 UUID 或者其他随机字符串，如 `a9b8c7d6-e5f4-g3h2-i1j0-k9l8m7n6o5p4`。
+
+5.  **部署 (Deploy)**
+    - 点击 `Deploy` 按钮并等待部署完成。
+
+### 如何使用
+
+部署成功后，你的订阅链接格式如下：
+
+```
+https://<你的Vercel项目名>.vercel.app/<配置文件名>.yaml?token=<你设置的ACCESS_TOKEN>
+```
+
+**示例**:
+假如你的 Vercel 项目名是 `my-clash-config`，你想获取美国节点的配置，并且你的 `ACCESS_TOKEN` 设置为 `MySuperSecretPassword123`，那么你的链接将是：
+
+```
+https://my-clash-config.vercel.app/config_us.yaml?token=MySuperSecretPassword123
+```
+
+将此链接填入你的 Clash 客户端即可。
 
 ## 🔧 如何使用与自定义
 
