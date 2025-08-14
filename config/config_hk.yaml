@@ -48,38 +48,62 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '[592ms] 🇭🇰HK-18.162.146.85-0297 | 0.332MB'
+  name: '[507ms] 🇭🇰HK-18.162.146.85-0298 | 0.33MB'
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[508ms] 🇭🇰HK-18.162.146.85-0297 | 0.332MB'
   password: ljqdalu13..
   port: 8316
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[592ms] 🇭🇰HK-18.162.146.85-0296 | 0.33MB'
+  name: '[508ms] 🇭🇰HK-18.162.146.85-0296 | 0.33MB'
   password: ljqdalu13..
   port: 8319
   server: 18.162.146.85
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[593ms] 🇭🇰HK-18.162.146.85-0298 | 0.33MB'
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
 - cipher: chacha20-ietf
-  name: '[600ms] 🇭🇰HK-103.149.183.61-5134 | 2.862MB'
+  name: '[555ms] 🇭🇰HK-103.149.182.191-4961 | 0.969MB'
   password: asd123456
   port: 8388
-  server: 103.149.183.61
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[735ms] 🇭🇰HK-203.23.128.33-0396 | 0.069MB'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
+  server: 103.149.182.191
   type: ss
 - alterId: 2
   cipher: auto
-  name: '[818ms] 🇭🇰 香港家宽 39'
+  name: '[690ms] 🇭🇰 香港家宽 65'
+  network: ws
+  port: 80
+  server: 1.65.139.23
+  server_url: c85c9054-t13gg0-t4ixjm-1hhyy.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '[698ms] 🇭🇰 香港家宽 36'
+  network: ws
+  port: 80
+  server: 1.65.139.23
+  server_url: f0364aea-t13gg0-t1rksu-1ssud.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '[700ms] 🇭🇰 香港家宽 39'
   network: ws
   port: 80
   server: 1.36.218.200
@@ -94,7 +118,22 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '[820ms] 🇭🇰 香港家宽 17'
+  name: '[700ms] 🇭🇰 香港家宽 71'
+  network: ws
+  port: 80
+  server: 1.65.139.23
+  server_url: 1cebd68b-t13gg0-t83bw1-1f596.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '[702ms] 🇭🇰 香港家宽 17'
   network: ws
   port: 80
   server: 1.36.218.200
@@ -109,7 +148,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '[860ms] 🇭🇰HK-1.65.207.219-5137 | 11.351MB'
+  name: '[781ms] 🇭🇰HK-1.65.207.219-5137 | 11.351MB'
   network: ws
   port: 80
   server: 1.65.207.219
@@ -122,56 +161,22 @@ proxies:
     headers:
       Host: 4b9d07b6-sz8sg0-t0o6k2-6gn6.hkt.tcpbbr.net
     path: /
-- name: '[1000ms] 🇭🇰 香港 09'
-  network: ws
-  password: Aimer
-  port: 7000
-  server: 202.85.53.160
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1039ms] 🇭🇰 香港 15'
-  network: ws
-  password: Aimer
-  port: 10031
-  server: 46.232.109.221
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[1137ms] Channel id: @ShadowProxy66🇭🇰 #3'
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
 - cipher: aes-256-gcm
-  name: '[1209ms] 🇭🇰 香港 02'
-  password: 0b191076d18f
+  name: '[1099ms] 🇭🇰 香港 11'
+  password: 23d03aa704c7
   plugin: v2ray-plugin
   plugin-opts:
-    host: hk6v1.dsjsapp.com
+    host: cmihk3v1.dsjsapp.com
     mode: websocket
     mux: true
-    path: /ugiibpkbca
+    path: /grqhyifio
     tls: true
   port: 636
-  server: 156.251.179.136
+  server: 156.251.179.181
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '[1225ms] 🇭🇰 香港 05'
+  name: '[1115ms] 🇭🇰 香港 05'
   password: 941cbc4237e0
   plugin: v2ray-plugin
   plugin-opts:
@@ -185,43 +190,52 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '[1253ms] 🇭🇰 香港 11'
-  password: 23d03aa704c7
+  name: '[1126ms] 🇭🇰 香港 02'
+  password: 0b191076d18f
   plugin: v2ray-plugin
   plugin-opts:
-    host: cmihk3v1.dsjsapp.com
+    host: hk6v1.dsjsapp.com
     mode: websocket
     mux: true
-    path: /grqhyifio
+    path: /ugiibpkbca
     tls: true
   port: 636
-  server: 156.251.179.181
+  server: 156.251.179.136
   type: ss
   udp: true
+- name: '[1201ms] 香港'
+  password: 38589924-caf7-4857-812b-80020febd3ff
+  port: 10880
+  server: 8.218.59.108
+  server_url: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  skip-cert-verify: true
+  sni: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  tls: false
+  type: hysteria2
 - alterId: 2
   cipher: auto
-  name: '[1575ms] 🇭🇰 香港家宽 28'
+  name: '[1319ms] 🇭🇰 香港家宽 15'
   network: ws
   port: 80
   server: 1.65.139.23
-  server_url: 058a8a64-t13gg0-tcinla-hrtf.hk3.p5pv.com
+  server_url: 7fad58f0-t13gg0-t3gspm-20qs.hk3.p5pv.com
   tls: false
   type: vmess
   udp: true
-  uuid: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  uuid: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: '[1892ms] 🇭🇰HK-194.104.147.74-057'
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  skip-cert-verify: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '[1330ms] 🇭🇰HK-203.23.128.33-0396 | 0.069MB'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - alterId: 2
   cipher: auto
-  name: '[2577ms] 🇭🇰 香港家宽 58'
+  name: '[1346ms] 🇭🇰 香港家宽 58'
   network: ws
   port: 80
   server: 1.65.139.23
@@ -234,9 +248,15 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- name: '[1745ms] 🇭🇰HK-194.104.147.74-057'
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  port: 1066
+  server: 194.104.147.74
+  skip-cert-verify: true
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: '[2668ms] 🇭🇰 香港家宽 60'
+  name: '[2600ms] 🇭🇰 香港家宽 60'
   network: ws
   port: 80
   server: 58.153.123.135
@@ -245,43 +265,6 @@ proxies:
   type: vmess
   udp: true
   uuid: d6e1207c-f41a-11ef-9495-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: '[3078ms] 香港'
-  password: 38589924-caf7-4857-812b-80020febd3ff
-  port: 10880
-  server: 8.218.59.108
-  server_url: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
-  skip-cert-verify: true
-  sni: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
-  tls: false
-  type: hysteria2
-- name: '[3245ms] 🇭🇰 香港 16'
-  network: ws
-  password: Aimer
-  port: 20800
-  server: 183.178.254.158
-  skip-cert-verify: true
-  sni: epgb.aimercc.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epgb.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 2
-  cipher: auto
-  name: '[3912ms] 🇭🇰 香港家宽 15'
-  network: ws
-  port: 80
-  server: 1.65.139.23
-  server_url: 7fad58f0-t13gg0-t3gspm-20qs.hk3.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
