@@ -164,29 +164,29 @@ proxy-groups:
     max-failed-times: 2
     lazy: true
 
-  - name: Telegram #没办法，好多代理可以访问google，但是Telegram访问不了。。。
-    type: url-test # 通过 URL 测试选择延迟最低的节点
-    tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-proxies: true # 包含所有节点进行测试
-    include-all: true
-    url: "https://api.telegram.org"
-    expected-status: 302 # 你没看错，确实是302重定向，能确认可以访问tg了
-    interval: 120 # 健康检查间隔（秒）
-    timeout: 3000 # 健康检查超时时间（毫秒）
-    max-failed-times: 2 # 最大失败次数
-    lazy: true # 懒加载，启动时不进行测试
+#  - name: Telegram #没办法，好多代理可以访问google，但是Telegram访问不了。。。
+#    type: url-test # 通过 URL 测试选择延迟最低的节点
+#    tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
+#    include-all-proxies: true # 包含所有节点进行测试
+#    include-all: true
+#    url: "https://api.telegram.org"
+#    expected-status: 302 # 你没看错，确实是302重定向，能确认可以访问tg了
+#    interval: 120 # 健康检查间隔（秒）
+#    timeout: 3000 # 健康检查超时时间（毫秒）
+#    max-failed-times: 2 # 最大失败次数
+#    lazy: true # 懒加载，启动时不进行测试
 
-  - name: v2ex #没办法，好多代理可以访问google，但是Telegram访问不了。。。
-    type: url-test # 通过 URL 测试选择延迟最低的节点
-    tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-proxies: true # 包含所有节点进行测试
-    include-all: true
-    url: "https://www.v2ex.com/generate_204"
-    expected-status: 204 
-    interval: 120 # 健康检查间隔（秒）
-    timeout: 3000 # 健康检查超时时间（毫秒）
-    max-failed-times: 2 # 最大失败次数
-    lazy: true # 懒加载，启动时不进行测试
+#  - name: v2ex #没办法，好多代理可以访问google，但是Telegram访问不了。。。
+#    type: url-test # 通过 URL 测试选择延迟最低的节点
+#    tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
+#    include-all-proxies: true # 包含所有节点进行测试
+#    include-all: true
+#    url: "https://www.v2ex.com/generate_204"
+#    expected-status: 204 
+#    interval: 120 # 健康检查间隔（秒）
+#    timeout: 3000 # 健康检查超时时间（毫秒）
+#    max-failed-times: 2 # 最大失败次数
+#    lazy: true # 懒加载，启动时不进行测试
 
 # 规则集提供者 (Rule Providers)
 rule-providers:
@@ -372,8 +372,8 @@ rules:
   - 'DOMAIN-SUFFIX,akfamily.xyz,DIRECT'
   - 'DOMAIN,shared.cdn.queniuqe.com,DIRECT'
   - 'DOMAIN-SUFFIX,1fichier.com,DIRECT'
-  - 'PROCESS-NAME,Telegram,Telegram'
-  - 'DOMAIN-SUFFIX,v2ex.com,v2ex'
+  - 'PROCESS-NAME,Telegram,✈️ 选择代理'
+  - 'DOMAIN-SUFFIX,v2ex.com,✈️ 选择代理'
   - 'DOMAIN-KEYWORD,alibaba-cn,DIRECT' #icloud会使用到这个alibaba-cn-pvg-00001.oss-enet.aliyuncs.com
  #---------------------------------------------------------
 #直连应用
@@ -391,7 +391,7 @@ rules:
   - RULE-SET,geosite_apple,DIRECT
   - RULE-SET,geosite_bing,✈️ 选择代理
   - RULE-SET,geosite_google,✈️ 选择代理
-  - RULE-SET,geosite_telegram,Telegram
+  - RULE-SET,geosite_telegram,✈️ 选择代理
 #---------------------------------------------------------
 #国外域名补充（被国内dns污染的,或者被墙的）——ssk and gfw
   - RULE-SET,loy_gfw,✈️ 选择代理
@@ -418,7 +418,7 @@ rules:
   - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
 
 #国外ip
-  - RULE-SET,geoip_telegram_ip,Telegram,no-resolve
+  - RULE-SET,geoip_telegram_ip,✈️ 选择代理,no-resolve
 
 #国内ip
   - RULE-SET,geoip_cn_ip,DIRECT,no-resolve
