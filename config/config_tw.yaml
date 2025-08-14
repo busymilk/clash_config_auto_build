@@ -117,17 +117,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: GoogleApi
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.google.com/generate_204
 - expected-status: 302
   include-all: true
   include-all-proxies: true
@@ -320,7 +309,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,self_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,✈️ 选择代理
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理

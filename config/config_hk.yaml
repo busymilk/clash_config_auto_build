@@ -47,30 +47,14 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0353 | 0.332MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0355 | 0.33MB
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0354 | 0.33MB
-  password: ljqdalu13..
-  port: 8319
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-5124 | 0.034MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
+- name: 🇭🇰HK
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: '香港 #1'
   password: XK52yierGckONMJWbJnuskD3unI
   port: 12854
@@ -87,21 +71,30 @@ proxies:
   sni: hk.nfsn666.gq
   tls: false
   type: hysteria2
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 67
-  network: ws
-  port: 80
-  server: 1.65.139.23
-  server_url: 327f425b-t13gg0-taklwz-12bd.hk3.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0354 | 0.33MB
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0355 | 0.33MB
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0353 | 0.332MB
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-5124 | 0.034MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - alterId: 2
   cipher: auto
   name: 🇭🇰 香港家宽 60
@@ -113,6 +106,21 @@ proxies:
   type: vmess
   udp: true
   uuid: d6e1207c-f41a-11ef-9495-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 23
+  network: ws
+  port: 80
+  server: 1.65.139.23
+  server_url: b12b7ef9-t13gg0-t262pl-lnku.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fa77e1c2-8bb7-11ef-a5a7-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -134,15 +142,15 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 香港家宽 23
+  name: 🇭🇰 香港家宽 67
   network: ws
   port: 80
   server: 1.65.139.23
-  server_url: b12b7ef9-t13gg0-t262pl-lnku.hk3.p5pv.com
+  server_url: 327f425b-t13gg0-taklwz-12bd.hk3.p5pv.com
   tls: false
   type: vmess
   udp: true
-  uuid: fa77e1c2-8bb7-11ef-a5a7-f23c913c8d2b
+  uuid: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -161,6 +169,30 @@ proxies:
   server: 156.251.179.181
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 58
+  network: ws
+  port: 80
+  server: 1.65.139.23
+  server_url: 0f1c1477-t13gg0-t22v5r-1m0fq.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 香港
+  password: 38589924-caf7-4857-812b-80020febd3ff
+  port: 10880
+  server: 8.218.59.108
+  server_url: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  skip-cert-verify: true
+  sni: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  tls: false
+  type: hysteria2
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 05
   password: 941cbc4237e0
@@ -206,36 +238,6 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 香港家宽 58
-  network: ws
-  port: 80
-  server: 1.65.139.23
-  server_url: 0f1c1477-t13gg0-t22v5r-1m0fq.hk3.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 🇭🇰HK-194.104.147.74-057
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  skip-cert-verify: true
-  type: trojan
-- name: 香港
-  password: 38589924-caf7-4857-812b-80020febd3ff
-  port: 10880
-  server: 8.218.59.108
-  server_url: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
-  skip-cert-verify: true
-  sni: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
-  tls: false
-  type: hysteria2
-- alterId: 2
-  cipher: auto
   name: 🇭🇰 香港家宽 30
   network: ws
   port: 80
@@ -275,6 +277,57 @@ proxies:
   type: vmess
   udp: true
   uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 🇭🇰HK-194.104.147.74-057
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  port: 1066
+  server: 194.104.147.74
+  skip-cert-verify: true
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 41
+  network: ws
+  port: 80
+  server: 1.36.218.109
+  server_url: 3b872af5-t13gg0-t1z0ev-1ta58.hk.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e2d8b574-e089-11ef-9cc7-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 48
+  network: ws
+  port: 80
+  server: 1.36.218.109
+  server_url: 6de85190-t13gg0-tgl02u-1jr1u.hk.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 42
+  network: ws
+  port: 80
+  server: 1.65.139.23
+  server_url: b07b1178-t13gg0-t2l8w3-d32g.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 72bda932-979f-a008-de58-0dcb3b424cfe
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -330,17 +383,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: GoogleApi
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.google.com/generate_204
 - expected-status: 302
   include-all: true
   include-all-proxies: true
@@ -533,7 +575,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,self_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,✈️ 选择代理
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理

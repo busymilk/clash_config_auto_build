@@ -85,19 +85,6 @@ proxies:
     headers:
       Host: zoomgov.vipren.biz.id
     path: /112.162.27.122=50000
-- name: '🇰🇷 韩国 09 #2'
-  network: ws
-  port: 12196
-  server: 202.150.185.128
-  servername: jp.laoyoutiao.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /
 - name: 🇰🇷 韩国 24
   network: ws
   port: 50000
@@ -177,17 +164,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: GoogleApi
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.google.com/generate_204
 - expected-status: 302
   include-all: true
   include-all-proxies: true
@@ -380,7 +356,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,self_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,✈️ 选择代理
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理

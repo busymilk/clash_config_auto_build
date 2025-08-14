@@ -47,78 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0351 | 17.481MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE-46.165.194.90-0287 | 6.915MB
-  network: ws
-  port: 20086
-  server: 46.165.194.90
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f2a9f149-cb6a-4669-9097-2d8cb2d4ea7e
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE-46.165.194.96-0286 | 6.615MB
-  network: ws
-  port: 20086
-  server: 46.165.194.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0292 | 5.55MB
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0300 | 0.545MB
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0321 | 0.612MB
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0330 | 0.333MB
-  password: f63gg8EruDnUrmz4
-  port: 9010
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0338 | 0.53MB
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0326 | 0.343MB
-  password: a3GFYt36Sm82Vys9
-  port: 9000
-  server: 80.92.204.106
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-0364 | 0.367MB
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
 - client-fingerprint: chrome
   delay: 2318
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 2
@@ -151,6 +79,60 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-027
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-46.101.245.131-031
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE-46.165.194.96-0286 | 6.615MB
+  network: ws
+  port: 20086
+  server: 46.165.194.96
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0330 | 0.333MB
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0326 | 0.343MB
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0338 | 0.53MB
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0321 | 0.612MB
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0300 | 0.545MB
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
+  type: ss
 - alpn:
   - h3
   client-fingerprint: random
@@ -208,19 +190,6 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇩🇪 德国 12 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: randomized
   name: 🇩🇪 德国 41
   network: ws
@@ -235,6 +204,19 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '🇩🇪 德国 12 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: 🇩🇪 德国 43
   network: ws
   port: 443
@@ -248,16 +230,43 @@ proxies:
     headers:
       Host: JdYq2881Un.GhEiChI.oRg
     path: /
-- auth: e8db53c3-5b35-4044-9b77-fca87e1647af
-  name: 🇩🇪 德国 22
-  password: e8db53c3-5b35-4044-9b77-fca87e1647af
-  port: 22155
-  server: 213.108.198.123
-  server_url: hsdg.huasuan666.top
-  skip-cert-verify: true
-  sni: hsdg.huasuan666.top
-  type: hysteria2
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0283 | 1.419MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- name: '🇩🇪 德国 41 #2'
+  network: ws
+  port: 443
+  server: 104.18.26.90
+  servername: barayeiranmahsang.ghormehsabzi.dpdns.org
+  tls: true
+  type: vless
   udp: true
+  uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
+  ws-opts:
+    headers:
+      Host: barayeiranmahsang.ghormehsabzi.dpdns.org
+    path: /
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0340 | 0.124MB
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-2060 | 0.589MB
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
+  server: 80.92.204.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-84.200.91.228-0331 | 0.394MB
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
+  type: ss
 - name: 🇩🇪 德国 38
   network: ws
   port: 443
@@ -271,13 +280,6 @@ proxies:
     headers:
       Host: avtice.fullmargintraders.com
     path: /wsv/7f1c42b8-069d-4fbe-8cdc-0fc1a131c8a8
-- name: 🇩🇪DE-185.208.207.217-4933 | 0.172MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -329,17 +331,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: GoogleApi
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.google.com/generate_204
 - expected-status: 302
   include-all: true
   include-all-proxies: true
@@ -532,7 +523,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,self_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,✈️ 选择代理
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理

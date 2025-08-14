@@ -47,12 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0271 | 19.973MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 - name: 日本
   password: oATw4IRtuUOozpOLFflGnWjtg
   port: 18219
@@ -61,20 +55,11 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本2|@ripaojiedian
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0271 | 19.973MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇯🇵 日本 13
@@ -109,20 +94,6 @@ proxies:
   sni: x2-japan-amazon-v2.devefun.org
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本 01
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
-  udp: true
 - auth: 002f5b53-3bdd-4a20-9c6c-0e20486a57aa
   name: 🇯🇵 日本 14
   obfs: salamander
@@ -143,6 +114,32 @@ proxies:
   server_url: hsrb.huasuan666.top
   skip-cert-verify: true
   sni: hsrb.huasuan666.top
+  type: hysteria2
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本 01
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /bezradrqccl
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  type: ss
+  udp: true
+- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  name: 🇯🇵 日本 31
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  port: 33657
+  server: 212.192.221.221
+  server_url: rb.dport.top
+  skip-cert-verify: true
+  sni: rb.dport.top
   type: hysteria2
   udp: true
 proxy-groups:
@@ -196,17 +193,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: GoogleApi
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.google.com/generate_204
 - expected-status: 302
   include-all: true
   include-all-proxies: true
@@ -399,7 +385,7 @@ rules:
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
 - RULE-SET,geosite_connectivity_check,DIRECT
-- RULE-SET,self_gemini_site,GoogleApi
+- RULE-SET,self_gemini_site,✈️ 选择代理
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
