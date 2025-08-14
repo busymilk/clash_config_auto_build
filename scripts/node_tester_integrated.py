@@ -146,7 +146,7 @@ def main():
                 'external-controller': f'127.0.0.1:{api_port}',
                 'dns': {'enable': True, 'listen': '0.0.0.0:53', 'nameserver': ['8.8.8.8', '1.1.1.1'], 'fallback': []},
                 'proxies': all_proxies_data['proxies'],
-                'proxy-groups': [{'name': 'GLOBAL', 'type': 'select', 'proxies': [p['name'] for p in all_proxies_data['proxies']] if all_proxies_data['proxies'] else []}],
+                'proxy-groups': [{'name': 'GLOBAL', 'type': 'select', 'proxies': [p['name'] for p in all_proxies_data['proxies']] if all_proxies_data.get('proxies') else []}],
                 'rules': ['MATCH,GLOBAL']
             }
             with open(temp_config_path, 'w', encoding='utf-8') as f:
@@ -180,18 +180,18 @@ def main():
                 yaml.dump(output_data, f, allow_unicode=True)
             logging.info(f"测试完成！共找到 {len(final_healthy_proxies_data)} 个健康节点，已写入 {args.output_file}")
         else:
-            logging.warning("测试完成，没有找到任何健康节点。" )
+            logging.warning("测试完成，没有找到任何健康节点。")
 
-finally:
-    # --- 确保清理所有常驻进程和临时文件 ---
-    logging.info("开始清理和关闭所有 mihomo 工作进程...")
-    for p in worker_processes:
-        p.terminate()
-        p.wait()
-    logging.info(f"{len(worker_processes)} 个工作进程已关闭。")
-    if os.path.exists(temp_base_dir):
-        shutil.rmtree(temp_base_dir)
-        logging.info(f"已清理临时目录: {temp_base_dir}")
+    finally:
+        # --- 确保清理所有常驻进程和临时文件 ---
+        logging.info("开始清理和关闭所有 mihomo 工作进程...")
+        for p in worker_processes:
+            p.terminate()
+            p.wait()
+        logging.info(f"{len(worker_processes)} 个工作进程已关闭。")
+        if os.path.exists(temp_base_dir):
+            shutil.rmtree(temp_base_dir)
+            logging.info(f"已清理临时目录: {temp_base_dir}")
 
 if __name__ == "__main__":
     main()
