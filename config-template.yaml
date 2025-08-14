@@ -164,18 +164,6 @@ proxy-groups:
     max-failed-times: 2
     lazy: true
 
-  - name: GoogleApi #没办法，好多代理可以访问google，但是googleapis访问不了。。。
-    type: url-test # 通过 URL 测试选择延迟最低的节点
-    tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
-    include-all-proxies: true # 包含所有节点进行测试
-    include-all: true
-    url: "https://www.google.com/generate_204" # gstatic是访问cdn的，这个链接是用来访问主站的。
-    expected-status: 204 #
-    interval: 120 # 健康检查间隔（秒）
-    timeout: 3000 # 健康检查超时时间（毫秒）
-    max-failed-times: 2 # 最大失败次数
-    lazy: true # 懒加载，启动时不进行测试
-
   - name: Telegram #没办法，好多代理可以访问google，但是Telegram访问不了。。。
     type: url-test # 通过 URL 测试选择延迟最低的节点
     tolerance: 10 # 延迟容忍值（ms），当最优节点延迟与新节点差异小于此值时不切换
@@ -399,7 +387,7 @@ rules:
   - RULE-SET,geosite_connectivity_check,DIRECT
 #---------------------------------------------------------
 #特定域名
-  - RULE-SET,self_gemini_site,GoogleApi #Gemini用
+  - RULE-SET,self_gemini_site,✈️ 选择代理 #Gemini用
   - RULE-SET,geosite_apple,DIRECT
   - RULE-SET,geosite_bing,✈️ 选择代理
   - RULE-SET,geosite_google,✈️ 选择代理
