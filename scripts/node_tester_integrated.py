@@ -82,7 +82,6 @@ def main():
     parser.add_argument('--input-file', type=str, default=os.environ.get("ALL_PROXIES_FILE", "all_proxies.yaml"), help='包含所有节点的输入 YAML 文件路径')
     parser.add_argument('--output-file', type=str, default=os.environ.get("HEALTHY_PROXIES_FILE", "healthy_proxies.yaml"), help='用于保存健康节点的输出 YAML 文件路径')
     parser.add_argument('--clash-path', type=str, default=os.environ.get("MIHOMO_PATH", "./mihomo"), help='mihomo (Clash核心) 可执行文件的路径')
-    parser.add_argument('--base-config', type=str, default=os.environ.get("BASE_CONFIG_PATH", "config-template.yaml"), help='用于生成临时配置的基础模板文件路径')
     parser.add_argument('--clash-api-url', type=str, default=os.environ.get("CLASH_API_URL", "http://127.0.0.1:9090"), help='Clash RESTful API 的地址')
     parser.add_argument('--clash-proxy-url', type=str, default=f"http://127.0.0.1:{os.environ.get('CLASH_HTTP_PORT', 7890)}", help='Clash HTTP 代理的地址')
     parser.add_argument('--max-workers', type=int, default=int(os.environ.get("MAX_WORKERS", 100)), help='并发测试的最大线程数')
@@ -98,19 +97,41 @@ def main():
 
     # --- 启动主 Clash 进程 ---
     main_clash_process = None
+    main_config_path = "./temp_main_config_for_testing.yaml"
     try:
-        # 使用基础配置和所有节点来启动一个主 Clash 实例
-        with open(args.base_config, 'r', encoding='utf-8') as f:
-            base_config = yaml.safe_load(f)
+        # 动态生成一个干净的、用于测试的主配置文件
+        http_port = int(args.clash_proxy_url.split(':')[-1])
+        api_port = int(args.clash_api_url.split(':')[-1])
+        
+        base_config = {
+            'mixed-port': http_port,
+            'allow-lan': False,
+            'mode': 'rule',
+            'log-level': 'silent',
+            'external-controller': f'127.0.0.1:{api_port}',
+            'dns': {
+                'enable': True,
+                'listen': '0.0.0.0:53',
+                'nameserver': ['8.8.8.8', '1.1.1.1'],
+                'fallback': [],
+                'fake-ip-range': '198.18.0.1/16', # 保留以兼容某些客户端行为，但不使用 fake-ip-filter
+            },
+            'proxy-groups': [{'name': 'GLOBAL', 'type': 'select', 'proxies': []}],
+            'rules': ['MATCH,GLOBAL']
+        }
+
         with open(args.input_file, 'r', encoding='utf-8') as f:
             proxies_config = yaml.safe_load(f)
-        base_config['proxies'] = proxies_config['proxies']
         
-        main_config_path = "./temp_main_config.yaml"
+        base_config['proxies'] = proxies_config['proxies']
+        # 填充 GLOBAL 组，使其至少有一个有效节点以成功启动
+        if base_config['proxies']:
+            base_config['proxy-groups'][0]['proxies'] = [p['name'] for p in base_config['proxies']]
+
         with open(main_config_path, 'w', encoding='utf-8') as f:
             yaml.dump(base_config, f, allow_unicode=True)
 
-        logging.info("正在启动主 Clash 进程用于测试...")
+        logging.info("正在使用动态生成的干净配置启动主 Clash 进程...")
         cmd_main_clash = [args.clash_path, "-f", main_config_path]
         main_clash_process = subprocess.Popen(cmd_main_clash, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         time.sleep(3) # 等待主进程完全启动并开放 API 端口
@@ -118,13 +139,13 @@ def main():
 
     except Exception as e:
         logging.fatal(f"启动主 Clash 进程失败: {e}")
+        if main_clash_process: main_clash_process.terminate()
+        if os.path.exists(main_config_path): os.remove(main_config_path)
         return
 
     # --- 执行并行测试 ---
     try:
-        with open(args.input_file, 'r', encoding='utf-8') as f:
-            all_proxies_data = yaml.safe_load(f)
-        proxy_names = [p['name'] for p in all_proxies_data['proxies']]
+        proxy_names = [p['name'] for p in proxies_config['proxies']]
         logging.info(f"共找到 {len(proxy_names)} 个待测试节点")
         logging.info(f"测试将以 {args.max_workers} 个并行工作线程运行，但对 Clash API 的调用将通过锁进行串行化。")
 
@@ -141,7 +162,7 @@ def main():
                     logging.error(f"一个测试任务执行时出现异常: {e}")
 
         if healthy_proxies:
-            original_proxies_map = {p['name']: p for p in all_proxies_data['proxies']}
+            original_proxies_map = {p['name']: p for p in proxies_config['proxies']}
             final_healthy_proxies_data = [original_proxies_map[p['name']] for p in healthy_proxies if p['name'] in original_proxies_map]
             
             output_data = {'proxies': final_healthy_proxies_data}
@@ -158,8 +179,8 @@ def main():
             main_clash_process.terminate()
             main_clash_process.wait()
             logging.info("主 Clash 进程已关闭。")
-        if os.path.exists("./temp_main_config.yaml"):
-            os.remove("./temp_main_config.yaml")
+        if os.path.exists(main_config_path):
+            os.remove(main_config_path)
 
 if __name__ == "__main__":
     main()
