@@ -47,6 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- client-fingerprint: chrome
+  name: 🇰🇷 韩国 02
+  network: ws
+  port: 11075
+  server: 118.42.233.191
+  servername: jp.laoyoutiao.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram@freecodes/
 - cipher: aes-256-cfb
   name: 🇰🇷KR-154.90.63.177-0359 | 0.218MB
   password: f8f7aCzcPKbsF8p3
@@ -59,32 +73,6 @@ proxies:
   port: 989
   server: 154.90.62.168
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷KR-183.109.131.75-4966 | 0.051MB
-  network: ws
-  port: 20086
-  server: 183.109.131.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
-  name: 🇰🇷 韩国 20
-  network: ws
-  port: 50000
-  server: 112.162.27.122
-  servername: zoomgov.vipren.biz.id
-  tls: true
-  type: vless
-  udp: true
-  uuid: 101bbfad-fb11-4e99-9b66-b11659c26cff
-  ws-opts:
-    headers:
-      Host: zoomgov.vipren.biz.id
-    path: /112.162.27.122=50000
 - name: 🇰🇷 韩国 24
   network: ws
   port: 50000
@@ -100,19 +88,19 @@ proxies:
       Host: test.saas.cname.123153.xyz
     path: /snippets
 - client-fingerprint: chrome
-  name: 🇰🇷 韩国 18
+  name: 🇰🇷 韩国 20
   network: ws
-  port: 11075
-  server: 118.42.233.191
-  servername: jp.laoyoutiao.link
+  port: 50000
+  server: 112.162.27.122
+  servername: zoomgov.vipren.biz.id
   tls: true
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 101bbfad-fb11-4e99-9b66-b11659c26cff
   ws-opts:
     headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@freecodes/
+      Host: zoomgov.vipren.biz.id
+    path: /112.162.27.122=50000
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -164,28 +152,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 302
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: Telegram
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://api.telegram.org
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: v2ex
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.v2ex.com/generate_204
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr
@@ -349,8 +315,8 @@ rules:
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
-- PROCESS-NAME,Telegram,Telegram
-- DOMAIN-SUFFIX,v2ex.com,v2ex
+- PROCESS-NAME,Telegram,✈️ 选择代理
+- DOMAIN-SUFFIX,v2ex.com,✈️ 选择代理
 - DOMAIN-KEYWORD,alibaba-cn,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
@@ -360,7 +326,7 @@ rules:
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
-- RULE-SET,geosite_telegram,Telegram
+- RULE-SET,geosite_telegram,✈️ 选择代理
 - RULE-SET,loy_gfw,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
@@ -369,7 +335,7 @@ rules:
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
-- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
+- RULE-SET,geoip_telegram_ip,✈️ 选择代理,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT,no-resolve
 - MATCH,✈️ 选择代理
 sniffer:

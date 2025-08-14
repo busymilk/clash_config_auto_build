@@ -47,11 +47,11 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-034
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.80-0250 | 34.382MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-0061 | 34.387MB
@@ -60,28 +60,10 @@ proxies:
   server: 212.102.53.194
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.80-0250 | 34.382MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.198-0229 | 34.104MB
   password: shadowsocks
   port: 443
   server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.81-0223 | 33.815MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.195-0226 | 33.721MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.78-0233 | 33.805MB
@@ -90,10 +72,22 @@ proxies:
   server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0238 | 32.045MB
+  name: 🇬🇧GB-212.102.53.195-0226 | 33.721MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.196
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.79-0241 | 33.608MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-0265 | 33.623MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-85.210.120.237-0244 | 32.014MB
@@ -102,10 +96,10 @@ proxies:
   server: 85.210.120.237
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.197-0236 | 26.775MB
+  name: 🇬🇧GB-212.102.53.196-0238 | 32.045MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.197
+  server: 212.102.53.196
   type: ss
 - alterId: 0
   cipher: auto
@@ -120,10 +114,28 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.193-0265 | 33.623MB
+  name: 🇬🇧GB-212.102.53.197-0236 | 26.775MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.193
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.178-0318 | 25.679MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0223 | 33.815MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-46.226.163.225-0240 | 0.502MB
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
   type: ss
 - alterId: 0
   cipher: auto
@@ -170,12 +182,6 @@ proxies:
     headers:
       Host: lease-19.access.name.ng
     path: /
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.79-0241 | 33.608MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -227,28 +233,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 302
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: Telegram
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://api.telegram.org
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: v2ex
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.v2ex.com/generate_204
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr
@@ -412,8 +396,8 @@ rules:
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
-- PROCESS-NAME,Telegram,Telegram
-- DOMAIN-SUFFIX,v2ex.com,v2ex
+- PROCESS-NAME,Telegram,✈️ 选择代理
+- DOMAIN-SUFFIX,v2ex.com,✈️ 选择代理
 - DOMAIN-KEYWORD,alibaba-cn,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
@@ -423,7 +407,7 @@ rules:
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
-- RULE-SET,geosite_telegram,Telegram
+- RULE-SET,geosite_telegram,✈️ 选择代理
 - RULE-SET,loy_gfw,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
@@ -432,7 +416,7 @@ rules:
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
-- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
+- RULE-SET,geoip_telegram_ip,✈️ 选择代理,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT,no-resolve
 - MATCH,✈️ 选择代理
 sniffer:

@@ -55,6 +55,21 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0271 | 19.973MB
   password: shadowsocks
@@ -116,6 +131,18 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
+- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  name: 🇯🇵 日本 31
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  port: 33657
+  server: 212.192.221.221
+  server_url: rb.dport.top
+  skip-cert-verify: true
+  sni: rb.dport.top
+  type: hysteria2
+  udp: true
 - cipher: aes-256-gcm
   name: 🇯🇵 日本 01
   password: 70a0b8103356
@@ -129,18 +156,6 @@ proxies:
   port: 636
   server: 137.220.142.139
   type: ss
-  udp: true
-- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  name: 🇯🇵 日本 31
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  port: 33657
-  server: 212.192.221.221
-  server_url: rb.dport.top
-  skip-cert-verify: true
-  sni: rb.dport.top
-  type: hysteria2
   udp: true
 proxy-groups:
 - name: ✈️ 选择代理
@@ -193,28 +208,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 302
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: Telegram
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://api.telegram.org
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: v2ex
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.v2ex.com/generate_204
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr
@@ -378,8 +371,8 @@ rules:
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
-- PROCESS-NAME,Telegram,Telegram
-- DOMAIN-SUFFIX,v2ex.com,v2ex
+- PROCESS-NAME,Telegram,✈️ 选择代理
+- DOMAIN-SUFFIX,v2ex.com,✈️ 选择代理
 - DOMAIN-KEYWORD,alibaba-cn,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
@@ -389,7 +382,7 @@ rules:
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
-- RULE-SET,geosite_telegram,Telegram
+- RULE-SET,geosite_telegram,✈️ 选择代理
 - RULE-SET,loy_gfw,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
@@ -398,7 +391,7 @@ rules:
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
-- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
+- RULE-SET,geoip_telegram_ip,✈️ 选择代理,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT,no-resolve
 - MATCH,✈️ 选择代理
 sniffer:

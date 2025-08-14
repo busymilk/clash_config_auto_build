@@ -47,27 +47,16 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-015
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0180 | 49.349MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0178 | 70.902MB
   password: f8f7aCzcPKbsF8p3
   port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0180 | 49.349MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -76,6 +65,14 @@ proxies:
   port: 80
   server: 142.4.216.225
   type: ss
+- cipher: aes-256-cfb
+  name: SSR-加拿大-79.127.233.170:989
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
 - alpn:
   - h3
   auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
@@ -145,28 +142,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 302
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: Telegram
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://api.telegram.org
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: v2ex
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.v2ex.com/generate_204
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr
@@ -330,8 +305,8 @@ rules:
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
-- PROCESS-NAME,Telegram,Telegram
-- DOMAIN-SUFFIX,v2ex.com,v2ex
+- PROCESS-NAME,Telegram,✈️ 选择代理
+- DOMAIN-SUFFIX,v2ex.com,✈️ 选择代理
 - DOMAIN-KEYWORD,alibaba-cn,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
@@ -341,7 +316,7 @@ rules:
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
-- RULE-SET,geosite_telegram,Telegram
+- RULE-SET,geosite_telegram,✈️ 选择代理
 - RULE-SET,loy_gfw,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
@@ -350,7 +325,7 @@ rules:
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
-- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
+- RULE-SET,geoip_telegram_ip,✈️ 选择代理,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT,no-resolve
 - MATCH,✈️ 选择代理
 sniffer:

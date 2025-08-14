@@ -63,26 +63,21 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 新加坡3|@ripaojiedian
-  network: tcp
-  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
-  port: 25010
-  server: 8.148.194.255
+- auth: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  name: 🇸🇬 新加坡 02
+  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  port: 30308
+  server: 47.236.104.81
   skip-cert-verify: true
-  type: trojan
-- name: 🇸🇬 新加坡 25
-  network: ws
-  port: 443
-  server: 108.162.194.231
-  servername: rs-sg4.lzjnb.shop
-  tls: true
-  type: vless
+  sni: bing.com
+  type: hysteria2
   udp: true
-  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
-  ws-opts:
-    headers:
-      Host: rs-sg4.lzjnb.shop
-    path: /lzj
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-4952 | 0.311MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -96,6 +91,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
+- name: 🇸🇬 新加坡 25
+  network: ws
+  port: 443
+  server: 108.162.194.231
+  servername: rs-sg4.lzjnb.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
+  ws-opts:
+    headers:
+      Host: rs-sg4.lzjnb.shop
+    path: /lzj
 - name: '🇸🇬 新加坡 09 #2'
   network: ws
   password: ttfang
@@ -160,28 +168,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 302
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: Telegram
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://api.telegram.org
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: v2ex
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.v2ex.com/generate_204
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr
@@ -345,8 +331,8 @@ rules:
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
-- PROCESS-NAME,Telegram,Telegram
-- DOMAIN-SUFFIX,v2ex.com,v2ex
+- PROCESS-NAME,Telegram,✈️ 选择代理
+- DOMAIN-SUFFIX,v2ex.com,✈️ 选择代理
 - DOMAIN-KEYWORD,alibaba-cn,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
@@ -356,7 +342,7 @@ rules:
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
-- RULE-SET,geosite_telegram,Telegram
+- RULE-SET,geosite_telegram,✈️ 选择代理
 - RULE-SET,loy_gfw,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
@@ -365,7 +351,7 @@ rules:
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
-- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
+- RULE-SET,geoip_telegram_ip,✈️ 选择代理,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT,no-resolve
 - MATCH,✈️ 选择代理
 sniffer:

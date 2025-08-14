@@ -63,31 +63,25 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: 'Channel id: @ShadowProxy66🇭🇰 #3'
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0354 | 0.33MB
-  password: ljqdalu13..
-  port: 8319
-  server: 18.162.146.85
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 04
+  password: 941cbc4237e0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kh36v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /tkzhhylcfuf
+    tls: true
+  port: 636
+  server: 121.127.231.239
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0355 | 0.33MB
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0353 | 0.332MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
+  udp: true
+- cipher: chacha20-ietf
+  name: 🇭🇰HK-103.149.183.61-0301 | 1.538MB
+  password: asd123456
+  port: 8388
+  server: 103.149.183.61
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-203.23.128.33-5124 | 0.034MB
@@ -95,21 +89,6 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 60
-  network: ws
-  port: 80
-  server: 58.153.123.135
-  server_url: hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d6e1207c-f41a-11ef-9495-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 2
   cipher: auto
   name: 🇭🇰 香港家宽 23
@@ -155,20 +134,30 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 11
-  password: 23d03aa704c7
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: cmihk3v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /grqhyifio
-    tls: true
-  port: 636
-  server: 156.251.179.181
-  type: ss
+- name: 香港
+  password: 38589924-caf7-4857-812b-80020febd3ff
+  port: 10880
+  server: 8.218.59.108
+  server_url: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  skip-cert-verify: true
+  sni: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  tls: false
+  type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 60
+  network: ws
+  port: 80
+  server: 58.153.123.135
+  server_url: hkt.gotochinatown.net
+  tls: false
+  type: vmess
   udp: true
+  uuid: d6e1207c-f41a-11ef-9495-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 2
   cipher: auto
   name: 🇭🇰 香港家宽 58
@@ -180,58 +169,6 @@ proxies:
   type: vmess
   udp: true
   uuid: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: 香港
-  password: 38589924-caf7-4857-812b-80020febd3ff
-  port: 10880
-  server: 8.218.59.108
-  server_url: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
-  skip-cert-verify: true
-  sni: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
-  tls: false
-  type: hysteria2
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 05
-  password: 941cbc4237e0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kh36v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /tkzhhylcfuf
-    tls: true
-  port: 636
-  server: 121.127.231.239
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 02
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    tls: true
-  port: 636
-  server: 156.251.179.136
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 15
-  network: ws
-  port: 80
-  server: 1.65.139.23
-  server_url: 7fad58f0-t13gg0-t3gspm-20qs.hk3.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -281,12 +218,6 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: 🇭🇰HK-194.104.147.74-057
-  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
-  port: 1066
-  server: 194.104.147.74
-  skip-cert-verify: true
-  type: trojan
 - alterId: 2
   cipher: auto
   name: 🇭🇰 香港家宽 41
@@ -332,6 +263,55 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 11
+  password: 23d03aa704c7
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: cmihk3v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /grqhyifio
+    tls: true
+  port: 636
+  server: 156.251.179.181
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 02
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: 636
+  server: 156.251.179.136
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 15
+  network: ws
+  port: 80
+  server: 1.65.139.23
+  server_url: 7fad58f0-t13gg0-t3gspm-20qs.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 🇭🇰HK-194.104.147.74-057
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  port: 1066
+  server: 194.104.147.74
+  skip-cert-verify: true
+  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -383,28 +363,6 @@ proxy-groups:
   timeout: 3000
   type: select
   url: https://cp.cloudflare.com/generate_204
-- expected-status: 302
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: Telegram
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://api.telegram.org
-- expected-status: 204
-  include-all: true
-  include-all-proxies: true
-  interval: 120
-  lazy: true
-  max-failed-times: 2
-  name: v2ex
-  timeout: 3000
-  tolerance: 10
-  type: url-test
-  url: https://www.v2ex.com/generate_204
 rule-providers:
   geoip_cn_ip:
     behavior: ipcidr
@@ -568,8 +526,8 @@ rules:
 - DOMAIN-SUFFIX,akfamily.xyz,DIRECT
 - DOMAIN,shared.cdn.queniuqe.com,DIRECT
 - DOMAIN-SUFFIX,1fichier.com,DIRECT
-- PROCESS-NAME,Telegram,Telegram
-- DOMAIN-SUFFIX,v2ex.com,v2ex
+- PROCESS-NAME,Telegram,✈️ 选择代理
+- DOMAIN-SUFFIX,v2ex.com,✈️ 选择代理
 - DOMAIN-KEYWORD,alibaba-cn,DIRECT
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
@@ -579,7 +537,7 @@ rules:
 - RULE-SET,geosite_apple,DIRECT
 - RULE-SET,geosite_bing,✈️ 选择代理
 - RULE-SET,geosite_google,✈️ 选择代理
-- RULE-SET,geosite_telegram,Telegram
+- RULE-SET,geosite_telegram,✈️ 选择代理
 - RULE-SET,loy_gfw,✈️ 选择代理
 - RULE-SET,other_ssk_global_non_ip,✈️ 选择代理
 - RULE-SET,geosite_@cn_domains,DIRECT
@@ -588,7 +546,7 @@ rules:
 - RULE-SET,geosite_cn,DIRECT
 - RULE-SET,geoip_lan_ip,DIRECT,no-resolve
 - RULE-SET,other_ssk_lan_ip,DIRECT,no-resolve
-- RULE-SET,geoip_telegram_ip,Telegram,no-resolve
+- RULE-SET,geoip_telegram_ip,✈️ 选择代理,no-resolve
 - RULE-SET,geoip_cn_ip,DIRECT,no-resolve
 - MATCH,✈️ 选择代理
 sniffer:
