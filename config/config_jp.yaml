@@ -47,23 +47,34 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-128-gcm
+  name: '[537ms] 🇯🇵JP-149.22.87.204-0239 | 27.123MB'
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[354ms] 🇯🇵 日本 13'
+  name: '[552ms] 🇯🇵 日本 13'
   password: 799511fd-fd75-44f9-993b-e8a4b8a8a620
   port: 12378
   server: 23.27.201.149
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: '[356ms] 🇯🇵JP-149.22.87.204-0239 | 27.123MB'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
+- country: 🇯🇵JP
+  delay: 2822
+  name: '[670ms] 日本 - 东京 - Amazon Technologies Inc. - 1'
+  password: 0xC6Mws4Dg
+  port: 1935
+  server: 54.168.52.254
+  server_url: x2-japan-amazon-v2.devefun.org
+  skip-cert-verify: true
+  sni: x2-japan-amazon-v2.devefun.org
+  type: trojan
+  udp: true
 - alterId: '2'
   cipher: auto
   delay: 767
-  name: '[465ms] 日本 - Chiyoda City - GMO GlobalSign Holdings K.K. - 11'
+  name: '[684ms] 日本 - Chiyoda City - GMO GlobalSign Holdings K.K. - 11'
   network: ws
   port: 10001
   server: 153.122.118.128
@@ -75,18 +86,7 @@ proxies:
     headers:
       Host: download.visualstudio.microsoft.com
     path: /download/pr/9b564b8a-a26d-4bb3-8f30-1101ae71a55a/2cee4f9e4c0e77e3d0f866fdf690864e/windowsdesktop-runtime-5.0.8-win-x64.exe
-- country: 🇯🇵JP
-  delay: 2822
-  name: '[467ms] 日本 - 东京 - Amazon Technologies Inc. - 1'
-  password: 0xC6Mws4Dg
-  port: 1935
-  server: 54.168.52.254
-  server_url: x2-japan-amazon-v2.devefun.org
-  skip-cert-verify: true
-  sni: x2-japan-amazon-v2.devefun.org
-  type: trojan
-  udp: true
-- name: '[506ms] 🇯🇵_日本 #2'
+- name: '[725ms] 🇯🇵_日本 #2'
   network: ws
   port: 47001
   server: 158.101.154.245
@@ -100,7 +100,7 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[522ms] 🇯🇵_日本_2 #2'
+- name: '[751ms] 🇯🇵_日本_2 #2'
   network: ws
   port: 443
   server: 168.138.46.67
@@ -114,30 +114,8 @@ proxies:
     headers:
       host: edgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[605ms] 日本'
-  password: oATw4IRtuUOozpOLFflGnWjtg
-  port: 18219
-  server: 52.193.71.150
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- cipher: aes-256-gcm
-  name: '[813ms] 🇯🇵 日本 01'
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
-  udp: true
 - delay: 492
-  name: '[846ms] 日本 - 福岡市 - Cloudflare, Inc. - 47'
+  name: '[1184ms] 日本 - 福岡市 - Cloudflare, Inc. - 47'
   network: ws
   password: Aimer
   port: 17000
@@ -150,7 +128,7 @@ proxies:
     headers:
       Host: epgb.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[895ms] 🇯🇵 日本 15'
+- name: '[1218ms] 🇯🇵 日本 15'
   network: ws
   password: Aimer
   port: 12367
@@ -165,16 +143,30 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: chacha20-ietf-poly1305
   delay: 685
-  name: '[1229ms] 日本 - 东京 - Akile LTD - 10'
+  name: '[1418ms] 日本 - 东京 - Akile LTD - 10'
   password: 628726b8-9371-4bdd-aab5-d864a492a492
   port: 35794
   server: 183.240.227.188
   server_url: t1.fttos.xyz
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: '[3239ms] 🇯🇵 日本 01'
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /bezradrqccl
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   delay: 1023
-  name: '[1967ms] 日本 - 东京 - Akile LTD - 9'
+  name: '[3299ms] 日本 - 东京 - Akile LTD - 9'
   password: 628726b8-9371-4bdd-aab5-d864a492a492
   port: 35782
   server: 183.240.227.188
