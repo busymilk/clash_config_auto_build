@@ -48,22 +48,8 @@ profile:
   store-selected: false
 proxies:
 - client-fingerprint: chrome
-  name: '[72ms] 🇩🇪 德国 29'
-  network: ws
-  port: 443
-  server: 104.18.26.90
-  servername: barayeiranmahsang.juveitaly.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: dfdf1c0a-5e52-4746-88bd-19d4e4ac7853
-  ws-opts:
-    headers:
-      Host: barayeiranmahsang.juveitaly.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: chrome
   delay: 2318
-  name: '[87ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 2'
+  name: '[139ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 2'
   network: ws
   password: bpb-trojan
   port: 443
@@ -79,10 +65,37 @@ proxies:
         Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
     max-early-data: 2560
     path: /tr
+- name: '[147ms] 🇩🇪 德国 70'
+  network: ws
+  password: Aimer
+  port: 2096
+  server: 172.67.70.33
+  skip-cert-verify: true
+  sni: epgb.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgb.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: random
+  name: '[157ms] 🇩🇪 德国 71'
+  network: ws
+  port: 443
+  server: 104.18.26.90
+  servername: barayeiranmahsang.varzesh.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 68b48eeb-5770-4eb3-9b77-deeb77a41ccf
+  ws-opts:
+    headers:
+      Host: barayeiranmahsang.varzesh.dpdns.org
+    path: /Join---hibyevpn---Join---hibyevpn---Join---hibyevpn
 - alpn:
   - h3
   client-fingerprint: random
-  name: '[115ms] 🇩🇪 德国 17'
+  name: '[160ms] 🇩🇪 德国 55'
   network: ws
   port: 2096
   server: 162.159.153.222
@@ -95,62 +108,22 @@ proxies:
     headers:
       Host: wxf838.sbs
     path: /?proxyip=proxyip.fxxk.dedyn.io
-- client-fingerprint: randomized
-  name: '[163ms] 🇩🇪 德国 01'
-  network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: randomized
-  name: '[172ms] 🇩🇪 德国 09'
-  network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '[188ms] 🇩🇪 德国 12 #2'
+- name: '[168ms] 🇩🇪 德国 04'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
+  port: 2053
+  server: 162.159.129.11
   skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
+  sni: vle.amclubsvip.dpdns.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: vle.amclubssss.dpdns.org
+      Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- cipher: chacha20-ietf-poly1305
-  name: '[281ms] SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866'
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[284ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456'
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
 - client-fingerprint: chrome
   delay: 2252
-  name: '[288ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 111'
+  name: '[186ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 111'
   network: ws
   password: trojan
   port: 8443
@@ -164,45 +137,22 @@ proxies:
       User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
         Gecko) Chrome/11.0.696.3 Safari/534.24
     path: /
-- cipher: aes-256-cfb
-  name: '[301ms] 🇩🇪DE-80.92.204.106-0376 | 0.565MB'
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: '[306ms] 🇩🇪DE-80.92.204.106-0366 | 0.192MB'
-  password: TN2YqghxeFDKZfLU
-  port: 9037
-  server: 80.92.204.106
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '[310ms] SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354'
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- name: '[314ms] 🇩🇪 德国 04'
+- client-fingerprint: randomized
+  name: '[189ms] 🇩🇪 德国 41'
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
-  skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
   udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
   ws-opts:
     headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- cipher: aes-256-cfb
-  name: '[340ms] 🇩🇪DE-80.92.204.106-0362 | 0.51MB'
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
-  server: 80.92.204.106
-  type: ss
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - delay: 1596
-  name: '[355ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 43'
+  name: '[213ms] 德国 - 德赖艾希 - Cloudflare, Inc. - 43'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 443
@@ -215,33 +165,102 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- client-fingerprint: randomized
+  name: '[234ms] 🇩🇪 德国 01'
+  network: ws
+  port: 2053
+  server: 162.159.129.11
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '[298ms] 🇩🇪 德国 12 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - cipher: aes-256-cfb
-  name: '[355ms] 🇩🇪DE-80.92.204.106-0361 | 0.53MB'
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
+  name: '[350ms] 🇩🇪DE-80.92.204.106-5068 | 1.172MB'
+  password: ZET59LF6DvCC8KVt
+  port: 9005
   server: 80.92.204.106
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[366ms] 🇩🇪DE-84.200.91.228-4840 | 5.539MB'
+  name: '[350ms] 🇩🇪DE-84.200.91.228-0252 | 0.853MB'
   password: 5ZQh4pssSk4aK1JG1XhBRg
   port: 1080
   server: 84.200.91.228
   type: ss
+- cipher: aes-256-cfb
+  name: '[356ms] 🇩🇪DE-80.92.204.106-5116 | 1.209MB'
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: '[356ms] 🇩🇪DE-80.92.204.106-5069 | 0.68MB'
+  password: VP8ZPxQpJtZRCjfZ
+  port: 9080
+  server: 80.92.204.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[365ms] 🇩🇪DE-46.101.245.131-033'
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[367ms] 🇩🇪DE-147.45.178.200-024'
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: aes-256-cfb
+  name: '[367ms] 🇩🇪DE-80.92.204.106-5071 | 0.9MB'
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 80.92.204.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '[376ms] 🇩🇪DE-185.177.229.245-029'
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: aes-256-cfb
+  name: '[393ms] 🇩🇪DE-80.92.204.106-0308 | 1.765MB'
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: '[398ms] 🇩🇪DE-80.92.204.106-0282 | 0.682MB'
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 80.92.204.106
+  type: ss
+- cipher: aes-256-cfb
+  name: '[405ms] 🇩🇪DE-80.92.204.106-5067 | 0.95MB'
+  password: a3GFYt36Sm82Vys9
+  port: 9000
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '[402ms] 🇩🇪DE-46.165.194.96-0332 | 5.195MB'
-  network: ws
-  port: 20086
-  server: 46.165.194.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '[404ms] 🇩🇪DE-46.165.194.90-0331 | 5.298MB'
+  name: '[491ms] 🇩🇪DE-46.165.194.90-0253 | 6.96MB'
   network: ws
   port: 20086
   server: 46.165.194.90
@@ -253,7 +272,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '[411ms] 🇩🇪DE-91.99.185.216-0275 | 17.232MB'
+  name: '[492ms] 🇩🇪DE-46.165.194.96-0255 | 7.245MB'
+  network: ws
+  port: 20086
+  server: 46.165.194.96
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '[512ms] 🇩🇪DE-91.99.185.216-0275 | 17.232MB'
   network: ws
   port: 20086
   server: 91.99.185.216
@@ -263,39 +294,45 @@ proxies:
   uuid: 7bd6a1ea-a220-4f1c-afed-6cfb8ab96ad9
   ws-opts:
     path: /
+- name: '[540ms] 🇩🇪DE-185.208.207.217-4933 | 0.172MB'
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
 - cipher: rc4-md5
-  name: '[453ms] 🇩🇪DE-193.108.119.230-4839 | 1.004MB'
+  name: '[646ms] 🇩🇪DE-193.108.119.230-0274 | 8.998MB'
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
-- http-opts:
-    headers:
-      Host:
-      - filimo.com
-    method: GET
-    path:
-    - /
-  name: '[1009ms] 🇩🇪 德国 10'
-  network: http
-  port: 2083
-  server: 109.94.164.184
-  server_url: germany1.premiumiran.top
-  servername: filimo.com
-  tls: false
+- name: '[837ms] 🇩🇪 德国 43'
+  network: ws
+  port: 443
+  server: 104.19.144.33
+  servername: JdYq2881Un.GhEiChI.oRg
+  tls: true
   type: vless
   udp: true
-  uuid: 59290e80-153b-4d2c-8a5b-8a1922608832
-- cipher: chacha20-ietf-poly1305
-  delay: 793
-  name: '[3424ms] 德国 - 法兰克福 - Dominic Scholz trading as ITP-Solutions GmbH & Co. KG
-    - 15'
-  password: 628726b8-9371-4bdd-aab5-d864a492a492
-  port: 35789
-  server: 183.240.227.188
-  server_url: t1.fttos.xyz
-  type: ss
+  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
+  ws-opts:
+    headers:
+      Host: JdYq2881Un.GhEiChI.oRg
+    path: /
+- name: '[1342ms] 🇩🇪 德国 38'
+  network: ws
+  port: 443
+  server: 104.21.36.57
+  servername: avtice.fullmargintraders.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 7f1c42b8-069d-4fbe-8cdc-0fc1a131c8a8
+  ws-opts:
+    headers:
+      Host: avtice.fullmargintraders.com
+    path: /wsv/7f1c42b8-069d-4fbe-8cdc-0fc1a131c8a8
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
