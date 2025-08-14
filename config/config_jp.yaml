@@ -48,32 +48,45 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: '[365ms] 🇯🇵JP-149.22.87.204-0197 | 18.908MB'
+  name: 🇯🇵JP-149.22.87.204-0271 | 19.973MB
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
+- name: 日本
+  password: oATw4IRtuUOozpOLFflGnWjtg
+  port: 18219
+  server: 52.193.71.150
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '[429ms] 🇯🇵 日本 13'
+  name: 🇯🇵 日本 13
   password: 799511fd-fd75-44f9-993b-e8a4b8a8a620
   port: 12378
   server: 23.27.201.149
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  delay: 670
-  name: '[474ms] 日本 - 东京 - Amazon Technologies Inc. - 56'
-  port: 10202
-  server: 52.199.230.47
-  server_url: tls.85.node-for-bigairport.win
-  type: vmess
-  udp: true
-  uuid: 792e0bdb-01db-450c-94c4-925151eb396e
 - alterId: '2'
   cipher: auto
   delay: 767
-  name: '[480ms] 日本 - Chiyoda City - GMO GlobalSign Holdings K.K. - 11'
+  name: 日本 - Chiyoda City - GMO GlobalSign Holdings K.K. - 11
   network: ws
   port: 10001
   server: 153.122.118.128
@@ -87,7 +100,7 @@ proxies:
     path: /download/pr/9b564b8a-a26d-4bb3-8f30-1101ae71a55a/2cee4f9e4c0e77e3d0f866fdf690864e/windowsdesktop-runtime-5.0.8-win-x64.exe
 - country: 🇯🇵JP
   delay: 2822
-  name: '[481ms] 日本 - 东京 - Amazon Technologies Inc. - 1'
+  name: 日本 - 东京 - Amazon Technologies Inc. - 1
   password: 0xC6Mws4Dg
   port: 1935
   server: 54.168.52.254
@@ -96,16 +109,8 @@ proxies:
   sni: x2-japan-amazon-v2.devefun.org
   type: trojan
   udp: true
-- name: '[729ms] 日本'
-  password: oATw4IRtuUOozpOLFflGnWjtg
-  port: 18219
-  server: 52.193.71.150
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - cipher: aes-256-gcm
-  name: '[1076ms] 🇯🇵 日本 01'
+  name: 🇯🇵 日本 01
   password: 70a0b8103356
   plugin: v2ray-plugin
   plugin-opts:
@@ -119,7 +124,7 @@ proxies:
   type: ss
   udp: true
 - auth: 002f5b53-3bdd-4a20-9c6c-0e20486a57aa
-  name: '[3263ms] 🇯🇵 日本 14'
+  name: 🇯🇵 日本 14
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 002f5b53-3bdd-4a20-9c6c-0e20486a57aa
@@ -128,6 +133,16 @@ proxies:
   server_url: nexiarb.688997.xyz
   skip-cert-verify: true
   sni: nexiarb.688997.xyz
+  type: hysteria2
+  udp: true
+- auth: 1acd1a12-bc74-452a-999f-539f4d492c6d
+  name: 🇯🇵 日本 37
+  password: 1acd1a12-bc74-452a-999f-539f4d492c6d
+  port: 22161
+  server: 212.192.221.221
+  server_url: hsrb.huasuan666.top
+  skip-cert-verify: true
+  sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
 proxy-groups:
