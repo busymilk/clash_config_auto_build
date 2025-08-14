@@ -47,8 +47,21 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: '[788ms] 🇹🇼 台湾 02'
+  network: ws
+  password: ttfang
+  port: 81
+  server: 220.135.202.250
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: '[1896ms] 🇨🇳TW-223.165.4.173-5138 | 0.324MB'
+  name: '[3752ms] 🇨🇳TW-223.165.4.173-5138 | 0.324MB'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 223.165.4.173
