@@ -14,46 +14,52 @@ logging.basicConfig(level=os.environ.get("LOG_LEVEL", "INFO"), format='%(asctime
 
 # --- 核心测试逻辑 ---
 
-def run_node_test_pipeline(proxy_name: str, port: int, temp_dir: str, args: argparse.Namespace) -> tuple[str, bool]:
+def run_node_test_pipeline(proxy_name: str, port_queue: Queue, temp_dir: str, args: argparse.Namespace) -> tuple[str, bool]:
     """
     为单个节点启动独立的 mihomo 进程，并执行两阶段测试。
+    此函数由线程池中的工作线程执行。
     """
-    temp_config_path = os.path.join(temp_dir, f"config_{port}.yaml")
-    temp_mihomo_data_dir = os.path.join(temp_dir, f"data_{port}")
-    os.makedirs(temp_mihomo_data_dir, exist_ok=True)
-
-    # 1. 为该节点动态生成配置文件
-    try:
-        with open(args.base_config, 'r', encoding='utf-8') as f:
-            base_config = yaml.safe_load(f)
-        with open(args.input_file, 'r', encoding='utf-8') as f:
-            proxies_config = yaml.safe_load(f)
-
-        base_config['proxies'] = proxies_config['proxies']
-        proxy_group_name = f"test_group_{port}"
-        base_config['proxy-groups'].insert(0, {
-            'name': proxy_group_name,
-            'type': 'select',
-            'proxies': [proxy_name]
-        })
-        base_config['rules'] = [f'MATCH,{proxy_group_name}']
-        base_config['mixed-port'] = port
-        if 'external-controller' in base_config:
-            del base_config['external-controller']
-
-        with open(temp_config_path, 'w', encoding='utf-8') as f:
-            yaml.dump(base_config, f, allow_unicode=True)
-
-    except Exception as e:
-        logging.error(f"节点 {proxy_name}: 生成配置文件失败: {e}")
-        return proxy_name, False
-
-    # 2. 启动独立的 mihomo 进程
+    port = None
     mihomo_process = None
     try:
+        # 1. 从队列中获取一个可用端口，如果队列为空则阻塞等待
+        port = port_queue.get()
+        logging.debug(f"节点 {proxy_name}: 获取到端口 {port}")
+
+        # 2. 为该节点动态生成配置文件
+        temp_config_path = os.path.join(temp_dir, f"config_{port}.yaml")
+        temp_mihomo_data_dir = os.path.join(temp_dir, f"data_{port}")
+        os.makedirs(temp_mihomo_data_dir, exist_ok=True)
+
+        try:
+            with open(args.base_config, 'r', encoding='utf-8') as f:
+                base_config = yaml.safe_load(f)
+            with open(args.input_file, 'r', encoding='utf-8') as f:
+                proxies_config = yaml.safe_load(f)
+
+            base_config['proxies'] = proxies_config['proxies']
+            proxy_group_name = f"test_group_{port}"
+            base_config['proxy-groups'].insert(0, {
+                'name': proxy_group_name,
+                'type': 'select',
+                'proxies': [proxy_name]
+            })
+            base_config['rules'] = [f'MATCH,{proxy_group_name}']
+            base_config['mixed-port'] = port
+            if 'external-controller' in base_config:
+                del base_config['external-controller']
+
+            with open(temp_config_path, 'w', encoding='utf-8') as f:
+                yaml.dump(base_config, f, allow_unicode=True)
+
+        except Exception as e:
+            logging.error(f"节点 {proxy_name}: 生成配置文件失败: {e}")
+            return proxy_name, False
+
+        # 3. 启动独立的 mihomo 进程
         cmd_mihomo = [args.clash_path, "-f", temp_config_path, "-d", temp_mihomo_data_dir]
         mihomo_process = subprocess.Popen(cmd_mihomo, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        time.sleep(2)
+        time.sleep(2) # 等待 mihomo 启动
 
         proxy_address = f"http://127.0.0.1:{port}"
         proxies = {"http": proxy_address, "https": proxy_address}
@@ -63,12 +69,12 @@ def run_node_test_pipeline(proxy_name: str, port: int, temp_dir: str, args: argp
             response = requests.get(args.latency_test_url, proxies=proxies, timeout=args.latency_timeout)
             latency = response.elapsed.total_seconds() * 1000
             if response.status_code == 204 and latency < args.delay_limit:
-                logging.info(f"节点 {proxy_name}: ✅ 延迟测试通过 ({latency:.0f}ms)")
+                logging.info(f"节点 {proxy_name} (端口 {port}): ✅ 延迟测试通过 ({latency:.0f}ms)")
             else:
-                logging.warning(f"节点 {proxy_name}: ❌ 延迟测试失败 (状态码: {response.status_code}, 延迟: {latency:.0f}ms)")
+                logging.warning(f"节点 {proxy_name} (端口 {port}): ❌ 延迟测试失败 (状态码: {response.status_code}, 延迟: {latency:.0f}ms)")
                 return proxy_name, False
         except requests.exceptions.RequestException:
-            logging.warning(f"节点 {proxy_name}: ❌ 延迟测试失败 (请求异常)")
+            logging.warning(f"节点 {proxy_name} (端口 {port}): ❌ 延迟测试失败 (请求异常)")
             return proxy_name, False
 
         # --- 阶段二：TLS 握手测试 ---
@@ -81,19 +87,23 @@ def run_node_test_pipeline(proxy_name: str, port: int, temp_dir: str, args: argp
         result = subprocess.run(cmd_openssl, capture_output=True, text=True, timeout=args.handshake_timeout, check=False)
         
         if result.returncode == 0 and "Protocol" in result.stdout and "Verify return code: 0 (ok)" in result.stdout:
-            logging.info(f"节点 {proxy_name}: ✅ TLS握手测试通过")
+            logging.info(f"节点 {proxy_name} (端口 {port}): ✅ TLS握手测试通过")
             return proxy_name, True
         else:
-            logging.warning(f"节点 {proxy_name}: ❌ TLS握手测试失败")
+            logging.warning(f"节点 {proxy_name} (端口 {port}): ❌ TLS握手测试失败")
             return proxy_name, False
 
     except Exception as e:
-        logging.error(f"测试节点 {proxy_name} 时发生未知错误: {e}")
+        logging.error(f"测试节点 {proxy_name} (端口 {port}) 时发生未知错误: {e}")
         return proxy_name, False
     finally:
+        # 6. 确保清理 mihomo 进程并归还端口
         if mihomo_process:
             mihomo_process.terminate()
             mihomo_process.wait()
+        if port:
+            port_queue.put(port)
+            logging.debug(f"节点 {proxy_name}: 归还端口 {port}")
 
 # --- 主函数 ---
 def main():
@@ -136,25 +146,15 @@ def main():
     os.makedirs(temp_base_dir, exist_ok=True)
 
     with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
-        futures = {}
-        for proxy_name in proxy_names:
-            try:
-                port = port_queue.get_nowait()
-                future = executor.submit(run_node_test_pipeline, proxy_name, port, temp_base_dir, args)
-                futures[future] = (proxy_name, port)
-            except Exception as e:
-                logging.error(f"为 {proxy_name} 提交任务失败: {e}")
+        futures = [executor.submit(run_node_test_pipeline, name, port_queue, temp_base_dir, args) for name in proxy_names]
 
         for future in as_completed(futures):
-            p_name, p_port = futures[future]
             try:
-                _, is_healthy = future.result()
+                p_name, is_healthy = future.result()
                 if is_healthy:
                     healthy_proxies.append({"name": p_name})
             except Exception as e:
-                logging.error(f"节点 {p_name} 的测试任务执行时出现异常: {e}")
-            finally:
-                port_queue.put(p_port)
+                logging.error(f"一个测试任务执行时出现异常: {e}")
 
     if os.path.exists(temp_base_dir):
         shutil.rmtree(temp_base_dir)
