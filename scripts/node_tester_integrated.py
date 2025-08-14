@@ -23,14 +23,14 @@ MAX_CONCURRENT_PROCESSES = int(os.environ.get("MAX_WORKERS", 100))
 BASE_HTTP_PORT = int(os.environ.get("BASE_HTTP_PORT", 9100))
 
 # 阶段一：延迟测试配置
-LATENCY_TEST_URL = os.environ.get("LATENCY_TEST_URL", "http://www.gstatic.com/generate_204")
+LATENCY_TEST_URL = os.environ.get("LATENCY_TEST_URL", "https://cp.cloudflare.com/generate_204")
 DELAY_LIMIT = int(os.environ.get("DELAY_LIMIT", 5000))
 LATENCY_TIMEOUT_SECONDS = int(os.environ.get("LATENCY_TIMEOUT", 5))
 
 # 阶段二：握手测试配置
 HANDSHAKE_TEST_HOST = os.environ.get("HANDSHAKE_TEST_HOST", "cloudcode-pa.googleapis.com")
 HANDSHAKE_TEST_PORT = int(os.environ.get("HANDSHAKE_TEST_PORT", 443))
-HANDSHAKE_TIMEOUT_SECONDS = int(os.environ.get("HANDSHAKE_TIMEOUT", 8))
+HANDSHAKE_TIMEOUT_SECONDS = int(os.environ.get("HANDSHAKE_TIMEOUT", 6))
 
 
 # --- 核心测试逻辑 ---
