@@ -46,10 +46,10 @@ def test_node_pipeline(proxy_name: str, args: argparse.Namespace) -> tuple[str, 
             if response.status_code == 204 and latency < args.delay_limit:
                 logging.info(f"节点 {proxy_name}: ✅ 延迟测试通过 ({latency:.0f}ms)")
             else:
-                logging.warning(f"节点 {proxy_name}: ❌ 延迟测试失败 (状态码: {response.status_code}, 延迟: {latency:.0f}ms)")
+                logging.warning(f"节点 {proxy_name}: ❌ 延迟测试失败 (URL: {args.latency_test_url}, 状态码: {response.status_code}, 延迟: {latency:.0f}ms)")
                 return proxy_name, False
         except requests.exceptions.RequestException as e:
-            logging.warning(f"节点 {proxy_name}: ❌ 延迟测试失败 (请求异常: {e})")
+            logging.warning(f"节点 {proxy_name}: ❌ 延迟测试失败 (URL: {args.latency_test_url}, 请求异常: {e})")
             return proxy_name, False
 
         # --- 阶段二：TLS 握手测试 ---
