@@ -12,22 +12,19 @@ from threading import Lock
 logging.basicConfig(level=os.environ.get("LOG_LEVEL", "INFO"), format='%(asctime)s - %(levelname)s - %(message)s')
 
 # --- 全局锁 ---
-# 用于保护对单个 Clash 实例的 API 调用，确保测试的串行性
 clash_api_lock = Lock()
 
 # --- 核心测试逻辑 ---
-
 def test_node_pipeline(proxy_name: str, args: argparse.Namespace) -> tuple[str, bool]:
     """
     通过 Clash API 切换到指定节点，并执行两阶段测试。
-    此函数由线程池中的工作线程执行，但通过锁来串行化对 Clash API 的访问。
     """
     logging.debug(f"节点 {proxy_name}: 等待获取 API 锁...")
     with clash_api_lock:
         logging.debug(f"节点 {proxy_name}: 已获取 API 锁，开始测试")
         
-        # 1. 通过 API 切换全局代理到当前节点
         try:
+            # 1. 通过 API 切换全局代理到当前节点
             switch_payload = {'name': proxy_name}
             switch_url = f"{args.clash_api_url}/proxies/GLOBAL"
             response = requests.put(switch_url, json=switch_payload, timeout=2)
@@ -38,7 +35,6 @@ def test_node_pipeline(proxy_name: str, args: argparse.Namespace) -> tuple[str, 
             logging.error(f"节点 {proxy_name}: ❌ API 切换失败 (请求异常: {e})")
             return proxy_name, False
 
-        # 短暂等待以确保切换生效
         time.sleep(0.1)
 
         # --- 阶段一：延迟测试 ---
@@ -67,20 +63,18 @@ def test_node_pipeline(proxy_name: str, args: argparse.Namespace) -> tuple[str, 
             
             if result.returncode == 0 and "Protocol" in result.stdout and "Verify return code: 0 (ok)" in result.stdout:
                 logging.info(f"节点 {proxy_name}: ✅ TLS握手测试通过")
-                logging.debug(f"节点 {proxy_name}: 释放 API 锁")
                 return proxy_name, True
             else:
                 logging.warning(f"节点 {proxy_name}: ❌ TLS握手测试失败")
-                logging.debug(f"节点 {proxy_name}: 释放 API 锁")
                 return proxy_name, False
         except subprocess.TimeoutExpired:
             logging.warning(f"节点 {proxy_name}: ❌ TLS握手测试超时")
-            logging.debug(f"节点 {proxy_name}: 释放 API 锁")
             return proxy_name, False
         except Exception as e:
             logging.error(f"测试节点 {proxy_name} 时发生未知错误: {e}")
-            logging.debug(f"节点 {proxy_name}: 释放 API 锁")
             return proxy_name, False
+        finally:
+            logging.debug(f"节点 {proxy_name}: 释放 API 锁")
 
 # --- 主函数 ---
 def main():
@@ -88,6 +82,7 @@ def main():
     parser = argparse.ArgumentParser(description="对 Clash/Mihomo 节点进行两阶段健康度测试。")
     parser.add_argument('--input-file', type=str, default=os.environ.get("ALL_PROXIES_FILE", "all_proxies.yaml"), help='包含所有节点的输入 YAML 文件路径')
     parser.add_argument('--output-file', type=str, default=os.environ.get("HEALTHY_PROXIES_FILE", "healthy_proxies.yaml"), help='用于保存健康节点的输出 YAML 文件路径')
+    parser.add_argument('--clash-path', type=str, default=os.environ.get("MIHOMO_PATH", "./mihomo"), help='mihomo (Clash核心) 可执行文件的路径')
     parser.add_argument('--clash-api-url', type=str, default=os.environ.get("CLASH_API_URL", "http://127.0.0.1:9090"), help='Clash RESTful API 的地址')
     parser.add_argument('--clash-proxy-url', type=str, default=f"http://127.0.0.1:{os.environ.get('CLASH_HTTP_PORT', 7890)}", help='Clash HTTP 代理的地址')
     parser.add_argument('--max-workers', type=int, default=int(os.environ.get("MAX_WORKERS", 100)), help='并发测试的最大线程数')
@@ -133,7 +128,7 @@ def main():
         output_data = {'proxies': final_healthy_proxies_data}
         with open(args.output_file, 'w', encoding='utf-8') as f:
             yaml.dump(output_data, f, allow_unicode=True)
-        logging.info(f"测试完成！共找到 {len(final_healthy_proxies_data)} 个通过两阶段测试的健康节点，已写入 {args.output_file}")
+        logging.info(f"测试完成！共找到 {len(final_healthy_proxies_data)} 个健康节点，已写入 {args.output_file}")
     else:
         logging.warning("测试完成，没有找到任何健康节点。")
 
