@@ -1,250 +1,181 @@
-# -*- coding: utf-8 -*-
-"""
-Clash Config Auto Builder - 节点延迟测试器
-"""
-
-import argparse
+import yaml
+import requests
+import os
+import logging
 import subprocess
 import time
-import urllib.parse
-import sys
-import os
-import signal
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from queue import Queue
+import shutil
 
-import requests
-import yaml
+# --- 全局配置 ---
+# 日志配置
+logging.basicConfig(level=os.environ.get("LOG_LEVEL", "INFO"), format='%(asctime)s - %(levelname)s - %(message)s')
 
-# 添加项目根目录到Python路径
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# 从环境变量获取配置，提供默认值
+HEALTHY_PROXIES_FILE = os.environ.get("HEALTHY_PROXIES_FILE", "healthy_proxies.yaml")
+ALL_PROXIES_FILE = os.environ.get("ALL_PROXIES_FILE", "all_proxies.yaml")
+MIHOMO_PATH = os.environ.get("MIHOMO_PATH", "./mihomo")
+BASE_CONFIG_PATH = os.environ.get("BASE_CONFIG_PATH", "config-template.yaml")
 
-from core.constants import NodeTestConfig, PathConfig
-from core.logger import setup_logger
+# 并发测试相关配置
+MAX_CONCURRENT_PROCESSES = int(os.environ.get("MAX_WORKERS", 100))
+BASE_HTTP_PORT = int(os.environ.get("BASE_HTTP_PORT", 9100))
+
+# 阶段一：延迟测试配置
+LATENCY_TEST_URL = os.environ.get("LATENCY_TEST_URL", "http://www.gstatic.com/generate_204")
+DELAY_LIMIT = int(os.environ.get("DELAY_LIMIT", 5000))
+LATENCY_TIMEOUT_SECONDS = int(os.environ.get("LATENCY_TIMEOUT", 5))
+
+# 阶段二：握手测试配置
+HANDSHAKE_TEST_HOST = os.environ.get("HANDSHAKE_TEST_HOST", "cloudcode-pa.googleapis.com")
+HANDSHAKE_TEST_PORT = int(os.environ.get("HANDSHAKE_TEST_PORT", 443))
+HANDSHAKE_TIMEOUT_SECONDS = int(os.environ.get("HANDSHAKE_TIMEOUT", 8))
 
 
-class NodeTester:
-    """节点延迟测试器"""
-    
-    def __init__(self, args):
-        self.logger = setup_logger("node_tester")
-        self.args = args
-        self.mihomo_process = None
+# --- 核心测试逻辑 ---
+
+def run_node_test_pipeline(proxy_name: str, port: int, temp_dir: str) -> tuple[str, bool]:
+    """
+    为单个节点启动独立的 mihomo 进程，并执行两阶段测试：
+    1. 延迟测试 (快速筛选)
+    2. TLS 握手测试 (严格筛选)
+    """
+    temp_config_path = os.path.join(temp_dir, f"config_{port}.yaml")
+    temp_mihomo_data_dir = os.path.join(temp_dir, f"data_{port}")
+    os.makedirs(temp_mihomo_data_dir, exist_ok=True)
+
+    # 1. 为该节点动态生成配置文件
+    try:
+        with open(BASE_CONFIG_PATH, 'r', encoding='utf-8') as f:
+            base_config = yaml.safe_load(f)
+        with open(ALL_PROXIES_FILE, 'r', encoding='utf-8') as f:
+            proxies_config = yaml.safe_load(f)
+
+        base_config['proxies'] = proxies_config['proxies']
         
-        signal.signal(signal.SIGINT, self._signal_handler)
-        signal.signal(signal.SIGTERM, self._signal_handler)
-    
-    def _signal_handler(self, signum, frame):
-        """信号处理器，确保资源清理"""
-        self.logger.info(f"收到信号 {signum}，开始清理资源...")
-        self.cleanup()
-        sys.exit(0)
-    
-    def prepare_test_config(self, source_path: str, dest_path: str, 
-                          template_path: str = PathConfig.CONFIG_TEMPLATE) -> list:
-        """准备用于延迟测试的配置文件"""
-        self.logger.info(f"准备测试配置文件: {source_path} -> {dest_path}")
-        
+        # 强制所有流量走当前测试节点
+        proxy_group_name = f"test_group_{port}"
+        base_config['proxy-groups'].insert(0, {
+            'name': proxy_group_name,
+            'type': 'select',
+            'proxies': [proxy_name]
+        })
+        base_config['rules'] = [f'MATCH,{proxy_group_name}']
+
+        base_config['mixed-port'] = port
+        if 'external-controller' in base_config:
+            del base_config['external-controller']
+
+        with open(temp_config_path, 'w', encoding='utf-8') as f:
+            yaml.dump(base_config, f, allow_unicode=True)
+
+    except Exception as e:
+        logging.error(f"节点 {proxy_name}: 生成配置文件失败: {e}")
+        return proxy_name, False
+
+    # 2. 启动独立的 mihomo 进程
+    mihomo_process = None
+    try:
+        cmd_mihomo = [MIHOMO_PATH, "-f", temp_config_path, "-d", temp_mihomo_data_dir]
+        mihomo_process = subprocess.Popen(cmd_mihomo, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        time.sleep(2) # 等待 mihomo 启动
+
+        proxy_address = f"http://127.0.0.1:{port}"
+        proxies = {"http": proxy_address, "https": proxy_address}
+
+        # --- 阶段一：延迟测试 ---
         try:
-            with open(template_path, 'r', encoding='utf-8') as f:
-                base_config = yaml.safe_load(f)
-
-            with open(source_path, 'r', encoding='utf-8') as f:
-                proxies_data = yaml.safe_load(f)
-
-            if not proxies_data or 'proxies' not in proxies_data or not proxies_data['proxies']:
-                self.logger.error(f"源文件 {source_path} 没有代理节点")
-                return []
-
-            config = {
-                'external-controller': '127.0.0.1:9090',
-                'log-level': 'info',
-                'mixed-port': 7890,
-                'mode': 'Rule',
-                'rules': [],
-                'proxies': proxies_data['proxies']
-            }
-
-            with open(dest_path, 'w', encoding='utf-8') as f:
-                yaml.dump(config, f, allow_unicode=True)
-
-            self.logger.info(f'测试配置已准备完成并保存到 {dest_path}')
-            return config.get("proxies", [])
-            
-        except Exception as e:
-            self.logger.error(f'准备测试配置失败: {e}')
-            return []
-
-    def start_mihomo(self, mihomo_path: str, config_path: str) -> subprocess.Popen:
-        """启动 mihomo 核心进程"""
-        self.logger.info(f"启动 mihomo: {config_path}")
-        
-        try:
-            process = subprocess.Popen(
-                [mihomo_path, "-f", config_path],
-                stdout=subprocess.PIPE, 
-                stderr=subprocess.PIPE, 
-                text=True,
-                encoding='utf-8'
-            )
-            
-            time.sleep(5) # 等待进程启动
-            
-            if process.poll() is not None:
-                stdout, stderr = process.communicate()
-                self.logger.error(f"mihomo 进程提前退出，退出码: {process.returncode}\nstdout: {stdout.strip()}\nstderr: {stderr.strip()}")
-                return None
-
-            requests.get("http://127.0.0.1:9090/proxies", timeout=5).raise_for_status()
-            self.logger.info("mihomo API 连接成功")
-            return process
-            
-        except Exception as e:
-            self.logger.error(f"启动 mihomo 或连接 API 失败: {e}")
-            return None
-
-    def stop_mihomo(self):
-        """停止 mihomo 核心进程"""
-        if self.mihomo_process:
-            self.logger.info("正在停止 mihomo 进程...")
-            self.mihomo_process.terminate()
-            try:
-                self.mihomo_process.wait(timeout=5)
-            except subprocess.TimeoutExpired:
-                self.logger.warning("mihomo 进程未能正常终止，强制杀死")
-                self.mihomo_process.kill()
-            self.logger.info("mihomo 进程已停止")
-            self.mihomo_process = None
-
-    def check_proxy_delay(self, proxy: dict) -> tuple:
-        """测试单个代理的延迟，返回 (proxy, delay) 元组或 None"""
-        proxy_name = proxy.get("name")
-        if not proxy_name:
-            return None
-            
-        try:
-            api_url = "127.0.0.1:9090"
-            test_url = self.args.test_url
-            timeout = self.args.timeout
-            delay_limit = self.args.delay_limit
-
-            quoted_proxy_name = urllib.parse.quote(proxy_name)
-            url = f"http://{api_url}/proxies/{quoted_proxy_name}/delay?timeout={timeout}&url={urllib.parse.quote(test_url)}"
-            
-            response = requests.get(url, timeout=(timeout / 1000) + 5)
-            response.raise_for_status()
-            
-            data = response.json()
-            delay = data.get("delay", -1)
-            
-            if 0 < delay <= delay_limit:
-                self.logger.info(f"代理 '{proxy_name}' 延迟测试通过: {delay}ms")
-                return proxy, delay
+            response = requests.get(LATENCY_TEST_URL, proxies=proxies, timeout=LATENCY_TIMEOUT_SECONDS)
+            if response.status_code == 204 and response.elapsed.total_seconds() * 1000 < DELAY_LIMIT:
+                logging.info(f"节点 {proxy_name}: ✅ 延迟测试通过 ({response.elapsed.total_seconds() * 1000:.0f}ms)")
             else:
-                self.logger.debug(f"代理 '{proxy_name}' 延迟测试失败: {delay}ms")
-                return None
-                
-        except Exception as e:
-            self.logger.debug(f"代理 '{proxy_name}' 测试异常: {e}")
-            return None
+                logging.warning(f"节点 {proxy_name}: ❌ 延迟测试失败 (状态码: {response.status_code}, 延迟: {response.elapsed.total_seconds() * 1000:.0f}ms)")
+                return proxy_name, False
+        except requests.exceptions.RequestException as e:
+            logging.warning(f"节点 {proxy_name}: ❌ 延迟测试失败 (请求异常: {e})")
+            return proxy_name, False
 
-    def test_all_proxies(self, proxies_to_test: list) -> list:
-        """并发测试所有代理节点的延迟"""
-        self.logger.info(f"开始延迟测试 {len(proxies_to_test)} 个代理节点...")
+        # --- 阶段二：TLS 握手测试 ---
+        cmd_openssl = [
+            "openssl", "s_client",
+            "-connect", f"{HANDSHAKE_TEST_HOST}:{HANDSHAKE_TEST_PORT}",
+            "-servername", HANDSHAKE_TEST_HOST,
+            "-proxy", f"127.0.0.1:{port}"
+        ]
+        result = subprocess.run(cmd_openssl, capture_output=True, text=True, timeout=HANDSHAKE_TIMEOUT_SECONDS, check=False)
         
-        healthy_proxies_with_delay = []
-        with ThreadPoolExecutor(max_workers=self.args.max_workers) as executor:
-            future_to_proxy = {executor.submit(self.check_proxy_delay, proxy): proxy for proxy in proxies_to_test}
-            
-            completed_count = 0
-            total_count = len(proxies_to_test)
-            for future in as_completed(future_to_proxy):
-                completed_count += 1
-                result = future.result()
-                if result:
-                    healthy_proxies_with_delay.append(result)
-                
-                if completed_count % 100 == 0 or completed_count == total_count:
-                    self.logger.info(f"延迟测试进度: {completed_count}/{total_count}, 健康节点: {len(healthy_proxies_with_delay)}")
-        
-        self.logger.info(f"延迟测试完成！健康节点: {len(healthy_proxies_with_delay)}/{total_count}")
-        return healthy_proxies_with_delay
+        if result.returncode == 0 and "Protocol" in result.stdout and "Verify return code: 0 (ok)" in result.stdout:
+            logging.info(f"节点 {proxy_name}: ✅ TLS握手测试通过")
+            return proxy_name, True
+        else:
+            logging.warning(f"节点 {proxy_name}: ❌ TLS握手测试失败")
+            return proxy_name, False
 
-    def save_healthy_nodes(self, healthy_proxies_with_delay: list, output_file: str) -> None:
-        """保存健康节点到文件，并附加延迟信息"""
-        proxies_to_save = []
-        for proxy, delay in healthy_proxies_with_delay:
-            proxy['_delay'] = delay
-            proxies_to_save.append(proxy)
+    except Exception as e:
+        logging.error(f"测试节点 {proxy_name} 时发生未知错误: {e}")
+        return proxy_name, False
+    finally:
+        if mihomo_process:
+            mihomo_process.terminate()
+            mihomo_process.wait()
 
-        try:
-            with open(output_file, 'w', encoding='utf-8') as f:
-                yaml.dump({'proxies': proxies_to_save}, f, allow_unicode=True)
-            self.logger.info(f"健康节点列表已保存到 {output_file}")
-        except Exception as e:
-            self.logger.error(f"保存健康节点失败: {e}")
-            raise
-
-    def cleanup(self):
-        """清理所有资源"""
-        self.logger.info("开始清理资源...")
-        self.stop_mihomo()
-        self.logger.info("资源清理完成")
-
-    def run(self) -> None:
-        """主执行函数"""
-        test_config_path = NodeTestConfig.TEST_CONFIG_FILE
-        
-        try:
-            proxies_to_test = self.prepare_test_config(self.args.input_file, test_config_path)
-            if not proxies_to_test:
-                self.logger.error("没有可测试的代理节点")
-                return
-
-            self.mihomo_process = self.start_mihomo(self.args.clash_path, test_config_path)
-            if not self.mihomo_process:
-                self.logger.error("mihomo 启动失败，测试中止")
-                return
-
-            healthy_proxies = self.test_all_proxies(proxies_to_test)
-            if not healthy_proxies:
-                self.logger.warning("没有发现任何健康的代理节点")
-            
-            self.save_healthy_nodes(healthy_proxies, self.args.output_file)
-            
-            self.logger.info("🎉 所有任务完成！")
-
-        except Exception as e:
-            self.logger.error(f"节点测试过程中发生严重错误: {e}", exc_info=True)
-            raise
-        finally:
-            self.cleanup()
-
-
+# --- 主函数 ---
 def main():
-    """主函数"""
-    parser = argparse.ArgumentParser(description="Clash/mihomo 代理节点延迟测试器")
-    
-    parser.add_argument("-i", "--input-file", required=True, 
-                       help="输入的 clash 配置文件路径")
-    parser.add_argument("-o", "--output-file", required=True, 
-                       help="保存健康代理列表的文件路径")
-    parser.add_argument("-p", "--clash-path", required=True, 
-                       help="mihomo 可执行文件路径")
-    
-    parser.add_argument("--test-url", default=NodeTestConfig.DEFAULT_TEST_URL, 
-                       help="测试代理延迟的URL")
-    parser.add_argument("--delay-limit", type=int, default=NodeTestConfig.DEFAULT_DELAY_LIMIT, 
-                       help="最大可接受延迟(ms)")
-    parser.add_argument("--timeout", type=int, default=NodeTestConfig.DEFAULT_TIMEOUT, 
-                       help="延迟测试请求超时时间(ms)")
-    parser.add_argument("--max-workers", type=int, default=NodeTestConfig.DEFAULT_MAX_WORKERS, 
-                       help="延迟测试并发线程数")
+    logging.info("开始执行两阶段节点健康度测试...")
 
-    args = parser.parse_args()
-    
-    tester = NodeTester(args)
-    tester.run()
+    try:
+        with open(ALL_PROXIES_FILE, 'r', encoding='utf-8') as f:
+            all_proxies_data = yaml.safe_load(f)
+        proxy_names = [p['name'] for p in all_proxies_data['proxies']]
+        logging.info(f"共找到 {len(proxy_names)} 个待测试节点")
+    except Exception as e:
+        logging.fatal(f"读取节点文件 {ALL_PROXIES_FILE} 失败: {e}")
+        return
 
+    port_queue = Queue()
+    for i in range(MAX_CONCURRENT_PROCESSES):
+        port_queue.put(BASE_HTTP_PORT + i)
+
+    healthy_proxies = []
+    temp_base_dir = f"./temp_test_data_{int(time.time())}"
+    os.makedirs(temp_base_dir, exist_ok=True)
+
+    with ThreadPoolExecutor(max_workers=MAX_CONCURRENT_PROCESSES) as executor:
+        futures = {}
+        for proxy_name in proxy_names:
+            try:
+                port = port_queue.get_nowait()
+                future = executor.submit(run_node_test_pipeline, proxy_name, port, temp_base_dir)
+                futures[future] = (proxy_name, port)
+            except Exception as e:
+                logging.error(f"为 {proxy_name} 提交任务失败: {e}")
+
+        for future in as_completed(futures):
+            p_name, p_port = futures[future]
+            try:
+                _, is_healthy = future.result()
+                if is_healthy:
+                    healthy_proxies.append({"name": p_name})
+            except Exception as e:
+                logging.error(f"节点 {p_name} 的测试任务执行时出现异常: {e}")
+            finally:
+                port_queue.put(p_port)
+
+    if os.path.exists(temp_base_dir):
+        shutil.rmtree(temp_base_dir)
+        logging.info(f"已清理临时目录: {temp_base_dir}")
+
+    if healthy_proxies:
+        original_proxies_map = {p['name']: p for p in all_proxies_data['proxies']}
+        final_healthy_proxies_data = [original_proxies_map[p['name']] for p in healthy_proxies if p['name'] in original_proxies_map]
+        
+        output_data = {'proxies': final_healthy_proxies_data}
+        with open(HEALTHY_PROXIES_FILE, 'w', encoding='utf-8') as f:
+            yaml.dump(output_data, f, allow_unicode=True)
+        logging.info(f"测试完成！共找到 {len(final_healthy_proxies_data)} 个通过两阶段测试的健康节点，已写入 {HEALTHY_PROXIES_FILE}")
+    else:
+        logging.warning("测试完成，没有找到任何健康节点。")
 
 if __name__ == "__main__":
     main()
