@@ -83,6 +83,17 @@ proxies:
   server: 23.27.201.149
   type: ss
   udp: true
+- country: 🇯🇵JP
+  delay: 2822
+  name: 日本 - 东京 - Amazon Technologies Inc. - 1
+  password: 0xC6Mws4Dg
+  port: 1935
+  server: 54.168.52.254
+  server_url: x2-japan-amazon-v2.devefun.org
+  skip-cert-verify: true
+  sni: x2-japan-amazon-v2.devefun.org
+  type: trojan
+  udp: true
 - alterId: '2'
   cipher: auto
   delay: 767
@@ -98,16 +109,15 @@ proxies:
     headers:
       Host: download.visualstudio.microsoft.com
     path: /download/pr/9b564b8a-a26d-4bb3-8f30-1101ae71a55a/2cee4f9e4c0e77e3d0f866fdf690864e/windowsdesktop-runtime-5.0.8-win-x64.exe
-- country: 🇯🇵JP
-  delay: 2822
-  name: 日本 - 东京 - Amazon Technologies Inc. - 1
-  password: 0xC6Mws4Dg
-  port: 1935
-  server: 54.168.52.254
-  server_url: x2-japan-amazon-v2.devefun.org
+- auth: 1acd1a12-bc74-452a-999f-539f4d492c6d
+  name: 🇯🇵 日本 37
+  password: 1acd1a12-bc74-452a-999f-539f4d492c6d
+  port: 22161
+  server: 212.192.221.221
+  server_url: hsrb.huasuan666.top
   skip-cert-verify: true
-  sni: x2-japan-amazon-v2.devefun.org
-  type: trojan
+  sni: hsrb.huasuan666.top
+  type: hysteria2
   udp: true
 - auth: 002f5b53-3bdd-4a20-9c6c-0e20486a57aa
   name: 🇯🇵 日本 14
@@ -119,16 +129,6 @@ proxies:
   server_url: nexiarb.688997.xyz
   skip-cert-verify: true
   sni: nexiarb.688997.xyz
-  type: hysteria2
-  udp: true
-- auth: 1acd1a12-bc74-452a-999f-539f4d492c6d
-  name: 🇯🇵 日本 37
-  password: 1acd1a12-bc74-452a-999f-539f4d492c6d
-  port: 22161
-  server: 212.192.221.221
-  server_url: hsrb.huasuan666.top
-  skip-cert-verify: true
-  sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
 - auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
@@ -157,6 +157,30 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
+- auth: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
+  down: 10000
+  name: 🇯🇵 日本 38
+  password: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
+  port: 1443
+  server: 43.207.149.90
+  server_url: jp.mjhy2.com
+  skip-cert-verify: true
+  sni: jp.mjhy2.com
+  type: hysteria2
+  udp: true
+  up: 10000
+- auth: 4c0109f7-e002-410a-b37d-a56b391237a5
+  down: 300
+  name: 🇯🇵 日本 07
+  password: 4c0109f7-e002-410a-b37d-a56b391237a5
+  port: 8080
+  server: 178.94.142.111
+  server_url: jp6.7896543.xyz
+  skip-cert-verify: false
+  sni: jp6.7896543.xyz
+  type: hysteria2
+  udp: true
+  up: 300
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

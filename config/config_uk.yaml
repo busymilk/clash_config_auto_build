@@ -47,6 +47,25 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇬🇧 英国 01
+  network: ws
+  port: 443
+  server: 93.185.158.14
+  servername: uk.rtot.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00651706-0d2d-448b-80f2-7678f3e5187c
+  ws-opts:
+    headers:
+      Host: uk.rtot.me
+    path: /bing
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.80-0250 | 34.382MB
   password: shadowsocks
@@ -64,12 +83,6 @@ proxies:
   password: shadowsocks
   port: 443
   server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.78-0233 | 33.805MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.195-0226 | 33.721MB
@@ -114,28 +127,10 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.197-0236 | 26.775MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-141.98.101.178-0318 | 25.679MB
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.81-0223 | 33.815MB
   password: shadowsocks
   port: 443
   server: 212.102.53.81
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-0240 | 0.502MB
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
   type: ss
 - alterId: 0
   cipher: auto
@@ -149,13 +144,6 @@ proxies:
   uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
   ws-opts:
     path: /
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.197-0243 | 21.688MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  server_url: uk-dc1.yangon.club
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🇬🇧GB-154.62.185.113-0314 | 4.523MB
@@ -168,6 +156,13 @@ proxies:
   uuid: fe59873f-462d-4d99-a462-2979ce968993
   ws-opts:
     path: /
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.197-0243 | 21.688MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  server_url: uk-dc1.yangon.club
+  type: ss
 - name: 🇬🇧 英国 24
   network: ws
   port: 8443
