@@ -181,7 +181,7 @@ def main():
             logging.info("正在关闭主 Clash 进程...")
             main_clash_process.terminate()
             main_clash_process.wait()
-            logging.info("主 Clash 进程已关闭。" )
+            logging.info("主 Clash 进程已关闭。")
         if os.path.exists(main_config_path):
             os.remove(main_config_path)
 
