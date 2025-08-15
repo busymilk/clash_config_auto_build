@@ -47,10 +47,16 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇰🇷_韩国_1
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0359 | 0.124MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- name: 🇰🇷_韩国_3
   network: ws
-  port: 21268
-  server: 125.138.28.68
+  port: 12367
+  server: 121.165.36.35
   servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -61,10 +67,24 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_3
+- name: 🇰🇷_韩国_2
   network: ws
-  port: 12367
-  server: 121.165.36.35
+  port: 12335
+  server: 121.170.103.94
+  servername: cv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_4
+  network: ws
+  port: 50001
+  server: 182.209.106.51
   servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -89,66 +109,24 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_1
+  network: ws
+  port: 21268
+  server: 125.138.28.68
+  servername: edgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷_韩国_7
   network: ws
   port: 50009
   server: 222.114.29.162
-  servername: edgc.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_10
-  network: ws
-  port: 12536
-  server: 175.215.205.40
-  servername: edgc.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_4
-  network: ws
-  port: 50001
-  server: 182.209.106.51
-  servername: edgc.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_11
-  network: ws
-  port: 50001
-  server: 125.134.160.98
-  servername: edgc.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_9
-  network: ws
-  port: 50006
-  server: 222.104.130.83
   servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -187,18 +165,48 @@ proxies:
     headers:
       host: cv.ylka.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0333 | 0.192MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0359 | 0.124MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
+- name: 🇰🇷_韩国_11
+  network: ws
+  port: 50001
+  server: 125.134.160.98
+  servername: edgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_10
+  network: ws
+  port: 12536
+  server: 175.215.205.40
+  servername: edgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_9
+  network: ws
+  port: 50006
+  server: 222.104.130.83
+  servername: edgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷 韩国 24
   network: ws
   port: 50000
@@ -213,13 +221,6 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-218.237.185.230-4915 | 0.096MB
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  server_url: p141.panda001.net
-  type: ss
 - client-fingerprint: chrome
   name: 🇰🇷 韩国 20
   network: ws
