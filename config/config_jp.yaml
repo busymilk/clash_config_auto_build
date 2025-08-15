@@ -55,21 +55,6 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本2|@ripaojiedian
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
-  type: ss
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0271 | 19.973MB
   password: shadowsocks
@@ -109,40 +94,6 @@ proxies:
     headers:
       Host: download.visualstudio.microsoft.com
     path: /download/pr/9b564b8a-a26d-4bb3-8f30-1101ae71a55a/2cee4f9e4c0e77e3d0f866fdf690864e/windowsdesktop-runtime-5.0.8-win-x64.exe
-- auth: 1acd1a12-bc74-452a-999f-539f4d492c6d
-  name: 🇯🇵 日本 37
-  password: 1acd1a12-bc74-452a-999f-539f4d492c6d
-  port: 22161
-  server: 212.192.221.221
-  server_url: hsrb.huasuan666.top
-  skip-cert-verify: true
-  sni: hsrb.huasuan666.top
-  type: hysteria2
-  udp: true
-- auth: 002f5b53-3bdd-4a20-9c6c-0e20486a57aa
-  name: 🇯🇵 日本 14
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 002f5b53-3bdd-4a20-9c6c-0e20486a57aa
-  port: 20257
-  server: 212.192.221.221
-  server_url: nexiarb.688997.xyz
-  skip-cert-verify: true
-  sni: nexiarb.688997.xyz
-  type: hysteria2
-  udp: true
-- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  name: 🇯🇵 日本 31
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  port: 33657
-  server: 212.192.221.221
-  server_url: rb.dport.top
-  skip-cert-verify: true
-  sni: rb.dport.top
-  type: hysteria2
-  udp: true
 - cipher: aes-256-gcm
   name: 🇯🇵 日本 01
   password: 70a0b8103356
@@ -157,30 +108,6 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- auth: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
-  down: 10000
-  name: 🇯🇵 日本 38
-  password: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
-  port: 1443
-  server: 43.207.149.90
-  server_url: jp.mjhy2.com
-  skip-cert-verify: true
-  sni: jp.mjhy2.com
-  type: hysteria2
-  udp: true
-  up: 10000
-- auth: 4c0109f7-e002-410a-b37d-a56b391237a5
-  down: 300
-  name: 🇯🇵 日本 07
-  password: 4c0109f7-e002-410a-b37d-a56b391237a5
-  port: 8080
-  server: 178.94.142.111
-  server_url: jp6.7896543.xyz
-  skip-cert-verify: false
-  sni: jp6.7896543.xyz
-  type: hysteria2
-  udp: true
-  up: 300
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
