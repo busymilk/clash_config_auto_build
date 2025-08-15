@@ -73,6 +73,18 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷KR-183.109.131.75-4966 | 0.051MB
+  network: ws
+  port: 20086
+  server: 183.109.131.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  ws-opts:
+    path: /
 - client-fingerprint: chrome
   name: 🇰🇷 韩国 20
   network: ws
@@ -87,18 +99,13 @@ proxies:
     headers:
       Host: zoomgov.vipren.biz.id
     path: /112.162.27.122=50000
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷KR-183.109.131.75-4966 | 0.051MB
-  network: ws
-  port: 20086
-  server: 183.109.131.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  ws-opts:
-    path: /
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-218.237.185.230-4915 | 0.096MB
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  server_url: p141.panda001.net
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

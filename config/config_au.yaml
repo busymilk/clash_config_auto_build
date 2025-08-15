@@ -47,12 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
+- auth: fb4b92d0-41d4-41e2-baff-815f98812037
+  name: 🇦🇺 澳大利亚 04
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: fb4b92d0-41d4-41e2-baff-815f98812037
+  port: 33656
+  server: 203.32.26.70
+  server_url: hg.dport.top
+  skip-cert-verify: true
+  sni: hg.dport.top
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

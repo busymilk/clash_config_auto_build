@@ -47,46 +47,24 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: rc4-md5
+  name: 🇩🇪_DE_德国_0@5
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  name: 🇩🇪DE-185.177.229.245-027
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  name: 🇩🇪DE-46.101.245.131-031
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
-- cipher: rc4-md5
-  name: 🇩🇪_DE_德国
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- client-fingerprint: chrome
-  delay: 2252
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 111
-  network: ws
-  password: trojan
-  port: 8443
-  server: 104.26.13.31
-  skip-cert-verify: false
-  sni: qianlang.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
-        Gecko) Chrome/11.0.696.3 Safari/534.24
-    path: /
 - client-fingerprint: chrome
   delay: 2318
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 2
@@ -105,6 +83,22 @@ proxies:
         Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
     max-early-data: 2560
     path: /tr
+- client-fingerprint: chrome
+  delay: 2252
+  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 111
+  network: ws
+  password: trojan
+  port: 8443
+  server: 104.26.13.31
+  skip-cert-verify: false
+  sni: qianlang.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
+        Gecko) Chrome/11.0.696.3 Safari/534.24
+    path: /
 - delay: 1596
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 43
   network: ws
@@ -187,12 +181,6 @@ proxies:
   name: 🇩🇪DE-80.92.204.106-0326 | 0.343MB
   password: a3GFYt36Sm82Vys9
   port: 9000
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0340 | 0.124MB
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
   server: 80.92.204.106
   type: ss
 - alterId: 0
@@ -305,24 +293,6 @@ proxies:
     headers:
       Host: 007.xingfu.qzz.io
     path: /
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-2060 | 0.589MB
-  password: M3t2ZEQcMGRWBjRa
-  port: 9011
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0300 | 0.545MB
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
-  server: 80.92.204.106
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0321 | 0.612MB
-  password: ZET59LF6DvCC8KVt
-  port: 9005
-  server: 80.92.204.106
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-84.200.91.228-0331 | 0.394MB
   password: 5ZQh4pssSk4aK1JG1XhBRg
@@ -330,9 +300,9 @@ proxies:
   server: 84.200.91.228
   type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0330 | 0.333MB
-  password: f63gg8EruDnUrmz4
-  port: 9010
+  name: 🇩🇪DE-80.92.204.106-2060 | 0.589MB
+  password: M3t2ZEQcMGRWBjRa
+  port: 9011
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
@@ -342,21 +312,38 @@ proxies:
   server: 80.92.204.106
   type: ss
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-80.92.204.106-0338 | 0.53MB
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
+  name: 🇩🇪DE-80.92.204.106-0330 | 0.333MB
+  password: f63gg8EruDnUrmz4
+  port: 9010
   server: 80.92.204.106
   type: ss
-- auth: 77b85b4f-8f73-495c-b919-a8fb386ca541
-  name: 🇩🇪 德国 34
-  password: 77b85b4f-8f73-495c-b919-a8fb386ca541
-  port: 22158
-  server: 213.108.198.123
-  server_url: hsfg.huasuan666.top
-  skip-cert-verify: true
-  sni: hsfg.huasuan666.top
-  type: hysteria2
+- name: 🇩🇪DE-185.208.207.217-4922 | 0.157MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-80.92.204.106-0312 | 0.868MB
+  password: TN2YqghxeFDKZfLU
+  port: 9037
+  server: 80.92.204.106
+  type: ss
+- client-fingerprint: random
+  name: '🇩🇪 德国 58 #2'
+  network: ws
+  port: 443
+  server: 104.24.230.10
+  servername: jack.jack-cq.click
+  tls: true
+  type: vless
   udp: true
+  uuid: 72982133-27fb-46fc-9061-61113e77e201
+  ws-opts:
+    headers:
+      Host: jack.jack-cq.click
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
