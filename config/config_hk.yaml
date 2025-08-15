@@ -56,7 +56,25 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-5124 | 0.034MB
+  name: 🇭🇰HK-18.162.146.85-0353 | 0.332MB
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0355 | 0.331MB
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0354 | 0.331MB
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-5124 | 0.311MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
@@ -89,24 +107,6 @@ proxies:
   server: 121.127.231.239
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0353 | 0.332MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0354 | 0.33MB
-  password: ljqdalu13..
-  port: 8319
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0355 | 0.33MB
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 11
   password: 23d03aa704c7
@@ -137,15 +137,15 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 香港家宽 04
+  name: 🇭🇰 香港家宽 34
   network: ws
   port: 80
   server: 1.65.196.164
-  server_url: cedb6368-t13gg0-t51bp0-1nyy5.hk3.p5pv.com
+  server_url: fd355c2f-t15b40-t2l8w3-d32g.hk3.p5pv.com
   tls: false
   type: vmess
   udp: true
-  uuid: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
+  uuid: 72bda932-979f-a008-de58-0dcb3b424cfe
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -158,137 +158,15 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 香港家宽 26
+  name: 🇭🇰 香港家宽 04
   network: ws
   port: 80
   server: 1.65.196.164
-  server_url: f0364aea-t13gg0-t1rksu-1ssud.hk3.p5pv.com
+  server_url: cedb6368-t13gg0-t51bp0-1nyy5.hk3.p5pv.com
   tls: false
   type: vmess
   udp: true
-  uuid: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 香港5|@ripaojiedian
-  network: ws
-  port: 80
-  server: 42.2.16.111
-  server_url: hkt.gotochinatown.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 88
-  network: ws
-  port: 80
-  server: 1.65.202.88
-  server_url: 5be732fe-t13gg0-tc9wl2-py5w.hk.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ae5338ae-9a70-58c9-3d47-7d54a5675715
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 51
-  network: ws
-  port: 80
-  server: 1.65.202.88
-  server_url: 2550fb92-t13gg0-t2l8w3-d32g.hk.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 72bda932-979f-a008-de58-0dcb3b424cfe
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '🇭🇰 香港家宽 48 #2'
-  network: ws
-  port: 80
-  server: 1.65.202.88
-  server_url: d398d5c4-t13gg0-t1qb51-1fqef.hk.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1239028c-a825-11ed-a0ca-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 47
-  network: ws
-  port: 80
-  server: 1.65.202.88
-  server_url: 8ea701ae-t15b40-tc5odo-1mh85.hk.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cf7331fa-bfeb-11ed-a807-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 84
-  network: ws
-  port: 80
-  server: 1.65.202.88
-  server_url: 3b9eac92-t13gg0-tds6bp-1hzyr.hk.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 22
-  network: ws
-  port: 80
-  server: 1.65.202.88
-  server_url: 8ebcb2b6-t15b40-t2c3sq-1spnr.hk.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港家宽 34
-  network: ws
-  port: 80
-  server: 1.65.196.164
-  server_url: fd355c2f-t15b40-t2l8w3-d32g.hk3.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 72bda932-979f-a008-de58-0dcb3b424cfe
+  uuid: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -308,6 +186,105 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 26
+  network: ws
+  port: 80
+  server: 1.65.196.164
+  server_url: f0364aea-t13gg0-t1rksu-1ssud.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 01
+  network: ws
+  port: 80
+  server: 1.65.202.33
+  server_url: 907a9d0a-t15b40-t1qb51-1fqef.hk.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1239028c-a825-11ed-a0ca-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 20
+  network: ws
+  port: 80
+  server: 1.65.202.33
+  server_url: 9d85db4e-t15b40-t3mmvc-1qgd1.hk.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 730223f0-ef31-11ef-b5d9-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 15
+  network: ws
+  port: 80
+  server: 1.65.202.33
+  server_url: 0b1f65c7-t15b40-t2hupk-1rgxu.hk.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 08
+  network: ws
+  port: 80
+  server: 1.65.202.33
+  server_url: 6346963b-t15b40-taklwz-12bd.hk.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港家宽 32
+  network: ws
+  port: 80
+  server: 1.65.196.164
+  server_url: 8da05948-t15b40-t3mmvc-1qgd1.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 730223f0-ef31-11ef-b5d9-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: 香港
+  password: 38589924-caf7-4857-812b-80020febd3ff
+  port: 10880
+  server: 8.218.59.108
+  server_url: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  skip-cert-verify: true
+  sni: ssssssssssssssssssssssssssss-mualhk229.hizui.cn
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

@@ -47,8 +47,30 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇯🇵_日本_2
+  network: ws
+  port: 2083
+  server: 103.116.7.103
+  servername: edgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 日本
+  password: oATw4IRtuUOozpOLFflGnWjtg
+  port: 18219
+  server: 52.193.71.150
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0271 | 19.973MB
+  name: 🇯🇵JP-149.22.87.204-0271 | 18.569MB
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -79,13 +101,6 @@ proxies:
     headers:
       Host: download.visualstudio.microsoft.com
     path: /download/pr/9b564b8a-a26d-4bb3-8f30-1101ae71a55a/2cee4f9e4c0e77e3d0f866fdf690864e/windowsdesktop-runtime-5.0.8-win-x64.exe
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本 13
-  password: 799511fd-fd75-44f9-993b-e8a4b8a8a620
-  port: 12378
-  server: 23.27.201.149
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 🇯🇵 日本 01
   password: 70a0b8103356
@@ -100,17 +115,6 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 44
-  port: 45056
-  server: 120.241.39.116
-  server_url: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 41dd6494-31e0-46d5-adb9-4c8f6f4c94ed
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

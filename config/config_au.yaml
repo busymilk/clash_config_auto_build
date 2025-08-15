@@ -47,18 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- auth: fb4b92d0-41d4-41e2-baff-815f98812037
-  name: 🇦🇺 澳大利亚 04
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: fb4b92d0-41d4-41e2-baff-815f98812037
-  port: 33656
-  server: 203.32.26.70
-  server_url: hg.dport.top
+- name: 🇦🇺_澳大利亚
+  network: ws
+  port: 11002
+  server: 185.148.13.32
+  servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
-  sni: hg.dport.top
-  type: hysteria2
+  tls: true
+  type: vless
   udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
