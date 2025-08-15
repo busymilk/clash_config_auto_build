@@ -48,14 +48,20 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0292 | 6.403MB
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇩🇪DE-46.165.194.96-0286 | 8.33MB
+  name: 🇩🇪DE-46.165.194.96-0286 | 1.021MB
   network: ws
   port: 20086
   server: 46.165.194.96
@@ -65,37 +71,19 @@ proxies:
   uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0331 | 4.145MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0283 | 0.85MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0351 | 0.775MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-0364 | 0.469MB
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- name: 🇩🇪DE-185.208.207.217-4922 | 0.157MB
+- name: 🇩🇪DE-185.208.207.217-4922 | 0.0MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 185.208.207.217
   skip-cert-verify: false
   sni: dus.freeguard.org
   type: trojan
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0283 | 6.559MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - client-fingerprint: chrome
   delay: 2318
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 2
@@ -114,22 +102,6 @@ proxies:
         Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
     max-early-data: 2560
     path: /tr
-- client-fingerprint: chrome
-  delay: 2252
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 111
-  network: ws
-  password: trojan
-  port: 8443
-  server: 104.26.13.31
-  skip-cert-verify: false
-  sni: qianlang.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
-        Gecko) Chrome/11.0.696.3 Safari/534.24
-    path: /
 - delay: 1596
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 43
   network: ws
@@ -157,18 +129,6 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /
-- name: 🇩🇪 德国 40
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.26.4.60
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: /tr?ed=2560
 - alpn:
   - h3
   client-fingerprint: random
@@ -185,6 +145,18 @@ proxies:
     headers:
       Host: wxf838.sbs
     path: /?proxyip=proxyip.fxxk.dedyn.io
+- name: 🇩🇪 德国 40
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.26.4.60
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
 - client-fingerprint: randomized
   name: 🇩🇪 德国 04
   network: ws
@@ -325,19 +297,26 @@ proxies:
   type: vless
   udp: true
   uuid: 59290e80-153b-4d2c-8a5b-8a1922608832
-- name: 🇩🇪 德国 38
-  network: ws
-  port: 443
-  server: 104.21.36.57
-  servername: avtice.fullmargintraders.com
-  tls: true
-  type: vless
+- auth: 4eba7d4d-8460-4f9f-9718-9f06886b5489
+  name: 🇩🇪 德国 08
+  password: 4eba7d4d-8460-4f9f-9718-9f06886b5489
+  port: 22155
+  server: 213.108.198.123
+  server_url: hsdg.huasuan666.top
+  skip-cert-verify: true
+  sni: hsdg.huasuan666.top
+  type: hysteria2
   udp: true
-  uuid: 7f1c42b8-069d-4fbe-8cdc-0fc1a131c8a8
-  ws-opts:
-    headers:
-      Host: avtice.fullmargintraders.com
-    path: /wsv/7f1c42b8-069d-4fbe-8cdc-0fc1a131c8a8
+- auth: e8db53c3-5b35-4044-9b77-fca87e1647af
+  name: 🇩🇪 德国 64
+  password: e8db53c3-5b35-4044-9b77-fca87e1647af
+  port: 22158
+  server: 213.108.198.123
+  server_url: hsfg.huasuan666.top
+  skip-cert-verify: true
+  sni: hsfg.huasuan666.top
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
