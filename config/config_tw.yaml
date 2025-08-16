@@ -47,6 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳TW-223.165.4.173-0330 | 0.094MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 223.165.4.173
+  type: ss
 - name: '🇹🇼 台湾 02 #2'
   network: ws
   password: ttfang
@@ -60,12 +66,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳TW-223.165.4.173-0330 | 0.094MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 223.165.4.173
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
