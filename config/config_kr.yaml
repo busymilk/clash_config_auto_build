@@ -47,6 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0333 | 0.0MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0359 | 0.0MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - name: 🇰🇷_韩国_1
   network: ws
   port: 21268
@@ -61,20 +73,6 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_2
-  network: ws
-  port: 12335
-  server: 121.170.103.94
-  servername: cv.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇰🇷_韩国_3
   network: ws
   port: 12367
@@ -103,10 +101,10 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_4
+- name: 🇰🇷_韩国_7
   network: ws
-  port: 50001
-  server: 182.209.106.51
+  port: 50009
+  server: 222.114.29.162
   servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -145,20 +143,6 @@ proxies:
     headers:
       host: cv.ylka.dpdns.org
     path: /?ed=2560
-- name: 🇰🇷_韩国_7
-  network: ws
-  port: 50009
-  server: 222.114.29.162
-  servername: edgc.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷_韩国_10
   network: ws
   port: 12536
@@ -173,6 +157,20 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_2
+  network: ws
+  port: 12335
+  server: 121.170.103.94
+  servername: cv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cv.ylka.dpdns.org
+    path: /?ed=2560
 - name: 🇰🇷_韩国_9
   network: ws
   port: 50006
@@ -187,10 +185,10 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_11
+- name: 🇰🇷_韩国_4
   network: ws
   port: 50001
-  server: 125.134.160.98
+  server: 182.209.106.51
   servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -201,29 +199,12 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷KR-183.109.131.75-4966 | 0.127MB
-  network: ws
-  port: 20086
-  server: 183.109.131.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  ws-opts:
-    path: /
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0333 | 0.0MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0359 | 0.0MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
+  name: 🇰🇷KR-218.237.185.230-4915 | 0.0MB
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  server_url: p141.panda001.net
   type: ss
 - name: 🇰🇷 韩国 24
   network: ws
@@ -239,13 +220,6 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-218.237.185.230-4915 | 0.0MB
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  server_url: p141.panda001.net
-  type: ss
 - cipher: aes-128-gcm
   delay: 1096
   name: 韩国 - 首尔特别市 - Sejong Networks - 1
@@ -259,6 +233,13 @@ proxies:
   server_url: kr2.qiangdong.xyz
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-125.141.31.76-0510 | 1.94MB
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.76
+  server_url: p222.panda001.net
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
