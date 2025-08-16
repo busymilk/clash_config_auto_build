@@ -47,6 +47,24 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0168 | 61.0MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0176 | 34.321MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0275 | 22.911MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - cipher: aes-256-cfb
   group: SSRProvider
   name: 🇨🇦CA-79.127.233.170-022
@@ -58,30 +76,6 @@ proxies:
   protoparam: null
   server: 79.127.233.170
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0178 | 47.157MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0180 | 24.796MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0274 | 0.946MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0270 | 2.561MB
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0315 | 1.842MB
   password: JIhN6rBKkaEboLNXVSv5rq
