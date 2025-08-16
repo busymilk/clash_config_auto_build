@@ -48,11 +48,101 @@ profile:
   store-selected: false
 proxies:
 - client-fingerprint: chrome
-  name: 德国 001
+  delay: 1234
+  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.70.92
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
+    max-early-data: 2560
+    path: /tr
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 053
+  network: ws
+  port: 2053
+  server: 162.159.129.11
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- cipher: rc4-md5
+  name: 🇩🇪_DE_德国
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪_DE_德国->🇺🇸_US_美国
+  network: ws
+  port: 8880
+  server: 77.37.33.15
+  type: vmess
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
+  ws-opts:
+    headers:
+      host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- name: 🇩🇪 德国 052
+  network: ws
+  port: 443
+  server: 162.159.152.2
+  servername: vle.amclubsvip.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 089
+  network: ws
+  port: 443
+  server: 104.25.235.104
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  ws-opts:
+    headers:
+      Host: F1.paRsa.fiLegEar-Sg.Me
+    path: /?ed=2560
+- name: 🇩🇪 德国 098
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 162.159.152.2
+  skip-cert-verify: true
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
+- client-fingerprint: chrome
+  name: 德国 002
   network: ws
   password: ttfang
   port: 2096
-  server: 5.10.214.216
+  server: 5.10.215.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -61,11 +151,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 德国 002
+  name: 德国 001
   network: ws
   password: ttfang
   port: 2096
-  server: 5.10.215.216
+  server: 5.10.214.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -100,16 +190,28 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  name: 🇩🇪DE-147.45.178.200-029
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-034
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  name: 🇩🇪DE-46.101.245.131-038
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-84.200.91.228-0331 | 0.372MB
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
   type: ss
 - alterId: 0
   cipher: auto
@@ -123,36 +225,6 @@ proxies:
   uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0331 | 0.372MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
-  type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0283 | 0.85MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- client-fingerprint: chrome
-  delay: 1234
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.67.70.92
-  skip-cert-verify: false
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
-    max-early-data: 2560
-    path: /tr
 - name: 🇩🇪DE-185.208.207.217-4922 | 0.0MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
@@ -201,19 +273,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: 🇩🇪 德国 44
-  network: ws
-  port: 443
-  server: 162.159.152.2
-  servername: vle.amclubsvip.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /
 - name: 🇩🇪 德国 40
   network: ws
   password: bpb-trojan
@@ -280,20 +339,6 @@ proxies:
     headers:
       Host: 007.xingfu.qzz.io
     path: /
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 01
-  network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: random
   name: '🇩🇪 德国 58 #2'
   network: ws
@@ -335,16 +380,35 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- auth: 4eba7d4d-8460-4f9f-9718-9f06886b5489
-  name: 🇩🇪 德国 08
-  password: 4eba7d4d-8460-4f9f-9718-9f06886b5489
-  port: 22155
-  server: 213.108.198.123
-  server_url: hsdg.huasuan666.top
-  skip-cert-verify: true
-  sni: hsdg.huasuan666.top
-  type: hysteria2
+- client-fingerprint: random
+  name: 🇩🇪 德国 60
+  network: ws
+  port: 443
+  server: 104.26.4.90
+  servername: 007.xingfu.qzz.io
+  tls: true
+  type: vless
   udp: true
+  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
+  ws-opts:
+    headers:
+      Host: 007.xingfu.qzz.io
+    path: /
+- alterId: 0
+  cipher: auto
+  delay: 2662
+  name: 德国 - 法兰克福 - DigitalOcean, LLC - 3
+  network: ws
+  port: 8080
+  server: 172.67.155.122
+  server_url: 1000ip.yangmie.online
+  type: vmess
+  udp: true
+  uuid: e9123cce-e4bd-46cf-8466-708b363a9807
+  ws-opts:
+    headers:
+      Host: gyde.aifjj.asia
+    path: /
 - auth: e8db53c3-5b35-4044-9b77-fca87e1647af
   name: 🇩🇪 德国 64
   password: e8db53c3-5b35-4044-9b77-fca87e1647af
@@ -367,52 +431,6 @@ proxies:
   sni: dg.dport.top
   type: hysteria2
   udp: true
-- http-opts:
-    headers:
-      Host:
-      - filimo.com
-    method: GET
-    path:
-    - /
-  name: 🇩🇪 德国 55
-  network: http
-  port: 2083
-  server: 109.94.164.184
-  server_url: germany1.premiumiran.top
-  servername: filimo.com
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59290e80-153b-4d2c-8a5b-8a1922608832
-- alterId: 0
-  cipher: auto
-  delay: 2662
-  name: 德国 - 法兰克福 - DigitalOcean, LLC - 3
-  network: ws
-  port: 8080
-  server: 172.67.155.122
-  server_url: 1000ip.yangmie.online
-  type: vmess
-  udp: true
-  uuid: e9123cce-e4bd-46cf-8466-708b363a9807
-  ws-opts:
-    headers:
-      Host: gyde.aifjj.asia
-    path: /
-- client-fingerprint: random
-  name: 🇩🇪 德国 60
-  network: ws
-  port: 443
-  server: 104.26.4.90
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
 - alterId: 0
   cipher: auto
   country: 🇮🇷IR
@@ -427,6 +445,16 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: cd11391b-9f7a-4478-b624-3a1d5d81d426
+- auth: 4eba7d4d-8460-4f9f-9718-9f06886b5489
+  name: 🇩🇪 德国 08
+  password: 4eba7d4d-8460-4f9f-9718-9f06886b5489
+  port: 22155
+  server: 213.108.198.123
+  server_url: hsdg.huasuan666.top
+  skip-cert-verify: true
+  sni: hsdg.huasuan666.top
+  type: hysteria2
+  udp: true
 - auth: 002f5b53-3bdd-4a20-9c6c-0e20486a57aa
   name: 🇩🇪 德国 43
   obfs: salamander

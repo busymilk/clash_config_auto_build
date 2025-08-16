@@ -47,19 +47,31 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- client-fingerprint: chrome
-  name: 英国 002
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧_GB_英国->🇺🇸_US_美国
   network: ws
-  password: ttfang
-  port: 2096
-  server: 25.25.25.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
+  port: 8880
+  server: 45.12.30.15
+  type: vmess
+  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
   ws-opts:
     headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+      host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+- name: 🇬🇧 英国 01
+  network: ws
+  port: 443
+  server: 93.185.158.14
+  servername: uk.rtot.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00651706-0d2d-448b-80f2-7678f3e5187c
+  ws-opts:
+    headers:
+      Host: uk.rtot.me
+    path: /bing
 - client-fingerprint: chrome
   name: 英国 003
   network: ws
@@ -74,11 +86,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 005
+  name: 英国 002
   network: ws
   password: ttfang
   port: 2096
-  server: 45.12.30.216
+  server: 25.25.25.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -113,6 +125,19 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
+  name: 英国 005
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.12.30.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
   name: 英国 007
   network: ws
   password: ttfang
@@ -139,7 +164,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
-  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
+  name: 🇬🇧GB-46.226.163.225-041
   password: c40641c1f89e7acb
   port: 57456
   server: 46.226.163.225
@@ -181,16 +206,16 @@ proxies:
   server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.78-0233 | 31.161MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.81-0223 | 30.743MB
   password: shadowsocks
   port: 443
   server: 212.102.53.81
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.78-0233 | 31.161MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.79-0241 | 30.4MB
@@ -204,18 +229,6 @@ proxies:
   port: 443
   server: 212.102.53.198
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧GB-64.227.45.92-0230 | 29.836MB
-  network: ws
-  port: 20086
-  server: 64.227.45.92
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5e02bc01-42a7-4609-b20a-4d93feea65c6
-  ws-opts:
-    path: /
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.195-0226 | 13.248MB
   password: shadowsocks
@@ -228,6 +241,18 @@ proxies:
   port: 443
   server: 212.102.53.80
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧GB-64.227.45.92-0230 | 29.836MB
+  network: ws
+  port: 20086
+  server: 64.227.45.92
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5e02bc01-42a7-4609-b20a-4d93feea65c6
+  ws-opts:
+    path: /
 - cipher: aes-128-gcm
   name: 🇬🇧GB-141.98.101.178-0318 | 2.065MB
   password: shadowsocks
@@ -246,31 +271,13 @@ proxies:
   uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
   ws-opts:
     path: /
-- name: 🇬🇧 英国 02
-  network: ws
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.197-0225 | 32.794MB
+  password: shadowsocks
   port: 443
-  server: 93.185.158.14
-  servername: uk.rtot.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00651706-0d2d-448b-80f2-7678f3e5187c
-  ws-opts:
-    headers:
-      Host: uk.rtot.me
-    path: /bing
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧_GB_英国->🇺🇸_US_美国
-  network: ws
-  port: 8880
-  server: 45.12.30.15
-  type: vmess
-  uuid: f8b6c8a4-5633-3158-9c0e-77518e3fc356
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&Telegram🇨🇳@WangCai2/?ed=2560
+  server: 212.102.53.197
+  server_url: uk-dc1.yangon.club
+  type: ss
 - name: 🇬🇧 英国 24
   network: ws
   port: 8443
@@ -285,13 +292,6 @@ proxies:
     headers:
       Host: lease-19.access.name.ng
     path: /
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.197-0225 | 32.794MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  server_url: uk-dc1.yangon.club
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
