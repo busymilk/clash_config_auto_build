@@ -47,11 +47,17 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: rc4-md5
-  name: 🇩🇪_DE_德国
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   type: ss
 - client-fingerprint: chrome
   name: 德国 001
@@ -105,18 +111,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0258 | 26.654MB
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0244 | 28.897MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🇩🇪DE-46.165.194.96-0253 | 26.753MB
@@ -136,26 +130,6 @@ proxies:
   skip-cert-verify: false
   sni: dus.freeguard.org
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-0304 | 0.688MB
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- client-fingerprint: chrome
-  name: 🇩🇪 德国 072
-  network: ws
-  port: 443
-  server: 172.66.158.93
-  servername: freexxx.ndeso.web.id
-  tls: true
-  type: vless
-  udp: true
-  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-  ws-opts:
-    headers:
-      Host: freexxx.ndeso.web.id
-    path: /Free-CF-Proxy-AT24?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY
 - client-fingerprint: chrome
   delay: 1234
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
@@ -174,6 +148,33 @@ proxies:
         Gecko) Chrome/53.0.2785.143 Safari/537.36
     max-early-data: 2560
     path: /tr
+- name: 🇩🇪 德国 60
+  network: ws
+  port: 443
+  server: 162.159.152.2
+  servername: vle.amclubsvip.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 072
+  network: ws
+  port: 443
+  server: 172.66.158.93
+  servername: freexxx.ndeso.web.id
+  tls: true
+  type: vless
+  udp: true
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  ws-opts:
+    headers:
+      Host: freexxx.ndeso.web.id
+    path: /Free-CF-Proxy-AT24?--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY
 - client-fingerprint: randomized
   name: 🇩🇪 德国 053
   network: ws
@@ -188,19 +189,6 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇩🇪 德国 052
-  network: ws
-  port: 443
-  server: 162.159.152.2
-  servername: vle.amclubsvip.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /
 - name: 🇩🇪 德国 098
   network: ws
   password: bpb-trojan
@@ -241,6 +229,20 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr
+- client-fingerprint: firefox
+  name: 🇩🇪 德国 10
+  network: ws
+  port: 443
+  server: 104.21.36.57
+  servername: sample.fullmargintraders.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59171a5a-c42c-47be-aaf1-cbaefcc5a07d
+  ws-opts:
+    headers:
+      Host: sample.fullmargintraders.com
+    path: /wsv/59171a5a-c42c-47be-aaf1-cbaefcc5a07d
 - client-fingerprint: randomized
   name: 🇩🇪 德国 21
   network: ws
@@ -377,28 +379,6 @@ proxies:
     headers:
       Host: gyde.aifjj.asia
     path: /
-- auth: e8db53c3-5b35-4044-9b77-fca87e1647af
-  name: 🇩🇪 德国 64
-  password: e8db53c3-5b35-4044-9b77-fca87e1647af
-  port: 22158
-  server: 213.108.198.123
-  server_url: hsfg.huasuan666.top
-  skip-cert-verify: true
-  sni: hsfg.huasuan666.top
-  type: hysteria2
-  udp: true
-- auth: 225ceec2-a6de-4063-b36b-4d807779f9c9
-  name: 🇩🇪 德国 66
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 225ceec2-a6de-4063-b36b-4d807779f9c9
-  port: 33653
-  server: 213.108.198.123
-  server_url: dg.dport.top
-  skip-cert-verify: true
-  sni: dg.dport.top
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: auto
   country: 🇮🇷IR
@@ -413,42 +393,6 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: cd11391b-9f7a-4478-b624-3a1d5d81d426
-- auth: 002f5b53-3bdd-4a20-9c6c-0e20486a57aa
-  name: 🇩🇪 德国 43
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 002f5b53-3bdd-4a20-9c6c-0e20486a57aa
-  port: 20557
-  server: 213.108.198.123
-  server_url: nexiadg.688997.xyz
-  skip-cert-verify: true
-  sni: nexiadg.688997.xyz
-  type: hysteria2
-  udp: true
-- auth: 4eba7d4d-8460-4f9f-9718-9f06886b5489
-  name: 🇩🇪 德国 08
-  password: 4eba7d4d-8460-4f9f-9718-9f06886b5489
-  port: 22155
-  server: 213.108.198.123
-  server_url: hsdg.huasuan666.top
-  skip-cert-verify: true
-  sni: hsdg.huasuan666.top
-  type: hysteria2
-  udp: true
-- name: 🇩🇪 德国 047
-  network: ws
-  port: 80
-  server: 104.17.147.22
-  server_url: www.speedtest.net
-  servername: www.speedtest.net.c.1.avaacado.ir
-  tls: false
-  type: vless
-  udp: true
-  uuid: 410eaa6b-022e-4a2d-a6f9-1fd1cb5f1e3c
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.c.1.avaacado.ir
-    path: /Telegram_configMs_Telegram_configMs_Telegram_configMs?ed=80
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

@@ -61,11 +61,11 @@ proxies:
     headers:
       host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_8
+- name: 🇯🇵_日本_5
   network: ws
-  port: 10031
-  server: 149.62.44.137
-  servername: edgc.esslh.filegear-sg.me
+  port: 443
+  server: 158.101.145.82
+  servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -73,26 +73,26 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edgc.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_7
-  network: ws
-  port: 59443
-  server: 195.245.242.32
-  servername: edgc.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.esslh.filegear-sg.me
+      host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_9
   network: ws
   port: 443
   server: 158.101.77.33
+  servername: edgc.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇯🇵_日本_10
+  network: ws
+  port: 443
+  server: 158.101.140.206
   servername: edgc.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -117,10 +117,24 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_10
+- name: 🇯🇵_日本_7
   network: ws
-  port: 443
-  server: 158.101.140.206
+  port: 59443
+  server: 195.245.242.32
+  servername: edgc.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇯🇵_日本_8
+  network: ws
+  port: 10031
+  server: 149.62.44.137
   servername: edgc.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -137,14 +151,6 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
-- cipher: 2022-blake3-aes-256-gcm
-  delay: 352
-  name: 日本 - 东京 - Eons Data Communications Limited - 6
-  password: OTBjODNjYzIwZGJhNDA3NTNjNTlhOWVkOTU4ZjRkNWY=:MmM4YzQxODItYzljMi00YjMwLWIxYTMtOGQ2Nzk2Njc=
-  port: 47255
-  server: 38.207.152.200
-  type: ss
-  udp: true
 - name: 🇯🇵 日本 34
   network: ws
   port: 12367
@@ -200,17 +206,6 @@ proxies:
     headers:
       Host: download.visualstudio.microsoft.com
     path: /download/pr/9b564b8a-a26d-4bb3-8f30-1101ae71a55a/2cee4f9e4c0e77e3d0f866fdf690864e/windowsdesktop-runtime-5.0.8-win-x64.exe
-- country: 🇯🇵JP
-  delay: 2822
-  name: 日本 - 东京 - Amazon Technologies Inc. - 1
-  password: 0xC6Mws4Dg
-  port: 1935
-  server: 54.168.52.254
-  server_url: x2-japan-amazon-v2.devefun.org
-  skip-cert-verify: true
-  sni: x2-japan-amazon-v2.devefun.org
-  type: trojan
-  udp: true
 - auth: f64b52e4-c41f-4ee0-b8bc-1893202d3489
   name: 🇯🇵 日本 18
   obfs: salamander
@@ -233,6 +228,18 @@ proxies:
   sni: hsrb.huasuan666.top
   type: hysteria2
   udp: true
+- auth: 4c0109f7-e002-410a-b37d-a56b391237a5
+  down: 300
+  name: '🇯🇵 日本 12 #2'
+  password: 4c0109f7-e002-410a-b37d-a56b391237a5
+  port: 8080
+  server: 178.94.142.111
+  server_url: jp6.7896543.xyz
+  skip-cert-verify: false
+  sni: jp6.7896543.xyz
+  type: hysteria2
+  udp: true
+  up: 300
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
