@@ -47,11 +47,24 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇯🇵_日本_6
+- name: 🇯🇵 日本 20
   network: ws
-  port: 47001
-  server: 158.101.154.245
-  servername: edgc.esslh.filegear-sg.me
+  port: 12367
+  server: 121.165.36.35
+  servername: edgc.aimercc.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇯🇵_日本_11
+  network: ws
+  port: 2083
+  server: 103.116.7.103
+  servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -59,7 +72,7 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edgc.esslh.filegear-sg.me
+      host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_5
   network: ws
@@ -74,6 +87,20 @@ proxies:
   ws-opts:
     headers:
       host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇯🇵_日本_6
+  network: ws
+  port: 47001
+  server: 158.101.154.245
+  servername: edgc.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_9
   network: ws
@@ -102,20 +129,6 @@ proxies:
   ws-opts:
     headers:
       host: edgc.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_11
-  network: ws
-  port: 2083
-  server: 103.116.7.103
-  servername: edgc.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_7
   network: ws
@@ -151,19 +164,6 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
-- name: 🇯🇵 日本 34
-  network: ws
-  port: 12367
-  server: 121.165.36.35
-  servername: edgc.aimercc.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edgc.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵 日本 12
   network: ws
   port: 443
@@ -177,6 +177,28 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: Telegram@freecodes/?ed=2560
+- auth: e4cdceed-6020-4312-9d21-8e73342d5582
+  name: 🇯🇵 日本 30
+  password: e4cdceed-6020-4312-9d21-8e73342d5582
+  port: 22161
+  server: 212.192.221.221
+  server_url: hsrb.huasuan666.top
+  skip-cert-verify: true
+  sni: hsrb.huasuan666.top
+  type: hysteria2
+  udp: true
+- auth: f64b52e4-c41f-4ee0-b8bc-1893202d3489
+  name: 🇯🇵 日本 18
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: f64b52e4-c41f-4ee0-b8bc-1893202d3489
+  port: 33657
+  server: 212.192.221.221
+  server_url: rb.dport.top
+  skip-cert-verify: true
+  sni: rb.dport.top
+  type: hysteria2
+  udp: true
 - cipher: aes-256-gcm
   name: 🇯🇵 日本 11
   password: 70a0b8103356
@@ -191,55 +213,6 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- alterId: '2'
-  cipher: auto
-  delay: 767
-  name: 日本 - Chiyoda City - GMO GlobalSign Holdings K.K. - 11
-  network: ws
-  port: 10001
-  server: 153.122.118.128
-  server_url: b.jp.mbsurfnode3.top
-  type: vmess
-  udp: true
-  uuid: 8689d089-90a5-3ade-a25e-ebe157df8d99
-  ws-opts:
-    headers:
-      Host: download.visualstudio.microsoft.com
-    path: /download/pr/9b564b8a-a26d-4bb3-8f30-1101ae71a55a/2cee4f9e4c0e77e3d0f866fdf690864e/windowsdesktop-runtime-5.0.8-win-x64.exe
-- auth: f64b52e4-c41f-4ee0-b8bc-1893202d3489
-  name: 🇯🇵 日本 18
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: f64b52e4-c41f-4ee0-b8bc-1893202d3489
-  port: 33657
-  server: 212.192.221.221
-  server_url: rb.dport.top
-  skip-cert-verify: true
-  sni: rb.dport.top
-  type: hysteria2
-  udp: true
-- auth: e4cdceed-6020-4312-9d21-8e73342d5582
-  name: 🇯🇵 日本 30
-  password: e4cdceed-6020-4312-9d21-8e73342d5582
-  port: 22161
-  server: 212.192.221.221
-  server_url: hsrb.huasuan666.top
-  skip-cert-verify: true
-  sni: hsrb.huasuan666.top
-  type: hysteria2
-  udp: true
-- auth: 4c0109f7-e002-410a-b37d-a56b391237a5
-  down: 300
-  name: '🇯🇵 日本 12 #2'
-  password: 4c0109f7-e002-410a-b37d-a56b391237a5
-  port: 8080
-  server: 178.94.142.111
-  server_url: jp6.7896543.xyz
-  skip-cert-verify: false
-  sni: jp6.7896543.xyz
-  type: hysteria2
-  udp: true
-  up: 300
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

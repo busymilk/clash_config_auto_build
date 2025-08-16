@@ -47,14 +47,52 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- client-fingerprint: chrome
+  delay: 1234
+  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.70.92
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
+    max-early-data: 2560
+    path: /tr
+- cipher: rc4-md5
+  delay: 1493
+  name: 德国 - Frankfurt - GTHost - 1
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- name: 🇩🇪 德国 67
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 162.159.133.85
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  name: 🇩🇪DE-185.177.229.245-044
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  name: 🇩🇪DE-46.101.245.131-048
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
@@ -123,31 +161,6 @@ proxies:
   uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
   ws-opts:
     path: /
-- name: 🇩🇪DE-185.208.207.217-5209 | 0.459MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
-- client-fingerprint: chrome
-  delay: 1234
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.67.70.92
-  skip-cert-verify: false
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
-    max-early-data: 2560
-    path: /tr
 - name: 🇩🇪 德国 60
   network: ws
   port: 443
@@ -229,20 +242,6 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr
-- client-fingerprint: firefox
-  name: 🇩🇪 德国 10
-  network: ws
-  port: 443
-  server: 104.21.36.57
-  servername: sample.fullmargintraders.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 59171a5a-c42c-47be-aaf1-cbaefcc5a07d
-  ws-opts:
-    headers:
-      Host: sample.fullmargintraders.com
-    path: /wsv/59171a5a-c42c-47be-aaf1-cbaefcc5a07d
 - client-fingerprint: randomized
   name: 🇩🇪 德国 21
   network: ws
@@ -269,20 +268,20 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
-- delay: 1596
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 43
+- client-fingerprint: firefox
+  name: 🇩🇪 德国 10
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 443
-  server: 162.159.133.85
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
+  server: 104.21.36.57
+  servername: sample.fullmargintraders.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 59171a5a-c42c-47be-aaf1-cbaefcc5a07d
   ws-opts:
     headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+      Host: sample.fullmargintraders.com
+    path: /wsv/59171a5a-c42c-47be-aaf1-cbaefcc5a07d
 - client-fingerprint: randomized
   name: 🇩🇪 德国 04
   network: ws
@@ -393,6 +392,16 @@ proxies:
   skip-cert-verify: true
   type: vmess
   uuid: cd11391b-9f7a-4478-b624-3a1d5d81d426
+- auth: a503efc7-b681-466f-be23-434483b2a07b
+  name: 🇩🇪 德国 26
+  password: a503efc7-b681-466f-be23-434483b2a07b
+  port: 22155
+  server: 213.108.198.123
+  server_url: hsdg.huasuan666.top
+  skip-cert-verify: true
+  sni: hsdg.huasuan666.top
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
