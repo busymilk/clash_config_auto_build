@@ -47,60 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-cfb
-  name: 🇩🇪DE-3.70.194.142-1089 | 18.624MB
-  password: amazonskr05
-  port: 443
-  server: 3.70.194.142
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0323 | 3.468MB
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE-46.165.194.96-0319 | 4.862MB
-  network: ws
-  port: 20086
-  server: 46.165.194.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-0358 | 0.451MB
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- client-fingerprint: chrome
-  delay: 1234
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.67.70.92
-  skip-cert-verify: false
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
-    max-early-data: 2560
-    path: /tr
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0292 | 0.16MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
 - client-fingerprint: chrome
   name: 德国 001
   network: ws
@@ -153,26 +99,109 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- alterId: '0'
-  cipher: auto
-  name: 🇩🇪_德国_1
-  network: tcp
-  port: 77
-  server: 93.127.180.64
-  type: vmess
-  uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
-- name: 🇩🇪 德国 24
+- name: 🇩🇪telegram ➠ @v2rayNG_Matsuri
+  password: 3C8h8X6kimbOX68joVe3kTERw
+  port: 7197
+  server: 206.189.20.193
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-027
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-032
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- client-fingerprint: chrome
+  delay: 1234
+  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.70.92
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
+    max-early-data: 2560
+    path: /tr
+- name: 🇩🇪 德国 60
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 162.159.133.85
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 07
   network: ws
   port: 443
-  server: 104.18.26.90
-  servername: barayeiranmahsang.ghormehsabzi.dpdns.org
+  server: 104.26.8.156
+  servername: yx.yushan.dpdns.org
   tls: true
   type: vless
   udp: true
-  uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
+  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
   ws-opts:
     headers:
-      Host: barayeiranmahsang.ghormehsabzi.dpdns.org
+      Host: yx.yushan.dpdns.org
+    path: /?ed=2560
+- name: 🇩🇪 德国 63
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- client-fingerprint: randomized
+  name: 🇩🇪 德国 59
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE-46.165.194.96-0319 | 4.862MB
+  network: ws
+  port: 20086
+  server: 46.165.194.96
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
+  ws-opts:
     path: /
 - name: 🇩🇪 德国 74
   network: ws
@@ -187,6 +216,19 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
+- name: 🇩🇪 德国 24
+  network: ws
+  port: 443
+  server: 104.18.26.90
+  servername: barayeiranmahsang.ghormehsabzi.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
+  ws-opts:
+    headers:
+      Host: barayeiranmahsang.ghormehsabzi.dpdns.org
+    path: /
 - alpn:
   - http%2F1.1
   client-fingerprint: chrome
@@ -230,19 +272,6 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: 🇩🇪 德国 67
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 162.159.133.85
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: 🇩🇪 德国 098
   network: ws
   password: bpb-trojan
@@ -256,7 +285,7 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
-- name: 🇩🇪 德国 60
+- name: '🇩🇪 德国 60 #2'
   network: ws
   port: 443
   server: 162.159.152.2
@@ -282,13 +311,6 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr
-- name: 🇩🇪DE-185.208.207.217-0351 | 0.028MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
 - client-fingerprint: chrome
   name: 🇩🇪 德国 089
   network: ws
@@ -317,12 +339,6 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0287 | 0.177MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
-  type: ss
 - client-fingerprint: randomized
   name: 🇩🇪 德国 21
   network: ws
@@ -351,19 +367,6 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇩🇪 德国 05
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 162.159.129.11
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: random
   name: 🇩🇪 德国 76
   network: ws
@@ -378,47 +381,6 @@ proxies:
     headers:
       Host: 007.xingfu.qzz.io
     path: /
-- client-fingerprint: randomized
-  name: '🇩🇪 德国 41 #2'
-  network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '🇩🇪 德国 12 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: random
-  name: 🇩🇪 德国 55
-  network: ws
-  port: 443
-  server: 104.26.9.156
-  servername: yx.yushan.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
-  ws-opts:
-    headers:
-      Host: yx.yushan.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: 🇩🇪 德国 36
   network: ws
@@ -433,20 +395,33 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /
-- client-fingerprint: firefox
-  name: 🇩🇪 德国 10
+- client-fingerprint: random
+  name: 🇩🇪 德国 55
   network: ws
   port: 443
-  server: 104.21.36.57
-  servername: sample.fullmargintraders.com
+  server: 104.26.9.156
+  servername: yx.yushan.dpdns.org
   tls: true
   type: vless
   udp: true
-  uuid: 59171a5a-c42c-47be-aaf1-cbaefcc5a07d
+  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
   ws-opts:
     headers:
-      Host: sample.fullmargintraders.com
-    path: /wsv/59171a5a-c42c-47be-aaf1-cbaefcc5a07d
+      Host: yx.yushan.dpdns.org
+    path: /?ed=2560
+- name: '🇩🇪 德国 12 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 104.25.254.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
