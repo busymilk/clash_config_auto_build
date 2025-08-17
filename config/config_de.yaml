@@ -48,22 +48,58 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-256-cfb
-  name: 🇩🇪DE-3.70.194.142-024
+  name: 🇩🇪DE-3.70.194.142-1089 | 18.624MB
   password: amazonskr05
   port: 443
   server: 3.70.194.142
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-044
+  name: 🇩🇪DE-185.177.229.245-0323 | 3.468MB
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE-46.165.194.96-0319 | 4.862MB
+  network: ws
+  port: 20086
+  server: 46.165.194.96
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-048
+  name: 🇩🇪DE-46.101.245.131-0358 | 0.451MB
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
+  type: ss
+- client-fingerprint: chrome
+  delay: 1234
+  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.70.92
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
+    max-early-data: 2560
+    path: /tr
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-0292 | 0.16MB
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   type: ss
 - client-fingerprint: chrome
   name: 德国 001
@@ -125,36 +161,6 @@ proxies:
   server: 93.127.180.64
   type: vmess
   uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
-- client-fingerprint: chrome
-  delay: 1234
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.67.70.92
-  skip-cert-verify: false
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
-    max-early-data: 2560
-    path: /tr
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE-46.165.194.96-0319 | 4.862MB
-  network: ws
-  port: 20086
-  server: 46.165.194.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
-  ws-opts:
-    path: /
 - name: 🇩🇪 德国 24
   network: ws
   port: 443
@@ -168,6 +174,19 @@ proxies:
     headers:
       Host: barayeiranmahsang.ghormehsabzi.dpdns.org
     path: /
+- name: 🇩🇪 德国 74
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.26.4.60
+  skip-cert-verify: true
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
 - alpn:
   - http%2F1.1
   client-fingerprint: chrome
@@ -184,19 +203,6 @@ proxies:
     headers:
       Host: JKlKL-Cx6.paGes.dev
     path: /OGvsyjiasK9qcxVN/NjIuMy4xMi43Ng==?ed=2560
-- name: 🇩🇪 德国 74
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.26.4.60
-  skip-cert-verify: true
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: /tr?ed=2560
 - client-fingerprint: chrome
   name: 🇩🇪 德国 88
   network: ws
@@ -224,12 +230,6 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0287 | 0.177MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
-  type: ss
 - name: 🇩🇪 德国 67
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -243,26 +243,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: 🇩🇪DE-185.208.207.217-0351 | 0.028MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
-- name: 🇩🇪 德国 60
-  network: ws
-  port: 443
-  server: 162.159.152.2
-  servername: vle.amclubsvip.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /
 - name: 🇩🇪 德国 098
   network: ws
   password: bpb-trojan
@@ -276,6 +256,19 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
+- name: 🇩🇪 德国 60
+  network: ws
+  port: 443
+  server: 162.159.152.2
+  servername: vle.amclubsvip.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /
 - name: 🇩🇪 德国 49
   network: ws
   password: bpb-trojan
@@ -289,6 +282,13 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr
+- name: 🇩🇪DE-185.208.207.217-0351 | 0.028MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
 - client-fingerprint: chrome
   name: 🇩🇪 德国 089
   network: ws
@@ -317,6 +317,12 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-84.200.91.228-0287 | 0.177MB
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
+  type: ss
 - client-fingerprint: randomized
   name: 🇩🇪 德国 21
   network: ws
@@ -399,23 +405,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- http-opts:
-    headers:
-      Host:
-      - filimo.com
-    method: GET
-    path:
-    - /
-  name: 🇩🇪 德国 54
-  network: http
-  port: 2083
-  server: 109.94.164.184
-  server_url: germany1.premiumiran.top
-  servername: filimo.com
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59290e80-153b-4d2c-8a5b-8a1922608832
 - client-fingerprint: random
   name: 🇩🇪 德国 55
   network: ws

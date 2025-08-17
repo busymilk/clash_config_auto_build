@@ -47,15 +47,36 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0235 | 154.641MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
 - cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-032
+  name: 🇨🇦CA-79.127.233.170-0237 | 149.643MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-38.180.211.126-0282 | 11.43MB
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0337 | 7.695MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: aes-256-cfb
+  name: SSR-加拿大-79.127.233.170:989
   obfs: plain
-  obfsparam: null
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
-  protoparam: null
   server: 79.127.233.170
   type: ssr
 - name: 🇨🇦_加拿大_2
@@ -81,48 +102,12 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0235 | 154.641MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0237 | 149.643MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0337 | 7.695MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0282 | 11.43MB
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0315 | 1.842MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   server_url: ca225.vpnbook.com
   type: ss
-- auth: 225ceec2-a6de-4063-b36b-4d807779f9c9
-  name: 🇨🇦 加拿大 03
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 225ceec2-a6de-4063-b36b-4d807779f9c9
-  port: 33651
-  server: 209.200.246.235
-  server_url: jnd.dport.top
-  skip-cert-verify: true
-  sni: jnd.dport.top
-  type: hysteria2
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

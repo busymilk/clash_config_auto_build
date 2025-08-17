@@ -47,6 +47,25 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0297 | 29.189MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- name: 日本 001
+  network: ws
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
 - name: 日本 002
   network: ws
   password: Aimer
@@ -86,20 +105,6 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560
-- name: 🇯🇵_日本_6
-  network: ws
-  port: 443
-  server: 158.101.145.82
-  servername: edgc.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_8
   network: ws
   port: 443
@@ -156,12 +161,20 @@ proxies:
     headers:
       host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0297 | 29.189MB
-  password: shadowsocks
+- name: 🇯🇵_日本_6
+  network: ws
   port: 443
-  server: 149.22.87.204
-  type: ss
+  server: 158.101.145.82
+  servername: edgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵 日本 12
   network: ws
   port: 443

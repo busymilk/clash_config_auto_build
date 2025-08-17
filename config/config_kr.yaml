@@ -47,10 +47,48 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0362 | 1.498MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0366 | 0.564MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷KR-183.109.131.75-0328 | 1.615MB
+  network: ws
+  port: 20086
+  server: 183.109.131.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  ws-opts:
+    path: /
 - name: 🇰🇷_韩国_21
   network: ws
   port: 50000
   server: 119.193.54.164
+  servername: edgc.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_22
+  network: ws
+  port: 50000
+  server: 211.199.226.149
   servername: edgc.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -74,20 +112,6 @@ proxies:
   ws-opts:
     headers:
       host: edgc.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_22
-  network: ws
-  port: 50000
-  server: 211.199.226.149
-  servername: edgc.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷_韩国_23
   network: ws
@@ -117,24 +141,10 @@ proxies:
     headers:
       host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_28
+- name: 🇰🇷_韩国_26
   network: ws
-  port: 50000
-  server: 14.55.223.70
-  servername: edgc.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_25
-  network: ws
-  port: 50006
-  server: 222.104.130.83
+  port: 12536
+  server: 175.215.205.40
   servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -145,10 +155,10 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_29
+- name: 🇰🇷_韩国_28
   network: ws
-  port: 30894
-  server: 59.3.161.120
+  port: 50000
+  server: 14.55.223.70
   servername: edgc.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -173,11 +183,11 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_26
+- name: 🇰🇷_韩国_29
   network: ws
-  port: 12536
-  server: 175.215.205.40
-  servername: edgc.aimercc.dpdns.org
+  port: 30894
+  server: 59.3.161.120
+  servername: edgc.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -185,7 +195,7 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edgc.aimercc.dpdns.org
+      host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷_韩国_31
   network: ws
@@ -205,6 +215,34 @@ proxies:
   network: ws
   port: 50001
   server: 182.209.106.51
+  servername: edgc.aimercc.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.aimercc.dpdns.org
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_33
+  network: ws
+  port: 50001
+  server: 119.203.123.80
+  servername: edgc.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_25
+  network: ws
+  port: 50006
+  server: 222.104.130.83
   servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -243,20 +281,6 @@ proxies:
     headers:
       host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_33
-  network: ws
-  port: 50001
-  server: 119.203.123.80
-  servername: edgc.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷_韩国_35
   network: ws
   port: 12268
@@ -271,20 +295,6 @@ proxies:
     headers:
       host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-cfb
-  delay: 1696
-  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0366 | 0.564MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
 - name: '🇰🇷_韩国_36 #2'
   network: ws
   port: 50001
@@ -316,20 +326,6 @@ proxies:
   network: ws
   port: 26538
   server: 211.216.189.208
-  servername: xz.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: xz.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: '🇰🇷_韩国_32 #2'
-  network: ws
-  port: 50000
-  server: 220.93.255.130
   servername: xz.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -395,11 +391,11 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
-- name: 🇰🇷 韩国 22
+- name: 🇰🇷 韩国 23
   network: ws
   password: Aimer
-  port: 50006
-  server: 222.104.130.83
+  port: 50001
+  server: 182.209.106.51
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
@@ -408,11 +404,11 @@ proxies:
     headers:
       Host: epgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷 韩国 23
+- name: 🇰🇷 韩国 22
   network: ws
   password: Aimer
-  port: 50001
-  server: 182.209.106.51
+  port: 50006
+  server: 222.104.130.83
   skip-cert-verify: true
   sni: epgc.aimercc.dpdns.org
   type: trojan
