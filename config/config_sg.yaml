@@ -47,18 +47,24 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: SG
-  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: 22509
-  server: 54.255.144.66
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-0339 | 0.083MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - name: 新加坡
   password: 5OiuCsPmULZ0lJwts89fegLJE
   port: 17193
   server: 54.169.224.169
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: SG
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 54.255.144.66
   skip-cert-verify: true
   sni: bing.com
   tls: false
@@ -71,10 +77,42 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- auth: 8jpK7YpiSmNjGrrYRo6gdqE2uQ
+  name: 🇸🇬 新加坡 07
+  password: 8jpK7YpiSmNjGrrYRo6gdqE2uQ
+  port: 13081
+  server: 54.179.238.221
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- auth: k4L6CnJLP2fqbNLYryqXSehls
+  name: 🇸🇬 新加坡 05
+  password: k4L6CnJLP2fqbNLYryqXSehls
+  port: 7077
+  server: 13.229.70.133
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
 - name: 🇸🇬_新加坡_3
   network: ws
   port: 443
   server: 52.163.201.138
+  servername: edgc.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇸🇬_新加坡_5
+  network: ws
+  port: 443
+  server: 20.195.15.202
   servername: edgc.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -99,20 +137,6 @@ proxies:
     headers:
       host: ax1.bgm2024.dpdns.org
     path: /?ed=2560
-- name: 🇸🇬_新加坡_5
-  network: ws
-  port: 443
-  server: 20.195.15.202
-  servername: edgc.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024

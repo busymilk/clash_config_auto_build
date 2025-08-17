@@ -53,20 +53,58 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
-- name: 🇯🇵_日本_9
+- name: 日本 001
   network: ws
-  port: 443
-  server: 158.101.77.33
-  servername: edgc.esslh.filegear-sg.me
+  password: Aimer
+  port: 2087
+  server: 103.116.7.100
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edgc.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 日本 002
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.189
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 日本 003
+  network: ws
+  password: Aimer
+  port: 443
+  server: 103.116.7.235
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
+- name: 日本 004
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 103.116.7.103
+  skip-cert-verify: true
+  sni: epgc.aimercc.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epgc.aimercc.dpdns.org
+    path: /?ed=2560
 - name: 🇯🇵_日本_8
   network: ws
   port: 10031
@@ -81,11 +119,11 @@ proxies:
     headers:
       host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_7
+- name: 🇯🇵_日本_11
   network: ws
-  port: 59443
-  server: 195.245.242.32
-  servername: edgc.esslh.filegear-sg.me
+  port: 2083
+  server: 103.116.7.103
+  servername: edgc.aimercc.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
@@ -93,7 +131,7 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edgc.esslh.filegear-sg.me
+      host: edgc.aimercc.dpdns.org
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_10
   network: ws
@@ -123,11 +161,11 @@ proxies:
     headers:
       host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_11
+- name: 🇯🇵_日本_9
   network: ws
-  port: 2083
-  server: 103.116.7.103
-  servername: edgc.aimercc.dpdns.org
+  port: 443
+  server: 158.101.77.33
+  servername: edgc.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -135,7 +173,7 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edgc.aimercc.dpdns.org
+      host: edgc.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵 日本 12
   network: ws
@@ -150,28 +188,6 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: Telegram@freecodes/?ed=2560
-- auth: f64b52e4-c41f-4ee0-b8bc-1893202d3489
-  name: 🇯🇵 日本 18
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: f64b52e4-c41f-4ee0-b8bc-1893202d3489
-  port: 33657
-  server: 212.192.221.221
-  server_url: rb.dport.top
-  skip-cert-verify: true
-  sni: rb.dport.top
-  type: hysteria2
-  udp: true
-- auth: e4cdceed-6020-4312-9d21-8e73342d5582
-  name: 🇯🇵 日本 30
-  password: e4cdceed-6020-4312-9d21-8e73342d5582
-  port: 22161
-  server: 212.192.221.221
-  server_url: hsrb.huasuan666.top
-  skip-cert-verify: true
-  sni: hsrb.huasuan666.top
-  type: hysteria2
-  udp: true
 - cipher: aes-256-gcm
   name: 🇯🇵 日本 11
   password: 70a0b8103356
