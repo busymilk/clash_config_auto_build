@@ -47,6 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇩🇪telegram ➠ @v2rayNG_Matsuri
+  password: 3C8h8X6kimbOX68joVe3kTERw
+  port: 7197
+  server: 206.189.20.193
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - client-fingerprint: chrome
   name: 德国 001
   network: ws
@@ -99,26 +113,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇩🇪telegram ➠ @v2rayNG_Matsuri
-  password: 3C8h8X6kimbOX68joVe3kTERw
-  port: 7197
-  server: 206.189.20.193
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-027
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-032
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
 - client-fingerprint: chrome
   delay: 1234
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
@@ -137,19 +131,6 @@ proxies:
         Gecko) Chrome/53.0.2785.143 Safari/537.36
     max-early-data: 2560
     path: /tr
-- name: 🇩🇪 德国 60
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 162.159.133.85
-  skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: chrome
   name: 🇩🇪 德国 07
   network: ws
@@ -164,6 +145,25 @@ proxies:
     headers:
       Host: yx.yushan.dpdns.org
     path: /?ed=2560
+- name: 🇩🇪 德国 60
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 162.159.133.85
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- cipher: rc4-md5
+  name: 🇩🇪_DE_德国
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - name: 🇩🇪 德国 63
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -285,19 +285,6 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
-- name: '🇩🇪 德国 60 #2'
-  network: ws
-  port: 443
-  server: 162.159.152.2
-  servername: vle.amclubsvip.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /
 - name: 🇩🇪 德国 49
   network: ws
   password: bpb-trojan
@@ -311,6 +298,19 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr
+- name: '🇩🇪 德国 60 #2'
+  network: ws
+  port: 443
+  server: 162.159.152.2
+  servername: vle.amclubsvip.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /
 - client-fingerprint: chrome
   name: 🇩🇪 德国 089
   network: ws

@@ -47,6 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - name: 🇦🇺_澳大利亚_4
   network: ws
   port: 12443
@@ -100,6 +106,20 @@ proxies:
   sni: hg.dport.top
   type: hysteria2
   udp: true
+- name: 🇦🇺_澳大利亚_3
+  network: ws
+  port: 6666
+  server: 43.129.205.163
+  servername: edgc.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgc.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

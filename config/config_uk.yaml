@@ -47,12 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  type: ss
 - client-fingerprint: chrome
-  name: 英国 001
+  name: 英国 002
   network: ws
   password: ttfang
   port: 2096
-  server: 25.25.25.216
+  server: 25.26.27.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -61,11 +67,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 002
+  name: 英国 001
   network: ws
   password: ttfang
   port: 2096
-  server: 25.26.27.216
+  server: 25.25.25.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -138,12 +144,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-039
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
-  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-0113 | 22.494MB
   password: shadowsocks
@@ -198,17 +198,17 @@ proxies:
   port: 443
   server: 212.102.53.196
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.120.237-0268 | 17.925MB
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.195-0270 | 21.156MB
   password: shadowsocks
   port: 443
   server: 212.102.53.195
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-85.210.120.237-0268 | 17.925MB
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
   type: ss
 - alterId: 0
   cipher: auto
@@ -243,6 +243,18 @@ proxies:
   server: 212.102.53.197
   server_url: uk-dc1.yangon.club
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧GB-64.227.45.92-0281 | 14.327MB
+  network: ws
+  port: 20086
+  server: 64.227.45.92
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5e02bc01-42a7-4609-b20a-4d93feea65c6
+  ws-opts:
+    path: /
 - name: 🇬🇧 英国 24
   network: ws
   port: 8443
@@ -257,18 +269,12 @@ proxies:
     headers:
       Host: lease-19.access.name.ng
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧GB-64.227.45.92-0281 | 14.327MB
-  network: ws
-  port: 20086
-  server: 64.227.45.92
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5e02bc01-42a7-4609-b20a-4d93feea65c6
-  ws-opts:
-    path: /
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.178-5206 | 5.596MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
