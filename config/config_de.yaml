@@ -53,12 +53,6 @@ proxies:
   port: 443
   server: 3.70.194.142
   type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-004
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-185.177.229.245-044
   password: oXGp1+ihlfKg826H
@@ -71,18 +65,6 @@ proxies:
   port: 44354
   server: 46.101.245.131
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE-46.165.194.96-0319 | 4.862MB
-  network: ws
-  port: 20086
-  server: 46.165.194.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
-  ws-opts:
-    path: /
 - client-fingerprint: chrome
   name: 德国 001
   network: ws
@@ -122,61 +104,27 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇩🇪DE-185.208.207.217-0351 | 0.028MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0287 | 0.177MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
-  type: ss
-- alpn:
-  - http%2F1.1
-  client-fingerprint: chrome
-  name: 🇩🇪 德国 69
+- client-fingerprint: chrome
+  name: 德国 004
   network: ws
-  port: 2087
-  server: 104.24.90.243
-  servername: JKlKL-Cx6.paGes.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 905076f9-e34e-40b1-9e33-df06726f6336
-  ws-opts:
-    headers:
-      Host: JKlKL-Cx6.paGes.dev
-    path: /OGvsyjiasK9qcxVN/NjIuMy4xMi43Ng==?ed=2560
-- name: 🇩🇪 德国 24
-  network: ws
-  port: 443
-  server: 104.18.26.90
-  servername: barayeiranmahsang.ghormehsabzi.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
-  ws-opts:
-    headers:
-      Host: barayeiranmahsang.ghormehsabzi.dpdns.org
-    path: /
-- name: 🇩🇪 德国 74
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.26.4.60
+  password: ttfang
+  port: 2096
+  server: 31.185.108.216
   skip-cert-verify: true
-  sni: zamim340.ggff.net
+  sni: ttfang.fange.me
   type: trojan
-  udp: true
   ws-opts:
     headers:
-      Host: zamim340.ggff.net
-    path: /tr?ed=2560
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- alterId: '0'
+  cipher: auto
+  name: 🇩🇪_德国_1
+  network: tcp
+  port: 77
+  server: 93.127.180.64
+  type: vmess
+  uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
 - client-fingerprint: chrome
   delay: 1234
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
@@ -195,6 +143,60 @@ proxies:
         Gecko) Chrome/53.0.2785.143 Safari/537.36
     max-early-data: 2560
     path: /tr
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE-46.165.194.96-0319 | 4.862MB
+  network: ws
+  port: 20086
+  server: 46.165.194.96
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 24
+  network: ws
+  port: 443
+  server: 104.18.26.90
+  servername: barayeiranmahsang.ghormehsabzi.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
+  ws-opts:
+    headers:
+      Host: barayeiranmahsang.ghormehsabzi.dpdns.org
+    path: /
+- alpn:
+  - http%2F1.1
+  client-fingerprint: chrome
+  name: 🇩🇪 德国 69
+  network: ws
+  port: 2087
+  server: 104.24.90.243
+  servername: JKlKL-Cx6.paGes.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 905076f9-e34e-40b1-9e33-df06726f6336
+  ws-opts:
+    headers:
+      Host: JKlKL-Cx6.paGes.dev
+    path: /OGvsyjiasK9qcxVN/NjIuMy4xMi43Ng==?ed=2560
+- name: 🇩🇪 德国 74
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.26.4.60
+  skip-cert-verify: true
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
 - client-fingerprint: chrome
   name: 🇩🇪 德国 88
   network: ws
@@ -222,6 +224,12 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-84.200.91.228-0287 | 0.177MB
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
+  type: ss
 - name: 🇩🇪 德国 67
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -235,6 +243,13 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: 🇩🇪DE-185.208.207.217-0351 | 0.028MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
 - name: 🇩🇪 德国 60
   network: ws
   port: 443
@@ -343,20 +358,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: firefox
-  name: 🇩🇪 德国 10
-  network: ws
-  port: 443
-  server: 104.21.36.57
-  servername: sample.fullmargintraders.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 59171a5a-c42c-47be-aaf1-cbaefcc5a07d
-  ws-opts:
-    headers:
-      Host: sample.fullmargintraders.com
-    path: /wsv/59171a5a-c42c-47be-aaf1-cbaefcc5a07d
 - client-fingerprint: random
   name: 🇩🇪 德国 76
   network: ws
@@ -415,33 +416,6 @@ proxies:
   type: vless
   udp: true
   uuid: 59290e80-153b-4d2c-8a5b-8a1922608832
-- alterId: 0
-  cipher: auto
-  country: 🇮🇷IR
-  delay: 2732
-  h2-opts: {}
-  http-opts: {}
-  name: 德国 - Frankfurt Am Main - Hetzner Online AG - 2
-  network: tcp
-  port: 443
-  server: 37.202.247.4
-  server_url: dl01.armod.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: cd11391b-9f7a-4478-b624-3a1d5d81d426
-- client-fingerprint: chrome
-  name: 德国 004
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 31.185.108.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - client-fingerprint: random
   name: 🇩🇪 德国 55
   network: ws
@@ -456,6 +430,34 @@ proxies:
     headers:
       Host: yx.yushan.dpdns.org
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 36
+  network: ws
+  port: 8443
+  server: 104.24.40.146
+  servername: bitget1.asdasd.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /
+- client-fingerprint: firefox
+  name: 🇩🇪 德国 10
+  network: ws
+  port: 443
+  server: 104.21.36.57
+  servername: sample.fullmargintraders.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59171a5a-c42c-47be-aaf1-cbaefcc5a07d
+  ws-opts:
+    headers:
+      Host: sample.fullmargintraders.com
+    path: /wsv/59171a5a-c42c-47be-aaf1-cbaefcc5a07d
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

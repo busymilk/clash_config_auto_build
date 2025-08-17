@@ -47,14 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 'Channel id: @proxy_kafee🇨🇦'
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.52.235
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
 - cipher: aes-256-cfb
   group: SSRProvider
   name: 🇨🇦CA-79.127.233.170-032
@@ -66,6 +58,28 @@ proxies:
   protoparam: null
   server: 79.127.233.170
   type: ssr
+- name: 🇨🇦_加拿大_2
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: nc1.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nc1.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 'Channel id: @proxy_kafee🇨🇦'
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 129.153.52.235
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0235 | 154.641MB
   password: f8f7aCzcPKbsF8p3
@@ -109,19 +123,6 @@ proxies:
   sni: jnd.dport.top
   type: hysteria2
   udp: true
-- name: 🇨🇦 加拿大 04
-  network: ws
-  port: 80
-  server: 104.18.26.90
-  servername: blaze-can-118.blazecanada.site
-  tls: false
-  type: vless
-  udp: true
-  uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
-  ws-opts:
-    headers:
-      Host: blaze-can-118.blazecanada.site
-    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
