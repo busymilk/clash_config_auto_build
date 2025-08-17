@@ -47,33 +47,33 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-0327 | 10.871MB
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-3.70.194.142-024
+  password: amazonskr05
+  port: 443
+  server: 3.70.194.142
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-004
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0312 | 5.446MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0280 | 0.38MB
+  name: 🇩🇪DE-185.177.229.245-044
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0287 | 0.177MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
+  name: 🇩🇪DE-46.101.245.131-048
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇩🇪DE-46.165.194.96-0272 | 0.464MB
+  name: 🇩🇪DE-46.165.194.96-0319 | 4.862MB
   network: ws
   port: 20086
   server: 46.165.194.96
@@ -83,13 +83,6 @@ proxies:
   uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
   ws-opts:
     path: /
-- name: 🇩🇪DE-185.208.207.217-0351 | 0.028MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
 - client-fingerprint: chrome
   name: 德国 001
   network: ws
@@ -129,6 +122,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 🇩🇪DE-185.208.207.217-0351 | 0.028MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-84.200.91.228-0287 | 0.177MB
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
+  type: ss
 - alpn:
   - http%2F1.1
   client-fingerprint: chrome
@@ -158,19 +164,6 @@ proxies:
     headers:
       Host: barayeiranmahsang.ghormehsabzi.dpdns.org
     path: /
-- name: 🇩🇪 德国 66
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: true
-  sni: vle.amclubsvip.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: 🇩🇪 德国 74
   network: ws
   password: bpb-trojan
@@ -184,20 +177,6 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
-- client-fingerprint: chrome
-  name: 🇩🇪 德国 88
-  network: ws
-  port: 443
-  server: 104.26.7.214
-  servername: rayan-fg-5.medicalhistory.filegear-sg.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
-  ws-opts:
-    headers:
-      Host: rayan-fg-5.medicalhistory.filegear-sg.me
-    path: /?ed=2560
 - client-fingerprint: chrome
   delay: 1234
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
@@ -216,6 +195,33 @@ proxies:
         Gecko) Chrome/53.0.2785.143 Safari/537.36
     max-early-data: 2560
     path: /tr
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 88
+  network: ws
+  port: 443
+  server: 104.26.7.214
+  servername: rayan-fg-5.medicalhistory.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
+  ws-opts:
+    headers:
+      Host: rayan-fg-5.medicalhistory.filegear-sg.me
+    path: /?ed=2560
+- name: 🇩🇪 德国 66
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 8443
+  server: 162.159.129.67
+  skip-cert-verify: true
+  sni: vle.amclubsvip.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: 🇩🇪 德国 67
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -255,6 +261,19 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
+- name: 🇩🇪 德国 49
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 162.159.153.2
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr
 - client-fingerprint: chrome
   name: 🇩🇪 德国 089
   network: ws
@@ -269,19 +288,6 @@ proxies:
     headers:
       Host: F1.paRsa.fiLegEar-Sg.Me
     path: /?ed=2560
-- name: 🇩🇪 德国 49
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 162.159.153.2
-  skip-cert-verify: false
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: /tr
 - client-fingerprint: randomized
   name: 🇩🇪 德国 053
   network: ws
@@ -392,30 +398,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- alterId: 0
-  cipher: auto
-  country: 🇮🇷IR
-  delay: 2732
-  h2-opts: {}
-  http-opts: {}
-  name: 德国 - Frankfurt Am Main - Hetzner Online AG - 2
-  network: tcp
-  port: 443
-  server: 37.202.247.4
-  server_url: dl01.armod.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: cd11391b-9f7a-4478-b624-3a1d5d81d426
-- auth: a503efc7-b681-466f-be23-434483b2a07b
-  name: 🇩🇪 德国 26
-  password: a503efc7-b681-466f-be23-434483b2a07b
-  port: 22155
-  server: 213.108.198.123
-  server_url: hsdg.huasuan666.top
-  skip-cert-verify: true
-  sni: hsdg.huasuan666.top
-  type: hysteria2
-  udp: true
 - http-opts:
     headers:
       Host:
@@ -433,16 +415,47 @@ proxies:
   type: vless
   udp: true
   uuid: 59290e80-153b-4d2c-8a5b-8a1922608832
-- auth: 1acd1a12-bc74-452a-999f-539f4d492c6d
-  name: '🇩🇪 德国 21 #2'
-  password: 1acd1a12-bc74-452a-999f-539f4d492c6d
-  port: 22158
-  server: 213.108.198.123
-  server_url: hsfg.huasuan666.top
+- alterId: 0
+  cipher: auto
+  country: 🇮🇷IR
+  delay: 2732
+  h2-opts: {}
+  http-opts: {}
+  name: 德国 - Frankfurt Am Main - Hetzner Online AG - 2
+  network: tcp
+  port: 443
+  server: 37.202.247.4
+  server_url: dl01.armod.top
   skip-cert-verify: true
-  sni: hsfg.huasuan666.top
-  type: hysteria2
+  type: vmess
+  uuid: cd11391b-9f7a-4478-b624-3a1d5d81d426
+- client-fingerprint: chrome
+  name: 德国 004
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 31.185.108.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: random
+  name: 🇩🇪 德国 55
+  network: ws
+  port: 443
+  server: 104.26.9.156
+  servername: yx.yushan.dpdns.org
+  tls: true
+  type: vless
   udp: true
+  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
+  ws-opts:
+    headers:
+      Host: yx.yushan.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

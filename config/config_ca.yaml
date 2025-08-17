@@ -47,24 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0172 | 37.254MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0231 | 68.248MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0277 | 1.578MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - name: 'Channel id: @proxy_kafee🇨🇦'
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
@@ -74,13 +56,40 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: aes-256-cfb
-  name: SSR-加拿大-79.127.233.170:989
+  group: SSRProvider
+  name: 🇨🇦CA-79.127.233.170-032
   obfs: plain
+  obfsparam: null
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
+  protoparam: null
   server: 79.127.233.170
   type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0235 | 154.641MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0237 | 149.643MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0337 | 7.695MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-38.180.211.126-0282 | 11.43MB
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0315 | 1.842MB
   password: JIhN6rBKkaEboLNXVSv5rq
@@ -100,6 +109,19 @@ proxies:
   sni: jnd.dport.top
   type: hysteria2
   udp: true
+- name: 🇨🇦 加拿大 04
+  network: ws
+  port: 80
+  server: 104.18.26.90
+  servername: blaze-can-118.blazecanada.site
+  tls: false
+  type: vless
+  udp: true
+  uuid: 3ac2de34-47c5-4dd5-afc0-8fb4b05d4077
+  ws-opts:
+    headers:
+      Host: blaze-can-118.blazecanada.site
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
