@@ -47,20 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇩🇪telegram ➠ @v2rayNG_Matsuri
-  password: 3C8h8X6kimbOX68joVe3kTERw
-  port: 7197
-  server: 206.189.20.193
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
 - client-fingerprint: chrome
   name: 德国 001
   network: ws
@@ -113,6 +99,58 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 🇩🇪_DE_德国_1_0@8
+  network: tcp
+  port: 80
+  server: 93.127.180.64
+  sni: ''
+  type: vmess
+  uuid: fb4bd735-49e1-45e8-8308-cdf05c4cc5c6
+- cipher: rc4-md5
+  name: 🇩🇪_DE_德国_1@16
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪DE-3.70.194.142-1089 | 17.91MB
+  password: amazonskr05
+  port: 443
+  server: 3.70.194.142
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE-46.165.194.96-0319 | 0.513MB
+  network: ws
+  port: 20086
+  server: 46.165.194.96
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
+  ws-opts:
+    path: /
 - client-fingerprint: chrome
   delay: 1234
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
@@ -158,12 +196,6 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- cipher: rc4-md5
-  name: 🇩🇪_DE_德国
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - name: 🇩🇪 德国 63
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -191,31 +223,6 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE-46.165.194.96-0319 | 4.862MB
-  network: ws
-  port: 20086
-  server: 46.165.194.96
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 74
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.26.4.60
-  skip-cert-verify: true
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: /tr?ed=2560
 - name: 🇩🇪 德国 24
   network: ws
   port: 443
@@ -245,6 +252,19 @@ proxies:
     headers:
       Host: JKlKL-Cx6.paGes.dev
     path: /OGvsyjiasK9qcxVN/NjIuMy4xMi43Ng==?ed=2560
+- name: 🇩🇪 德国 74
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.26.4.60
+  skip-cert-verify: true
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
 - client-fingerprint: chrome
   name: 🇩🇪 德国 88
   network: ws
@@ -422,6 +442,18 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- auth: 0d12ddf0-aa3d-4059-91dd-98c7e59db7fc
+  name: 🇩🇪 德国 13
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 0d12ddf0-aa3d-4059-91dd-98c7e59db7fc
+  port: 33653
+  server: 213.108.198.123
+  server_url: dg.dport.top
+  skip-cert-verify: true
+  sni: dg.dport.top
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
