@@ -47,34 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇦🇺_澳大利亚_4
-  network: ws
-  port: 12443
-  server: 43.132.239.42
-  servername: edgc.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇦🇺_澳大利亚
-  network: ws
-  port: 11002
-  server: 185.148.13.32
-  servername: edgc.aimercc.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.aimercc.dpdns.org
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
   name: 🇦🇺 澳大利亚家宽 01
   network: tcp
@@ -88,32 +60,6 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- auth: ce41ee06-2fb2-4dee-bdf6-6204b9cd539c
-  name: 🇦🇺 澳大利亚 04
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: ce41ee06-2fb2-4dee-bdf6-6204b9cd539c
-  port: 33656
-  server: 203.32.26.70
-  server_url: hg.dport.top
-  skip-cert-verify: true
-  sni: hg.dport.top
-  type: hysteria2
-  udp: true
-- name: 🇦🇺_澳大利亚_3
-  network: ws
-  port: 6666
-  server: 43.129.205.163
-  servername: edgc.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgc.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

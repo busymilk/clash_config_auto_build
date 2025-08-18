@@ -48,15 +48,34 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0208 | 72.252MB
+  group: SSRProvider
+  name: 🇨🇦CA-79.127.233.170-020
+  obfs: plain
+  obfsparam: null
   password: f8f7aCzcPKbsF8p3
   port: 989
+  protocol: origin
+  protoparam: null
   server: 79.127.233.170
-  type: ss
+  type: ssr
+- name: 'Channel id: @proxy_kafee🇨🇦'
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 129.153.52.235
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0203 | 71.649MB
   password: f8f7aCzcPKbsF8p3
   port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0208 | 72.252MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -71,22 +90,6 @@ proxies:
   port: 80
   server: 142.4.216.225
   type: ss
-- name: 'Channel id: @proxy_kafee🇨🇦'
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.52.235
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- cipher: aes-256-cfb
-  name: SSR-加拿大-79.127.233.170:989
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
 - name: 🇨🇦_加拿大_2
   network: ws
   port: 443
