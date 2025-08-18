@@ -48,41 +48,17 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-256-cfb
-  delay: 1696
-  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
+  name: 🇰🇷KR-154.90.63.177-0311 | 0.845MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇰🇷 韩国 03
-  network: ws
-  port: 50000
-  server: 218.144.212.68
-  servername: subvless.trevely.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
-  ws-opts:
-    headers:
-      Host: subvless.trevely.us.kg
-    path: /?ed=2560
-- name: 🇰🇷_韩国_5
-  network: ws
-  port: 12335
-  server: 121.170.103.94
-  servername: pv1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: pv1.ylka.dpdns.org
-    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0353 | 0.056MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
 - name: 🇰🇷_韩国_10
   network: ws
   port: 50000
@@ -97,11 +73,26 @@ proxies:
     headers:
       host: pv.ylka.dpdns.org
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: 🇰🇷 韩国 03
+  network: ws
+  port: 50000
+  server: 218.144.212.68
+  servername: subvless.trevely.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
+  ws-opts:
+    headers:
+      Host: subvless.trevely.us.kg
+    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0302 | 0.119MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
+  name: 🇰🇷KR-218.237.185.230-0337 | 6.486MB
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  server_url: p141.panda001.net
   type: ss
 - name: 🇰🇷 韩国 24
   network: ws
@@ -117,13 +108,6 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-218.237.185.230-0337 | 6.486MB
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  server_url: p141.panda001.net
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

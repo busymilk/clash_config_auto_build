@@ -47,29 +47,28 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- auth: 5OiuCsPmULZ0lJwts89fegLJE
-  name: 🇸🇬 新加坡 07
+- name: 新加坡
   password: 5OiuCsPmULZ0lJwts89fegLJE
   port: 17193
   server: 54.169.224.169
   skip-cert-verify: true
   sni: bing.com
+  tls: false
   type: hysteria2
-  udp: true
-- auth: Cyi3TPih9FtQRwsZAh8aT6ynGJk
-  name: 🇸🇬 新加坡 01
-  password: Cyi3TPih9FtQRwsZAh8aT6ynGJk
-  port: 2166
-  server: 54.169.144.240
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
 - name: 'Channel id: @ShadowProxy66🇸🇬 #3'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
   server: 203.174.82.145
   skip-cert-verify: true
   sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: SG
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 54.255.144.66
+  skip-cert-verify: true
+  sni: bing.com
   tls: false
   type: hysteria2
 - cipher: chacha20-ietf
