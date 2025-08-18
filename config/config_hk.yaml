@@ -47,21 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: HK
-  password: Cyi3TPih9FtQRwsZAh8aT6ynGJk
-  port: 2166
-  server: 54.169.144.240
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- name: 'Channel id: @proxy_kafee🇭🇰 #1'
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
 - cipher: chacha20-ietf
   name: 🇭🇰HK-103.149.183.154-0276 | 5.503MB
   password: asd123456
@@ -69,15 +54,15 @@ proxies:
   server: 103.149.183.154
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0340 | 0.331MB
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-18.162.146.85-0341 | 0.332MB
   password: ljqdalu13..
   port: 8319
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0340 | 0.331MB
+  password: ljqdalu13..
+  port: 8313
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -92,56 +77,6 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇭🇰👖TG频道@stymei1丨1
-  network: ws
-  port: 443
-  server: 104.18.13.145
-  servername: usa.rtot.me
-  skip-cert-verify: true
-  sni: usa.rtot.me
-  tls: true
-  type: vless
-  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
-  ws-opts:
-    headers:
-      Host: usa.rtot.me
-    path: /bing
-- auth: ''
-  fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨9
-  password: O0URQrRTemVsvUP6jvcBwEIN7Ng
-  port: 10832
-  server: 35.178.136.205
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨10
-  password: B4iXA2oll0awJFuVdaZPFsSYB0
-  port: 25550
-  server: 18.175.238.10
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨12
-  password: JWLQunPJgg2xi8Edm304q9Vqw
-  port: 2050
-  server: 161.35.157.233
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
 - alterId: 0
   cipher: ''
   flow: ''
@@ -161,6 +96,111 @@ proxies:
     path: /bing
 - auth: ''
   fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨8
+  password: 3C8h8X6kimbOX68joVe3kTERw
+  port: 7197
+  server: 206.189.20.193
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨10
+  password: B4iXA2oll0awJFuVdaZPFsSYB0
+  port: 25550
+  server: 18.175.238.10
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨9
+  password: O0URQrRTemVsvUP6jvcBwEIN7Ng
+  port: 10832
+  server: 35.178.136.205
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨11
+  password: wxiTacqUnFMT6QPG1xHX578Omo
+  port: 7444
+  server: 138.197.185.116
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨12
+  password: JWLQunPJgg2xi8Edm304q9Vqw
+  port: 2050
+  server: 161.35.157.233
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 🇭🇰👖TG频道@stymei1丨1
+  network: ws
+  port: 443
+  server: 104.18.13.145
+  servername: usa.rtot.me
+  skip-cert-verify: true
+  sni: usa.rtot.me
+  tls: true
+  type: vless
+  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
+  ws-opts:
+    headers:
+      Host: usa.rtot.me
+    path: /bing
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨4
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 54.169.224.169
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨5
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 54.255.144.66
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨7
+  password: ok6aX0A7QX9SkYo6R0GBBJDUsK4
+  port: 8460
+  server: 143.244.140.87
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
   name: 🇭🇰👖TG频道@stymei1丨31
   password: itcYGELAidVyZZK6aNxTKIiqgvw
   port: 31321
@@ -172,10 +212,10 @@ proxies:
   type: hysteria2
 - auth: ''
   fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨21
-  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
-  port: 30308
-  server: 47.236.104.81
+  name: 🇭🇰👖TG频道@stymei1丨23
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -194,10 +234,21 @@ proxies:
   type: hysteria2
 - auth: ''
   fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨28
-  password: k4L6CnJLP2fqbNLYryqXSehls
-  port: 7077
-  server: 13.229.70.133
+  name: 🇭🇰👖TG频道@stymei1丨25
+  password: Y5kSCRNcOSz5YQUkjehzVXeT2mk
+  port: 19298
+  server: 175.41.154.215
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨21
+  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  port: 30308
+  server: 47.236.104.81
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -214,23 +265,47 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇭🇰👖TG频道@stymei1丨3
-  network: ws
-  port: 443
-  server: 93.185.158.14
-  servername: uk.rtot.me
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨24
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  servername: bing.com
   skip-cert-verify: true
-  sni: uk.rtot.me
-  tls: true
-  type: vless
-  uuid: 00651706-0d2d-448b-80f2-7678f3e5187c
-  ws-opts:
-    headers:
-      Host: uk.rtot.me
-    path: /bing
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨28
+  password: k4L6CnJLP2fqbNLYryqXSehls
+  port: 7077
+  server: 13.229.70.133
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇭🇰👖TG频道@stymei1丨26
+  password: Cyi3TPih9FtQRwsZAh8aT6ynGJk
+  port: 2166
+  server: 54.169.144.240
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- name: 'Channel id: @proxy_kafee🇭🇰 #1'
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
+  skip-cert-verify: true
+  sni: hk.nfsn666.gq
+  tls: false
+  type: hysteria2
 - alterId: 2
   cipher: auto
   name: 🇭🇰 香港家宽 02
@@ -246,17 +321,6 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- auth: ''
-  fast-open: false
-  name: 🇭🇰👖TG频道@stymei1丨30
-  password: t10uaklYsxNEBV8743URwa2y8k
-  port: 24169
-  server: 52.195.224.117
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 11
   password: 23d03aa704c7
@@ -271,6 +335,20 @@ proxies:
   server: 156.251.179.181
   type: ss
   udp: true
+- name: 🇭🇰 香港 02
+  network: ws
+  port: 443
+  server: 103.160.204.242
+  server_url: nnchkclyx.codesofun.pp.ua
+  servername: nnchk.codesofun.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5f077162-99ad-424d-9f77-e5f7e37d9ef8
+  ws-opts:
+    headers:
+      Host: nnchk.codesofun.pp.ua
+    path: /ea3ac731
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

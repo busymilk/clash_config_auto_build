@@ -87,13 +87,6 @@ proxies:
     headers:
       Host: subvless.trevely.us.kg
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-218.237.185.230-0337 | 6.486MB
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  server_url: p141.panda001.net
-  type: ss
 - name: 🇰🇷 韩国 24
   network: ws
   port: 50000
@@ -108,6 +101,20 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
+- name: 🇰🇷_韩国_5
+  network: ws
+  port: 12335
+  server: 121.170.103.94
+  servername: pv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: pv1.ylka.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
