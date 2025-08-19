@@ -47,6 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇸🇬_新加坡_1
+  network: ws
+  port: 2025
+  server: 161.117.249.114
+  servername: bx1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: bx1.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 'Channel id: @ShadowProxy66🇸🇬 #3'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
@@ -81,26 +95,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-4965 | 0.309MB
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- name: 🇸🇬_新加坡_1
-  network: ws
-  port: 2025
-  server: 161.117.249.114
-  servername: bx1.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: bx1.bgm2024.dpdns.org
-    path: /?ed=2560
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
