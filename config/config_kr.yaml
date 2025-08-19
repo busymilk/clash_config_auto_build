@@ -47,20 +47,30 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇰🇷_韩国_1
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷KR-183.109.131.75-5115 | 4.83MB
   network: ws
-  port: 50001
-  server: 115.136.160.13
-  servername: bx1.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  port: 20086
+  server: 183.109.131.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
   ws-opts:
-    headers:
-      host: bx1.bgm2024.dpdns.org
-    path: /?ed=2560
+    path: /
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0326 | 0.127MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0379 | 0.036MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
 - name: 🇰🇷_韩国_3
   network: ws
   port: 26538
@@ -89,14 +99,6 @@ proxies:
     headers:
       host: bz.bgm2024.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  delay: 1696
-  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-  udp: true
 - name: 🇰🇷_韩国_10
   network: ws
   port: 50000
@@ -110,6 +112,20 @@ proxies:
   ws-opts:
     headers:
       host: pv.ylka.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 🇰🇷 韩国 03
+  network: ws
+  port: 50000
+  server: 218.144.212.68
+  servername: subvless.trevely.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
+  ws-opts:
+    headers:
+      Host: subvless.trevely.us.kg
     path: /?ed=2560
 - name: '🇰🇷_韩国_5 #2'
   network: ws
@@ -126,10 +142,10 @@ proxies:
       host: pv1.ylka.dpdns.org
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 🇰🇷 韩国 03
+  name: 🇰🇷 韩国 05
   network: ws
   port: 50000
-  server: 218.144.212.68
+  server: 221.151.212.249
   servername: subvless.trevely.us.kg
   tls: true
   type: vless
@@ -153,20 +169,6 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
-- client-fingerprint: chrome
-  name: 🇰🇷 韩国 05
-  network: ws
-  port: 50000
-  server: 221.151.212.249
-  servername: subvless.trevely.us.kg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
-  ws-opts:
-    headers:
-      Host: subvless.trevely.us.kg
-    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

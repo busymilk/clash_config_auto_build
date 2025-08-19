@@ -47,6 +47,14 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: SG
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 54.255.144.66
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: 'Channel id: @ShadowProxy66🇸🇬 #3'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
@@ -55,6 +63,12 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.23-4965 | 0.309MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - name: 🇸🇬_新加坡_1
   network: ws
   port: 2025
@@ -69,25 +83,6 @@ proxies:
     headers:
       host: bx1.bgm2024.dpdns.org
     path: /?ed=2560
-- cipher: chacha20-ietf
-  name: 🇸🇬SG-103.36.91.23-4965 | 0.309MB
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- name: 🇸🇬 新加坡 17
-  network: ws
-  password: ttfang
-  port: 443
-  server: 128.199.237.143
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -101,6 +96,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
+- name: 🇸🇬 新加坡 17
+  network: ws
+  password: ttfang
+  port: 443
+  server: 128.199.237.143
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
 - name: 🇸🇬 新加坡 25
   network: ws
   port: 443
