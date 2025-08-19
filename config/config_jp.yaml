@@ -48,6 +48,7 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
   plugin: v2ray-plugin
@@ -68,24 +69,6 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
-- auth: gkTfTWSSlazwXI2mYcEqjADzcE
-  name: 🇯🇵 日本家宽 04
-  password: gkTfTWSSlazwXI2mYcEqjADzcE
-  port: 14346
-  server: 57.180.58.113
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- auth: t10uaklYsxNEBV8743URwa2y8k
-  name: 🇯🇵 日本家宽 01
-  password: t10uaklYsxNEBV8743URwa2y8k
-  port: 24169
-  server: 52.195.224.117
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
 - name: '🇯🇵 日本 12 #2'
   network: ws
   port: 443
@@ -112,15 +95,6 @@ proxies:
   port: 636
   server: 137.220.142.139
   type: ss
-  udp: true
-- name: 🇯🇵 日本 35
-  password: f4fe3998-a28b-4276-9a8c-2b6677e206fb
-  port: 39769
-  server: 220.130.58.136
-  server_url: cdntwa.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdntwa.xiaomispeed.com
-  type: trojan
   udp: true
 proxy-groups:
 - name: ✈️ 选择代理
