@@ -55,20 +55,24 @@ proxies:
   server: 154.90.63.177
   type: ss
   udp: true
-- name: 🇰🇷_韩国_5
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷KR-183.109.131.75-5115 | 4.83MB
   network: ws
-  port: 12335
-  server: 121.170.103.94
-  servername: pv1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  port: 20086
+  server: 183.109.131.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
   ws-opts:
-    headers:
-      host: pv1.ylka.dpdns.org
-    path: /?ed=2560
+    path: /
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0379 | 0.036MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
 - name: 🇰🇷_韩国_10
   network: ws
   port: 50000
@@ -83,12 +87,20 @@ proxies:
     headers:
       host: pv.ylka.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0353 | 0.056MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
+- name: 🇰🇷_韩国_5
+  network: ws
+  port: 12335
+  server: 121.170.103.94
+  servername: pv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: pv1.ylka.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: 🇰🇷 韩国 03
   network: ws
@@ -117,6 +129,20 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
+- client-fingerprint: chrome
+  name: 🇰🇷 韩国 05
+  network: ws
+  port: 50000
+  server: 221.151.212.249
+  servername: subvless.trevely.us.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
+  ws-opts:
+    headers:
+      Host: subvless.trevely.us.kg
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
