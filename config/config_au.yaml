@@ -72,6 +72,20 @@ proxies:
   sni: hg.dport.top
   type: hysteria2
   udp: true
+- name: 🇦🇺_澳大利亚_2
+  network: ws
+  port: 9950
+  server: 43.134.167.135
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
