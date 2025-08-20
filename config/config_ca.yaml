@@ -47,12 +47,32 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0226 | 99.1MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
+- client-fingerprint: chrome
+  name: 加拿大 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 74.49.214.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 加拿大 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 74.49.215.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - cipher: aes-256-cfb
   name: 🇨🇦CA-79.127.233.170-0225 | 102.116MB
   password: f8f7aCzcPKbsF8p3
@@ -60,16 +80,22 @@ proxies:
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0321 | 1.771MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
+  name: 🇨🇦CA-79.127.233.170-0226 | 99.1MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-38.180.211.126-0554 | 8.304MB
   password: Kuiqk2cP0BMWrgme9IfEvp
   port: 443
   server: 38.180.211.126
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0321 | 1.771MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
   type: ss
 - name: 'Channel id: @ShadowProxy66🇨🇦'
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b

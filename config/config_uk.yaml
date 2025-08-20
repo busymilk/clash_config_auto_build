@@ -47,15 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- auth: B4iXA2oll0awJFuVdaZPFsSYB0
-  name: 🇬🇧 英国 02
-  password: B4iXA2oll0awJFuVdaZPFsSYB0
-  port: 25550
-  server: 18.175.238.10
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
 - client-fingerprint: chrome
   name: 英国 001
   network: ws
@@ -83,11 +74,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 003
+  name: 英国 005
   network: ws
   password: ttfang
   port: 2096
-  server: 45.8.211.216
+  server: 45.12.31.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -109,11 +100,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 005
+  name: 英国 003
   network: ws
   password: ttfang
   port: 2096
-  server: 45.12.31.216
+  server: 45.8.211.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -147,59 +138,37 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇬🇧_英国_1
+- client-fingerprint: chrome
+  name: 英国 008
   network: ws
-  port: 443
-  server: 217.163.76.84
-  servername: bx1.bgm2024.dpdns.org
+  password: ttfang
+  port: 2096
+  server: 77.75.199.216
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      host: bx1.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_3
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 英国 009
   network: ws
-  port: 443
-  server: 217.163.76.201
-  servername: bx1.bgm2024.dpdns.org
+  password: ttfang
+  port: 2096
+  server: 80.93.202.216
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      host: bx1.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_4
-  network: ws
-  port: 8443
-  server: 158.180.82.203
-  servername: bx1.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: bx1.bgm2024.dpdns.org
-    path: /?ed=2560
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧GB-85.210.120.237-0238 | 21.651MB
   password: Bog0ELmMM9DSxDdQ
   port: 443
   server: 85.210.120.237
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0261 | 20.947MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.81-0257 | 20.908MB
@@ -208,10 +177,10 @@ proxies:
   server: 212.102.53.81
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.193-0253 | 20.742MB
+  name: 🇬🇧GB-212.102.53.196-0261 | 20.947MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.193
+  server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0264 | 20.706MB
@@ -273,12 +242,6 @@ proxies:
   uuid: 5e02bc01-42a7-4609-b20a-4d93feea65c6
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-0332 | 0.358MB
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🇬🇧GB-173.208.51.193-0364 | 0.173MB
@@ -291,6 +254,71 @@ proxies:
   uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
   ws-opts:
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-46.226.163.225-0332 | 0.358MB
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  type: ss
+- name: UK
+  password: 3C8h8X6kimbOX68joVe3kTERw
+  port: 7197
+  server: 206.189.20.193
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 🇬🇧_英国_1
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: bx1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: bx1.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_3
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: bx1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: bx1.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_4
+  network: ws
+  port: 8443
+  server: 158.180.82.203
+  servername: bx1.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: bx1.bgm2024.dpdns.org
+    path: /?ed=2560
+- auth: B4iXA2oll0awJFuVdaZPFsSYB0
+  name: 🇬🇧 英国 02
+  password: B4iXA2oll0awJFuVdaZPFsSYB0
+  port: 25550
+  server: 18.175.238.10
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
 - cipher: aes-256-cfb
   name: 🇬🇧_GB_英国
   obfs: plain

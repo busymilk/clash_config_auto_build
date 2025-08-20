@@ -67,18 +67,21 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- auth: 225ceec2-a6de-4063-b36b-4d807779f9c9
-  name: 🇯🇵 日本 18
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: 225ceec2-a6de-4063-b36b-4d807779f9c9
-  port: 33657
-  server: 212.192.221.221
-  server_url: rb.dport.top
-  skip-cert-verify: true
-  sni: rb.dport.top
-  type: hysteria2
-  udp: true
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本2|@ripaojiedian
+  password: 823e135ed103
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp7v1.lingjfjkm002.com
+    mode: websocket
+    mux: true
+    path: /dchlbvrbbotc
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 137.220.191.40
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇯🇵 日本 31
   password: EEsjQL0rXwQgJez3ASjoOq
@@ -100,6 +103,18 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: Telegram@freecodes/?ed=2560
+- auth: 225ceec2-a6de-4063-b36b-4d807779f9c9
+  name: 🇯🇵 日本 18
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 225ceec2-a6de-4063-b36b-4d807779f9c9
+  port: 33657
+  server: 212.192.221.221
+  server_url: rb.dport.top
+  skip-cert-verify: true
+  sni: rb.dport.top
+  type: hysteria2
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
