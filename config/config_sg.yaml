@@ -47,6 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇸🇬_新加坡_1
+  network: ws
+  port: 443
+  server: 150.109.11.223
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 'Channel id: @ShadowProxy66🇸🇬 #3'
   password: eb75320e-a6d0-4b34-a6b6-2bcfc96a9099
   port: 43057
@@ -68,19 +82,6 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: 🇸🇬 新加坡 09
-  network: ws
-  password: ttfang
-  port: 1111
-  server: 138.2.95.61
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -94,20 +95,28 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- name: 🇸🇬_新加坡_1
+- name: 🇸🇬 新加坡 09
   network: ws
-  port: 443
-  server: 150.109.11.223
-  servername: edgd.esslh.filegear-sg.me
+  password: ttfang
+  port: 1111
+  server: 138.2.95.61
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: ttfang.fange.me
+  type: trojan
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: ttfang.fange.me
+    path: /
+- cipher: 2022-blake3-aes-128-gcm
+  delay: 592
+  name: 新加坡 - 新加坡 - Akari Networks Limited - 4
+  password: MjdlZmY4YWIyZDU0OGNkNw==:NjJiNDE4NmMtM2U2YS00OQ==
+  port: 24795
+  server: 36.151.65.8
+  server_url: qc456987.qeayr.cn
+  type: ss
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

@@ -47,6 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇨🇦_加拿大_1
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: cc.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cc.ylks0033.dpdns.org
+    path: /?ed=2560
 - cipher: aes-256-cfb
   group: SSRProvider
   name: 🇨🇦CA-79.127.233.170-051
@@ -105,32 +119,12 @@ proxies:
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0293 | 14.371MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0314 | 17.703MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   server_url: ca225.vpnbook.com
   type: ss
-- name: 🇨🇦_加拿大_1
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: cc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cc.ylks0033.dpdns.org
-    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
