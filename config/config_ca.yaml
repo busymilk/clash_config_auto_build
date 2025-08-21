@@ -47,51 +47,30 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 'Channel id: @ShadowProxy66🇨🇦'
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 129.153.52.235
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0199 | 26.459MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
 - cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0197 | 25.645MB
+  name: 🇨🇦CA-79.127.233.170-0197 | 61.032MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0274 | 3.163MB
+  name: 🇨🇦CA-79.127.233.170-0199 | 38.621MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-38.180.211.126-0274 | 31.457MB
   password: Kuiqk2cP0BMWrgme9IfEvp
   port: 443
   server: 38.180.211.126
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0293 | 1.404MB
+  name: 🇨🇦CA-142.4.216.225-0293 | 1.511MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   type: ss
-- client-fingerprint: chrome
-  name: 加拿大 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 74.49.215.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: 加拿大 001
   network: ws
@@ -105,14 +84,27 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: aes-256-cfb
-  name: SSR-加拿大-79.127.233.170:989
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
+- client-fingerprint: chrome
+  name: 加拿大 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 74.49.215.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 'Channel id: @ShadowProxy66🇨🇦'
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 129.153.52.235
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - name: 🇨🇦_加拿大_1
   network: ws
   port: 443
@@ -127,6 +119,28 @@ proxies:
     headers:
       host: cc.ylks0033.dpdns.org
     path: /?ed=2560
+- cipher: aes-256-cfb
+  name: SSR-加拿大-79.127.233.170:989
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 加拿大 01
+  network: tcp
+  port: 59303
+  reality-opts:
+    public-key: FHm9vc9hi1aK9jz8CqCjhJvT0bxzsD470FvOyubB6EA
+    short-id: bbe06294
+  server: 40.233.83.189
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0314 | 17.703MB
   password: JIhN6rBKkaEboLNXVSv5rq
