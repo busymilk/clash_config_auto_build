@@ -47,43 +47,62 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0197 | 61.032MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0199 | 38.621MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0274 | 31.457MB
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0293 | 1.511MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- client-fingerprint: chrome
-  name: 加拿大 001
+- name: 🇨🇦_加拿大_1
   network: ws
-  password: ttfang
-  port: 2096
-  server: 74.49.214.216
+  port: 995
+  server: 142.171.30.213
+  servername: mv.ylka.dpdns.org
   skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+      host: mv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇨🇦_加拿大_2
+  network: ws
+  port: 2333
+  server: 142.171.38.53
+  servername: mv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: mv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇨🇦_加拿大_3
+  network: ws
+  port: 43516
+  server: 74.48.160.149
+  servername: mv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: mv.ylka.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇨🇦 加拿大 01
+  network: tcp
+  port: 59303
+  reality-opts:
+    public-key: FHm9vc9hi1aK9jz8CqCjhJvT0bxzsD470FvOyubB6EA
+    short-id: bbe06294
+  server: 40.233.83.189
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
 - client-fingerprint: chrome
   name: 加拿大 002
   network: ws
@@ -105,7 +124,25 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 🇨🇦_加拿大_1
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0197 | 61.032MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0199 | 38.621MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0293 | 1.511MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- name: '🇨🇦_加拿大_1 #2'
   network: ws
   port: 443
   server: 140.238.158.238
@@ -127,20 +164,6 @@ proxies:
   protocol: origin
   server: 79.127.233.170
   type: ssr
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 加拿大 01
-  network: tcp
-  port: 59303
-  reality-opts:
-    public-key: FHm9vc9hi1aK9jz8CqCjhJvT0bxzsD470FvOyubB6EA
-    short-id: bbe06294
-  server: 40.233.83.189
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0314 | 17.703MB
   password: JIhN6rBKkaEboLNXVSv5rq

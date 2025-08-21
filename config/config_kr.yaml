@@ -48,16 +48,144 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-256-cfb
+  delay: 1603
+  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- name: 🇰🇷_韩国_1
+  network: ws
+  port: 12257
+  server: 112.173.231.254
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_2
+  network: ws
+  port: 50000
+  server: 123.142.9.101
+  servername: mv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: mv1.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_3
+  network: ws
+  port: 50000
+  server: 112.222.129.170
+  servername: mv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: mv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_5
+  network: ws
+  port: 50001
+  server: 59.152.172.142
+  servername: mv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: mv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_6
+  network: ws
+  port: 60002
+  server: 119.64.242.60
+  servername: mv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: mv1.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_4
+  network: ws
+  port: 50001
+  server: 221.139.39.51
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_7
+  network: ws
+  port: 50001
+  server: 115.22.153.73
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_9
+  network: ws
+  port: 16016
+  server: 218.156.129.138
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_10
+  network: ws
+  port: 50009
+  server: 183.106.126.39
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: aes-256-cfb
   name: 🇰🇷KR-154.90.63.177-0297 | 5.111MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0327 | 0.643MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
   type: ss
 - alterId: 0
   cipher: auto
@@ -71,38 +199,10 @@ proxies:
   uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
   ws-opts:
     path: /
-- name: 🇰🇷_韩国_4
+- name: '🇰🇷_韩国_4 #2'
   network: ws
   port: 12375
   server: 61.76.23.133
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_13
-  network: ws
-  port: 50000
-  server: 121.155.240.168
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_3
-  network: ws
-  port: 50001
-  server: 115.22.153.73
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -127,10 +227,10 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_8
+- name: 🇰🇷_韩国_13
   network: ws
-  port: 18047
-  server: 121.170.83.219
+  port: 50000
+  server: 121.155.240.168
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -141,66 +241,10 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_11
-  network: ws
-  port: 50009
-  server: 183.106.126.39
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_9
+- name: '🇰🇷_韩国_9 #2'
   network: ws
   port: 50000
   server: 221.145.146.223
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_1
-  network: ws
-  port: 12257
-  server: 112.173.231.254
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_5
-  network: ws
-  port: 16016
-  server: 218.156.129.138
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_6
-  network: ws
-  port: 50001
-  server: 221.139.39.51
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
