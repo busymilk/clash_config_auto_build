@@ -47,14 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '香港 #1'
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - name: 🇭🇰HK
   password: NjEkAYYNqFKUbrksyW1COBtdpU
   port: 2428
@@ -63,14 +55,46 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- cipher: aes-256-cfb
-  delay: 1603
-  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
+- name: '香港 #1'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 'Channel id: @ShadowProxy66🇭🇰 #1'
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
+  skip-cert-verify: true
+  sni: hk.nfsn666.gq
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0309 | 0.03MB
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
   type: ss
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0310 | 0.024MB
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0308 | 0.022MB
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0333 | 0.051MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - name: 🇭🇰HK-103.252.116.138-0353 | 0.0MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
@@ -78,12 +102,6 @@ proxies:
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0333 | 0.051MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 19
   password: 941cbc4237e0
@@ -98,20 +116,6 @@ proxies:
   server: 121.127.231.239
   type: ss
   udp: true
-- name: 🇭🇰 香港 32
-  network: ws
-  port: 443
-  server: 43.159.98.26
-  server_url: hk.kaipi.link
-  servername: hk.kaipi.link
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2c36ce8b-8758-4a44-821a-0ddeeb4d2813
-  ws-opts:
-    headers:
-      Host: hk.kaipi.link
-    path: /ybfews
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
