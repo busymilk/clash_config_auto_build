@@ -47,18 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳TW-103.61.139.137-4969 | 0.0MB
-  network: ws
-  port: 20521
-  server: 103.61.139.137
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
-  ws-opts:
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳TW-223.165.4.173-4918 | 1.893MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 223.165.4.173
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

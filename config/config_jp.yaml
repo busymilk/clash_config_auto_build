@@ -47,10 +47,10 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇯🇵_日本_27
+- name: 🇯🇵_日本_26
   network: ws
-  port: 12563
-  server: 132.145.114.230
+  port: 443
+  server: 132.145.114.128
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -75,6 +75,20 @@ proxies:
     headers:
       host: mv.ylka.dpdns.org
     path: /?ed=2560
+- name: 🇯🇵_日本_27
+  network: ws
+  port: 12563
+  server: 132.145.114.230
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_29
   network: ws
   port: 2083
@@ -89,38 +103,10 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-gcm
-  delay: 1603
-  name: 日本 - 东京 - CTG Server Ltd. - 2
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
-  udp: true
 - name: 🇯🇵_日本_30
   network: ws
   port: 2096
   server: 103.116.7.220
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_31
-  network: ws
-  port: 443
-  server: 172.104.122.75
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -145,20 +131,20 @@ proxies:
     headers:
       host: mv1.ylka.dpdns.org
     path: /?ed=2560
-- name: 🇯🇵_日本_32
+- name: 🇯🇵_日本_31
   network: ws
-  port: 58567
-  server: 146.56.174.193
-  servername: mv1.ylka.dpdns.org
+  port: 443
+  server: 172.104.122.75
+  servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: mv1.ylka.dpdns.org
-    path: /?ed=2560
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_33
   network: ws
   port: 10099
@@ -173,6 +159,26 @@ proxies:
     headers:
       host: mv.ylka.dpdns.org
     path: /?ed=2560
+- name: 🇯🇵_日本_32
+  network: ws
+  port: 58567
+  server: 146.56.174.193
+  servername: mv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: mv1.ylka.dpdns.org
+    path: /?ed=2560
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0217 | 31.211MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - client-fingerprint: chrome
   name: 日本 001
   network: ws
@@ -186,25 +192,20 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 日本 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.245.228.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0217 | 31.211MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
+- cipher: aes-256-gcm
+  delay: 1603
+  name: 日本 - 东京 - CTG Server Ltd. - 2
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    path: /bezradrqccl
+    tls: true
+  port: 636
+  server: 137.220.142.139
   type: ss
+  udp: true
 - name: 🇯🇵 日本 27
   network: ws
   port: 8880
@@ -230,6 +231,15 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: Telegram@freecodes/?ed=2560
+- name: 🇯🇵 日本 24
+  password: 8fbe9f6a-b2dc-4b70-a521-78fdb2c74167
+  port: 39769
+  server: 220.130.58.136
+  server_url: cdntwa.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdntwa.xiaomispeed.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

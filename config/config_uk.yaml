@@ -47,6 +47,15 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- auth: B4iXA2oll0awJFuVdaZPFsSYB0
+  name: 🇬🇧 英国 02
+  password: B4iXA2oll0awJFuVdaZPFsSYB0
+  port: 25550
+  server: 18.175.238.10
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
 - name: 🇬🇧_英国_1
   network: ws
   port: 587
@@ -89,20 +98,6 @@ proxies:
     headers:
       host: mv1.ylka.dpdns.org
     path: /?ed=2560
-- name: 🇬🇧_英国_5
-  network: ws
-  port: 443
-  server: 194.34.175.199
-  servername: mv1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: mv1.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇬🇧_英国_4
   network: ws
   port: 443
@@ -117,6 +112,118 @@ proxies:
     headers:
       host: mv1.ylka.dpdns.org
     path: /?ed=2560
+- name: 🇬🇧_英国_5
+  network: ws
+  port: 443
+  server: 194.34.175.199
+  servername: mv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: mv1.ylka.dpdns.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-85.210.120.237-0233 | 43.4MB
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0237 | 42.282MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-0245 | 42.159MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.198-0247 | 41.938MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.196-0236 | 41.809MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.78-0242 | 41.621MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.79-0241 | 41.294MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.194-0086 | 41.221MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.197-0240 | 40.635MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.80-0256 | 37.134MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-0239 | 34.362MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧GB-64.227.45.92-0286 | 27.644MB
+  network: ws
+  port: 20086
+  server: 64.227.45.92
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5e02bc01-42a7-4609-b20a-4d93feea65c6
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧GB-173.208.51.193-0323 | 0.873MB
+  network: ws
+  port: 20086
+  server: 173.208.51.193
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
+  ws-opts:
+    path: /
+- name: UK
+  password: 3C8h8X6kimbOX68joVe3kTERw
+  port: 7197
+  server: 206.189.20.193
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
   name: 英国 001
   network: ws
@@ -144,11 +251,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 002
+  name: 英国 005
   network: ws
   password: ttfang
   port: 2096
-  server: 25.26.27.216
+  server: 45.12.31.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -169,15 +276,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- auth: 3C8h8X6kimbOX68joVe3kTERw
-  name: 🇬🇧 英国 03
-  password: 3C8h8X6kimbOX68joVe3kTERw
-  port: 7197
-  server: 206.189.20.193
+- client-fingerprint: chrome
+  name: 英国 007
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.85.119.216
   skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: 英国 008
   network: ws
@@ -204,108 +315,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.79-0241 | 41.294MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.197-0240 | 40.635MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.195-0245 | 42.159MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.81-0237 | 42.282MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0236 | 41.809MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.194-0086 | 41.221MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.78-0242 | 41.621MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.198-0247 | 41.938MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.120.237-0233 | 43.4MB
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.80-0256 | 37.134MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.193-0239 | 34.362MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-141.98.101.178-0271 | 25.639MB
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧GB-64.227.45.92-0286 | 27.644MB
-  network: ws
-  port: 20086
-  server: 64.227.45.92
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5e02bc01-42a7-4609-b20a-4d93feea65c6
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-0307 | 6.463MB
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧GB-173.208.51.193-0323 | 0.873MB
-  network: ws
-  port: 20086
-  server: 173.208.51.193
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b1726eb2-271b-4cb6-bae8-37647e78b776
-  ws-opts:
-    path: /
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0225 | 32.794MB
   password: shadowsocks
