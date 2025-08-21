@@ -47,22 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: SG
-  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: 22509
-  server: 47.129.224.62
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: 'SG #4'
-  password: XON4wZ0sXe1YaqFY2FeM7uZY4
-  port: 15221
-  server: 122.248.205.111
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - name: 🇸🇬 新加坡 22
   network: ws
   port: 8880
@@ -76,6 +60,15 @@ proxies:
     headers:
       Host: sg.laoyoutiao.link
     path: /Telegram🇨🇳
+- auth: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  name: 🇸🇬 新加坡 16
+  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  port: 30308
+  server: 47.236.104.81
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
 - name: 🇸🇬 新加坡 19
   network: ws
   password: ttfang

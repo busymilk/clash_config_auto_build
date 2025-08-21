@@ -60,26 +60,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- name: 🇦🇺_澳大利亚_2
-  network: ws
-  port: 36355
-  server: 129.154.48.176
-  servername: mv1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: mv1.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇦🇺_澳大利亚_1
   network: ws
   port: 9950
@@ -94,6 +74,20 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇦🇺_澳大利亚_2
+  network: ws
+  port: 36355
+  server: 129.154.48.176
+  servername: mv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: mv1.ylka.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: 🇦🇺 澳大利亚家宽 01
   network: tcp
