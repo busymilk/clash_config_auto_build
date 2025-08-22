@@ -61,6 +61,35 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 'SG #2'
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 52.221.210.182
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: SG
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 47.129.224.62
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 🇸🇬 新加坡 24
+  network: ws
+  port: 443
+  server: 108.162.194.231
+  servername: rs-sg4.lzjnb.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
+  ws-opts:
+    headers:
+      Host: rs-sg4.lzjnb.shop
+    path: /lzj
 - name: 🇸🇬 新加坡 22
   network: ws
   port: 8880
@@ -74,15 +103,6 @@ proxies:
     headers:
       Host: sg.laoyoutiao.link
     path: /Telegram🇨🇳
-- auth: RzQrEkAmnGs86IhmSVUk9Q5cn9M
-  name: 🇸🇬 新加坡 16
-  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
-  port: 30308
-  server: 47.236.104.81
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
 - name: 🇸🇬 新加坡 19
   network: ws
   password: ttfang
@@ -109,19 +129,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- name: 🇸🇬 新加坡 31
-  network: ws
-  port: 443
-  server: 108.162.194.231
-  servername: rs-sg4.lzjnb.shop
-  tls: true
-  type: vless
-  udp: true
-  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
-  ws-opts:
-    headers:
-      Host: rs-sg4.lzjnb.shop
-    path: /lzj
 - name: 🇸🇬 新加坡 09
   network: ws
   password: ttfang
