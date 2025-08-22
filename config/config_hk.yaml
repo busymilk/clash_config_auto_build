@@ -47,6 +47,21 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-256-cfb
+  delay: 1603
+  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- name: 🇭🇰HK-103.252.116.138-0332 | 0.149MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
 - name: 🇭🇰HK
   password: NjEkAYYNqFKUbrksyW1COBtdpU
   port: 2428
@@ -55,37 +70,6 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0349 | 0.33MB
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0347 | 0.33MB
-  password: ljqdalu13..
-  port: 8319
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0348 | 0.329MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- name: 🇭🇰HK-103.252.116.138-0382 | 0.02MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  skip-cert-verify: false
-  sni: hk.freeguard.org
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0369 | 0.037MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - cipher: aes-256-cfb
   name: 🇭🇰 香港 40
   obfs: tls1.2_ticket_auth
@@ -97,6 +81,20 @@ proxies:
   server: 150.107.46.21
   type: ssr
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0369 | 0.037MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- name: '香港 #1'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 19
   password: 941cbc4237e0
@@ -111,24 +109,14 @@ proxies:
   server: 121.127.231.239
   type: ss
   udp: true
-- name: '🇭🇰香港 #3'
-  password: de8854c7-fa17-4266-ae18-50a9732a0c4e
-  port: 3001
-  server: 107.175.77.61
-  server_url: hk1.1010991.xyz
+- name: 'Channel id: @ShadowProxy66🇭🇰 #2'
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
   skip-cert-verify: true
-  sni: hk1.1010991.xyz
+  sni: hk.nfsn666.gq
   tls: false
   type: hysteria2
-- name: 🇭🇰 香港 08
-  password: 7229faf6-99d8-4e7a-992e-03fc7dde527f
-  port: 39765
-  server: 220.130.58.136
-  server_url: cdntwa.xiaomispeed.com
-  skip-cert-verify: true
-  sni: cdntwa.xiaomispeed.com
-  type: trojan
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

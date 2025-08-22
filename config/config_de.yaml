@@ -47,24 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
 - client-fingerprint: chrome
-  name: 德国 002
+  name: 德国 001
   network: ws
   password: ttfang
   port: 2096
-  server: 5.10.215.216
+  server: 5.10.214.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -73,11 +61,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 德国 001
+  name: 德国 002
   network: ws
   password: ttfang
   port: 2096
-  server: 5.10.214.216
+  server: 5.10.215.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -98,6 +86,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 🇩🇪 德国 01
+  network: ws
+  port: 443
+  server: 172.67.71.187
+  servername: yx.yushan.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
+  ws-opts:
+    headers:
+      Host: yx.yushan.dpdns.org
+    path: /
 - client-fingerprint: chrome
   name: 德国 004
   network: ws
@@ -155,6 +156,24 @@ proxies:
         Gecko) Chrome/36.0.1985.125 Safari/537.36
     max-early-data: 2560
     path: /tr
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-0268 | 5.563MB
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-0241 | 19.698MB
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0276 | 2.364MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - client-fingerprint: randomized
   name: 🇩🇪 德国 03
   network: ws
@@ -169,13 +188,6 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇩🇪DE-185.208.207.217-0358 | 0.124MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
 - client-fingerprint: randomized
   name: 🇩🇪 德国 04
   network: ws
@@ -275,20 +287,6 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
-- client-fingerprint: random
-  name: 🇩🇪 德国 76
-  network: ws
-  port: 443
-  server: 104.26.5.134
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
 - client-fingerprint: randomized
   name: '🇩🇪 德国 04 #2'
   network: ws
@@ -304,48 +302,6 @@ proxies:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: chrome
-  name: 🇩🇪 德国 43
-  network: ws
-  port: 443
-  server: 104.24.254.172
-  servername: F1.paRsa.fiLegEar-Sg.Me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df60790-c903-4661-b85d-64c0009378e5
-  ws-opts:
-    headers:
-      Host: F1.paRsa.fiLegEar-Sg.Me
-    path: /?ed=2560
-- client-fingerprint: randomized
-  name: '🇩🇪 德国 59 #2'
-  network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: chrome
-  name: 🇩🇪 德国 88
-  network: ws
-  port: 443
-  server: 104.26.7.214
-  servername: rayan-fg-5.medicalhistory.filegear-sg.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
-  ws-opts:
-    headers:
-      Host: rayan-fg-5.medicalhistory.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: chrome
   name: 🇩🇪 德国 36
   network: ws
   port: 8443
@@ -359,6 +315,20 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 43
+  network: ws
+  port: 443
+  server: 104.24.254.172
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  ws-opts:
+    headers:
+      Host: F1.paRsa.fiLegEar-Sg.Me
+    path: /?ed=2560
 - client-fingerprint: random
   name: '🇩🇪 德国 55 #2'
   network: ws
@@ -373,6 +343,34 @@ proxies:
     headers:
       Host: yx.yushan.dpdns.org
     path: /?ed=2560
+- client-fingerprint: random
+  name: 🇩🇪 德国 76
+  network: ws
+  port: 443
+  server: 104.26.5.134
+  servername: 007.xingfu.qzz.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
+  ws-opts:
+    headers:
+      Host: 007.xingfu.qzz.io
+    path: /
+- client-fingerprint: randomized
+  name: '🇩🇪 德国 59 #2'
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - name: '🇩🇪 德国 12 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -386,6 +384,20 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 88
+  network: ws
+  port: 443
+  server: 104.26.7.214
+  servername: rayan-fg-5.medicalhistory.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
+  ws-opts:
+    headers:
+      Host: rayan-fg-5.medicalhistory.filegear-sg.me
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
