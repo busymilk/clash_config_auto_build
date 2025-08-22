@@ -47,10 +47,46 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇰🇷_韩国_12
+- cipher: aes-256-cfb
+  delay: 1603
+  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- name: 🇰🇷_韩国_1
   network: ws
-  port: 50000
-  server: 121.155.240.168
+  port: 50001
+  server: 115.136.160.13
+  servername: sn.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: sn.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_15
+  network: ws
+  port: 26538
+  server: 211.216.189.208
+  servername: sn.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: sn.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_7
+  network: ws
+  port: 50001
+  server: 115.22.153.73
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -75,10 +111,10 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_7
+- name: 🇰🇷_韩国_12
   network: ws
-  port: 50001
-  server: 115.22.153.73
+  port: 50000
+  server: 121.155.240.168
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -89,56 +125,6 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_15
-  network: ws
-  port: 26538
-  server: 211.216.189.208
-  servername: sn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: sn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_1
-  network: ws
-  port: 50001
-  server: 115.136.160.13
-  servername: sn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: sn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_6
-  network: ws
-  port: 12375
-  server: 61.76.23.133
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-cfb
-  delay: 1603
-  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-  udp: true
 - name: 🇰🇷_韩国_17
   network: ws
   port: 12257

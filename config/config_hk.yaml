@@ -47,6 +47,30 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: '香港 #1'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 🇭🇰HK
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 'Channel id: @ShadowProxy66🇭🇰 #2'
+  password: nfsn666
+  port: 8888
+  server: 45.207.222.138
+  skip-cert-verify: true
+  sni: hk.nfsn666.gq
+  tls: false
+  type: hysteria2
 - cipher: aes-256-cfb
   delay: 1603
   name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
@@ -62,39 +86,12 @@ proxies:
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
-- name: 🇭🇰HK
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: 2428
-  server: 47.239.220.214
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- cipher: aes-256-cfb
-  name: 🇭🇰 香港 40
-  obfs: tls1.2_ticket_auth
-  obfs-param: ''
-  password: iFqnzSscN
-  port: 8083
-  protocol: origin
-  protocol-param: ''
-  server: 150.107.46.21
-  type: ssr
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-203.23.128.33-0369 | 0.037MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- name: '香港 #1'
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 19
   password: 941cbc4237e0
@@ -109,14 +106,6 @@ proxies:
   server: 121.127.231.239
   type: ss
   udp: true
-- name: 'Channel id: @ShadowProxy66🇭🇰 #2'
-  password: nfsn666
-  port: 8888
-  server: 45.207.222.138
-  skip-cert-verify: true
-  sni: hk.nfsn666.gq
-  tls: false
-  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
