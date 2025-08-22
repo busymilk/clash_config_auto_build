@@ -47,6 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - client-fingerprint: chrome
   name: 澳大利亚 001
   network: ws
@@ -88,6 +94,18 @@ proxies:
     headers:
       host: mv1.ylka.dpdns.org
     path: /?ed=2560
+- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  name: 🇦🇺 澳大利亚 01
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
+  port: 33656
+  server: 203.32.26.70
+  server_url: hg.dport.top
+  skip-cert-verify: true
+  sni: hg.dport.top
+  type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   name: 🇦🇺 澳大利亚家宽 01
   network: tcp
@@ -101,18 +119,6 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- auth: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  name: 🇦🇺 澳大利亚 01
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: d17d3890-037d-4c2c-844f-33e2b7e17c0f
-  port: 33656
-  server: 203.32.26.70
-  server_url: hg.dport.top
-  skip-cert-verify: true
-  sni: hg.dport.top
-  type: hysteria2
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

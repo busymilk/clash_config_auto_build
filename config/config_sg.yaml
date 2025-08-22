@@ -47,6 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇸🇬_新加坡
+  network: ws
+  port: 443
+  server: 150.109.11.223
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇸🇬 新加坡 22
   network: ws
   port: 8880
@@ -82,20 +96,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: 🇸🇬_新加坡
-  network: ws
-  port: 443
-  server: 150.109.11.223
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
