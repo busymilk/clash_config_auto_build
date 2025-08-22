@@ -47,18 +47,49 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-256-cfb
+  delay: 1603
+  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0348 | 0.329MB
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0347 | 0.33MB
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0349 | 0.33MB
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
+  type: ss
+- name: 🇭🇰HK-103.252.116.138-0382 | 0.02MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0369 | 0.037MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - name: 🇭🇰HK
   password: NjEkAYYNqFKUbrksyW1COBtdpU
   port: 2428
   server: 47.239.220.214
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: '香港 #1'
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
   skip-cert-verify: true
   sni: bing.com
   tls: false
@@ -71,66 +102,6 @@ proxies:
   sni: hk.nfsn666.gq
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0359 | 0.046MB
-  password: ljqdalu13..
-  port: 8319
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0357 | 0.041MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0358 | 0.036MB
-  password: ljqdalu13..
-  port: 8313
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0350 | 0.0MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- name: 🇭🇰HK-103.252.116.138-0388 | 0.0MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  skip-cert-verify: false
-  sni: hk.freeguard.org
-  type: trojan
-- auth: fb83356a-2123-4d83-adcd-da5b5bb59287
-  name: 🇭🇰 香港 21
-  password: fb83356a-2123-4d83-adcd-da5b5bb59287
-  port: 44001
-  server: 82.152.162.250
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 22
-  password: 23d03aa704c7
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: cmihk3v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /grqhyifio
-    tls: true
-  port: 636
-  server: 156.251.179.181
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 🇭🇰HK-103.149.182.191-0319 | 1.542MB
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
 - cipher: aes-256-gcm
   name: 🇭🇰 香港 19
   password: 941cbc4237e0
