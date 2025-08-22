@@ -47,6 +47,22 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: SG
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 47.129.224.62
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 'SG #2'
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 52.221.210.182
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: 🇸🇬_新加坡
   network: ws
   port: 443
@@ -61,35 +77,6 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 'SG #2'
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 52.221.210.182
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: SG
-  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: 22509
-  server: 47.129.224.62
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: 🇸🇬 新加坡 22
-  network: ws
-  port: 8880
-  server: 46.254.93.63
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram🇨🇳
 - name: 🇸🇬 新加坡 24
   network: ws
   port: 443
@@ -142,6 +129,20 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: '🇸🇬 新加坡 20 #2'
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: LmdkJJjr6pRvyiyzEztiiH64mAVeHuV3Tm-JGUX1jic
+  server: 111.119.239.9
+  server_url: vl1.cpddx.club
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1559ee32-04ae-49ac-a852-6096b7181610
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
@@ -359,6 +360,7 @@ rules:
 - PROCESS-NAME,Telegram,✈️ 选择代理
 - DOMAIN-SUFFIX,v2ex.com,✈️ 选择代理
 - DOMAIN-KEYWORD,alibaba-cn,DIRECT
+- DOMAIN-KEYWORD,cloudflare,✈️ 选择代理
 - RULE-SET,other_direct_applications,DIRECT
 - RULE-SET,other_ssk_lan_non_ip,DIRECT
 - RULE-SET,geosite_private_domains,DIRECT
