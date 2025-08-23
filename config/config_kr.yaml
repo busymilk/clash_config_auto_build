@@ -69,34 +69,6 @@ proxies:
     headers:
       host: sn.bgm2024.dpdns.org
     path: /?ed=2560
-- name: 🇰🇷_韩国_15
-  network: ws
-  port: 26538
-  server: 211.216.189.208
-  servername: sn.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: sn.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_7
-  network: ws
-  port: 50001
-  server: 115.22.153.73
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇰🇷_韩国_4
   network: ws
   port: 50009
@@ -111,10 +83,24 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_12
+- name: 🇰🇷_韩国_15
   network: ws
-  port: 50000
-  server: 121.155.240.168
+  port: 26538
+  server: 211.216.189.208
+  servername: sn.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: sn.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_17
+  network: ws
+  port: 12257
+  server: 112.173.231.254
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -125,10 +111,10 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_17
+- name: 🇰🇷_韩国_12
   network: ws
-  port: 12257
-  server: 112.173.231.254
+  port: 50000
+  server: 121.155.240.168
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -184,6 +170,14 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
+- cipher: aes-256-cfb
+  name: 🇰🇷 韩国2|@ripaojiedian
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  server_url: p141.panda001.net
+  type: ss
+  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

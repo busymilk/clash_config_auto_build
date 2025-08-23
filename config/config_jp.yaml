@@ -62,20 +62,19 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  delay: 1603
-  name: 日本 - 东京 - CTG Server Ltd. - 2
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
-  udp: true
+- client-fingerprint: chrome
+  name: 日本 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 103.245.228.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: 日本 001
   network: ws
@@ -102,19 +101,20 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 日本 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.245.228.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+- cipher: aes-256-gcm
+  delay: 1603
+  name: 日本 - 东京 - CTG Server Ltd. - 2
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    path: /bezradrqccl
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  type: ss
+  udp: true
 - name: 🇯🇵_日本_1
   network: ws
   port: 2083
@@ -149,10 +149,10 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
-- name: 🇯🇵_日本_26
+- name: 🇯🇵_日本_27
   network: ws
-  port: 443
-  server: 132.145.114.128
+  port: 12563
+  server: 132.145.114.230
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -163,10 +163,10 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_27
+- name: 🇯🇵_日本_26
   network: ws
-  port: 12563
-  server: 132.145.114.230
+  port: 443
+  server: 132.145.114.128
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
