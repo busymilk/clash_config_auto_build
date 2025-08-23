@@ -47,18 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: SG
-  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: 22509
-  server: 47.129.224.62
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - name: 'SG #2'
   password: 5OiuCsPmULZ0lJwts89fegLJE
   port: 17193
   server: 52.221.210.182
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: SG
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 47.129.224.62
   skip-cert-verify: true
   sni: bing.com
   tls: false
@@ -90,19 +90,6 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: 🇸🇬 新加坡 19
-  network: ws
-  password: ttfang
-  port: 443
-  server: 128.199.237.143
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -116,6 +103,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
+- name: 🇸🇬 新加坡 19
+  network: ws
+  password: ttfang
+  port: 443
+  server: 128.199.237.143
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
 - name: 🇸🇬 新加坡 09
   network: ws
   password: ttfang

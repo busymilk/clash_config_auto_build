@@ -47,12 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0204 | 22.283MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 - cipher: aes-256-gcm
   name: 🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
@@ -68,6 +62,26 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
+- cipher: aes-256-gcm
+  delay: 1603
+  name: 日本 - 东京 - CTG Server Ltd. - 2
+  password: 70a0b8103356
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    path: /bezradrqccl
+    tls: true
+  port: 636
+  server: 137.220.142.139
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0204 | 22.283MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - client-fingerprint: chrome
   name: 日本 001
   network: ws
@@ -82,11 +96,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 日本 002
+  name: 日本 003
   network: ws
   password: ttfang
   port: 2096
-  server: 103.245.228.216
+  server: 103.245.229.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -95,11 +109,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 日本 003
+  name: 日本 002
   network: ws
   password: ttfang
   port: 2096
-  server: 103.245.229.216
+  server: 103.245.228.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -135,20 +149,6 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-gcm
-  delay: 1603
-  name: 日本 - 东京 - CTG Server Ltd. - 2
-  password: 70a0b8103356
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    path: /bezradrqccl
-    tls: true
-  port: 636
-  server: 137.220.142.139
-  type: ss
-  udp: true
 - name: 🇯🇵 日本 27
   network: ws
   port: 8880

@@ -47,6 +47,30 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇭🇰HK
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: '香港 #1'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- cipher: aes-256-cfb
+  delay: 1603
+  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
 - name: 🇭🇰HK-103.252.116.138-0368 | 0.15MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
@@ -60,23 +84,20 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- name: '香港 #1'
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: '🇭🇰香港 #3'
-  password: de8854c7-fa17-4266-ae18-50a9732a0c4e
-  port: 3001
-  server: 107.175.77.61
-  server_url: hk1.1010991.xyz
-  skip-cert-verify: true
-  sni: hk1.1010991.xyz
-  tls: false
-  type: hysteria2
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 19
+  password: 941cbc4237e0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kh36v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /tkzhhylcfuf
+    tls: true
+  port: 636
+  server: 121.127.231.239
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   name: 🇭🇰HK-116.49.61.179-0719 | 9.094MB
@@ -92,20 +113,21 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- cipher: aes-256-gcm
-  name: 🇭🇰 香港 19
-  password: 941cbc4237e0
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kh36v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /tkzhhylcfuf
-    tls: true
-  port: 636
-  server: 121.127.231.239
-  type: ss
-  udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-1.65.139.101-0976 | 2.496MB
+  network: ws
+  port: 80
+  server: 1.65.196.211
+  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

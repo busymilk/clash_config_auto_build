@@ -47,6 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-256-cfb
+  delay: 1603
+  name: 韩国 - 首尔特别市 - Kaopu Cloud HK Limited - 2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0323 | 0.15MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇰🇷KR-183.109.131.75-0305 | 3.896MB
@@ -59,32 +73,19 @@ proxies:
   uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0313 | 0.209MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0323 | 0.15MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- name: 🇰🇷_韩国_17
+- name: 🇰🇷 韩国 04
   network: ws
-  port: 12257
-  server: 112.173.231.254
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
+  port: 8880
+  server: 66.81.247.186
+  servername: Telegram-channel-WangCai2
+  tls: false
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - name: 🇰🇷_韩国_4
   network: ws
   port: 50009
@@ -99,23 +100,10 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷 韩国 04
+- name: 🇰🇷_韩国_17
   network: ws
-  port: 8880
-  server: 66.81.247.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 🇰🇷_韩国_12
-  network: ws
-  port: 50000
-  server: 121.155.240.168
+  port: 12257
+  server: 112.173.231.254
   servername: edgd.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -154,6 +142,12 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-218.237.185.230-5001 | 0.091MB
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
