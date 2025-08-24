@@ -48,42 +48,113 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0280 | 4.946MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0299 | 0.518MB
+  name: 🇩🇪DE-185.177.229.245-0267 | 32.112MB
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0297 | 0.418MB
+  name: 🇩🇪DE-84.200.91.228-0271 | 26.682MB
   password: 5ZQh4pssSk4aK1JG1XhBRg
   port: 1080
   server: 84.200.91.228
   type: ss
 - cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0346 | 1.056MB
+  name: 🇩🇪DE-193.108.119.230-0261 | 30.324MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-0275 | 0.237MB
+  name: 🇩🇪DE-46.101.245.131-0283 | 11.535MB
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
-- name: 🇩🇪DE-185.208.207.217-0351 | 0.02MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
+- client-fingerprint: chrome
+  name: 德国 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.10.214.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
   type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- client-fingerprint: chrome
+  name: 德国 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.10.215.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 德国 003
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.175.141.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 德国 004
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 31.185.108.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 德国 005
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 77.37.33.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 德国 006
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 91.206.71.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - client-fingerprint: chrome
   delay: 2212
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 16
@@ -103,7 +174,7 @@ proxies:
     max-early-data: 2560
     path: /tr
 - client-fingerprint: chrome
-  name: 德国 003
+  name: '德国 003 #2'
   network: ws
   password: ttfang
   port: 2096
@@ -116,7 +187,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 德国 004
+  name: '德国 004 #2'
   network: ws
   password: ttfang
   port: 2096
@@ -129,7 +200,7 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 德国 006
+  name: '德国 006 #2'
   network: ws
   password: ttfang
   port: 2096
@@ -268,20 +339,6 @@ proxies:
       Host: 007.xingfu.qzz.io
     path: /
 - client-fingerprint: chrome
-  name: 🇩🇪 德国 43
-  network: ws
-  port: 443
-  server: 104.24.254.172
-  servername: F1.paRsa.fiLegEar-Sg.Me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df60790-c903-4661-b85d-64c0009378e5
-  ws-opts:
-    headers:
-      Host: F1.paRsa.fiLegEar-Sg.Me
-    path: /?ed=2560
-- client-fingerprint: chrome
   name: 🇩🇪 德国 36
   network: ws
   port: 8443
@@ -295,6 +352,20 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 43
+  network: ws
+  port: 443
+  server: 104.24.254.172
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  ws-opts:
+    headers:
+      Host: F1.paRsa.fiLegEar-Sg.Me
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: 🇩🇪 德国 089
   network: ws
@@ -378,84 +449,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: chrome
-  name: 德国 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.10.214.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 德国 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.10.215.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '德国 003 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.175.141.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '德国 004 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 31.185.108.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 德国 005
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 77.37.33.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '德国 006 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 91.206.71.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

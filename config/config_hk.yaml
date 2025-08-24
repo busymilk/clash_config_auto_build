@@ -47,6 +47,13 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇭🇰HK-103.252.116.138-0319 | 1.193MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
 - name: 🇭🇰HK
   password: NjEkAYYNqFKUbrksyW1COBtdpU
   port: 2428
@@ -69,13 +76,36 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- name: 🇭🇰HK-103.252.116.138-0368 | 0.019MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-116.49.61.179-0263 | 24.099MB
+  network: ws
+  port: 80
+  server: 112.118.107.212
+  server_url: hkt.gotochinatown.net
   skip-cert-verify: false
-  sni: hk.freeguard.org
-  type: trojan
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-1.65.196.211-0278 | 34.691MB
+  network: ws
+  port: 80
+  server: 1.65.202.71
+  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
