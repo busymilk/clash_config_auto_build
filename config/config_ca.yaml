@@ -47,6 +47,46 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- client-fingerprint: chrome
+  name: 加拿大 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 74.49.214.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 加拿大 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 74.49.215.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 🇨🇦_加拿大
+  network: ws
+  port: 995
+  server: 142.171.30.213
+  servername: sv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv.ylka.dpdns.org
+    path: /?ed=2560
 - cipher: aes-256-cfb
   name: 🇨🇦CA-79.127.233.170-0167 | 61.997MB
   password: f8f7aCzcPKbsF8p3
@@ -58,12 +98,6 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0242 | 36.951MB
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0320 | 1.045MB
@@ -79,46 +113,6 @@ proxies:
   protocol: origin
   server: 79.127.233.170
   type: ssr
-- client-fingerprint: chrome
-  name: 加拿大 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 74.49.215.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 加拿大 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 74.49.214.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 🇨🇦_加拿大_1
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: cx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cx.ylks0033.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: '加拿大 002 #2'
   network: ws
