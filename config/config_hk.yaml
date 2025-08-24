@@ -47,20 +47,39 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇭🇰HK-103.252.116.138-0319 | 1.193MB
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-5109 | 0.33MB
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
+  type: ss
+- name: 🇭🇰HK-103.252.116.138-0362 | 0.044MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 103.252.116.138
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
-- name: '🇭🇰香港 #3'
-  password: de8854c7-fa17-4266-ae18-50a9732a0c4e
-  port: 3001
-  server: 107.175.77.61
-  server_url: hk1.1010991.xyz
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0360 | 0.017MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- name: '香港 #2'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
   skip-cert-verify: true
-  sni: hk1.1010991.xyz
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 🇭🇰HK
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
   tls: false
   type: hysteria2
 - alterId: 0

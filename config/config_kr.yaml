@@ -47,10 +47,10 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇰🇷_韩国_3
+- name: 🇰🇷_韩国_4
   network: ws
-  port: 50001
-  server: 59.152.172.142
+  port: 50000
+  server: 123.142.9.101
   servername: sv1.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -65,20 +65,6 @@ proxies:
   network: ws
   port: 50000
   server: 221.159.156.189
-  servername: sv1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sv1.ylka.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_4
-  network: ws
-  port: 50000
-  server: 123.142.9.101
   servername: sv1.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -117,6 +103,48 @@ proxies:
     headers:
       host: sv.ylka.dpdns.org
     path: /?ed=2560
+- name: 🇰🇷_韩国_3
+  network: ws
+  port: 50001
+  server: 59.152.172.142
+  servername: sv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv1.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_1
+  network: ws
+  port: 60002
+  server: 119.64.242.60
+  servername: sv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv1.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_2
+  network: ws
+  port: 50000
+  server: 112.222.129.170
+  servername: sv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv1.ylka.dpdns.org
+    path: /?ed=2560
 - name: 🇰🇷_韩国_8
   network: ws
   port: 50009
@@ -145,31 +173,17 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_2
-  network: ws
-  port: 50000
-  server: 112.222.129.170
-  servername: sv1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sv1.ylka.dpdns.org
-    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0317 | 4.068MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0312 | 1.261MB
+  name: 🇰🇷KR-154.90.62.168-0359 | 0.57MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0334 | 0.234MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
   type: ss
 - alterId: 0
   cipher: auto
