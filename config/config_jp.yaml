@@ -54,60 +54,12 @@ proxies:
   server: 167.17.179.116
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本2|@ripaojiedian
-  password: 823e135ed103
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp7v1.lingjfjkm002.com
-    mode: websocket
-    mux: true
-    path: /dchlbvrbbotc
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 137.220.191.40
-  tfo: false
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0252 | 36.262MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
   type: ss
-- client-fingerprint: chrome
-  name: 日本 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.116.7.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 日本 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.245.228.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 日本 003
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.245.229.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 🇯🇵_日本_3
   network: ws
   port: 2096
@@ -150,26 +102,45 @@ proxies:
     headers:
       host: sv.ylka.dpdns.org
     path: /?ed=2560
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0252 | 36.262MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- name: 🇯🇵_日本_1
+- client-fingerprint: chrome
+  name: 日本 001
   network: ws
-  port: 12333
-  server: 121.80.244.179
-  servername: sv1.ylka.dpdns.org
+  password: ttfang
+  port: 2096
+  server: 103.116.7.194
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      host: sv1.ylka.dpdns.org
-    path: /?ed=2560
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 日本 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 103.245.228.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 日本 003
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 103.245.229.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: '日本 002 #2'
   network: ws
@@ -209,6 +180,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 🇯🇵 日本 27
+  network: ws
+  port: 8880
+  server: 159.112.235.177
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
 - cipher: aes-256-gcm
   delay: 1603
   name: 日本 - 东京 - CTG Server Ltd. - 2
@@ -223,18 +206,20 @@ proxies:
   server: 137.220.142.139
   type: ss
   udp: true
-- name: 🇯🇵 日本 27
+- name: 🇯🇵_日本_31
   network: ws
-  port: 8880
-  server: 159.112.235.177
-  tls: false
+  port: 443
+  server: 172.104.122.75
+  servername: edgd.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
+      host: edgd.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇯🇵_日本_26
   network: ws
   port: 443
@@ -263,20 +248,6 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇯🇵_日本_31
-  network: ws
-  port: 443
-  server: 172.104.122.75
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: '🇯🇵 日本 12 #2'
   network: ws
   port: 443
@@ -290,19 +261,6 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
     path: Telegram@freecodes/?ed=2560
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 🇯🇵 日本|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202508100385405-YeOFla7vv5.download.microsoft.com
-    mode: http
-  port: 8766
-  server: 183.240.211.98
-  server_url: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
