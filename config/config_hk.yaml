@@ -47,6 +47,22 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: '香港 #2'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 🇭🇰HK
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - cipher: aes-256-cfb
   delay: 1879
   name: 巴西 - Sao Paulo - Kaopu Cloud HK Limited - 1
@@ -55,12 +71,18 @@ proxies:
   server: 38.54.57.90
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-5109 | 0.33MB
+  name: 🇭🇰HK-18.162.146.85-0307 | 0.332MB
   password: ljqdalu13..
   port: 8319
   server: 18.162.146.85
   type: ss
-- name: 🇭🇰HK-103.252.116.138-0362 | 0.044MB
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-5005 | 0.339MB
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
+- name: 🇭🇰HK-103.252.116.138-0335 | 0.105MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 103.252.116.138
@@ -98,12 +120,15 @@ proxies:
     headers:
       Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-5005 | 0.339MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
+- name: '🇭🇰香港 #3'
+  password: de8854c7-fa17-4266-ae18-50a9732a0c4e
+  port: 3001
+  server: 107.175.77.61
+  server_url: hk1.1010991.xyz
+  skip-cert-verify: true
+  sni: hk1.1010991.xyz
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

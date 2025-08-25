@@ -47,6 +47,22 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 'SG #2'
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 52.221.210.182
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 🇸🇬@FreakConfig
+  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  port: 30308
+  server: 47.236.104.81
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -73,20 +89,6 @@ proxies:
     headers:
       Host: rs-sg4.lzjnb.shop
     path: /lzj
-- name: 🇸🇬_新加坡
-  network: ws
-  port: 443
-  server: 150.109.11.223
-  servername: edgd.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edgd.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - name: 🇸🇬 新加坡 19
   network: ws
   password: ttfang
