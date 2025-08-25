@@ -47,14 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 'SG #2'
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 52.221.210.182
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -68,6 +60,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
+- name: 🇸🇬 新加坡 24
+  network: ws
+  port: 443
+  server: 108.162.194.231
+  servername: rs-sg4.lzjnb.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
+  ws-opts:
+    headers:
+      Host: rs-sg4.lzjnb.shop
+    path: /lzj
 - name: 🇸🇬_新加坡
   network: ws
   port: 443
@@ -82,19 +87,6 @@ proxies:
     headers:
       host: edgd.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇸🇬 新加坡 24
-  network: ws
-  port: 443
-  server: 108.162.194.231
-  servername: rs-sg4.lzjnb.shop
-  tls: true
-  type: vless
-  udp: true
-  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
-  ws-opts:
-    headers:
-      Host: rs-sg4.lzjnb.shop
-    path: /lzj
 - name: 🇸🇬 新加坡 19
   network: ws
   password: ttfang
@@ -121,15 +113,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
-- name: '新加坡 #1'
-  password: 66975a45-dd40-4854-ba7b-80157a38dd64
-  port: 40001
-  server: 172.245.106.236
-  server_url: xjp.dimoyun.top
-  skip-cert-verify: true
-  sni: xjp.dimoyun.top
-  tls: false
-  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

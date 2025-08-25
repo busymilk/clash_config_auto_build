@@ -66,22 +66,21 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- name: '香港 #2'
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
-  skip-cert-verify: true
-  sni: bing.com
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-1.65.203.147-0302 | 3.321MB
+  network: ws
+  port: 80
+  server: 1.65.202.202
+  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: false
   tls: false
-  type: hysteria2
-- name: 🇭🇰HK
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: 2428
-  server: 47.239.220.214
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 🇭🇰HK-1.65.204.22-5058 | 11.566MB
@@ -97,21 +96,6 @@ proxies:
   ws-opts:
     headers:
       Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.203.147-0302 | 3.321MB
-  network: ws
-  port: 80
-  server: 1.65.202.202
-  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
     path: /
 proxy-groups:
 - name: ✈️ 选择代理

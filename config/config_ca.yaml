@@ -47,20 +47,32 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇨🇦_加拿大
+- client-fingerprint: chrome
+  name: 加拿大 002
   network: ws
-  port: 995
-  server: 142.171.30.213
-  servername: sv.ylka.dpdns.org
+  password: ttfang
+  port: 2096
+  server: 74.49.215.194
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      host: sv.ylka.dpdns.org
-    path: /?ed=2560
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 加拿大 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 74.49.214.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0262 | 71.538MB
   password: f8f7aCzcPKbsF8p3
@@ -79,32 +91,12 @@ proxies:
   port: 443
   server: 38.180.211.126
   type: ss
-- client-fingerprint: chrome
-  name: 加拿大 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 74.49.214.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 加拿大 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 74.49.215.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0367 | 0.106MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - cipher: aes-256-cfb
   name: SSR-加拿大-79.127.233.170:989
   obfs: plain
@@ -113,6 +105,20 @@ proxies:
   protocol: origin
   server: 79.127.233.170
   type: ssr
+- name: 🇨🇦_加拿大
+  network: ws
+  port: 995
+  server: 142.171.30.213
+  servername: sv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv.ylka.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
   name: '加拿大 001 #2'
   network: ws
