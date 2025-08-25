@@ -47,6 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0260 | 2.026MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - client-fingerprint: chrome
   name: 日本 001
   network: ws
@@ -86,12 +92,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0260 | 18.612MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 - client-fingerprint: chrome
   name: '日本 002 #2'
   network: ws

@@ -47,23 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇰🇷👖TG频道@stymei1丨1
-  network: ws
-  port: 443
-  server: 104.18.13.145
-  servername: usa.rtot.me
-  skip-cert-verify: true
-  sni: usa.rtot.me
-  tls: true
-  type: vless
-  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
-  ws-opts:
-    headers:
-      Host: usa.rtot.me
-    path: /bing
 - auth: ''
   fast-open: false
   name: 🇰🇷👖TG频道@stymei1丨19
@@ -103,6 +86,78 @@ proxies:
     headers:
       Host: usb.rtot.me
     path: /bing
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨5
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 47.129.224.62
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 🇰🇷👖TG频道@stymei1丨1
+  network: ws
+  port: 443
+  server: 104.18.13.145
+  servername: usa.rtot.me
+  skip-cert-verify: true
+  sni: usa.rtot.me
+  tls: true
+  type: vless
+  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
+  ws-opts:
+    headers:
+      Host: usa.rtot.me
+    path: /bing
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨4
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 52.221.210.182
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨13
+  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  port: 30308
+  server: 47.236.104.81
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨18
+  password: 7GEEGxAfgQaVPQX0PGk7lIuj3I
+  port: 10820
+  server: 158.41.110.234
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨15
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
 - alterId: 0
   cipher: ''
   flow: ''
@@ -120,6 +175,18 @@ proxies:
     headers:
       Host: uk.rtot.me
     path: /bing
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0312 | 0.085MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0298 | 0.047MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
 - auth: ''
   fast-open: false
   name: 🇰🇷👖TG频道@stymei1丨9
@@ -131,30 +198,34 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0312 | 1.241MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0298 | 0.525MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷KR-183.109.131.75-5011 | 0.222MB
+- name: 🇰🇷_韩国_4
   network: ws
-  port: 20086
-  server: 183.109.131.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  port: 50001
+  server: 115.136.160.13
+  servername: sw.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /
+    headers:
+      host: sw.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_7
+  network: ws
+  port: 26538
+  server: 211.216.189.208
+  servername: bw.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: bw.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 🇰🇷 韩国 04
   network: ws
   port: 8880
@@ -182,20 +253,6 @@ proxies:
     headers:
       Host: test.saas.cname.123153.xyz
     path: /snippets
-- name: 🇰🇷_韩国_7
-  network: ws
-  port: 26538
-  server: 211.216.189.208
-  servername: bw.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: bw.bgm2024.dpdns.org
-    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
