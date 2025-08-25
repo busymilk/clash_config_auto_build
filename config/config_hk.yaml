@@ -47,6 +47,29 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: '香港 #2'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 🇭🇰HK
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- cipher: aes-256-cfb
+  delay: 1879
+  name: 巴西 - Sao Paulo - Kaopu Cloud HK Limited - 1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
 - name: 🇭🇰HK-103.252.116.138-0335 | 0.0MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
@@ -54,21 +77,6 @@ proxies:
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.203.147-0302 | 3.321MB
-  network: ws
-  port: 80
-  server: 1.65.202.202
-  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 🇭🇰HK-1.65.204.22-5058 | 11.566MB
@@ -85,15 +93,21 @@ proxies:
     headers:
       Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
-- auth: 66975a45-dd40-4854-ba7b-80157a38dd64
-  name: '[Hysteria2] 🇭🇰 香港2@vlees_v2rayng'
-  password: 66975a45-dd40-4854-ba7b-80157a38dd64
-  port: 40001
-  server: 45.149.92.87
-  server_url: xg2.dimoyun.top
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-1.65.203.147-0302 | 3.321MB
+  network: ws
+  port: 80
+  server: 1.65.202.202
+  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
   skip-cert-verify: false
-  sni: xg2.dimoyun.top
-  type: hysteria2
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

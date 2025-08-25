@@ -47,6 +47,14 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 'SG #2'
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 52.221.210.182
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -60,15 +68,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- name: '新加坡 #1'
-  password: 66975a45-dd40-4854-ba7b-80157a38dd64
-  port: 40001
-  server: 172.245.106.236
-  server_url: xjp.dimoyun.top
-  skip-cert-verify: true
-  sni: xjp.dimoyun.top
-  tls: false
-  type: hysteria2
 - name: 🇸🇬 新加坡 24
   network: ws
   port: 443
