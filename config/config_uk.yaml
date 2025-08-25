@@ -87,19 +87,6 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 005
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.12.31.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
   name: 英国 004
   network: ws
   password: ttfang
@@ -113,11 +100,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 007
+  name: 英国 005
   network: ws
   password: ttfang
   port: 2096
-  server: 45.85.119.194
+  server: 45.12.31.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -131,6 +118,19 @@ proxies:
   password: ttfang
   port: 2096
   server: 45.85.118.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: 英国 007
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.85.119.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -177,16 +177,16 @@ proxies:
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0254 | 35.054MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.79-0259 | 34.316MB
   password: shadowsocks
   port: 443
   server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.196-0254 | 35.054MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-0081 | 34.629MB
@@ -268,20 +268,6 @@ proxies:
     headers:
       host: sv1.ylka.dpdns.org
     path: /?ed=2560
-- name: 🇬🇧_英国_2
-  network: ws
-  port: 2053
-  server: 109.176.244.37
-  servername: sv1.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sv1.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇬🇧_英国_1
   network: ws
   port: 443
@@ -295,6 +281,20 @@ proxies:
   ws-opts:
     headers:
       host: sv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_2
+  network: ws
+  port: 2053
+  server: 109.176.244.37
+  servername: sv1.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv1.ylka.dpdns.org
     path: /?ed=2560
 - name: 🇬🇧_英国_4
   network: ws

@@ -47,12 +47,23 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-256-cfb
+  group: SSRProvider
+  name: 🇨🇦CA-79.127.233.170-29
+  obfs: plain
+  obfsparam: null
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  protoparam: null
+  server: 79.127.233.170
+  type: ssr
 - client-fingerprint: chrome
-  name: 加拿大 002
+  name: 加拿大 001
   network: ws
   password: ttfang
   port: 2096
-  server: 74.49.215.194
+  server: 74.49.214.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -61,11 +72,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 加拿大 001
+  name: 加拿大 002
   network: ws
   password: ttfang
   port: 2096
-  server: 74.49.214.194
+  server: 74.49.215.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -97,14 +108,6 @@ proxies:
   port: 80
   server: 142.4.216.225
   type: ss
-- cipher: aes-256-cfb
-  name: SSR-加拿大-79.127.233.170:989
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
 - name: 🇨🇦_加拿大
   network: ws
   port: 995
