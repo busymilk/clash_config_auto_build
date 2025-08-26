@@ -47,17 +47,34 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- auth: ''
-  fast-open: false
-  name: 🇰🇷👖TG频道@stymei1丨19
-  password: wNy9Hbz2xleHOR71ZPRfF8ZnRAw
-  port: 16948
-  server: 144.229.20.90
-  servername: bing.com
+- name: 🇰🇷_韩国_7
+  network: ws
+  port: 26538
+  server: 211.216.189.208
+  servername: bw.bgm2024.dpdns.org
   skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: bw.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇰🇷_韩国_4
+  network: ws
+  port: 50001
+  server: 115.136.160.13
+  servername: sw.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: sw.bgm2024.dpdns.org
+    path: /?ed=2560
 - auth: ''
   fast-open: false
   name: 🇰🇷👖TG频道@stymei1丨17
@@ -114,6 +131,29 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨19
+  password: wNy9Hbz2xleHOR71ZPRfF8ZnRAw
+  port: 16948
+  server: 144.229.20.90
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0312 | 0.085MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0298 | 0.047MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
 - alterId: 0
   cipher: ''
   flow: ''
@@ -131,46 +171,6 @@ proxies:
     headers:
       Host: uk.rtot.me
     path: /bing
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0312 | 0.085MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0298 | 0.047MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- name: 🇰🇷_韩国_4
-  network: ws
-  port: 50001
-  server: 115.136.160.13
-  servername: sw.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: sw.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇰🇷_韩国_7
-  network: ws
-  port: 26538
-  server: 211.216.189.208
-  servername: bw.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: bw.bgm2024.dpdns.org
-    path: /?ed=2560
 - name: 🇰🇷 韩国 04
   network: ws
   port: 8880
@@ -184,6 +184,18 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷KR-183.109.131.75-5011 | 0.0MB
+  network: ws
+  port: 20086
+  server: 183.109.131.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  ws-opts:
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

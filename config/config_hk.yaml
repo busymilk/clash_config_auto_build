@@ -47,22 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: '香港 #2'
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: 🇭🇰HK
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: 2428
-  server: 47.239.220.214
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - cipher: aes-256-cfb
   delay: 1879
   name: 巴西 - Sao Paulo - Kaopu Cloud HK Limited - 1
@@ -77,37 +61,15 @@ proxies:
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-1.65.204.22-5058 | 11.566MB
-  network: ws
-  port: 80
-  server: 1.65.204.22
-  server_url: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  servername: 🇭🇰HK-1.65.204.22-5058 | 11.566MB
-  skip-cert-verify: false
+- name: '🇭🇰香港 #3'
+  password: de8854c7-fa17-4266-ae18-50a9732a0c4e
+  port: 3001
+  server: 107.175.77.61
+  server_url: hk1.1010991.xyz
+  skip-cert-verify: true
+  sni: hk1.1010991.xyz
   tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.203.147-0302 | 3.321MB
-  network: ws
-  port: 80
-  server: 1.65.202.202
-  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
