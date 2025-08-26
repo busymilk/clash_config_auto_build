@@ -47,20 +47,72 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇬🇧_英国_2
-  network: ws
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.78-0242 | 37.266MB
+  password: shadowsocks
   port: 443
-  server: 217.163.76.84
-  servername: sw.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: sw.bgm2024.dpdns.org
-    path: /?ed=2560
+  server: 212.102.53.78
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.194-0089 | 37.11MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0255 | 36.78MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.196-0250 | 36.675MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-0253 | 36.675MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.198-0249 | 36.37MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.197-0252 | 35.752MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-0246 | 35.62MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.79-0243 | 35.451MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-85.210.120.237-0240 | 30.273MB
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: 85.210.120.237
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.178-0281 | 26.812MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
 - name: 🇬🇧_英国_1
   network: ws
   port: 443
@@ -74,6 +126,20 @@ proxies:
   ws-opts:
     headers:
       host: bw.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_2
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: sw.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: sw.bgm2024.dpdns.org
     path: /?ed=2560
 - client-fingerprint: chrome
   name: 英国 002
@@ -89,11 +155,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 004
+  name: 英国 001
   network: ws
   password: ttfang
   port: 2096
-  server: 45.12.30.194
+  server: 25.25.25.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -115,11 +181,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 005
+  name: 英国 004
   network: ws
   password: ttfang
   port: 2096
-  server: 45.12.31.194
+  server: 45.12.30.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -128,11 +194,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 英国 001
+  name: 英国 005
   network: ws
   password: ttfang
   port: 2096
-  server: 25.25.25.194
+  server: 45.12.31.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -192,72 +258,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.198-0240 | 20.542MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.194-0088 | 20.497MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.120.237-0239 | 20.413MB
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.79-0228 | 20.337MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.193-0253 | 19.788MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.78-0234 | 19.212MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.78
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.81-0222 | 18.217MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.197-0231 | 17.646MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.195-0223 | 17.542MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.80-0236 | 16.122MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-141.98.101.178-0258 | 8.86MB
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
 - client-fingerprint: chrome
   name: '英国 002 #2'
   network: ws
@@ -303,12 +303,6 @@ proxies:
   port: 443
   server: 212.102.53.197
   server_url: uk-dc1.yangon.club
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0224 | 1.608MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
   type: ss
 proxy-groups:
 - name: ✈️ 选择代理

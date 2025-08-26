@@ -48,23 +48,49 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  name: 🇩🇪DE-147.45.178.200-0999 | 28.911MB
   password: a58fa62b4944ddbf
   port: 57456
   server: 147.45.178.200
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  name: 🇩🇪DE-185.177.229.245-0286 | 6.552MB
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  name: 🇩🇪DE-46.101.245.131-0314 | 0.63MB
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
   type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0298 | 5.6MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- name: 🇩🇪DE-185.208.207.217-4968 | 0.024MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
+- client-fingerprint: chrome
+  name: 德国 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.10.215.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: 德国 001
   network: ws
@@ -84,19 +110,6 @@ proxies:
   password: ttfang
   port: 2096
   server: 5.175.141.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 德国 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.10.215.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -143,18 +156,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0285 | 0.666MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
-  type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0328 | 0.052MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - client-fingerprint: chrome
   name: '德国 003 #2'
   network: ws
@@ -325,6 +326,19 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: 🇩🇪 德国 74
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.26.4.60
+  skip-cert-verify: true
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
 - client-fingerprint: chrome
   name: 🇩🇪 德国 43
   network: ws
@@ -339,19 +353,6 @@ proxies:
     headers:
       Host: F1.paRsa.fiLegEar-Sg.Me
     path: /?ed=2560
-- name: 🇩🇪 德国 74
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.26.4.60
-  skip-cert-verify: true
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: /tr?ed=2560
 - client-fingerprint: random
   name: 🇩🇪 德国 76
   network: ws
@@ -366,6 +367,20 @@ proxies:
     headers:
       Host: 007.xingfu.qzz.io
     path: /
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 089
+  network: ws
+  port: 443
+  server: 104.25.235.104
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  ws-opts:
+    headers:
+      Host: F1.paRsa.fiLegEar-Sg.Me
+    path: /?ed=2560
 - client-fingerprint: random
   name: '🇩🇪 德国 55 #2'
   network: ws
@@ -381,20 +396,6 @@ proxies:
       Host: yx.yushan.dpdns.org
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 🇩🇪 德国 089
-  network: ws
-  port: 443
-  server: 104.25.235.104
-  servername: F1.paRsa.fiLegEar-Sg.Me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df60790-c903-4661-b85d-64c0009378e5
-  ws-opts:
-    headers:
-      Host: F1.paRsa.fiLegEar-Sg.Me
-    path: /?ed=2560
-- client-fingerprint: chrome
   name: 🇩🇪 德国 88
   network: ws
   port: 443
@@ -408,20 +409,6 @@ proxies:
     headers:
       Host: rayan-fg-5.medicalhistory.filegear-sg.me
     path: /?ed=2560
-- client-fingerprint: randomized
-  name: '🇩🇪 德国 59 #2'
-  network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: chrome
   name: 🇩🇪 德国 36
   network: ws
@@ -436,6 +423,20 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /
+- client-fingerprint: randomized
+  name: '🇩🇪 德国 59 #2'
+  network: ws
+  port: 2087
+  server: 104.25.254.4
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - name: '🇩🇪 德国 12 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -449,13 +450,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: 🇩🇪DE-185.208.207.217-0319 | 0.0MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
