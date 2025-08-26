@@ -47,13 +47,14 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-cfb
-  delay: 1879
-  name: 巴西 - Sao Paulo - Kaopu Cloud HK Limited - 1
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
+- name: 'Channel id: @proxy_kafee🇭🇰 #1'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: 🇭🇰HK-103.252.116.138-0335 | 0.0MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
@@ -76,35 +77,21 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- cipher: chacha20-ietf
-  name: 🇭🇰HK-154.197.26.237-5051 | 0.276MB
-  password: asd123456
-  port: 8388
-  server: 154.197.26.237
-  type: ss
-- auth: de8854c7-fa17-4266-ae18-50a9732a0c4e
-  name: '[Hysteria2] 🇭🇰 香港 #3'
-  password: de8854c7-fa17-4266-ae18-50a9732a0c4e
-  port: 3001
-  server: 107.175.77.61
-  server_url: hk1.1010991.xyz
-  skip-cert-verify: false
-  sni: hk1.1010991.xyz
-  type: hysteria2
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 🇭🇰HK-1.65.139.81-0273 | 0.152MB
+  name: 🇭🇰HK-1.36.223.95-0284 | 1.645MB
   network: ws
   port: 80
-  server: 1.65.196.90
-  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  server: 1.65.139.77
+  server_url: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  servername: 🇭🇰HK-1.36.223.95-0284 | 1.645MB
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
     path: /
 proxy-groups:
 - name: ✈️ 选择代理
