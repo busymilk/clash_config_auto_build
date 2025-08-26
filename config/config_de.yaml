@@ -47,18 +47,29 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0286 | 6.552MB
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
+- cipher: 2022-blake3-aes-256-gcm
+  delay: 699
+  name: 德国 - Falkenstein - Parsonline - 5
+  password: 5oEPxEBMFwO2n+UkBdy7BXtHSR8V9eEKPX5drffWnGw=:U2BAUGCRDlDsp+0i5ez96qZABcz1ECAyddHAUJK4iFg=
+  port: 31412
+  server: 91.99.210.3
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-0314 | 0.63MB
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
+- delay: 1689
+  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 4
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.26.4.60
+  skip-cert-verify: true
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: zamim340.ggff.net
+    max-early-data: 2560
+    path: /tr
 - client-fingerprint: chrome
   name: 德国 001
   network: ws
@@ -86,32 +97,6 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 德国 003
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.175.141.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 德国 004
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 31.185.108.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
   name: 德国 005
   network: ws
   password: ttfang
@@ -124,19 +109,36 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 德国 006
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 91.206.71.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-030
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-025
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-46.101.245.131-034
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-84.200.91.228-5034 | 4.484MB
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0298 | 5.6MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 - client-fingerprint: chrome
   delay: 2212
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 16
@@ -267,19 +269,6 @@ proxies:
         Gecko) Chrome/53.0.2785.143 Safari/537.36
     max-early-data: 2560
     path: /tr
-- name: 🇩🇪 德国 74
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.26.4.60
-  skip-cert-verify: true
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: /tr?ed=2560
 - client-fingerprint: randomized
   name: '🇩🇪 德国 04 #2'
   network: ws
@@ -322,20 +311,6 @@ proxies:
       Host: F1.paRsa.fiLegEar-Sg.Me
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 🇩🇪 德国 36
-  network: ws
-  port: 8443
-  server: 104.24.40.146
-  servername: bitget1.asdasd.click
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /
-- client-fingerprint: chrome
   name: 🇩🇪 德国 089
   network: ws
   port: 443
@@ -349,20 +324,20 @@ proxies:
     headers:
       Host: F1.paRsa.fiLegEar-Sg.Me
     path: /?ed=2560
-- client-fingerprint: random
-  name: '🇩🇪 德国 55 #2'
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 36
   network: ws
-  port: 443
-  server: 104.26.9.156
-  servername: yx.yushan.dpdns.org
+  port: 8443
+  server: 104.24.40.146
+  servername: bitget1.asdasd.click
   tls: true
   type: vless
   udp: true
-  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
   ws-opts:
     headers:
-      Host: yx.yushan.dpdns.org
-    path: /?ed=2560
+      Host: bitget1.asdasd.click
+    path: /
 - client-fingerprint: random
   name: 🇩🇪 德国 76
   network: ws
@@ -390,6 +365,20 @@ proxies:
   ws-opts:
     headers:
       Host: rayan-fg-5.medicalhistory.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: random
+  name: '🇩🇪 德国 55 #2'
+  network: ws
+  port: 443
+  server: 104.26.9.156
+  servername: yx.yushan.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
+  ws-opts:
+    headers:
+      Host: yx.yushan.dpdns.org
     path: /?ed=2560
 - client-fingerprint: randomized
   name: '🇩🇪 德国 59 #2'

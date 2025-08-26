@@ -53,19 +53,6 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
-- client-fingerprint: chrome
-  name: 日本 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.116.7.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 🇯🇵_日本_2
   network: ws
   port: 443
@@ -80,6 +67,19 @@ proxies:
     headers:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: chrome
+  name: 日本 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 103.245.228.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 🇯🇵_日本_1
   network: ws
   port: 8443
@@ -94,32 +94,6 @@ proxies:
     headers:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  name: 日本 003
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.245.229.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 日本 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.245.228.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 🇯🇵_日本_3
   network: ws
   port: 443
@@ -134,19 +108,6 @@ proxies:
     headers:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  name: '日本 001 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.116.7.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: '日本 002 #2'
   network: ws
