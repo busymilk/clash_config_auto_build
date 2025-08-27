@@ -47,6 +47,14 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- client-fingerprint: chrome
+  name: 🇭🇰 香港6|@ripaojiedian
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 3.112.225.166
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - cipher: chacha20-ietf
   name: 🇭🇰HK-154.197.26.237-5051 | 0.276MB
   password: asd123456
@@ -66,53 +74,6 @@ proxies:
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-116.49.109.153-0280 | 0.925MB
-  network: ws
-  port: 80
-  server: 116.49.109.153
-  server_url: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-1.65.139.81-0271 | 0.178MB
-  network: ws
-  port: 80
-  server: 1.65.139.175
-  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: 🇭🇰HK-1.65.139.81-0271 | 0.178MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-1.36.223.95-0284 | 1.645MB
-  network: ws
-  port: 80
-  server: 1.65.197.244
-  server_url: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  servername: 🇭🇰HK-1.36.223.95-0284 | 1.645MB
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

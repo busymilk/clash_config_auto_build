@@ -47,19 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- client-fingerprint: chrome
-  name: 澳大利亚 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.133.1.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 🇦🇺_澳大利亚_1
   network: ws
   port: 11002
@@ -101,6 +88,66 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- name: 澳大利亚 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 192.65.217.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 澳大利亚 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.207.199.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 澳大利亚 005
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.207.196.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 澳大利亚 003
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.207.198.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 澳大利亚 004
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.207.197.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

@@ -54,16 +54,16 @@ proxies:
   server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.81-0255 | 36.78MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-0089 | 37.11MB
   password: shadowsocks
   port: 443
   server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0255 | 36.78MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.196-0250 | 36.675MB
@@ -101,12 +101,6 @@ proxies:
   port: 443
   server: 212.102.53.79
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-85.210.120.237-0240 | 30.273MB
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: 85.210.120.237
-  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.80-0251 | 29.071MB
   password: shadowsocks
@@ -120,102 +114,11 @@ proxies:
   server: 141.98.101.178
   type: ss
 - client-fingerprint: chrome
-  name: 英国 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 25.26.27.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 英国 003
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.8.211.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 英国 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 25.25.25.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 英国 004
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.12.30.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
   name: 英国 005
   network: ws
   password: ttfang
   port: 2096
   server: 45.12.31.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 英国 006
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.85.118.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 英国 007
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.85.119.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 英国 008
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 77.75.199.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -267,6 +170,90 @@ proxies:
   sni: uk-03.allhubb.info
   type: trojan
   udp: true
+- name: 英国 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 195.26.229.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 194.36.55.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 003
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 193.124.224.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 004
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 188.244.122.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: '英国 005 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.162.229.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 006
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.162.228.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 英国 007
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.156.19.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

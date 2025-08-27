@@ -48,11 +48,12 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  delay: 405
-  name: 新加坡 - 新加坡 - DigitalOcean, LLC - 1
+  client-fingerprint: chrome
+  name: 🇸🇬 新加坡3|@ripaojiedian
   password: GhYEufnq9M9yvgAc1ylvfq
   port: 18336
   server: 165.22.61.177
+  tfo: false
   type: ss
 - name: 🇸🇬 新加坡 20
   network: ws
@@ -67,19 +68,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- name: 🇸🇬 新加坡 24
-  network: ws
-  port: 443
-  server: 108.162.194.231
-  servername: rs-sg4.lzjnb.shop
-  tls: true
-  type: vless
-  udp: true
-  uuid: b7f8c66b-40f0-4160-8b88-76a482e2b593
-  ws-opts:
-    headers:
-      Host: rs-sg4.lzjnb.shop
-    path: /lzj
 - name: 🇸🇬 新加坡 19
   network: ws
   password: ttfang
@@ -106,6 +94,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- name: 新加坡 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.18.184.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
