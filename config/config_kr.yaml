@@ -47,23 +47,30 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0307 | 1.048MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0332 | 0.366MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
 - alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇰🇷👖TG频道@stymei1丨1
+  cipher: auto
+  name: 🇰🇷KR-183.109.131.75-0288 | 0.027MB
   network: ws
-  port: 443
-  server: 104.18.13.145
-  servername: usa.rtot.me
-  skip-cert-verify: true
-  sni: usa.rtot.me
-  tls: true
-  type: vless
-  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
+  port: 20086
+  server: 183.109.131.75
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
   ws-opts:
-    headers:
-      Host: usa.rtot.me
-    path: /bing
+    path: /
 - alterId: 0
   cipher: ''
   flow: ''
@@ -80,6 +87,23 @@ proxies:
   ws-opts:
     headers:
       Host: usb.rtot.me
+    path: /bing
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 🇰🇷👖TG频道@stymei1丨1
+  network: ws
+  port: 443
+  server: 104.18.13.145
+  servername: usa.rtot.me
+  skip-cert-verify: true
+  sni: usa.rtot.me
+  tls: true
+  type: vless
+  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
+  ws-opts:
+    headers:
+      Host: usa.rtot.me
     path: /bing
 - auth: ''
   fast-open: false
@@ -120,34 +144,23 @@ proxies:
     headers:
       Host: uk.rtot.me
     path: /bing
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0307 | 0.991MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0332 | 0.408MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇰🇷KR-183.109.131.75-0288 | 0.076MB
+- name: 🇰🇷 韩国 04
   network: ws
-  port: 20086
-  server: 183.109.131.75
-  skip-cert-verify: false
+  port: 8880
+  server: 66.81.247.186
+  servername: Telegram-channel-WangCai2
   tls: false
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
-    path: /
-- name: 🇰🇷_韩国_5
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: 🇰🇷_韩国_7
   network: ws
-  port: 19443
-  server: 112.173.231.254
+  port: 50001
+  server: 121.146.53.235
   servername: edge.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -172,10 +185,10 @@ proxies:
     headers:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_7
+- name: 🇰🇷_韩国_5
   network: ws
-  port: 50001
-  server: 121.146.53.235
+  port: 19443
+  server: 112.173.231.254
   servername: edge.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -228,51 +241,10 @@ proxies:
     headers:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_2
-  network: ws
-  port: 50000
-  server: 49.169.7.86
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷 韩国 04
-  network: ws
-  port: 8880
-  server: 66.81.247.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - name: 🇰🇷_韩国_4
   network: ws
   port: 50000
   server: 121.130.68.136
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_3
-  network: ws
-  port: 16013
-  server: 218.148.210.150
   servername: edge.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -297,6 +269,31 @@ proxies:
     headers:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 🇰🇷_韩国_2
+  network: ws
+  port: 50000
+  server: 49.169.7.86
+  servername: edge.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edge.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨19
+  password: wNy9Hbz2xleHOR71ZPRfF8ZnRAw
+  port: 16948
+  server: 144.229.20.90
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

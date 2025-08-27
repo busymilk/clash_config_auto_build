@@ -48,35 +48,50 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0199 | 48.952MB
+  name: 🇨🇦CA-79.127.233.170-0199 | 45.795MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
 - cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0196 | 48.787MB
+  name: 🇨🇦CA-79.127.233.170-0196 | 45.135MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0342 | 0.091MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0268 | 18.453MB
+  name: 🇨🇦CA-38.180.211.126-0268 | 12.764MB
   password: Kuiqk2cP0BMWrgme9IfEvp
   port: 443
   server: 38.180.211.126
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0342 | 0.05MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- name: 加拿大 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 205.233.181.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - cipher: aes-256-cfb
-  name: SSR-加拿大-79.127.233.170:989
+  group: SSRProvider
+  name: 🇨🇦CA-79.127.233.170-018
   obfs: plain
+  obfsparam: null
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
+  protoparam: null
   server: 79.127.233.170
   type: ssr
 - client-fingerprint: chrome
@@ -153,18 +168,6 @@ proxies:
   server: 142.4.216.225
   server_url: ca225.vpnbook.com
   type: ss
-- name: 加拿大 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 205.233.181.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
