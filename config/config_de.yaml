@@ -47,28 +47,29 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- delay: 1689
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 4
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.26.4.60
-  skip-cert-verify: true
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: zamim340.ggff.net
-    max-early-data: 2560
-    path: /tr
-- cipher: 2022-blake3-aes-256-gcm
-  delay: 699
-  name: 德国 - Falkenstein - Parsonline - 5
-  password: 5oEPxEBMFwO2n+UkBdy7BXtHSR8V9eEKPX5drffWnGw=:U2BAUGCRDlDsp+0i5ez96qZABcz1ECAyddHAUJK4iFg=
-  port: 31412
-  server: 91.99.210.3
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-0269 | 17.021MB
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-0292 | 6.484MB
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-46.101.245.131-0322 | 8.874MB
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0295 | 0.144MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
   type: ss
 - name: 德国 001
   network: ws
@@ -106,23 +107,28 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-25
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-30
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-34
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
+- delay: 1689
+  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 4
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.26.4.60
+  skip-cert-verify: true
+  sni: zamim340.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: zamim340.ggff.net
+    max-early-data: 2560
+    path: /tr
+- cipher: 2022-blake3-aes-256-gcm
+  delay: 699
+  name: 德国 - Falkenstein - Parsonline - 5
+  password: 5oEPxEBMFwO2n+UkBdy7BXtHSR8V9eEKPX5drffWnGw=:U2BAUGCRDlDsp+0i5ez96qZABcz1ECAyddHAUJK4iFg=
+  port: 31412
+  server: 91.99.210.3
   type: ss
 - client-fingerprint: chrome
   name: '德国 002 #2'
@@ -221,19 +227,6 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇩🇪 德国 01
-  network: ws
-  port: 443
-  server: 172.67.71.187
-  servername: yx.yushan.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
-  ws-opts:
-    headers:
-      Host: yx.yushan.dpdns.org
-    path: /
 - name: 🇩🇪 德国 098
   network: ws
   password: bpb-trojan
@@ -247,6 +240,19 @@ proxies:
     headers:
       Host: zamim340.ggff.net
     path: /tr?ed=2560
+- name: 🇩🇪 德国 01
+  network: ws
+  port: 443
+  server: 172.67.71.187
+  servername: yx.yushan.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4587bda-09fc-4b3b-8221-4450fccc33d1
+  ws-opts:
+    headers:
+      Host: yx.yushan.dpdns.org
+    path: /
 - client-fingerprint: randomized
   name: 🇩🇪 德国 04
   network: ws
@@ -294,6 +300,20 @@ proxies:
       Host: yx.yushan.dpdns.org
     path: /?ed=2560
 - client-fingerprint: chrome
+  name: 🇩🇪 德国 43
+  network: ws
+  port: 443
+  server: 104.24.254.172
+  servername: F1.paRsa.fiLegEar-Sg.Me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8df60790-c903-4661-b85d-64c0009378e5
+  ws-opts:
+    headers:
+      Host: F1.paRsa.fiLegEar-Sg.Me
+    path: /?ed=2560
+- client-fingerprint: chrome
   name: 🇩🇪 德国 36
   network: ws
   port: 8443
@@ -312,20 +332,6 @@ proxies:
   network: ws
   port: 443
   server: 104.25.235.104
-  servername: F1.paRsa.fiLegEar-Sg.Me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8df60790-c903-4661-b85d-64c0009378e5
-  ws-opts:
-    headers:
-      Host: F1.paRsa.fiLegEar-Sg.Me
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 🇩🇪 德国 43
-  network: ws
-  port: 443
-  server: 104.24.254.172
   servername: F1.paRsa.fiLegEar-Sg.Me
   tls: true
   type: vless
@@ -377,20 +383,6 @@ proxies:
     headers:
       Host: yx.yushan.dpdns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: 🇩🇪 德国 88
-  network: ws
-  port: 443
-  server: 104.26.7.214
-  servername: rayan-fg-5.medicalhistory.filegear-sg.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
-  ws-opts:
-    headers:
-      Host: rayan-fg-5.medicalhistory.filegear-sg.me
-    path: /?ed=2560
 - name: '🇩🇪 德国 14 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -418,6 +410,20 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 88
+  network: ws
+  port: 443
+  server: 104.26.7.214
+  servername: rayan-fg-5.medicalhistory.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 56497add-68ca-4500-b8e2-9f7003382bbe
+  ws-opts:
+    headers:
+      Host: rayan-fg-5.medicalhistory.filegear-sg.me
+    path: /?ed=2560
 - name: '🇩🇪 德国 12 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
