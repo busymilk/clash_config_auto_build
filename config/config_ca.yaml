@@ -47,30 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0199 | 45.795MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0196 | 45.135MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0268 | 12.764MB
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0342 | 0.05MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - name: 加拿大 001
   network: ws
   password: ttfang
@@ -85,7 +61,7 @@ proxies:
     path: Telegram🇨🇳
 - cipher: aes-256-cfb
   group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-018
+  name: 🇨🇦CA-79.127.233.170-18
   obfs: plain
   obfsparam: null
   password: f8f7aCzcPKbsF8p3
@@ -94,6 +70,24 @@ proxies:
   protoparam: null
   server: 79.127.233.170
   type: ssr
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0196 | 45.135MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0199 | 45.795MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0342 | 0.05MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
 - client-fingerprint: chrome
   name: 加拿大 002
   network: ws
@@ -107,20 +101,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇨🇦_加拿大_1
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: zn.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zn.ylks0033.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: '加拿大 001 #2'
   network: ws
@@ -147,6 +127,20 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 🇨🇦_加拿大_1
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: zn.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: zn.ylks0033.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 🇨🇦 加拿大 01
@@ -168,6 +162,20 @@ proxies:
   server: 142.4.216.225
   server_url: ca225.vpnbook.com
   type: ss
+- name: '🇨🇦_加拿大_1 #2'
+  network: ws
+  port: 995
+  server: 142.171.30.213
+  servername: fv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: fv.ylka.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

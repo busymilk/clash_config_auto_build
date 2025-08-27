@@ -60,17 +60,22 @@ proxies:
   server: 154.90.62.168
   type: ss
 - alterId: 0
-  cipher: auto
-  name: 🇰🇷KR-183.109.131.75-0288 | 0.027MB
+  cipher: ''
+  flow: ''
+  name: 🇰🇷👖TG频道@stymei1丨1
   network: ws
-  port: 20086
-  server: 183.109.131.75
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  port: 443
+  server: 104.18.13.145
+  servername: usa.rtot.me
+  skip-cert-verify: true
+  sni: usa.rtot.me
+  tls: true
+  type: vless
+  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
   ws-opts:
-    path: /
+    headers:
+      Host: usa.rtot.me
+    path: /bing
 - alterId: 0
   cipher: ''
   flow: ''
@@ -88,34 +93,6 @@ proxies:
     headers:
       Host: usb.rtot.me
     path: /bing
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 🇰🇷👖TG频道@stymei1丨1
-  network: ws
-  port: 443
-  server: 104.18.13.145
-  servername: usa.rtot.me
-  skip-cert-verify: true
-  sni: usa.rtot.me
-  tls: true
-  type: vless
-  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
-  ws-opts:
-    headers:
-      Host: usa.rtot.me
-    path: /bing
-- auth: ''
-  fast-open: false
-  name: 🇰🇷👖TG频道@stymei1丨9
-  password: qq4Wc9UakExypzw4Jd00fWqrDTY
-  port: 22712
-  server: 8.209.223.212
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
 - auth: ''
   fast-open: false
   name: 🇰🇷👖TG频道@stymei1丨17
@@ -127,6 +104,30 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨9
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- name: 🇰🇷 韩国 04
+  network: ws
+  port: 8880
+  server: 66.81.247.186
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - alterId: 0
   cipher: ''
   flow: ''
@@ -144,19 +145,6 @@ proxies:
     headers:
       Host: uk.rtot.me
     path: /bing
-- name: 🇰🇷 韩国 04
-  network: ws
-  port: 8880
-  server: 66.81.247.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - name: 🇰🇷_韩国_7
   network: ws
   port: 50001
@@ -213,10 +201,10 @@ proxies:
     headers:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_1
+- name: 🇰🇷_韩国_8
   network: ws
-  port: 50001
-  server: 49.143.180.18
+  port: 12270
+  server: 119.200.48.55
   servername: edge.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -227,10 +215,10 @@ proxies:
     headers:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_8
+- name: 🇰🇷_韩国_1
   network: ws
-  port: 12270
-  server: 119.200.48.55
+  port: 50001
+  server: 49.143.180.18
   servername: edge.esslh.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -269,20 +257,6 @@ proxies:
     headers:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 🇰🇷_韩国_2
-  network: ws
-  port: 50000
-  server: 49.169.7.86
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - auth: ''
   fast-open: false
   name: 🇰🇷👖TG频道@stymei1丨19
@@ -294,6 +268,48 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
+- name: '🇰🇷_韩国_2 #2'
+  network: ws
+  port: 60002
+  server: 119.64.242.60
+  servername: fv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: fv.ylka.dpdns.org
+    path: /?ed=2560
+- name: '🇰🇷_韩国_5 #2'
+  network: ws
+  port: 50000
+  server: 221.159.156.189
+  servername: jv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: jv.ylka.dpdns.org
+    path: /?ed=2560
+- name: '🇰🇷_韩国_4 #2'
+  network: ws
+  port: 50000
+  server: 221.161.207.216
+  servername: jv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: jv.ylka.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
