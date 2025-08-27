@@ -47,24 +47,23 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0352 | 0.0MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
+- cipher: chacha20-ietf
+  name: 🇭🇰HK-103.149.182.191-0303 | 1.148MB
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
   type: ss
-- name: 🇭🇰HK-103.252.116.138-0335 | 0.0MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  skip-cert-verify: false
-  sni: hk.freeguard.org
-  type: trojan
 - cipher: chacha20-ietf
   name: 🇭🇰HK-154.197.26.237-5051 | 0.231MB
   password: asd123456
   port: 8388
   server: 154.197.26.237
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0352 | 0.0MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
 - alterId: 2
   cipher: auto
@@ -81,6 +80,13 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
+- name: 🇭🇰HK-103.252.116.138-0335 | 0.0MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

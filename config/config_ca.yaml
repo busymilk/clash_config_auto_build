@@ -47,29 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 加拿大 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 205.233.181.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-18
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
 - cipher: aes-256-cfb
   name: 🇨🇦CA-79.127.233.170-0196 | 45.135MB
   password: f8f7aCzcPKbsF8p3
@@ -88,6 +65,43 @@ proxies:
   port: 80
   server: 142.4.216.225
   type: ss
+- name: 加拿大 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 205.233.181.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 🇨🇦_加拿大_1
+  network: ws
+  port: 995
+  server: 142.171.30.213
+  servername: fv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: fv.ylka.dpdns.org
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  group: SSRProvider
+  name: 🇨🇦CA-79.127.233.170-18
+  obfs: plain
+  obfsparam: null
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  protoparam: null
+  server: 79.127.233.170
+  type: ssr
 - client-fingerprint: chrome
   name: 加拿大 002
   network: ws
@@ -127,34 +141,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇨🇦_加拿大_1
-  network: ws
-  port: 443
-  server: 140.238.158.238
-  servername: zn.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zn.ylks0033.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 加拿大 01
-  network: tcp
-  port: 42557
-  reality-opts:
-    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
-    short-id: f430927d
-  server: 40.233.102.224
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0336 | 0.049MB
   password: JIhN6rBKkaEboLNXVSv5rq
@@ -162,20 +148,6 @@ proxies:
   server: 142.4.216.225
   server_url: ca225.vpnbook.com
   type: ss
-- name: '🇨🇦_加拿大_1 #2'
-  network: ws
-  port: 995
-  server: 142.171.30.213
-  servername: fv.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: fv.ylka.dpdns.org
-    path: /?ed=2560
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
