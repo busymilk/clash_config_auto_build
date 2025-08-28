@@ -47,6 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 加拿大 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 205.233.181.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0217 | 35.006MB
   password: f8f7aCzcPKbsF8p3
@@ -65,12 +77,6 @@ proxies:
   port: 80
   server: 142.4.216.225
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0267 | 17.292MB
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
-  type: ss
 - cipher: aes-256-cfb
   group: SSRProvider
   name: 🇨🇦CA-79.127.233.170-018
@@ -82,18 +88,6 @@ proxies:
   protoparam: null
   server: 79.127.233.170
   type: ssr
-- name: 加拿大 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 205.233.181.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: 加拿大 002
   network: ws
@@ -134,12 +128,31 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-38.180.211.126-0267 | 17.292MB
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0336 | 0.049MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
   server_url: ca225.vpnbook.com
   type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
