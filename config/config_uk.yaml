@@ -47,6 +47,34 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇬🇧_英国_1
+  network: ws
+  port: 443
+  server: 217.163.76.84
+  servername: bd.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: bd.bgm2024.dpdns.org
+    path: /?ed=2560
+- name: 🇬🇧_英国_2
+  network: ws
+  port: 443
+  server: 217.163.76.201
+  servername: sd.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: sd.bgm2024.dpdns.org
+    path: /?ed=2560
 - name: 英国 001
   network: ws
   password: ttfang
@@ -95,18 +123,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 英国 006
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 185.162.228.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 英国 005
   network: ws
   password: ttfang
@@ -131,34 +147,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇬🇧_英国_1
+- name: 英国 006
   network: ws
-  port: 443
-  server: 217.163.76.84
-  servername: bd.bgm2024.dpdns.org
+  password: ttfang
+  port: 2096
+  server: 185.162.228.194
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      host: bd.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 🇬🇧_英国_2
-  network: ws
-  port: 443
-  server: 217.163.76.201
-  servername: sd.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: sd.bgm2024.dpdns.org
-    path: /?ed=2560
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.79-0259 | 37.703MB
   password: shadowsocks
@@ -190,28 +190,28 @@ proxies:
   server: 212.102.53.81
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0232 | 35.359MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0240 | 35.144MB
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.195-0237 | 31.144MB
+  name: 🇬🇧GB-212.102.53.196-0232 | 35.359MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.195
+  server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.198-0235 | 32.944MB
   password: shadowsocks
   port: 443
   server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-0237 | 31.144MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.193-0233 | 15.527MB
@@ -225,20 +225,6 @@ proxies:
   port: 443
   server: 141.98.101.178
   type: ss
-- name: 🇬🇧_英国_4
-  network: ws
-  port: 443
-  server: 194.34.175.182
-  servername: fv.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: fv.ylka.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: '英国 005 #2'
   network: ws
@@ -252,34 +238,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇬🇧_英国_7
-  network: ws
-  port: 443
-  server: 194.34.175.199
-  servername: jv.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: jv.ylka.dpdns.org
-    path: /?ed=2560
-- name: '🇬🇧_英国_1 #2'
-  network: ws
-  port: 2053
-  server: 109.176.244.37
-  servername: jv.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: jv.ylka.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: 英国 009
   network: ws
@@ -293,20 +251,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: '🇬🇧_英国_2 #2'
-  network: ws
-  port: 443
-  server: 82.153.50.30
-  servername: jv.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: jv.ylka.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   name: '英国 004 #2'
   network: ws
@@ -338,12 +282,6 @@ proxies:
   sni: uk-03.allhubb.info
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

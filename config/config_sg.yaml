@@ -47,6 +47,14 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 🇸🇬@FreakConfig
+  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
+  port: 30308
+  server: 47.236.104.81
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - name: 新加坡 001
   network: ws
   password: ttfang
@@ -59,22 +67,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 'SG #2'
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 52.221.210.182
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: 🇸🇬@FreakConfig
-  password: RzQrEkAmnGs86IhmSVUk9Q5cn9M
-  port: 30308
-  server: 47.236.104.81
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -114,6 +106,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- cipher: chacha20-ietf
+  name: 🇸🇬SG-103.36.91.32-5038 | 0.311MB
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
