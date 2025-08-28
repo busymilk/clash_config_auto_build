@@ -48,12 +48,6 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0269 | 17.021MB
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-185.177.229.245-0292 | 6.484MB
   password: oXGp1+ihlfKg826H
   port: 1866
@@ -64,6 +58,12 @@ proxies:
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
   server: 46.101.245.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-0269 | 17.021MB
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   type: ss
 - cipher: rc4-md5
   name: 🇩🇪DE-193.108.119.230-0295 | 0.144MB
@@ -383,19 +383,6 @@ proxies:
     headers:
       Host: yx.yushan.dpdns.org
     path: /?ed=2560
-- name: '🇩🇪 德国 14 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: randomized
   name: '🇩🇪 德国 59 #2'
   network: ws
@@ -410,6 +397,19 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '🇩🇪 德国 14 #2'
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 8443
+  server: 162.159.129.67
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: chrome
   name: 🇩🇪 德国 88
   network: ws

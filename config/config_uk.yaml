@@ -48,28 +48,10 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0242 | 40.218MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.194-0081 | 39.872MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.198-0244 | 39.323MB
   password: shadowsocks
   port: 443
   server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.193-0243 | 40.148MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.195-0247 | 39.177MB
@@ -78,10 +60,28 @@ proxies:
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.194-0081 | 39.872MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.196-0242 | 40.218MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0246 | 38.062MB
   password: shadowsocks
   port: 443
   server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-0243 | 40.148MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.80-0267 | 36.126MB
@@ -125,11 +125,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 英国 002
+- name: 英国 003
   network: ws
   password: ttfang
   port: 2096
-  server: 194.36.55.194
+  server: 193.124.224.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -137,11 +137,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 英国 003
+- name: 英国 002
   network: ws
   password: ttfang
   port: 2096
-  server: 193.124.224.194
+  server: 194.36.55.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -161,11 +161,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 英国 006
+- name: 英国 005
   network: ws
   password: ttfang
   port: 2096
-  server: 185.162.228.194
+  server: 185.162.229.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -185,11 +185,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 英国 005
+- name: 英国 006
   network: ws
   password: ttfang
   port: 2096
-  server: 185.162.229.194
+  server: 185.162.228.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -197,20 +197,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇬🇧_英国_4
-  network: ws
-  port: 443
-  server: 194.34.175.182
-  servername: fv.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: fv.ylka.dpdns.org
-    path: /?ed=2560
 - name: 🇬🇧_英国_1
   network: ws
   port: 2053
@@ -225,6 +211,33 @@ proxies:
     headers:
       host: jv.ylka.dpdns.org
     path: /?ed=2560
+- name: 🇬🇧_英国_4
+  network: ws
+  port: 443
+  server: 194.34.175.182
+  servername: fv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: fv.ylka.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: '英国 005 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.12.31.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 🇬🇧_英国_7
   network: ws
   port: 443
@@ -253,19 +266,6 @@ proxies:
     headers:
       host: jv.ylka.dpdns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  name: '英国 005 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.12.31.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: 英国 009
   network: ws
