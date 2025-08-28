@@ -47,17 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-013
-  obfs: plain
-  obfsparam: null
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  protoparam: null
-  server: 79.127.233.170
-  type: ssr
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0217 | 14.89MB
   password: f8f7aCzcPKbsF8p3
@@ -71,16 +60,16 @@ proxies:
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0267 | 0.893MB
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0291 | 0.369MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-38.180.211.126-0267 | 0.893MB
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
   type: ss
 - name: 加拿大 001
   network: ws
@@ -94,6 +83,17 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- cipher: aes-256-cfb
+  group: SSRProvider
+  name: 🇨🇦CA-79.127.233.170-013
+  obfs: plain
+  obfsparam: null
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  protoparam: null
+  server: 79.127.233.170
+  type: ssr
 - client-fingerprint: chrome
   name: 加拿大 002
   network: ws
@@ -133,6 +133,13 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0282 | 0.574MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  server_url: ca225.vpnbook.com
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
