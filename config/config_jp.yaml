@@ -48,24 +48,11 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0283 | 17.643MB
+  name: 🇯🇵JP-149.22.87.204-0268 | 18.44MB
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
-- client-fingerprint: chrome
-  name: 日本 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.245.228.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 🇯🇵_日本_3
   network: ws
   port: 10099
@@ -80,6 +67,19 @@ proxies:
     headers:
       host: fv.ylka.dpdns.org
     path: /?ed=2560
+- client-fingerprint: chrome
+  name: 日本 002
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 103.245.228.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: '日本 002 #2'
   network: ws

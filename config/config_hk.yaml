@@ -48,42 +48,69 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-5024 | 0.336MB
-  password: ljqdalu13..
-  port: 8319
-  server: 18.162.146.85
+  name: 🇭🇰HK-203.23.128.33-0331 | 0.598MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-5022 | 0.336MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-5025 | 0.336MB
+  name: 🇭🇰HK-18.162.146.85-0324 | 0.336MB
   password: ljqdalu13..
   port: 8313
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0383 | 0.277MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
+  name: 🇭🇰HK-18.162.146.85-0322 | 0.336MB
+  password: ljqdalu13..
+  port: 8319
+  server: 18.162.146.85
   type: ss
-- name: 🇭🇰HK-103.252.116.138-5028 | 0.034MB
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0323 | 0.336MB
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
+- name: 🇭🇰HK-103.252.116.138-0358 | 0.106MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 103.252.116.138
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
-- cipher: chacha20-ietf
-  name: 🇭🇰HK-103.149.182.191-0303 | 1.148MB
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  type: ss
+- name: '香港 #1'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: 🇭🇰HK
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 香港5|@ripaojiedian
+  network: ws
+  port: 80
+  server: 112.119.217.219
+  server_url: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
