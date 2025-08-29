@@ -47,18 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-025
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-029
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
 - name: 德国 001
   network: ws
   password: ttfang
@@ -95,11 +83,17 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0343 | 18.157MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
   type: ss
 - delay: 1689
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 4
@@ -187,12 +181,6 @@ proxies:
         Gecko) Chrome/36.0.1985.125 Safari/537.36
     max-early-data: 2560
     path: /tr
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-4893 | 0.266MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
-  type: ss
 - client-fingerprint: chrome
   name: '德国 006 #2'
   network: ws
@@ -206,13 +194,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇩🇪DE-185.208.207.217-5076 | 0.608MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
 - name: 🇩🇪 德国 098
   network: ws
   password: bpb-trojan

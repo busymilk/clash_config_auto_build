@@ -71,6 +71,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 澳大利亚 005
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.207.196.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 澳大利亚 003
   network: ws
   password: ttfang
@@ -95,18 +107,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 澳大利亚 005
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 185.207.196.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - client-fingerprint: chrome
   name: 🇦🇺 澳大利亚家宽 01
   network: tcp

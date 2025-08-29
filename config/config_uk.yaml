@@ -95,6 +95,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 英国 006
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 185.162.228.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 英国 005
   network: ws
   password: ttfang
@@ -119,18 +131,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 英国 006
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 185.162.228.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-0099 | 27.908MB
   password: shadowsocks
@@ -237,17 +243,12 @@ proxies:
   server: 212.102.53.197
   server_url: uk-dc1.yangon.club
   type: ss
-- country: 🇬🇧GB
-  delay: 1035
-  name: 英国 - Erith - OVH SAS - 1
-  password: 1ce1df7962f71c6f
-  port: 8443
-  server: 51.195.255.103
-  server_url: uk-03.allhubb.info
-  skip-cert-verify: true
-  sni: uk-03.allhubb.info
-  type: trojan
-  udp: true
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.80-0247 | 24.19MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
