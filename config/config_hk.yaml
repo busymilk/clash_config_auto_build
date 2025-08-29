@@ -47,22 +47,25 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇭🇰HK
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: 2428
-  server: 47.239.220.214
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: '香港 #2'
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0345 | 0.156MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- name: 🇭🇰HK-103.252.116.138-0380 | 0.026MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0323 | 3.319MB
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-18.162.146.85-0324 | 2.809MB
   password: ljqdalu13..
@@ -75,40 +78,6 @@ proxies:
   port: 8319
   server: 18.162.146.85
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0323 | 3.319MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0331 | 0.78MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- name: 🇭🇰HK-103.252.116.138-0358 | 0.436MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  skip-cert-verify: false
-  sni: hk.freeguard.org
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-112.119.217.219-0335 | 13.041MB
-  network: ws
-  port: 80
-  server: 112.119.184.234
-  server_url: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
