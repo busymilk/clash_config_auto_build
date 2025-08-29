@@ -47,6 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-46.101.245.131:44354
+  password: 9RviNa4tscjcmCB408vLSg
+  port: 44354
+  server: 46.101.245.131
+  type: ss
 - delay: 1689
   name: 德国 - 德赖艾希 - Cloudflare, Inc. - 4
   network: ws
@@ -63,6 +75,13 @@ proxies:
       Host: zamim340.ggff.net
     max-early-data: 2560
     path: /tr
+- name: 🇩🇪DE-185.208.207.217-0377 | 0.017MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
 - name: 德国 001
   network: ws
   password: ttfang
@@ -99,36 +118,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-25
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-20
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-29
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0317 | 0.335MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
-  type: ss
 - client-fingerprint: chrome
-  name: '德国 001 #2'
+  name: '德国 002 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 5.10.214.194
+  server: 5.10.215.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -137,11 +132,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: '德国 002 #2'
+  name: '德国 001 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 5.10.215.194
+  server: 5.10.214.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
