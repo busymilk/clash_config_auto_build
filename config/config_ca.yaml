@@ -47,38 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 加拿大 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 205.233.181.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0217 | 14.89MB
+  name: 🇨🇦CA-79.127.233.170-0217 | 23.385MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 79.127.233.170
   type: ss
 - cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0218 | 14.62MB
+  name: 🇨🇦CA-79.127.233.170-0218 | 23.316MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-0267 | 0.893MB
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0291 | 0.369MB
+  name: 🇨🇦CA-142.4.216.225-0291 | 16.927MB
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
@@ -94,6 +76,24 @@ proxies:
   protoparam: null
   server: 79.127.233.170
   type: ssr
+- name: 加拿大 001
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 205.233.181.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-38.180.211.126-0267 | 0.893MB
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
+  type: ss
 - client-fingerprint: chrome
   name: 加拿大 002
   network: ws

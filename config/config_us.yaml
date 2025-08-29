@@ -47,47 +47,149 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 美国 009
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.167-0210 | 125.814MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.170-0209 | 125.269MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.169-0211 | 123.597MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.168-0212 | 108.633MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-64.74.163.130-0219 | 77.501MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 64.74.163.130
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.243-0207 | 132.663MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.243
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.130-0220 | 66.945MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.130
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.160-0208 | 156.735MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-104.192.226.106-0214 | 24.042MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 104.192.226.106
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-173.244.56.9-0213 | 72.866MB
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.9
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸US-104.192.226.106-0231 | 23.9MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-107.151.182.253-0215 | 67.178MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.151.182.253
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.132-0221 | 21.781MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.132
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-212.102.47.131-0222 | 21.51MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.47.131
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-104.167.197.25-1009 | 21.401MB
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-137.175.124.167-0257 | 9.578MB
   network: ws
-  password: ttfang
-  port: 2096
-  server: 199.68.156.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
+  port: 20086
+  server: 137.175.124.167
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd
   ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 011
+    path: /
+- cipher: rc4-md5
+  name: 🇺🇸US-23.251.121.242-0226 | 0.043MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 23.251.121.242
+  type: ss
+- name: 🇺🇸US-192.3.107.252-0355 | 0.325MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 192.3.107.252
+  skip-cert-verify: false
+  sni: rc8.freeguard.org
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-206.206.80.227-0361 | 0.291MB
   network: ws
-  password: ttfang
-  port: 2096
-  server: 199.34.229.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
+  port: 20086
+  server: 206.206.80.227
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0abb7b9e-81ba-4336-8ca7-056866032ff3
   ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
+    path: /
+- cipher: rc4-md5
+  group: SSRProvider
+  name: 🇺🇸US-107.151.182.253-030
+  obfs: plain
+  obfsparam: null
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  protoparam: null
+  server: 107.151.182.253
+  type: ssr
 - name: 美国 004
   network: ws
   password: ttfang
   port: 2096
   server: 216.205.52.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 017
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.71.232.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -131,18 +233,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 013
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.202.211.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 美国 007
   network: ws
   password: ttfang
@@ -155,11 +245,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 014
+- name: 美国 009
   network: ws
   password: ttfang
   port: 2096
-  server: 198.177.57.194
+  server: 199.68.156.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -179,11 +269,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 016
+- name: 美国 011
   network: ws
   password: ttfang
   port: 2096
-  server: 198.71.233.194
+  server: 199.34.229.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -191,36 +281,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 019
+- name: 美国 013
   network: ws
   password: ttfang
   port: 2096
-  server: 198.71.190.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 003
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 198.62.62.67
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 美国 015
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.177.56.194
+  server: 198.202.211.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -240,24 +305,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 002
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 216.24.57.30
-  skip-cert-verify: false
-  sni: torjan.xn--xhq44j.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: torjan.xn--xhq44j.eu.org
-    path: /
-- name: 美国 024
+- name: 美国 015
   network: ws
   password: ttfang
   port: 2096
-  server: 198.12.144.194
+  server: 198.177.56.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -265,11 +317,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 023
+- name: 美国 014
   network: ws
   password: ttfang
   port: 2096
-  server: 198.12.145.194
+  server: 198.177.57.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -277,11 +329,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 020
+- name: 美国 016
   network: ws
   password: ttfang
   port: 2096
-  server: 198.71.189.194
+  server: 198.71.233.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -289,11 +341,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 022
+- name: 美国 017
   network: ws
   password: ttfang
   port: 2096
-  server: 198.62.62.194
+  server: 198.71.232.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -313,11 +365,95 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 美国 020
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 198.71.189.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 美国 021
   network: ws
   password: ttfang
   port: 2096
   server: 198.71.188.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 022
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 198.62.62.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 019
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 198.71.190.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 023
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 198.12.145.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 024
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 198.12.144.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 025
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 192.200.160.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 026
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 192.169.223.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -349,59 +485,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 026
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 192.169.223.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 美国 030
   network: ws
   password: ttfang
   port: 2096
   server: 192.0.63.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 033
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 190.93.244.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 032
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 190.93.245.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 025
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 192.200.160.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -433,11 +521,23 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 037
+- name: 美国 032
   network: ws
   password: ttfang
   port: 2096
-  server: 170.114.46.194
+  server: 190.93.245.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 033
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 190.93.244.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -457,11 +557,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 046
+- name: 美国 036
   network: ws
   password: ttfang
   port: 2096
-  server: 166.62.113.194
+  server: 184.168.47.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -481,11 +581,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 036
+- name: 美国 037
   network: ws
   password: ttfang
   port: 2096
-  server: 184.168.47.194
+  server: 170.114.46.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -505,11 +605,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 045
+- name: 美国 040
   network: ws
   password: ttfang
   port: 2096
-  server: 166.62.114.194
+  server: 167.68.42.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -529,59 +629,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 040
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 167.68.42.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 美国 043
   network: ws
   password: ttfang
   port: 2096
   server: 167.68.4.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 042
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 167.68.5.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 044
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.115.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 049
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.110.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -601,6 +653,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 美国 053
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 166.62.106.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - name: 美国 048
   network: ws
   password: ttfang
@@ -613,59 +677,11 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 美国 050
+- name: 美国 049
   network: ws
   password: ttfang
   port: 2096
-  server: 166.62.109.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 051
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.108.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 054
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.105.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 055
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.104.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 美国 053
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.106.194
+  server: 166.62.110.194
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -685,160 +701,120 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
-  network: ws
-  port: 22102
-  server: 45.136.245.177
-  type: vmess
-  uuid: c8631767-f45c-4f48-bf19-5405e6d18679
-  ws-opts:
-    path: /
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.243-0207 | 115.345MB
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.243
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.160-0208 | 98.93MB
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.160
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.167-0210 | 81.484MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.169-0211 | 80.13MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.169
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-64.74.163.130-0219 | 53.649MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.130
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-173.244.56.9-0213 | 77.553MB
-  password: shadowsocks
-  port: 443
-  server: 173.244.56.9
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-104.192.226.106-0214 | 79.388MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 104.192.226.106
-  type: ss
-- cipher: rc4-md5
-  name: 🇺🇸US-107.151.182.253-0215 | 54.47MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.151.182.253
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.130-0220 | 53.254MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.130
-  type: ss
-- cipher: rc4-md5
-  name: 🇺🇸US-23.251.121.242-0226 | 46.225MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 23.251.121.242
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.170-0209 | 35.824MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US-104.192.226.106-0231 | 33.0MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US-137.175.124.167-0257 | 32.794MB
-  network: ws
-  port: 20086
-  server: 137.175.124.167
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd
-  ws-opts:
-    path: /
-- cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.132-0221 | 1.048MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.132
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-212.102.47.131-0222 | 0.54MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.131
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.168-0212 | 0.326MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US-206.206.80.227-0361 | 0.0MB
-  network: ws
-  port: 20086
-  server: 206.206.80.227
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0abb7b9e-81ba-4336-8ca7-056866032ff3
-  ws-opts:
-    path: /
-- delay: 1446
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 329
+- name: 美国 046
   network: ws
   password: ttfang
   port: 2096
-  server: 45.131.6.216
+  server: 166.62.113.194
+  skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
     headers:
       Host: ttfang.fange.me
-    path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
-- delay: 2653
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 328
+    path: Telegram🇨🇳
+- name: 美国 055
   network: ws
   password: ttfang
   port: 2096
-  server: 45.80.110.216
+  server: 166.62.104.194
+  skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
     headers:
       Host: ttfang.fange.me
-    path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
+    path: Telegram🇨🇳
+- name: 美国 045
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 166.62.114.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 051
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 166.62.108.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 050
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 166.62.109.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 044
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 166.62.115.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 042
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 167.68.5.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 美国 054
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 166.62.105.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - delay: 994
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 327
   network: ws
   password: ttfang
   port: 2096
   server: 25.25.25.216
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
+- delay: 1446
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 329
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.131.6.216
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -857,18 +833,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
-- delay: 1786
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 331
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 77.75.199.216
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
 - delay: 781
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 333
   network: ws
@@ -881,24 +845,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
-- delay: 814
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 336
+- delay: 1837
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 337
   network: ws
   password: ttfang
   port: 2096
-  server: 89.117.112.216
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
-- delay: 810
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 334
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 89.116.161.216
+  server: 103.133.1.216
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -918,6 +870,30 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1786
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 331
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 77.75.199.216
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
+- delay: 810
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 334
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 89.116.161.216
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
 - delay: 1374
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 335
   network: ws
@@ -942,12 +918,24 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1837
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 337
+- delay: 1151
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 384
   network: ws
   password: ttfang
   port: 2096
-  server: 103.133.1.216
+  server: 5.175.141.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 814
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 336
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 89.117.112.216
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -967,96 +955,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1148
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 387
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 14.102.229.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1970
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 391
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 31.43.179.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1151
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 384
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.175.141.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - delay: 1878
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 388
   network: ws
   password: ttfang
   port: 2096
   server: 25.25.25.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1968
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 393
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.8.211.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1800
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 392
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 31.185.108.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1141
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 390
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 31.12.75.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1896
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 394
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.12.30.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1075,12 +979,108 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1148
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 387
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 14.102.229.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1141
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 390
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 31.12.75.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1968
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 393
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.8.211.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1896
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 394
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.12.30.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1970
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 391
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 31.43.179.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2635
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 398
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.40.152.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1146
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 395
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.40.144.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - delay: 1798
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 396
   network: ws
   password: ttfang
   port: 2096
   server: 45.40.146.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1154
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 397
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.40.150.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1099,12 +1099,24 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1154
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 397
+- delay: 1800
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 392
   network: ws
   password: ttfang
   port: 2096
-  server: 45.40.150.194
+  server: 31.185.108.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2199
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 401
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.67.215.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1124,55 +1136,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 2635
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 398
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.40.152.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- name: 🇺🇸US-192.3.107.252-0355 | 0.0MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 192.3.107.252
-  skip-cert-verify: false
-  sni: rc8.freeguard.org
-  type: trojan
 - delay: 2410
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 403
   network: ws
   password: ttfang
   port: 2096
   server: 45.85.118.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1146
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 395
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.40.144.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 2199
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 401
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.67.215.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1215,60 +1184,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1365
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 407
+- delay: 2087
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 405
   network: ws
   password: ttfang
   port: 2096
-  server: 45.131.6.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1376
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 412
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.153.7.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1583
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 409
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.131.208.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1597
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 417
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 50.62.88.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1781
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 411
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.149.12.194
+  server: 45.128.76.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1287,12 +1208,24 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1541
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 415
+- delay: 1365
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 407
   network: ws
   password: ttfang
   port: 2096
-  server: 45.159.219.194
+  server: 45.131.6.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1583
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 409
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.131.208.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1311,24 +1244,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1517
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 416
+- delay: 1781
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 411
   network: ws
   password: ttfang
   port: 2096
-  server: 46.202.30.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1584
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 410
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.142.120.194
+  server: 45.149.12.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1347,12 +1268,24 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 2087
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 405
+- delay: 1541
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 415
   network: ws
   password: ttfang
   port: 2096
-  server: 45.128.76.194
+  server: 45.159.219.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1517
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 416
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 46.202.30.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1371,12 +1304,97 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1376
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 412
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.153.7.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1584
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 410
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.142.120.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1597
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 417
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.88.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2623
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 419
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.90.194
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1081
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 422
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.173.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - delay: 1851
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 420
   network: ws
   password: ttfang
   port: 2096
   server: 50.62.91.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1572
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 423
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.174.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1060
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 425
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 63.141.128.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1407,25 +1425,120 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 2623
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 419
+- delay: 1083
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 430
   network: ws
   password: ttfang
   port: 2096
-  server: 50.62.90.194
+  server: 72.167.230.194
   sni: ttfang.fange.me
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: ttfang.fange.me
-    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1572
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 423
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1365
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 427
   network: ws
   password: ttfang
   port: 2096
-  server: 50.62.174.194
+  server: 66.235.200.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1965
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 429
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 72.167.25.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1067
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 432
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 72.167.242.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1070
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 431
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 72.167.241.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1809
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 433
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 74.49.214.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1263
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 434
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 77.74.228.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1256
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 435
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 77.75.199.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1265
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 426
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 66.225.252.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2333
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 437
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 88.216.66.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1445,132 +1558,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1081
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 422
+- delay: 1259
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 436
   network: ws
   password: ttfang
   port: 2096
-  server: 50.62.173.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1060
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 425
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 63.141.128.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1265
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 426
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 66.225.252.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1965
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 429
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 72.167.25.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1365
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 427
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 66.235.200.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1083
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 430
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 72.167.230.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1256
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 435
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 77.75.199.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1067
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 432
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 72.167.242.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1263
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 434
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 77.74.228.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 2333
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 437
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 88.216.66.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1070
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 431
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 72.167.241.194
+  server: 77.105.163.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1589,72 +1582,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1259
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 436
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 77.105.163.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1169
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 441
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 89.116.180.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1254
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 439
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 89.116.46.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1809
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 433
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 74.49.214.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - delay: 1877
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 440
   network: ws
   password: ttfang
   port: 2096
   server: 89.116.161.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1882
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 442
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 89.116.250.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1673,78 +1606,30 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1879
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 451
+- delay: 1254
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 439
   network: ws
   password: ttfang
   port: 2096
-  server: 92.243.74.194
+  server: 89.116.46.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 2891
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 445
+- delay: 1169
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 441
   network: ws
   password: ttfang
   port: 2096
-  server: 91.206.71.194
+  server: 89.116.180.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1121
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 450
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 92.60.74.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1885
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 452
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 94.247.142.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1113
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 449
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 92.53.191.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 2197
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 457
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.159.216.216
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: '%25252FTelegram'
 - delay: 1102
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 448
   network: ws
@@ -1758,49 +1643,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1120
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 444
+- delay: 1105
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 447
   network: ws
   password: ttfang
   port: 2096
-  server: 91.124.127.194
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1398
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 456
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.169.142.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 944
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 459
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.131.209.216
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: '%25252FTelegram'
-- delay: 1129
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 454
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.133.1.194
+  server: 92.53.188.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -1819,18 +1667,127 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 956
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 458
+- delay: 2891
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 445
   network: ws
   password: ttfang
   port: 2096
-  server: 31.185.108.216
+  server: 91.206.71.194
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
     headers:
       Host: ttfang.fange.me
-    path: '%25252FTelegram'
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1879
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 451
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 92.243.74.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1113
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 449
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 92.53.191.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1885
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 452
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 94.247.142.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1129
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 454
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 103.133.1.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1120
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 444
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 91.124.127.194
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1121
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 450
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 92.60.74.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1882
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 442
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 89.116.250.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1106
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 453
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 103.116.7.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 951
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 461
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.85.119.216
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: '%25252FTelegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3'
 - delay: 1928
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 455
   network: ws
@@ -1843,30 +1800,66 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1105
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 447
+- delay: 909
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 482
   network: ws
   password: ttfang
   port: 2096
-  server: 92.53.188.194
+  server: 94.247.142.216
   sni: ttfang.fange.me
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 1214
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 463
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 944
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 459
   network: ws
   password: ttfang
   port: 2096
-  server: 45.131.210.216
+  server: 45.131.209.216
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
     headers:
       Host: ttfang.fange.me
     path: '%25252FTelegram'
+- delay: 2197
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 457
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.159.216.216
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: '%25252FTelegram'
+- client-fingerprint: chrome
+  delay: 1145
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 509
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.85.118.216
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    path: /Telegram🇨🇳
+- delay: 1398
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 456
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 103.169.142.194
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - delay: 1262
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 462
   network: ws
@@ -1880,30 +1873,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /%25252FTelegram
-- delay: 758
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 460
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.131.7.216
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: '%25252FTelegram'
-- delay: 1106
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 453
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.116.7.194
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - delay: 2153
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 489
   network: ws
@@ -1929,42 +1898,6 @@ proxies:
   type: trojan
   ws-opts:
     path: /Telegram🇨🇳
-- delay: 909
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 482
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 94.247.142.216
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- client-fingerprint: chrome
-  delay: 1326
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 512
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 25.26.27.216
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    path: /Telegram馃嚚馃嚦
-- delay: 951
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 461
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.85.119.216
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: '%25252FTelegram%2525F0%25259F%252587%2525A8%2525F0%25259F%252587%2525B3'
 - delay: 1026
   name: 美国 - 聖荷西 - Cloudflare, Inc. - 496
   network: ws
@@ -1978,17 +1911,34 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- client-fingerprint: chrome
-  delay: 1145
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 509
+- delay: 1262
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 486
   network: ws
-  password: ttfang
-  port: 2096
-  server: 45.85.118.216
-  sni: ttfang.fange.me
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 198.62.62.4
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
   type: trojan
+  udp: true
   ws-opts:
-    path: /Telegram🇨🇳
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- delay: 2353
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 490
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2087
+  server: 154.83.2.125
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: chrome
   name: '美国 007 #2'
   network: ws
@@ -2028,20 +1978,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- delay: 2353
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 490
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 154.83.2.125
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: chrome
   name: '美国 009 #2'
   network: ws
@@ -2068,17 +2004,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- cipher: rc4-md5
-  group: SSRProvider
-  name: 🇺🇸US-107.151.182.253-030
-  obfs: plain
-  obfsparam: null
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  protoparam: null
-  server: 107.151.182.253
-  type: ssr
 - client-fingerprint: chrome
   name: '美国 026 #2'
   network: ws
@@ -2092,20 +2017,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- delay: 1262
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 486
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 198.62.62.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: chrome
   name: '美国 013 #2'
   network: ws
@@ -2236,24 +2147,24 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- delay: 2039
-  name: '美国 - 聖荷西 - Cloudflare, Inc. - 451 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 88.216.69.216
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - delay: 945
   name: '美国 - 聖荷西 - Cloudflare, Inc. - 448 #2'
   network: ws
   password: ttfang
   port: 2096
   server: 77.37.33.216
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2039
+  name: '美国 - 聖荷西 - Cloudflare, Inc. - 451 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 88.216.69.216
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
@@ -2300,12 +2211,12 @@ proxies:
       Host: ttfang.fange.me
     path: /Telegram🇨🇳
 - client-fingerprint: chrome
-  delay: 2142
-  name: '美国 - 聖荷西 - Cloudflare, Inc. - 410 #2'
+  delay: 1665
+  name: '美国 - 聖荷西 - Cloudflare, Inc. - 415 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 14.102.228.216
+  server: 45.40.153.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -2314,12 +2225,12 @@ proxies:
       Host: ttfang.fange.me
     path: /Telegram🇨🇳
 - client-fingerprint: chrome
-  delay: 1665
-  name: '美国 - 聖荷西 - Cloudflare, Inc. - 415 #2'
+  delay: 2142
+  name: '美国 - 聖荷西 - Cloudflare, Inc. - 410 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 45.40.153.216
+  server: 14.102.228.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -2356,31 +2267,18 @@ proxies:
       Host: ttfang.fange.me
     path: /Telegram🇨🇳
 - client-fingerprint: chrome
-  delay: 2112
-  name: '美国 - 聖荷西 - Cloudflare, Inc. - 411 #2'
+  name: '美国 009 #2 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 45.8.211.216
+  server: 45.40.151.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
     headers:
       Host: ttfang.fange.me
-    path: /Telegram🇨🇳
-- delay: 1249
-  name: '美国 - 聖荷西 - Cloudflare, Inc. - 456 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 92.243.74.216
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+    path: Telegram🇨🇳
 - client-fingerprint: chrome
   delay: 1123
   name: '美国 - 聖荷西 - Cloudflare, Inc. - 413 #2'
@@ -2409,19 +2307,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '美国 009 #2 #2'
+- delay: 1249
+  name: '美国 - 聖荷西 - Cloudflare, Inc. - 456 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 45.40.151.216
-  skip-cert-verify: true
+  server: 92.243.74.216
   sni: ttfang.fange.me
   type: trojan
   ws-opts:
     headers:
       Host: ttfang.fange.me
-    path: Telegram🇨🇳
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - client-fingerprint: chrome
   delay: 978
   name: '美国 - 聖荷西 - Cloudflare, Inc. - 423 #2'
@@ -2429,20 +2326,6 @@ proxies:
   password: ttfang
   port: 2096
   server: 45.142.120.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /Telegram🇨🇳
-- client-fingerprint: chrome
-  delay: 788
-  name: '美国 - 聖荷西 - Cloudflare, Inc. - 409 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.10.215.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -2463,6 +2346,20 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- client-fingerprint: chrome
+  delay: 788
+  name: '美国 - 聖荷西 - Cloudflare, Inc. - 409 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 5.10.215.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /Telegram🇨🇳
 - client-fingerprint: chrome
   delay: 1275
   name: '美国 - 聖荷西 - Cloudflare, Inc. - 418 #2'
@@ -2491,6 +2388,19 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
+  name: '美国 004 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.40.146.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
   delay: 2184
   name: '美国 - 聖荷西 - Cloudflare, Inc. - 422 #2'
   network: ws
@@ -2505,11 +2415,11 @@ proxies:
       Host: ttfang.fange.me
     path: /Telegram🇨🇳
 - client-fingerprint: chrome
-  name: '美国 004 #2'
+  name: '美国 018 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 45.40.146.216
+  server: 50.62.172.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -2531,35 +2441,6 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  delay: 953
-  name: '美国 - 聖荷西 - Cloudflare, Inc. - 426 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 45.159.217.216
-  skip-cert-verify: false
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/34.0.1847.131 Safari/537.36
-    path: /Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '美国 018 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 50.62.172.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
   name: '美国 012 #2'
   network: ws
   password: ttfang
@@ -2572,6 +2453,45 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: '美国 028 #2 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 66.225.252.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: '美国 032 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 72.167.230.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- name: 🇺🇸 美国 173
+  network: ws
+  port: 8880
+  server: 130.250.137.177
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
   delay: 1239
   name: '美国 - 聖荷西 - Cloudflare, Inc. - 428 #2'
@@ -2589,24 +2509,11 @@ proxies:
         Gecko) Chrome/46.0.2490.80 Safari/537.36
     path: /Telegram🇨🇳
 - client-fingerprint: chrome
-  name: '美国 032 #2'
+  name: '美国 021 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 72.167.230.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '美国 028 #2 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 66.225.252.216
+  server: 50.62.175.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -2630,36 +2537,10 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/45.0.2454.93 Safari/537.36
     path: /Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '美国 021 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 50.62.175.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '美国 019 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 50.62.173.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 🇺🇸 美国 173
+- name: 🇺🇸 美国 181
   network: ws
   port: 8880
-  server: 130.250.137.177
+  server: 188.42.88.177
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -2682,25 +2563,12 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇺🇸 美国 181
-  network: ws
-  port: 8880
-  server: 188.42.88.177
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: '美国 014 #2'
+  name: '美国 019 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 50.62.88.216
+  server: 50.62.173.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -2709,11 +2577,11 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: '美国 003 #2'
+  name: '美国 014 #2'
   network: ws
   password: ttfang
   port: 2096
-  server: 45.40.145.216
+  server: 50.62.88.216
   skip-cert-verify: true
   sni: ttfang.fange.me
   type: trojan
@@ -2734,6 +2602,19 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: '美国 003 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 45.40.145.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
 - client-fingerprint: chrome
   name: '美国 002 #2'
   network: ws
@@ -2774,6 +2655,19 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
+  name: 🇺🇸 美国 528
+  network: ws
+  port: 8880
+  server: 185.162.228.177
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- client-fingerprint: chrome
   name: '美国 027 #2 #2'
   network: ws
   password: ttfang
@@ -2786,6 +2680,32 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
+- name: 🇺🇸 美国 108
+  network: ws
+  port: 8880
+  server: 62.72.166.177
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 055
+  network: ws
+  port: 8880
+  server: 185.59.218.188
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
   name: '美国 020 #2'
   network: ws
@@ -2813,32 +2733,6 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: 🇺🇸 美国 528
-  network: ws
-  port: 8880
-  server: 185.162.228.177
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- name: 🇺🇸 美国 055
-  network: ws
-  port: 8880
-  server: 185.59.218.188
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- client-fingerprint: chrome
   name: '美国 030 #2 #2'
   network: ws
   password: ttfang
@@ -2851,19 +2745,19 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇺🇸 美国 108
+- name: 🇺🇸 美国 050
   network: ws
   port: 8880
-  server: 62.72.166.177
-  servername: Telegram-channel-WangCai2
+  server: 185.148.106.251
+  servername: cf.d3z.net
   tls: false
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+      Host: cf.d3z.net
+    path: /Telegram @WangCai2 /?ed=2560
 - client-fingerprint: chrome
   name: '美国 031 #2 #2'
   network: ws
@@ -2904,45 +2798,6 @@ proxies:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
 - client-fingerprint: chrome
-  name: '美国 016 #2 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 50.62.90.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 🇺🇸 美国 050
-  network: ws
-  port: 8880
-  server: 185.148.106.251
-  servername: cf.d3z.net
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram @WangCai2 /?ed=2560
-- client-fingerprint: chrome
-  name: '美国 034 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 72.167.242.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
   name: 🇺🇸 美国 447
   network: ws
   port: 8880
@@ -2957,6 +2812,32 @@ proxies:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
+  name: '美国 016 #2 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 50.62.90.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
+  name: '美国 034 #2'
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 72.167.242.216
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram🇨🇳
+- client-fingerprint: chrome
   name: '美国 035 #2'
   network: ws
   password: ttfang
@@ -2969,19 +2850,6 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇺🇸 美国 223
-  network: ws
-  port: 8880
-  server: 89.116.180.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
   name: 🇺🇸 美国 492
   network: ws
@@ -2995,10 +2863,10 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /
-- name: 🇺🇸 美国 081
+- name: 🇺🇸 美国 223
   network: ws
   port: 8880
-  server: 185.251.82.177
+  server: 89.116.180.186
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -3008,10 +2876,10 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 227
+- name: 🇺🇸 美国 081
   network: ws
   port: 8880
-  server: 185.251.80.188
+  server: 185.251.82.177
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -3033,10 +2901,10 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 048
+- name: 🇺🇸 美国 227
   network: ws
   port: 8880
-  server: 185.176.26.186
+  server: 185.251.80.188
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -3046,10 +2914,10 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 066
+- name: 🇺🇸 美国 048
   network: ws
   port: 8880
-  server: 86.38.214.177
+  server: 185.176.26.186
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -3072,6 +2940,31 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed
+- name: 🇺🇸 美国 115
+  network: ws
+  port: 8880
+  server: 159.112.235.3
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /
+- name: 🇺🇸 美国 066
+  network: ws
+  port: 8880
+  server: 86.38.214.177
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - name: 🇺🇸 美国 230
   network: ws
   port: 8880
@@ -3085,10 +2978,11 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 115
+- name: 🇺🇸 美国 240
   network: ws
   port: 8880
-  server: 159.112.235.3
+  server: 193.124.224.3
+  servername: bitget1.asdasd.click
   tls: false
   type: vless
   udp: true
@@ -3096,7 +2990,7 @@ proxies:
   ws-opts:
     headers:
       Host: bitget1.asdasd.click
-    path: /
+    path: /TelegramU0001F1E8U0001F1F3?ed=2048
 - client-fingerprint: chrome
   name: '美国 036 #2 #2'
   network: ws
@@ -3123,57 +3017,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram
-- name: 🇺🇸 美国 240
-  network: ws
-  port: 8880
-  server: 193.124.224.3
-  servername: bitget1.asdasd.click
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /TelegramU0001F1E8U0001F1F3?ed=2048
-- name: 🇺🇸 美国 035
-  network: ws
-  port: 8880
-  server: 92.53.188.3
-  servername: bitget1.asdasd.click
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 🇺🇸 美国 208
-  network: ws
-  port: 8880
-  server: 62.72.166.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram @WangCai2 /
-- name: 🇺🇸 美国 245
-  network: ws
-  port: 8880
-  server: 92.53.191.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
 - name: 🇺🇸 美国 218
   network: ws
   port: 8880
@@ -3187,10 +3030,10 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 185
+- name: 🇺🇸 美国 208
   network: ws
   port: 8880
-  server: 63.141.128.188
+  server: 62.72.166.186
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -3199,7 +3042,7 @@ proxies:
   ws-opts:
     headers:
       Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
+    path: /Telegram @WangCai2 /
 - name: 🇺🇸 美国 570
   network: ws
   port: 8880
@@ -3213,10 +3056,36 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 210
+- name: 🇺🇸 美国 245
   network: ws
   port: 8880
-  server: 147.78.140.3
+  server: 92.53.191.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
+- name: 🇺🇸 美国 185
+  network: ws
+  port: 8880
+  server: 63.141.128.188
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 🇺🇸 美国 035
+  network: ws
+  port: 8880
+  server: 92.53.188.3
+  servername: bitget1.asdasd.click
   tls: false
   type: vless
   udp: true
@@ -3225,6 +3094,43 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /TelegramU0001F1E8U0001F1F3
+- name: 🇺🇸 美国 078
+  network: ws
+  port: 8880
+  server: 185.148.104.251
+  servername: cf.d3z.net
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 228
+  network: ws
+  port: 8880
+  server: 212.183.88.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 458
+  network: ws
+  port: 8880
+  server: 135.84.75.177
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram@WangCai2/?ed=2560
 - name: 🇺🇸 美国 201
   network: ws
   port: 8880
@@ -3251,43 +3157,18 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: Telegram🇨🇳
-- name: 🇺🇸 美国 458
+- name: 🇺🇸 美国 210
   network: ws
   port: 8880
-  server: 135.84.75.177
+  server: 147.78.140.3
   tls: false
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram@WangCai2/?ed=2560
-- name: 🇺🇸 美国 228
-  network: ws
-  port: 8880
-  server: 212.183.88.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 078
-  network: ws
-  port: 8880
-  server: 185.148.104.251
-  servername: cf.d3z.net
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+      Host: bitget1.asdasd.click
+    path: /TelegramU0001F1E8U0001F1F3
 - name: 🇺🇸 美国 093
   network: ws
   port: 8880
@@ -3325,45 +3206,6 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: '🇺🇸 美国 208 #2'
-  network: ws
-  port: 8880
-  server: 185.148.104.3
-  servername: bitget1.asdasd.click
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /
-- name: 🇺🇸 美国 143
-  network: ws
-  port: 8880
-  server: 185.176.24.3
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 🇺🇸 美国 239
-  network: ws
-  port: 8880
-  server: 185.238.228.39
-  servername: ip.langmanshanxi.top
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed
 - name: '🇺🇸 美国 108 #2'
   network: ws
   port: 8880
@@ -3377,6 +3219,32 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: '🇺🇸 美国 208 #2'
+  network: ws
+  port: 8880
+  server: 185.148.104.3
+  servername: bitget1.asdasd.click
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /
+- name: 🇺🇸 美国 239
+  network: ws
+  port: 8880
+  server: 185.238.228.39
+  servername: ip.langmanshanxi.top
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed
 - name: '🇺🇸 美国 258 #2'
   network: ws
   port: 8880
@@ -3416,19 +3284,19 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /TelegramU0001F1E8U0001F1F3
-- name: 🇺🇸 美国 474
+- name: 🇺🇸 美国 143
   network: ws
   port: 8880
-  server: 80.93.202.177
-  servername: ip.langmanshanxi.top
+  server: 185.176.24.3
+  servername: Telegram-channel-WangCai2
   tls: false
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2
+      Host: bitget1.asdasd.click
+    path: /TelegramU0001F1E8U0001F1F3
 - name: 🇺🇸 美国 187
   network: ws
   port: 8880
@@ -3442,18 +3310,6 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2
-- name: 🇺🇸 美国 486
-  network: ws
-  port: 8880
-  server: 195.13.45.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /
 - name: 🇺🇸 美国 221
   network: ws
   port: 8880
@@ -3467,6 +3323,19 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 474
+  network: ws
+  port: 8880
+  server: 80.93.202.177
+  servername: ip.langmanshanxi.top
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2
 - name: 🇺🇸 美国 247
   network: ws
   port: 8880
@@ -3480,6 +3349,18 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 486
+  network: ws
+  port: 8880
+  server: 195.13.45.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /
 - name: 🇺🇸 美国 119
   network: ws
   port: 8880
@@ -3530,18 +3411,6 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /TelegramU0001F1E8U0001F1F3
-- name: 🇺🇸 美国 088
-  network: ws
-  port: 8880
-  server: 209.94.90.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /
 - name: 🇺🇸 美国 061
   network: ws
   port: 8880
@@ -3555,10 +3424,10 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /
-- name: 🇺🇸 美国 256
+- name: 🇺🇸 美国 088
   network: ws
   port: 8880
-  server: 45.159.219.251
+  server: 209.94.90.251
   tls: false
   type: vless
   udp: true
@@ -3566,11 +3435,11 @@ proxies:
   ws-opts:
     headers:
       Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 615
+    path: /
+- name: 🇺🇸 美国 256
   network: ws
   port: 8880
-  server: 188.42.88.251
+  server: 45.159.219.251
   tls: false
   type: vless
   udp: true
@@ -3591,6 +3460,18 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /Telegram @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 615
+  network: ws
+  port: 8880
+  server: 188.42.88.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: '🇺🇸 美国 291 #2'
   network: ws
   port: 8880
@@ -3627,30 +3508,6 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳@WangCai2/?ed=2560
-- name: '🇺🇸 美国 081 #2 #2'
-  network: ws
-  port: 8880
-  server: 167.68.11.177
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- name: '🇺🇸 美国 554 #2'
-  network: ws
-  port: 8880
-  server: 45.131.4.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /
 - name: '🇺🇸 美国 480 #2'
   network: ws
   port: 8880
@@ -3663,10 +3520,10 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560
-- name: 🇺🇸 美国 237
+- name: '🇺🇸 美国 081 #2 #2'
   network: ws
   port: 8880
-  server: 45.85.119.177
+  server: 167.68.11.177
   tls: false
   type: vless
   udp: true
@@ -3687,11 +3544,10 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: '🇺🇸 美国 188 #2'
+- name: 🇺🇸 美国 237
   network: ws
   port: 8880
-  server: 102.177.176.188
-  servername: Telegram-channel-WangCai2
+  server: 45.85.119.177
   tls: false
   type: vless
   udp: true
@@ -3699,20 +3555,7 @@ proxies:
   ws-opts:
     headers:
       Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: '🇺🇸 美国 318 #2'
-  network: ws
-  port: 8880
-  server: 160.79.104.177
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
 - name: 🇺🇸 美国 766
   network: ws
   port: 8880
@@ -3737,22 +3580,36 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳@WangCai2/?ed=2560
+- name: '🇺🇸 美国 318 #2'
+  network: ws
+  port: 8880
+  server: 160.79.104.177
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: '🇺🇸 美国 188 #2'
+  network: ws
+  port: 8880
+  server: 102.177.176.188
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /
 - name: 🇺🇸 美国 051
   network: ws
   port: 8880
   server: 63.141.128.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
-- name: 🇺🇸 美国 613
-  network: ws
-  port: 8880
-  server: 193.9.49.251
   tls: false
   type: vless
   udp: true
@@ -3773,18 +3630,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
-- name: 🇺🇸 美国 0188
-  network: ws
-  port: 8880
-  server: 45.131.208.177
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram@WangCai2/?ed=2560
 - name: 🇺🇸 美国 0591
   network: ws
   port: 8880
@@ -3797,6 +3642,30 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560
+- name: '🇺🇸 美国 554 #2'
+  network: ws
+  port: 8880
+  server: 45.131.4.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳 @WangCai2 /
+- name: 🇺🇸 美国 0188
+  network: ws
+  port: 8880
+  server: 45.131.208.177
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram@WangCai2/?ed=2560
 - name: '🇺🇸 美国 188 #2 #2'
   network: ws
   port: 8880
@@ -3809,18 +3678,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /TelegramU0001F1E8U0001F1F3
-- name: 🇺🇸 美国 887
-  network: ws
-  port: 8880
-  server: 45.81.58.94
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /?ed=2560
 - name: 🇺🇸 美国 549
   network: ws
   port: 8443
@@ -3834,6 +3691,18 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560security=tls
+- name: 🇺🇸 美国 887
+  network: ws
+  port: 8880
+  server: 45.81.58.94
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /?ed=2560
 - name: 🇺🇸 美国 0608
   network: ws
   port: 8880
@@ -3846,6 +3715,42 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
+- name: 🇺🇸 美国 613
+  network: ws
+  port: 8880
+  server: 193.9.49.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
+- name: 🇺🇸 美国 628
+  network: ws
+  port: 8880
+  server: 185.251.82.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
+- name: 🇺🇸 美国 0299
+  network: ws
+  port: 8880
+  server: 195.26.229.3
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /telegramu0001f1e8u0001f1f3
 - name: 🇺🇸 美国 331
   network: ws
   port: 8880
@@ -3859,18 +3764,31 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /
-- name: 🇺🇸 美国 628
+- name: 🇺🇸 美国 0239
   network: ws
   port: 8880
-  server: 185.251.82.251
+  server: 31.12.75.177
+  servername: Telegram-channel-WangCai2
   tls: false
   type: vless
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 767
+  network: ws
+  port: 8880
+  server: 45.81.58.73
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /?ed=2560
 - name: 🇺🇸 美国 870
   network: ws
   port: 8880
@@ -3883,30 +3801,6 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /freecodes蘇小檸 | 華東電訊 | 解鎖Netflix
-- name: 🇺🇸 美国 0299
-  network: ws
-  port: 8880
-  server: 195.26.229.3
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /telegramu0001f1e8u0001f1f3
-- name: '🇺🇸 美国 102 #2 #2'
-  network: ws
-  port: 8880
-  server: 46.254.93.177
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram@WangCai2/?ed=2560
 - name: '🇺🇸 美国 0199 #2'
   network: ws
   port: 8880
@@ -3920,30 +3814,6 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 0611
-  network: ws
-  port: 8880
-  server: 103.160.204.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
-- name: 🇺🇸 美国 767
-  network: ws
-  port: 8880
-  server: 45.81.58.73
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /?ed=2560
 - name: 🇺🇸 美国 0672
   network: ws
   port: 8880
@@ -3956,6 +3826,30 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /telegram🇨🇳
+- name: '🇺🇸 美国 263 #2'
+  network: ws
+  port: 8880
+  server: 45.159.219.3
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /TelegramU0001F1E8U0001F1F3
+- name: 🇺🇸 美国 0611
+  network: ws
+  port: 8880
+  server: 103.160.204.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
 - name: '🇺🇸 美国 146 #2'
   network: ws
   port: 8880
@@ -3980,23 +3874,10 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
-- name: '🇺🇸 美国 263 #2'
+- name: '🇺🇸 美国 102 #2 #2'
   network: ws
   port: 8880
-  server: 45.159.219.3
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /TelegramU0001F1E8U0001F1F3
-- name: 🇺🇸 美国 0239
-  network: ws
-  port: 8880
-  server: 31.12.75.177
-  servername: Telegram-channel-WangCai2
+  server: 46.254.93.177
   tls: false
   type: vless
   udp: true
@@ -4004,7 +3885,19 @@ proxies:
   ws-opts:
     headers:
       Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+    path: /Telegram@WangCai2/?ed=2560
+- name: '🇺🇸 美国 104 #2'
+  network: ws
+  port: 8880
+  server: 185.251.81.3
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /
 - client-fingerprint: chrome
   name: 🇺🇸 美国 006
   network: tcp
@@ -4031,65 +3924,6 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /Telegram
-- alterId: '64'
-  cipher: auto
-  name: '🇺🇸_美国_3 #2 #2'
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: '🇺🇸 美国 104 #2'
-  network: ws
-  port: 8880
-  server: 185.251.81.3
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /
-- name: 🇺🇸 美国 0259
-  network: ws
-  port: 8880
-  server: 5.10.214.20
-  servername: ip.langmanshanxi.top
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /
-- name: 🇺🇸 美国 0646
-  network: ws
-  port: 8880
-  server: 5.182.84.251
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳
-- name: '🇺🇸 美国 336 #2'
-  network: ws
-  port: 8880
-  server: 94.247.142.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: '🇺🇸 美国 0283 #2'
   network: ws
   port: 8880
@@ -4103,6 +3937,53 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: '🇺🇸 美国 336 #2'
+  network: ws
+  port: 8880
+  server: 94.247.142.186
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 0646
+  network: ws
+  port: 8880
+  server: 5.182.84.251
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳
+- alterId: '64'
+  cipher: auto
+  name: '🇺🇸_美国_3 #2 #2'
+  network: tcp
+  port: 30002
+  server: 38.12.83.217
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸 美国 0259
+  network: ws
+  port: 8880
+  server: 5.10.214.20
+  servername: ip.langmanshanxi.top
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /
 - name: 🇺🇸 美国 0538
   network: ws
   port: 8880
@@ -4116,6 +3997,19 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: '🇺🇸 美国 313 #2'
+  network: ws
+  port: 8880
+  server: 45.80.111.186
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: 🇺🇸 美国 0130
   network: ws
   port: 8880
@@ -4129,6 +4023,19 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 046
+  network: ws
+  port: 8880
+  server: 45.80.111.177
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /
 - name: '🇺🇸 美国 303 #2 #2'
   network: ws
   port: 8880
@@ -4142,10 +4049,24 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /
-- name: '🇺🇸 美国 313 #2'
+- name: 🇺🇸 美国 0518
   network: ws
   port: 8880
-  server: 45.80.111.186
+  server: 5.10.214.186
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: 🇺🇸 美国 485
+  network: ws
+  port: 8880
+  server: 185.148.107.177
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -4168,96 +4089,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /
-- name: 🇺🇸 美国 359
-  network: ws
-  port: 8880
-  server: 185.174.138.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
-- name: 🇺🇸 美国 046
-  network: ws
-  port: 8880
-  server: 45.80.111.177
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 485
-  network: ws
-  port: 8880
-  server: 185.148.107.177
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 0518
-  network: ws
-  port: 8880
-  server: 5.10.214.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: '🇺🇸 美国 290 #2'
-  network: ws
-  port: 8880
-  server: 135.84.73.87
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: '🇺🇸 美国 175 #2 #2'
-  network: ws
-  port: 8880
-  server: 45.159.217.3
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram🇨🇳
-- name: '🇺🇸 美国 433 #2'
-  network: ws
-  port: 8880
-  server: 86.38.214.3
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram🇨🇳
 - name: 🇺🇸 美国 0487
   network: ws
   port: 8880
@@ -4271,6 +4102,56 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: '🇺🇸 美国 433 #2'
+  network: ws
+  port: 8880
+  server: 86.38.214.3
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /Telegram🇨🇳
+- name: 🇺🇸 美国 359
+  network: ws
+  port: 8880
+  server: 185.174.138.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome
+- name: '🇺🇸 美国 175 #2 #2'
+  network: ws
+  port: 8880
+  server: 45.159.217.3
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /Telegram🇨🇳
+- name: '🇺🇸 美国 290 #2'
+  network: ws
+  port: 8880
+  server: 135.84.73.87
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /
 - client-fingerprint: random
   name: 🇺🇸 美国 828
   network: ws
@@ -4285,32 +4166,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560
-- name: '🇺🇸 美国 330 #2'
-  network: ws
-  port: 8880
-  server: 114.129.43.188
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: '🇺🇸 美国 135 #2 #2'
-  network: ws
-  port: 8880
-  server: 188.42.88.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram @WangCai2 /
 - name: '🇺🇸 美国 0811 #2'
   network: ws
   port: 8880
@@ -4324,6 +4179,32 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: '🇺🇸 美国 135 #2 #2'
+  network: ws
+  port: 8880
+  server: 188.42.88.186
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram @WangCai2 /
+- name: '🇺🇸 美国 330 #2'
+  network: ws
+  port: 8880
+  server: 114.129.43.188
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /
 - name: 🇺🇸 美国 297
   network: ws
   port: 8880
@@ -4336,10 +4217,10 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram
-- name: 🇺🇸 美国 902
+- name: '🇺🇸 美国 0179 #2'
   network: ws
   port: 8880
-  server: 66.225.252.177
+  server: 45.159.216.186
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -4348,36 +4229,21 @@ proxies:
   ws-opts:
     headers:
       Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
-  name: '🇺🇸 美国 210 #2'
-  network: tcp
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 172.233.201.142
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: true
+  name: 🇺🇸 美国 523
+  network: ws
+  port: 8880
+  server: 194.152.44.177
+  servername: Telegram-channel-WangCai2
+  tls: false
   type: vless
   udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- client-fingerprint: chrome
-  delay: 2245
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 1348
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2053
-  server: 103.160.204.26
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
   name: 🇺🇸 美国 0189
   network: ws
@@ -4405,19 +4271,35 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: '🇺🇸 美国 0179 #2'
+- client-fingerprint: chrome
+  delay: 2245
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 1348
   network: ws
-  port: 8880
-  server: 45.159.216.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2053
+  server: 103.160.204.26
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 210 #2'
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.201.142
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - name: 🇺🇸 美国 0575
   network: ws
   port: 8880
@@ -4445,11 +4327,10 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 523
+- name: 🇺🇸 美国 902
   network: ws
   port: 8880
-  server: 194.152.44.177
+  server: 66.225.252.177
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -4458,7 +4339,7 @@ proxies:
   ws-opts:
     headers:
       Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    path: /Telegram🇨🇳 @WangCai2 /
 - name: '🇺🇸 美国 0136 #2'
   network: ws
   port: 8880
@@ -4472,92 +4353,10 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- delay: 2108
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 1372
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 103.160.204.1
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: 🇺🇸 美国 0736
   network: ws
   port: 8880
   server: 185.176.24.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- delay: 1265
-  name: 美国 - 聖荷西 - Cloudflare, Inc. - 1364
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2096
-  server: 156.238.19.69
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 337 #2'
-  network: ws
-  port: 8880
-  server: 45.142.120.177
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: '🇺🇸 美国 544 #2'
-  network: ws
-  password: slch2024
-  port: 443
-  server: 104.18.2.150
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /
-- name: '🇺🇸 美国 267 #2'
-  network: ws
-  port: 8880
-  server: 216.24.57.186
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 0504
-  network: ws
-  port: 8880
-  server: 45.131.5.177
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -4581,6 +4380,33 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 337 #2'
+  network: ws
+  port: 8880
+  server: 45.142.120.177
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: '🇺🇸 美国 267 #2'
+  network: ws
+  port: 8880
+  server: 216.24.57.186
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: '🇺🇸 美国 295 #2 #2'
   network: ws
   port: 8880
@@ -4594,10 +4420,156 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: '🇺🇸 美国 544 #2'
+  network: ws
+  password: slch2024
+  port: 443
+  server: 104.18.2.150
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /
+- client-fingerprint: chrome
+  name: 🇺🇸 美国 0504
+  network: ws
+  port: 8880
+  server: 45.131.5.177
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- delay: 2108
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 1372
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 103.160.204.1
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- client-fingerprint: chrome
+  name: 🇺🇸 美国 0792
+  network: ws
+  port: 8880
+  server: 45.149.12.177
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: 🇺🇸 美国 0890
   network: ws
   port: 8880
   server: 45.80.111.188
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: '🇺🇸 美国 319 #2'
+  network: ws
+  port: 8880
+  server: 190.93.246.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram🇨🇳
+- name: '🇺🇸 美国 0241 #2'
+  network: ws
+  port: 8880
+  server: 104.254.140.177
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- name: 🇺🇸 美国 0166
+  network: ws
+  port: 8880
+  server: 212.183.88.177
+  servername: ip.langmanshanxi.top
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /
+- name: '🇺🇸 美国 363 #2'
+  network: ws
+  port: 8880
+  server: 62.72.166.87
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /
+- delay: 1265
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 1364
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2096
+  server: 156.238.19.69
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: 🇺🇸 美国 0124
+  network: ws
+  port: 8880
+  server: 170.114.45.3
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /Telegram🇨🇳
+- name: '🇺🇸 美国 538 #2'
+  network: ws
+  port: 8880
+  server: 135.84.73.188
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -4641,111 +4613,6 @@ proxies:
         Gecko) Chrome/52.0.2743.116 Safari/537.36
     max-early-data: 2560
     path: /
-- name: '🇺🇸 美国 0241 #2'
-  network: ws
-  port: 8880
-  server: 104.254.140.177
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 0792
-  network: ws
-  port: 8880
-  server: 45.149.12.177
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: '🇺🇸 美国 319 #2'
-  network: ws
-  port: 8880
-  server: 190.93.246.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram🇨🇳
-- name: 🇺🇸 美国 0166
-  network: ws
-  port: 8880
-  server: 212.183.88.177
-  servername: ip.langmanshanxi.top
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /
-- name: '🇺🇸 美国 363 #2'
-  network: ws
-  port: 8880
-  server: 62.72.166.87
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: 🇺🇸 美国 0124
-  network: ws
-  port: 8880
-  server: 170.114.45.3
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram🇨🇳
-- client-fingerprint: random
-  name: '🇺🇸 美国 134 #2'
-  network: ws
-  port: 443
-  server: 162.159.251.166
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- name: '🇺🇸 美国 538 #2'
-  network: ws
-  port: 8880
-  server: 135.84.73.188
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: 🇺🇸 美国 279
   network: ws
   port: 8880
@@ -4759,6 +4626,19 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
+- name: '🇺🇸 美国 261 #2'
+  network: ws
+  port: 8880
+  server: 89.116.161.188
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /
 - name: '🇺🇸 美国 0057 #2'
   network: ws
   port: 8880
@@ -4785,19 +4665,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
-- name: '🇺🇸 美国 0957 #2'
-  network: ws
-  port: 8880
-  server: 185.148.106.3
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram🇨🇳
 - name: '🇺🇸 美国 139 #2'
   network: ws
   port: 8880
@@ -4811,45 +4678,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
-- client-fingerprint: random
-  name: '🇺🇸 美国 135 #2'
-  network: ws
-  port: 443
-  server: 104.18.22.180
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- name: '🇺🇸 美国 261 #2'
-  network: ws
-  port: 8880
-  server: 89.116.161.188
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: '🇺🇸 美国 269 #2 #2 #2'
-  network: ws
-  port: 8880
-  server: 160.153.0.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram @WangCai2 /?ed=2560fp=chrome
 - name: '🇺🇸 美国 259 #2'
   network: ws
   port: 8880
@@ -4862,47 +4690,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram
-- client-fingerprint: random
-  name: '🇺🇸 美国 542 #2 #2'
-  network: ws
-  port: 443
-  server: 104.19.137.21
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- name: '🇺🇸 美国 0037 #2'
-  network: ws
-  port: 8880
-  server: 31.43.179.3
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /TelegramU0001F1E8U0001F1F3
-- client-fingerprint: random
-  name: 🇺🇸 美国 543
-  network: ws
-  port: 443
-  server: 162.159.4.157
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
 - name: 🇺🇸 美国 0655
   network: ws
   port: 8880
@@ -4916,37 +4703,11 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 🇺🇸 美国 0754
+- name: '🇺🇸 美国 0037 #2'
   network: ws
   port: 8880
-  server: 185.251.81.188
+  server: 31.43.179.3
   servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- client-fingerprint: random
-  name: 🇺🇸 美国 092
-  network: ws
-  port: 443
-  server: 104.18.119.244
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- name: '🇺🇸 美国 206 #2'
-  network: ws
-  port: 8880
-  server: 139.64.235.3
   tls: false
   type: vless
   udp: true
@@ -4954,7 +4715,20 @@ proxies:
   ws-opts:
     headers:
       Host: bitget1.asdasd.click
-    path: /Telegram
+    path: /TelegramU0001F1E8U0001F1F3
+- name: '🇺🇸 美国 0957 #2'
+  network: ws
+  port: 8880
+  server: 185.148.106.3
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /Telegram🇨🇳
 - client-fingerprint: chrome
   name: '🇺🇸 美国 0812 #2'
   network: ws
@@ -4969,20 +4743,43 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- client-fingerprint: random
-  name: '🇺🇸 美国 425 #2'
+- name: '🇺🇸 美国 269 #2 #2 #2'
   network: ws
-  port: 443
-  server: 104.18.131.54
-  servername: 007.xingfu.qzz.io
-  tls: true
+  port: 8880
+  server: 160.153.0.251
+  tls: false
   type: vless
   udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
   ws-opts:
     headers:
-      Host: 007.xingfu.qzz.io
-    path: /
+      Host: cf.d3z.net
+    path: /Telegram @WangCai2 /?ed=2560fp=chrome
+- name: '🇺🇸 美国 206 #2'
+  network: ws
+  port: 8880
+  server: 139.64.235.3
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /Telegram
+- name: 🇺🇸 美国 0754
+  network: ws
+  port: 8880
+  server: 185.251.81.188
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: '🇺🇸 美国 340 #2'
   network: ws
   port: 8880
@@ -5021,73 +4818,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560security=tls
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 348
-  network: ws
-  port: 2087
-  server: 154.83.2.125
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: random
-  name: '🇺🇸 美国 133 #2'
-  network: ws
-  port: 443
-  server: 172.64.158.52
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- name: '🇺🇸 美国 290 #2 #2 #2'
-  network: ws
-  port: 8880
-  server: 89.117.112.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 390
-  network: ws
-  port: 443
-  server: 198.62.62.4
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇺🇸 美国 0179
-  network: ws
-  port: 8880
-  server: 92.243.74.177
-  servername: ip.langmanshanxi.top
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3
 - name: 🇺🇸 江江美国 IEPL 公益 31
   network: ws
   port: 8880
@@ -5114,6 +4844,18 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳
+- name: '🇺🇸 美国 290 #2 #2 #2'
+  network: ws
+  port: 8880
+  server: 89.117.112.251
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram
 - name: 🇺🇸 美国 0550
   network: ws
   port: 8880
@@ -5127,18 +4869,19 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram🇨🇳
-- name: '🇺🇸 美国 282 #2'
+- name: 🇺🇸 美国 0179
   network: ws
   port: 8880
-  server: 167.68.4.3
+  server: 92.243.74.177
+  servername: ip.langmanshanxi.top
   tls: false
   type: vless
   udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3
 - name: '🇺🇸 美国 230 #2 #2 #2 #2'
   network: ws
   port: 8880
@@ -5164,10 +4907,10 @@ proxies:
       Host: cf.d3z.net
     path: /Telegram
 - client-fingerprint: randomized
-  name: 🇺🇸 美国 365
+  name: 🇺🇸 美国 348
   network: ws
-  port: 8443
-  server: 154.83.2.61
+  port: 2087
+  server: 154.83.2.125
   servername: vle.amclubsapp.dpdns.org
   tls: true
   type: vless
@@ -5177,10 +4920,75 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 390
+  network: ws
+  port: 443
+  server: 198.62.62.4
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '🇺🇸 美国 282 #2'
+  network: ws
+  port: 8880
+  server: 167.68.4.3
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /Telegram
+- name: '🇺🇸 美国 355 #2 #2'
+  network: ws
+  port: 8880
+  server: 92.60.74.87
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /
 - name: '🇺🇸 美国 218 #2 #2'
   network: ws
   port: 8880
   server: 194.36.55.3
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /Telegram🇨🇳
+- name: 🇺🇸 美国 0095
+  network: ws
+  port: 8880
+  server: 167.68.11.251
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    headers:
+      Host: cf.d3z.net
+    path: /Telegram
+- name: '🇺🇸 美国 0849 #2'
+  network: ws
+  port: 8880
+  server: 192.0.63.3
   servername: Telegram-channel-WangCai2
   tls: false
   type: vless
@@ -5203,25 +5011,22 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /Telegram🇨🇳
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 273
-  network: ws
-  port: 2083
-  server: 104.16.134.27
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇺🇸 美国 0095
+- name: 🇺🇸 美国 497
   network: ws
   port: 8880
-  server: 167.68.11.251
-  servername: Telegram-channel-WangCai2
+  server: 45.81.58.177
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /?ed=2560
+- name: '🇺🇸 美国 345 #2'
+  network: ws
+  port: 8880
+  server: 5.10.245.251
   tls: false
   type: vless
   udp: true
@@ -5235,137 +5040,6 @@ proxies:
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2087
   server: 103.160.204.36
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇺🇸 美国 0849 #2'
-  network: ws
-  port: 8880
-  server: 192.0.63.3
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram🇨🇳
-- name: '🇺🇸 美国 355 #2 #2'
-  network: ws
-  port: 8880
-  server: 92.60.74.87
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /
-- name: '🇺🇸 美国 345 #2'
-  network: ws
-  port: 8880
-  server: 5.10.245.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram
-- client-fingerprint: random
-  name: '🇺🇸 美国 306 #2'
-  network: ws
-  port: 443
-  server: 104.19.25.87
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- client-fingerprint: random
-  name: 🇺🇸 美国 0673
-  network: ws
-  port: 443
-  server: 104.16.122.176
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- name: 🇺🇸 美国 700
-  network: ws
-  password: slch2024
-  port: 8443
-  server: 104.18.2.108
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 353
-  network: ws
-  port: 2053
-  server: 154.83.2.94
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 269 #2'
-  network: tcp
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 172.233.200.247
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- name: 🇺🇸 美国 497
-  network: ws
-  port: 8880
-  server: 45.81.58.177
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /?ed=2560
-- name: 🇺🇸 美国 366
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 154.83.2.200
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -5399,6 +5073,60 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 273
+  network: ws
+  port: 2083
+  server: 104.16.134.27
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 365
+  network: ws
+  port: 8443
+  server: 154.83.2.61
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: 🇺🇸 美国 700
+  network: ws
+  password: slch2024
+  port: 8443
+  server: 104.18.2.108
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 269 #2'
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.200.247
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - client-fingerprint: chrome
   name: 🇺🇸 美国 311
   network: ws
@@ -5426,6 +5154,33 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 353
+  network: ws
+  port: 2053
+  server: 154.83.2.94
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: 🇺🇸 美国 0146
+  network: ws
+  port: 8880
+  server: 77.105.163.177
+  servername: ip.langmanshanxi.top
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: 🇺🇸 美国 0027
   network: ws
   port: 8880
@@ -5464,45 +5219,6 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
-- name: 🇺🇸 美国 0132
-  network: ws
-  port: 8880
-  server: 74.49.214.251
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /Telegram @WangCai2 /?ed=2560fp=chrome
-- name: 🇺🇸 美国 0146
-  network: ws
-  port: 8880
-  server: 77.105.163.177
-  servername: ip.langmanshanxi.top
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- client-fingerprint: random
-  name: 🇺🇸 美国 325
-  network: ws
-  port: 443
-  server: 104.18.67.101
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
 - name: 🇺🇸 美国 0376
   network: ws
   port: 8880
@@ -5515,10 +5231,10 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560
-- name: '🇺🇸 美国 053 #2 #2'
+- name: 🇺🇸 美国 0132
   network: ws
   port: 8880
-  server: 46.254.92.251
+  server: 74.49.214.251
   tls: false
   type: vless
   udp: true
@@ -5526,7 +5242,7 @@ proxies:
   ws-opts:
     headers:
       Host: cf.d3z.net
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    path: /Telegram @WangCai2 /?ed=2560fp=chrome
 - name: '🇺🇸 美国 288 #2 #2'
   network: ws
   port: 8880
@@ -5539,10 +5255,10 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /
-- name: '🇺🇸 美国 334 #3'
+- name: '🇺🇸 美国 053 #2 #2'
   network: ws
   port: 8880
-  server: 108.162.193.251
+  server: 46.254.92.251
   tls: false
   type: vless
   udp: true
@@ -5550,7 +5266,7 @@ proxies:
   ws-opts:
     headers:
       Host: cf.d3z.net
-    path: /Telegram @WangCai2 /?ed=2560fp=chrome
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: '🇺🇸 美国 331 #2'
   network: ws
   port: 8880
@@ -5589,20 +5305,18 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     path: /Telegram @WangCai2 /
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 548
+- name: '🇺🇸 美国 334 #3'
   network: ws
-  port: 2096
-  server: 103.160.204.49
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
+  port: 8880
+  server: 108.162.193.251
+  tls: false
   type: vless
   udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
   ws-opts:
     headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+      Host: cf.d3z.net
+    path: /Telegram @WangCai2 /?ed=2560fp=chrome
 - name: 🇺🇸 美国 906
   network: ws
   port: 8880
@@ -5615,32 +5329,32 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /Telegram🇨🇳
-- client-fingerprint: random
-  name: '🇺🇸 美国 347 #2'
+- name: 🇺🇸 美国 366
   network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 443
-  server: 104.17.156.3
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
+  server: 154.83.2.200
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
   udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
   ws-opts:
     headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- name: '🇺🇸 美国 090 #2'
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: '🇺🇸 美国 494 #2'
   network: ws
   port: 8880
-  server: 192.200.160.251
+  server: 190.93.247.186
+  servername: Telegram-channel-WangCai2
   tls: false
   type: vless
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: cf.d3z.net
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: '🇺🇸 美国 327 #3 #2'
   network: ws
   port: 8880
@@ -5667,20 +5381,6 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /Telegram🇨🇳
-- client-fingerprint: random
-  name: '🇺🇸 美国 041 #2'
-  network: ws
-  port: 443
-  server: 104.18.27.36
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
 - name: '🇺🇸 美国 351 #2'
   network: ws
   password: slch2024
@@ -5694,32 +5394,32 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- name: 🇺🇸 美国 367
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 548
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2096
-  server: 154.83.2.54
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
+  server: 103.160.204.49
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
   udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
   ws-opts:
     headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇺🇸 美国 494 #2'
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: '🇺🇸 美国 090 #2'
   network: ws
   port: 8880
-  server: 190.93.247.186
-  servername: Telegram-channel-WangCai2
+  server: 192.200.160.251
   tls: false
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      Host: cf.d3z.net
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2
 - name: '🇺🇸 美国 253 #2'
   network: ws
   password: slch2024
@@ -5733,6 +5433,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
+- name: 🇺🇸 美国 0266
+  network: ws
+  port: 8880
+  server: 190.93.244.3
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /Telegram
 - alpn:
   - h2%2Chttp%2F1.1
   client-fingerprint: chrome
@@ -5749,62 +5462,6 @@ proxies:
     headers:
       Host: xbox.fastnetpro.xyz
     path: /
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 289
-  network: ws
-  port: 443
-  server: 104.17.68.85
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: random
-  name: '🇺🇸 美国 366 #2 #2'
-  network: ws
-  port: 443
-  server: 104.18.211.225
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- client-fingerprint: random
-  name: '🇺🇸 美国 213 #2 #2 #2'
-  network: ws
-  port: 443
-  server: 104.18.166.129
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- client-fingerprint: randomized
-  name: '🇺🇸 美国 456 #2'
-  network: ws
-  port: 2087
-  server: 156.238.18.112
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - name: '🇺🇸 美国 812 #2'
   network: ws
   password: slch2024
@@ -5818,19 +5475,19 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /
-- name: 🇺🇸 美国 0266
+- name: 🇺🇸 美国 367
   network: ws
-  port: 8880
-  server: 190.93.244.3
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 2096
+  server: 154.83.2.54
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
   udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
   ws-opts:
     headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: 🇺🇸 美国 333
   network: ws
   port: 8880
@@ -5843,20 +5500,6 @@ proxies:
     headers:
       Host: cf.d3z.net
     path: /Telegram
-- client-fingerprint: random
-  name: '🇺🇸 美国 454 #2'
-  network: ws
-  port: 443
-  server: 104.19.131.217
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
 - name: '🇺🇸 美国 276 #2'
   network: ws
   password: slch2024
@@ -5871,10 +5514,80 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
 - client-fingerprint: randomized
-  name: 🇺🇸 美国 811
+  name: '🇺🇸 美国 456 #2'
   network: ws
-  port: 2083
-  server: 194.53.53.249
+  port: 2087
+  server: 156.238.18.112
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: 🇺🇸 美国 696
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 104.18.15.201
+  server_url: www.visasoutheasteurope.com
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 289
+  network: ws
+  port: 443
+  server: 104.17.68.85
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 109 #2'
+  network: ws
+  port: 2096
+  server: 104.16.86.40
+  servername: bitget1.asdasd.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  ws-opts:
+    headers:
+      Host: bitget1.asdasd.click
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 879 #2'
+  network: ws
+  port: 443
+  server: 104.18.4.250
+  server_url: www.visa.com.tw
+  servername: rAyAn-cOnFiG-TeLeGrAm-a04.rAyAn.dPdNs.oRg
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-TeLeGrAm-a04.rAyAn.dPdNs.oRg
+    path: /?ed=2560
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 399
+  network: ws
+  port: 443
+  server: 198.62.62.156
   servername: vle.amclubsdns.dpdns.org
   tls: true
   type: vless
@@ -5898,47 +5611,6 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 399
-  network: ws
-  port: 443
-  server: 198.62.62.156
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇺🇸 美国 696
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 104.18.15.201
-  server_url: www.visasoutheasteurope.com
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /?ed=2560
-- client-fingerprint: random
-  name: '🇺🇸 美国 248 #2'
-  network: ws
-  port: 443
-  server: 104.18.23.26
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
 - name: 🇺🇸 美国 540
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -5952,106 +5624,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: random
-  name: '🇺🇸 美国 217 #2 #2'
-  network: ws
-  port: 443
-  server: 104.19.245.29
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- name: '🇺🇸 美国 152 #2 #2'
-  network: ws
-  password: 0F22D008-24D4-4DFE-947B-8D2FD64CD24C
-  port: 2053
-  server: 104.18.13.229
-  server_url: www.visa.com.sg
-  skip-cert-verify: false
-  sni: t.hongkong6.qzz.io
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: t.hongkong6.qzz.io
-    path: /
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 879 #2'
-  network: ws
-  port: 443
-  server: 104.18.4.250
-  server_url: www.visa.com.tw
-  servername: rAyAn-cOnFiG-TeLeGrAm-a04.rAyAn.dPdNs.oRg
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
-  ws-opts:
-    headers:
-      Host: rAyAn-cOnFiG-TeLeGrAm-a04.rAyAn.dPdNs.oRg
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 109 #2'
-  network: ws
-  port: 2096
-  server: 104.16.86.40
-  servername: bitget1.asdasd.click
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /?ed=2560
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 0463
-  network: ws
-  port: 2087
-  server: 104.18.12.229
-  server_url: www.visa.com.sg
-  servername: vl.hongkong6.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90c7ad5e-cd15-4314-b39b-aeabd397d592
-  ws-opts:
-    headers:
-      Host: vl.hongkong6.qzz.io
-    path: /?ed=2560
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 524
-  network: ws
-  port: 443
-  server: 104.17.71.31
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '🇺🇸 美国 590 #2'
-  network: ws
-  port: 443
-  server: 104.17.64.70
-  server_url: glassdoor.com
-  servername: rAyAn-cOnFiG-TeLeGrAm-a06.tRaNeH.DpDnS.OrG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  ws-opts:
-    headers:
-      Host: rAyAn-cOnFiG-TeLeGrAm-a06.tRaNeH.DpDnS.OrG
-    path: /@Rayan_Config
 - name: '🇺🇸 美国 538 #2 #2'
   network: ws
   port: 443
@@ -6066,6 +5638,62 @@ proxies:
     headers:
       Host: rAyAn-cOnFiG-TeLeGrAm-a06.rAyAn.dPdNs.oRg
     path: /@Rayan_Config
+- name: '🇺🇸 美国 590 #2'
+  network: ws
+  port: 443
+  server: 104.17.64.70
+  server_url: glassdoor.com
+  servername: rAyAn-cOnFiG-TeLeGrAm-a06.tRaNeH.DpDnS.OrG
+  tls: true
+  type: vless
+  udp: true
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-TeLeGrAm-a06.tRaNeH.DpDnS.OrG
+    path: /@Rayan_Config
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 811
+  network: ws
+  port: 2083
+  server: 194.53.53.249
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 464
+  network: ws
+  port: 8443
+  server: 103.160.204.40
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 788
+  network: ws
+  port: 443
+  server: 104.17.142.12
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -6081,10 +5709,10 @@ proxies:
   udp: true
   up: 11 Mbps
 - client-fingerprint: randomized
-  name: 🇺🇸 美国 464
+  name: 🇺🇸 美国 524
   network: ws
-  port: 8443
-  server: 103.160.204.40
+  port: 443
+  server: 104.17.71.31
   servername: vle.amclubsapp.dpdns.org
   tls: true
   type: vless
@@ -6109,10 +5737,10 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: randomized
-  name: 🇺🇸 美国 788
+  name: '🇺🇸 美国 012 #2'
   network: ws
-  port: 443
-  server: 104.17.142.12
+  port: 2096
+  server: 154.83.2.54
   servername: vle.amclubsapp.dpdns.org
   tls: true
   type: vless
@@ -6121,20 +5749,6 @@ proxies:
   ws-opts:
     headers:
       Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 785
-  network: ws
-  port: 443
-  server: 103.160.204.59
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: chrome
   name: '🇺🇸 美国 302 #2'
@@ -6164,18 +5778,18 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: randomized
-  name: 🇺🇸 美国 806
+  name: 🇺🇸 美国 785
   network: ws
-  port: 2083
-  server: 103.160.204.4
-  servername: vle.amclubsapp.dpdns.org
+  port: 443
+  server: 103.160.204.59
+  servername: vle.amclubsdns.dpdns.org
   tls: true
   type: vless
   udp: true
   uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
   ws-opts:
     headers:
-      Host: vle.amclubsapp.dpdns.org
+      Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: randomized
   name: 🇺🇸 美国 850
@@ -6192,10 +5806,10 @@ proxies:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: randomized
-  name: '🇺🇸 美国 012 #2'
+  name: 🇺🇸 美国 806
   network: ws
-  port: 2096
-  server: 154.83.2.54
+  port: 2083
+  server: 103.160.204.4
   servername: vle.amclubsapp.dpdns.org
   tls: true
   type: vless
@@ -6205,6 +5819,19 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- name: 🇺🇸 美国 579
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 104.17.142.12
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - client-fingerprint: randomized
   name: 🇺🇸 美国 0728
   network: ws
@@ -6220,20 +5847,6 @@ proxies:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless
 - client-fingerprint: randomized
-  name: 🇺🇸 美国 0979
-  network: ws
-  port: 443
-  server: 156.238.19.8
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: randomized
   name: '🇺🇸 美国 583 #2 #2'
   network: ws
   port: 2083
@@ -6247,11 +5860,11 @@ proxies:
     headers:
       Host: vle.amclubsdns.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: 🇺🇸 美国 579
+- name: '🇺🇸 美国 086 #3'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 104.17.142.12
+  port: 2083
+  server: 194.53.53.249
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -6273,19 +5886,20 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇺🇸 美国 086 #3'
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 0979
   network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2083
-  server: 194.53.53.249
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
+  port: 443
+  server: 156.238.19.8
+  servername: vle.amclubsdns.dpdns.org
+  tls: true
+  type: vless
   udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
   ws-opts:
     headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+      Host: vle.amclubsdns.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: randomized
   name: 🇺🇸 美国 409
   network: ws
@@ -6299,48 +5913,6 @@ proxies:
   ws-opts:
     headers:
       Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: random
-  name: 🇺🇸 美国 689
-  network: ws
-  port: 443
-  server: 104.21.238.94
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
-  ws-opts:
-    headers:
-      Host: 007.xingfu.qzz.io
-    path: /
-- client-fingerprint: randomized
-  name: 🇺🇸 美国 1015
-  network: ws
-  port: 2096
-  server: 194.53.53.11
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless
-- client-fingerprint: randomized
-  name: '🇺🇸 美国 400 #2'
-  network: ws
-  port: 8443
-  server: 156.238.18.220
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
 - client-fingerprint: randomized
   name: 🇺🇸 美国 435
@@ -6356,24 +5928,39 @@ proxies:
     headers:
       Host: vle.amclubsapp.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: randomized
+  name: '🇺🇸 美国 400 #2'
+  network: ws
+  port: 8443
+  server: 156.238.18.220
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- client-fingerprint: randomized
+  name: 🇺🇸 美国 1015
+  network: ws
+  port: 2096
+  server: 194.53.53.11
+  servername: vle.amclubsapp.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vle.amclubsapp.dpdns.org
+    path: /?ed=2560&PROT_TYPE=vless
 - name: 🇺🇸 美国 803
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
   port: 2053
   server: 154.83.2.94
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇺🇸 美国 553 #3'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 154.83.2.61
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -6395,20 +5982,32 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: random
-  name: '🇺🇸 美国 160 #2'
+- name: '🇺🇸 美国 553 #3'
   network: ws
-  port: 443
-  server: 104.21.236.179
-  servername: 007.xingfu.qzz.io
-  tls: true
-  type: vless
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 8443
+  server: 154.83.2.61
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
   udp: true
-  uuid: d88937d0-ce43-4bf8-9df6-d632810ba9ff
   ws-opts:
     headers:
-      Host: 007.xingfu.qzz.io
-    path: /
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
+- name: 🇺🇸 美国 376
+  network: ws
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  port: 443
+  server: 104.17.71.31
+  skip-cert-verify: true
+  sni: vle.amclubssss.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vle.amclubssss.dpdns.org
+    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: '🇺🇸 美国 426 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -6435,11 +6034,11 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: 🇺🇸 美国 376
+- name: '🇺🇸 美国 002 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 443
-  server: 104.17.71.31
+  port: 2096
+  server: 103.160.204.49
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -6461,19 +6060,6 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇺🇸 美国 120 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 156.238.18.112
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
 - name: '🇺🇸 美国 009 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
@@ -6487,11 +6073,11 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇺🇸 美国 002 #2'
+- name: '🇺🇸 美国 120 #2'
   network: ws
   password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2096
-  server: 103.160.204.49
+  port: 2087
+  server: 156.238.18.112
   skip-cert-verify: true
   sni: vle.amclubssss.dpdns.org
   type: trojan
@@ -6500,15 +6086,14 @@ proxies:
     headers:
       Host: vle.amclubssss.dpdns.org
     path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇺🇸_美国_1 #2 #2'
-  network: tcp
-  password: 2ee85121-31de-4581-a492-eb00f606e392
+- name: 🇺🇸US-138.197.5.103-0206 | 0.267MB
+  password: xxoo
   port: 443
-  server: 198.46.152.83
-  skip-cert-verify: true
-  sni: sj3.freeguard.org
+  server: 138.197.5.103
+  server_url: us.blazeppn.info
+  skip-cert-verify: false
+  sni: us.blazeppn.info
   type: trojan
-  udp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -6538,14 +6123,19 @@ proxies:
     headers:
       Host: mAXNetvIpAp-cLOuD76.netKh3.siTe
     path: /linkws?ed=2560
-- name: 🇺🇸US-138.197.5.103-0206 | 0.267MB
-  password: xxoo
-  port: 443
-  server: 138.197.5.103
-  server_url: us.blazeppn.info
-  skip-cert-verify: false
-  sni: us.blazeppn.info
-  type: trojan
+- client-fingerprint: chrome
+  name: 🇺🇸 美国 285
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.140.201
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
@@ -6563,19 +6153,15 @@ proxies:
   uuid: 0c17318b-d8e7-4816-a6a2-ab873a3bcc8b
   ws-opts:
     path: /vmess/
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 285
+- name: '🇺🇸_美国_1 #2 #2'
   network: tcp
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 172.233.140.201
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: true
-  type: vless
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 198.46.152.83
+  skip-cert-verify: true
+  sni: sj3.freeguard.org
+  type: trojan
   udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - name: 🇩🇰_DK_丹麦->🇺🇸_US_美国_1
   network: ws
   password: 62e4250a-fe02-40cc-ad32-c847389956cd
