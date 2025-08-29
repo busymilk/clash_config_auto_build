@@ -48,12 +48,6 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0323 | 3.319MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-18.162.146.85-0324 | 2.809MB
   password: ljqdalu13..
   port: 8313
@@ -63,6 +57,12 @@ proxies:
   name: 🇭🇰HK-18.162.146.85-0322 | 2.549MB
   password: ljqdalu13..
   port: 8319
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0323 | 3.319MB
+  password: ljqdalu13..
+  port: 8316
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -78,6 +78,21 @@ proxies:
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-112.119.217.219-0335 | 13.041MB
+  network: ws
+  port: 80
+  server: 112.119.184.234
+  server_url: hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
