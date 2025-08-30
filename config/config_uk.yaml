@@ -47,6 +47,22 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 🇬🇧_GB_英国_0@2
+  network: tcp
+  port: 443
+  server: 89.31.120.192
+  sni: ''
+  type: vmess
+  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+- cipher: chacha20-ietf-poly1305
+  name: SS-英国-NF解锁英国地区非自制剧-ChatGPT-TikTok-YouTube-46.226.163.225:57456
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
+  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.81-0237 | 36.88MB
   password: shadowsocks
@@ -113,22 +129,6 @@ proxies:
   port: 443
   server: 141.98.101.178
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-1002 | 30.841MB
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
-  type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇬🇧_GB_英国
-  network: tcp
-  port: 443
-  server: 89.31.120.192
-  sni: ''
-  type: vmess
-  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0225 | 32.794MB
   password: shadowsocks
