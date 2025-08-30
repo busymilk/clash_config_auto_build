@@ -47,22 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇬🇧_GB_英国
-  network: tcp
-  port: 443
-  server: 89.31.120.192
-  sni: ''
-  type: vmess
-  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.81-0178 | 26.417MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.79-0197 | 25.839MB
   password: shadowsocks
@@ -70,16 +54,22 @@ proxies:
   server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.193-0181 | 25.828MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-0050 | 25.546MB
   password: shadowsocks
   port: 443
   server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0178 | 26.417MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-0181 | 25.828MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.78-0212 | 25.405MB
@@ -117,6 +107,16 @@ proxies:
   port: 443
   server: 212.102.53.197
   type: ss
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 🇬🇧_GB_英国_0@2
+  network: tcp
+  port: 443
+  server: 89.31.120.192
+  sni: ''
+  type: vmess
+  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - cipher: aes-128-gcm
   name: 🇬🇧GB-141.98.101.178-0217 | 12.219MB
   password: shadowsocks
@@ -136,17 +136,6 @@ proxies:
   server: 212.102.53.197
   server_url: uk-dc1.yangon.club
   type: ss
-- country: 🇬🇧GB
-  delay: 1035
-  name: 英国 - Erith - OVH SAS - 1
-  password: 1ce1df7962f71c6f
-  port: 8443
-  server: 51.195.255.103
-  server_url: uk-03.allhubb.info
-  skip-cert-verify: true
-  sni: uk-03.allhubb.info
-  type: trojan
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
