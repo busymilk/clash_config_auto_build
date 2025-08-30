@@ -59,22 +59,12 @@ proxies:
   port: 44354
   server: 46.101.245.131
   type: ss
-- delay: 1689
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 4
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.26.4.60
-  skip-cert-verify: true
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: zamim340.ggff.net
-    max-early-data: 2560
-    path: /tr
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
 - name: 🇩🇪DE-185.208.207.217-0377 | 0.017MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
@@ -82,252 +72,18 @@ proxies:
   skip-cert-verify: false
   sni: dus.freeguard.org
   type: trojan
-- name: 德国 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 185.158.133.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 德国 002
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 185.135.9.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 德国 003
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 185.16.110.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '德国 002 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.10.215.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '德国 001 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.10.214.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: 德国 005
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 77.37.33.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  name: '德国 003 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 5.175.141.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- client-fingerprint: chrome
-  delay: 2212
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 16
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 162.159.153.2
-  skip-cert-verify: false
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/36.0.1985.125 Safari/537.36
-    max-early-data: 2560
-    path: /tr
-- client-fingerprint: chrome
-  name: '德国 006 #2'
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 91.206.71.216
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- name: 🇩🇪 德国 098
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 162.159.152.2
-  skip-cert-verify: true
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: /tr?ed=2560
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 03
-  network: ws
-  port: 443
-  server: 162.159.133.85
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: chrome
-  delay: 1234
-  name: 德国 - 德赖艾希 - Cloudflare, Inc. - 33
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 172.67.70.92
-  skip-cert-verify: false
-  sni: zamim340.ggff.net
-  type: trojan
-  udp: true
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
-    max-early-data: 2560
-    path: /tr
-- client-fingerprint: chrome
-  name: 🇩🇪 德国 36
-  network: ws
-  port: 8443
-  server: 104.24.40.146
-  servername: bitget1.asdasd.click
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /
-- client-fingerprint: randomized
-  name: 🇩🇪 德国 04
-  network: ws
-  port: 2053
-  server: 162.159.129.11
-  servername: vle.amclubsapp.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- client-fingerprint: randomized
-  name: '🇩🇪 德国 04 #2'
-  network: ws
-  port: 8443
-  server: 162.159.129.67
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
-- name: '🇩🇪 德国 12 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2087
-  server: 104.25.254.4
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- name: '🇩🇪 德国 14 #2'
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 8443
-  server: 162.159.129.67
-  skip-cert-verify: true
-  sni: vle.amclubssss.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vle.amclubssss.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan&NAT64=true
-- client-fingerprint: randomized
-  name: '🇩🇪 德国 59 #2'
-  network: ws
-  port: 2087
-  server: 104.25.254.4
-  servername: vle.amclubsdns.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vle.amclubsdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=vless&NAT64=true
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-84.200.91.228-0317 | 0.335MB
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0386 | 0.124MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

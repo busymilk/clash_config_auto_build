@@ -55,18 +55,6 @@ proxies:
   sni: bing.com
   tls: false
   type: hysteria2
-- name: 新加坡 001
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 185.18.184.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -80,19 +68,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- name: 🇸🇬 新加坡 19
-  network: ws
-  password: ttfang
-  port: 443
-  server: 128.199.237.143
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

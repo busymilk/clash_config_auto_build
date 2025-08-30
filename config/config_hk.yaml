@@ -47,14 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 🇭🇰HK
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: 2428
-  server: 47.239.220.214
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
 - name: '香港 #2'
   password: XK52yierGckONMJWbJnuskD3unI
   port: 12854
@@ -87,21 +79,13 @@ proxies:
   port: 8319
   server: 18.162.146.85
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-112.119.217.219-0331 | 0.398MB
-  network: ws
-  port: 80
-  server: 119.237.173.26
-  server_url: hkt.gotochinatown.net
+- name: 🇭🇰HK-103.252.116.138-0380 | 0.026MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
   skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
+  sni: hk.freeguard.org
+  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
