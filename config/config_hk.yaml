@@ -65,42 +65,12 @@ proxies:
   port: 8316
   server: 18.162.146.85
   type: ss
-- name: 🇭🇰HK-103.252.116.138-0346 | 0.349MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  skip-cert-verify: false
-  sni: hk.freeguard.org
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-203.23.128.33-0332 | 0.199MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- name: '香港 #2'
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-112.119.184.234-0294 | 26.84MB
-  network: ws
-  port: 80
-  server: 58.153.215.94
-  server_url: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
