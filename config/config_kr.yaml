@@ -47,6 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0317 | 0.385MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0296 | 0.244MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - auth: ''
   fast-open: false
   name: 🇰🇷👖TG频道@stymei1丨17
@@ -92,29 +104,6 @@ proxies:
     headers:
       Host: usb.rtot.me
     path: /bing
-- auth: ''
-  fast-open: false
-  name: 🇰🇷👖TG频道@stymei1丨9
-  password: qq4Wc9UakExypzw4Jd00fWqrDTY
-  port: 22712
-  server: 8.209.223.212
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0356 | 0.167MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0379 | 0.224MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
 - alterId: 0
   cipher: ''
   flow: ''
@@ -132,6 +121,17 @@ proxies:
     headers:
       Host: uk.rtot.me
     path: /bing
+- auth: ''
+  fast-open: false
+  name: 🇰🇷👖TG频道@stymei1丨9
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
