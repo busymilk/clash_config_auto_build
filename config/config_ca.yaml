@@ -47,19 +47,24 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
-  network: ws
+- cipher: aes-256-cfb
+  name: 🇨🇦CA-79.127.233.170-0172 | 86.996MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-79.127.233.170-0169 | 81.743MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0244 | 0.259MB
+  password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
-  server: 51.79.102.253
-  skip-cert-verify: true
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+  server: 142.4.216.225
+  type: ss
 - cipher: aes-256-cfb
   name: SSR-加拿大-79.127.233.170:989
   obfs: plain
@@ -68,24 +73,6 @@ proxies:
   protocol: origin
   server: 79.127.233.170
   type: ssr
-- cipher: aes-256-cfb
-  name: 🇨🇦CA-79.127.233.170-0246 | 52.174MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-79.127.233.170-0245 | 59.896MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0281 | 10.803MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-142.4.216.225-0282 | 0.574MB
   password: JIhN6rBKkaEboLNXVSv5rq
