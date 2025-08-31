@@ -47,6 +47,29 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: '香港 #1'
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港2|@ripaojiedian
+  password: 9969db7a2f51
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /fgsauuoqxwx
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 156.251.179.135
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-203.23.128.33-0309 | 0.448MB
   password: f8f7aCzcPKbsF8p3
