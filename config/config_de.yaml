@@ -48,6 +48,18 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-147.45.178.200-033
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-038
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 🇩🇪DE-46.101.245.131-042
   password: 9RviNa4tscjcmCB408vLSg
   port: 44354
@@ -59,6 +71,19 @@ proxies:
   port: 8080
   server: 193.108.119.230
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-84.200.91.228-4918 | 3.383MB
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
+  type: ss
+- name: 🇩🇪DE-185.208.207.217-5092 | 0.033MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
