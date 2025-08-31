@@ -47,11 +47,11 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.79-0197 | 25.839MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB-46.226.163.225-045
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 46.226.163.225
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.194-0050 | 25.546MB
@@ -60,16 +60,22 @@ proxies:
   server: 212.102.53.194
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.81-0178 | 26.417MB
+  name: 🇬🇧GB-212.102.53.79-0197 | 25.839MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.81
+  server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.193-0181 | 25.828MB
   password: shadowsocks
   port: 443
   server: 212.102.53.193
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0178 | 26.417MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.78-0212 | 25.405MB
@@ -107,27 +113,11 @@ proxies:
   port: 443
   server: 212.102.53.197
   type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇬🇧_GB_英国_0@2
-  network: tcp
-  port: 443
-  server: 89.31.120.192
-  sni: ''
-  type: vmess
-  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - cipher: aes-128-gcm
   name: 🇬🇧GB-141.98.101.178-0217 | 12.219MB
   password: shadowsocks
   port: 443
   server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB-46.226.163.225-0216 | 1.331MB
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 46.226.163.225
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0225 | 32.794MB
