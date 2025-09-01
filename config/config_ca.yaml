@@ -47,6 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 加拿大 001
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 205.233.181.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 - cipher: aes-256-cfb
   name: 🇨🇦CA-79.127.233.170-0175 | 46.087MB
   password: f8f7aCzcPKbsF8p3
@@ -65,15 +77,18 @@ proxies:
   port: 80
   server: 142.4.216.225
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-38.180.211.126-0223 | 0.0MB
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
+  type: ss
 - cipher: aes-256-cfb
-  group: SSRProvider
-  name: 🇨🇦CA-79.127.233.170-026
+  name: SSR-加拿大-79.127.233.170:989
   obfs: plain
-  obfsparam: null
   password: f8f7aCzcPKbsF8p3
   port: 989
   protocol: origin
-  protoparam: null
   server: 79.127.233.170
   type: ssr
 - cipher: chacha20-ietf-poly1305
