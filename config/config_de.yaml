@@ -47,24 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-0238 | 21.122MB
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-46.101.245.131-0288 | 13.911MB
-  password: 9RviNa4tscjcmCB408vLSg
-  port: 44354
-  server: 46.101.245.131
-  type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0246 | 21.078MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
 - name: 德国 001
   network: ws
   password: slch2024
@@ -89,15 +71,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 🇩🇪@FreakConfig
-  password: 45b46edb-679b-4ea5-befd-88c05bb94f80
-  port: 2056
-  server: 84.200.87.248
-  server_url: de.eyucdn.xyz
-  skip-cert-verify: true
-  sni: de.eyucdn.xyz
-  tls: false
-  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0246 | 21.078MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
