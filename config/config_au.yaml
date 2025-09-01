@@ -59,35 +59,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 澳大利亚 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.207.199.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - name: 澳大利亚 004
   network: ws
   password: slch2024
   port: 2096
   server: 185.207.197.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 澳大利亚 005
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.207.196.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -107,12 +83,30 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
+- name: 澳大利亚 002
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.207.199.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 澳大利亚 005
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.207.196.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 - alterId: 0
   cipher: none
   fingerprint: ''
@@ -136,21 +130,6 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- name: '🇦🇺_澳大利亚_2 #2'
-  network: ws
-  port: 443
-  server: 43.159.98.26
-  server_url: hk3.kaipi.link
-  servername: hk3.kaipi.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8665d45-8103-46e9-9cb7-8902bb7559b4
-  ws-opts:
-    headers:
-      host: hk3.kaipi.link
-    path: /texaws
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
