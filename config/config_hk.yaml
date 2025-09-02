@@ -48,10 +48,16 @@ profile:
   store-selected: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0337 | 0.146MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
+  name: 🇭🇰HK-18.162.146.85-0335 | 0.331MB
+  password: ljqdalu13..
+  port: 8316
+  server: 18.162.146.85
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-18.162.146.85-0319 | 0.339MB
+  password: ljqdalu13..
+  port: 8313
+  server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰HK-18.162.146.85-0320 | 0.336MB
@@ -60,25 +66,27 @@ proxies:
   server: 18.162.146.85
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-18.162.146.85-0335 | 0.331MB
-  password: ljqdalu13..
-  port: 8316
-  server: 18.162.146.85
+  name: 🇭🇰HK-203.23.128.33-0337 | 0.146MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-220.246.225.199-055
-  network: ws
-  port: 80
-  server: 119.237.29.204
-  server_url: hkt.gotochinatown.net
+- name: 🇭🇰HK
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
   skip-cert-verify: true
+  sni: bing.com
   tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-headers:
-    Host: hkt.gotochinatown.net
-  ws-path: /
+  type: hysteria2
+- name: 香港4|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 218.102.206.179
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇭🇰HK-219.78.148.97-4951 | 9.681MB
@@ -97,20 +105,18 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰HK-112.120.140.40-4953 | 0.292MB
+  name: 🇭🇰HK-220.246.225.199-055
   network: ws
   port: 80
-  server: 112.120.140.40
-  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: 🇭🇰HK-112.120.140.40-4953 | 0.292MB
-  skip-cert-verify: false
+  server: 119.237.29.204
+  server_url: hkt.gotochinatown.net
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
+  ws-headers:
+    Host: hkt.gotochinatown.net
+  ws-path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
