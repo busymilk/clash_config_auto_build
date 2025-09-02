@@ -47,24 +47,31 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 德国 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.158.133.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-147.45.178.200-0393 | 1.716MB
+  name: 🇩🇪DE-147.45.178.200-0292 | 27.069MB
   password: a58fa62b4944ddbf
   port: 57456
   server: 147.45.178.200
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-0318 | 5.827MB
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-84.200.91.228-0326 | 4.761MB
+  password: 5ZQh4pssSk4aK1JG1XhBRg
+  port: 1080
+  server: 84.200.91.228
+  type: ss
+- name: 🇩🇪DE-185.208.207.217-5089 | 0.048MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
 - name: 德国 002
   network: ws
   password: slch2024
@@ -77,15 +84,8 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 🇩🇪DE-185.208.207.217-5118 | 0.126MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 185.208.207.217
-  skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
 - cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0279 | 0.426MB
+  name: 🇩🇪DE-193.108.119.230-0361 | 3.077MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
@@ -99,20 +99,6 @@ proxies:
   sni: de.eyucdn.xyz
   tls: false
   type: hysteria2
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  delay: 689
-  name: 德国 - Frankfurt am Main - Amazon Technologies Inc. - 1
-  password: amazonskr05
-  port: 443
-  server: 18.196.64.123
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-84.200.91.228-0326 | 4.761MB
-  password: 5ZQh4pssSk4aK1JG1XhBRg
-  port: 1080
-  server: 84.200.91.228
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

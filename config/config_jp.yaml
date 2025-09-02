@@ -48,7 +48,7 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0270 | 11.873MB
+  name: 🇯🇵JP-149.22.87.204-0230 | 17.036MB
   password: shadowsocks
   port: 443
   server: 149.22.87.204
@@ -61,6 +61,19 @@ proxies:
   port: 37422
   server: 133.18.108.187
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵JP-103.13.19.254-004
+  network: tcp
+  port: 50414
+  server: 103.13.19.254
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
+  ws-headers:
+    Host: 103.13.19.254
+  ws-path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
