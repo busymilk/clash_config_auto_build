@@ -53,12 +53,6 @@ proxies:
   port: 1866
   server: 185.177.229.245
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
 - name: 德国 002
   network: ws
   password: slch2024
@@ -71,6 +65,15 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
+- name: 🇩🇪@FreakConfig
+  password: 45b46edb-679b-4ea5-befd-88c05bb94f80
+  port: 2056
+  server: 84.200.87.248
+  server_url: de.eyucdn.xyz
+  skip-cert-verify: true
+  sni: de.eyucdn.xyz
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
