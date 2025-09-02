@@ -71,52 +71,28 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- name: 🇭🇰HK
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: 2428
-  server: 47.239.220.214
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
-- name: 香港4|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
+- name: 🇭🇰HK-103.252.116.138-0367 | 0.046MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
-  server: 218.102.206.179
-  skip-cert-verify: true
-  sni: 23.45.86.28
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
   type: trojan
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 🇭🇰HK-219.78.148.97-4951 | 9.681MB
+  name: '[VMess] 🇭🇰 香港5|@ripaojiedian'
   network: ws
   port: 80
-  server: 219.78.148.97
-  server_url: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  servername: 🇭🇰HK-219.78.148.97-4951 | 9.681MB
+  server: 203.218.216.26
+  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
-      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-220.246.225.199-055
-  network: ws
-  port: 80
-  server: 119.237.29.204
-  server_url: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-headers:
-    Host: hkt.gotochinatown.net
-  ws-path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

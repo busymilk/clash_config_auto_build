@@ -47,6 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 加拿大 001
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 205.233.181.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0257 | 46.133MB
   password: f8f7aCzcPKbsF8p3
@@ -65,18 +77,13 @@ proxies:
   port: 80
   server: 142.4.216.225
   type: ss
-- name: 加拿大 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 205.233.181.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0252 | 2.437MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  server_url: ca225.vpnbook.com
+  type: ss
 - cipher: aes-256-cfb
   group: SSRProvider
   name: 🇨🇦CA-79.127.233.170-029
@@ -88,13 +95,6 @@ proxies:
   protoparam: null
   server: 79.127.233.170
   type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0252 | 2.437MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  server_url: ca225.vpnbook.com
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
