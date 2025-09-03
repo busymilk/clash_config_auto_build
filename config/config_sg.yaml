@@ -47,6 +47,18 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 新加坡 001
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.18.184.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -69,6 +81,24 @@ proxies:
   sni: xjp1.mangshe.xyz
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  name: 🇸🇬 新加坡|@ripaojiedian
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3957
+  server: 13.230.101.173
+  server_url: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇸🇬 新加坡2|@ripaojiedian
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3043
+  server: 13.230.101.173
+  server_url: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
