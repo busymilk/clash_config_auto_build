@@ -47,6 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - name: 澳大利亚 001
   network: ws
   password: slch2024
@@ -59,11 +65,23 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 澳大利亚 004
+- name: 澳大利亚 002
   network: ws
   password: slch2024
   port: 2096
-  server: 185.207.197.195
+  server: 185.207.199.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 澳大利亚 003
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.207.198.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -83,11 +101,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 澳大利亚 003
+- name: 澳大利亚 004
   network: ws
   password: slch2024
   port: 2096
-  server: 185.207.198.195
+  server: 185.207.197.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
