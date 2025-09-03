@@ -54,46 +54,6 @@ proxies:
   server: 203.23.128.33
   type: ss
 - alterId: 0
-  cipher: ''
-  client-fingerprint: random
-  flow: ''
-  name: 👖🇭🇰TG频道@stymei1丨5
-  network: ws
-  port: 443
-  server: 104.18.21.69
-  server_url: www.visa.com.hk
-  servername: do-tor1.008883.xyz
-  skip-cert-verify: true
-  sni: do-tor1.008883.xyz
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 347fe533-e01e-47a7-8c8d-51a55d317899
-  ws-opts:
-    headers:
-      Host: do-tor1.008883.xyz
-    path: /freev2.net?ed=2048
-- alterId: 0
-  cipher: ''
-  client-fingerprint: random
-  flow: ''
-  name: 👖🇭🇰TG频道@stymei1丨2
-  network: ws
-  port: 443
-  server: 104.21.226.178
-  server_url: bestcf.onecf.eu.org
-  servername: do-lon1.008883.xyz
-  skip-cert-verify: true
-  sni: do-lon1.008883.xyz
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 347fe533-e01e-47a7-8c8d-51a55d317899
-  ws-opts:
-    headers:
-      Host: do-lon1.008883.xyz
-    path: /freev2.net?ed=2048
-- alterId: 0
   cipher: auto
   name: 🇭🇰HK-219.77.105.237-0254 | 1.362MB
   network: ws
@@ -138,6 +98,13 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
+- name: 🇭🇰HK-103.252.116.138-5043 | 0.029MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
