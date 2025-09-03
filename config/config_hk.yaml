@@ -47,35 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- client-fingerprint: chrome
-  name: 🇭🇰 香港4|@ripaojiedian
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 219.77.131.1
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0325 | 0.081MB
+  name: 🇭🇰HK-203.23.128.33-0325 | 0.51MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- alterId: 2
-  cipher: auto
-  name: '[VMess] 🇭🇰 香港5|@ripaojiedian'
-  network: ws
-  port: 80
-  server: 203.218.216.26
-  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
 - alterId: 0
   cipher: ''
   client-fingerprint: random
@@ -116,21 +93,35 @@ proxies:
     headers:
       Host: do-lon1.008883.xyz
     path: /freev2.net?ed=2048
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 🇭🇰HK-219.77.105.237-0256 | 0.266MB
+  name: '[VMess] 🇭🇰 香港5|@ripaojiedian'
   network: ws
   port: 80
-  server: 1.36.77.183
-  server_url: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  servername: 🇭🇰HK-219.77.105.237-0256 | 0.266MB
+  server: 203.218.216.26
+  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     headers:
-      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-42.98.100.120-0262 | 1.02MB
+  network: ws
+  port: 80
+  server: 116.49.109.9
+  server_url: hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
     path: /
 proxy-groups:
 - name: ✈️ 选择代理
