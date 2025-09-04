@@ -48,18 +48,22 @@ profile:
   store-selected: false
 proxies:
 - alterId: 0
-  cipher: auto
-  name: 🇯🇵JP-103.13.19.254-004
-  network: tcp
-  port: 50414
-  server: 103.13.19.254
+  cipher: ''
+  flow: ''
+  name: 👖🇯🇵TG频道@stymei1丨19
+  network: ws
+  port: 443
+  server: 104.18.13.145
+  servername: usa.rtot.me
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
-  ws-headers:
-    Host: 103.13.19.254
-  ws-path: /
+  sni: usa.rtot.me
+  tls: true
+  type: vless
+  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
+  ws-opts:
+    headers:
+      Host: usa.rtot.me
+    path: /bing
 - alterId: 0
   cipher: ''
   flow: ''
@@ -76,23 +80,6 @@ proxies:
   ws-opts:
     headers:
       Host: usb.rtot.me
-    path: /bing
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 👖🇯🇵TG频道@stymei1丨19
-  network: ws
-  port: 443
-  server: 104.18.13.145
-  servername: usa.rtot.me
-  skip-cert-verify: true
-  sni: usa.rtot.me
-  tls: true
-  type: vless
-  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
-  ws-opts:
-    headers:
-      Host: usa.rtot.me
     path: /bing
 - auth: ''
   fast-open: false
@@ -138,6 +125,19 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵JP-103.13.19.254-004
+  network: tcp
+  port: 50414
+  server: 103.13.19.254
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
+  ws-headers:
+    Host: 103.13.19.254
+  ws-path: /
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0253 | 34.433MB
   password: shadowsocks
@@ -153,26 +153,6 @@ proxies:
   sni: zp1.eyujichang.xyz
   tls: false
   type: hysteria2
-- alterId: 0
-  cipher: ''
-  client-fingerprint: random
-  flow: ''
-  name: 👖🇯🇵TG频道@stymei1丨6
-  network: ws
-  port: 443
-  server: 172.67.155.167
-  server_url: freeyx.cloudflare88.eu.org
-  servername: do-sgp1.008883.xyz
-  skip-cert-verify: true
-  sni: do-sgp1.008883.xyz
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 3ab0e109-9083-44e9-8324-7f347b77d4ca
-  ws-opts:
-    headers:
-      Host: do-sgp1.008883.xyz
-    path: /freev2.net?ed=2048
 - alpn:
   - http/1.1
   name: 👖🇯🇵TG频道@stymei1丨18
@@ -189,36 +169,6 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 🇯🇵_日本_3
-  network: tcp
-  password: 79462058-8af8-4f78-9f72-252035389b87
-  port: 443
-  server: 141.147.181.1
-  server_url: tuntro003.instconn.com
-  skip-cert-verify: true
-  sni: cherry.686911.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: ''
-  client-fingerprint: random
-  flow: ''
-  name: 👖🇯🇵TG频道@stymei1丨3
-  network: ws
-  port: 443
-  server: 104.21.239.44
-  server_url: bestcf.onecf.eu.org
-  servername: do-syd1.008883.xyz
-  skip-cert-verify: true
-  sni: do-syd1.008883.xyz
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 3ab0e109-9083-44e9-8324-7f347b77d4ca
-  ws-opts:
-    headers:
-      Host: do-syd1.008883.xyz
-    path: /freev2.net?ed=2048
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
