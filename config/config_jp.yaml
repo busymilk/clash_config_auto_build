@@ -57,10 +57,10 @@ proxies:
   type: hysteria2
 - auth: ''
   fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨32
-  password: TeoP0vNz791156o3UuGb8eBY
-  port: 22740
-  server: 38.34.6.180
+  name: 👖🇯🇵TG频道@stymei1丨22
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 47.129.100.149
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -77,12 +77,25 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵JP-103.13.19.254-004
+  network: tcp
+  port: 50414
+  server: 103.13.19.254
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
+  ws-headers:
+    Host: 103.13.19.254
+  ws-path: /
 - auth: ''
   fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨22
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 47.129.100.149
+  name: 👖🇯🇵TG频道@stymei1丨32
+  password: TeoP0vNz791156o3UuGb8eBY
+  port: 22740
+  server: 38.34.6.180
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -114,34 +127,6 @@ proxies:
   sni: zp1.eyujichang.xyz
   tls: false
   type: hysteria2
-- cipher: aes-256-gcm
-  country: 🇯🇵JP
-  delay: 1542
-  name: 日本 - Chiyoda City - KAGOYA JAPAN Inc. - 1
-  password: zJcvujpsXt
-  port: 37422
-  server: 133.18.108.187
-  type: ss
-- alterId: 0
-  cipher: ''
-  client-fingerprint: random
-  flow: ''
-  name: 👖🇯🇵TG频道@stymei1丨3
-  network: ws
-  port: 443
-  server: 104.17.240.57
-  server_url: bestcf.onecf.eu.org
-  servername: do-syd1.008883.xyz
-  skip-cert-verify: true
-  sni: do-syd1.008883.xyz
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 3ab0e109-9083-44e9-8324-7f347b77d4ca
-  ws-opts:
-    headers:
-      Host: do-syd1.008883.xyz
-    path: /freev2.net?ed=2048
 - alterId: 0
   cipher: ''
   client-fingerprint: random
@@ -162,19 +147,6 @@ proxies:
     headers:
       Host: do-sgp1.008883.xyz
     path: /freev2.net?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵JP-103.13.19.254-004
-  network: tcp
-  port: 50414
-  server: 103.13.19.254
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
-  ws-headers:
-    Host: 103.13.19.254
-  ws-path: /
 - alpn:
   - http/1.1
   name: 👖🇯🇵TG频道@stymei1丨18
