@@ -47,6 +47,30 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 英国 001
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 195.26.229.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 英国 002
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 194.36.55.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 - name: 英国 003
   network: ws
   password: slch2024
@@ -71,11 +95,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 英国 006
+- name: 英国 005
   network: ws
   password: slch2024
   port: 2096
-  server: 185.162.228.195
+  server: 185.162.229.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -83,11 +107,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 英国 005
+- name: 英国 006
   network: ws
   password: slch2024
   port: 2096
-  server: 185.162.229.195
+  server: 185.162.228.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -132,22 +156,16 @@ proxies:
   server: 212.102.53.198
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0212 | 43.125MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0221 | 43.621MB
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.78-0220 | 42.221MB
+  name: 🇬🇧GB-212.102.53.196-0212 | 43.125MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.78
+  server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-141.98.101.178-0238 | 38.563MB
