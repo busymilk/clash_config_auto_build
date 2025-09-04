@@ -55,6 +55,18 @@ proxies:
   protocol: origin
   server: 79.127.233.170
   type: ssr
+- name: 加拿大 001
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 205.233.181.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 - alterId: 0
   cipher: auto
   h2-opts: {}
@@ -68,18 +80,6 @@ proxies:
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
     path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: 加拿大 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 205.233.181.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0180 | 63.528MB
   password: f8f7aCzcPKbsF8p3
