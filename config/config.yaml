@@ -47,203 +47,620 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 美国 004
+- cipher: chacha20-ietf-poly1305
+  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.167.197.25:57456
+  password: 360e21d21977dc11
+  port: 57456
+  server: 104.167.197.25
+  type: ss
+- cipher: rc4-md5
+  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.151.182.253
+  type: ssr
+- cipher: aes-256-cfb
+  name: SSR-加拿大-79.127.233.170:989
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 79.127.233.170
+  type: ssr
+- cipher: chacha20-ietf-poly1305
+  name: SS-立陶宛>荷兰-NF解锁荷兰自制剧-ChatGPT-TikTok-YouTube-45.87.175.28:8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.28
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-荷兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-213.109.147.242:62685
+  password: VpKABcOpNNA0l5G2AVOmw8
+  port: 62685
+  server: 213.109.147.242
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 147.45.178.200
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-81.19.137.222:57456
+  password: a58fa62b4944ddbf
+  port: 57456
+  server: 81.19.137.222
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-204.136.10.115:1866
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 204.136.10.115
+  type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
+  network: ws
+  port: 80
+  server: 51.79.102.253
+  skip-cert-verify: true
+  type: vmess
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+- name: 🇺🇸_美国_15
+  network: ws
+  port: 443
+  server: 198.62.62.2
+  servername: smn2.gerlemondns.info
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 598b4251-fd03-48fe-b12d-630ac3adf2e5
+  ws-opts:
+    headers:
+      host: smn2.gerlemondns.info
+    path: /hjgfdws
+- name: 🇺🇸_美国_16
+  network: ws
+  port: 443
+  server: 198.62.62.229
+  servername: mirror.fullmargintraders.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
+  ws-opts:
+    headers:
+      host: mirror.fullmargintraders.com
+    path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
+- name: 🇺🇸_美国_35
+  network: ws
+  port: 443
+  server: 104.18.13.145
+  servername: usa.rtot.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
+  ws-opts:
+    headers:
+      host: usa.rtot.me
+    path: /bing
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+  network: ws
+  port: 23168
+  server: 46.17.45.21
+  type: vmess
+  uuid: 4cf81d78-40d6-45dd-9b70-beb9c51adfa6
+  ws-opts:
+    path: /
+- name: 🇺🇸_美国_42
+  network: ws
+  port: 443
+  server: 172.64.152.55
+  servername: usb.rtot.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
+  ws-opts:
+    headers:
+      host: usb.rtot.me
+    path: /bing
+- name: 🇺🇸_美国_39
+  network: ws
+  port: 443
+  server: 104.21.36.57
+  servername: profit.fullmargintraders.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6f6e8f09-c1b3-48fd-ab00-18f921d875ef
+  ws-opts:
+    headers:
+      host: profit.fullmargintraders.com
+    path: /wsv/6f6e8f09-c1b3-48fd-ab00-18f921d875ef
+- name: 🇺🇸_美国_44
+  network: ws
+  port: 8443
+  server: 172.67.153.156
+  servername: ovhwuxian.pai50288.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  ws-opts:
+    headers:
+      host: ovhwuxian.pai50288.uk
+    path: /57ba2ab1
+- name: 🇺🇸_美国_38
+  network: ws
+  port: 8443
+  server: 104.21.3.219
+  servername: ovhwuxian.pai50288.uk
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  ws-opts:
+    headers:
+      host: ovhwuxian.pai50288.uk
+    path: /57ba2ab1
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸_US_美国_1_1@2
+  password: Kuiqk2cP0BMWrgme9IfEvp
+  port: 443
+  server: 38.180.211.126
+  type: ss
+- name: '@Daily_Configs'
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 40.233.102.224
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 'Channel id: @proxy_kafee🇯🇵'
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- name: → @Hddify
+  password: 1fdb6b30-5371-4ff8-a001-efdc4b43d79b
+  port: 43429
+  server: 185.126.255.78
+  skip-cert-verify: false
+  sni: real.getafreenode.sbs
+  tls: false
+  type: hysteria2
+- name: 💎کانفیگ های بیشتر در چنل تلگرا...
+  password: 79c4fe11-9787-406b-bf94-c1c1dbf59e28
+  port: 31468
+  server: 77.223.214.193
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '🎿 #1'
+  password: dongtaiwang.com
+  port: 5355
+  server: 51.159.111.32
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 🇺🇲@FreakConfig
+  password: dongtaiwang.com
+  port: 63015
+  server: 108.181.5.130
+  skip-cert-verify: true
+  sni: apple.com
+  tls: false
+  type: hysteria2
+- name: CH_speednode_0001
   network: ws
   password: slch2024
   port: 2096
-  server: 204.93.210.195
-  skip-cert-verify: true
+  server: 185.18.250.195
+  skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 009
+    path: /Telegram🇨🇳
+- name: RU_speednode_0009
   network: ws
   password: slch2024
   port: 2096
-  server: 199.34.228.195
+  server: 185.148.107.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 安圭拉 001
+    path: /TelegramU0001F1E8U0001F1F3
+- name: RU_speednode_0010
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.221.160.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: US_speednode_0012
   network: ws
   password: slch2024
   port: 2096
   server: 209.94.90.195
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 003
+    path: /Telegram🇨🇳
+- name: US_speednode_0015
   network: ws
   password: slch2024
   port: 2096
-  server: 209.46.30.195
-  skip-cert-verify: true
+  server: 185.148.105.195
+  skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 006
+    path: /Telegram🇨🇳
+- name: US_speednode_0016
   network: ws
   password: slch2024
   port: 2096
   server: 199.68.156.195
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
+  udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 002
+    path: /Telegram🇨🇳
+- auth: ''
+  fast-open: false
+  name: 👖🇯🇵TG频道@stymei1丨32
+  password: TeoP0vNz791156o3UuGb8eBY
+  port: 22740
+  server: 38.34.6.180
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 👖🇯🇵TG频道@stymei1丨22
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 47.129.100.149
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 👖🇯🇵TG频道@stymei1丨23
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 47.129.217.4
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- delay: 2100
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 11
   network: ws
   password: slch2024
   port: 2096
-  server: 216.24.57.195
-  skip-cert-verify: true
+  server: 198.71.188.195
   sni: ocost-dy.wmlefl.cc
   type: trojan
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 加拿大 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 205.233.181.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 俄罗斯 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 213.241.198.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 216.205.52.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 010
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.202.211.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 西班牙 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 194.59.5.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 011
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.177.57.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 007
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.34.230.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 英国 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 195.26.229.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 017
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.71.189.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 丹麦 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 195.85.23.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 016
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1886
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 10
   network: ws
   password: slch2024
   port: 2096
   server: 198.71.190.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1770
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 13
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.12.144.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2323
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 12
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.62.62.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1713
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 15
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 194.36.55.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1943
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 14
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 195.26.229.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2240
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 18
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.164.158.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1363
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 19
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.42.145.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1932
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 20
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.42.88.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1924
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 21
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.251.80.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2047
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 22
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.238.228.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 942
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 23
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.207.199.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1004
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 24
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.158.133.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1956
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 26
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.59.218.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1951
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 25
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.148.104.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2421
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 27
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.18.184.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1726
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 5
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 216.24.57.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1636
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 4
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 216.205.52.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 944
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 7
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 204.93.210.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 1436
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 8
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.177.56.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2356
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 6
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 213.182.199.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- delay: 2580
+  name: 美国 - 聖荷西 - Cloudflare, Inc. - 9
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.71.232.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- name: 俄罗斯 002
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 213.241.198.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -263,11 +680,23 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 俄罗斯 006
+- name: 美国 011
   network: ws
   password: slch2024
   port: 2096
-  server: 194.76.18.195
+  server: 209.46.30.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 加拿大 001
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 205.233.181.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -279,7 +708,126 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
+  server: 199.181.197.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 015
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.34.229.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- auth: ''
+  fast-open: false
+  name: 👖🇯🇵TG频道@stymei1丨33
+  password: 7GEEGxAfgQaVPQX0PGk7lIuj3I
+  port: 10820
+  server: 158.41.110.234
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- name: 美国 014
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.34.230.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 016
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.34.228.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 017
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.202.211.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 018
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.177.57.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 020
+  network: ws
+  password: slch2024
+  port: 2096
   server: 198.71.233.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 022
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.71.191.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 024
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.71.189.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 027
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.12.145.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -299,6 +847,13 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  delay: 1067
+  name: 芬兰 - 赫尔辛基 - Global Connectivity Solutions LLP - 1
+  password: Sur5Ny74npD3
+  port: 443
+  server: 185.242.247.249
+  type: ss
 - name: 丹麦 001
   network: ws
   password: slch2024
@@ -311,67 +866,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 荷兰 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 194.152.44.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 014
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.71.232.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 020
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.12.145.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 021
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.12.144.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 012
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.177.56.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 俄罗斯 003
+- name: 俄罗斯 004
   network: ws
   password: slch2024
   port: 2096
@@ -383,35 +878,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 罗马尼亚 001
+- name: 丹麦 002
   network: ws
   password: slch2024
   port: 2096
-  server: 213.182.199.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 英国 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 194.36.55.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 俄罗斯 004
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 195.13.45.195
+  server: 195.85.23.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -435,6 +906,42 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
+  server: 195.13.45.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 荷兰 001
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 194.152.44.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 俄罗斯 007
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 194.76.18.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 俄罗斯 006
+  network: ws
+  password: slch2024
+  port: 2096
   server: 195.13.44.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
@@ -443,47 +950,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 美国 019
+- name: 西班牙 002
   network: ws
   password: slch2024
   port: 2096
-  server: 198.62.62.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 018
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.71.188.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 008
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.34.229.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 015
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.71.191.195
+  server: 194.59.5.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -496,18 +967,6 @@ proxies:
   password: slch2024
   port: 2096
   server: 194.53.53.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 005
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.181.197.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -539,11 +998,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 美国 024
+- name: 俄罗斯 010
   network: ws
   password: slch2024
   port: 2096
-  server: 192.169.222.195
+  server: 193.124.18.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -551,7 +1010,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 美国 023
+- name: 美国 030
   network: ws
   password: slch2024
   port: 2096
@@ -563,7 +1022,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 俄罗斯 010
+- name: 俄罗斯 011
   network: ws
   password: slch2024
   port: 2096
@@ -575,11 +1034,47 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 俄罗斯 009
+- name: 美国 029
   network: ws
   password: slch2024
   port: 2096
-  server: 193.124.18.195
+  server: 192.200.160.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 033
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.169.220.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 032
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.169.221.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 031
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.169.222.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -599,7 +1094,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 美国 027
+- name: 美国 034
   network: ws
   password: slch2024
   port: 2096
@@ -611,11 +1106,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 英国 004
+- name: 美国 037
   network: ws
   password: slch2024
   port: 2096
-  server: 188.244.122.195
+  server: 190.93.244.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -623,11 +1118,23 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 美国 022
+- name: 美国 035
   network: ws
   password: slch2024
   port: 2096
-  server: 192.200.160.195
+  server: 192.0.54.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 美国 036
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 190.93.245.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -647,131 +1154,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 卢森堡 002
+- name: 英国 004
   network: ws
   password: slch2024
   port: 2096
-  server: 188.42.88.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 026
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.169.220.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 哥斯达黎加 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 190.93.246.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 025
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.169.221.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 亚美尼亚 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 188.164.158.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 028
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.0.54.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 西班牙 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.251.83.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 俄罗斯 011
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.221.160.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 西班牙 004
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.251.81.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 荷兰 004
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 188.164.248.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 荷兰 006
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.193.31.195
+  server: 188.244.122.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -791,6 +1178,30 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
+- name: 荷兰 004
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.164.248.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 哥斯达黎加 002
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 190.93.246.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 - name: 亚美尼亚 001
   network: ws
   password: slch2024
@@ -803,11 +1214,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 荷兰 007
+- name: 西班牙 003
   network: ws
   password: slch2024
   port: 2096
-  server: 185.193.30.195
+  server: 185.251.83.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -815,11 +1226,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 荷兰 009
+- name: 澳大利亚 004
   network: ws
   password: slch2024
   port: 2096
-  server: 185.193.28.195
+  server: 185.207.197.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -827,23 +1238,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 荷兰 005
+- name: 澳大利亚 003
   network: ws
   password: slch2024
   port: 2096
-  server: 188.42.145.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 澳大利亚 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.207.199.195
+  server: 185.207.198.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -855,7 +1254,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 185.251.80.195
+  server: 185.251.81.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -863,7 +1262,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 西班牙 003
+- name: 西班牙 004
   network: ws
   password: slch2024
   port: 2096
@@ -887,11 +1286,23 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 保加利亚 001
+- name: 荷兰 006
   network: ws
   password: slch2024
   port: 2096
-  server: 185.176.26.195
+  server: 185.193.31.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 荷兰 007
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.193.30.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -911,59 +1322,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 美国 029
+- name: 保加利亚 001
   network: ws
   password: slch2024
   port: 2096
-  server: 190.93.245.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 西班牙 006
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.238.228.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 澳大利亚 003
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.207.198.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 030
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 190.93.244.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 澳大利亚 004
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.207.197.195
+  server: 185.176.26.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -983,19 +1346,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 摩尔多瓦 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.170.166.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 立陶宛 001
+- name: 立陶宛 003
   network: ws
   password: slch2024
   port: 2096
@@ -1007,11 +1358,23 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 亚美尼亚 003
+- name: 荷兰 009
   network: ws
   password: slch2024
   port: 2096
-  server: 185.162.231.195
+  server: 185.193.28.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 摩尔多瓦 001
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.170.166.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1043,18 +1406,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 英国 006
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.162.228.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - name: 英国 007
   network: ws
   password: slch2024
@@ -1079,11 +1430,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 立陶宛 005
+- name: 英国 006
   network: ws
   password: slch2024
   port: 2096
-  server: 185.148.104.195
+  server: 185.162.228.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1091,35 +1442,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 德国 001
+- name: 亚美尼亚 003
   network: ws
   password: slch2024
   port: 2096
-  server: 185.158.133.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 美国 031
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.149.135.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 立陶宛 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.148.107.195
+  server: 185.162.231.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1128,18 +1455,6 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - name: 立陶宛 004
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.148.105.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 立陶宛 003
   network: ws
   password: slch2024
   port: 2096
@@ -1163,59 +1478,23 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 荷兰 010
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.133.35.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 新加坡 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.18.184.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 西班牙 007
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.18.250.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 俄罗斯 013
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.59.218.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - name: 法国 001
   network: ws
   password: slch2024
   port: 2096
   server: 185.7.240.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 荷兰 010
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.133.35.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -1235,249 +1514,12 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- cipher: aes-256-cfb
-  name: SSR-加拿大-79.127.233.170:989
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 79.127.233.170
-  type: ssr
-- auth: ''
-  fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨32
-  password: TeoP0vNz791156o3UuGb8eBY
-  port: 22740
-  server: 38.34.6.180
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- cipher: rc4-md5
-  name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 107.151.182.253
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁澳大利亚自制剧-ChatGPT-TikTok-185.177.229.245:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 👖🇯🇵TG频道@stymei1丨20
-  network: ws
+- cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.243-0316 | 129.982MB
+  password: shadowsocks
   port: 443
-  server: 172.64.152.55
-  servername: usb.rtot.me
-  skip-cert-verify: true
-  sni: usb.rtot.me
-  tls: true
-  type: vless
-  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
-  ws-opts:
-    headers:
-      Host: usb.rtot.me
-    path: /bing
-- auth: ''
-  fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨26
-  password: qq4Wc9UakExypzw4Jd00fWqrDTY
-  port: 22712
-  server: 8.209.223.212
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-204.136.10.115:1866
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 204.136.10.115
+  server: 37.19.198.243
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-法国-NF解锁法国地区非自制剧-ChatGPT-TikTok-YouTube-81.19.137.222:57456
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 81.19.137.222
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-德国-NF解锁德国地区非自制剧-ChatGPT-TikTok-YouTube-147.45.178.200:57456
-  password: a58fa62b4944ddbf
-  port: 57456
-  server: 147.45.178.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.167.197.25:57456
-  password: 360e21d21977dc11
-  port: 57456
-  server: 104.167.197.25
-  type: ss
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 👖🇯🇵TG频道@stymei1丨19
-  network: ws
-  port: 443
-  server: 104.18.13.145
-  servername: usa.rtot.me
-  skip-cert-verify: true
-  sni: usa.rtot.me
-  tls: true
-  type: vless
-  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
-  ws-opts:
-    headers:
-      Host: usa.rtot.me
-    path: /bing
-- auth: ''
-  fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨23
-  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: 22509
-  server: 47.129.217.4
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨22
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 47.129.100.149
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80
-  network: ws
-  port: 80
-  server: 51.79.102.253
-  skip-cert-verify: true
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- cipher: chacha20-ietf-poly1305
-  delay: 1067
-  name: 芬兰 - 赫尔辛基 - Global Connectivity Solutions LLP - 1
-  password: Sur5Ny74npD3
-  port: 443
-  server: 185.242.247.249
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇲🇩MD-185.153.197.5-011
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-荷兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-213.109.147.242:62685
-  password: VpKABcOpNNA0l5G2AVOmw8
-  port: 62685
-  server: 213.109.147.242
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  delay: 2076
-  name: 土耳其 - 伊斯坦布尔 - Global Connectivity Solutions LLP - 1
-  password: qscavF5UviIL-8V-E4raBA
-  port: 2222
-  server: 62.133.63.226
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇷TR-83.217.9.101-009
-  password: NbQNqngaIwS7
-  port: 443
-  server: 83.217.9.101
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: SS-立陶宛>荷兰-NF解锁荷兰自制剧-ChatGPT-TikTok-YouTube-45.87.175.28:8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.28
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-38.180.211.126-128
-  password: Kuiqk2cP0BMWrgme9IfEvp
-  port: 443
-  server: 38.180.211.126
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇵🇹PT-185.231.233.112-001
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
-- name: 🇺🇸_美国_39
-  network: ws
-  port: 443
-  server: 104.21.36.57
-  servername: profit.fullmargintraders.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6f6e8f09-c1b3-48fd-ab00-18f921d875ef
-  ws-opts:
-    headers:
-      host: profit.fullmargintraders.com
-    path: /wsv/6f6e8f09-c1b3-48fd-ab00-18f921d875ef
-- name: 🇺🇸_美国_38
-  network: ws
-  port: 8443
-  server: 104.21.3.219
-  servername: ovhwuxian.pai50288.uk
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  ws-opts:
-    headers:
-      host: ovhwuxian.pai50288.uk
-    path: /57ba2ab1
-- name: 🇺🇸_美国_44
-  network: ws
-  port: 8443
-  server: 172.67.153.156
-  servername: ovhwuxian.pai50288.uk
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  ws-opts:
-    headers:
-      host: ovhwuxian.pai50288.uk
-    path: /57ba2ab1
-- name: 🇺🇸_美国_16
-  network: ws
-  port: 443
-  server: 198.62.62.229
-  servername: mirror.fullmargintraders.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
-  ws-opts:
-    headers:
-      host: mirror.fullmargintraders.com
-    path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
 - cipher: aes-128-gcm
   name: 🇺🇸US-156.146.38.168-0168 | 75.455MB
   password: shadowsocks
@@ -1485,10 +1527,52 @@ proxies:
   server: 156.146.38.168
   type: ss
 - cipher: aes-128-gcm
+  name: 🇺🇸US-37.19.198.160-0320 | 117.392MB
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.169-0167 | 83.482MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+- name: 美国 038
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.149.135.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.167-0171 | 78.58MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+- cipher: aes-128-gcm
   name: 🇺🇸US-173.244.56.9-0173 | 74.055MB
   password: shadowsocks
   port: 443
   server: 173.244.56.9
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸US-156.146.38.170-0169 | 72.729MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US-64.74.163.130-0170 | 45.516MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 64.74.163.130
   type: ss
 - cipher: aes-128-gcm
   name: 🇺🇸US-212.102.47.130-0178 | 62.364MB
@@ -1502,18 +1586,6 @@ proxies:
   port: 443
   server: 212.102.47.131
   type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.169-0167 | 83.482MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.169
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.167-0171 | 78.58MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇨🇦CA-79.127.233.170-0180 | 63.528MB
   password: f8f7aCzcPKbsF8p3
@@ -1521,34 +1593,28 @@ proxies:
   server: 79.127.233.170
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.243-0316 | 129.982MB
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.243
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-156.146.38.170-0169 | 72.729MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸US-37.19.198.160-0320 | 117.392MB
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.160
-  type: ss
-- cipher: aes-128-gcm
   name: 🇺🇸US-212.102.47.132-0179 | 41.651MB
   password: shadowsocks
   port: 443
   server: 212.102.47.132
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.107.226.159-0288 | 29.218MB
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 38.107.226.159
   type: ss
 - cipher: aes-256-cfb
   name: 🇨🇦CA-79.127.233.170-0176 | 55.944MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.233.170
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.107.226.159-0290 | 27.132MB
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 38.107.226.159
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.193-0228 | 44.476MB
@@ -1567,18 +1633,6 @@ proxies:
   password: shadowsocks
   port: 443
   server: 212.102.53.195
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-64.74.163.130-0170 | 45.516MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.130
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.80-0215 | 42.885MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.198-0214 | 43.286MB
@@ -1604,17 +1658,23 @@ proxies:
   port: 989
   server: 195.154.185.174
   type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.196-0212 | 43.125MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱NL-193.29.139.217-0239 | 44.803MB
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 193.29.139.217
   type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0212 | 43.125MB
-  password: shadowsocks
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇷TR-83.217.9.101-009
+  password: NbQNqngaIwS7
   port: 443
-  server: 212.102.53.196
+  server: 83.217.9.101
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: AE-151.242.251.131-0210 | 44.052MB
@@ -1628,12 +1688,6 @@ proxies:
   port: 8080
   server: 193.29.139.227
   type: ss
-- cipher: aes-256-cfb
-  name: 🇫🇷FR-195.154.169.198-0224 | 43.695MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 195.154.169.198
-  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.79-0217 | 42.925MB
   password: shadowsocks
@@ -1646,35 +1700,23 @@ proxies:
   port: 443
   server: 212.102.53.78
   type: ss
+- cipher: aes-256-cfb
+  name: 🇫🇷FR-195.154.169.198-0224 | 43.695MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 195.154.169.198
+  type: ss
 - cipher: aes-128-gcm
   name: 🇳🇱NL-149.34.244.68-0229 | 41.621MB
   password: shadowsocks
   port: 443
   server: 149.34.244.68
   type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.107.226.159-0288 | 29.218MB
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 38.107.226.159
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.107.226.159-0290 | 27.132MB
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 38.107.226.159
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: CZ-195.181.160.6-0213 | 42.021MB
+  name: 🇺🇸US-104.192.226.106-0216 | 44.162MB
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 195.181.160.6
-  type: ss
-- cipher: aes-256-cfb
-  name: FI-37.143.129.230-0230 | 41.479MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.143.129.230
+  server: 104.192.226.106
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱NL-193.29.139.235-0185 | 45.012MB
@@ -1683,10 +1725,22 @@ proxies:
   server: 193.29.139.235
   type: ss
 - cipher: aes-256-cfb
-  name: SK-156.146.40.194-0225 | 41.479MB
+  name: 🇺🇸US-104.192.226.106-0181 | 26.499MB
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 156.146.40.194
+  server: 104.192.226.106
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: CZ-195.181.160.6-0213 | 42.021MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 195.181.160.6
+  type: ss
+- cipher: aes-128-cfb
+  name: 🇳🇱NL-109.201.152.181-0191 | 37.69MB
+  password: shadowsocks
+  port: 443
+  server: 109.201.152.181
   type: ss
 - cipher: aes-128-gcm
   name: CH-156.146.62.162-0234 | 41.435MB
@@ -1700,151 +1754,12 @@ proxies:
   port: 443
   server: 156.146.62.161
   type: ss
-- cipher: aes-128-cfb
-  name: 🇳🇱NL-109.201.152.181-0191 | 37.69MB
-  password: shadowsocks
-  port: 443
-  server: 109.201.152.181
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸US-38.110.1.122-4996 | 28.241MB
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 38.110.1.122
-  type: ss
 - cipher: aes-256-cfb
-  name: 🇺🇸US-104.192.226.106-0181 | 26.499MB
+  name: FI-37.143.129.230-0230 | 41.479MB
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 104.192.226.106
+  server: 37.143.129.230
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US-104.192.226.106-0216 | 44.162MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 104.192.226.106
-  type: ss
-- cipher: aes-128-gcm
-  name: CH-156.146.62.164-0236 | 39.81MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0253 | 34.433MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-- cipher: aes-128-gcm
-  name: CH-156.146.62.163-0232 | 38.608MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: AE-151.242.251.144-0187 | 42.275MB
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 151.242.251.144
-  type: ss
-- cipher: aes-256-cfb
-  name: SE-121.127.46.147-0233 | 40.358MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 121.127.46.147
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-141.98.101.178-0238 | 38.563MB
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇪🇸ES-45.154.206.192-0201 | 40.169MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 45.154.206.192
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR-45.158.171.60-0183 | 18.268MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.60
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR-45.158.171.110-0205 | 54.727MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.158.171.110
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL-103.104.247.47-0186 | 25.267MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 103.104.247.47
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL-103.104.247.49-0188 | 1.153MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 103.104.247.49
-  type: ss
-- cipher: aes-256-cfb
-  name: BG-37.19.203.147-0248 | 35.123MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.19.203.147
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL-193.29.139.240-0304 | 1.212MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.240
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: NO-185.213.23.226-0223 | 6.03MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.213.23.226
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇰DK-192.36.27.94-0275 | 33.328MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.36.27.94
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇷🇺RU-185.126.239.250-0291 | 16.965MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: LT-45.87.175.58-0196 | 6.543MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.58
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: LT-45.87.175.92-0209 | 0.548MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.92
-  type: ss
-- name: US_speednode_0282
-  network: ws
-  password: slch2024
-  port: 8443
-  server: 104.18.3.108
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /
 - name: 🇸🇬 新加坡 20
   network: ws
   password: slch2024
@@ -1858,11 +1773,24 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
+- name: US_speednode_0282
+  network: ws
+  password: slch2024
+  port: 8443
+  server: 104.18.3.108
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: PY-38.165.233.18-0247 | 36.245MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 38.165.233.18
+  name: AE-151.242.251.144-0187 | 42.275MB
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 151.242.251.144
   type: ss
 - name: '🇺🇸 美国 544 #2'
   network: ws
@@ -1877,6 +1805,18 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /
+- cipher: aes-128-gcm
+  name: CH-156.146.62.164-0236 | 39.81MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  type: ss
+- cipher: aes-256-cfb
+  name: SK-156.146.40.194-0225 | 41.479MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
 - name: '🇺🇸 美国 253 #2'
   network: ws
   password: slch2024
@@ -1890,17 +1830,41 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: LT-45.87.175.166-0195 | 44.433MB
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.166
+- cipher: aes-128-gcm
+  name: CH-156.146.62.163-0232 | 38.608MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: AR-38.54.45.129-0294 | 0.723MB
+  name: 🇫🇷FR-45.158.171.60-0183 | 18.268MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.60
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.178-0238 | 38.563MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR-45.158.171.110-0205 | 54.727MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.110
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-103.104.247.47-0186 | 25.267MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 103.104.247.47
+  type: ss
+- cipher: aes-256-cfb
+  name: SE-121.127.46.147-0233 | 40.358MB
   password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 38.54.45.129
+  port: 989
+  server: 121.127.46.147
   type: ss
 - name: '🇺🇸 美国 351 #2'
   network: ws
@@ -1916,22 +1880,28 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: AE-151.242.251.153-0189 | 0.049MB
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.153
-  type: ss
-- cipher: aes-256-cfb
-  name: PY-38.165.233.93-0276 | 33.194MB
+  name: 🇪🇸ES-45.154.206.192-0201 | 40.169MB
   password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.165.233.93
+  port: 990
+  server: 45.154.206.192
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: LT-45.87.175.199-0184 | 1.115MB
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: 🇳🇱NL-103.104.247.49-0188 | 1.153MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 45.87.175.199
+  server: 103.104.247.49
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.240-0304 | 1.212MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.240
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.58-0196 | 6.543MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.58
   type: ss
 - name: 🇳🇱 荷兰 341
   network: ws
@@ -1946,23 +1916,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇳🇱NL-51.15.23.63-0270 | 31.842MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR-51.195.119.47-0226 | 22.481MB
-  password: qXvO7zYU7KeaB0Md7DQLow
-  port: 1080
-  server: 51.195.119.47
-  type: ss
-- cipher: aes-256-cfb
-  name: CO-154.223.16.212-0323 | 0.205MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
+  name: LT-45.87.175.92-0209 | 0.548MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.92
   type: ss
 - name: '🇺🇸 美国 812 #2'
   network: ws
@@ -1977,12 +1935,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: AT-95.163.176.37-0260 | 0.12MB
-  password: eUh4lSpi7nOYj0vSrqLUh0
-  port: 8506
-  server: 95.163.176.37
-  type: ss
 - name: '🇺🇸 美国 276 #2'
   network: ws
   password: slch2024
@@ -1996,12 +1948,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: BR-38.54.57.90-0309 | 0.817MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
 - name: 🇺🇸 美国 696
   network: ws
   password: slch2024
@@ -2015,41 +1961,12 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /?ed=2560
-- name: 🇺🇸 美国 700
-  network: ws
-  password: slch2024
-  port: 8443
-  server: 104.18.2.108
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /
-- cipher: aes-128-cfb
-  name: 🇳🇱_NL_荷兰_1_0@18
-  obfs: http_post
-  password: $$Turb0VPN$$
-  port: 443
-  protocol: auth_aes128_md5
-  server: 45.154.204.13
-  server_url: ssca.irundns.net
-  type: ssr
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 006
-  network: tcp
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 172.233.201.93
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- cipher: chacha20-ietf-poly1305
+  name: NO-185.213.23.226-0223 | 6.03MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.213.23.226
+  type: ss
 - client-fingerprint: chrome
   name: '🇺🇸 美国 269 #2'
   network: tcp
@@ -2063,6 +1980,77 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: chrome
+  name: 🇺🇸 美国 006
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.201.93
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- name: 🇺🇸 美国 700
+  network: ws
+  password: slch2024
+  port: 8443
+  server: 104.18.2.108
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.166-0195 | 44.433MB
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0253 | 34.433MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: aes-128-cfb
+  name: 🇳🇱_NL_荷兰_1_0@18
+  obfs: http_post
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  server: 45.154.204.13
+  server_url: ssca.irundns.net
+  type: ssr
+- cipher: aes-256-cfb
+  name: 🇩🇰DK-192.36.27.94-0275 | 33.328MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.36.27.94
+  type: ss
+- cipher: aes-256-cfb
+  name: BG-37.19.203.147-0248 | 35.123MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.19.203.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: AE-151.242.251.153-0189 | 0.049MB
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.153
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.199-0184 | 1.115MB
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.199
+  type: ss
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -2077,11 +2065,11 @@ proxies:
   type: hysteria
   udp: true
   up: 11 Mbps
-- cipher: rc4-md5
-  name: 🇺🇸US-23.251.121.242-0212 | 0.0MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 23.251.121.242
+- cipher: chacha20-ietf-poly1305
+  name: AT-95.163.176.37-0260 | 0.12MB
+  password: eUh4lSpi7nOYj0vSrqLUh0
+  port: 8506
+  server: 95.163.176.37
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇫🇷FR-45.158.171.70-0318 | 0.477MB
@@ -2089,18 +2077,102 @@ proxies:
   port: 8080
   server: 45.158.171.70
   type: ss
-- cipher: aes-256-cfb
-  name: 🇨🇳TW-154.223.20.79-0305 | 1.035MB
+- cipher: chacha20-ietf-poly1305
+  name: AR-38.54.45.129-0294 | 0.723MB
   password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
+  port: 990
+  server: 38.54.45.129
+  type: ss
+- cipher: rc4-md5
+  name: 🇺🇸US-23.251.121.242-0212 | 0.0MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 23.251.121.242
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR-51.195.119.47-0226 | 22.481MB
+  password: qXvO7zYU7KeaB0Md7DQLow
+  port: 1080
+  server: 51.195.119.47
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: PR-185.47.255.22-0302 | 4.58MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 302 #2'
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 46.17.107.16
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.65-0296 | 1.084MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.65
   type: ss
 - cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0286 | 0.801MB
+  name: CO-154.223.16.212-0323 | 0.205MB
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 154.90.63.177
+  server: 154.223.16.212
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: PY-38.165.233.18-0247 | 36.245MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.165.233.18
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.197-0225 | 32.794MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  server_url: uk-dc1.yangon.club
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇳🇱NL-51.15.23.63-0270 | 31.842MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.22-0277 | 3.897MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.22
+  type: ss
+- cipher: aes-256-cfb
+  name: BE-192.71.249.78-0279 | 29.527MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.249.78
+  type: ss
+- cipher: aes-256-cfb
+  name: BR-38.54.57.90-0309 | 0.817MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 🇺🇸_US_美国->🇪🇸_ES_西班牙_1_1@9
+  network: tcp
+  port: 443
+  server: 38.60.134.249
+  sni: ''
+  type: vmess
+  uuid: beb28159-7f4c-4c09-9313-6283515f150b
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -2115,30 +2187,88 @@ proxies:
   type: hysteria
   udp: true
   up: 100
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0303 | 0.356MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  name: BE-192.71.249.78-0279 | 29.527MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.249.78
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: PR-185.47.255.22-0302 | 4.58MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: LT-45.87.175.65-0296 | 1.084MB
+  name: 🇳🇱NL-193.29.139.251-0198 | 0.789MB
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 45.87.175.65
+  server: 193.29.139.251
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: AE-151.242.251.153-0189 | 41.096MB
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 151.242.251.153
+  server_url: beesyar.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.202-0266 | 4.503MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.69-0295 | 15.434MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.69
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: EC-185.47.253.227-0300 | 0.482MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-206.206.80.227-0334 | 0.537MB
+  network: ws
+  port: 20086
+  server: 206.206.80.227
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0abb7b9e-81ba-4336-8ca7-056866032ff3
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR-45.158.171.66-0322 | 1.233MB
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.66
+  type: ss
+- name: JP
+  password: 16461a78-363c-457a-92f9-83b0a68edc37
+  port: 2056
+  server: 96.62.214.75
+  server_url: zp1.eyucdn.xyz
+  skip-cert-verify: true
+  sni: zp1.eyujichang.xyz
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0255 | 31.869MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  type: ss
+- cipher: aes-256-cfb
+  name: PY-38.165.233.93-0276 | 33.194MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-137.175.124.167-0199 | 0.068MB
+  network: ws
+  port: 20086
+  server: 137.175.124.167
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
@@ -2156,100 +2286,12 @@ proxies:
   uuid: 0c17318b-d8e7-4816-a6a2-ab873a3bcc8b
   ws-opts:
     path: /vmess/
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.197-0225 | 32.794MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  server_url: uk-dc1.yangon.club
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: LT-45.87.175.22-0277 | 3.897MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.22
-  type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇺🇸_US_美国->🇪🇸_ES_西班牙_1_1@9
-  network: tcp
-  port: 443
-  server: 38.60.134.249
-  sni: ''
-  type: vmess
-  uuid: beb28159-7f4c-4c09-9313-6283515f150b
-- name: JP
-  password: 16461a78-363c-457a-92f9-83b0a68edc37
-  port: 2056
-  server: 96.62.214.75
-  server_url: zp1.eyucdn.xyz
-  skip-cert-verify: true
-  sni: zp1.eyujichang.xyz
-  tls: false
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: AE-151.242.251.153-0189 | 41.096MB
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 151.242.251.153
-  server_url: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL-193.29.139.251-0198 | 0.789MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.251
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: EC-185.47.253.227-0300 | 0.482MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
 - cipher: aes-256-cfb
   name: 🇮🇸IS-37.235.49.168-0289 | 2.655MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.235.49.168
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL-193.29.139.202-0266 | 4.503MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.202
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: LT-45.87.175.69-0295 | 15.434MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.69
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US-206.206.80.227-0334 | 0.537MB
-  network: ws
-  port: 20086
-  server: 206.206.80.227
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0abb7b9e-81ba-4336-8ca7-056866032ff3
-  ws-opts:
-    path: /
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 302 #2'
-  network: tcp
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 46.17.107.16
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -2265,23 +2307,86 @@ proxies:
   udp: true
   up: 11
 - cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR-45.158.171.66-0322 | 1.233MB
+  name: 🇵🇱PL-92.118.205.228-0282 | 1.066MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 92.118.205.228
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇳TW-154.223.20.79-0305 | 1.035MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+- alterId: '64'
+  cipher: auto
+  name: '🇺🇸_美国_3 #2 #2'
+  network: tcp
+  port: 30002
+  server: 38.12.83.217
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 🇺🇸US-198.46.152.83-0368 | 0.073MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 198.46.152.83
+  skip-cert-verify: false
+  sni: sj3.freeguard.org
+  type: trojan
+- cipher: aes-256-cfb
+  name: NO-185.213.23.226-0227 | 5.872MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.213.23.226
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺RU-185.126.239.250-0291 | 16.965MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0286 | 0.801MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0303 | 0.356MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- alterId: '0'
+  cipher: auto
+  name: '🇺🇸_美国_77 #2'
+  network: ws
+  port: 443
+  server: 104.17.148.22
+  server_url: www.speedtest.net
+  tls: true
+  type: vmess
+  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
+  ws-opts:
+    headers:
+      host: BLaZE-fRA-64.BLaZECLOuD.sitE
+    path: /linkvkwss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.35-0361 | 0.117MB
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 45.158.171.66
+  server: 45.87.175.35
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇺🇸US-137.175.124.167-0199 | 0.068MB
-  network: ws
-  port: 20086
-  server: 137.175.124.167
-  skip-cert-verify: false
-  tls: false
+  fingerprint: ''
+  name: 🇬🇧_GB_英国_1@2
+  network: tcp
+  port: 443
+  server: 89.31.120.192
+  sni: ''
   type: vmess
-  uuid: b4bce500-11fe-4f8f-a344-01ac247af9bd
-  ws-opts:
-    path: /
+  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - alterId: 0
   cipher: none
   fingerprint: ''
@@ -2300,31 +2405,32 @@ proxies:
   port: 37422
   server: 133.18.108.187
   type: ss
-- alterId: '0'
-  cipher: auto
-  name: '🇺🇸_美国_77 #2'
-  network: ws
-  port: 443
-  server: 104.17.148.22
-  server_url: www.speedtest.net
-  tls: true
-  type: vmess
-  uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a
-  ws-opts:
-    headers:
-      host: BLaZE-fRA-64.BLaZECLOuD.sitE
-    path: /linkvkwss
-- cipher: aes-256-cfb
-  name: VN-103.163.218.2-0274 | 34.068MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 103.163.218.2
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇵🇱PL-92.118.205.228-0282 | 1.066MB
+  name: 🇭🇰HK-203.23.128.33-0325 | 0.51MB
   password: f8f7aCzcPKbsF8p3
   port: 990
-  server: 92.118.205.228
+  server: 203.23.128.33
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  delay: 654
+  name: 印度 - 班加羅爾 - DigitalOcean, LLC - 1
+  password: WgACwLy1BPk47JOzHyA7zu
+  port: 47347
+  server: 167.71.235.238
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-141.98.4.67-0330 | 0.422MB
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+  port: 52952
+  server: 141.98.4.67
+  server_url: exchange.gameaurela.click
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: CO-181.119.30.20-0268 | 30.994MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 181.119.30.20
   type: ss
 - cipher: aes-256-cfb
   name: 🇻🇳 越南|@ripaojiedian
@@ -2333,27 +2439,6 @@ proxies:
   server: 103.186.154.31
   type: ss
   udp: true
-- name: SE-45.91.171.116-0339 | 0.323MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 45.91.171.116
-  skip-cert-verify: false
-  sni: sto.freeguard.org
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: VN-103.163.218.2-0264 | 31.904MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 103.163.218.2
-  type: ss
-- cipher: aes-256-cfb
-  country: 🏁ZZ
-  delay: 1248
-  name: '越南 - Hải Dương - FASTLY - 1 #2'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.23
-  type: ss
 - cipher: aes-256-cfb
   name: '🇻🇳 越南|@ripaojiedian #2 #2'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -2368,16 +2453,6 @@ proxies:
   server: 103.186.154.32
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇬🇧_GB_英国_1@2
-  network: tcp
-  port: 443
-  server: 89.31.120.192
-  sni: ''
-  type: vmess
-  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - cipher: aes-256-cfb
   country: 🏁 ZZ
   delay: 1307
@@ -2387,65 +2462,25 @@ proxies:
   server: 103.186.155.133
   type: ss
 - cipher: aes-256-cfb
+  country: 🏁ZZ
+  delay: 1248
+  name: '越南 - Hải Dương - FASTLY - 1 #2'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.23
+  type: ss
+- cipher: aes-256-cfb
   name: 🇻🇳 越南 05
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.26
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦CA-142.4.216.225-0255 | 31.869MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
-  type: ss
 - cipher: aes-256-cfb
   name: 🇻🇳 越南 07
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '🇻🇳 越南 01 #2'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.29
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  delay: 1439
-  name: 越南 - Hải Dương - FASTLY - 2
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.33
-  type: ss
-- name: 🇺🇸US-198.46.152.83-0368 | 0.073MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 198.46.152.83
-  skip-cert-verify: false
-  sni: sj3.freeguard.org
-  type: trojan
-- cipher: aes-256-cfb
-  name: NO-185.213.23.226-0227 | 5.872MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.213.23.226
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0325 | 0.51MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: aes-256-cfb
-  delay: 2990
-  name: 越南 - Hải Dương - FASTLY - 5
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.36
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -2456,26 +2491,48 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '🇻🇳 越南 07 #2'
+  delay: 2990
+  name: 越南 - Hải Dương - FASTLY - 5
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.18
+  server: 103.186.154.36
   type: ss
   udp: true
-- alterId: '64'
-  cipher: auto
-  name: '🇺🇸_美国_3 #2 #2'
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  delay: 1439
+  name: 越南 - Hải Dương - FASTLY - 2
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.33
+  type: ss
 - cipher: aes-256-cfb
   delay: 487
   name: '越南 - Hải Dương - FASTLY - 3 #2'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.27
+  type: ss
+  udp: true
+- name: 🇺🇸US-192.3.107.252-0342 | 0.181MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 192.3.107.252
+  skip-cert-verify: false
+  sni: rc8.freeguard.org
+  type: trojan
+- cipher: aes-256-cfb
+  name: '🇻🇳 越南 01 #2'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.29
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '🇻🇳 越南 07 #2'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -2485,14 +2542,13 @@ proxies:
   server: 103.186.154.35
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  delay: 654
-  name: 印度 - 班加羅爾 - DigitalOcean, LLC - 1
-  password: WgACwLy1BPk47JOzHyA7zu
-  port: 47347
-  server: 167.71.235.238
-  type: ss
-  udp: true
+- name: SE-45.91.171.116-0339 | 0.323MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 45.91.171.116
+  skip-cert-verify: false
+  sni: sto.freeguard.org
+  type: trojan
 - cipher: aes-256-cfb
   name: '🇻🇳 越南 02 #2 #2'
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -2500,6 +2556,12 @@ proxies:
   server: 103.186.154.19
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: HR-46.183.184.60-4838 | 0.674MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
 - alterId: '0'
   cipher: aes-128-gcm
   name: 🇺🇸_美国_29
@@ -2510,13 +2572,18 @@ proxies:
   uuid: 602272c0-1916-41fe-9b53-f1efd149f9bf
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  name: 🇻🇳 越南 42
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.22
+- cipher: rc4-md5
+  name: 🇺🇸US-107.151.182.253-0227 | 52.517MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.151.182.253
   type: ss
-  udp: true
+- cipher: aes-256-cfb
+  name: VN-103.163.218.2-0274 | 34.068MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 103.163.218.2
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇭🇰HK-219.77.105.237-0254 | 1.362MB
@@ -2540,154 +2607,11 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: LT-45.87.175.35-0361 | 0.117MB
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.35
+  name: 🇳🇱NL-208.67.105.196-4965 | 0.046MB
+  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
+  port: 42029
+  server: 208.67.105.196
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: CO-181.119.30.20-0268 | 30.994MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 181.119.30.20
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL-141.98.4.67-0330 | 0.422MB
-  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
-  port: 52952
-  server: 141.98.4.67
-  server_url: exchange.gameaurela.click
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-42.98.100.120-0262 | 1.02MB
-  network: ws
-  port: 80
-  server: 218.102.150.84
-  server_url: hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '[VMess] 🇭🇰 香港5|@ripaojiedian'
-  network: ws
-  port: 80
-  server: 203.218.216.26
-  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
-- cipher: aes-256-cfb
-  delay: 1489
-  name: 越南 - Hải Dương - FASTLY - 3
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.21
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: VN-160.19.78.75-0333 | 0.173MB
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: 160.19.78.75
-  type: ss
-- cipher: aes-128-gcm
-  delay: 462
-  name: 韩国 - 首尔特别市 - Sejong Networks - 1
-  password: VXPipi29nxMO
-  plugin: obfs
-  plugin-opts:
-    host: 182039459a34f64238143cd31ddebbc914362.taobao.com
-    mode: http
-  port: 1052
-  server: 203.231.242.12
-  server_url: kr2.qiangdong.xyz
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇮🇸IS-37.235.49.152-4844 | 0.393MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.152
-  type: ss
-- cipher: aes-256-cfb
-  name: HR-46.183.184.60-4838 | 0.674MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.60
-  type: ss
-- name: 🇺🇸US-192.3.107.252-0342 | 0.181MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 192.3.107.252
-  skip-cert-verify: false
-  sni: rc8.freeguard.org
-  type: trojan
-- cipher: aes-256-cfb
-  delay: 1121
-  name: '越南 - Hải Dương - FASTLY - 2 #2'
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.22
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇮🇳IN-134.209.147.198-0315 | 0.389MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 134.209.147.198
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: RO-185.126.237.38-0246 | 40.26MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.237.38
-  type: ss
-- name: 🇭🇰HK-103.252.116.138-5043 | 0.029MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 103.252.116.138
-  skip-cert-verify: false
-  sni: hk.freeguard.org
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇦🇺 澳大利亚家宽 01
-  network: tcp
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 103.65.140.216
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳TW-223.165.4.173-4906 | 0.669MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 223.165.4.173
-  type: ss
-- name: 🇳🇴_挪威
-  network: tcp
-  port: 37726
-  server: 84.247.145.11
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: d1c3b3d2-a7da-40b6-a6cb-23619528e130
 - cipher: aes-256-cfb
   name: MK-46.183.185.37-0319 | 1.082MB
   password: f8f7aCzcPKbsF8p3
@@ -2695,55 +2619,12 @@ proxies:
   server: 46.183.185.37
   type: ss
 - cipher: aes-256-cfb
-  name: RS-194.71.126.31-0283 | 30.686MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 194.71.126.31
+  name: 🇻🇳 越南 42
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.22
   type: ss
-- cipher: rc4-md5
-  name: 🇺🇸US-107.151.182.253-0227 | 52.517MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.151.182.253
-  type: ss
-- cipher: aes-256-cfb
-  name: LV-89.46.238.35-4947 | 0.175MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 89.46.238.35
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: TR-185.123.101.241-0358 | 0.019MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.123.101.241
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL-208.67.105.196-4965 | 0.046MB
-  password: SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD
-  port: 42029
-  server: 208.67.105.196
-  type: ss
-- cipher: aes-256-cfb
-  name: SI-91.132.94.200-0356 | 0.038MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 91.132.94.200
-  type: ss
-- name: 🇺🇲@FreakConfig
-  password: dongtaiwang.com
-  port: 63015
-  server: 108.181.5.130
-  skip-cert-verify: true
-  sni: apple.com
-  tls: false
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: ID-154.205.159.100-0321 | 0.103MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.205.159.100
-  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 🇬🇧GB-62.100.205.48-0192 | 0.067MB
   password: f8f7aCzcPKbsF8p3
@@ -2762,13 +2643,157 @@ proxies:
   port: 8080
   server: 45.87.175.164
   type: ss
-- name: 🇩🇪DE-185.208.207.217-5068 | 0.037MB
-  password: 2ee85121-31de-4581-a492-eb00f606e392
+- cipher: aes-256-cfb
+  name: RS-194.71.126.31-0283 | 30.686MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 194.71.126.31
+  type: ss
+- cipher: aes-256-cfb
+  delay: 1489
+  name: 越南 - Hải Dương - FASTLY - 3
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.21
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: LV-89.46.238.35-4947 | 0.175MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 89.46.238.35
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: TR-185.123.101.241-0358 | 0.019MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.123.101.241
+  type: ss
+- cipher: aes-256-cfb
+  delay: 1121
+  name: '越南 - Hải Dương - FASTLY - 2 #2'
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.22
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.181-0396 | 42.36MB
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.138-4942 | 41.606MB
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.138
+  type: ss
+- client-fingerprint: chrome
+  name: 🇦🇺 澳大利亚家宽 01
+  network: tcp
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 103.65.140.216
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.154-0309 | 41.243MB
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.154
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0242 | 37.574MB
+  password: shadowsocks
   port: 443
-  server: 185.208.207.217
+  server: 212.102.53.81
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.178-0259 | 37.593MB
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US-2.58.87.221-5064 | 15.751MB
+  network: ws
+  port: 12269
+  server: 2.58.87.221
   skip-cert-verify: false
-  sni: dus.freeguard.org
-  type: trojan
+  tls: false
+  type: vmess
+  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷FR-45.158.171.146-0224 | 32.199MB
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.158.171.146
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 🇹🇼 台湾|@ripaojiedian
+  password: 61405455-91a2-49d5-b72e-814d304f877d
+  port: 10146
+  server: 36.232.83.103
+  tfo: false
+  type: ss
+- cipher: aes-128-gcm
+  delay: 462
+  name: 韩国 - 首尔特别市 - Sejong Networks - 1
+  password: VXPipi29nxMO
+  plugin: obfs
+  plugin-opts:
+    host: 182039459a34f64238143cd31ddebbc914362.taobao.com
+    mode: http
+  port: 1052
+  server: 203.231.242.12
+  server_url: kr2.qiangdong.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: ID-154.205.159.100-0321 | 0.103MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 154.205.159.100
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 🇹🇼 台湾3|@ripaojiedian
+  password: fb941bcb-a777-47c9-958d-f01178bef303
+  port: 10132
+  server: 36.232.127.240
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳TW-223.165.4.173-4906 | 0.669MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 223.165.4.173
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 🇹🇼 台湾4|@ripaojiedian
+  password: ec9f74bf-0d19-4a1a-99d3-a6fd1fe68b4e
+  port: 10009
+  server: 118.170.203.159
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 🇹🇼 台湾5|@ripaojiedian
+  password: 308344fb-a0fe-42fc-bcf7-de7863647248
+  port: 10042
+  server: 36.234.94.41
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: ''
   client-fingerprint: random
@@ -2789,34 +2814,6 @@ proxies:
     headers:
       Host: do-syd1.008883.xyz
     path: /freev2.net?ed=2048
-- alpn:
-  - http/1.1
-  name: 👖🇯🇵TG频道@stymei1丨18
-  network: tcp
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: 111.253.198.234
-  server_url: twmoon1-cdn-route.couldflare-cdn.com
-  servername: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: null
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tfo: false
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- alterId: 0
-  cipher: auto
-  name: VN-161.248.30.3-0278 | 0.0MB
-  network: ws
-  port: 20086
-  server: 161.248.30.3
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1006a928-2021-4a3b-beb5-d5853c6281c5
-  ws-opts:
-    path: /
 - name: 🇩🇪@FreakConfig
   password: 45b46edb-679b-4ea5-befd-88c05bb94f80
   port: 2056
@@ -2826,6 +2823,18 @@ proxies:
   sni: de.eyucdn.xyz
   tls: false
   type: hysteria2
+- cipher: aes-256-gcm
+  name: 🇺🇸US-38.110.1.122-4996 | 28.241MB
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 38.110.1.122
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.188-0329 | 1.382MB
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.188
+  type: ss
 - alterId: 0
   cipher: ''
   client-fingerprint: random
@@ -2846,6 +2855,176 @@ proxies:
     headers:
       Host: do-sgp1.008883.xyz
     path: /freev2.net?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.189-0237 | 0.529MB
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.192-0222 | 0.42MB
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.192
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.179-0300 | 0.415MB
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: VN-160.19.78.75-0333 | 0.173MB
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: 160.19.78.75
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: LT-45.87.175.157-0294 | 0.26MB
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.157
+  type: ss
+- name: 🇳🇴_挪威
+  network: tcp
+  port: 37726
+  server: 84.247.145.11
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: d1c3b3d2-a7da-40b6-a6cb-23619528e130
+- cipher: chacha20-ietf-poly1305
+  name: AE-151.242.251.147-0217 | 0.0MB
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL-193.29.139.157-0215 | 0.0MB
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 193.29.139.157
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: VN-161.248.30.3-0278 | 0.0MB
+  network: ws
+  port: 20086
+  server: 161.248.30.3
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 1006a928-2021-4a3b-beb5-d5853c6281c5
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: GR-192.71.166.100-0338 | 0.297MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.100
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: VN-103.163.218.2-0264 | 31.904MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 103.163.218.2
+  type: ss
+- cipher: aes-256-cfb
+  name: GR-192.71.166.102-0330 | 0.02MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.102
+  type: ss
+- cipher: aes-256-cfb
+  name: TR-185.123.101.241-4852 | 0.022MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.123.101.241
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: CY-134.255.210.49-0360 | 0.033MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 134.255.210.49
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇺RU-45.139.24.24-0263 | 0.0MB
+  password: 360e21d21977dc11
+  port: 57456
+  server: 45.139.24.24
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: RO-185.126.237.38-0246 | 40.26MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.237.38
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: AT-77.110.110.117-0271 | 0.0MB
+  password: 9JeYy8SkViXuSHVs9GFeSe
+  port: 443
+  server: 77.110.110.117
+  type: ss
+- name: 🇩🇪DE-185.208.207.217-5068 | 0.037MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
+- name: 🇭🇰HK-103.252.116.138-5043 | 0.029MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇮🇸IS-37.235.49.152-4844 | 0.393MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.152
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇮🇳IN-134.209.147.198-0315 | 0.389MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 134.209.147.198
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳IN-134.209.147.198-4907 | 0.456MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 134.209.147.198
+  type: ss
+- name: '@vpnserverrr👈🏻'
+  password: c9edf5cb-67ef-4440-8684-b3d301df6488
+  port: 21053
+  server: 213.183.53.117
+  server_url: yue-ru.yuetoto.net
+  skip-cert-verify: false
+  sni: yue-ru.yuetoto.net
+  tls: false
+  type: hysteria2
+- name: 🎿
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 5fbe139f-c1e0-4b92-bb3c-7f68035962c3
+  port: 33659
+  server: 195.133.79.116
+  server_url: hl.dport.top
+  skip-cert-verify: true
+  sni: hl.dport.top
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦CA-142.4.216.225-0280 | 1.613MB
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  server_url: ca225.vpnbook.com
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
