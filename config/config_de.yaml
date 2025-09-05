@@ -47,18 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 德国 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.135.9.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE-185.177.229.245-0247 | 5.523MB
+  password: oXGp1+ihlfKg826H
+  port: 1866
+  server: 185.177.229.245
+  type: ss
 - name: 德国 001
   network: ws
   password: slch2024
@@ -71,18 +65,18 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-054
-  password: oXGp1+ihlfKg826H
-  port: 1866
-  server: 185.177.229.245
-  type: ss
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-5100 | 2.275MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
+- name: 德国 002
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.135.9.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
