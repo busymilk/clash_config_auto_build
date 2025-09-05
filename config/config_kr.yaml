@@ -59,6 +59,21 @@ proxies:
   port: 989
   server: 154.90.63.177
   type: ss
+- alterId: 0
+  cipher: auto
+  delay: 2323
+  name: 韩国 - Gwangsan-gu - Korea Telecom - 2
+  network: ws
+  port: 55582
+  server: 121.148.27.194
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c47059b2-c52e-4abd-b585-417461366b0c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2048
+    path: /arki
 - cipher: aes-128-gcm
   delay: 462
   name: 韩国 - 首尔特别市 - Sejong Networks - 1
