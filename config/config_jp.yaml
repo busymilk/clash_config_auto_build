@@ -47,14 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 'Channel id: @proxy_kafee🇯🇵'
-  password: qq4Wc9UakExypzw4Jd00fWqrDTY
-  port: 22712
-  server: 8.209.223.212
-  skip-cert-verify: true
-  sni: bing.com
-  tls: false
-  type: hysteria2
+- cipher: aes-128-gcm
+  name: 🇯🇵JP-149.22.87.204-0239 | 30.041MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
 - auth: ''
   fast-open: false
   name: 👖🇯🇵TG频道@stymei1丨32
@@ -100,16 +98,13 @@ proxies:
     headers:
       Host: usb.rtot.me
     path: /bing
-- auth: ''
-  fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨23
-  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: 22509
-  server: 47.129.217.4
-  servername: bing.com
+- name: 'Channel id: @proxy_kafee🇯🇵'
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
   skip-cert-verify: true
   sni: bing.com
-  tfo: false
+  tls: false
   type: hysteria2
 - auth: ''
   fast-open: false
@@ -124,10 +119,10 @@ proxies:
   type: hysteria2
 - auth: ''
   fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨33
-  password: 7GEEGxAfgQaVPQX0PGk7lIuj3I
-  port: 10820
-  server: 158.41.110.234
+  name: 👖🇯🇵TG频道@stymei1丨23
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 47.129.217.4
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -146,12 +141,6 @@ proxies:
   ws-headers:
     Host: 103.13.19.254
   ws-path: /
-- cipher: aes-128-gcm
-  name: 🇯🇵JP-149.22.87.204-0253 | 34.433MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 - name: JP
   password: 16461a78-363c-457a-92f9-83b0a68edc37
   port: 2056
@@ -160,6 +149,17 @@ proxies:
   skip-cert-verify: true
   sni: zp1.eyujichang.xyz
   tls: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 👖🇯🇵TG频道@stymei1丨33
+  password: 7GEEGxAfgQaVPQX0PGk7lIuj3I
+  port: 10820
+  server: 158.41.110.234
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
   type: hysteria2
 - alpn:
   - http/1.1

@@ -47,30 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- name: 英国 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 195.26.229.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 英国 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 194.36.55.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - name: 英国 003
   network: ws
   password: slch2024
@@ -88,6 +64,18 @@ proxies:
   password: slch2024
   port: 2096
   server: 188.244.122.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 英国 007
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.156.19.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -119,56 +107,68 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- name: 英国 007
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.156.19.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.193-0228 | 44.476MB
+  name: 🇬🇧GB-212.102.53.80-2020 | 22.481MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.193
+  server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.194-0058 | 44.305MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.195-0219 | 43.053MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.195
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.198-0214 | 43.286MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.197-0221 | 43.621MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.196-0212 | 43.125MB
+  name: 🇬🇧GB-212.102.53.196-0217 | 22.132MB
   password: shadowsocks
   port: 443
   server: 212.102.53.196
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-141.98.101.178-0238 | 38.563MB
+  name: 🇬🇧GB-212.102.53.198-0209 | 22.304MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.193-0201 | 22.151MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.197-0213 | 21.734MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.79-0216 | 21.787MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.194-0070 | 21.201MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.81-0212 | 20.499MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.78-0218 | 20.021MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.195-0203 | 17.536MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.195
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-141.98.101.178-0232 | 16.634MB
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -180,12 +180,6 @@ proxies:
   server: 212.102.53.197
   server_url: uk-dc1.yangon.club
   type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.81-0242 | 37.574MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
 - alterId: 0
   cipher: auto
   fingerprint: ''
@@ -196,18 +190,6 @@ proxies:
   sni: ''
   type: vmess
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.79-0240 | 30.845MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.79
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.80-2020 | 22.481MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
 - cipher: aes-256-cfb
   name: 🇬🇧GB-62.100.205.48-0192 | 0.067MB
   password: f8f7aCzcPKbsF8p3

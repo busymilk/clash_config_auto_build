@@ -47,6 +47,19 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0304 | 0.027MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- name: 🇭🇰HK-103.252.116.138-0328 | 0.01MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 103.252.116.138
+  skip-cert-verify: false
+  sni: hk.freeguard.org
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇭🇰HK-219.77.105.237-0254 | 1.362MB
@@ -77,12 +90,6 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0325 | 0.51MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
