@@ -67,23 +67,6 @@ proxies:
 - alterId: 0
   cipher: ''
   flow: ''
-  name: 👖🇯🇵TG频道@stymei1丨19
-  network: ws
-  port: 443
-  server: 104.18.13.145
-  servername: usa.rtot.me
-  skip-cert-verify: true
-  sni: usa.rtot.me
-  tls: true
-  type: vless
-  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
-  ws-opts:
-    headers:
-      Host: usa.rtot.me
-    path: /bing
-- alterId: 0
-  cipher: ''
-  flow: ''
   name: 👖🇯🇵TG频道@stymei1丨20
   network: ws
   port: 443
@@ -98,17 +81,23 @@ proxies:
     headers:
       Host: usb.rtot.me
     path: /bing
-- auth: ''
-  fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨22
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 47.129.100.149
-  servername: bing.com
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 👖🇯🇵TG频道@stymei1丨19
+  network: ws
+  port: 443
+  server: 104.18.13.145
+  servername: usa.rtot.me
   skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
+  sni: usa.rtot.me
+  tls: true
+  type: vless
+  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
+  ws-opts:
+    headers:
+      Host: usa.rtot.me
+    path: /bing
 - auth: ''
   fast-open: false
   name: 👖🇯🇵TG频道@stymei1丨23
@@ -120,19 +109,6 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵JP-103.13.19.254-004
-  network: tcp
-  port: 50414
-  server: 103.13.19.254
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
-  ws-headers:
-    Host: 103.13.19.254
-  ws-path: /
 - name: JP
   password: 16461a78-363c-457a-92f9-83b0a68edc37
   port: 2056
@@ -168,6 +144,17 @@ proxies:
   sni: cherry.686911.xyz
   type: trojan
   udp: true
+- auth: ''
+  fast-open: false
+  name: 👖🇯🇵TG频道@stymei1丨33
+  password: 7GEEGxAfgQaVPQX0PGk7lIuj3I
+  port: 10820
+  server: 158.41.110.234
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
