@@ -48,16 +48,16 @@ profile:
   store-selected: false
 proxies:
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.80-0210 | 34.225MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.197-0220 | 34.691MB
   password: shadowsocks
   port: 443
   server: 212.102.53.197
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.80-0210 | 34.225MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.80
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.196-0213 | 34.184MB
@@ -78,16 +78,10 @@ proxies:
   server: 212.102.53.78
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.198-0211 | 33.453MB
+  name: 🇬🇧GB-212.102.53.194-0067 | 33.844MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.198
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.193-0212 | 33.78MB
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
+  server: 212.102.53.194
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.79-0219 | 33.672MB
@@ -96,10 +90,10 @@ proxies:
   server: 212.102.53.79
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧GB-212.102.53.194-0067 | 33.844MB
+  name: 🇬🇧GB-212.102.53.193-0212 | 33.78MB
   password: shadowsocks
   port: 443
-  server: 212.102.53.194
+  server: 212.102.53.193
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧GB-212.102.53.195-0232 | 33.746MB
@@ -108,59 +102,17 @@ proxies:
   server: 212.102.53.195
   type: ss
 - cipher: aes-128-gcm
+  name: 🇬🇧GB-212.102.53.198-0211 | 33.453MB
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+- cipher: aes-128-gcm
   name: 🇬🇧GB-141.98.101.178-0234 | 16.521MB
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
-- name: 英国 001
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 195.26.229.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 英国 002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 194.36.55.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 英国 003
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 193.124.224.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 英国 004
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 188.244.122.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - name: 英国 006
   network: ws
   password: slch2024
@@ -178,18 +130,6 @@ proxies:
   password: slch2024
   port: 2096
   server: 185.162.229.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- name: 英国 007
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.156.19.195
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -220,6 +160,54 @@ proxies:
   port: 989
   server: 62.100.205.48
   type: ss
+- name: '英国 006 #2'
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 195.26.229.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 英国 007
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 194.36.55.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 英国 008
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 193.124.224.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- name: 英国 009
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.244.122.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

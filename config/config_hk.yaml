@@ -47,6 +47,12 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰HK-203.23.128.33-0316 | 0.05MB
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - name: 🇭🇰HK-103.252.116.138-0325 | 0.045MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
@@ -54,42 +60,6 @@ proxies:
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0316 | 0.05MB
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK-219.77.105.237-0254 | 1.362MB
-  network: ws
-  port: 80
-  server: 1.36.77.183
-  server_url: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰HK-203.218.216.26-0354 | 25.719MB
-  network: ws
-  port: 80
-  server: 58.153.76.75
-  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:

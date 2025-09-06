@@ -47,29 +47,20 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 'Channel id: @proxy_kafee🇯🇵'
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
 - cipher: aes-128-gcm
   name: 🇯🇵JP-149.22.87.204-0190 | 22.559MB
   password: shadowsocks
   port: 443
   server: 149.22.87.204
   type: ss
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 👖🇯🇵TG频道@stymei1丨20
-  network: ws
-  port: 443
-  server: 172.64.152.55
-  servername: usb.rtot.me
-  skip-cert-verify: true
-  sni: usb.rtot.me
-  tls: true
-  type: vless
-  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
-  ws-opts:
-    headers:
-      Host: usb.rtot.me
-    path: /bing
 - alterId: 0
   cipher: ''
   flow: ''
@@ -86,6 +77,34 @@ proxies:
   ws-opts:
     headers:
       Host: usa.rtot.me
+    path: /bing
+- auth: ''
+  fast-open: false
+  name: 👖🇯🇵TG频道@stymei1丨32
+  password: TeoP0vNz791156o3UuGb8eBY
+  port: 22740
+  server: 38.34.6.180
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 👖🇯🇵TG频道@stymei1丨20
+  network: ws
+  port: 443
+  server: 172.64.152.55
+  servername: usb.rtot.me
+  skip-cert-verify: true
+  sni: usb.rtot.me
+  tls: true
+  type: vless
+  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
+  ws-opts:
+    headers:
+      Host: usb.rtot.me
     path: /bing
 - auth: ''
   fast-open: false
@@ -109,16 +128,14 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
-- auth: ''
-  fast-open: false
-  name: 👖🇯🇵TG频道@stymei1丨32
-  password: TeoP0vNz791156o3UuGb8eBY
-  port: 22740
-  server: 38.34.6.180
-  servername: bing.com
+- name: JP
+  password: 16461a78-363c-457a-92f9-83b0a68edc37
+  port: 2056
+  server: 96.62.214.75
+  server_url: zp1.eyucdn.xyz
   skip-cert-verify: true
-  sni: bing.com
-  tfo: false
+  sni: zp1.eyujichang.xyz
+  tls: false
   type: hysteria2
 - auth: ''
   fast-open: false
@@ -131,15 +148,6 @@ proxies:
   sni: bing.com
   tfo: false
   type: hysteria2
-- name: JP
-  password: 16461a78-363c-457a-92f9-83b0a68edc37
-  port: 2056
-  server: 96.62.214.75
-  server_url: zp1.eyucdn.xyz
-  skip-cert-verify: true
-  sni: zp1.eyujichang.xyz
-  tls: false
-  type: hysteria2
 - cipher: aes-128-gcm
   country: 🇯🇵JP
   delay: 316
@@ -148,6 +156,16 @@ proxies:
   port: 10087
   server: 153.121.43.183
   type: ss
+- name: 🇯🇵_日本_3
+  network: tcp
+  password: 79462058-8af8-4f78-9f72-252035389b87
+  port: 443
+  server: 140.238.58.21
+  server_url: tuntro003.instconn.com
+  skip-cert-verify: true
+  sni: cherry.686911.xyz
+  type: trojan
+  udp: true
 - alpn:
   - http/1.1
   name: 👖🇯🇵TG频道@stymei1丨18
@@ -164,16 +182,6 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 🇯🇵_日本_3
-  network: tcp
-  password: 79462058-8af8-4f78-9f72-252035389b87
-  port: 443
-  server: 140.238.58.21
-  server_url: tuntro003.instconn.com
-  skip-cert-verify: true
-  sni: cherry.686911.xyz
-  type: trojan
-  udp: true
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
