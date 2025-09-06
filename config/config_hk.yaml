@@ -47,19 +47,99 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- auth: ''
+  fast-open: false
+  name: 👖🇭🇰TG频道@stymei1丨12
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 47.129.100.149
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 👖🇭🇰TG频道@stymei1丨13
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 47.129.217.4
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- auth: ''
+  fast-open: false
+  name: 👖🇭🇰TG频道@stymei1丨19
+  password: 7GEEGxAfgQaVPQX0PGk7lIuj3I
+  port: 10820
+  server: 158.41.110.234
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 🇭🇰HK-203.23.128.33-0316 | 0.05MB
+  name: 🇭🇰HK-203.23.128.33-0316 | 0.475MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 203.23.128.33
   type: ss
-- name: 🇭🇰HK-103.252.116.138-0325 | 0.045MB
+- name: 🇭🇰HK-103.252.116.138-0325 | 0.416MB
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
   server: 103.252.116.138
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 香港3|@ripaojiedian
+  network: ws
+  port: 80
+  server: 219.79.36.36
+  server_url: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰HK-58.153.76.75-0237 | 33.795MB
+  network: ws
+  port: 80
+  server: 116.49.85.225
+  server_url: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK-1.36.77.183-0242 | 33.27MB
+  network: ws
+  port: 80
+  server: 219.77.105.144
+  server_url: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
