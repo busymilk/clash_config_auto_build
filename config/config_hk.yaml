@@ -47,22 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 🇭🇰 香港2|@ripaojiedian
-  password: 2b5fad3874e5
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /aqwshiog
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 156.251.179.135
-  tfo: false
-  type: ss
 - auth: ''
   fast-open: false
   name: 👖🇭🇰TG频道@stymei1丨12
@@ -98,23 +82,6 @@ proxies:
   skip-cert-verify: false
   sni: hk.freeguard.org
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 香港3|@ripaojiedian
-  network: ws
-  port: 80
-  server: 219.79.36.36
-  server_url: hkt.gotochinatown.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
 - alterId: 0
   cipher: auto
   name: 🇭🇰HK-1.36.77.183-0242 | 33.27MB
@@ -144,6 +111,23 @@ proxies:
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 香港3|@ripaojiedian
+  network: ws
+  port: 80
+  server: 219.79.36.36
+  server_url: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
     path: /
 proxy-groups:
 - name: ✈️ 选择代理

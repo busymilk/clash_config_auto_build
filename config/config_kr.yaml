@@ -47,18 +47,6 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.62.168-0319 | 2.008MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷KR-154.90.63.177-0268 | 0.627MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
 - alterId: 0
   cipher: auto
   delay: 2323
@@ -74,6 +62,18 @@ proxies:
     early-data-header-name: Sec-WebSocket-Protocol
     max-early-data: 2048
     path: /arki
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.63.177-0268 | 0.627MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR-154.90.62.168-0319 | 2.008MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
