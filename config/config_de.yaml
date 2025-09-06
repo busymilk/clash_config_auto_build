@@ -47,13 +47,39 @@ profile:
   store-fake-ip: true
   store-selected: false
 proxies:
+- name: 德国 001
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.16.110.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE-185.177.229.245-26
+  name: 🇩🇪DE-185.177.229.245-0281 | 1.7MB
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 185.177.229.245
   type: ss
-- name: 德国 001
+- cipher: rc4-md5
+  name: 🇩🇪DE-193.108.119.230-0271 | 0.497MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- name: 🇩🇪DE-185.208.207.217-0339 | 0.071MB
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 185.208.207.217
+  skip-cert-verify: false
+  sni: dus.freeguard.org
+  type: trojan
+- name: '德国 001 #2'
   network: ws
   password: slch2024
   port: 2096
@@ -77,21 +103,6 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- cipher: rc4-md5
-  name: 🇩🇪DE-193.108.119.230-0279 | 30.288MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- name: 🇩🇪@FreakConfig
-  password: 45b46edb-679b-4ea5-befd-88c05bb94f80
-  port: 2056
-  server: 84.200.87.248
-  server_url: de.eyucdn.xyz
-  skip-cert-verify: true
-  sni: de.eyucdn.xyz
-  tls: false
-  type: hysteria2
 proxy-groups:
 - name: ✈️ 选择代理
   proxies:
